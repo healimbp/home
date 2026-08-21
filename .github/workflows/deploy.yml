@@ -21,36 +21,41 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          submodules: true
           fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
 
-      - name: Install Dependencies
+      - name: Install Node Dependencies
         run: |
-          npm ci || npm install
+          npm install
+          echo "$GITHUB_WORKSPACE/node_modules/.bin" >> $GITHUB_PATH
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.164.0"
+          hugo-version: "latest"
           extended: true
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build Website
+      - name: Build Website with Hugo
         env:
           HUGO_ENVIRONMENT: production
         run: |
-          npx @tailwindcss/cli -i ./layouts/_partials/hooks/head-end/custom-styles.html -o ./public/css/style.css || true
           hugo --minify
 
-      - name: Upload Artifact
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
