@@ -115,7 +115,7 @@ async function generateColumnContent() {
   1. 제목: 간결하게 [${selectedRegion.short} ${selectedCat.name.split(' ')[0]} 한의원] 구조 유지
   2. 도입부: ${selectedRegion.short} 환자의 진료실 실제 호소문 인용구 (“...”) 와 공감 화두
   3. 신경/생리학적 기전: 자율신경계(교감-부교감), 뇌 변연계/기저핵, 한스 셀리에 3단계 스트레스 모델
-  4. 객관적 검사: 심박변이도(HRV) 자율신경 검사, 한의학 맥진·복진
+  4. 객관적 검사: 심박변이도(HRV) 자율신경 검사, 한의학적 정밀 변증 및 복진
   5. 1:1 맞춤 한방 치료: 체질 맞춤 탕약, 침구/약침, 두개천골 추나요법
   6. 일상 관리 및 회복 격려 메시지 (부평역 7번 출구 위치 안내 자연스럽게 포함)
 
@@ -173,7 +173,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
     summary: `${region.short} 지역에서 ${cat.name} 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.`,
     tags: [`${region.short}한의원`, '부평한의원', cat.name.split(' ')[0], '맞춤한약', '자율신경검사'],
     contentHtml: `
-<p>안녕하세요. <strong>부평역 7번 출구에서 ${region.short} 환자분들의 자율신경 및 두뇌 질환을 1:1 진맥 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+<p>안녕하세요. <strong>부평역 7번 출구에서 ${region.short} 환자분들의 자율신경 및 두뇌 질환을 1:1 맞춤 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
 <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
   &ldquo;${region.short} 인근 병원에서 각종 정밀 검사를 받아도 '신경성', '스트레스성'이라는 말뿐 원인을 찾지 못했습니다.&rdquo;<br>
@@ -193,7 +193,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
 </ul>
 
 <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">3. 해아림한의원 인천부평점의 객관적 검사 시스템</h3>
-<p>인천 부평 해아림한의원에서는 <strong>심박변이도(HRV) 자율신경 검사</strong>를 통해 신경계 활성도와 스트레스 저항력을 객관적으로 평가하고, 전통 한의학의 <strong>맥진(脈診)과 복진(腹診)</strong>으로 오장육부의 기혈 허실을 정밀 진단합니다.</p>
+<p>인천 부평 해아림한의원에서는 <strong>심박변이도(HRV) 자율신경 검사</strong>를 통해 신경계 활성도와 스트레스 저항력을 객관적으로 평가하고, 전통 한의학의 <strong>정밀 변증과 복진(腹診)</strong>으로 오장육부의 기혈 허실을 정밀 진단합니다.</p>
 
 <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">4. 1:1 맞춤 한방 치료: 뇌 신경계 자생력 회복</h3>
 <ul class="list-disc pl-5 space-y-2 text-sm text-[#4E6159] my-3">
