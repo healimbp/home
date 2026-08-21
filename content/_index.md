@@ -253,6 +253,94 @@ sections:
             </div>
           </div>
 
+          <!-- 3.5. 권형근 대표원장의 건강 의학 칼럼 (Homepage Column Section) -->
+          <div class="space-y-8 pt-4">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+              <div>
+                <span class="heal-hero-badge">Health Column & In-Depth Insights</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E] mt-2">권형근 대표원장의 심층 의학 칼럼</h2>
+                <p class="text-xs sm:text-sm text-[#68736E] mt-1">질환별 병리 기전, 정밀 진단 및 1:1 맞춤 자생력 회복 가이드를 전해드립니다.</p>
+              </div>
+              <a href="/column/" class="text-xs sm:text-sm font-extrabold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                전체 칼럼 보러가기 <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <!-- 칼럼 1: 만성피로/자율신경 -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">자율신경실조증</span>
+                    <span class="text-[11px] text-[#68736E]">의학 칼럼</span>
+                  </div>
+                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                    <a href="/column/autonomic-fatigue/" class="hover:underline">
+                      [부평 자율신경실조증] 만성피로와 자율신경계 기능 저하는 어떤 관계일까요?
+                    </a>
+                  </h3>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
+                    검사상 이상 없는 만성 피로와 무기력증, 스트레스 적응 3단계 소진 모델과 1:1 맞춤 한방 치료 원리.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• HRV 검사 • 한스셀리에</span>
+                  <a href="/column/autonomic-fatigue/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    전문 읽기 →
+                  </a>
+                </div>
+              </div>
+
+              <!-- 칼럼 2: 공황장애 -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">공황 · 불안장애</span>
+                    <span class="text-[11px] text-[#68736E]">의학 칼럼</span>
+                  </div>
+                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                    <a href="/column/panic-disorder-breathing/" class="hover:underline">
+                      [인천 부평 공황장애] 공황발작과 자율신경계 과흥분, 응급 호흡과 치료법
+                    </a>
+                  </h3>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
+                    숨이 턱 막히고 심장이 뛰는 공황발작의 신경학적 원인과 미주신경 자극 응급 4-7-8 복식호흡법.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 편도체 안정 • 4-7-8호흡</span>
+                  <a href="/column/panic-disorder-breathing/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    전문 읽기 →
+                  </a>
+                </div>
+              </div>
+
+              <!-- 칼럼 3: 불면증 -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">불면증 · 수면장애</span>
+                    <span class="text-[11px] text-[#68736E]">의학 칼럼</span>
+                  </div>
+                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                    <a href="/column/insomnia-sleep-maintenance/" class="hover:underline">
+                      [계양구 불면증] 새벽 2~3시에 자다 깨는 수면유지장애와 간·심장 허열
+                    </a>
+                  </h3>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
+                    수면제 없이 자연스러운 숙면 유도, 뇌파 과각성을 가라앉히는 청열안신 맞춤 한약 치료 원리.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 중도각성 • 청열안신</span>
+                  <a href="/column/insomnia-sleep-maintenance/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    전문 읽기 →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- 4. 해아림 4단계 정밀 진단 프로세스 -->
           <div class="space-y-8">
             <div class="text-center space-y-2 max-w-2xl mx-auto">
