@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/
 
 title: '해아림한의원 인천부평점'
-baseURL: 'https://healimbp.co.kr/'
+baseURL: 'https://healimbp.com/'
 
 ############################
 ## LANGUAGE
