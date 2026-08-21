@@ -1,7 +1,7 @@
 ---
 title: "건강 칼럼"
 linkTitle: "건강 칼럼"
-summary: "인천 부평구, 남동구, 부천, 시흥, 서구 청라·검단, 계양구, 영종도, 김포 지역 공황장애, 불면증, 자율신경실조증, 소아 틱장애 한의원 치료 의학 칼럼"
+summary: "인천 부평, 구월동, 부천 상동, 시흥 배곧, 청라 질환별 권형근 대표원장의 심층 건강 의학 칼럼"
 type: landing
 sections:
   - block: html
@@ -11,12 +11,12 @@ sections:
 
           <!-- 1. Header Banner -->
           <div class="lia-hero-box text-center space-y-4">
-            <span class="heal-hero-badge">Regional Medical Column & Insights</span>
+            <span class="heal-hero-badge">Health Column & Insights</span>
             <h1 class="text-3xl sm:text-4xl font-extrabold text-[#26332E]">
-              부평 · 남동구 · 부천 · 시흥 · 청라 질환별 건강 의학 칼럼
+              질환별 심층 건강 의학 칼럼
             </h1>
             <p class="text-base sm:text-lg text-[#53615B] leading-relaxed max-w-2xl mx-auto">
-              부평구를 중심으로 구월동, 상동, 배곧, 청라, 계양, 영종도, 김포 지역 환자분들을 위한 권형근 원장의 심층 한의학 진료 가이드입니다.
+              해아림한의원 인천부평점 권형근 대표원장이 임상 현장에서 직접 집필하는 질환별 원인, 검사 및 근본 한방 치료 가이드입니다.
             </p>
           </div>
 
@@ -52,10 +52,10 @@ sections:
               </button>
             </div>
 
-            <!-- 칼럼 카드 그리드 (상세 지역명 타겟 SEO) -->
+            <!-- 칼럼 카드 그리드 (간결한 1~2개 지역명 + 심층 장문 뷰어) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="column-grid">
 
-              <!-- [공황·불안 1: 부평·삼산동] -->
+              <!-- [공황·불안 1] -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -63,33 +63,31 @@ sections:
                     <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
                   </div>
                   <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-panic-1')">
-                    [부평구 산곡동·삼산동 공황장애 한의원] 공황발작과 자율신경계 과흥분, 응급 호흡과 1:1 맞춤 치료법
+                    [인천 부평 공황장애 한의원] 공황발작과 자율신경계 과흥분, 응급 호흡과 맞춤 치료법
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    부평동, 산곡동, 삼산동, 부개동 지역에서 공황장애 병원 및 한의원 치료를 찾는 분들을 위한 공황발작 신경학적 기전과 4-7-8 호흡, 편도체 안정 한약 치료 솔루션입니다.
+                    숨이 턱 막히고 심장이 미친 듯이 뛰는 공황발작의 신경학적 기전과 편도체 흥분을 가라앉히는 단계별 한의학 치료 원리를 다룹니다.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 부평 공황장애 • 삼산동 한의원 • 공황발작 치료</span>
+                  <span class="text-[11px] text-[#68736E]">• 인천 부평 • 공황발작 치료 • 호흡 이완</span>
                   <button type="button" onclick="openColumnModal('col-panic-1')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-book-open text-[10px]"></i>
                   </button>
                 </div>
                 <div id="data-col-panic-1" style="display:none;" 
-                     data-title="[부평구 산곡동·삼산동 공황장애 한의원] 공황발작과 자율신경계 과흥분, 응급 호흡과 1:1 맞춤 치료법" 
+                     data-title="[인천 부평 공황장애 한의원] 공황발작과 자율신경계 과흥분, 응급 호흡과 맞춤 치료법" 
                      data-category="공황 · 불안장애" 
                      data-date="2026.04.15" 
-                     data-summary="부평구(부평동, 산곡동, 삼산동, 부개동) 공황장애 한의원에서 전하는 공황발작 시 교감신경 과흥분 완화 4-7-8 복식호흡과 뇌 변연계 안정 한방 치료 프로토콜입니다." 
-                     data-tags="부평공황장애한의원, 삼산동공황장애, 산곡동한의원, 공황발작치료, 부평역한의원">
-                  <p>안녕하세요. <strong>부평역 7번 출구에서 부평구(부평동, 산곡동, 삼산동, 부개동, 십정동) 및 인근 지역 환자분들의 자율신경·신경정신과 질환을 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+                     data-summary="인천 부평 공황장애 한의원에서 전하는 공황발작 시 교감신경 과흥분 완화 4-7-8 복식호흡과 뇌 변연계 안정 한방 치료 프로토콜입니다." 
+                     data-tags="인천공황장애한의원, 부평공황장애병원, 공황발작치료, 자율신경실조증">
+                  <p>안녕하세요. <strong>부평역 7번 출구에서 자율신경·신경정신과 질환을 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
                   <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
-                    &ldquo;부평역 지하철 안에서 갑자기 숨이 턱 막히고 심장이 미친 듯이 뛰어 당장이라도 쓰러질 것 같았습니다.&rdquo;<br>
-                    &ldquo;인천 부평 인근 응급실 병원에서 검사했을 때는 이상이 없다는데 공황장애 한의원 치료로 극복할 수 있을까요?&rdquo;
+                    &ldquo;지하철 안에서 갑자기 숨이 턱 막히고 심장이 미친 듯이 뛰어 당장이라도 쓰러질 것 같았습니다.&rdquo;<br>
+                    &ldquo;병원 응급실 검사에서는 이상이 없다는데 공황장애 한의원 치료로 극복할 수 있을까요?&rdquo;
                   </blockquote>
-
-                  <p>부평역 인근 진료실에는 부평구뿐만 아니라 남동구(구월동, 간석동, 논현동), 부천(상동, 중동), 시흥, 청라 등지에서 공황발작과 불안장애로 고통받는 환자분들이 많이 내원하십니다.</p>
 
                   <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">1. 공황발작의 신경학적 원인과 교감신경 과흥분</h3>
                   <p>공황장애는 심장이나 폐의 기질적 이상이 아니라, 뇌의 정서와 공포 반응을 담당하는 **변연계(편도체)**가 오작동하여 발생합니다. 자율신경계(교감신경)가 폭발적으로 흥분하며 심장 박동 급상승, 혈관 수축, 과호흡, 어지럼증, 손발 저림이 동반됩니다.</p>
@@ -106,7 +104,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [공황·불안 2: 남동구 구월동·간석동] -->
+              <!-- [공황·불안 2] -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -114,30 +112,30 @@ sections:
                     <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
                   </div>
                   <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-panic-2')">
-                    [남동구 구월동·간석동 불안장애 한의원] &ldquo;또 발작 올까 두려운&rdquo; 예기불안과 공황장애 뇌 변연계 안정 치료
+                    [구월동 불안장애 한의원] &ldquo;또 발작 올까 두려운&rdquo; 예기불안과 뇌 변연계 안정 한방 치료
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    구월동, 간석동, 논현동, 만수동 지역 주민들을 위한 24시간 예기불안의 악순환 차단과 뇌 변연계 신경안정 한방 치료 솔루션입니다.
+                    발작이 없는 시간에도 일상을 마비시키는 24시간 예기불안의 원인과 뇌 변연계 신경안정 한방 치료 솔루션입니다.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 남동구 불안장애 • 구월동 한의원 • 간석동 공황장애</span>
+                  <span class="text-[11px] text-[#68736E]">• 구월동 불안장애 • 예기불안 차단 • 안심정지 처방</span>
                   <button type="button" onclick="openColumnModal('col-panic-2')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-book-open text-[10px]"></i>
                   </button>
                 </div>
                 <div id="data-col-panic-2" style="display:none;" 
-                     data-title="[남동구 구월동·간석동 불안장애 한의원] &ldquo;또 발작 올까 두려운&rdquo; 예기불안과 공황장애 뇌 변연계 안정 치료" 
+                     data-title="[구월동 불안장애 한의원] &ldquo;또 발작 올까 두려운&rdquo; 예기불안과 뇌 변연계 안정 한방 치료" 
                      data-category="공황 · 불안장애" 
                      data-date="2026.03.28" 
-                     data-summary="인천 남동구(구월동, 간석동, 논현동, 만수동) 불안장애 한의원에서 전하는 예기불안 극복과 뇌 변연계 신경안정 맞춤 치료입니다." 
-                     data-tags="남동구불안장애한의원, 구월동공황장애, 간석동한의원, 만수동불안장애, 한방신경정신과">
-                  <p>안녕하세요. <strong>부평역 7번 출구에서 남동구(구월동, 간석동, 논현동, 만수동, 서창동) 환자분들의 불안신경증을 치료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+                     data-summary="인천 구월동 불안장애 한의원에서 전하는 예기불안 극복과 뇌 변연계 신경안정 맞춤 치료입니다." 
+                     data-tags="구월동불안장애, 인천공황장애한의원, 예기불안치료, 한방신경정신과">
+                  <p>안녕하세요. <strong>부평역 7번 출구에서 구월동, 간석동 환자분들의 불안신경증을 치료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
                   
                   <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
-                    &ldquo;구월동 로데오거리나 마트에 갈 때 '혹시 또 숨이 막히면 어쩌지?' 하는 생각에 하루 종일 가슴이 조마조마합니다.&rdquo;<br>
-                    &ldquo;남동구 인근 병원에서 신경안정제를 먹고 있는데 한의원 맞춤 한약으로 예기불안을 치료할 수 있나요?&rdquo;
+                    &ldquo;운전 중이거나 모임에 갈 때 '혹시 또 숨이 막히면 어쩌지?' 하는 생각에 하루 종일 가슴이 조마조마합니다.&rdquo;<br>
+                    &ldquo;병원 신경안정제 없이 한의원 맞춤 한약으로 예기불안을 치료할 수 있나요?&rdquo;
                   </blockquote>
 
                   <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">1. 예기불안의 악순환 메커니즘</h3>
@@ -145,7 +143,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [자율신경 1: 시흥 배곧·은계·정왕동] -->
+              <!-- [자율신경 1] -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -153,30 +151,30 @@ sections:
                     <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
                   </div>
                   <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-autonomic-1')">
-                    [시흥 배곧·은계·정왕동 자율신경실조증 한의원] 만성피로와 자율신경 기능 저하, HRV 검사와 한방 치료
+                    [부천 상동 자율신경실조증 한의원] 만성피로와 자율신경계 기능 저하, 검사와 한방 치료
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    시흥시 배곧신도시, 은계지구, 은행동, 정왕동 주민들을 위한 검사상 이상 없는 만성 피로와 자율신경실조증 3단계 소진 모델 및 맞춤 한방 치료법입니다.
+                    병원 검사에서 이상 없는 만성 피로와 무기력증, 자율신경실조증의 원인과 심박변이도(HRV) 검사 및 맞춤 한방 치료를 설명합니다.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 시흥 자율신경실조증 • 배곧 한의원 • 은계지구 만성피로</span>
+                  <span class="text-[11px] text-[#68736E]">• 부천 상동 • 자율신경실조증 • HRV 검사</span>
                   <button type="button" onclick="openColumnModal('col-autonomic-1')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-book-open text-[10px]"></i>
                   </button>
                 </div>
                 <div id="data-col-autonomic-1" style="display:none;" 
-                     data-title="[시흥 배곧·은계·정왕동 자율신경실조증 한의원] 만성피로와 자율신경 기능 저하, HRV 검사와 한방 치료" 
+                     data-title="[부천 상동 자율신경실조증 한의원] 만성피로와 자율신경계 기능 저하, 검사와 한방 치료" 
                      data-category="자율신경 · 실신/어지럼증" 
                      data-date="2026.01.18" 
-                     data-summary="시흥시(배곧, 은계, 은행동, 정왕동) 자율신경실조증 한의원에서 전하는 만성피로와 자율신경계 기능 저하 원인, HRV 검사 및 맞춤 한방 치료법입니다." 
-                     data-tags="시흥자율신경실조증한의원, 배곧한의원, 은계지구병원, 정왕동만성피로, HRV검사">
-                  <p>안녕하세요. <strong>부평역 7번 출구에서 시흥시(배곧신도시, 은계지구, 은행동, 정왕동, 대야동) 환자분들의 자율신경실조증을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+                     data-summary="부천 상동 자율신경실조증 한의원에서 전하는 만성피로와 자율신경계 기능 저하 원인, HRV 검사 및 맞춤 한방 치료법입니다." 
+                     data-tags="부천자율신경실조증, 상동한의원, 만성피로검사, HRV검사, 체질맞춤한약">
+                  <p>안녕하세요. <strong>부평역 7번 출구에서 부천 상동, 중동 환자분들의 자율신경실조증을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
                   <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
-                    &ldquo;시흥 인근 내과 병원 종합검진에서는 간수치도 정상이고 이상이 없다는데, 매일 아침 몸이 천근만근 무겁고 머리가 멍합니다.&rdquo;<br>
-                    &ldquo;자율신경실조증 한의원에서 심박변이도(HRV) 검사로 신경계 피로도를 정확히 측정받고 싶습니다.&rdquo;
+                    &ldquo;종합검진에서는 간수치도 정상이고 이상이 없다는데, 매일 아침 몸이 물에 젖은 솜처럼 무겁습니다.&rdquo;<br>
+                    &ldquo;가슴이 답답하고 머리가 멍한 브레인포그 증상이 있는데 자율신경실조증 검사로 원인을 찾을 수 있나요?&rdquo;
                   </blockquote>
 
                   <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">1. 자율신경계 기능 저하와 소진(Burnout) 3단계</h3>
@@ -184,46 +182,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [자율신경 2: 서구 청라·가정동·검단] -->
-              <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">자율신경 · 실신/어지럼증</span>
-                    <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
-                  </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-autonomic-2')">
-                    [인천 서구 청라·가정동·검단 미주신경성 실신 한의원] 출퇴근길 어지럼증과 식은땀, 혈관 탄력 한방 치료
-                  </h3>
-                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    청라국제도시, 루원시티 가정동, 가좌동, 검단구 주민들을 위한 지하철 어지럼증과 미주신경성 실신 전조증상 대처 및 혈관 탄력 강화 한방 솔루션입니다.
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 청라 어지럼증 • 검단 실신 한의원 • 가정동 자율신경</span>
-                  <button type="button" onclick="openColumnModal('col-autonomic-2')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
-                    <span>칼럼 전문 읽기</span>
-                    <i class="fa-solid fa-book-open text-[10px]"></i>
-                  </button>
-                </div>
-                <div id="data-col-autonomic-2" style="display:none;" 
-                     data-title="[인천 서구 청라·가정동·검단 미주신경성 실신 한의원] 출퇴근길 어지럼증과 식은땀, 혈관 탄력 한방 치료" 
-                     data-category="자율신경 · 실신/어지럼증" 
-                     data-date="2026.01.05" 
-                     data-summary="인천 서구(청라, 가정동, 가좌동, 검단) 미주신경성 실신 한의원에서 전하는 어지럼증 전조 대처법과 혈관 탄력 강화 한약 치료입니다." 
-                     data-tags="청라어지럼증한의원, 검단실신병원, 가정동한의원, 미주신경성실신, 기립성저혈압">
-                  <p>안녕하세요. <strong>부평역 7번 출구에서 인천 서구(청라국제도시, 가정동 루원시티, 가좌동, 검단구) 환자분들을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
-
-                  <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
-                    &ldquo;공항철도나 7호선 지하철 안에서 갑자기 눈앞이 캄캄해지고 식은땀이 흐르며 주저앉았습니다.&rdquo;<br>
-                    &ldquo;인천 서구 병원에서는 미주신경성 실신이라는데 한의원 치료로 재발을 막을 수 있나요?&rdquo;
-                  </blockquote>
-
-                  <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">1. 미주신경성 실신의 발생 기전과 한방 치료</h3>
-                  <p>부교감신경의 과도한 작동으로 하체 혈관이 확장되어 뇌 혈류가 급감하는 질환입니다. 심장과 비장의 기운을 돋우는 맞춤 탕전으로 혈관 탄력을 높여 실신을 근본 예방합니다.</p>
-                </div>
-              </article>
-
-              <!-- [소아 틱장애 1: 계양구 계산동·작전동] -->
+              <!-- [소아 틱장애 1] -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -231,30 +190,30 @@ sections:
                     <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
                   </div>
                   <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-tic-1')">
-                    [계양구 계산동·작전동 소아 틱장애 한의원] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 안정과 부모 양육법
+                    [시흥 배곧 소아 틱장애 한의원] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 안정 치료
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    계산동, 작전동, 효성동 지역 부모님들을 위한 소아 틱장애 뇌 기저핵 발달 원인과 순한 천연 한약, 부모 양육 코칭 가이드입니다.
+                    소아 틱장애 뇌 기저핵 발달 원인 분석과 순한 소아 한약, 부모 양육 코칭 가이드입니다.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 계양구 틱장애 • 계산동 소아한의원 • 작전동 틱치료</span>
+                  <span class="text-[11px] text-[#68736E]">• 시흥 배곧 • 소아 틱장애 • 기저핵 발달</span>
                   <button type="button" onclick="openColumnModal('col-tic-1')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-book-open text-[10px]"></i>
                   </button>
                 </div>
                 <div id="data-col-tic-1" style="display:none;" 
-                     data-title="[계양구 계산동·작전동 소아 틱장애 한의원] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 안정과 부모 양육법" 
+                     data-title="[시흥 배곧 소아 틱장애 한의원] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 안정 치료" 
                      data-category="소아 틱장애 · ADHD" 
                      data-date="2025.11.25" 
-                     data-summary="인천 계양구(계산동, 작전동, 효성동) 소아 틱장애 한의원에서 전하는 틱 증상 발생 시 부모 양육 태도와 기저핵 성장 맞춤 한방 치료법입니다." 
-                     data-tags="계양구틱장애한의원, 계산동소아한의원, 작전동틱장애, 소아음성틱, 부모양육법">
-                  <p>안녕하세요. <strong>부평역 7번 출구에서 계양구(계산동, 작전동, 효성동) 어린이들의 두뇌 질환을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+                     data-summary="시흥 배곧 소아 틱장애 한의원에서 전하는 틱 증상 발생 시 부모 양육 태도와 기저핵 성장 맞춤 한방 치료법입니다." 
+                     data-tags="시흥틱장애한의원, 배곧소아한의원, 소아음성틱치료, 뚜렛증후군, 부모양육법">
+                  <p>안녕하세요. <strong>부평역 7번 출구에서 시흥 배곧, 은계 어린이들의 두뇌 질환을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
                   <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
                     &ldquo;아이가 눈을 세게 깜빡이고 '음음' 소리를 내서 참으라고 혼냈더니 틱이 더 심해졌습니다.&rdquo;<br>
-                    &ldquo;계양구 인근 소아 틱장애 한의원에서는 어떤 검사와 한약으로 치료하나요?&rdquo;
+                    &ldquo;소아 틱장애 한의원에서는 어떤 검사와 한약으로 치료하나요?&rdquo;
                   </blockquote>
 
                   <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">1. 틱장애의 신경학적 원인: 뇌 기저핵의 미성숙</h3>
@@ -262,7 +221,46 @@ sections:
                 </div>
               </article>
 
-              <!-- [불면증 1: 부천 상동·중동·신중동] -->
+              <!-- [자율신경 2] -->
+              <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">자율신경 · 실신/어지럼증</span>
+                    <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-autonomic-2')">
+                    [청라 어지럼증 한의원] 출퇴근길 지하철 핑 도는 실신 전조증상과 한방 치료
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
+                    지하철 어지럼증과 미주신경성 실신 전조증상 대처 및 혈관 탄력 강화 한방 솔루션입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 청라 어지럼증 • 미주신경실신 • 혈관 탄력 한약</span>
+                  <button type="button" onclick="openColumnModal('col-autonomic-2')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-book-open text-[10px]"></i>
+                  </button>
+                </div>
+                <div id="data-col-autonomic-2" style="display:none;" 
+                     data-title="[청라 어지럼증 한의원] 출퇴근길 지하철 핑 도는 실신 전조증상과 한방 치료" 
+                     data-category="자율신경 · 실신/어지럼증" 
+                     data-date="2026.01.05" 
+                     data-summary="청라 어지럼증 한의원에서 전하는 미주신경성 실신 전조 대처법과 혈관 탄력 강화 한약 치료입니다." 
+                     data-tags="청라어지럼증한의원, 미주신경성실신, 기립성저혈압, 혈류개선">
+                  <p>안녕하세요. <strong>부평역 7번 출구에서 청라, 루원시티 환자분들을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+
+                  <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
+                    &ldquo;공항철도 지하철 안에서 갑자기 눈앞이 캄캄해지고 식은땀이 흐르며 주저앉았습니다.&rdquo;<br>
+                    &ldquo;병원에서는 미주신경성 실신이라는데 한의원 치료로 재발을 막을 수 있나요?&rdquo;
+                  </blockquote>
+
+                  <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">1. 미주신경성 실신의 발생 기전과 한방 치료</h3>
+                  <p>부교감신경의 과도한 작동으로 하체 혈관이 확장되어 뇌 혈류가 급감하는 질환입니다. 심장과 비장의 기운을 돋우는 맞춤 탕전으로 혈관 탄력을 높여 실신을 근본 예방합니다.</p>
+                </div>
+              </article>
+
+              <!-- [불면증 1] -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -270,29 +268,29 @@ sections:
                     <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
                   </div>
                   <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-insomnia-1')">
-                    [부천 상동·중동·신중동 불면증 한의원/병원] 새벽 2~3시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리
+                    [계양구 불면증 한의원] 새벽 2~3시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    부천시 상동, 중동, 신중동, 소사동 주민들을 위한 수면제 없이 뇌의 열을 내리고 깊은 잠을 유도하는 청열안신 한약 치료를 설명합니다.
+                    수면제 없이 뇌의 열을 내리고 깊은 잠을 유도하는 청열안신 한약 치료를 설명합니다.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 부천 불면증 • 상동 한의원 • 신중동 수면장애</span>
+                  <span class="text-[11px] text-[#68736E]">• 계양구 불면증 • 수면유지장애 • 청열안신</span>
                   <button type="button" onclick="openColumnModal('col-insomnia-1')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-book-open text-[10px]"></i>
                   </button>
                 </div>
                 <div id="data-col-insomnia-1" style="display:none;" 
-                     data-title="[부천 상동·중동·신중동 불면증 한의원/병원] 새벽 2~3시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리" 
+                     data-title="[계양구 불면증 한의원] 새벽 2~3시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리" 
                      data-category="불면증 · 수면장애" 
                      data-date="2026.02.20" 
-                     data-summary="부천시(상동, 중동, 신중동, 원미동) 불면증 한의원에서 전하는 새벽 중도각성과 다몽증 원인, 뇌 과각성을 해소하는 맞춤 한약 숙면 치료법입니다." 
-                     data-tags="부천불면증한의원, 상동수면장애, 중동불면증병원, 신중동한의원, 숙면한약">
-                  <p>안녕하세요. <strong>부평역 7번 출구에서 부천시(상동, 중동, 신중동, 소사동, 원미동) 환자분들의 수면장애를 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+                     data-summary="계양구 불면증 한의원에서 전하는 새벽 중도각성과 다몽증 원인, 뇌 과각성을 해소하는 맞춤 한약 숙면 치료법입니다." 
+                     data-tags="계양구불면증한의원, 계산동수면장애, 수면유지장애, 숙면한약">
+                  <p>안녕하세요. <strong>부평역 7번 출구에서 계양구 환자분들의 수면장애를 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
                   <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
-                    &ldquo;부천 상동 인근 병원에서 수면제를 처방받아 먹고 있는데, 약 없이 스스로 깊이 자고 싶습니다.&rdquo;<br>
+                    &ldquo;수면제를 처방받아 먹고 있는데, 약 없이 스스로 깊이 자고 싶습니다.&rdquo;<br>
                     &ldquo;새벽 2~3시만 되면 눈이 번쩍 떠져 다시 잠을 못 잡니다.&rdquo;
                   </blockquote>
 
@@ -301,7 +299,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [우울·스트레스 1: 김포시·영종도·동구/중구] -->
+              <!-- [우울·스트레스 1] -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -309,26 +307,26 @@ sections:
                     <span class="text-xs text-[#68736E]">권형근 원장 칼럼</span>
                   </div>
                   <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('col-stress-1')">
-                    [영종도·김포·인천중구 화병/우울증 한의원] 가슴 답답함과 목 이물감(매핵기), 울화병 한의학 치료
+                    [영종도 화병/우울증 한의원] 가슴 답답함과 목 이물감(매핵기), 울화병 한의학 치료
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    영종도, 김포, 인천 중구·동구, 강화·옹진군 환자분들을 위한 가슴 답답함과 매핵기(목 이물감), 분심기음 한약 처방을 설명합니다.
+                    가슴 답답함과 매핵기(목 이물감), 분심기음 한약 처방을 설명합니다.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 영종도 화병 • 김포 우울증 • 매핵기 한약</span>
+                  <span class="text-[11px] text-[#68736E]">• 영종도 화병 • 매핵기 한약 • 울화병 치료</span>
                   <button type="button" onclick="openColumnModal('col-stress-1')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-book-open text-[10px]"></i>
                   </button>
                 </div>
                 <div id="data-col-stress-1" style="display:none;" 
-                     data-title="[영종도·김포·인천중구 화병/우울증 한의원] 가슴 답답함과 목 이물감(매핵기), 울화병 한의학 치료" 
+                     data-title="[영종도 화병/우울증 한의원] 가슴 답답함과 목 이물감(매핵기), 울화병 한의학 치료" 
                      data-category="우울증 · 화병/스트레스" 
                      data-date="2025.10.12" 
-                     data-summary="영종도, 김포, 인천 중구·동구 화병 우울증 한의원에서 전하는 가슴 답답함, 매핵기(목 이물감) 치료 분심기음 한약과 신경안정 솔루션입니다." 
-                     data-tags="영종도화병한의원, 김포우울증병원, 인천중구한의원, 매핵기치료, 분심기음">
-                  <p>안녕하세요. <strong>부평역 7번 출구에서 영종도, 김포시, 인천 중구·동구, 강화·옹진군 환자분들의 화병과 신경정신과 질환을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
+                     data-summary="영종도 화병 우울증 한의원에서 전하는 가슴 답답함, 매핵기(목 이물감) 치료 분심기음 한약과 신경안정 솔루션입니다." 
+                     data-tags="영종도화병한의원, 매핵기치료, 분심기음, 한방신경정신과">
+                  <p>안녕하세요. <strong>부평역 7번 출구에서 영종도, 인천 중구 환자분들의 화병을 진료하는 해아림한의원 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
                   <blockquote class="bg-[#F2F7F4] border-l-4 border-l-[#2F5D50] p-4 rounded-r-xl my-4 text-[#3D4D47] text-sm leading-relaxed italic">
                     &ldquo;가슴 한가운데 바위가 얹힌 것처럼 답답하고 목에 무언가 걸려 넘어가지 않습니다.&rdquo;<br>
