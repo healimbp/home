@@ -255,6 +255,7 @@ ${newCol.contentHtml}
               </article>
 `;
 
+  let fileContent = fs.readFileSync(columnIndexPath, 'utf-8');
   // grid 내 첫 번째 요소 앞에 주입
   const gridMarker = '<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="column-grid">';
   if (fileContent.includes(gridMarker)) {

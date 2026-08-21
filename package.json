@@ -8,6 +8,7 @@
     "build": "hugo --minify"
   },
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/cli": "^4.1.12",
     "@tailwindcss/typography": "^0.5.10",
     "pagefind": "^1.4.0",
