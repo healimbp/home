@@ -35,7 +35,7 @@ sections:
                 <i class="fa-solid fa-comment"></i>
                 <span>카카오톡 비밀 상담</span>
               </a>
-              <a href="/consultation/" class="heal-btn heal-btn-naver shadow-md">
+              <a href="https://map.naver.com/p/search/%ED%95%B4%EC%95%84%EB%A6%BC%ED%95%9C%EC%9D%98%EC%9B%90%20%EC%9D%B8%EC%B2%9C%EB%B6%80%ED%8F%89%EC%A0%90" target="_blank" rel="noopener" class="heal-btn heal-btn-naver shadow-md">
                 <i class="fa-solid fa-calendar-check"></i>
                 <span>네이버 간편 예약</span>
               </a>
