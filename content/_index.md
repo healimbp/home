@@ -355,7 +355,7 @@ sections:
                   <div class="heal-step-number">01</div>
                   <span class="text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-full">정밀 진단</span>
                 </div>
-                <h3 class="text-base font-extrabold text-[#26332E]">1:1 심층 문진 & 맥진</h3>
+                <h3 class="text-base font-extrabold text-[#26332E]">1:1 심층 문진</h3>
                 <p class="text-xs text-[#68736E] leading-relaxed">
                   현재 겪는 증상뿐 아니라 발병 시기, 심리적 스트레스 유발 요인, 체질 및 장부 기능을 종합적으로 파악합니다.
                 </p>
