@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { publishToTistory } from './publish-tistory.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -364,9 +365,11 @@ async function main() {
   await updateColumnPage(column, slug);
   console.log(`[Auto-Column SEO] Published column: "${column.title}"`);
   await sendTelegramNotification(column, slug);
+  await publishToTistory(column, slug);
 }
 
 main().catch(err => {
   console.error('[Auto-Column SEO] Fatal Error:', err);
   process.exit(1);
 });
+
