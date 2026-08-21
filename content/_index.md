@@ -267,6 +267,31 @@ sections:
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5" id="home-column-grid">
+
+              <!-- 칼럼 1: 최신 발행 칼럼 (불면증 · 수면장애) -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">불면증 · 수면장애</span>
+                    <span class="text-[11px] text-[#68736E]">2026-08-21 • 최신 칼럼</span>
+                  </div>
+                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                    <a href="/column/post-2026-08-21-insomnia-7363/" class="hover:underline">
+                      [인천 부평 불면증 한의원] 악몽과 가위눌림, 심비양허를 보강하여 깊은 델타파 숙면 유도
+                    </a>
+                  </h3>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
+                    인천 부평 지역에서 불면증 · 수면장애 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 인천 부평한의원 • 부평한의원</span>
+                  <a href="/column/post-2026-08-21-insomnia-7363/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    전문 읽기 →
+                  </a>
+                </div>
+              </div>
+
               <!-- 칼럼 1: 최신 발행 칼럼 (논현동 공황) -->
               <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
