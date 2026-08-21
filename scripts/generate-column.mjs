@@ -212,9 +212,24 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
 // 5. content/column/_index.md 에 신규 칼럼 주입
 async function updateColumnPage(newCol) {
   const columnIndexPath = path.join(rootDir, 'content', 'column', '_index.md');
-  let fileContent = fs.readFileSync(columnIndexPath, 'utf-8');
+  const slug = `post-${newCol.date}-${newCol.category}-${Date.now().toString().slice(-4)}`;
+  const singlePostPath = path.join(rootDir, 'content', 'column', `${slug}.md`);
 
-  // 신규 칼럼 카드 HTML
+  const singlePostContent = `---
+title: "${newCol.title.replace(/"/g, '\\"')}"
+summary: "${newCol.summary.replace(/"/g, '\\"')}"
+date: "${newCol.date}"
+type: column
+category: "${newCol.categoryName}"
+tags: [${newCol.tags.map(t => `"${t}"`).join(', ')}]
+---
+
+${newCol.contentHtml}
+`;
+  fs.writeFileSync(singlePostPath, singlePostContent, 'utf-8');
+  console.log(`[Auto-Column SEO] Created full-page post: ${singlePostPath}`);
+
+  // 신규 칼럼 카드 HTML (직접 링크)
   const newCardHtml = `
               <!-- [SEO 자동발행: ${newCol.categoryName} - ${newCol.date}] -->
               <article class="column-item ${newCol.category} heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
@@ -223,8 +238,8 @@ async function updateColumnPage(newCol) {
                     <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">${newCol.categoryName}</span>
                     <span class="text-xs text-[#68736E]">${newCol.date} • 권형근 원장 칼럼</span>
                   </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('${newCol.id}')">
-                    ${newCol.title}
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/${slug}/" class="hover:underline">${newCol.title}</a>
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
                     ${newCol.summary}
@@ -232,20 +247,10 @@ async function updateColumnPage(newCol) {
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
                   <span class="text-[11px] text-[#68736E]">• ${newCol.tags.join(' • ')}</span>
-                  <button type="button" onclick="openColumnModal('${newCol.id}')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
+                  <a href="/column/${slug}/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
-                    <i class="fa-solid fa-book-open text-[10px]"></i>
-                  </button>
-                </div>
-
-                <!-- 숨겨진 칼럼 전체 본문 데이터 (인페이지 모달용) -->
-                <div id="data-${newCol.id}" style="display:none;" 
-                     data-title="${newCol.title.replace(/"/g, '&quot;')}" 
-                     data-category="${newCol.categoryName}" 
-                     data-date="${newCol.date}" 
-                     data-summary="${newCol.summary.replace(/"/g, '&quot;')}" 
-                     data-tags="${newCol.tags.join(', ')}">
-${newCol.contentHtml}
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
                 </div>
               </article>
 `;
@@ -258,7 +263,7 @@ ${newCol.contentHtml}
 
   // update content/column/_index.md
   fs.writeFileSync(columnIndexPath, fileContent, 'utf-8');
-  console.log(`[Auto-Column SEO] Successfully updated content/column/_index.md with clean concise titles!`);
+  console.log(`[Auto-Column SEO] Successfully updated content/column/_index.md with direct links!`);
 }
 
 // 실행
