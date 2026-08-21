@@ -12,15 +12,11 @@ tags: ["영종도화병한의원", "화병치료", "울화병", "매핵기", "�
 
 오랜 기간 갈등과 억울함, 분노를 표출하지 못하고 속으로 삭이며 살아오신 한국인 특유의 문화관련 질환 **화병(火病)**과 **매핵기(梅核氣)**의 전형적인 증상입니다.
 
----
-
 ### 1. 화병과 매핵기의 신체화 기전: 간기울결(肝氣鬱結)
 
 기운이 온몸을 원활하게 흘러야 하는데 억눌린 감정으로 인해 기운이 명치와 가슴에 뭉쳐 정체됩니다.
 
 뭉친 기운은 시간이 지나면서 **열(火)로 변해 가슴을 답답하게 조이고, 목구멍 근육을 경련시켜 이물감(매핵기)을 만들며, 머리로 치솟아 편두통과 안면홍조, 불면증**을 일으킵니다.
-
----
 
 ### 2. 해아림의 화병 소통 한방 치료 프로토콜
 
@@ -28,26 +24,55 @@ tags: ["영종도화병한의원", "화병치료", "울화병", "매핵기", "�
 * **전중혈·단중혈 약침 및 온열 치료**: 굳어진 흉골 부위 긴장을 풀어 심장 박동을 편안하게 만듭니다.
 * **두개천골 추나요법**: 흉추와 경추를 바로잡아 자율신경계 소통을 원활하게 합니다.
 
----
-
 ### 3. 진료실 자주 묻는 질문 (FAQ & Q&A)
 
-**Q1. 이비인후과나 위내시경 검사에서는 목과 식도에 아무 이상이 없다는데, 왜 계속 무언가 걸려 있는 느낌(매핵기)이 들까요?**  
-> **A.** 매핵기(梅核氣)는 실제 혹이나 이물질이 있어서가 아니라, 극심한 스트레스와 억압된 감정(간기울결)으로 인해 인후부와 식도 주변 자율신경계가 과민해져 평활근이 미세하게 수축·경련하기 때문에 발생합니다. 따라서 소염진통제나 위장약보다는 뭉친 기운과 열을 풀어주는 한방 소기(疏氣) 치료가 훨씬 효과적입니다.
-
-**Q2. 화병과 우울증, 공황장애는 어떻게 다른가요?**  
-> **A.** 화병은 억울함이나 분노, 답답함이 주된 감정이며 가슴 뻐근함, 상열감, 목 이물감 등 뚜렷한 신체화 증상을 동반합니다. 반면 우울증은 무기력과 흥미 상실, 공황장애는 급격한 공포와 호흡곤란이 두드러집니다. 다만 이 질환들은 모두 자율신경 및 변연계 불균형을 공유하므로 함께 동반되는 경우가 많으며, 해아림에서는 통합적으로 진단하고 치료합니다.
-
-**Q3. 한약이 마음의 답답함이나 분노를 가라앉히는 데 실제로 도움이 되나요?**  
-> **A.** 네. 한의학에서 감정은 오장육부의 기혈 상태와 직결됩니다. 분심기음(分心氣飮)이나 가미소요산 같은 처방은 가슴(전중혈 부위)에 정체된 열기를 흩어버리고 뇌 신경전달물질의 균형을 되찾아주어, 마음이 차분해지고 답답했던 호흡이 시원하게 트이도록 돕습니다.
-
-**Q4. 화병 한방 치료 기간은 보통 얼마나 걸리나요?**  
-> **A.** 유병 기간에 따라 차이가 있지만, 보통 2~4주 이내에 목 이물감과 가슴 답답함, 상열감이 현저히 가벼워지며, 3개월 내외의 꾸준한 한약·침구 치료로 울체된 화기를 완전히 배출하고 신경계 자생력을 공고히 합니다.
-
-**Q5. 직장인이라 낮에 시간 내기 어려운데 통원 치료가 가능한가요?**  
-> **A.** 해아림한의원 인천부평점은 월·수·금 저녁 8시까지 야간진료를 시행하며, 토요일(09:00~15:00)과 공휴일(09:00~13:00)에도 점심시간 없이 연속 진료를 진행하여 편안하게 통원 치료를 받으실 수 있습니다.
-
----
+<div class="space-y-3.5 my-6 not-prose">
+  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
+    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
+      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q1</span>
+      <span>이비인후과나 내과 내시경 검사에서는 목에 아무것도 없다는데 왜 계속 목에 이물질이 걸린 느낌(매핵기)이 드나요?</span>
+    </div>
+    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
+      매핵기(梅核氣)는 목에 실제 혹이나 염증이 있는 것이 아니라, 스트레스와 억울한 감정(간기울결)으로 인해 인후부 주변의 자율신경과 근육이 과도하게 긴장·수축되어 발생하는 기능적 이상 감각입니다. 기운을 소통시키는 분심기음 계열의 한약으로 뭉친 기를 풀어주어야 사라집니다.
+    </p>
+  </div>
+  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
+    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
+      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q2</span>
+      <span>화병으로 인한 가슴 답답함과 열감은 갱년기 증상과 어떻게 다른가요?</span>
+    </div>
+    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
+      갱년기 상열감은 호르몬 변화로 불규칙하게 얼굴 위주로 붉어지는 경향이 있는 반면, 화병은 억울함·분노·스트레스 사건과 밀접하게 연관되어 가슴 한가운데(전중혈)를 누르면 극심한 통증이 있고 목 이물감, 한숨, 우울감이 동반됩니다.
+    </p>
+  </div>
+  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
+    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
+      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q3</span>
+      <span>화병 치료를 위해 신경안정제나 항우울제를 오래 복용해도 괜찮을까요?</span>
+    </div>
+    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
+      양약은 급한 신경 흥분을 가라앉히지만 감정의 억압으로 굳어진 신체 기혈 울체를 근본적으로 풀어내지는 못합니다. 한방 치료는 심장과 간장의 울화(鬱火)를 내려 억눌린 기운을 순환시키므로 감정 기복과 신체 증상을 자연스럽게 회복시킵니다.
+    </p>
+  </div>
+  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
+    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
+      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q4</span>
+      <span>화병 치료 기간은 보통 얼마나 걸리나요?</span>
+    </div>
+    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
+      가슴 답답함, 목 이물감, 두통 등 급성 신체 증상은 ～개월 내에 크게 호전됩니다. 이후 ～개월 차에는 자율신경계 밸런스를 바로잡고 수면의 질을 정상화하여 스트레스에 흔들리지 않는 몸을 만듭니다.
+    </p>
+  </div>
+  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
+    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
+      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q5</span>
+      <span>첫 진료 시 어떤 검사를 받게 되나요?</span>
+    </div>
+    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
+      적외선 체열 검사(상열하한 울화 패턴 분석), 뇌파 검사(두뇌 스트레스 뇌파 측정), 간이정신진단검사를 시행하며 전중혈 압통 검사와 복진을 통해 화병의 깊이를 정밀 진단합니다.
+    </p>
+  </div>
+</div>
 
 ### 4. 일상생활 속 화병 완화 가이드
 
