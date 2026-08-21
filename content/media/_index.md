@@ -33,19 +33,17 @@ sections:
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               
               <!-- 도서 1: 토닥토닥 틱장애 -->
-              <div class="heal-card bg-white p-6 sm:p-7 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-[#DDE6E1] shadow-sm hover:shadow-md transition">
-                <!-- YES24 정품 책 표지 이미지 -->
+              <div class="heal-card bg-white p-6 sm:p-7 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-[#DDE6E1] shadow-sm">
+                <!-- 책 표지 이미지 -->
                 <div class="w-40 sm:w-44 flex-shrink-0">
-                  <a href="https://www.yes24.com/product/goods/108747541" target="_blank" rel="noopener" class="block group">
-                    <div class="relative overflow-hidden rounded-xl shadow-md border border-gray-200">
-                      <img 
-                        src="/media/book-tic.jpg" 
-                        alt="토닥토닥 틱장애 (슬기로운 ADHD 틱장애 완치 지침서) - 해아림한의원" 
-                        class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300"
-                        loading="lazy"
-                      />
-                    </div>
-                  </a>
+                  <div class="relative overflow-hidden rounded-xl shadow-md border border-gray-200">
+                    <img 
+                      src="/media/book-tic.jpg" 
+                      alt="토닥토닥 틱장애 (슬기로운 ADHD 틱장애 완치 지침서) - 해아림한의원" 
+                      class="w-full h-auto object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
 
                 <!-- 도서 설명 -->
@@ -70,31 +68,26 @@ sections:
                       <i class="fa-solid fa-check text-[#2F5D50]"></i>
                       <span>아이 두뇌 자생력을 키우는 생활 관리법</span>
                     </div>
-                  </div>
-
-                  <div class="pt-2">
-                    <a href="https://www.yes24.com/product/goods/108747541" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
-                      <span>YES24 도서 상세보기</span>
-                      <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-check text-[#2F5D50]"></i>
+                      <span>실제 치료 임상 사례와 부모 마음 돌봄</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- 도서 2: 걱정마 공황장애 -->
-              <div class="heal-card bg-white p-6 sm:p-7 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-[#DDE6E1] shadow-sm hover:shadow-md transition">
-                <!-- YES24 정품 책 표지 이미지 -->
+              <div class="heal-card bg-white p-6 sm:p-7 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-[#DDE6E1] shadow-sm">
+                <!-- 책 표지 이미지 -->
                 <div class="w-40 sm:w-44 flex-shrink-0">
-                  <a href="https://www.yes24.com/product/goods/125085312" target="_blank" rel="noopener" class="block group">
-                    <div class="relative overflow-hidden rounded-xl shadow-md border border-gray-200">
-                      <img 
-                        src="/media/book-panic.jpg" 
-                        alt="걱정마 공황장애 (불안장애 자율신경실조증 공황장애 치료 완치지침서) - 해아림한의원" 
-                        class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300"
-                        loading="lazy"
-                      />
-                    </div>
-                  </a>
+                  <div class="relative overflow-hidden rounded-xl shadow-md border border-gray-200">
+                    <img 
+                      src="/media/book-panic.jpg" 
+                      alt="걱정마 공황장애 (불안장애 자율신경실조증 공황장애 치료 완치지침서) - 해아림한의원" 
+                      class="w-full h-auto object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
 
                 <!-- 도서 설명 -->
@@ -119,13 +112,10 @@ sections:
                       <i class="fa-solid fa-check text-[#2F5D50]"></i>
                       <span>교감-부교감 자율신경계 균형 회복 원리</span>
                     </div>
-                  </div>
-
-                  <div class="pt-2">
-                    <a href="https://www.yes24.com/product/goods/125085312" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
-                      <span>YES24 도서 상세보기</span>
-                      <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-check text-[#2F5D50]"></i>
+                      <span>약물 의존 없는 단계별 한방 치료 프로토콜</span>
+                    </div>
                   </div>
                 </div>
               </div>
