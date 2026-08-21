@@ -20,7 +20,7 @@ sections:
             </p>
           </div>
 
-          <!-- 2. 원장 인사말 -->
+          <!-- 2. 원장 인사말 & 프로필 약력 -->
           <div class="heal-card space-y-6 bg-white border-l-4 border-l-[#2F5D50] shadow-sm">
             <div class="flex items-center gap-4 border-b border-[#DDE6E1] pb-4">
               <div class="heal-ico text-2xl">
@@ -28,26 +28,72 @@ sections:
               </div>
               <div>
                 <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E]">해아림한의원 인천부평점 원장 권형근</h2>
-                <p class="text-xs sm:text-sm text-[#2F5D50] font-bold">한방신경정신과 · 자율신경실조증 1:1 맞춤 진료</p>
+                <p class="text-xs sm:text-sm text-[#2F5D50] font-bold">한방침구과 전문의 · 한방신경정신과 1:1 맞춤 진료</p>
               </div>
             </div>
 
-            <div class="space-y-4 text-sm sm:text-base text-[#3D4D47] leading-relaxed">
-              <p>
-                안녕하세요. <strong>해아림한의원 인천부평점 원장 권형근</strong>입니다.
-              </p>
-              <p>
-                인천, 부평, 부천 등지에서 많은 분들이 원인을 알 수 없는 불안, 불면, 어지럼증, 자율신경 이상 및 두뇌 질환으로 고통받으며 저희 한의원을 찾아오십니다. 병원에서 각종 검사를 받아보아도 "신경성", "스트레스성"이라는 말만 들었을 뿐, 명확한 해결책을 찾지 못해 답답해하시는 분들이 많습니다.
-              </p>
-              <p>
-                이러한 증상들은 단순한 신체적 문제가 아닌, <strong>마음과 몸의 균형이 깨졌을 때 우리 몸이 보내는 절박한 신호</strong>입니다.
-              </p>
-              <p>
-                해아림한의원 인천부평점은 눈앞의 증상만을 억제하는 임시방편 치료에 그치지 않습니다. 세심한 1:1 맞춤 진맥과 정밀 한방 진단을 통해 질환의 근본 원인을 찾고, 몸과 마음의 자율신경 균형을 다스려 <strong>스스로 회복할 수 있는 자생력</strong>을 키워드립니다.
-              </p>
-              <p class="font-bold text-[#2F5D50]">
-                지친 마음과 몸이 쉬어갈 수 있도록, 건강하고 평온한 일상으로 복귀하시는 길에 가장 든든하고 따뜻한 동반자가 되어 드리겠습니다.
-              </p>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              <!-- 인사말 본문 -->
+              <div class="lg:col-span-7 space-y-4 text-sm sm:text-base text-[#3D4D47] leading-relaxed">
+                <p>
+                  안녕하세요. <strong>해아림한의원 인천부평점 대표원장 권형근</strong>입니다.
+                </p>
+                <p>
+                  인천, 부평, 부천 등지에서 많은 분들이 원인을 알 수 없는 불안, 불면, 어지럼증, 자율신경 이상 및 두뇌 질환으로 고통받으며 저희 한의원을 찾아오십니다. 병원에서 각종 검사를 받아보아도 "신경성", "스트레스성"이라는 말만 들었을 뿐, 명확한 해결책을 찾지 못해 답답해하시는 분들이 많습니다.
+                </p>
+                <p>
+                  이러한 증상들은 단순한 신체적 문제가 아닌, <strong>마음과 몸의 균형이 깨졌을 때 우리 몸이 보내는 절박한 신호</strong>입니다.
+                </p>
+                <p>
+                  해아림한의원 인천부평점은 눈앞의 증상만을 억제하는 임시방편 치료에 그치지 않습니다. 세심한 1:1 맞춤 진맥과 정밀 한방 진단을 통해 질환의 근본 원인을 찾고, 몸과 마음의 자율신경 균형을 다스려 <strong>스스로 회복할 수 있는 자생력</strong>을 키워드립니다.
+                </p>
+                <p class="font-bold text-[#2F5D50]">
+                  지친 마음과 몸이 쉬어갈 수 있도록, 건강하고 평온한 일상으로 복귀하시는 길에 가장 든든하고 따뜻한 동반자가 되어 드리겠습니다.
+                </p>
+              </div>
+
+              <!-- 원장 약력 (Profile) -->
+              <div class="lg:col-span-5 bg-[#F2F7F4] p-5 sm:p-6 rounded-2xl border border-[#DDE6E1] space-y-4">
+                <div class="flex items-center gap-2 border-b border-[#DDE6E1] pb-3">
+                  <i class="fa-solid fa-id-card-clip text-[#2F5D50] text-lg"></i>
+                  <h3 class="font-extrabold text-base text-[#26332E]">권형근 대표원장 약력</h3>
+                </div>
+
+                <div class="space-y-2 text-xs sm:text-sm text-[#3D4D47]">
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-[#2F5D50] mt-1 text-xs"></i>
+                    <div><strong class="text-[#26332E]">한방침구과 전문의</strong></div>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-[#2F5D50] mt-1 text-xs"></i>
+                    <div>현) 해아림한의원 인천부평점 대표원장</div>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-[#2F5D50] mt-1 text-xs"></i>
+                    <div>전) 몸바로한의원 광교점 대표원장</div>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-[#2F5D50] mt-1 text-xs"></i>
+                    <div>전) 국군고양병원 한방과장</div>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-[#2F5D50] mt-1 text-xs"></i>
+                    <div>삼세한방병원 침구과 전문의 수료</div>
+                  </div>
+                </div>
+
+                <div class="border-t border-[#DDE6E1] pt-3">
+                  <div class="text-xs font-bold text-[#2F5D50] mb-2">학회 및 학술 활동</div>
+                  <ul class="space-y-1 text-xs text-[#53615B]">
+                    <li>• 대한한방신경정신과학회 정회원</li>
+                    <li>• 대한한방소아과학회 정회원</li>
+                    <li>• 척추신경추나의학회 정회원</li>
+                    <li>• 대한침구의학회 정회원</li>
+                    <li>• 대한동의방약학회 정회원</li>
+                    <li>• 몸바로 아카데미 수료</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
