@@ -58,7 +58,7 @@ sections:
               <h2 class="text-lg font-extrabold text-[#26332E]">네이버 간편 진료예약</h2>
               <p class="text-xs text-[#68736E]">원하시는 날짜와 시간대를 선택하여 대기 없이 편리하게 예약하세요.</p>
               <div class="text-sm font-extrabold text-[#03C75A]">24시간 실시간 접수</div>
-              <a href="https://map.naver.com/p/search/%ED%95%B4%EC%95%84%EB%A6%BC%ED%95%9C%EC%9D%98%EC%9B%90%20%EC%9D%B8%EC%B2%9C%EB%B6%80%ED%8F%89%EC%A0%90" target="_blank" rel="noopener" class="heal-btn heal-btn-naver w-full text-sm">
+              <a href="https://booking.naver.com/booking/13/bizes/934695" target="_blank" rel="noopener" class="heal-btn heal-btn-naver w-full text-sm">
                 <i class="fa-solid fa-check"></i>
                 <span>네이버 예약 바로가기</span>
               </a>
