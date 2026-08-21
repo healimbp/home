@@ -1,10 +1,16 @@
-name: Daily AI Health Column Auto-Publisher
+name: Daily 4x AI Health Column Auto-Publisher
 
 on:
   schedule:
-    # 매일 2회 자동 발행: 오전 9:00 KST (00:00 UTC), 오후 4:00 KST (07:00 UTC)
-    - cron: '0 0 * * *'
+    # 하루 4회 자동 발행 (한국 시간 KST 기준):
+    # 1. 오전 08:00 KST (23:00 UTC) - 출근 시간대
+    # 2. 오후 12:00 KST (03:00 UTC) - 점심 시간대
+    # 3. 오후 16:00 KST (07:00 UTC) - 오후/퇴근 전
+    # 4. 오후 20:00 KST (11:00 UTC) - 저녁/야간 시간대
+    - cron: '0 23 * * *'
+    - cron: '0 3 * * *'
     - cron: '0 7 * * *'
+    - cron: '0 11 * * *'
   # GitHub 웹에서 수동으로 'Run workflow' 버튼을 눌러 즉시 1개 발행도 가능
   workflow_dispatch:
 
@@ -43,6 +49,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new column generated."
           else
-            git commit -m "feat(column): auto-publish daily medical column by Director Kwon Hyung-keun"
+            git commit -m "feat(column): auto-publish 4x daily medical column by Director Kwon Hyung-keun"
             git push origin main
           fi

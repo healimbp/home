@@ -76,8 +76,9 @@ const CATEGORIES = [
 const now = new Date();
 const kstDate = new Date(now.getTime() + (9 * 60 * 60 * 1000));
 const dayOfYear = Math.floor((kstDate - new Date(kstDate.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
-const hour = kstDate.getHours();
-const runIndex = (dayOfYear * 2) + (hour >= 12 ? 1 : 0);
+// 하루 4회 슬롯 계산 (08시, 12시, 16시, 20시)
+const slot = hour < 10 ? 0 : hour < 14 ? 1 : hour < 18 ? 2 : 3;
+const runIndex = (dayOfYear * 4) + slot;
 
 const selectedCat = CATEGORIES[runIndex % CATEGORIES.length];
 const selectedTopic = selectedCat.topics[Math.floor(runIndex / CATEGORIES.length) % selectedCat.topics.length];
