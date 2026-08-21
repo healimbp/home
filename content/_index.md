@@ -31,7 +31,7 @@ sections:
                 <i class="fa-solid fa-phone"></i>
                 <span>전화 상담: 032-719-3472</span>
               </a>
-              <a href="http://pf.kakao.com/_Tcxcoxj/chat" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao shadow-md">
+              <a href="https://pf.kakao.com/_Tcxcoxj/chat" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao shadow-md">
                 <i class="fa-solid fa-comment"></i>
                 <span>카카오톡 비밀 상담</span>
               </a>
@@ -279,7 +279,7 @@ sections:
                 <i class="fa-solid fa-map-location-dot"></i>
                 <span>오시는 길 & 시간표</span>
               </a>
-              <a href="http://pf.kakao.com/_Tcxcoxj/chat" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao text-sm">
+              <a href="https://pf.kakao.com/_Tcxcoxj/chat" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao text-sm">
                 <i class="fa-solid fa-comment"></i>
                 <span>카톡 실시간 상담</span>
               </a>

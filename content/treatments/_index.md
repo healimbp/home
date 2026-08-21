@@ -206,7 +206,7 @@ sections:
               <i class="fa-solid fa-phone"></i>
               <span>전화 상담 문의: 032-719-3472</span>
             </a>
-            <a href="http://pf.kakao.com/_Tcxcoxj/chat" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao">
+            <a href="https://pf.kakao.com/_Tcxcoxj/chat" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao">
               <i class="fa-solid fa-comment"></i>
               <span>카카오톡 1:1 문의</span>
             </a>
