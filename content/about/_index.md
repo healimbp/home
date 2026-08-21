@@ -1,7 +1,7 @@
 ---
 title: "한의원 소개 & 원장 인사말"
 linkTitle: "한의원 소개"
-summary: "해아림한의원 인천부평점 권형근 원장 인사말, 진료 철학, 3대 약속 및 안심 맞춤 한약 안내"
+summary: "해아림한의원 인천부평점 권형근 원장 인사말, 진료 철학, 3대 약속 및 원내 시설 갤러리"
 type: landing
 sections:
   - block: html
@@ -81,46 +81,92 @@ sections:
             </div>
           </div>
 
-          <!-- 4. 원내 시설 및 안심 탕전 시스템 -->
-          <div class="heal-card space-y-6 bg-white">
-            <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E] text-center">쾌적하고 프라이빗한 치유 공간</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-              <div class="p-4 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] space-y-2">
-                <div class="heal-ico mx-auto">
-                  <i class="fa-solid fa-door-closed"></i>
+          <!-- 4. 해아림한의원 인천부평점 원내 시설 갤러리 (실제 사진) -->
+          <div class="space-y-6">
+            <div class="text-center space-y-2">
+              <span class="heal-hero-badge">Clinic Facilities</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">쾌적하고 편안한 치유 공간</h2>
+              <p class="text-xs sm:text-sm text-[#68736E]">환자분들이 머무시는 모든 순간에 평온함과 안락함을 느끼실 수 있도록 세심하게 준비했습니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 시설 1: 대기실 & 인포 -->
+              <div class="heal-card bg-white p-4 space-y-3 shadow-sm hover:shadow-md transition">
+                <div class="relative overflow-hidden rounded-xl h-48 bg-gray-100">
+                  <img src="/images/clinic/bp02.jpg" alt="해아림한의원 인천부평점 로비 및 대기실" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
                 </div>
-                <div class="font-extrabold text-sm text-[#26332E]">1:1 프라이빗 상담실</div>
-                <p class="text-xs text-[#68736E]">비밀이 보장되는 아늑한 독립 상담 공간</p>
+                <div>
+                  <h3 class="font-extrabold text-[#26332E] text-base">로비 및 대기 라운지</h3>
+                  <p class="text-xs text-[#68736E]">편안하고 따뜻한 조명과 아늑한 대기 공간</p>
+                </div>
               </div>
-              <div class="p-4 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] space-y-2">
-                <div class="heal-ico mx-auto">
-                  <i class="fa-solid fa-wave-square"></i>
+
+              <!-- 시설 2: 원장 진료실 -->
+              <div class="heal-card bg-white p-4 space-y-3 shadow-sm hover:shadow-md transition">
+                <div class="relative overflow-hidden rounded-xl h-48 bg-gray-100">
+                  <img src="/images/clinic/bp04.jpg" alt="해아림한의원 인천부평점 원장 진료실" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
                 </div>
-                <div class="font-extrabold text-sm text-[#26332E]">두뇌 & 자율신경 검사실</div>
-                <p class="text-xs text-[#68736E]">정밀 뇌파 및 자율신경계 기능 측정 장비</p>
+                <div>
+                  <h3 class="font-extrabold text-[#26332E] text-base">1:1 맞춤 진료실</h3>
+                  <p class="text-xs text-[#68736E]">심도 있는 문진과 프라이빗한 1:1 상담실</p>
+                </div>
               </div>
-              <div class="p-4 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] space-y-2">
-                <div class="heal-ico mx-auto">
-                  <i class="fa-solid fa-bed-pulse"></i>
+
+              <!-- 시설 3: 추나 치료실 -->
+              <div class="heal-card bg-white p-4 space-y-3 shadow-sm hover:shadow-md transition">
+                <div class="relative overflow-hidden rounded-xl h-48 bg-gray-100">
+                  <img src="/images/clinic/bp05.jpg" alt="해아림한의원 인천부평점 추나 치료실" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
                 </div>
-                <div class="font-extrabold text-sm text-[#26332E]">집중 침구 치료실</div>
-                <p class="text-xs text-[#68736E]">온열 요법 및 침·뜸 치료가 가능한 안정 베드</p>
+                <div>
+                  <h3 class="font-extrabold text-[#26332E] text-base">두개천골 & 추나 치료실</h3>
+                  <p class="text-xs text-[#68736E]">신경계 균형과 척추·경추 교정을 위한 전용 베드</p>
+                </div>
               </div>
-              <div class="p-4 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] space-y-2">
-                <div class="heal-ico mx-auto">
-                  <i class="fa-solid fa-flask-vial"></i>
+
+              <!-- 시설 4: 검사실 -->
+              <div class="heal-card bg-white p-4 space-y-3 shadow-sm hover:shadow-md transition">
+                <div class="relative overflow-hidden rounded-xl h-48 bg-gray-100">
+                  <img src="/images/clinic/bp07.jpg" alt="해아림한의원 인천부평점 뇌기능 및 자율신경 검사실" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
                 </div>
-                <div class="font-extrabold text-sm text-[#26332E]">위생 청정 탕전실</div>
-                <p class="text-xs text-[#68736E]">철저한 위생 관리와 1:1 맞춤 안심 탕전</p>
+                <div>
+                  <h3 class="font-extrabold text-[#26332E] text-base">뇌기능 & 자율신경 검사실</h3>
+                  <p class="text-xs text-[#68736E]">적외선 체열 및 자율신경 정밀 측정 시스템</p>
+                </div>
+              </div>
+
+              <!-- 시설 5: 침구 치료실 -->
+              <div class="heal-card bg-white p-4 space-y-3 shadow-sm hover:shadow-md transition">
+                <div class="relative overflow-hidden rounded-xl h-48 bg-gray-100">
+                  <img src="/images/clinic/bp06.jpg" alt="해아림한의원 인천부평점 침구 치료실" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
+                </div>
+                <div>
+                  <h3 class="font-extrabold text-[#26332E] text-base">개별 침구 및 온열 치료실</h3>
+                  <p class="text-xs text-[#68736E]">심신 이완을 돕는 안락한 1인 치료 베드</p>
+                </div>
+              </div>
+
+              <!-- 시설 6: 외관 & 위치 -->
+              <div class="heal-card bg-white p-4 space-y-3 shadow-sm hover:shadow-md transition">
+                <div class="relative overflow-hidden rounded-xl h-48 bg-gray-100">
+                  <img src="/images/clinic/bp01.jpg" alt="해아림한의원 인천부평점 건물 외관" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
+                </div>
+                <div>
+                  <h3 class="font-extrabold text-[#26332E] text-base">건물 외관 (부평역 7번 출구)</h3>
+                  <p class="text-xs text-[#68736E]">부평역 도보 5분 거리, 찾기 쉬운 2층 위치</p>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Bottom CTA -->
           <div class="text-center pt-2 flex flex-wrap justify-center gap-4">
-            <a href="/consultation/" class="heal-btn heal-btn-primary">
+            <a href="https://map.naver.com/p/search/%ED%95%B4%EC%95%84%EB%A6%BC%ED%95%9C%EC%9D%98%EC%9B%90%20%EC%9D%B8%EC%B2%9C%EB%B6%80%ED%8F%89%EC%A0%90" target="_blank" rel="noopener" class="heal-btn heal-btn-naver">
               <i class="fa-solid fa-calendar-check"></i>
-              <span>진료 예약 바로가기</span>
+              <span>네이버 간편 진료예약</span>
+            </a>
+            <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao">
+              <i class="fa-solid fa-comment"></i>
+              <span>카카오톡 1:1 상담</span>
             </a>
             <a href="/treatments/" class="heal-btn heal-btn-outline">
               <i class="fa-solid fa-stethoscope"></i>
