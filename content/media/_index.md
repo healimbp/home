@@ -1,7 +1,7 @@
 ---
 title: "학술활동 & 언론보도"
 linkTitle: "학술 & 언론보도"
-summary: "해아림한의원 원장단 공저 대표 저서(토닥토닥 틱장애, 괜찮아 공황장애), 방송 인터뷰, 주요 언론 보도 및 학술 연구 활동"
+summary: "해아림한의원 원장단 공저 대표 저서(토닥토닥 틱장애, 걱정마 공황장애), 방송 인터뷰, 주요 언론 보도 및 학술 연구 활동"
 type: landing
 sections:
   - block: html
@@ -20,7 +20,7 @@ sections:
             </p>
           </div>
 
-          <!-- 2. 대표 저서 (Books & Publications) -->
+          <!-- 2. 대표 저서 (Books & Publications) - YES24 공식 출간 도서 -->
           <div class="space-y-8">
             <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-[#DDE6E1] pb-3">
               <div>
@@ -34,16 +34,18 @@ sections:
               
               <!-- 도서 1: 토닥토닥 틱장애 -->
               <div class="heal-card bg-white p-6 sm:p-7 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-[#DDE6E1] shadow-sm hover:shadow-md transition">
-                <!-- 책 표지 이미지 -->
-                <div class="w-44 sm:w-48 flex-shrink-0">
-                  <div class="relative overflow-hidden rounded-xl shadow-lg border border-gray-200 group">
-                    <img 
-                      src="/media/book-tic.jpg" 
-                      alt="토닥토닥 틱장애 - 해아림한의원 의료진 공저" 
-                      class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300"
-                      loading="lazy"
-                    />
-                  </div>
+                <!-- YES24 정품 책 표지 이미지 -->
+                <div class="w-40 sm:w-44 flex-shrink-0">
+                  <a href="https://www.yes24.com/product/goods/108747541" target="_blank" rel="noopener" class="block group">
+                    <div class="relative overflow-hidden rounded-xl shadow-md border border-gray-200">
+                      <img 
+                        src="/media/book-tic.jpg" 
+                        alt="토닥토닥 틱장애 (슬기로운 ADHD 틱장애 완치 지침서) - 해아림한의원" 
+                        class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300"
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
                 </div>
 
                 <!-- 도서 설명 -->
@@ -53,10 +55,10 @@ sections:
                     《토닥토닥 틱장애》
                   </h3>
                   <div class="text-xs text-[#2F5D50] font-bold">
-                    해아림한의원 의료진 공저
+                    해아림한의원 원장단 공저 | 메이킹북스
                   </div>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    틱장애, 뚜렛증후군, ADHD로 고민하는 부모님과 아이들을 위한 따뜻한 치유 지침서. 두뇌 기저핵 기능 불균형의 원인 분석부터 가정 내 양육 코칭, 1:1 맞춤 한방 치료법을 상세히 수록했습니다.
+                    틱장애와 ADHD로 고민하는 부모님과 아이들을 위한 따뜻한 치유 지침서. 두뇌 기저핵 기능 불균형의 원인 분석부터 가정 내 양육 코칭, 1:1 맞춤 한방 치료법을 상세히 수록했습니다.
                   </p>
                   
                   <div class="pt-2 border-t border-[#F2F7F4] space-y-1.5 text-xs text-[#4E6159]">
@@ -68,39 +70,44 @@ sections:
                       <i class="fa-solid fa-check text-[#2F5D50]"></i>
                       <span>아이 두뇌 자생력을 키우는 생활 관리법</span>
                     </div>
-                    <div class="flex items-center gap-2">
-                      <i class="fa-solid fa-check text-[#2F5D50]"></i>
-                      <span>실제 치료 임상 사례와 부모 마음 돌봄</span>
-                    </div>
+                  </div>
+
+                  <div class="pt-2">
+                    <a href="https://www.yes24.com/product/goods/108747541" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
+                      <span>YES24 도서 상세보기</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <!-- 도서 2: 괜찮아 공황장애 -->
+              <!-- 도서 2: 걱정마 공황장애 -->
               <div class="heal-card bg-white p-6 sm:p-7 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-[#DDE6E1] shadow-sm hover:shadow-md transition">
-                <!-- 책 표지 이미지 -->
-                <div class="w-44 sm:w-48 flex-shrink-0">
-                  <div class="relative overflow-hidden rounded-xl shadow-lg border border-gray-200 group">
-                    <img 
-                      src="/media/book-panic.jpg" 
-                      alt="괜찮아 공황장애 - 해아림한의원 의료진 공저" 
-                      class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300"
-                      loading="lazy"
-                    />
-                  </div>
+                <!-- YES24 정품 책 표지 이미지 -->
+                <div class="w-40 sm:w-44 flex-shrink-0">
+                  <a href="https://www.yes24.com/product/goods/125085312" target="_blank" rel="noopener" class="block group">
+                    <div class="relative overflow-hidden rounded-xl shadow-md border border-gray-200">
+                      <img 
+                        src="/media/book-panic.jpg" 
+                        alt="걱정마 공황장애 (불안장애 자율신경실조증 공황장애 치료 완치지침서) - 해아림한의원" 
+                        class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300"
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
                 </div>
 
                 <!-- 도서 설명 -->
                 <div class="space-y-3 flex-1 text-left">
                   <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">공황 · 자율신경 솔루션</span>
                   <h3 class="text-xl font-extrabold text-[#26332E] leading-snug">
-                    《괜찮아 공황장애》
+                    《걱정마 공황장애》
                   </h3>
                   <div class="text-xs text-[#2F5D50] font-bold">
-                    해아림한의원 의료진 공저
+                    해아림한의원 원장단 공저 | 메이킹북스
                   </div>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                    갑작스러운 공황발작과 만성 불안, 자율신경실조증으로 고통받는 분들을 위한 실전 극복 가이드북. 뇌 신경계의 과흥분을 가라앉히는 한방 원리와 호흡 이완법, 약물 의존을 줄이는 자생력 회복 플랜을 담았습니다.
+                    갑작스러운 공황발작과 만성 불안, 자율신경실조증으로 고통받는 분들을 위한 실전 완치 지침서. 뇌 신경계 과흥분을 가라앉히는 원리와 약물 의존 없는 자생력 회복 프로토콜을 담았습니다.
                   </p>
                   
                   <div class="pt-2 border-t border-[#F2F7F4] space-y-1.5 text-xs text-[#4E6159]">
@@ -112,10 +119,13 @@ sections:
                       <i class="fa-solid fa-check text-[#2F5D50]"></i>
                       <span>교감-부교감 자율신경계 균형 회복 원리</span>
                     </div>
-                    <div class="flex items-center gap-2">
-                      <i class="fa-solid fa-check text-[#2F5D50]"></i>
-                      <span>약물 의존 없는 단계별 한방 치료 프로토콜</span>
-                    </div>
+                  </div>
+
+                  <div class="pt-2">
+                    <a href="https://www.yes24.com/product/goods/125085312" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
+                      <span>YES24 도서 상세보기</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -211,7 +221,7 @@ sections:
               <div class="p-3.5 bg-[#F2F7F4] rounded-xl border border-[#DDE6E1] flex items-start gap-3">
                 <i class="fa-solid fa-check text-[#2F5D50] mt-1 font-bold"></i>
                 <div>
-                  <strong>인천 · 부평 지역사회</strong> 청소년 멘탈 헬스케어 및 성인 스트레스 관리 건강 강좌 진행
+                  <strong>인천 · 부평 · 부천 지역사회</strong> 청소년 멘탈 헬스케어 및 성인 스트레스 관리 건강 강좌 진행
                 </div>
               </div>
             </div>
