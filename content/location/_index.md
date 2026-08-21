@@ -165,7 +165,7 @@ sections:
                   </div>
                   <div class="flex justify-between items-center max-w-[340px] text-red-600">
                     <span>일 &nbsp; 요 &nbsp; 일</span>
-                    <span class="font-bold">정기 휴무</span>
+                    <span class="font-bold">정기 휴진</span>
                   </div>
                 </div>
 
