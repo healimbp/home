@@ -1,0 +1,26 @@
+# Main Navigation Menus
+main:
+  - name: 홈
+    url: /
+    weight: 10
+  - name: 한의원 소개
+    url: /about/
+    weight: 20
+  - name: 주요 진료과목
+    url: /treatments/
+    weight: 30
+  - name: 오시는 길 & 진료시간
+    url: /location/
+    weight: 40
+  - name: 온라인 상담 & 예약
+    url: /consultation/
+    weight: 50
+  - name: 치료 후기
+    url: /reviews/
+    weight: 60
+  - name: 학술 & 언론보도
+    url: /media/
+    weight: 70
+  - name: 건강 칼럼
+    url: /column/
+    weight: 80

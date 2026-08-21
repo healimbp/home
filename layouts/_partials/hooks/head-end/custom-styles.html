@@ -1,0 +1,331 @@
+<!-- Web Fonts: Pretendard & Noto Sans KR -->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  :root {
+    /* 리아한의원(liabusan.kr) 영감 프리미엄 세이지 & 웜크림 팔레트 */
+    --sage: #2F5D50;
+    --sage-dark: #1F3F36;
+    --sage-light: #417364;
+    --sage2: #EAF3EF;
+    --sage-tint: #F2F7F4;
+    --sage-border: #ADC4BA;
+    --ink: #26332E;
+    --ink-light: #3D4D47;
+    --muted: #68736E;
+    --line: #DDE6E1;
+    --line-light: #EDF2EE;
+    --cream: #FAF8F3;
+    --cream-light: #FCFBF7;
+    --white: #FFFFFF;
+    --accent-gold: #B88A3B;
+    --accent-gold-light: #F7F0DF;
+
+    /* Semantic Mappings */
+    --heal-primary: var(--sage);
+    --heal-primary-dark: var(--sage-dark);
+    --heal-primary-light: var(--sage-light);
+    --heal-secondary: #4E7C67;
+    --heal-bg: var(--cream);
+    --heal-surface: var(--white);
+    --heal-text-main: var(--ink);
+    --heal-text-muted: var(--muted);
+    --heal-border: var(--line);
+    
+    /* Soft Elevation Shadows */
+    --heal-shadow-sm: 0 2px 10px rgba(38, 51, 46, 0.04);
+    --heal-shadow-md: 0 8px 24px rgba(38, 51, 46, 0.07);
+    --heal-shadow-lg: 0 16px 36px rgba(38, 51, 46, 0.10);
+  }
+
+  body {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif !important;
+    background-color: var(--cream);
+    color: var(--ink);
+    letter-spacing: -0.035em;
+    line-height: 1.6;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Pretendard", sans-serif !important;
+    color: var(--ink);
+    letter-spacing: -0.04em;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Header & Navigation */
+  .page-header {
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--line) !important;
+    box-shadow: 0 2px 12px rgba(47, 93, 80, 0.03);
+  }
+
+  .nav-link {
+    font-weight: 600;
+    color: var(--ink) !important;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    letter-spacing: -0.03em;
+  }
+  .nav-link:hover, .nav-link.active {
+    color: var(--sage) !important;
+    font-weight: 800;
+  }
+
+  /* Eyebrow badge (리아한의원 스타일) */
+  .heal-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.95rem;
+    border-radius: 9999px;
+    background-color: var(--sage2);
+    color: var(--sage);
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  /* Hero Gradient Box (리아한의원 시그니처 웜 그라디언트) */
+  .lia-hero-box {
+    background: linear-gradient(140deg, #E5F1EB 0%, #F6EFE3 100%);
+    border: 1px solid #D7E4DD;
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    color: var(--ink);
+    box-shadow: var(--heal-shadow-md);
+  }
+  @media (min-width: 640px) {
+    .lia-hero-box {
+      padding: 3.5rem 3rem;
+    }
+  }
+
+  /* Cards */
+  .heal-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 1.85rem;
+    transition: all 0.22s ease-in-out;
+    box-shadow: var(--heal-shadow-sm);
+  }
+  .heal-card:hover {
+    border-color: #8EAB9F;
+    transform: translateY(-3px);
+    box-shadow: var(--heal-shadow-md);
+  }
+
+  .heal-card-primary {
+    background: var(--sage);
+    color: var(--white);
+    border: none;
+    border-radius: 22px;
+    padding: 2.25rem;
+    box-shadow: 0 12px 32px rgba(47, 93, 80, 0.22);
+  }
+
+  .heal-card-primary h1,
+  .heal-card-primary h2,
+  .heal-card-primary h3,
+  .heal-card-primary p {
+    color: var(--white) !important;
+  }
+
+  /* Icon Container (리아한의원 ico 스타일) */
+  .heal-ico {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: var(--sage2);
+    color: var(--sage);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  /* Buttons */
+  .heal-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    padding: 0 1.35rem;
+    border-radius: 13px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: -0.025em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+  .heal-btn-primary {
+    background-color: var(--sage);
+    color: var(--white) !important;
+    box-shadow: 0 4px 14px rgba(47, 93, 80, 0.22);
+  }
+  .heal-btn-primary:hover {
+    background-color: var(--sage-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(47, 93, 80, 0.3);
+  }
+  .heal-btn-secondary {
+    background-color: var(--white);
+    color: var(--sage) !important;
+    border: 1px solid var(--sage-border);
+  }
+  .heal-btn-secondary:hover {
+    background-color: var(--sage2);
+    border-color: var(--sage);
+    transform: translateY(-2px);
+  }
+  .heal-btn-accent {
+    background-color: #2F5D50;
+    color: var(--white) !important;
+    box-shadow: 0 4px 14px rgba(47, 93, 80, 0.25);
+  }
+  .heal-btn-accent:hover {
+    background-color: var(--sage-dark);
+    transform: translateY(-2px);
+  }
+  .heal-btn-kakao {
+    background-color: #FEE500;
+    color: #191919 !important;
+    font-weight: 800;
+  }
+  .heal-btn-kakao:hover {
+    background-color: #edd500;
+    transform: translateY(-2px);
+  }
+  .heal-btn-naver {
+    background-color: #03C75A;
+    color: var(--white) !important;
+    font-weight: 800;
+  }
+  .heal-btn-naver:hover {
+    background-color: #02b150;
+    transform: translateY(-2px);
+  }
+  .heal-btn-outline {
+    border: 1.5px solid var(--sage-border);
+    color: var(--sage) !important;
+    background: var(--white);
+  }
+  .heal-btn-outline:hover {
+    background-color: var(--sage2);
+    color: var(--sage) !important;
+  }
+
+  /* Badge styling */
+  .heal-tag {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 9999px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    background-color: var(--sage2);
+    color: var(--sage);
+    margin-right: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  /* Table styling */
+  .heal-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: var(--heal-shadow-sm);
+  }
+  .heal-table th {
+    background: var(--sage);
+    color: white;
+    padding: 0.95rem 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .heal-table td {
+    padding: 0.95rem 1rem;
+    border-bottom: 1px solid var(--line-light);
+    text-align: center;
+    color: var(--ink);
+  }
+  .heal-table tr:last-child td {
+    border-bottom: none;
+  }
+  .heal-table tr:hover td {
+    background-color: var(--sage-tint);
+  }
+
+  /* Floating Bar */
+  .heal-floating-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 -4px 24px rgba(38, 51, 46, 0.08);
+    z-index: 999;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .heal-floating-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  /* Page content padding bottom for floating bar */
+  .page-body {
+    padding-bottom: 5.5rem;
+  }
+
+  /* Step box */
+  .heal-step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 12px;
+    background-color: var(--sage);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .heal-floating-container {
+      flex-wrap: wrap;
+    }
+    .heal-floating-bar {
+      padding: 0.5rem;
+    }
+  }
+</style>
