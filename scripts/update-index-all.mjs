@@ -5,17 +5,67 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const columnDir = path.resolve(__dirname, '..', 'content', 'column');
 
-// 20개 칼럼 메타데이터 목록 (순서 정렬 및 탭 클래스 매핑)
-const CATEGORY_MAP = {
-  '자율신경 · 실신/어지럼증': { class: 'autonomic', tab: 'autonomic' },
-  '공황 · 불안장애': { class: 'panic', tab: 'panic' },
-  '불면증 · 수면장애': { class: 'insomnia', tab: 'insomnia' },
-  '소아 틱장애 · ADHD': { class: 'tic', tab: 'tic' },
-  '우울증 · 화병/스트레스': { class: 'stress', tab: 'stress' }
+// 6대 핵심 진료 분야 표준화 매핑
+const CATEGORY_ASSIGNMENT = {
+  // 1. 공황 · 불안 & 강박증 (5편)
+  'panic-disorder-breathing': '공황 · 불안 & 강박증',
+  'anticipatory-anxiety': '공황 · 불안 & 강박증',
+  'claustrophobia-agoraphobia': '공황 · 불안 & 강박증',
+  'social-anxiety-tremor': '공황 · 불안 & 강박증',
+  'ocd-compulsive-thoughts': '공황 · 불안 & 강박증',
+
+  // 2. 자율신경 & 실신·어지럼증·이명 (5편)
+  'autonomic-fatigue': '자율신경 & 실신·어지럼증·이명',
+  'vasovagal-syncope': '자율신경 & 실신·어지럼증·이명',
+  'autonomic-palpitation-sweating': '자율신경 & 실신·어지럼증·이명',
+  'cervicogenic-dizziness': '자율신경 & 실신·어지럼증·이명',
+  'tinnitus-autonomic-dizziness': '자율신경 & 실신·어지럼증·이명',
+
+  // 3. 불면증 & 수면장애 (4편)
+  'insomnia-sleep-maintenance': '불면증 & 수면장애',
+  'sleep-onset-insomnia': '불면증 & 수면장애',
+  'nightmare-sleep-paralysis': '불면증 & 수면장애',
+  'sleeping-pill-withdrawal': '불면증 & 수면장애',
+
+  // 4. 소아청소년 & 성인 ADHD·틱장애 (5편)
+  'child-tic-disorder': '소아청소년 & 성인 ADHD·틱장애',
+  'vocal-tic-tourette': '소아청소년 & 성인 ADHD·틱장애',
+  'child-adhd-concentration': '소아청소년 & 성인 ADHD·틱장애',
+  'child-night-terror-anxiety': '소아청소년 & 성인 ADHD·틱장애',
+  'adult-adhd-executive-dysfunction': '소아청소년 & 성인 ADHD·틱장애',
+
+  // 5. 우울증 · 화병 & 번아웃 (3편)
+  'hwabyeong-maehaekgi': '우울증 · 화병 & 번아웃',
+  'chronic-depression-lethargy': '우울증 · 화병 & 번아웃',
+  'burnout-somatization': '우울증 · 화병 & 번아웃',
+
+  // 6. 신체화 & 담적·두통·턱관절 (3편)
+  'stress-headache-digestion': '신체화 & 담적·두통·턱관절',
+  'damjeok-functional-dyspepsia': '신체화 & 담적·두통·턱관절',
+  'tmj-bruxism-stress': '신체화 & 담적·두통·턱관절'
 };
 
-const files = fs.readdirSync(columnDir).filter(f => f.endsWith('.md') && f !== '_index.md');
+const CATEGORY_MAP = {
+  '공황 · 불안 & 강박증': { class: 'panic', tab: 'panic' },
+  '자율신경 & 실신·어지럼증·이명': { class: 'autonomic', tab: 'autonomic' },
+  '불면증 & 수면장애': { class: 'insomnia', tab: 'insomnia' },
+  '소아청소년 & 성인 ADHD·틱장애': { class: 'tic', tab: 'tic' },
+  '우울증 · 화병 & 번아웃': { class: 'stress', tab: 'stress' },
+  '신체화 & 담적·두통·턱관절': { class: 'somatic', tab: 'somatic' }
+};
 
+// 1. 각 칼럼 파일의 프론트매터 카테고리 업데이트
+Object.entries(CATEGORY_ASSIGNMENT).forEach(([slug, category]) => {
+  const filePath = path.join(columnDir, `${slug}.md`);
+  if (fs.existsSync(filePath)) {
+    let content = fs.readFileSync(filePath, 'utf8');
+    content = content.replace(/^category:\s*".*?"/m, `category: "${category}"`);
+    fs.writeFileSync(filePath, content, 'utf8');
+  }
+});
+
+// 2. 전체 칼럼 메타데이터 로드
+const files = fs.readdirSync(columnDir).filter(f => f.endsWith('.md') && f !== '_index.md');
 const columns = [];
 
 files.forEach(f => {
@@ -40,7 +90,7 @@ files.forEach(f => {
     const title = titleMatch ? titleMatch[1] : '';
     const date = dateMatch ? dateMatch[1] : '2026-08-20';
     const summary = summaryMatch ? summaryMatch[1] : '';
-    const category = categoryMatch ? categoryMatch[1] : '공황 · 불안장애';
+    const category = categoryMatch ? categoryMatch[1] : (CATEGORY_ASSIGNMENT[slug] || '공황 · 불안 & 강박증');
 
     columns.push({
       slug,
@@ -59,14 +109,15 @@ columns.sort((a, b) => new Date(b.date) - new Date(a.date));
 // 카테고리별 카운트
 const counts = {
   all: columns.length,
-  panic: columns.filter(c => c.category === '공황 · 불안장애').length,
-  autonomic: columns.filter(c => c.category === '자율신경 · 실신/어지럼증').length,
-  insomnia: columns.filter(c => c.category === '불면증 · 수면장애').length,
-  tic: columns.filter(c => c.category === '소아 틱장애 · ADHD').length,
-  stress: columns.filter(c => c.category === '우울증 · 화병/스트레스').length
+  panic: columns.filter(c => c.category === '공황 · 불안 & 강박증').length,
+  autonomic: columns.filter(c => c.category === '자율신경 & 실신·어지럼증·이명').length,
+  insomnia: columns.filter(c => c.category === '불면증 & 수면장애').length,
+  tic: columns.filter(c => c.category === '소아청소년 & 성인 ADHD·틱장애').length,
+  stress: columns.filter(c => c.category === '우울증 · 화병 & 번아웃').length,
+  somatic: columns.filter(c => c.category === '신체화 & 담적·두통·턱관절').length
 };
 
-console.log('Category Counts:', counts);
+console.log('6 Pillars Category Counts:', counts);
 
 // 카드 HTML 생성
 const cardsHtml = columns.map(c => {
@@ -117,39 +168,42 @@ sections:
               질환별 심층 건강 의학 칼럼
             </h1>
             <p class="text-base sm:text-lg text-[#53615B] leading-relaxed max-w-2xl mx-auto">
-              권형근 대표원장(한방침구과 전문의)이 임상 현장에서 직접 집필하는 질환별 병리 기전, 정밀 진단 및 근본 자생력 회복 가이드입니다.
+              권형근 대표원장(한방침구과 전문의)이 임상 현장에서 직접 집필하는 6대 진료 분야별 병리 기전, 정밀 진단 및 근본 자생력 회복 가이드입니다.
             </p>
           </div>
 
-          <!-- 2. 질환별 카테고리 필터 탭 (Interactive Tabs) -->
+          <!-- 2. 질환별 카테고리 필터 탭 (6대 진료영역 통합) -->
           <div class="space-y-8">
             <div class="flex items-center justify-between flex-wrap gap-3 border-b border-[#DDE6E1] pb-4">
               <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E] flex items-center gap-2">
                 <i class="fa-solid fa-newspaper text-[#2F5D50]"></i>
-                <span>질환별 전문 칼럼 모아보기</span>
+                <span>6대 핵심 진료 분야별 전문 칼럼</span>
               </h2>
               <div class="text-xs text-[#68736E]">카드를 클릭하시면 해당 칼럼의 상세 전문 페이지로 이동합니다.</div>
             </div>
 
-            <!-- 탭 버튼 목록 -->
+            <!-- 탭 버튼 목록 (6대 분야) -->
             <div class="flex flex-wrap gap-2 pb-2" id="column-category-tabs">
               <button onclick="filterColumn('all', this)" class="column-tab-btn active-tab px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
                 전체보기 <span class="text-[11px] opacity-80">(${counts.all})</span>
               </button>
               <button onclick="filterColumn('panic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                공황 · 불안장애 <span class="text-[11px] opacity-80">(${counts.panic})</span>
+                공황 · 불안 & 강박증 <span class="text-[11px] opacity-80">(${counts.panic})</span>
               </button>
               <button onclick="filterColumn('autonomic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                자율신경 · 실신/어지럼증 <span class="text-[11px] opacity-80">(${counts.autonomic})</span>
+                자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80">(${counts.autonomic})</span>
               </button>
               <button onclick="filterColumn('insomnia', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                불면증 · 수면장애 <span class="text-[11px] opacity-80">(${counts.insomnia})</span>
+                불면증 & 수면장애 <span class="text-[11px] opacity-80">(${counts.insomnia})</span>
               </button>
               <button onclick="filterColumn('tic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                소아 틱장애 · ADHD <span class="text-[11px] opacity-80">(${counts.tic})</span>
+                소아청소년 & 성인 ADHD·틱 <span class="text-[11px] opacity-80">(${counts.tic})</span>
               </button>
               <button onclick="filterColumn('stress', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                우울증 · 화병/스트레스 <span class="text-[11px] opacity-80">(${counts.stress})</span>
+                우울증 · 화병 & 번아웃 <span class="text-[11px] opacity-80">(${counts.stress})</span>
+              </button>
+              <button onclick="filterColumn('somatic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
+                신체화 & 담적·두통·턱관절 <span class="text-[11px] opacity-80">(${counts.somatic})</span>
               </button>
             </div>
 
@@ -225,4 +279,4 @@ ${cardsHtml}
 `;
 
 fs.writeFileSync(path.join(columnDir, '_index.md'), indexContent, 'utf8');
-console.log('✅ Successfully updated content/column/_index.md with 20 columns!');
+console.log('✅ Successfully updated content/column/_index.md with 6 Core Pillars (25 Columns)!');
