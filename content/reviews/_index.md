@@ -98,7 +98,7 @@ sections:
                 <div class="space-y-2">
                   <div class="flex items-center justify-between">
                     <span class="heal-tag">소아 틱장애 · 두뇌케어</span>
-                    <span class="text-xs text-[#68736E]">시흥 거주 초등학생 학부모</span>
+                    <span class="text-xs text-[#68736E]">부평 거주 초등학생 학부모</span>
                   </div>
                   <h3 class="text-base font-extrabold text-[#26332E]">"아이 눈 깜빡임과 헛기침 틱이 눈에 띄게 완화되었습니다."</h3>
                   <p class="text-xs sm:text-sm text-[#68736E] leading-relaxed">

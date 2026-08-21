@@ -1,6 +1,6 @@
 ---
-title: "해아림한의원 인천부평점 | 인천·부평·부천·시흥 공황장애·불면증·자율신경 한의원"
-description: "인천 부평역 위치 (인천/부천/시흥 커버). 공황장애, 불면증, 자율신경실조증, 미주신경실신, 어지럼증, 다한증, 대인기피증, 틱장애, ADHD 1:1 맞춤 한방 치료. 권형근 원장 직접 진료."
+title: "해아림한의원 인천부평점 | 인천·부평·부천 공황장애·불면증·자율신경 한의원"
+description: "인천 부평역 위치 (인천/부천 커버). 공황장애, 불면증, 자율신경실조증, 미주신경실신, 어지럼증, 다한증, 대인기피증, 틱장애, ADHD 1:1 맞춤 한방 치료. 권형근 원장 직접 진료."
 type: landing
 sections:
   - block: html
@@ -13,7 +13,7 @@ sections:
             <div class="space-y-4 max-w-3xl">
               <div class="heal-hero-badge">
                 <i class="fa-solid fa-seedling"></i>
-                <span>인천 · 부평 · 부천 · 시흥 자율신경 & 두뇌 클리닉</span>
+                <span>인천 · 부평 · 부천 자율신경 & 두뇌 클리닉</span>
               </div>
               <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight leading-[1.3] text-[#26332E]">
                 마음과 몸의 불균형을 세심하게 다스리는<br class="hidden sm:inline">
