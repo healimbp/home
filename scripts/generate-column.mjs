@@ -79,6 +79,7 @@ const runIndex = (dayOfYear * 2) + (hour >= 12 ? 1 : 0);
 const selectedCat = CATEGORIES[runIndex % CATEGORIES.length];
 const selectedTopic = selectedCat.topics[Math.floor(runIndex / CATEGORIES.length) % selectedCat.topics.length];
 const dateStr = kstDate.toISOString().slice(0, 10);
+const articleId = `col-${Date.now().toString().slice(-6)}`;
 
 console.log(`[Auto-Column] Date: ${dateStr}, Category: ${selectedCat.name}, Topic: "${selectedTopic}"`);
 
@@ -88,12 +89,12 @@ async function generateColumnContent() {
 
   if (!apiKey) {
     console.log('[Auto-Column] No GEMINI_API_KEY found. Generating with verified high-quality medical template.');
-    return generateFallbackContent(selectedCat, selectedTopic, dateStr);
+    return generateFallbackContent(selectedCat, selectedTopic, dateStr, articleId);
   }
 
   const prompt = `
 당신은 해아림한의원 인천부평점 권형근 대표원장(한방침구과 전문의)입니다.
-다음 주제에 대해 환자들에게 신뢰와 위로를 주는 최고급 한방 건강 의학 칼럼을 작성하세요.
+홈페이지 방문 환자 및 가족들에게 전하는 신뢰와 위로의 최고급 한방 건강 의학 칼럼을 작성하세요.
 
 - 질환 카테고리: ${selectedCat.name}
 - 칼럼 세부 주제: ${selectedTopic}
@@ -105,7 +106,7 @@ async function generateColumnContent() {
   "title": "칼럼 제목 (전문적이면서도 환자의 공감을 이끄는 명확한 헤드라인)",
   "summary": "칼럼 핵심 요약 2~3문장 (약 120~150자)",
   "tags": ["키워드1", "키워드2"],
-  "content": "칼럼 본문 전체 (서론, 1. 질환의 원인 및 기전, 2. 해아림의 1:1 맞춤 한방 치료 원리, 3. 일상생활 속 자가 관리 수칙, 결론 및 격려 메시지, 마크다운 형식, 약 800~1000자)"
+  "content": "칼럼 본문 전체 (서론, 1. 증상의 근본 원인과 신경계 불균형, 2. 해아림의 1:1 맞춤 한방 치료 원리, 3. 일상생활 속 자가 관리 수칙, 결론 및 격려 메시지, 마크다운 형식, 약 800~1000자)"
 }
 `;
 
@@ -130,6 +131,7 @@ async function generateColumnContent() {
     const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
     const parsed = JSON.parse(rawText);
     return {
+      id: articleId,
       category: selectedCat.id,
       categoryName: selectedCat.name,
       title: parsed.title,
@@ -141,12 +143,13 @@ async function generateColumnContent() {
   } catch (err) {
     console.error('[Auto-Column] Gemini API generation error:', err);
     console.log('[Auto-Column] Falling back to structured medical template.');
-    return generateFallbackContent(selectedCat, selectedTopic, dateStr);
+    return generateFallbackContent(selectedCat, selectedTopic, dateStr, articleId);
   }
 }
 
-function generateFallbackContent(cat, topic, date) {
+function generateFallbackContent(cat, topic, date, id) {
   return {
+    id: id,
     category: cat.id,
     categoryName: cat.name,
     title: `${topic} - 원인 분석과 1:1 맞춤 한방 치료 솔루션`,
@@ -157,12 +160,16 @@ function generateFallbackContent(cat, topic, date) {
   };
 }
 
-// 4. content/column/_index.md 에 신규 칼럼 카드 주입 및 탭 카운터 업데이트
+// 4. content/column/_index.md 에 신규 칼럼 카드 주입 및 인페이지 리더 지원
 async function updateColumnPage(newCol) {
   const columnIndexPath = path.join(rootDir, 'content', 'column', '_index.md');
   let fileContent = fs.readFileSync(columnIndexPath, 'utf-8');
 
-  // 신규 칼럼 카드 HTML
+  const encodedContent = encodeURIComponent(newCol.content);
+  const encodedSummary = encodeURIComponent(newCol.summary);
+  const encodedTitle = encodeURIComponent(newCol.title);
+
+  // 신규 칼럼 카드 HTML (홈페이지 인페이지 뷰어 & 바로읽기 버튼)
   const newCardHtml = `
               <!-- [자동발행: ${newCol.categoryName} - ${newCol.date}] -->
               <article class="column-item ${newCol.category} heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
@@ -171,7 +178,7 @@ async function updateColumnPage(newCol) {
                     <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">${newCol.categoryName}</span>
                     <span class="text-xs text-[#68736E]">${newCol.date} • 권형근 원장 칼럼</span>
                   </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug">
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition" onclick="openColumnModal('${newCol.id}')">
                     ${newCol.title}
                   </h3>
                   <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
@@ -180,7 +187,20 @@ async function updateColumnPage(newCol) {
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
                   <span class="text-[11px] text-[#68736E]">• ${newCol.tags.join(' • ')}</span>
-                  <a href="https://blog.naver.com/s72x6o8cv" target="_blank" rel="noopener" class="text-xs font-bold text-[#2F5D50] hover:underline">상세보기 →</a>
+                  <button type="button" onclick="openColumnModal('${newCol.id}')" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-book-open text-[10px]"></i>
+                  </button>
+                </div>
+
+                <!-- 숨겨진 칼럼 전체 본문 데이터 (인페이지 모달용) -->
+                <div id="data-${newCol.id}" style="display:none;" 
+                     data-title="${newCol.title.replace(/"/g, '&quot;')}" 
+                     data-category="${newCol.categoryName}" 
+                     data-date="${newCol.date}" 
+                     data-summary="${newCol.summary.replace(/"/g, '&quot;')}" 
+                     data-tags="${newCol.tags.join(', ')}">
+${newCol.content}
                 </div>
               </article>
 `;
@@ -199,12 +219,12 @@ async function updateColumnPage(newCol) {
   const slug = `${newCol.date}-${newCol.category}-${Date.now().toString().slice(-4)}`;
   const postFile = path.join(postsDir, `${slug}.md`);
   const postFrontmatter = `---
-title: "${newCol.title}"
+title: "${newCol.title.replace(/"/g, '\\"')}"
 date: "${newCol.date}"
 category: "${newCol.categoryName}"
 tags: [${newCol.tags.map(t => `"${t}"`).join(', ')}]
 author: "권형근 대표원장"
-summary: "${newCol.summary}"
+summary: "${newCol.summary.replace(/"/g, '\\"')}"
 ---
 
 ${newCol.content}
@@ -213,15 +233,15 @@ ${newCol.content}
   console.log(`[Auto-Column] Saved individual post archive: ${postFile}`);
 
   fs.writeFileSync(columnIndexPath, fileContent, 'utf-8');
-  console.log(`[Auto-Column] Successfully updated content/column/_index.md!`);
+  console.log(`[Auto-Column] Successfully updated content/column/_index.md with direct in-site reader!`);
 }
 
 // 실행
 async function main() {
-  console.log('[Auto-Column] Starting automatic column generation...');
+  console.log('[Auto-Column] Starting automatic column generation for in-site viewing...');
   const column = await generateColumnContent();
   await updateColumnPage(column);
-  console.log(`[Auto-Column] Published column: "${column.title}"`);
+  console.log(`[Auto-Column] Published column in-site: "${column.title}"`);
 }
 
 main().catch(err => {
