@@ -304,7 +304,7 @@ ${newCol.contentHtml}
   }
 }
 
-// 6. 텔레그램 알림 발송
+// 6. 텔레그램 알림 및 블로그 복사용 전문 발송
 async function sendTelegramNotification(column, slug) {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
@@ -315,35 +315,102 @@ async function sendTelegramNotification(column, slug) {
   }
 
   const columnUrl = `https://healimbp.com/column/${slug}/`;
-  const message = `📢 <b>[해아림한의원] 새 건강 칼럼이 자동 발행되었습니다!</b>
+  const bookingUrl = `https://booking.naver.com/booking/13/bizes/934695`;
+  const kakaoUrl = `https://open.kakao.com/o/sgbnTRJi`;
+
+  // 1) 요약 알림 메시지
+  const summaryMessage = `📢 <b>[해아림한의원] 새 건강 칼럼이 발행되었습니다!</b>
 
 📌 <b>제목:</b> ${escapeHtml(column.title)}
 🏷️ <b>분류:</b> ${escapeHtml(column.categoryName)}
 🗓️ <b>일시:</b> ${column.date}
 
-📝 <b>요약:</b>
+📝 <b>핵심 요약:</b>
 ${escapeHtml(column.summary)}
 
 🔗 <a href="${columnUrl}">홈페이지에서 칼럼 보기</a>`;
 
+  // 2) 블로그(티스토리/네이버) 원클릭 복사용 본문 메시지
+  let bodyText = column.contentHtml
+    .replace(/<h3[^>]*>(.*?)<\/h3>/gi, '\n\n📌 $1\n')
+    .replace(/<blockquote[^>]*>(.*?)<\/blockquote>/gis, (m, p1) => `\n💬 "${p1.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').trim()}"\n`)
+    .replace(/<li><strong>(.*?)<\/strong>:\s*(.*?)<\/li>/gi, '• $1: $2\n')
+    .replace(/<li>(.*?)<\/li>/gi, '• $1\n')
+    .replace(/<p[^>]*>(.*?)<\/p>/gi, '$1\n\n')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<strong>(.*?)<\/strong>/gi, '$1')
+    .replace(/&ldquo;|&rdquo;/g, '"')
+    .replace(/&lsquo;|&rsquo;/g, "'")
+    .replace(/&amp;/g, '&')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  const hashtags = (column.tags || []).map(t => `#${t.replace(/\s+/g, '')}`).join(' ');
+
+  const blogCopyMessage = `📋 <b>[티스토리/블로그 원클릭 복사용 전문]</b>
+
+<b>[제목]</b>
+<code>${escapeHtml(column.title)}</code>
+
+─────────────────
+${escapeHtml(bodyText)}
+─────────────────
+
+🏥 <b>[해아림한의원 인천부평점]</b>
+• 진료: 권형근 대표원장 (한방침구과 전문의)
+• 위치: 인천 부평구 경원대로 1412, 2층 (부평역 7번 출구 도보 5분)
+• 문의: 032-719-3472
+• 예약: ${bookingUrl}
+• 카톡상담: ${kakaoUrl}
+• 원문출처: ${columnUrl}
+
+🏷️ <b>[태그]</b>
+<code>${escapeHtml(hashtags)}</code>`;
+
   try {
-    const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    // 요약 알림 전송
+    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: chatId,
-        text: message,
+        text: summaryMessage,
         parse_mode: 'HTML',
         disable_web_page_preview: false
       })
     });
 
-    const data = await res.json();
-    if (data.ok) {
-      console.log('[Auto-Column SEO] Telegram 알림이 성공적으로 전송되었습니다!');
+    // 블로그 복사용 전문 전송 (길이 초과 방지)
+    const MAX_LEN = 3900;
+    if (blogCopyMessage.length <= MAX_LEN) {
+      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: blogCopyMessage,
+          parse_mode: 'HTML',
+          disable_web_page_preview: true
+        })
+      });
     } else {
-      console.error('[Auto-Column SEO] Telegram API 오류:', data.description);
+      // 4000자 초과 시 2개로 분할 전송
+      const part1 = blogCopyMessage.slice(0, MAX_LEN);
+      const part2 = blogCopyMessage.slice(MAX_LEN);
+      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: chatId, text: part1, parse_mode: 'HTML', disable_web_page_preview: true })
+      });
+      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: chatId, text: part2, parse_mode: 'HTML', disable_web_page_preview: true })
+      });
     }
+
+    console.log('[Auto-Column SEO] Telegram 알림 및 블로그 복사용 전문이 성공적으로 전송되었습니다!');
   } catch (err) {
     console.error('[Auto-Column SEO] Telegram 알림 전송 실패:', err);
   }
