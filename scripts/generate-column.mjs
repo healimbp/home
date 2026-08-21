@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { publishToTistory } from './publish-tistory.mjs';
+import { publishToTistory, formatTistoryContent } from './publish-tistory.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -433,6 +433,24 @@ ${escapeHtml(bodyText)}
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ chat_id: chatId, text: part2, parse_mode: 'HTML', disable_web_page_preview: true })
       });
+    }
+
+    // 3) 티스토리 HTML 서식 파일 첨부 전송 (sendDocument)
+    try {
+      const tistoryHtml = formatTistoryContent(column, slug);
+      const formData = new FormData();
+      formData.append('chat_id', chatId);
+      formData.append('caption', `📝 <b>[티스토리 HTML 모드 전용 파일]</b>\n이 파일을 열어 전체 복사 후 티스토리 에디터 [HTML] 모드에 붙여넣으시면 서식이 100% 완벽하게 적용됩니다.`);
+      formData.append('parse_mode', 'HTML');
+      const blob = new Blob([tistoryHtml], { type: 'text/html;charset=utf-8' });
+      formData.append('document', blob, `tistory_${slug}.html`);
+
+      await fetch(`https://api.telegram.org/bot${botToken}/sendDocument`, {
+        method: 'POST',
+        body: formData
+      });
+    } catch (docErr) {
+      console.warn('[Auto-Column SEO] Telegram HTML 문서 첨부 전송 건너뜀/실패:', docErr.message);
     }
 
     console.log('[Auto-Column SEO] Telegram 알림 및 블로그 복사용 전문이 성공적으로 전송되었습니다!');
