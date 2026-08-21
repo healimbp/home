@@ -48,7 +48,7 @@ const CATEGORIES = [
     id: 'autonomic',
     name: '자율신경 · 실신/어지럼증',
     topics: [
-      { titleSuffix: '만성피로와 자율신경계 기능 저하는 어떤 관계일까요? HRV 검사와 한방 치료', focus: '만성피로와 한스셀리에 3단계 소진' },
+      { titleSuffix: '만성피로와 자율신경계 기능 저하는 어떤 관계일까요? 뇌파·체열검사와 한방 치료', focus: '만성피로와 한스셀리에 3단계 소진' },
       { titleSuffix: '출퇴근길 갑자기 핑 돌고 쓰러지는 미주신경성 실신의 전조증상과 한방 치료', focus: '미주신경성 실신 및 기립성 어지럼증' },
       { titleSuffix: '검사상 이상 없는 만성 소화불량, 가슴 답답함, 자율신경실조증 총정리', focus: '신경성 위장장애 및 신체화 증상' },
       { titleSuffix: '긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방', focus: '수족다한증 및 상열감' }
@@ -116,16 +116,17 @@ async function generateColumnContent() {
   1. 제목: 간결하게 [${selectedRegion.short} ${selectedCat.name.split(' ')[0]} 한의원] 구조 유지
   2. 도입부: ${selectedRegion.short} 환자의 진료실 실제 호소문 인용구 (“...”) 와 공감 화두
   3. 신경/생리학적 기전: 자율신경계(교감-부교감), 뇌 변연계/기저핵, 한스 셀리에 3단계 스트레스 모델
-  4. 객관적 검사: 심박변이도(HRV) 자율신경 검사, 한의학적 정밀 변증 및 복진
+  4. 객관적 검사: 뇌파 검사, 적외선 체열 검사, 간이정신진단검사, 한의학적 정밀 변증 및 복진
   5. 1:1 맞춤 한방 치료: 체질 맞춤 탕약, 침구/약침, 두개천골 추나요법
-  6. 일상 관리 및 회복 격려 메시지 (부평역 7번 출구 위치 안내 자연스럽게 포함)
+  6. 진료실 자주 묻는 질문 (FAQ & Q&A 4~5개): 해당 질환 환자들이 가장 많이 묻는 실전 질문(양약 병행 여부, 치료 기간 및 재발 방지, 검사 과정, 한약 안전성/간 부담 여부, 일상 통원 등)을 Q1~Q5 형식으로 깊이 있고 명쾌하게 답변
+  7. 일상 관리 및 회복 격려 메시지 (부평역 7번 출구 위치 안내 자연스럽게 포함)
 
 반드시 아래 JSON 형식으로만 응답하세요 (마크다운 백틱 제외):
 {
   "title": "${fullTitle}",
   "summary": "칼럼 핵심 요약 2~3문장 (약 150~180자, ${selectedRegion.short} 및 ${selectedCat.name.split(' ')[0]} 키워드 포함)",
-  "tags": ["${selectedRegion.short}한의원", "부평한의원", "${selectedCat.name.split(' ')[0]}치료", "자율신경검사"],
-  "contentHtml": "<p>안녕하세요. <strong>부평역 7번 출구에서 ${selectedRegion.short} 환자분들의 자율신경·신경정신과 질환을 1:1 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p><blockquote>&ldquo;...&rdquo;</blockquote>... (전체 본문을 HTML 태그 h3, p, ul, li, strong, blockquote 등을 활용하여 1,800~2,200자 분량으로 풍부하게 작성)"
+  "tags": ["${selectedRegion.short}한의원", "부평한의원", "${selectedCat.name.split(' ')[0]}치료", "뇌파검사", "체열검사"],
+  "contentHtml": "<p>안녕하세요. <strong>부평역 7번 출구에서 ${selectedRegion.short} 환자분들의 자율신경·신경정신과 질환을 1:1 맞춤 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p><blockquote>&ldquo;...&rdquo;</blockquote>... (전체 본문을 HTML 태그 h3, p, ul, li, strong, blockquote 등을 활용하여 1,800~2,200자 분량으로 풍부하게 작성)"
 }
 `;
 
@@ -155,7 +156,7 @@ async function generateColumnContent() {
       categoryName: selectedCat.name,
       title: parsed.title || fullTitle,
       summary: parsed.summary,
-      tags: parsed.tags || [`${selectedRegion.short}한의원`, '부평한의원', selectedCat.name],
+      tags: parsed.tags || [`${selectedRegion.short}한의원`, '부평한의원', selectedCat.name, '뇌파검사', '체열검사'],
       contentHtml: parsed.contentHtml,
       date: dateStr
     };
@@ -172,7 +173,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
     categoryName: cat.name,
     title: title,
     summary: `${region.short} 지역에서 ${cat.name} 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.`,
-    tags: [`${region.short}한의원`, '부평한의원', cat.name.split(' ')[0], '맞춤한약', '자율신경검사'],
+    tags: [`${region.short}한의원`, '부평한의원', cat.name.split(' ')[0], '맞춤한약', '뇌파검사', '체열검사'],
     contentHtml: `
 <p>안녕하세요. <strong>부평역 7번 출구에서 ${region.short} 환자분들의 자율신경 및 두뇌 질환을 1:1 맞춤 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
@@ -194,7 +195,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
 </ul>
 
 <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">3. 해아림한의원 인천부평점의 객관적 검사 시스템</h3>
-<p>인천 부평 해아림한의원에서는 <strong>심박변이도(HRV) 자율신경 검사</strong>를 통해 신경계 활성도와 스트레스 저항력을 객관적으로 평가하고, 전통 한의학의 <strong>정밀 변증과 복진(腹診)</strong>으로 오장육부의 기혈 허실을 정밀 진단합니다.</p>
+<p>인천 부평 해아림한의원에서는 <strong>뇌파 검사, 적외선 체열 검사, 간이정신진단검사</strong>를 통해 두뇌 신경계 활성도와 전신 체열 불균형, 심리 척도를 객관적으로 정밀 평가하고, 전통 한의학의 <strong>정밀 변증과 복진(腹診)</strong>으로 오장육부의 기혈 허실을 정밀 진단합니다.</p>
 
 <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">4. 1:1 맞춤 한방 치료: 뇌 신경계 자생력 회복</h3>
 <ul class="list-disc pl-5 space-y-2 text-sm text-[#4E6159] my-3">
@@ -203,7 +204,31 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
   <li><strong>두개천골 추나요법</strong>: 경추와 척추 정렬을 바로잡아 뇌척수액 순환과 미주신경 소통을 원활화.</li>
 </ul>
 
-<h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">5. 일상생활 속 자가 관리 가이드</h3>
+<h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">5. 진료실 자주 묻는 질문 (FAQ & Q&A)</h3>
+<div class="space-y-4 my-4">
+  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#E2EAE5]">
+    <p class="font-bold text-[#2F5D50] text-sm mb-1">Q1. 정신과 약(신경안정제, 수면제, 항우울제)을 복용 중인데 한방 치료와 병행할 수 있나요?</p>
+    <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">네, 충분히 병행 가능합니다. 복용 중인 양약을 갑자기 중단하면 반동 불안이나 불면이 올 수 있으므로 초기에는 약 1~2시간 시간차를 두고 병행합니다. 이후 한방 치료로 뇌 신경계의 자생력이 회복되면 주치의와 상의하여 안전하게 점진적 감량(Tapering)을 진행합니다.</p>
+  </div>
+  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#E2EAE5]">
+    <p class="font-bold text-[#2F5D50] text-sm mb-1">Q2. 한방 치료 기간은 보통 얼마나 걸리나요? 치료 후 재발하지 않나요?</p>
+    <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">증상의 유병 기간과 신경계 피로도에 따라 차이가 있으나, 보통 1~2개월 차에는 두근거림·불면 등 신체 증상을 완화하고, 3~4개월 차에는 자율신경 밸런스와 두뇌 회복력을 안정화시킵니다. 일시적 억제가 아닌 근본 조절력을 키우므로 치료 종결 후에도 재발률이 낮습니다.</p>
+  </div>
+  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#E2EAE5]">
+    <p class="font-bold text-[#2F5D50] text-sm mb-1">Q3. 한의원 첫 내원 시 어떤 검사와 진료를 받게 되나요?</p>
+    <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">첫 내원 시 심층 설문지 작성, 뇌파 검사(두뇌 활성도), 적외선 체열 검사(상열하한 분석), 간이정신진단검사를 시행합니다. 이후 원장과의 1:1 심층 문진 및 정밀 변증, 복진을 거쳐 맞춤 처방과 침구 치료가 진행되며 약 1시간~1시간 30분 정도 소요됩니다.</p>
+  </div>
+  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#E2EAE5]">
+    <p class="font-bold text-[#2F5D50] text-sm mb-1">Q4. 한약을 복용할 때 간이나 신장에 무리가 가지는 않나요?</p>
+    <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">해아림한의원의 맞춤 한약은 식품의약품안전처(KFDA)의 엄격한 잔류농약, 중금속, 곰팡이독소 정밀 검사를 통과한 규격품 한약재만을 사용하며, 환자 개개인의 체질과 건강 상태를 고려하여 1:1 맞춤 조제되므로 안심하고 복용하실 수 있습니다.</p>
+  </div>
+  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#E2EAE5]">
+    <p class="font-bold text-[#2F5D50] text-sm mb-1">Q5. 직장인이라 주간 방문이 어려운데 야간이나 주말 진료가 가능한가요?</p>
+    <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">해아림한의원 인천부평점은 월·수·금 저녁 8시까지 야간진료를 시행하며, 토요일(09:00~15:00)과 공휴일(09:00~13:00)에는 점심시간 없이 연속 진료를 진행하므로 바쁜 직장인과 학생분들도 편안하게 통원 치료를 받으실 수 있습니다.</p>
+  </div>
+</div>
+
+<h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">6. 일상생활 속 자가 관리 가이드</h3>
 <p>규칙적인 수면 리듬 유지, 4-7-8 복식호흡 훈련, 가벼운 산책을 병행하시면 신경계 안정에 큰 도움이 됩니다. ${region.short} 지역에서 오랜 증상으로 고통받고 계시다면 부평역 7번 출구 도보 5분 거리 해아림한의원에 편안하게 내원하시어 정확한 진단을 받아보시길 권해드립니다.</p>
 `,
     date: date

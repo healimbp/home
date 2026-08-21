@@ -70,7 +70,7 @@ sections:
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 인천 부평한의원 • 부평한의원 • 불면증 • 맞춤한약 • 자율신경검사</span>
+                  <span class="text-[11px] text-[#68736E]">• 인천 부평한의원 • 부평한의원 • 불면증 • 맞춤한약 • 뇌파·체열검사</span>
                   <a href="/column/post-2026-08-21-insomnia-7363/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -94,7 +94,7 @@ sections:
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 논현동한의원 • 부평한의원 • 공황 • 맞춤한약 • 자율신경검사</span>
+                  <span class="text-[11px] text-[#68736E]">• 논현동한의원 • 부평한의원 • 공황 • 맞춤한약 • 뇌파·체열검사</span>
                   <a href="/column/post-2026-08-21-panic-8236/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -118,7 +118,7 @@ sections:
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 논현동한의원 • 부평한의원 • 공황 • 맞춤한약 • 자율신경검사</span>
+                  <span class="text-[11px] text-[#68736E]">• 논현동한의원 • 부평한의원 • 공황 • 맞춤한약 • 뇌파·체열검사</span>
                   <a href="/column/post-2026-08-21-panic-2131/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -141,7 +141,7 @@ sections:
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 인천 부평한의원 • 부평한의원 • 불면증 • 맞춤한약 • 자율신경검사</span>
+                  <span class="text-[11px] text-[#68736E]">• 인천 부평한의원 • 부평한의원 • 불면증 • 맞춤한약 • 뇌파·체열검사</span>
                   <a href="/column/post-2026-08-21-insomnia-4595/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -168,7 +168,7 @@ sections:
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 한스셀리에 3단계 • 만성피로 • HRV 검사</span>
+                  <span class="text-[11px] text-[#68736E]">• 한스셀리에 3단계 • 만성피로 • 뇌파·체열검사</span>
                   <a href="/column/autonomic-fatigue/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>

@@ -198,10 +198,10 @@ sections:
                   "검사엔 이상 없는데 원인 없는 어지럼증, 자율신경실조증 증상도 함께 치료해야"
                 </h3>
                 <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
-                  이비인후과나 신경과 검사에서 특별한 기질적 원인이 발견되지 않는 만성 어지럼증, 브레인포그, 기립성 어지럼증은 자율신경계 조절 이상과 미주신경 약화에 기인하므로 HRV 정밀 검사와 한방 체질 치료가 요구됩니다.
+                  이비인후과나 신경과 검사에서 특별한 기질적 원인이 발견되지 않는 만성 어지럼증, 브레인포그, 기립성 어지럼증은 자율신경계 조절 이상과 미주신경 약화에 기인하므로 뇌파·체열 정밀 검사와 간이정신진단, 한방 체질 치료가 요구됩니다.
                 </p>
                 <div class="pt-2 border-t border-[#F2F7F4] flex items-center justify-between text-xs text-[#68736E]">
-                  <span>• 비회전성 어지럼증 • HRV 검사 • 두개천골</span>
+                  <span>• 비회전성 어지럼증 • 뇌파·체열검사 • 두개천골</span>
                   <span class="text-[#2F5D50] font-bold">[권형근 원장 칼럼]</span>
                 </div>
               </article>
@@ -377,10 +377,10 @@ sections:
               <div class="p-4 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] space-y-2">
                 <div class="font-extrabold text-sm text-[#2F5D50] flex items-center gap-2">
                   <i class="fa-solid fa-brain"></i>
-                  <span>자율신경 정밀 평가</span>
+                  <span>뇌파·체열 & 간이정신진단 평가</span>
                 </div>
                 <p class="text-xs text-[#53615B] leading-relaxed">
-                  심박변이도(HRV)와 뇌파 진단 장비를 활용한 자율신경계 1:1 맞춤 연구
+                  뇌파 분석 및 적외선 체열, 간이정신진단 척도를 활용한 1:1 맞춤 연구
                 </p>
               </div>
 

@@ -193,11 +193,11 @@ sections:
               <!-- 시설 4: 검사실 -->
               <div class="heal-card bg-white p-4 space-y-3 shadow-sm hover:shadow-md transition">
                 <div class="relative overflow-hidden rounded-xl h-48 bg-gray-100">
-                  <img src="/images/clinic/bp07.jpg" alt="해아림한의원 인천부평점 뇌기능 및 자율신경 검사실" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
+                  <img src="/images/clinic/bp07.jpg" alt="해아림한의원 인천부평점 뇌파·체열 정밀 검사실" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
                 </div>
                 <div>
-                  <h3 class="font-extrabold text-[#26332E] text-base">뇌기능 & 자율신경 검사실</h3>
-                  <p class="text-xs text-[#68736E]">적외선 체열 및 자율신경 정밀 측정 시스템</p>
+                  <h3 class="font-extrabold text-[#26332E] text-base">뇌파 & 체열 정밀 검사실</h3>
+                  <p class="text-xs text-[#68736E]">뇌파 분석, 적외선 체열 및 간이정신진단 정밀 측정 시스템</p>
                 </div>
               </div>
 

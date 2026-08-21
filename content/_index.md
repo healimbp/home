@@ -98,7 +98,7 @@ sections:
                 <div class="flex flex-wrap gap-2 pt-2">
                   <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">한방침구과 전문의</span>
                   <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">1:1 직접 진료</span>
-                  <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">자율신경 정밀 검사</span>
+                  <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">뇌파·체열·간이정신진단 검사</span>
                 </div>
                 <div class="pt-2">
                   <a href="/about/" class="text-xs sm:text-sm font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
@@ -333,7 +333,7 @@ sections:
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• HRV 검사 • 한스셀리에</span>
+                  <span class="text-[11px] text-[#68736E]">• 뇌파·체열검사 • 한스셀리에</span>
                   <a href="/column/autonomic-fatigue/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
                     전문 읽기 →
                   </a>
@@ -392,9 +392,9 @@ sections:
                   <div class="heal-step-number">02</div>
                   <span class="text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-full">기능 검사</span>
                 </div>
-                <h3 class="text-base font-extrabold text-[#26332E]">자율신경 & 두뇌 평가</h3>
+                <h3 class="text-base font-extrabold text-[#26332E]">뇌파·체열 & 간이정신진단</h3>
                 <p class="text-xs text-[#68736E] leading-relaxed">
-                  자율신경 균형도(HRV), 뇌파 상태, 스트레스 저항력 등 정밀 측정을 통해 객관적인 신경계 상태를 분석합니다.
+                  뇌파 검사(두뇌 활성도), 적외선 체열 검사(상열하한 분석), 간이정신진단검사를 통해 객관적인 신경계와 심리 상태를 정밀 분석합니다.
                 </p>
               </div>
 
