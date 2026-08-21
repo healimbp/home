@@ -62,7 +62,56 @@ sections:
             </div>
           </div>
 
-          <!-- 2. 권형근 원장의 3가지 진료 약속 -->
+          <!-- 2. 대표원장 권형근 소개 (인물 사진 + 인사말 요약) -->
+          <div class="heal-card bg-white border border-[#DDE6E1] p-6 sm:p-8 lg:p-10 shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              
+              <!-- 원장 인물 사진 -->
+              <div class="lg:col-span-4 text-center">
+                <div class="relative overflow-hidden rounded-2xl shadow-md border border-[#DDE6E1] bg-white mx-auto max-w-[240px] lg:max-w-none group">
+                  <img 
+                    src="/images/director.jpg" 
+                    alt="해아림한의원 인천부평점 대표원장 권형근" 
+                    class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-300"
+                    loading="lazy"
+                  />
+                  <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#1F3F36]/90 via-[#1F3F36]/50 to-transparent p-2.5 text-white text-center">
+                    <span class="text-[11px] font-bold text-[#EAF3EF]">한방침구과 전문의</span>
+                    <div class="text-sm font-extrabold">대표원장 권형근</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 인사말 & 진료 철학 -->
+              <div class="lg:col-span-8 space-y-4 text-left">
+                <div class="space-y-1">
+                  <span class="heal-hero-badge">Medical Director</span>
+                  <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E] leading-snug">
+                    "원인을 알 수 없는 불안과 신경계 이상,<br class="hidden sm:inline">
+                    <span class="text-[#2F5D50]">스스로 회복하는 자생력</span>을 되찾아드립니다."
+                  </h2>
+                </div>
+                <p class="text-sm sm:text-base text-[#53615B] leading-relaxed">
+                  안녕하세요. <strong>해아림한의원 인천부평점 대표원장 권형근</strong>입니다.<br>
+                  병원에서 각종 검사를 받아보아도 "신경성", "스트레스성"이라는 말만 들었을 뿐, 해결책을 찾지 못해 답답해하시는 분들이 많습니다. 눈앞의 증상만을 억제하는 임시 치료가 아닌, 몸과 마음의 자율신경 균형을 바로잡아 일상의 평온을 되찾아드리겠습니다.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">한방침구과 전문의</span>
+                  <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">1:1 직접 진료</span>
+                  <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold">자율신경 정밀 검사</span>
+                </div>
+                <div class="pt-2">
+                  <a href="/about/" class="text-xs sm:text-sm font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    <span>권형근 대표원장 약력 및 인사말 전체보기</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. 권형근 원장의 3가지 진료 약속 -->
           <div class="space-y-8">
             <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
               <div>
