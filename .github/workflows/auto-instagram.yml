@@ -1,0 +1,76 @@
+name: Daily 2x Instagram Card News Auto-Publisher
+
+on:
+  schedule:
+    # 하루 2회 인스타그램 골든타임 자동 발행 (KST 기준):
+    # 1. 오후 12:30 KST (03:30 UTC) - 점심 시간대
+    # 2. 오후 19:30 KST (10:30 UTC) - 퇴근 및 저녁 시간대
+    - cron: '30 3 * * *'
+    - cron: '30 10 * * *'
+  # GitHub 웹에서 수동으로 'Run workflow' 버튼을 눌러 즉시 카드뉴스 생성 & 발행 가능
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Korean Fonts for Clean Typography
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-nanum fonts-noto-cjk
+          fc-cache -fv
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Dependencies
+        run: |
+          npm install
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate Instagram Card News (1080x1080)
+        run: |
+          node scripts/generate-instagram-card.mjs
+
+      - name: Commit and Push Card News Assets
+        run: |
+          git add static/instagram/
+          if git diff --staged --quiet; then
+            echo "No new Instagram assets to commit."
+          else
+            git commit -m "feat(instagram): auto-generate card news slides & caption"
+            git push origin main
+          fi
+
+      - name: Publish to Instagram via Meta Graph API
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          PUBLIC_BASE_URL: ${{ secrets.PUBLIC_BASE_URL }}
+        run: |
+          node scripts/publish-instagram.mjs
+
+      - name: Commit and Push Publish Status Log
+        run: |
+          git add static/instagram/
+          if git diff --staged --quiet; then
+            echo "No status logs to commit."
+          else
+            git commit -m "chore(instagram): record publication status"
+            git push origin main
+          fi
