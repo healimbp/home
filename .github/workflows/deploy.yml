@@ -21,8 +21,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
+
+      - name: Install Hugo Extended Binary
+        run: |
+          HUGO_VERSION="0.145.0"
+          curl -sLo hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i hugo.deb
+          rm hugo.deb
+          hugo version
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -36,14 +44,8 @@ jobs:
 
       - name: Install Node Dependencies
         run: |
-          npm install
+          npm install --no-audit --no-fund
           echo "$GITHUB_WORKSPACE/node_modules/.bin" >> $GITHUB_PATH
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "latest"
-          extended: true
 
       - name: Setup Pages
         id: pages
