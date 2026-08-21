@@ -403,7 +403,7 @@ sections:
                 <i class="fa-solid fa-moon"></i>
                 <span>월·수·금 저녁 8시 야간진료 | 토·공휴일 연속진료</span>
               </div>
-              <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">
+              <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white" style="color: #ffffff !important;">
                 바쁜 일상 속에서도 편안하게 치료받으실 수 있습니다.
               </h2>
               <p class="text-xs sm:text-sm text-[#DCE7E2] leading-relaxed">
