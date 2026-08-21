@@ -264,6 +264,43 @@ ${newCol.contentHtml}
   // update content/column/_index.md
   fs.writeFileSync(columnIndexPath, fileContent, 'utf-8');
   console.log(`[Auto-Column SEO] Successfully updated content/column/_index.md with direct links!`);
+
+  // 5-2. content/_index.md (메인 홈 최신 칼럼 3개 그리드 업데이트)
+  const homeIndexPath = path.join(rootDir, 'content', '_index.md');
+  if (fs.existsSync(homeIndexPath)) {
+    let homeContent = fs.readFileSync(homeIndexPath, 'utf-8');
+    const homeGridMarker = '<div class="grid grid-cols-1 md:grid-cols-3 gap-5" id="home-column-grid">';
+    const homeCardHtml = `
+              <!-- 칼럼 1: 최신 발행 칼럼 (${newCol.categoryName}) -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">${newCol.categoryName}</span>
+                    <span class="text-[11px] text-[#68736E]">${newCol.date} • 최신 칼럼</span>
+                  </div>
+                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                    <a href="/column/${slug}/" class="hover:underline">
+                      ${newCol.title}
+                    </a>
+                  </h3>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
+                    ${newCol.summary}
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• ${newCol.tags.slice(0, 2).join(' • ')}</span>
+                  <a href="/column/${slug}/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    전문 읽기 →
+                  </a>
+                </div>
+              </div>
+`;
+    if (homeContent.includes(homeGridMarker)) {
+      homeContent = homeContent.replace(homeGridMarker, `${homeGridMarker}\n${homeCardHtml}`);
+      fs.writeFileSync(homeIndexPath, homeContent, 'utf-8');
+      console.log(`[Auto-Column SEO] Successfully updated homepage content/_index.md!`);
+    }
+  }
 }
 
 // 6. 텔레그램 알림 발송

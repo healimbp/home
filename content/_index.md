@@ -266,8 +266,32 @@ sections:
               </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <!-- 칼럼 1: 만성피로/자율신경 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5" id="home-column-grid">
+              <!-- 칼럼 1: 최신 발행 칼럼 (논현동 공황) -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">공황 · 불안장애</span>
+                    <span class="text-[11px] text-[#68736E]">2026-08-21 • 최신 칼럼</span>
+                  </div>
+                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                    <a href="/column/post-2026-08-21-panic-2131/" class="hover:underline">
+                      [논현동 공황 한의원] 발표할 때 목소리 떨림과 심장 두근거림, 사회공포증 한의학 솔루션
+                    </a>
+                  </h3>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
+                    논현동 지역에서 공황 · 불안장애 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 사회공포증 • 안심정지</span>
+                  <a href="/column/post-2026-08-21-panic-2131/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    전문 읽기 →
+                  </a>
+                </div>
+              </div>
+
+              <!-- 칼럼 2: 만성피로/자율신경 -->
               <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -286,30 +310,6 @@ sections:
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
                   <span class="text-[11px] text-[#68736E]">• HRV 검사 • 한스셀리에</span>
                   <a href="/column/autonomic-fatigue/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
-                    전문 읽기 →
-                  </a>
-                </div>
-              </div>
-
-              <!-- 칼럼 2: 공황장애 -->
-              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">공황 · 불안장애</span>
-                    <span class="text-[11px] text-[#68736E]">의학 칼럼</span>
-                  </div>
-                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
-                    <a href="/column/panic-disorder-breathing/" class="hover:underline">
-                      [인천 부평 공황장애] 공황발작과 자율신경계 과흥분, 응급 호흡과 치료법
-                    </a>
-                  </h3>
-                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
-                    숨이 턱 막히고 심장이 뛰는 공황발작의 신경학적 원인과 미주신경 자극 응급 4-7-8 복식호흡법.
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 편도체 안정 • 4-7-8호흡</span>
-                  <a href="/column/panic-disorder-breathing/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
                     전문 읽기 →
                   </a>
                 </div>
@@ -340,6 +340,7 @@ sections:
               </div>
             </div>
           </div>
+
 
           <!-- 4. 해아림 4단계 정밀 진단 프로세스 -->
           <div class="space-y-8">
