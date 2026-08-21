@@ -210,9 +210,8 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
 }
 
 // 5. content/column/_index.md 에 신규 칼럼 주입
-async function updateColumnPage(newCol) {
+async function updateColumnPage(newCol, slug) {
   const columnIndexPath = path.join(rootDir, 'content', 'column', '_index.md');
-  const slug = `post-${newCol.date}-${newCol.category}-${Date.now().toString().slice(-4)}`;
   const singlePostPath = path.join(rootDir, 'content', 'column', `${slug}.md`);
 
   const singlePostContent = `---
@@ -267,12 +266,67 @@ ${newCol.contentHtml}
   console.log(`[Auto-Column SEO] Successfully updated content/column/_index.md with direct links!`);
 }
 
+// 6. 텔레그램 알림 발송
+async function sendTelegramNotification(column, slug) {
+  const botToken = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+
+  if (!botToken || !chatId) {
+    console.log('[Auto-Column SEO] TELEGRAM_BOT_TOKEN 또는 TELEGRAM_CHAT_ID 미설정으로 텔레그램 알림을 건너뜁니다.');
+    return;
+  }
+
+  const columnUrl = `https://healimbp.com/column/${slug}/`;
+  const message = `📢 <b>[해아림한의원] 새 건강 칼럼이 자동 발행되었습니다!</b>
+
+📌 <b>제목:</b> ${escapeHtml(column.title)}
+🏷️ <b>분류:</b> ${escapeHtml(column.categoryName)}
+🗓️ <b>일시:</b> ${column.date}
+
+📝 <b>요약:</b>
+${escapeHtml(column.summary)}
+
+🔗 <a href="${columnUrl}">홈페이지에서 칼럼 보기</a>`;
+
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message,
+        parse_mode: 'HTML',
+        disable_web_page_preview: false
+      })
+    });
+
+    const data = await res.json();
+    if (data.ok) {
+      console.log('[Auto-Column SEO] Telegram 알림이 성공적으로 전송되었습니다!');
+    } else {
+      console.error('[Auto-Column SEO] Telegram API 오류:', data.description);
+    }
+  } catch (err) {
+    console.error('[Auto-Column SEO] Telegram 알림 전송 실패:', err);
+  }
+}
+
+function escapeHtml(text) {
+  if (!text) return '';
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
 // 실행
 async function main() {
   console.log('[Auto-Column SEO] Starting clean-title column generation...');
   const column = await generateColumnContent();
-  await updateColumnPage(column);
+  const slug = `post-${column.date}-${column.category}-${Date.now().toString().slice(-4)}`;
+  await updateColumnPage(column, slug);
   console.log(`[Auto-Column SEO] Published column: "${column.title}"`);
+  await sendTelegramNotification(column, slug);
 }
 
 main().catch(err => {
