@@ -73,6 +73,27 @@ sections:
             <!-- 칼럼 카드 그리드 -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="column-grid">
 
+              <!-- [자동발행: 자율신경 · 실신/어지럼증 - 2026-08-21] -->
+              <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">자율신경 · 실신/어지럼증</span>
+                    <span class="text-xs text-[#68736E]">2026-08-21 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug">
+                    손발이 차갑고 식은땀이 나는 수족냉증과 자율신경실조증의 상관관계 - 원인 분석과 1:1 맞춤 한방 치료 솔루션
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
+                    손발이 차갑고 식은땀이 나는 수족냉증과 자율신경실조증의 상관관계에 대한 한의학적 기전과 뇌 신경계·자율신경 균형을 회복하는 해아림한의원 인천부평점의 단계별 맞춤 치료법을 안내합니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 자율신경 • 맞춤한방치료 • 신경안정</span>
+                  <a href="https://blog.naver.com/s72x6o8cv" target="_blank" rel="noopener" class="text-xs font-bold text-[#2F5D50] hover:underline">상세보기 →</a>
+                </div>
+              </article>
+
+
               <!-- [공황·불안 1] -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">

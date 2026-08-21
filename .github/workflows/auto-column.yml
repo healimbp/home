@@ -1,0 +1,48 @@
+name: Daily AI Health Column Auto-Publisher
+
+on:
+  schedule:
+    # 매일 2회 자동 발행: 오전 9:00 KST (00:00 UTC), 오후 4:00 KST (07:00 UTC)
+    - cron: '0 0 * * *'
+    - cron: '0 7 * * *'
+  # GitHub 웹에서 수동으로 'Run workflow' 버튼을 눌러 즉시 1개 발행도 가능
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate Health Column via AI
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/generate-column.mjs
+
+      - name: Commit and Push New Column
+        run: |
+          git add content/column/
+          if git diff --staged --quiet; then
+            echo "No new column generated."
+          else
+            git commit -m "feat(column): auto-publish daily medical column by Director Kwon Hyung-keun"
+            git push origin main
+          fi
