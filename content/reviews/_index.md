@@ -1021,33 +1021,200 @@ sections:
           </div>
 
           <!-- 4-B. [탭 2] 자필 수기 후기 영역 (handwritten-section: 초기 숨김) -->
-          <div id="handwritten-section" class="hidden space-y-6">
-            <div class="border-b border-[#E2EAE5] pb-4">
-              <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E] flex items-center gap-2">
-                <span>✍️ 환자분들의 정성 어린 자필 수기 후기</span>
-                <span class="text-xs sm:text-sm font-normal text-[#B88A3B] bg-[#FFF9E6] px-2.5 py-1 rounded-full font-bold">스캔본 준비중</span>
-              </h2>
-              <p class="text-xs sm:text-sm text-[#68736E] mt-1">치료 종결 후 원내에 직접 손글씨로 남겨주신 소중한 자필 종이 수기 원본 게시판입니다.</p>
+          <div id="handwritten-section" class="hidden space-y-8">
+            <div class="border-b border-[#E2EAE5] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E] flex items-center gap-2">
+                  <span>✍️ 원내 환자 자필 수기 치료 후기</span>
+                  <span class="text-xs sm:text-sm font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-full">자필 원본 등록</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-[#68736E] mt-1">치료 종결 후 원내에서 환자분들과 보호자분들이 직접 손글씨로 남겨주신 소중한 종이 수기 원본입니다.</p>
+              </div>
+              <div class="text-xs text-[#8B9891] flex items-center gap-1.5 self-start sm:self-auto bg-[#F9FAF8] px-3 py-1.5 rounded-lg border border-[#EDF2EE]">
+                <i class="fa-solid fa-magnifying-glass-plus text-[#2F5D50]"></i>
+                <span>이미지를 클릭하시면 원본을 크게 보실 수 있습니다</span>
+              </div>
             </div>
 
-            <!-- 수기 후기 업로드 준비 안내 카드 -->
-            <div class="p-8 sm:p-12 rounded-2xl bg-[#F8FAF9] border-2 border-dashed border-[#CCD8D2] text-center space-y-4">
-              <div class="w-16 h-16 rounded-full bg-[#EAF2ED] text-[#2F5D50] flex items-center justify-center mx-auto text-2xl">
-                <i class="fa-solid fa-file-pen"></i>
+            <!-- 자필 수기 카드 목록 (그리드) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+              <!-- [자필 수기 1] 신미* 님 (자율신경실조증) -->
+              <div class="heal-card bg-white p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-5 flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- 카드 상단 태그 & 정보 -->
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#자율신경실조증 #두통호전 #가슴두근거림소실 #9개월완치</span>
+                    <span class="text-xs text-[#03C75A] font-bold flex items-center gap-1">
+                      <i class="fa-solid fa-file-signature"></i> 원내 자필 원본
+                    </span>
+                  </div>
+
+                  <!-- 제목 및 기본 인적 정보 (개인정보 보호 익명화) -->
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;심장 두근거림, 가슴 답답함, 두통이 사라지고 9개월 치료를 통해 치유되었습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-2 text-xs text-[#68736E] bg-[#F4F7F5] p-2.5 rounded-lg">
+                      <span class="font-bold text-[#26332E]">신미* 님</span>
+                      <span>·</span>
+                      <span>병명: <strong>자율신경실조증</strong></span>
+                      <span>·</span>
+                      <span>치료기간: 2023.09 ~ 2024.06 (9개월)</span>
+                    </div>
+                  </div>
+
+                  <!-- 자필 스캔본 썸네일 (클릭 시 확대 모달) -->
+                  <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-[#DDE6E1] bg-[#FAFCFB]" onclick="openModal('/images/reviews/handwritten_1.jpg', '신미* 님 자필 수기 원본 (자율신경실조증 9개월 치료 완치)')">
+                    <img src="/images/reviews/handwritten_1.jpg" alt="신미* 님 자필 체험 수기 원본" class="w-full h-56 object-cover object-top transition duration-300 group-hover:scale-105 group-hover:opacity-90">
+                    <div class="absolute inset-0 bg-[#1E4638]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
+                      <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+                      <span>클릭하여 자필 원본 크게보기</span>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                      🔍 확대보기
+                    </div>
+                  </div>
+
+                  <!-- 상세 문진 전사 내용 -->
+                  <div class="space-y-3 text-xs sm:text-sm text-[#374151] leading-relaxed">
+                    <div class="p-3.5 bg-[#FFF9F5] rounded-xl border border-[#FFE8DC]">
+                      <div class="font-extrabold text-[#A63C1E] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 치료 받기 전 힘드셨던 증상
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#5A433A]">
+                        <li>심장이 두근거리고 빨리 뛰는 증상</li>
+                        <li>가슴이 답답함 / 가끔 밖에 혼자 나가기 두려울 때가 있었음</li>
+                        <li>지속되는 만성 두통</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-3.5 bg-[#F0F8F4] rounded-xl border border-[#CDE5D8]">
+                      <div class="font-extrabold text-[#1E4638] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#03C75A]"></i> 치료 후 나아진 몸 상태
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#2D5346]">
+                        <li><strong>두통이 없어짐</strong></li>
+                        <li><strong>가슴 두근거림과 빨리 뛰는 것이 지금까지 증상이 없음</strong></li>
+                        <li>불안증도 많이 호전됨 &amp; 가슴 답답한 것도 없어짐</li>
+                        <li>몸이 전체적으로 좋아짐을 느낌</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] italic text-[#4B5563]">
+                      <strong class="not-italic text-[#1E4638] block mb-1">💬 환자분의 따뜻한 한마디:</strong>
+                      &ldquo;여러 증상이 나타났지만 공황증상과 비슷하여 정신과 방문을 했는데 신경계에 문제가 있다고 하셔서 병의 근본적인 치료가 우선이라 생각하고 해아림을 내원하게 되었습니다. 나의 병에 대해 정확하게 진단해 주신 선생님과 상담하며 침치료도 하며 9개월이란 치료기간을 통해 치유되었습니다. 혹시 저와 같은 증상이 있으시다면 망설이지 마시고 어려워 마시고 치료하셨으면 좋겠습니다.&rdquo;
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 1:1 맞춤 자율신경 조율 한약 + 침구 치료</span>
+                  <span class="text-[#03C75A] font-bold">인천부평점 원내 보관 수기</span>
+                </div>
               </div>
-              <div class="space-y-2 max-w-md mx-auto">
-                <h3 class="text-lg font-extrabold text-[#1E4638]">자필 치료 수기 원본 스캔 작업 중입니다</h3>
-                <p class="text-xs sm:text-sm text-[#556B62] leading-relaxed">
-                  환자분들께서 직접 손글씨로 작성해 주신 소중한 종이 수기는 개인정보 비식별 조치 및 고화질 스캔 완료 후 순차적으로 본 게시판에 투명하게 공개됩니다.
-                </p>
+
+              <!-- [자필 수기 2] 황*아 어린이 보호자 님 (소아 틱장애) -->
+              <div class="heal-card bg-white p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-5 flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- 카드 상단 태그 & 정보 -->
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#소아틱장애 #운동음성복합틱 #틱자가조절 #부모마음놓임</span>
+                    <span class="text-xs text-[#03C75A] font-bold flex items-center gap-1">
+                      <i class="fa-solid fa-file-signature"></i> 원내 자필 원본
+                    </span>
+                  </div>
+
+                  <!-- 제목 및 기본 인적 정보 (개인정보 보호 익명화) -->
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;복합 틱이 호전되고 아이 본인도 스스로 컨트롤할 수 있는 힘이 생겼습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-2 text-xs text-[#68736E] bg-[#F4F7F5] p-2.5 rounded-lg">
+                      <span class="font-bold text-[#26332E]">황*아 (8세 여아, 진단 당시 7세) 보호자 님</span>
+                      <span>·</span>
+                      <span>병명: <strong>틱장애</strong></span>
+                      <span>·</span>
+                      <span>치료기간: 8개월</span>
+                    </div>
+                  </div>
+
+                  <!-- 자필 스캔본 썸네일 (클릭 시 확대 모달) -->
+                  <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-[#DDE6E1] bg-[#FAFCFB]" onclick="openModal('/images/reviews/handwritten_2.jpg', '황*아 어린이 보호자 님 자필 수기 원본 (소아 틱장애 8개월 치료)')">
+                    <img src="/images/reviews/handwritten_2.jpg" alt="황*아 어린이 보호자 님 자필 체험 수기 원본" class="w-full h-56 object-cover object-top transition duration-300 group-hover:scale-105 group-hover:opacity-90">
+                    <div class="absolute inset-0 bg-[#1E4638]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
+                      <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+                      <span>클릭하여 자필 원본 크게보기</span>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                      🔍 확대보기
+                    </div>
+                  </div>
+
+                  <!-- 상세 문진 전사 내용 -->
+                  <div class="space-y-3 text-xs sm:text-sm text-[#374151] leading-relaxed">
+                    <div class="p-3.5 bg-[#FFF9F5] rounded-xl border border-[#FFE8DC]">
+                      <div class="font-extrabold text-[#A63C1E] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 치료 받기 전 힘드셨던 증상
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#5A433A]">
+                        <li>눈깜빡임, 얼굴찡그림, 기침, 고개젖히기 등 운동/음성틱이 돌아가며 발현</li>
+                        <li>긴장하거나 흥분되는 상황(놀이터, 체육시간 등)에 증상이 더 심해짐</li>
+                        <li>호전과 악화가 반복되어 부모로서 큰 걱정과 불안</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-3.5 bg-[#F0F8F4] rounded-xl border border-[#CDE5D8]">
+                      <div class="font-extrabold text-[#1E4638] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#03C75A]"></i> 치료 후 나아진 상태
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#2D5346]">
+                        <li>꾸준한 치료로 전반적 증상 호전 &amp; 부모의 부담과 걱정이 크게 감소</li>
+                        <li>증상이 나타나더라도 이전보다 정도가 약해지고 지속 시간이 짧아짐</li>
+                        <li><strong>아이 본인도 어느 정도 컨트롤할 수 있는 힘이 생김</strong></li>
+                      </ul>
+                    </div>
+
+                    <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] italic text-[#4B5563]">
+                      <strong class="not-italic text-[#1E4638] block mb-1">💬 다른 부모님들께 드리는 따뜻한 조언:</strong>
+                      <ul class="not-italic space-y-1 text-xs sm:text-sm mt-1 list-disc list-inside">
+                        <li>틱은 좋아졌다가 다시 나타나는 증상이 반복될 수 있으니 너무 조급해하지 않았으면 함.</li>
+                        <li>단기간의 변화보다는 장기적으로 증상이 어떻게 달라지는지 지켜보는 것이 중요함.</li>
+                        <li>아이의 증상을 계속 지적하거나 지나치게 의식하지 않도록 양육자(부모) 모두 일관된 태도 유지.</li>
+                        <li>치료를 시작했다면 충분한 시간을 갖고 해아림을 믿고 끝까지 이어가보기를 권유.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 소아 틱 한방 맞춤 탕약 + 뇌신경 이완 훈련</span>
+                  <span class="text-[#03C75A] font-bold">인천부평점 원내 보관 수기</span>
+                </div>
               </div>
-              <div class="pt-2">
-                <button onclick="showTab('naver')" class="px-5 py-2.5 rounded-xl bg-[#2F5D50] text-white font-bold text-xs sm:text-sm shadow hover:bg-[#244A40] transition cursor-pointer">
-                  ⭐ 네이버 정성 리뷰 먼저 보러가기
+
+            </div>
+
+          </div>
+
+          <!-- 자필 수기 확대 모달 (Lightbox) -->
+          <div id="image-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4" onclick="closeModal()">
+            <div class="relative max-w-4xl w-full max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
+              <div class="p-4 bg-[#1E4638] text-white flex items-center justify-between">
+                <span id="modal-title" class="font-extrabold text-sm sm:text-base flex items-center gap-2">
+                  <i class="fa-solid fa-file-signature text-[#03C75A]"></i>
+                  <span>자필 수기 원본</span>
+                </span>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center font-bold text-lg transition cursor-pointer">
+                  &times;
                 </button>
+              </div>
+              <div class="p-4 overflow-auto max-h-[calc(90vh-70px)] bg-[#F8FAF9] flex items-center justify-center">
+                <img id="modal-img" src="" alt="자필 수기 원본 확대 이미지" class="max-w-full h-auto rounded-lg shadow border border-[#DDE6E1]">
               </div>
             </div>
           </div>
+
 
           <!-- 5. 하단 진료 예약 CTA 배너 -->
           <div class="heal-card-primary text-center space-y-4 p-8 rounded-2xl bg-gradient-to-r from-[#1E4638] to-[#2F5D50] text-white">
@@ -1156,6 +1323,33 @@ sections:
             updateReviewDisplay();
           }
 
+          function openModal(imgSrc, title) {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            const modalTitle = document.getElementById('modal-title');
+            if (modal && modalImg) {
+              modalImg.src = imgSrc;
+              if (modalTitle && title) {
+                modalTitle.innerHTML = `<i class="fa-solid fa-file-signature text-[#03C75A]"></i> <span>${title}</span>`;
+              }
+              modal.classList.remove('hidden');
+              document.body.style.overflow = 'hidden';
+            }
+          }
+
+          function closeModal() {
+            const modal = document.getElementById('image-modal');
+            if (modal) {
+              modal.classList.add('hidden');
+              document.body.style.overflow = '';
+            }
+          }
+
+          // ESC 키로 모달 닫기
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+          });
+
           // 초기 실행
           if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', updateReviewDisplay);
@@ -1163,6 +1357,7 @@ sections:
             updateReviewDisplay();
           }
         </script>
+
 
 ---
 
