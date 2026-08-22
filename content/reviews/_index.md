@@ -1009,10 +1009,14 @@ sections:
 
             </div>
 
-
-
-
-
+            <!-- 후기 더보기 버튼 영역 -->
+            <div id="load-more-container" class="text-center pt-6 pb-2">
+              <button id="load-more-btn" onclick="loadMoreReviews()" class="px-8 py-3.5 rounded-2xl bg-white border-2 border-[#2F5D50] text-[#2F5D50] hover:bg-[#2F5D50] hover:text-white font-extrabold text-sm sm:text-base shadow-sm hover:shadow-md transition-all duration-200 inline-flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span id="load-more-text">치료 후기 더보기</span>
+                <span id="load-more-count" class="bg-[#EAF2ED] text-[#2F5D50] text-xs px-2.5 py-0.5 rounded-full font-bold group-hover:bg-white/20"></span>
+              </button>
+            </div>
 
           </div>
 
@@ -1038,7 +1042,7 @@ sections:
                 </p>
               </div>
               <div class="pt-2">
-                <button onclick="showTab('naver')" class="px-5 py-2.5 rounded-xl bg-[#2F5D50] text-white font-bold text-xs sm:text-sm shadow hover:bg-[#244A40] transition">
+                <button onclick="showTab('naver')" class="px-5 py-2.5 rounded-xl bg-[#2F5D50] text-white font-bold text-xs sm:text-sm shadow hover:bg-[#244A40] transition cursor-pointer">
                   ⭐ 네이버 정성 리뷰 먼저 보러가기
                 </button>
               </div>
@@ -1069,8 +1073,13 @@ sections:
 
         </div>
 
-        <!-- 탭 및 카테고리 필터 스크립트 -->
+        <!-- 탭 및 카테고리 필터 + 더보기(Load More) 스크립트 -->
         <script>
+          let currentCategory = 'all';
+          const INITIAL_LIMIT = 8;
+          const STEP = 6;
+          let visibleLimit = INITIAL_LIMIT;
+
           function showTab(tabName) {
             const naverSec = document.getElementById('naver-section');
             const handSec = document.getElementById('handwritten-section');
@@ -1080,20 +1089,57 @@ sections:
             if (tabName === 'naver') {
               naverSec.classList.remove('hidden');
               handSec.classList.add('hidden');
-              tabNaver.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2";
-              tabHand.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1]";
+              tabNaver.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2 cursor-pointer";
+              tabHand.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1] cursor-pointer";
             } else {
               naverSec.classList.add('hidden');
               handSec.classList.remove('hidden');
-              tabHand.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2";
-              tabNaver.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1]";
+              tabHand.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2 cursor-pointer";
+              tabNaver.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1] cursor-pointer";
+            }
+          }
+
+          function updateReviewDisplay() {
+            const items = document.querySelectorAll('.review-item');
+            let matchingItems = [];
+
+            items.forEach(item => {
+              const cats = item.getAttribute('data-category') || '';
+              if (currentCategory === 'all' || cats.includes(currentCategory)) {
+                matchingItems.push(item);
+              } else {
+                item.style.display = 'none';
+              }
+            });
+
+            matchingItems.forEach((item, index) => {
+              if (index < visibleLimit) {
+                item.style.display = 'flex';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+
+            const totalMatching = matchingItems.length;
+            const remaining = Math.max(0, totalMatching - visibleLimit);
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            const loadMoreCount = document.getElementById('load-more-count');
+            const loadMoreContainer = document.getElementById('load-more-container');
+
+            if (remaining > 0) {
+              loadMoreContainer.style.display = 'block';
+              loadMoreBtn.style.display = 'inline-flex';
+              loadMoreCount.textContent = `+${remaining}개 더보기`;
+            } else {
+              loadMoreContainer.style.display = 'none';
             }
           }
 
           function filterReviews(category) {
-            const items = document.querySelectorAll('.review-item');
-            const buttons = document.querySelectorAll('.filter-btn');
+            currentCategory = category;
+            visibleLimit = INITIAL_LIMIT;
 
+            const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
               if (btn.getAttribute('data-cat') === category) {
                 btn.className = "filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white";
@@ -1102,15 +1148,21 @@ sections:
               }
             });
 
+            updateReviewDisplay();
+          }
 
-            items.forEach(item => {
-              if (category === 'all' || item.getAttribute('data-category') === category) {
-                item.style.display = 'flex';
-              } else {
-                item.style.display = 'none';
-              }
-            });
+          function loadMoreReviews() {
+            visibleLimit += STEP;
+            updateReviewDisplay();
+          }
+
+          // 초기 실행
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateReviewDisplay);
+          } else {
+            updateReviewDisplay();
           }
         </script>
+
 ---
 
