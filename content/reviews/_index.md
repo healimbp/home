@@ -20,30 +20,23 @@ sections:
             </p>
           </div>
 
-          <!-- 2. 후기 대분류 탭 (네이버 정성 리뷰 vs 자필 수기 후기) -->
-          <div class="flex flex-wrap justify-center gap-3">
-            <button id="tab-naver" onclick="showTab('naver')" class="px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2">
-              <span class="text-base">⭐</span>
-              <span>네이버 예약 정성 리뷰 (18편)</span>
-              <span class="bg-white/20 text-white text-xs px-2 py-0.5 rounded-full font-bold">BEST</span>
-            </button>
-            <button id="tab-handwritten" onclick="showTab('handwritten')" class="px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1]">
-              <span class="text-base">✍️</span>
-              <span>자필 수기 치료 후기</span>
-              <span class="bg-[#2F5D50]/10 text-[#2F5D50] text-xs px-2 py-0.5 rounded-full font-bold">스캔본 준비중</span>
-            </button>
+          <!-- 3. 네이버 플레이스 실시간 영수증 리뷰 공식 바로가기 배너 -->
+          <div class="p-5 sm:p-6 rounded-2xl bg-[#F0F8F4] border border-[#CDE5D8] text-[#1E4638] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+            <div class="space-y-1 text-center sm:text-left">
+              <div class="flex items-center justify-center sm:justify-start gap-2 font-extrabold text-sm sm:text-base text-[#1E4638]">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#03C75A]"></span>
+                <span>네이버 지도에 등록된 실제 100% 방문자 영수증 리뷰</span>
+              </div>
+              <p class="text-xs sm:text-sm text-[#4E6159]">
+                해아림한의원 인천부평점에 직접 내원하신 환자분들이 네이버 플레이스에 남겨주신 실시간 원본 후기를 네이버에서 투명하게 확인하실 수 있습니다.
+              </p>
+            </div>
+            <a href="https://map.naver.com/p/entry/place/1162489675/review/visitor" target="_blank" rel="noopener" class="shrink-0 px-5 py-3 rounded-xl bg-[#03C75A] text-white font-extrabold text-xs sm:text-sm hover:bg-[#02B150] transition flex items-center gap-2 shadow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>네이버 실시간 리뷰 전체보기</span>
+            </a>
           </div>
 
-          <!-- 3. 의료법 제56조 준수 안내 배너 -->
-          <div class="p-4 sm:p-5 rounded-2xl bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] space-y-1.5">
-            <div class="flex items-center gap-2 font-extrabold text-xs sm:text-sm">
-              <i class="fa-solid fa-shield-halved text-[#B88A3B] text-base"></i>
-              <span>[의료법 제56조에 따른 치료 후기 안내]</span>
-            </div>
-            <p class="text-xs text-[#735100] leading-relaxed">
-              본 후기는 해아림한의원 인천부평점에 실제 내원하여 치료받으신 환자분들이 네이버 플레이스 및 진료실에 직접 남겨주신 소중한 자발적 후기이며, 환자 개인정보 보호를 위해 성명은 익명 처리되었습니다. 개인의 체질과 증상에 따라 치료 경과에 차이가 있을 수 있습니다.
-            </p>
-          </div>
 
           <!-- 4-A. [탭 1] 네이버 정성 리뷰 목록 (naver-section) -->
           <div id="naver-section" class="space-y-6">
@@ -70,27 +63,36 @@ sections:
             <!-- 리뷰 그리드 (2열 반응형 카드) -->
             <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-              <!-- 1. 공황장애 1 -->
-              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border border-[#E2EAE5] shadow-sm hover:shadow-md transition space-y-4" data-category="panic">
+              <!-- [실제 네이버 영수증/예약 인증 리뷰 1] 민흠 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="all panic autonomic">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
-                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#공황장애 #자율신경과흥분</span>
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#지인추천 #구체적설명 #한약침추나 #심리적안정</span>
                     <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
                   </div>
                   <div>
-                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">"1년 넘게 시달리던 지하철 공황발작과 과호흡, 이제 혼자서도 편안하게 출퇴근합니다."</h3>
-                    <p class="text-xs text-[#8B9891] mt-1">작성자: 김*진 님 (30대 직장인 / 치료기간 3개월)</p>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;제 병에 대해서 구체적으로 설명해 주셔서 이해하기 너무 좋았어요. 완전 강추합니다!&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">민흠 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 37 · 사진 32</span>
+                    </div>
                   </div>
-                  <div class="p-3.5 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#4E5E56] leading-relaxed">
-                    출퇴근길 지하철 안에서 갑자기 숨이 턱 막히고 심장이 미친 듯이 뛰어 응급실만 세 번을 실려갔었습니다. 양약 신경안정제를 먹으면 졸리고 멍해서 일상생활이 힘들었는데, 권형근 원장님께서 뇌파 검사와 체열 검사 결과를 보여주시며 자율신경계가 과열된 원인을 정말 알기 쉽게 설명해 주셨어요.<br><br>
-                    체질 맞춤 한약과 침 치료를 병행한 지 3주 차부터 가슴 답답함이 확연히 줄었고, 2개월 차에는 혼자서 지하철을 타도 식은땀이 나지 않았습니다. 지금은 약 없이도 마음 편히 직장에 다니고 있습니다.
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    지인한테 추천받아서 부평점 생기자마자 갔어요!! 다들 너무 친절하시고 특히 제 병에 대해서 설명을 구체적으로 해주셔서 병에 대해서 이해를 하고 받아들이기에 너무 좋았어요,,!! 한약도 열심히 먹고 침치료 추나 병행해서 빨리 좋아졌음 좋겠네요 ~~<br><br>
+                    완전 강추합니다 심리적으로 너무 편안해져요👍👍
                   </div>
                 </div>
                 <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
-                  <span>치료: 체질 탕약 + 신경이완 침구</span>
-                  <span class="text-[#03C75A] font-bold"><i class="fa-solid fa-circle-check mr-1"></i>네이버 예약 인증</span>
+                  <span>치료: 한약 처방 + 침치료 + 추나요법</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
                 </div>
               </div>
+
 
               <!-- 2. 공황장애 2 (터널/운전 공포증) -->
               <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border border-[#E2EAE5] shadow-sm hover:shadow-md transition space-y-4" data-category="panic">
