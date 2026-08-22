@@ -11,6 +11,11 @@ export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
   content = content.replace(/(\d+)\s*~\s*(\d+)/g, '$1 ~ $2');
   content = content.replace(/(\d+)\s*～\s*(\d+)/g, '$1 ~ $2');
 
+  // 이모지 및 구분선 기반 섹션 헤더를 ### 마크다운 헤더로 정규화
+  content = content.replace(/(?:^|\n)\s*─{3,}\s*\n\s*(📌|🌿|🩺|💡|🌸|🔍)\s*([^\n]+)\s*\n\s*─{3,}/g, '\n\n### $1 $2\n');
+  content = content.replace(/(?:^|\n)\s*(📌|🌿|🩺|💡|🌸|🔍)\s*(\d+\.?[^\n]+)/g, '\n\n### $1 $2');
+  content = content.replace(/\n\s*─{3,}\s*\n/g, '\n\n');
+
   // 1. 권형근 대표원장의 조언 박스 분리
   let doctorAdvice = '';
   const adviceMatch = content.match(/>\s*\*\*권형근\s*대표원장의\s*조언\*\*:\s*[\r\n]+>\s*["“]?(.*?)["”]?\s*$/s);

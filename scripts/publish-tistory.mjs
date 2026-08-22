@@ -6,7 +6,7 @@
 import { convertColumnToTistoryHtml } from './render-tistory.mjs';
 
 export function formatTistoryContent(column, slug) {
-  const content = column.contentHtml || '';
+  const content = column.tistoryScript || column.contentHtml || '';
   return convertColumnToTistoryHtml(content, slug);
 }
 
@@ -21,9 +21,9 @@ export async function publishToTistory(column, slug) {
     return null;
   }
 
-  const title = column.title;
+  const title = column.tistoryTitle || column.title;
   const content = formatTistoryContent(column, slug);
-  const tag = (column.tags || []).join(',');
+  const tag = (column.tistoryTags || column.tags || []).join(',');
 
   console.log(`[Tistory Auto-Publish] Publishing to blog "${blogName}": "${title}"...`);
 

@@ -106,27 +106,52 @@ async function generateColumnContent() {
 
   const prompt = `
 당신은 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)입니다.
-네이버 및 구글 검색엔진 최적화(SEO)를 고려하여, 제목에는 깔끔하게 ～개의 타겟 지역명만 배치하고, 본문에는 환자의 마음에 깊이 공감하는 심층 2,000자급 의학 칼럼을 작성하세요.
+1개의 의학 주제를 기반으로, 검색엔진의 '유사문서 / 중복 콘텐츠 페널티'를 완벽히 방지하기 위해 다음 **두 가지 전혀 다른 버전의 글**을 각각 작성해주세요.
 
-- 제목: ${fullTitle}
+──────────────────────────────────────────────
+[공통 주제 정보]
+- 공식 칼럼 제목: ${fullTitle}
 - 주 타겟 지역: ${selectedRegion.short} (${selectedRegion.full})
 - 질환 카테고리: ${selectedCat.name}
 - 주제 포커스: ${selectedTopic.focus}
-- 원칙 (의료법 준수, 과장 금지):
-  1. 제목: 간결하게 [${selectedRegion.short} ${selectedCat.name.split(' ')[0]} 한의원] 구조 유지
-  2. 도입부: ${selectedRegion.short} 환자의 진료실 실제 호소문 인용구 (“...”) 와 공감 화두
-  3. 신경/생리학적 기전: 자율신경계(교감-부교감), 뇌 변연계/기저핵, 한스 셀리에 3단계 스트레스 모델
-  4. 객관적 검사: 뇌파 검사, 적외선 체열 검사, 간이정신진단검사, 한의학적 정밀 변증 및 복진
-  5. 1:1 맞춤 한방 치료: 체질 맞춤 탕약, 침구/약침, 두개천골 추나요법
-  6. 진료실 자주 묻는 질문 (FAQ & Q&A ～개): 해당 질환 환자들이 가장 많이 묻는 실전 질문(양약 병행 여부, 치료 기간 및 재발 방지, 검사 과정, 한약 안전성/간 부담 여부, 일상 통원 등)을 Q1~Q5 형식으로 깊이 있고 명쾌하게 답변
-  7. 일상 관리 및 회복 격려 메시지 (부평역 7번 출구 위치 안내 자연스럽게 포함)
+- 원장 정보: 해아림한의원 인천부평점 권형근 대표원장 (한방침구과 전문의, 부평역 7번 출구)
+──────────────────────────────────────────────
+
+[글 1: 홈페이지 공식 의학 칼럼 (contentHtml)]
+- 성격: 공식 웹사이트(healimbp.com) 게재용 전문적이고 신뢰감 있는 대표원장 의학 칼럼.
+- 구성:
+  1. 도입부: ${selectedRegion.short} 환자의 진료실 실제 호소문 인용구 (“...”) 와 공감 화두
+  2. 신경/생리학적 기전: 자율신경계(교감-부교감), 뇌 변연계/기저핵, 한스 셀리에 3단계 스트레스 모델
+  3. 객관적 검사: 뇌파 검사, 적외선 체열 검사, 간이정신진단검사, 한의학적 정밀 변증 및 복진
+  4. 1:1 맞춤 한방 치료: 체질 맞춤 탕약, 침구/약침, 두개천골 추나요법
+  5. 진료실 자주 묻는 질문 (FAQ & Q&A 5개): 해당 질환 환자들이 가장 많이 묻는 실전 질문(양약 병행 여부, 치료 기간 및 재발 방지, 검사 과정, 한약 안전성/간 부담 여부, 야간/주말 진료 등)을 Q1~Q5 형식으로 깊이 있고 명쾌하게 답변
+  6. 일상 관리 및 회복 격려 메시지 (부평역 7번 출구 위치 안내 자연스럽게 포함)
+- 포맷: HTML 태그(h3, p, ul, li, strong, blockquote)를 활용한 1,800~2,200자 분량.
+
+──────────────────────────────────────────────
+[글 2: 티스토리 블로그 전용 포스팅 대본 (tistoryTitle, tistoryTags, tistoryScript)]
+★ 절대 원칙: 홈페이지 칼럼(글 1)과 문장이나 표현이 겹치면 검색엔진(네이버/구글/다음)에서 저품질/유사문서 페널티를 받습니다. 반드시 100% 다른 문장 구조, 다른 어조, 완전히 차별화된 블로그 스토리텔링으로 재작성하세요! ★
+- 성격: 티스토리에 복사해 바로 올릴 수 있는 친근하고 술술 읽히는 고품질 블로그 원고.
+- 제목 (tistoryTitle): 홈페이지 제목과 달리 클릭을 유도하는 매력적인 질문형/스토리형 블로그 제목 (예: "가슴이 쿵쾅거리고 숨이 턱 막힐 때? 공황발작 응급 대처법과 자율신경 이야기", "밤마다 뒤척이는 불면증, 원인은 '뇌 과열'? 꿀잠을 위한 한방 케어법")
+- 어조 및 스타일: 따뜻하고 공감 가득한 친절한 블로그 대화체 (~해요, ~있답니다, ~해볼게요 등).
+- 구성:
+  1. 🌸 친근한 오프닝 & 공감 인사: 독자에게 말을 건네며 겪기 쉬운 일상 증상/상황으로 시작
+  2. 🔍 왜 이런 증상이 생길까요?: 자율신경계 및 뇌의 신호를 쉬운 일상 비유로 설명 (홈페이지 칼럼과 다른 비유 사용)
+  3. 🩺 한의학에서는 어떻게 치료할까요?: 체질 한약, 침 치료, 추나 요법 등의 원리를 블로그 독자 눈높이에 맞춰 쉽게 설명
+  4. 💡 오늘부터 실천하는 생활 속 힐링 습관 3가지: 누구나 집/직장에서 쉽게 따라할 수 있는 꿀팁
+  5. 🌿 따뜻한 맺음말 & 진료 안내: 부평역 7번 출구 해아림한의원 인천부평점 권형근 원장 칼럼 출처 명시
+- 포맷: 이모지와 깔끔한 단락 구분이 들어간 텍스트 원고 (약 1,200~1,600자).
+- 태그 (tistoryTags): 티스토리 블로그 상위노출용 추천 태그 5~7개 (배열).
 
 반드시 아래 JSON 형식으로만 응답하세요 (마크다운 백틱 제외):
 {
   "title": "${fullTitle}",
-  "summary": "칼럼 핵심 요약 ～문장 (약 15～80자, ${selectedRegion.short} 및 ${selectedCat.name.split(' ')[0]} 키워드 포함)",
+  "summary": "홈페이지 칼럼 핵심 요약 2~3문장 (${selectedRegion.short} 및 ${selectedCat.name.split(' ')[0]} 포함)",
   "tags": ["${selectedRegion.short}한의원", "부평한의원", "${selectedCat.name.split(' ')[0]}치료", "뇌파검사", "체열검사"],
-  "contentHtml": "<p>안녕하세요. <strong>부평역 7번 출구에서 ${selectedRegion.short} 환자분들의 자율신경·신경정신과 질환을 1:1 맞춤 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p><blockquote>&ldquo;...&rdquo;</blockquote>... (전체 본문을 HTML 태그 h3, p, ul, li, strong, blockquote 등을 활용하여 1,80～,200자 분량으로 풍부하게 작성)"
+  "contentHtml": "<p>안녕하세요. <strong>부평역 7번 출구에서...</strong></p>...",
+  "tistoryTitle": "티스토리용 매력적인 블로그 제목",
+  "tistoryTags": ["질환키워드", "증상키워드", "부평한의원", "자율신경", "건강칼럼"],
+  "tistoryScript": "안녕하세요, 여러분! 혹시 요즘...\n\n📌 1. 왜 이런 증상이 나타날까요?\n..."
 }
 `;
 
@@ -158,6 +183,9 @@ async function generateColumnContent() {
       summary: parsed.summary,
       tags: parsed.tags || [`${selectedRegion.short}한의원`, '부평한의원', selectedCat.name, '뇌파검사', '체열검사'],
       contentHtml: parsed.contentHtml,
+      tistoryTitle: parsed.tistoryTitle || `[건강정보] ${selectedTopic.focus}에 대한 원인과 치료 가이드`,
+      tistoryTags: parsed.tistoryTags || [selectedCat.name.split(' ')[0], '부평한의원', '자율신경', '한방치료', '건강관리'],
+      tistoryScript: parsed.tistoryScript || generateFallbackTistoryScript(selectedCat, selectedTopic, selectedRegion),
       date: dateStr
     };
   } catch (err) {
@@ -166,14 +194,57 @@ async function generateColumnContent() {
   }
 }
 
+function generateFallbackTistoryScript(cat, topic, region) {
+  const catShort = cat.name.split(' ')[0];
+  return `안녕하세요! 마음과 몸의 평온을 함께 찾아가는 건강 길잡이입니다.
+
+요즘 들어 부쩍 가슴이 답답하거나 이유 없는 불안, 수면 장애, 피로감으로 하루하루가 버겁다고 느끼신 적 없으신가요?
+특히 ${region.short} 인근에서 직장 생활이나 가사, 학업으로 과도한 스트레스를 받다 보면 우리 몸의 신경계가 지치기 쉽습니다.
+
+오늘은 많은 분들이 남몰래 고민하시는 [${catShort}] 증상에 대해, 원인부터 일상 관리법까지 쉽고 편안하게 이야기해보려 합니다.
+
+──────────────────
+🌿 1. 왜 이런 불편한 증상이 반복될까요?
+──────────────────
+우리의 뇌와 몸은 스트레스를 받으면 '자율신경계'라는 자동 조절 장치를 가동합니다.
+낮 동안 긴장하고 일할 때는 '교감신경'이 일하고, 쉴 때는 '부교감신경'이 몸을 회복시켜 주어야 하는데요.
+휴식 없이 지속적인 긴장이 쌓이면 마치 브레이크가 고장 난 자동차처럼 신경계가 과열되어 가슴 두근거림, 어지럼증, 불면, 긴장감 등의 신체화 증상이 나타나게 됩니다.
+
+──────────────────
+🩺 2. 한의학에서는 어떻게 회복을 도울까요?
+──────────────────
+단순히 일시적인 증상 완화에 그치지 않고, 몸 스스로 안정을 찾을 수 있는 자생력을 키우는 것이 핵심입니다.
+• 1:1 맞춤 한약: 과열된 뇌 신경의 흥분을 가라앉히고(청열안신), 부족해진 심장과 간의 기혈을 보충합니다.
+• 온화한 침구 및 약침 요법: 긴장된 근육과 경혈을 부드럽게 이완시켜 뇌 혈류 순환을 촉진합니다.
+• 두개천골 추나요법: 척추와 경추의 미세한 불균형을 바로잡아 뇌척수액 순환을 원활하게 돕습니다.
+
+──────────────────
+💡 3. 오늘부터 시작하는 힐링 자가관리 꿀팁
+──────────────────
+1) 4-7-8 호흡법: 4초간 코로 숨을 들이마시고, 7초간 멈춘 뒤, 8초간 입으로 천천히 내쉬어보세요. 부교감신경을 깨우는 데 큰 도움이 됩니다.
+2) 미온수 족욕: 잠들기 30분 전 따뜻한 물에 발을 담그면 뇌로 쏠린 열감이 내려갑니다.
+3) 햇살 산책: 하루 20분 가볍게 걸으며 햇볕을 쬐면 세로토닌과 멜라토닌 분비가 촉진됩니다.
+
+──────────────────
+🌸 맺음말
+──────────────────
+몸이 보내는 신호는 "이제 조금 쉬어가며 나를 돌봐달라"는 소중한 메시지입니다.
+오랜 시간 혼자 참거나 방치하지 마시고, 전문가와 함께 내 몸의 리듬을 되찾아보시길 바랍니다.
+
+📍 출처 및 전문 상담:
+해아림한의원 인천부평점 권형근 대표원장 (한방침구과 전문의)
+(부평역 7번 출구 도보 5분 / 032-719-3472)`;
+}
+
 function generateFallbackContent(cat, topic, region, title, date, id) {
+  const catShort = cat.name.split(' ')[0];
   return {
     id: id,
     category: cat.id,
     categoryName: cat.name,
     title: title,
     summary: `${region.short} 지역에서 ${cat.name} 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.`,
-    tags: [`${region.short}한의원`, '부평한의원', cat.name.split(' ')[0], '맞춤한약', '뇌파검사', '체열검사'],
+    tags: [`${region.short}한의원`, '부평한의원', catShort, '맞춤한약', '뇌파검사', '체열검사'],
     contentHtml: `
 <p>안녕하세요. <strong>부평역 7번 출구에서 ${region.short} 환자분들의 자율신경 및 두뇌 질환을 1:1 맞춤 진료하는 해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)</strong>입니다.</p>
 
@@ -212,7 +283,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
       <span>정신과 약(신경안정제, 수면제, 항우울제)을 복용 중인데 한방 치료와 병행할 수 있나요?</span>
     </div>
     <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      네, 충분히 병행 가능합니다. 복용 중인 양약을 갑자기 중단하면 반동 불안이나 불면이 올 수 있으므로 초기에는 약 ～시간 시간차를 두고 병행합니다. 이후 한방 치료로 뇌 신경계의 자생력이 회복되면 주치의와 상의하여 안전하게 점진적 감량(Tapering)을 진행합니다.
+      네, 충분히 병행 가능합니다. 복용 중인 양약을 갑자기 중단하면 반동 불안이나 불면이 올 수 있으므로 초기에는 약 1~2시간 시간차를 두고 병행합니다. 이후 한방 치료로 뇌 신경계의 자생력이 회복되면 주치의와 상의하여 안전하게 점진적 감량(Tapering)을 진행합니다.
     </p>
   </div>
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
@@ -221,7 +292,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
       <span>한방 치료 기간은 보통 얼마나 걸리나요? 치료 후 재발하지 않나요?</span>
     </div>
     <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      증상의 유병 기간과 신경계 피로도에 따라 차이가 있으나, 보통 ～개월 차에는 두근거림·불면 등 신체 증상을 완화하고, ～개월 차에는 자율신경 밸런스와 두뇌 회복력을 안정화시킵니다. 일시적 억제가 아닌 근본 조절력을 키우므로 치료 종결 후에도 재발률이 낮습니다.
+      증상의 유병 기간과 신경계 피로도에 따라 차이가 있으나, 보통 1~2개월 차에는 두근거림·불면 등 신체 증상을 완화하고, 3~4개월 차에는 자율신경 밸런스와 두뇌 회복력을 안정화시킵니다. 일시적 억제가 아닌 근본 조절력을 키우므로 치료 종결 후에도 재발률이 낮습니다.
     </p>
   </div>
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
@@ -248,7 +319,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
       <span>직장인이라 주간 방문이 어려운데 야간이나 주말 진료가 가능한가요?</span>
     </div>
     <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      해아림한의원 인천부평점은 월·수·금 저녁 8시까지 야간진료를 시행하며, 토요일(09:0～5:00)과 공휴일(09:0～3:00)에는 점심시간 없이 연속 진료를 진행하므로 바쁜 직장인과 학생분들도 편안하게 통원 치료를 받으실 수 있습니다.
+      해아림한의원 인천부평점은 월·수·금 저녁 8시까지 야간진료를 시행하며, 토요일(09:00~15:00)과 공휴일(09:00~13:00)에는 점심시간 없이 연속 진료를 진행하므로 바쁜 직장인과 학생분들도 편안하게 통원 치료를 받으실 수 있습니다.
     </p>
   </div>
 </div>
@@ -256,6 +327,9 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
 <h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">6. 일상생활 속 자가 관리 가이드</h3>
 <p>규칙적인 수면 리듬 유지, 4-7-8 복식호흡 훈련, 가벼운 산책을 병행하시면 신경계 안정에 큰 도움이 됩니다. ${region.short} 지역에서 오랜 증상으로 고통받고 계시다면 부평역 7번 출구 도보 5분 거리 해아림한의원에 편안하게 내원하시어 정확한 진단을 받아보시길 권해드립니다.</p>
 `,
+    tistoryTitle: `가슴이 답답하고 불안할 때? ${catShort}의 원인과 생활 속 회복 가이드`,
+    tistoryTags: [catShort, `${region.short}한의원`, '부평한의원', '자율신경', '건강칼럼'],
+    tistoryScript: generateFallbackTistoryScript(cat, topic, region),
     date: date
   };
 }
@@ -354,6 +428,25 @@ ${newCol.contentHtml}
   }
 }
 
+// 텔레그램 단일 메시지 전송 헬퍼
+async function postTelegramMessage(botToken, chatId, text) {
+  const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: text,
+      parse_mode: 'HTML',
+      disable_web_page_preview: false
+    })
+  });
+  const data = await res.json();
+  if (!data.ok) {
+    throw new Error(`Telegram API Error: ${data.description}`);
+  }
+  return data;
+}
+
 // 6. 텔레그램 알림 및 블로그 복사용 전문 발송
 async function sendTelegramNotification(column, slug) {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -368,104 +461,68 @@ async function sendTelegramNotification(column, slug) {
   const bookingUrl = `https://booking.naver.com/booking/13/bizes/934695`;
   const kakaoUrl = `https://open.kakao.com/o/sgbnTRJi`;
 
-  // 1) 요약 알림 메시지
-  const summaryMessage = `📢 <b>[해아림한의원] 새 건강 칼럼이 발행되었습니다!</b>
+  // [메시지 1] 홈페이지 칼럼 자동 발행 완료 알림
+  const homepageNotice = `📢 <b>[해아림한의원] 새 건강 칼럼이 공식 홈페이지에 자동 발행되었습니다!</b>
 
-📌 <b>제목:</b> ${escapeHtml(column.title)}
+📌 <b>홈페이지 제목:</b> ${escapeHtml(column.title)}
 🏷️ <b>분류:</b> ${escapeHtml(column.categoryName)}
-🗓️ <b>일시:</b> ${column.date}
+🗓️ <b>발행일:</b> ${column.date}
 
-📝 <b>핵심 요약:</b>
+📝 <b>홈페이지 칼럼 요약:</b>
 ${escapeHtml(column.summary)}
 
-🔗 <a href="${columnUrl}">홈페이지에서 칼럼 보기</a>`;
+🔗 <a href="${columnUrl}">홈페이지에서 칼럼 바로가기</a>`;
 
-  // 2) 블로그(티스토리/네이버) 원클릭 복사용 본문 메시지
-  let bodyText = column.contentHtml
-    .replace(/<h3[^>]*>(.*?)<\/h3>/gi, '\n\n📌 $1\n')
-    .replace(/<blockquote[^>]*>(.*?)<\/blockquote>/gis, (m, p1) => `\n💬 "${p1.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').trim()}"\n`)
-    .replace(/<li><strong>(.*?)<\/strong>:\s*(.*?)<\/li>/gi, '• $1: $2\n')
-    .replace(/<li>(.*?)<\/li>/gi, '• $1\n')
-    .replace(/<p[^>]*>(.*?)<\/p>/gi, '$1\n\n')
-    .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<strong>(.*?)<\/strong>/gi, '$1')
-    .replace(/&ldquo;|&rdquo;/g, '"')
-    .replace(/&lsquo;|&rsquo;/g, "'")
-    .replace(/&amp;/g, '&')
-    .replace(/<[^>]+>/g, '')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
+  // [메시지 2] 티스토리 블로그 전용 포스팅 대본 (유사문서 방지 100% 차별화 원고)
+  const tTitle = column.tistoryTitle || `[건강정보] ${column.categoryName} 원인과 일상 회복 가이드`;
+  const tTags = (column.tistoryTags || column.tags || []).map(t => `#${t.replace(/^#|\s+/g, '')}`).join(' ');
+  const tScript = column.tistoryScript || generateFallbackTistoryScript({ name: column.categoryName }, { focus: '' }, { short: '부평' });
 
-  const hashtags = (column.tags || []).map(t => `#${t.replace(/\s+/g, '')}`).join(' ');
+  const tistoryNotice = `📋 <b>[티스토리 블로그 원클릭 복사용 맞춤 대본]</b>
+<i>※ 홈페이지 칼럼과 100% 다른 문장과 친근한 블로그 스토리텔링으로 재작성된 원고입니다. (유사문서 페널티 완벽 방지)</i>
 
-  const blogCopyMessage = `📋 <b>[티스토리/블로그 원클릭 복사용 전문]</b>
-
-<b>[제목]</b>
-<code>${escapeHtml(column.title)}</code>
+<b>[추천 제목]</b>
+<code>${escapeHtml(tTitle)}</code>
 
 ─────────────────
-${escapeHtml(bodyText)}
+${escapeHtml(tScript)}
 ─────────────────
 
-🏥 <b>[해아림한의원 인천부평점]</b>
+🏥 <b>[해아림한의원 인천부평점 안내]</b>
 • 진료: 권형근 대표원장 (한방침구과 전문의)
 • 위치: 인천 부평구 경원대로 1412, 2층 (부평역 7번 출구 도보 5분)
 • 문의: 032-719-3472
-• 예약: ${bookingUrl}
-• 카톡상담: ${kakaoUrl}
-• 원문출처: ${columnUrl}
+• 네이버예약: ${bookingUrl}
+• 카카오톡상담: ${kakaoUrl}
+• 홈페이지 칼럼원문: ${columnUrl}
 
-🏷️ <b>[태그]</b>
-<code>${escapeHtml(hashtags)}</code>`;
+🏷️ <b>[추천 태그]</b>
+<code>${escapeHtml(tTags)}</code>`;
 
   try {
-    // 요약 알림 전송
-    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: summaryMessage,
-        parse_mode: 'HTML',
-        disable_web_page_preview: false
-      })
-    });
+    // 1. 홈페이지 알림 발송
+    await postTelegramMessage(botToken, chatId, homepageNotice);
+    console.log('[Auto-Column SEO] Telegram 1/2 (홈페이지 발행 알림) 전송 완료!');
 
-    // 블로그 복사용 전문 전송 (길이 초과 방지)
-    const MAX_LEN = 3900;
-    if (blogCopyMessage.length <= MAX_LEN) {
-      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          chat_id: chatId,
-          text: blogCopyMessage,
-          parse_mode: 'HTML',
-          disable_web_page_preview: true
-        })
-      });
+    // 2. 티스토리 대본 발송 (텔레그램 길이 제한 대비 분할 지원)
+    const MAX_LEN = 3800;
+    if (tistoryNotice.length <= MAX_LEN) {
+      await postTelegramMessage(botToken, chatId, tistoryNotice);
+      console.log('[Auto-Column SEO] Telegram 2/2 (티스토리 차별화 대본) 전송 완료!');
     } else {
-      // 4000자 초과 시 2개로 분할 전송
-      const part1 = blogCopyMessage.slice(0, MAX_LEN);
-      const part2 = blogCopyMessage.slice(MAX_LEN);
-      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: chatId, text: part1, parse_mode: 'HTML', disable_web_page_preview: true })
-      });
-      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: chatId, text: part2, parse_mode: 'HTML', disable_web_page_preview: true })
-      });
+      const part1 = tistoryNotice.slice(0, MAX_LEN);
+      const part2 = tistoryNotice.slice(MAX_LEN);
+      await postTelegramMessage(botToken, chatId, part1);
+      await postTelegramMessage(botToken, chatId, part2);
+      console.log('[Auto-Column SEO] Telegram 2/2 (티스토리 대본 분할) 전송 완료!');
     }
 
-    // 3) 티스토리 HTML 서식 파일 첨부 전송 (sendDocument)
+    // 3. 티스토리 HTML 서식 파일 첨부 전송 (sendDocument)
     try {
       const tistoryHtml = formatTistoryContent(column, slug);
       const formData = new FormData();
       formData.append('chat_id', chatId);
-      formData.append('caption', `📝 <b>[티스토리 HTML 모드 전용 파일]</b>\n이 파일을 열어 전체 복사 후 티스토리 에디터 [HTML] 모드에 붙여넣으시면 서식이 100% 완벽하게 적용됩니다.`);
+      formData.append('caption', `📝 <b>[티스토리 HTML 모드 전용 파일]</b>\n이 파일을 열어 전체 복사 후 티스토리 에디터 [HTML] 모드에 붙여넣으시면 차별화된 서식/박스/버튼이 100% 완벽하게 적용됩니다.`);
       formData.append('parse_mode', 'HTML');
       const blob = new Blob([tistoryHtml], { type: 'text/html;charset=utf-8' });
       formData.append('document', blob, `tistory_${slug}.html`);
@@ -474,11 +531,12 @@ ${escapeHtml(bodyText)}
         method: 'POST',
         body: formData
       });
+      console.log('[Auto-Column SEO] Telegram 3/3 (티스토리 HTML 문서 첨부) 전송 완료!');
     } catch (docErr) {
       console.warn('[Auto-Column SEO] Telegram HTML 문서 첨부 전송 건너뜀/실패:', docErr.message);
     }
 
-    console.log('[Auto-Column SEO] Telegram 알림 및 블로그 복사용 전문이 성공적으로 전송되었습니다!');
+    console.log('[Auto-Column SEO] Telegram 알림 및 차별화 티스토리 대본이 성공적으로 전송되었습니다!');
   } catch (err) {
     console.error('[Auto-Column SEO] Telegram 알림 전송 실패:', err);
   }
