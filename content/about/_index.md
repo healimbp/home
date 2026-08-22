@@ -225,32 +225,32 @@ sections:
             </div>
           </div>
 
-          <!-- 5. 첨단 NeuronFlex 뉴로피드백 & 뇌파 조절 시스템 -->
-          <div class="space-y-8">
-            <div class="text-center space-y-2 max-w-2xl mx-auto">
-              <span class="heal-hero-badge">Neurofeedback System</span>
+          <!-- 5. 첨단 비약물 두뇌 훈련 & 감각통합 센터 (NeuronFlex & IM) -->
+          <div class="space-y-10">
+            <div class="text-center space-y-3 max-w-3xl mx-auto">
+              <span class="heal-hero-badge">Advanced Brain Training & Sensory Integration</span>
               <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">
-                첨단 NeuronFlex 뉴로피드백 & 두뇌 훈련 시스템
+                첨단 뉴로피드백 & IM 감각통합 두뇌 훈련 센터
               </h2>
               <p class="text-xs sm:text-sm text-[#68736E] leading-relaxed">
-                해아림한의원 인천부평점은 객관적인 뇌파 분석을 바탕으로 뇌신경계의 자율 조절력을 강화하는 전문 두뇌 훈련 장비 <strong>NeuronFlex(뉴런플렉스)</strong>를 운용합니다.
+                해아림한의원 인천부평점은 뇌파를 스스로 조절하는 <strong>NeuronFlex 뉴로피드백</strong>과 1/1,000초 신경 타이밍을 동기화하는 <strong>IM(인터랙티브 메트로놈) 감각통합 훈련</strong>을 유기적으로 결합하여, 약물 부작용 없이 두뇌의 자생력과 억제 조절력을 극대화합니다.
               </p>
             </div>
 
-            <!-- NeuronFlex 장비 상세 소개 카드 -->
+            <!-- 1. NeuronFlex 장비 상세 소개 카드 -->
             <div class="bg-gradient-to-br from-[#F4F8F6] to-[#EAF3EF] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#DDE6E1] shadow-sm space-y-8">
               <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7 space-y-4 text-left">
                   <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2F5D50] text-white text-xs font-bold">
                     <i class="fa-solid fa-brain"></i>
-                    <span>비약물적 두뇌 기능 활성화 솔루션</span>
+                    <span>장비 01 · 뇌파 조절 & 자율신경 안정</span>
                   </div>
                   <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E] leading-snug">
-                    스스로 뇌파를 조절하여 두뇌의 자생력을 깨우는<br class="hidden sm:inline" />
+                    스스로 뇌파를 조절하여 두뇌 자생력을 깨우는<br class="hidden sm:inline" />
                     <span class="text-[#2F5D50]">NeuronFlex(뉴런플렉스) 뉴로피드백</span>
                   </h3>
                   <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-                    뉴로피드백(Neurofeedback)은 환자의 실시간 뇌파(EEG)와 자율신경 생체신호를 컴퓨터 화면으로 피드백하여, <strong>불안정하고 과각성된 뇌파(세타파·하이베타파)는 억제하고 주의집중 및 심신 안정에 필요한 유익한 뇌파(SMR파·알파파)를 스스로 강화하도록 훈련</strong>하는 최첨단 두뇌 훈련 요법입니다.
+                    뉴로피드백(Neurofeedback)은 실시간 뇌파(EEG)와 자율신경 생체신호를 컴퓨터 화면으로 피드백하여, <strong>불안정하고 과각성된 뇌파(세타파·하이베타파)는 억제하고 주의집중 및 심신 안정에 필요한 유익한 뇌파(SMR파·알파파)를 스스로 강화하도록 훈련</strong>하는 최첨단 두뇌 훈련 시스템입니다.
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                     <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
@@ -265,7 +265,7 @@ sections:
                         <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
                         <span>지속적인 두뇌 회로 강화</span>
                       </div>
-                      <p class="text-[11px] text-[#68736E]">일시적 억제가 아닌 뇌 신경망의 가소성(Neuroplasticity)을 유도하여 효과가 오래 지속됩니다.</p>
+                      <p class="text-[11px] text-[#68736E]">일시적 억제가 아닌 뇌 신경망 가소성(Neuroplasticity)을 유도하여 효과가 오래 지속됩니다.</p>
                     </div>
                   </div>
                 </div>
@@ -298,34 +298,21 @@ sections:
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- 6. 첨단 IM (Interactive Metronome) 감각통합 훈련 시스템 -->
-          <div class="space-y-8">
-            <div class="text-center space-y-2 max-w-2xl mx-auto">
-              <span class="heal-hero-badge">Sensory Integration System</span>
-              <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">
-                첨단 IM (Interactive Metronome) 감각통합 훈련 시스템
-              </h2>
-              <p class="text-xs sm:text-sm text-[#68736E] leading-relaxed">
-                1/1,000초 정밀 시청각 피드백으로 뇌신경망의 정보 처리 속도와 타이밍/리듬 조절력을 동기화하는 전문 감각통합 장비 <strong>IM(인터랙티브 메트로놈)</strong>을 운용합니다.
-              </p>
-            </div>
-
-            <!-- IM 장비 상세 소개 카드 -->
+            <!-- 2. IM (Interactive Metronome) 장비 상세 소개 카드 -->
             <div class="bg-gradient-to-br from-[#FAFBF9] to-[#F2F7F4] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#DDE6E1] shadow-sm space-y-8">
               <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7 space-y-4 text-left">
                   <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#202947] text-white text-xs font-bold">
                     <i class="fa-solid fa-stopwatch"></i>
-                    <span>1/1,000초 신경 타이밍 동기화 솔루션</span>
+                    <span>장비 02 · 1/1,000초 신경 타이밍 동기화</span>
                   </div>
                   <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E] leading-snug">
                     뇌의 타이밍과 리듬 감각을 바로잡는<br class="hidden sm:inline" />
-                    <span class="text-[#2F5D50]">IM (인터랙티브 메트로놈) 감각통합 훈련</span>
+                    <span class="text-[#2F5D50]">IM (Interactive Metronome) 감각통합 훈련</span>
                   </h3>
                   <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-                    <strong>IM (Interactive Metronome)</strong>은 1/1,000초(밀리초, ms) 단위의 정밀한 소리 비트와 시각 피드백을 통해 손과 발의 움직임을 동기화시키는 <strong>신경학적 감각통합 및 타이밍 조절 훈련 시스템</strong>입니다. 뇌 신경망의 정보 처리 속도와 타이밍 오차를 실시간으로 교정하여 두뇌의 집중 지속력과 충동 억제력을 비약적으로 끌어올립니다.
+                    <strong>IM (인터랙티브 메트로놈)</strong>은 1/1,000초(밀리초, ms) 단위의 정밀한 소리 비트와 시각 피드백을 통해 손과 발의 움직임을 동기화시키는 <strong>신경학적 감각통합 및 타이밍 조절 훈련 시스템</strong>입니다. 뇌 신경망의 정보 처리 속도와 타이밍 오차를 실시간으로 교정하여 두뇌의 집중 지속력과 충동 억제력을 비약적으로 끌어올립니다.
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                     <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
