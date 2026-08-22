@@ -50,11 +50,12 @@ sections:
                 <span class="text-[11px] text-[#8B9891]">원하시는 질환을 클릭하시면 해당 후기만 정렬됩니다</span>
               </div>
               <div class="flex flex-wrap gap-2">
-                <button onclick="filterReviews('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체 (6편)</button>
-                <button onclick="filterReviews('child')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="child">소아 틱·ADHD·집중력 (3)</button>
-                <button onclick="filterReviews('panic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">심리안정·공황·불안 (2)</button>
-                <button onclick="filterReviews('autonomic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">경추교정·추나·두통 (2)</button>
-                <button onclick="filterReviews('depression')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="depression">마음치유·심층상담 (2)</button>
+                <button onclick="filterReviews('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체 (11편)</button>
+                <button onclick="filterReviews('child')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="child">소아 틱·ADHD·집중력 (4)</button>
+                <button onclick="filterReviews('autonomic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">자율신경·갱년기·두통 (5)</button>
+                <button onclick="filterReviews('panic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">공황·불안·심리안정 (4)</button>
+                <button onclick="filterReviews('insomnia')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="insomnia">불면증·수면장애 (3)</button>
+                <button onclick="filterReviews('facial')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="facial">안면마비·경추통증 (2)</button>
               </div>
 
             </div>
@@ -92,8 +93,158 @@ sections:
                 </div>
               </div>
 
-              <!-- [실제 네이버 인증 리뷰 2] 서윤40 님 -->
-              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic depression">
+              <!-- [실제 네이버 인증 리뷰 2] 나타샤맘 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="facial autonomic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#안면마비 #구안와사 #경추치료 #목통증개선</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;안면마비도 금방 없어지고 경추 치료로 잘 때 불편하던 목이 정말 편해졌어요!&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">나타샤맘 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 15 · 사진 12</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    안면마비로 치과에서 삼차신경통일꺼라생각하고 약먹고했었는데 안나아서 침맞을까해서 집근처로 급하게 알아보고 온곳인데 너무 잘온거있죠!!<br><br>
+                    안면 마비도 금방없어지고 마비증상이 경추때문인것도 알게되서 현재 계속 치료중인데 잘때 불편하던 목이 많이 편해졌어요! 실장님,간호사선생님도 친절하셔서 갈때마다 편히 진료받고 와요! 원장님도 더할나위없이 친절하시고 자상하셔서 너무좋습니다 강추예용ㅎㅎ
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 안면마비 침치료 + 경추 정렬 추나</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 3] 굿걸19 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="autonomic insomnia">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#갱년기자율신경 #심장두근거림 #수면식은땀 #1인실진료</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;심장 두근거림과 수면 중 식은땀이 확 줄고 예민하던 마음이 조절됩니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">굿걸19 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 5 · 사진 3</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    갱년기가 오나보다 대수롭지 않게 생각했는데 오지게 왔네요 사춘기처럼 그냥 지나가겠지 하고 버티다 버티다 너무 힘들어서 혹시나 하고 병원에 가서 이것저것 검사를 해보니 자율신경실조증이라는 얘기만 하고 치료약도 별반 없더군요 나만힘든건지 ㅠ<br><br>
+                    양방보다는 한의원치료가 나을거같다며 딸이 검색해줘서 방문하게 됐습니다 검사받고 치료시작한지 2개월이 되가네요. 치료전엔 뭔지 몰라도 심장두근대고 자면서 식은땀 흘러 잠을 제대로못잤는데 치료시작하면서 젤 먼저 그런 증상이 많이 줄어들었고 수시로 짜증이 나고 예민해져서 너무 힘들었는데 이제는 마음이 좀 조절이 되는 것 같아요. 원장님을비롯 모두 친절해서 편안하게 치료받고 있어요~ 1인실로 조용한것도 장점입니다 추천합니다~~
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 갱년기 자율신경 조절 한약 + 침구 요법</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 4] 파파야7 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic insomnia">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#불안불면증 #수면제부작용 #심장미친듯이뜀 #3개월호전</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;불안함과 심장 두근거림이 사라지고 마음이 편안해져서 이제 살 것 같아요.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">파파야7 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 21 · 사진 12</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    불안함과 불면증으로 스틸녹스 먹던중 환청 망상까지 부작용이 찾아와 진짜 무섭고 힘든중에 회사동료분 소개로 한방치료 시작했어요 이제 치료 시작한지 3개월!!<br><br>
+                    설명하기 힘들만큼 불안해지고 심장이 미친듯이 뛰어 자다가도 일어나곤 했는데요 그런 증상들은 일단 사라졌고 마음도 편안해져서 이제 좀 살것같아요. 아직은 완전하게 모든것이 좋아진건 아니지만 매번 꼼꼼히 설명해주셔서 믿고 있어요 모두 친절하고 시설도 깨끗해서 좋아요 한방치료 반대하던 남편도 이제서야 치료를 믿어주고 도움을 주네요 ㅠㅠ
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 불안·불면 안신 한약 + 자율신경 안정 침구</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 5] 박카스913 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="child">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#소아틱장애 #초등여아틱 #3개월호전 #아이심리안정</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;믿고 치료받으니 아이가 밝아지고 틱 증상도 없어지기 시작해서 정말 다행입니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">박카스913 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 31 · 사진 17</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    둘째 딸 틱때문에 병원에 찾아갔습니다. 치료받은지 이제 3달정도 된거같은데요.<br><br>
+                    아이가 반응이 빠르지는 않은 편이라서 이제서야 증상이 좋아지는게 눈에 좀 보이네요. 원장님께서 한순간에 좋아지지 않으니 너무 조바심내지 말라고 하셨는데 쉽진 않더라구요. 그래도 믿고 치료받으니 아이가 밝아지고 증상도 없어지기 시작해서 정말 다행이고 마음이 좀 놓입니다. 너무 감사해요.
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 소아 맞춤 탕약 + 무통 두개천골 침구</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 6] 네이버 예약 환자분 (자율신경이상/불면증/편두통) -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="autonomic insomnia panic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#만성불면증 #잦은편두통 #새벽심장두근거림 #자율신경이상 #가정의평화</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;불면증, 편두통, 새벽 심장두근거림이 편안해지며 온 가족에게 평화가 깃들었습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">네이버 예약 방문 환자 님</span>
+                      <span>·</span>
+                      <span>네이버 예약 방문 후기</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    불면증에 반복되는 잦은 편두통에 새벽에 심장두근거림등 말하자면 입아플 정도로 증상이 많았던 자율신경이상으로 너무 힘들던중에 여기가 마지막이다 생각하고 찾았던 곳이고 초조함과 불안함에 저절로 생기는 의심때문에 처음에 예의없는 질문도 많이 했었는데요ㅜㅜ<br><br>
+                    이제는 정말 많이 편안해졌어요 덕분에 그동안 저의 늘어난 짜증과 신경질로 온가족이 힘들었었는데요 이제 가정에 평화도 깃든것같습니다. 다른치료들로 치료가 안되서 몸도 마음도 힘드신분들께 조금이라도 도움이 되고자 제 치료후기 남겨봐요~ 요즘 몸이 좋아지니 일이 좀 많아져 바쁘다보니치료를 중간에 못가는 날들 생겼는데요 원장님 말씀처럼 재발이 안되도록 최대한 열심히 치료하러 다닐게요^^ 원장님 선생님들 감사드려요
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 자율신경 조율 한약 + 두개천골 추나 + 침구</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 7] 서윤40 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
                     <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#블로그검색내원 #전문병원 #맞춤응대 #마음치료</span>
@@ -123,7 +274,7 @@ sections:
                 </div>
               </div>
 
-              <!-- [실제 네이버 인증 리뷰 3] 네미와의하루 님 -->
+              <!-- [실제 네이버 인증 리뷰 8] 네미와의하루 님 -->
               <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="child">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
@@ -153,8 +304,8 @@ sections:
                 </div>
               </div>
 
-              <!-- [실제 네이버 인증 리뷰 4] 한촬스 님 -->
-              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="autonomic depression">
+              <!-- [실제 네이버 인증 리뷰 9] 한촬스 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="autonomic facial">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
                     <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#경추교정 #턱틀어짐 #추나치료 #두통개선</span>
@@ -184,8 +335,8 @@ sections:
                 </div>
               </div>
 
-              <!-- [실제 네이버 인증 리뷰 5] 꽃날43 님 -->
-              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="child adhd">
+              <!-- [실제 네이버 인증 리뷰 10] 꽃날43 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="child">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
                     <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#소아집중력 #짜증완화 #소아체질개선 #배변기능개선</span>
@@ -214,7 +365,7 @@ sections:
                 </div>
               </div>
 
-              <!-- [실제 네이버 인증 리뷰 6] 스즈나2858 님 -->
+              <!-- [실제 네이버 인증 리뷰 11] 스즈나2858 님 -->
               <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="child">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
@@ -246,6 +397,7 @@ sections:
               </div>
 
             </div>
+
 
           </div>
 
