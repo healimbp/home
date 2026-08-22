@@ -101,26 +101,31 @@ sections:
                   </div>
                 </div>
 
-                <!-- 지하철 안내 -->
-                <div class="space-y-1">
+                <!-- 지하철 안내 & 도보 꿀팁 -->
+                <div class="space-y-1.5 border-t border-[#E2E8F0] pt-3">
                   <div class="flex items-center gap-2 font-bold text-[#1E293B]">
                     <i class="fa-solid fa-train-subway text-[#202947]"></i>
-                    <span>지하철</span>
+                    <span>지하철 & 도보 안내</span>
                   </div>
-                  <p class="pl-6 text-xs text-[#475569]">
-                    <strong class="text-[#1E293B]">부평역 7번 출구</strong> 나와서 350m 직진
-                  </p>
+                  <div class="pl-6 space-y-1 text-xs text-[#475569]">
+                    <p><strong class="text-[#1E293B]">지하철 1호선 · 인천 1호선 부평역 7번 출구</strong>에서 스타벅스 방면으로 직진 350m (도보 5분)</p>
+                    <p class="p-2.5 bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] rounded-xl leading-relaxed">
+                      💡 <strong>도보 길찾기 팁:</strong> 부평역 지하상가 출구가 복잡하므로, 지상 1층 <strong>부평역 7번 출구(북광장)</strong>로 나오셔서 대로변을 따라 직진하시면 가장 쉽고 빠르게 찾아오실 수 있습니다.
+                    </p>
+                  </div>
                 </div>
 
-                <!-- 주차 안내 -->
-                <div class="space-y-1">
+                <!-- 주차 안내 상세 -->
+                <div class="space-y-1.5 border-t border-[#E2E8F0] pt-3">
                   <div class="flex items-center gap-2 font-bold text-[#1E293B]">
                     <i class="fa-solid fa-square-parking text-[#202947]"></i>
-                    <span>주차 안내</span>
+                    <span>주차 안내 (진료 시 무료 주차 지원)</span>
                   </div>
-                  <p class="pl-6 text-xs text-[#475569]">
-                    건물 기계식 주차장 및 인근 제휴 주차장 (진료 후 무료 주차 지원)
-                  </p>
+                  <div class="pl-6 space-y-1.5 text-xs text-[#475569]">
+                    <div>• <strong>본 건물 주차장:</strong> 건물 내 기계식 주차장 완비 (일반 승용차 무료 주차 지원)</div>
+                    <div>• <strong>대형차/SUV 주차:</strong> 차량 크기로 기계식 진입이 어려우신 경우, 인근 제휴 및 공영주차장 이용 시 주차비를 전액 지원해 드립니다.</div>
+                    <div>• <strong>네비게이션 검색:</strong> '해아림한의원 인천부평점' 또는 '경원대로 1412' 검색</div>
+                  </div>
                 </div>
 
               </div>
@@ -143,9 +148,9 @@ sections:
 
                 <!-- 시간 목록 (균등 정렬) -->
                 <div class="space-y-2.5 text-xs sm:text-sm text-[#334155] pl-6 font-medium">
-                  <div class="flex justify-between items-center max-w-[340px]">
-                    <span>월요일 / 수요일 / 금요일</span>
-                    <span class="font-bold text-[#111827]">10:00 - 20:00</span>
+                  <div class="flex justify-between items-center max-w-[340px] p-2 rounded-lg bg-[#EAF3EF] font-bold text-[#2F5D50]">
+                    <span>월요일 / 수요일 / 금요일 (야간)</span>
+                    <span>10:00 - 20:00</span>
                   </div>
                   <div class="flex justify-between items-center max-w-[340px]">
                     <span>화 &nbsp; 요 &nbsp; 일</span>
@@ -155,12 +160,12 @@ sections:
                     <span>목 &nbsp; 요 &nbsp; 일</span>
                     <span class="font-bold">정기 휴진</span>
                   </div>
-                  <div class="flex justify-between items-center max-w-[340px]">
-                    <span>토 &nbsp; 요 &nbsp; 일</span>
-                    <span class="font-bold text-[#111827]">09:00 - 15:00</span>
+                  <div class="flex justify-between items-center max-w-[340px] p-2 rounded-lg bg-[#F8FAF9] font-bold text-[#26332E]">
+                    <span>토 &nbsp; 요 &nbsp; 일 (연속진료)</span>
+                    <span>09:00 - 15:00</span>
                   </div>
                   <div class="flex justify-between items-center max-w-[340px]">
-                    <span>공 &nbsp; 휴 &nbsp; 일</span>
+                    <span>공 &nbsp; 휴 &nbsp; 일 (연속진료)</span>
                     <span class="font-bold text-[#111827]">09:00 - 13:00</span>
                   </div>
                   <div class="flex justify-between items-center max-w-[340px] text-red-600">
@@ -173,7 +178,19 @@ sections:
                 <div class="pt-3 pl-6 space-y-1 text-xs text-[#0284C7] font-semibold">
                   <div>* 토요일 / 공휴일은 점심시간 없이 진료합니다.</div>
                   <div class="text-[#64748B]">* 평일 점심시간: 13:00 - 14:00</div>
-                  <div>* 매주 목요일 / 일요일은 휴진입니다.</div>
+                  <div>* 예약제를 통해 대기 시간을 최소화하고 있습니다.</div>
+                </div>
+
+                <!-- 예약 바로가기 버튼 그룹 -->
+                <div class="pt-4 pl-6 flex flex-wrap gap-2.5">
+                  <a href="https://booking.naver.com/booking/13/bizes/934695" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-[#03C75A] text-white text-xs font-extrabold hover:bg-[#02B150] transition shadow flex items-center gap-1.5">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>네이버 간편예약</span>
+                  </a>
+                  <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-[#FEE500] text-[#191919] text-xs font-extrabold hover:bg-[#FDD835] transition shadow flex items-center gap-1.5">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>카톡 1:1 상담</span>
+                  </a>
                 </div>
               </div>
             </div>
