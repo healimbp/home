@@ -26,9 +26,9 @@ console.log(`총 ${ALL_COLUMNS.length}개의 전문 심층 칼럼 데이터가 �
 function getSection5Config(category, slug) {
   if (category.includes('소아') || category.includes('ADHD') || category.includes('틱')) {
     return {
-      title: '두뇌 발달과 감각 통합을 돕는 소아 맞춤 뇌신경 훈련 & 구조 솔루션',
-      intro: '소아청소년의 뇌는 지금 이 순간에도 빠르게 성장하고 변화하는 과정에 있습니다. 따라서 단순히 신경전달물질을 억제하는 약물 치료에만 의존하기보다는, 두개천골계(CST)를 이완하여 뇌척수액 순환을 돕고 두뇌 감각 통합 훈련을 병행하여 아이 스스로 뇌 억제 브레이크를 튼튼하게 키울 수 있도록 돕습니다.',
-      outro: '이처럼 아이의 체질에 맞춘 순한 한약 치료와 두뇌 감각 훈련이 조화를 이룰 때, 아이의 정서적 안정은 물론 학습 집중력과 자존감까지 함께 회복됩니다.'
+      title: '두뇌 발달과 감각 통합을 돕는 NeuronFlex & IM 두뇌 훈련 솔루션',
+      intro: '소아청소년의 뇌는 지금 이 순간에도 빠르게 성장하고 변화하는 과정에 있습니다. 따라서 단순히 신경전달물질을 억제하는 약물 치료에만 의존하기보다는, 두개천골계(CST)를 이완하여 뇌척수액 순환을 돕고 NeuronFlex 뉴로피드백 및 IM(Interactive Metronome) 감각통합 타이밍 훈련을 병행하여 아이 스스로 뇌 억제 브레이크를 튼튼하게 키울 수 있도록 돕습니다.',
+      outro: '이처럼 아이의 체질에 맞춘 순한 한약 치료와 첨단 IM 감각통합·뉴로피드백 훈련이 조화를 이룰 때, 정서적 안정은 물론 학습 집중력과 자존감까지 함께 회복됩니다.'
     };
   } else if (category.includes('공황') || category.includes('불안') || category.includes('강박')) {
     return {

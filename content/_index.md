@@ -612,31 +612,58 @@ sections:
               </div>
             </div>
 
-            <!-- NeuronFlex 뉴로피드백 두뇌 훈련 시스템 배너 -->
-            <div class="bg-gradient-to-br from-[#F4F8F6] to-[#EAF3EF] p-6 sm:p-8 rounded-3xl border border-[#DDE6E1] shadow-sm">
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-                <div class="lg:col-span-8 space-y-3 text-left">
-                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2F5D50] text-white text-xs font-bold">
+            <!-- NeuronFlex & IM 감각통합 두뇌 훈련 시스템 배너 그리드 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- 장비 1: NeuronFlex 뉴로피드백 -->
+              <div class="bg-gradient-to-br from-[#F4F8F6] to-[#EAF3EF] p-6 sm:p-7 rounded-3xl border border-[#DDE6E1] shadow-sm flex flex-col justify-between space-y-4">
+                <div class="space-y-2.5 text-left">
+                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2F5D50] text-white text-[11px] font-bold">
                     <i class="fa-solid fa-brain"></i>
-                    <span>첨단 비약물적 두뇌 훈련 솔루션</span>
+                    <span>뇌파 조절 훈련</span>
                   </div>
-                  <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E]">
-                    NeuronFlex 첨단 뉴로피드백 & 바이오피드백 두뇌 훈련
+                  <h3 class="text-lg sm:text-xl font-extrabold text-[#26332E]">
+                    NeuronFlex 첨단 뉴로피드백
                   </h3>
-                  <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-                    뇌파(EEG)와 자율신경 생체신호를 실시간으로 모니터링하여, 불안정한 뇌파를 억제하고 집중력과 심신 안정에 필요한 유익한 뇌파를 스스로 강화하도록 훈련하는 비약물 두뇌 훈련 시스템입니다.
+                  <p class="text-xs text-[#4E6159] leading-relaxed">
+                    실시간 뇌파 피드백을 통해 불안정하고 산만한 뇌파를 억제하고 주의집중 및 심신 안정 뇌파(SMR/알파파)를 스스로 강화합니다.
                   </p>
-                  <div class="flex flex-wrap gap-2 pt-1">
-                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">소아/성인 ADHD 집중력</span>
-                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">틱·뚜렛 뇌 억제 훈련</span>
-                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">불면증 뇌 과각성 진정</span>
-                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">공황·불안 자율신경 이완</span>
+                  <div class="flex flex-wrap gap-1.5 pt-1">
+                    <span class="bg-white text-[#2F5D50] font-bold px-2 py-0.5 rounded text-[11px] border border-[#DDE6E1]">ADHD 집중력</span>
+                    <span class="bg-white text-[#2F5D50] font-bold px-2 py-0.5 rounded text-[11px] border border-[#DDE6E1]">틱 억제 회로</span>
+                    <span class="bg-white text-[#2F5D50] font-bold px-2 py-0.5 rounded text-[11px] border border-[#DDE6E1]">불면증 진정</span>
                   </div>
                 </div>
-                <div class="lg:col-span-4 text-center lg:text-right">
-                  <a href="/about/" class="inline-flex items-center gap-2 bg-[#2F5D50] text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm hover:bg-[#202947] transition shadow-sm">
-                    <span>NeuronFlex 시스템 자세히 보기</span>
-                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                <div class="pt-2">
+                  <a href="/about/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    <span>뉴로피드백 원리 자세히 보기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 장비 2: IM (Interactive Metronome) 감각통합 -->
+              <div class="bg-gradient-to-br from-[#FAFBF9] to-[#F2F7F4] p-6 sm:p-7 rounded-3xl border border-[#DDE6E1] shadow-sm flex flex-col justify-between space-y-4">
+                <div class="space-y-2.5 text-left">
+                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#202947] text-white text-[11px] font-bold">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span>1/1,000초 신경 동기화</span>
+                  </div>
+                  <h3 class="text-lg sm:text-xl font-extrabold text-[#26332E]">
+                    IM (인터랙티브 메트로놈) 감각통합
+                  </h3>
+                  <p class="text-xs text-[#4E6159] leading-relaxed">
+                    1/1,000초 단위의 정밀 시청각 피드백으로 손·발 움직임을 동기화하여 뇌신경망의 정보 처리 속도와 타이밍 조절력을 극대화합니다.
+                  </p>
+                  <div class="flex flex-wrap gap-1.5 pt-1">
+                    <span class="bg-white text-[#202947] font-bold px-2 py-0.5 rounded text-[11px] border border-[#DDE6E1]">작업기억력 증진</span>
+                    <span class="bg-white text-[#202947] font-bold px-2 py-0.5 rounded text-[11px] border border-[#DDE6E1]">충동 억제 훈련</span>
+                    <span class="bg-white text-[#202947] font-bold px-2 py-0.5 rounded text-[11px] border border-[#DDE6E1]">운동 협응성 회복</span>
+                  </div>
+                </div>
+                <div class="pt-2">
+                  <a href="/about/" class="text-xs font-bold text-[#202947] hover:underline inline-flex items-center gap-1">
+                    <span>IM 감각통합 원리 자세히 보기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>
                 </div>
               </div>

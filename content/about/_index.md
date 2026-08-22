@@ -298,6 +298,64 @@ sections:
                 </div>
               </div>
             </div>
+
+            <!-- IM (Interactive Metronome) 감각통합 훈련 장비 소개 카드 -->
+            <div class="bg-gradient-to-br from-[#FAFBF9] to-[#F2F7F4] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#DDE6E1] shadow-sm space-y-8">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4 text-left">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#202947] text-white text-xs font-bold">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span>1/1,000초 정밀 감각통합 뇌신경 훈련</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E] leading-snug">
+                    뇌의 타이밍과 리듬 감각을 바로잡는<br class="hidden sm:inline" />
+                    <span class="text-[#2F5D50]">IM (Interactive Metronome) 감각통합 훈련</span>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+                    <strong>IM (인터랙티브 메트로놈)</strong>은 1/1,000초(밀리초, ms) 단위의 정밀한 소리 비트와 시각 피드백을 통해 손과 발의 움직임을 동기화시키는 <strong>신경학적 감각통합 및 타이밍 조절 훈련 시스템</strong>입니다. 뇌 신경망의 정보 처리 속도와 타이밍 오차를 실시간으로 교정하여 두뇌의 집중 지속력과 충동 억제력을 비약적으로 끌어올립니다.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>소아/성인 ADHD 집중력 극대화</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">산만함을 줄이고 작업기억력(Working Memory)과 과제 지속 수행력을 강화합니다.</p>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>틱장애 운동 억제 신경망 동기화</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">기저핵-소뇌-전두엽을 연결하는 운동 제어 회로의 타이밍을 정밀 조절합니다.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5 space-y-3">
+                  <div class="bg-white p-5 rounded-2xl border border-[#DDE6E1] shadow-sm space-y-3">
+                    <div class="text-xs font-extrabold text-[#2F5D50] border-b border-[#F2F7F4] pb-2 flex items-center justify-between">
+                      <span>IM 감각통합 훈련의 치료 메커니즘</span>
+                      <span class="text-[10px] text-[#68736E]">신경 타이밍 재학습</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-[#3D4D47]">
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">1단계</span>
+                        <span><strong>정밀 타이밍 측정:</strong> 1/1,000초 단위로 두뇌의 시청각 반응 속도 및 편차 평가</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">2단계</span>
+                        <span><strong>시청각-운동 동기화:</strong> 리듬 비트에 맞추어 손·발 터치 훈련으로 뇌신경망 연결 촉진</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">3단계</span>
+                        <span><strong>전두엽 실행기능 강화:</strong> 잡념을 배제하고 목표 자극에만 반응하는 억제 통제력 완성</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Bottom CTA -->
