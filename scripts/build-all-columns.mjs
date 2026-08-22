@@ -22,10 +22,67 @@ const ALL_COLUMNS = [
 
 console.log(`총 ${ALL_COLUMNS.length}개의 전문 심층 칼럼 데이터가 로드되었습니다.`);
 
-// 개별 마크다운 파일 렌더링 함수 (티스토리 심층 포맷 100% 매칭 & 완벽한 문단 구성)
+// 질환군별 맞춤 통합 치료 솔루션 (섹션 5 차별화 설정)
+function getSection5Config(category, slug) {
+  if (category.includes('소아') || category.includes('ADHD') || category.includes('틱')) {
+    return {
+      title: '두뇌 발달과 감각 통합을 돕는 소아 맞춤 뇌신경 훈련 & 구조 솔루션',
+      intro: '소아청소년의 뇌는 지금 이 순간에도 빠르게 성장하고 변화하는 과정에 있습니다. 따라서 단순히 신경전달물질을 억제하는 약물 치료에만 의존하기보다는, 두개천골계(CST)를 이완하여 뇌척수액 순환을 돕고 두뇌 감각 통합 훈련을 병행하여 아이 스스로 뇌 억제 브레이크를 튼튼하게 키울 수 있도록 돕습니다.',
+      outro: '이처럼 아이의 체질에 맞춘 순한 한약 치료와 두뇌 감각 훈련이 조화를 이룰 때, 아이의 정서적 안정은 물론 학습 집중력과 자존감까지 함께 회복됩니다.'
+    };
+  } else if (category.includes('공황') || category.includes('불안') || category.includes('강박')) {
+    return {
+      title: '편도체 과열을 진정시키는 자율신경 이완 & 호흡 신경 치료',
+      intro: '공황과 불안, 강박 사고는 뇌 변연계의 편도체(Amygdala)가 과도하게 경보를 울리며 횡격막과 흉곽 근육을 극도로 긴장시키는 상태입니다. 뇌의 공포 회로를 진정시키기 위해서는 자율신경을 안정시키는 미주신경 자극 침구 치료와 호흡 패턴 교정이 반드시 함께 이루어져야 합니다.',
+      outro: '심담(心膽)을 강화하는 맞춤 한약과 자율신경 이완 치료가 결합되면, 예기치 못한 불안 자극 앞에서도 심장 박동과 호흡이 스스로 평정을 되찾게 됩니다.'
+    };
+  } else if (category.includes('자율신경') || category.includes('실신') || category.includes('어지럼') || category.includes('이명')) {
+    if (slug === 'cervicogenic-dizziness' || slug === 'tinnitus-autonomic-dizziness') {
+      return {
+        title: '경추 신경 압박 해소와 내이 혈류를 개선하는 구조·한방 통합 솔루션',
+        intro: '경추성 어지럼증과 신경성 이명은 목뼈의 비틀림으로 인한 추골동맥 및 뇌신경 압박, 그리고 내이(달팽이관·전정기관)로 가는 미세 혈류 장애가 핵심입니다. 상부 경추의 구조적 정렬과 뇌혈류 촉진 침구 치료를 동시에 진행해야 머리가 맑아집니다.',
+        outro: '목과 턱의 신경 압박을 해소하는 추나·FCST 요법과 청간식풍(淸肝熄風) 한약이 함께 작용할 때, 만성적인 어지럼증과 귓속 잡음이 서서히 잦아듭니다.'
+      };
+    }
+    return {
+      title: '교감·부교감 균형을 복구하는 자율신경 재조절 & 심혈류 순환 치료',
+      intro: '자율신경실조증은 교감신경과 부교감신경의 상호 조절 능력이 무너져 체온, 혈압, 소화, 심박수 조절에 이상이 생긴 상태입니다. 목 부위 성상신경절(SGB) 침치료와 경락 약침을 통해 상체로 치솟는 열을 내리고 전신 혈류 순환을 정상화합니다.',
+      outro: '오장육부의 기혈을 보강하는 맞춤 한약과 자율신경 조절 치료를 통해 물먹은 솜 같던 몸의 자생력을 근본적으로 회복시킵니다.'
+    };
+  } else if (category.includes('불면증') || category.includes('수면')) {
+    return {
+      title: '과열된 뇌 스위치를 끄는 수면 뇌파 안정 & 심신(心腎) 조화 치료',
+      intro: '밤마다 잠을 이루지 못하거나 자주 깨는 것은 뇌의 디폴트모드네트워크(DMN)가 꺼지지 않고 심장과 간의 허열(虛熱)이 뇌로 치솟기 때문입니다. 두피와 심장 경락의 특효혈(백회·신문·안면혈) 침치료를 통해 과열된 뇌파를 델타파(깊은 수면파)로 유도합니다.',
+      outro: '수면제 의존 없이도 자연스럽게 졸음이 찾아오도록 뇌 신경망을 진정시키는 한방 수면 치료로 개운한 아침을 되찾아 드립니다.'
+    };
+  } else if (category.includes('우울증') || category.includes('화병') || category.includes('번아웃')) {
+    return {
+      title: '가슴의 맺힌 울화를 풀고 뇌 세로토닌을 깨우는 해울(解鬱) 신경 치료',
+      intro: '화병과 우울증, 번아웃은 억압된 감정과 만성 스트레스로 인해 가슴 정중앙(전중혈)의 기운이 꽉 막히고 뇌 세로토닌·도파민 신경망이 방전된 상태입니다. 가슴과 목구멍의 기혈 울체를 뚫어주는 소간해울(疏肝解鬱) 침구 치료로 답답함을 즉각 해소합니다.',
+      outro: '뇌 신경전달물질의 활성을 돕는 맞춤 한약과 신체 활력 회복 치료가 결합되어 무기력감의 늪에서 벗어날 수 있는 힘을 길러드립니다.'
+    };
+  } else {
+    // 신체화, 담적, 두통, 턱관절
+    if (slug === 'tmj-bruxism-stress') {
+      return {
+        title: '턱관절 디스크와 경추 정렬을 바로잡는 FCST 뇌척주요법 & 침구 치료',
+        intro: '턱관절은 하루 2,000번 이상 움직이며 뇌간으로 수많은 신경 신호를 보내는 핵심 부위입니다. 수면 중 이악물기와 이갈이로 인한 턱관절 편차를 FCST 구강내 균형장치와 경추 추나요법으로 바로잡아 턱 통증과 연관 두통을 근본 치료합니다.',
+        outro: '구조적 턱관절 교정과 턱 근육의 긴장을 푸는 작약감초탕 계열 한약 치료가 결합될 때 턱의 소리와 통증, 안면 비대칭이 함께 호전됩니다.'
+      };
+    }
+    return {
+      title: '굳어진 위장과 뇌-장 신경망을 부드럽게 되살리는 복부 온열 & 한방 치료',
+      intro: '신경성 소화장애, 긴장성 두통, 담적병은 뇌와 장이 미주신경으로 연결된 뇌-장 축(Gut-Brain Axis)의 기능 이상입니다. 딱딱하게 굳은 명치와 복부 근육을 온열 침구와 약침으로 풀어 위장 평활근의 자율 연동 운동을 복구합니다.',
+      outro: '위장 외벽의 담적 독소를 녹이는 맞춤 한약과 복부 순환 치료를 통해 더부룩함과 두통 없는 가벼운 일상을 완성합니다.'
+    };
+  }
+}
+
+// 개별 마크다운 파일 렌더링 함수
 function renderColumnFile(c) {
   const cleanTitle = c.title.replace(/"/g, "'");
   const cleanSummary = c.summary.replace(/"/g, "'");
+  const sec5 = getSection5Config(c.category, c.slug);
   
   // 1. Voice Box Quotes
   const voiceLinesHtml = c.voiceQuotes.map(q => {
@@ -42,7 +99,7 @@ function renderColumnFile(c) {
     `진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호`,
     `국내외 임상 연구와 한의학적 치료 보고`,
     `한의학에서 바라보는 환자별 3대 맞춤 체질 유형`,
-    `구조(FCST·CST)와 신경계를 함께 다스리는 한방 통합 솔루션`,
+    sec5.title,
     `환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)`
   ];
 
@@ -77,7 +134,7 @@ function renderColumnFile(c) {
     </div>`
   ).join('\n');
 
-  // 8. 구조 치료 솔루션 카드 HTML
+  // 8. 구조/신경 치료 솔루션 카드 HTML
   const structCardsHtml = c.structCards.map(sc => 
     `    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
@@ -203,17 +260,15 @@ ${typeCardsHtml}
 
 <div class="section-label">해아림 통합 치료 솔루션 05</div>
 
-## ${standardToc[4]}
+## ${sec5.title}
 
-뇌신경 질환과 신경정신과 질환을 근본적으로 다스리기 위해서는 뇌 내부의 화학적 조절뿐만 아니라, **뇌로 통하는 물리적 신경 통로와 혈류 순환을 동시에 바로잡아야** 합니다. 
-
-특히 턱관절과 상부 경추(목뼈 1·2번)는 뇌간과 12개 뇌신경이 통과하는 핵심 관문입니다.
+${sec5.intro}
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
 ${structCardsHtml}
 </div>
 
-이처럼 뇌신경의 흥분을 다스리는 맞춤 한약 치료와, 뇌의 숨통을 틔워주는 FCST 및 CST 구조 치료가 결합될 때 비로소 몸과 마음이 함께 안정되는 진정한 회복을 경험할 수 있습니다.
+${sec5.outro}
 
 ---
 
