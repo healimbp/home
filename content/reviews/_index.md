@@ -1,13 +1,13 @@
 ---
 title: "치료 후기"
 linkTitle: "치료 후기"
-summary: "해아림한의원 인천부평점 실제 환자 치료 경험담 및 네이버 예약 정성 리뷰 18선 (의료법 준수)"
+summary: "해아림한의원 인천부평점 실제 환자 치료 경험담 및 네이버 예약 정성 리뷰 (의료법 준수)"
 type: landing
 sections:
   - block: html
     content:
       html: |
-        <div class="w-full max-w-5xl mx-auto py-6 space-y-12">
+        <div class="w-full max-w-5xl mx-auto py-6 space-y-10">
 
           <!-- 1. Header Banner -->
           <div class="lia-hero-box text-center space-y-4">
@@ -16,30 +16,54 @@ sections:
               해아림과 함께 찾은 평온한 일상
             </h1>
             <p class="text-base sm:text-lg text-[#53615B] leading-relaxed max-w-2xl mx-auto">
-              단순한 한 줄 평이 아닌, 질환의 고통 속에서 권형근 원장님과 함께 몸과 마음의 균형을 되찾으신 환자분들의 <strong>진정성 있는 18편의 실제 회복 이야기</strong>입니다.
+              단순한 한 줄 평이 아닌, 질환의 고통 속에서 권형근 원장님과 함께 몸과 마음의 균형을 되찾으신 환자분들의 <strong>진정성 있는 실제 회복 이야기</strong>입니다.
             </p>
           </div>
 
-          <!-- 3. 네이버 플레이스 실시간 영수증 리뷰 공식 바로가기 배너 -->
-          <div class="p-5 sm:p-6 rounded-2xl bg-[#F0F8F4] border border-[#CDE5D8] text-[#1E4638] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
-            <div class="space-y-1 text-center sm:text-left">
-              <div class="flex items-center justify-center sm:justify-start gap-2 font-extrabold text-sm sm:text-base text-[#1E4638]">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#03C75A]"></span>
-                <span>네이버 지도에 등록된 실제 100% 방문자 영수증 리뷰</span>
-              </div>
-              <p class="text-xs sm:text-sm text-[#4E6159]">
-                해아림한의원 인천부평점에 직접 내원하신 환자분들이 네이버 플레이스에 남겨주신 실시간 원본 후기를 네이버에서 투명하게 확인하실 수 있습니다.
-              </p>
-            </div>
-            <a href="https://map.naver.com/p/entry/place/1162489675/review/visitor" target="_blank" rel="noopener" class="shrink-0 px-5 py-3 rounded-xl bg-[#03C75A] text-white font-extrabold text-xs sm:text-sm hover:bg-[#02B150] transition flex items-center gap-2 shadow">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              <span>네이버 실시간 리뷰 전체보기</span>
-            </a>
+          <!-- 2. 후기 대분류 탭 (네이버 영수증 리뷰 vs 자필 수기 후기) -->
+          <div class="flex flex-wrap justify-center gap-3">
+            <button id="tab-naver" onclick="showTab('naver')" class="px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2 cursor-pointer">
+              <span class="text-base">⭐</span>
+              <span>네이버 방문자 영수증 리뷰</span>
+              <span class="bg-white/20 text-white text-xs px-2 py-0.5 rounded-full font-bold">인증 리뷰</span>
+            </button>
+            <button id="tab-handwritten" onclick="showTab('handwritten')" class="px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1] cursor-pointer">
+              <span class="text-base">✍️</span>
+              <span>원내 자필 수기 치료 후기</span>
+              <span class="bg-[#2F5D50]/10 text-[#2F5D50] text-xs px-2 py-0.5 rounded-full font-bold">자필 원본</span>
+            </button>
           </div>
 
+          <!-- 3. 의료법 준수 안내 배너 -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] space-y-1.5">
+            <div class="flex items-center gap-2 font-extrabold text-xs sm:text-sm">
+              <i class="fa-solid fa-shield-halved text-[#B88A3B] text-base"></i>
+              <span>[의료법 제56조에 따른 치료 후기 안내]</span>
+            </div>
+            <p class="text-xs text-[#735100] leading-relaxed">
+              본 후기는 해아림한의원 인천부평점에 실제 내원하여 치료받으신 환자분들이 직접 남겨주신 소중한 자발적 후기이며, 환자 개인정보 보호를 위해 성명은 익명 처리되었습니다. 개인의 체질과 증상에 따라 치료 경과에 차이가 있을 수 있습니다.
+            </p>
+          </div>
 
           <!-- 4-A. [탭 1] 네이버 정성 리뷰 목록 (naver-section) -->
           <div id="naver-section" class="space-y-6">
+
+            <!-- 네이버 플레이스 실시간 영수증 리뷰 공식 바로가기 배너 -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#F0F8F4] border border-[#CDE5D8] text-[#1E4638] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+              <div class="space-y-1 text-center sm:text-left">
+                <div class="flex items-center justify-center sm:justify-start gap-2 font-extrabold text-sm sm:text-base text-[#1E4638]">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#03C75A]"></span>
+                  <span>네이버 지도에 등록된 실제 100% 방문자 영수증 리뷰</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#4E6159]">
+                  해아림한의원 인천부평점에 직접 내원하신 환자분들이 네이버 플레이스에 남겨주신 실시간 원본 후기를 네이버에서 투명하게 확인하실 수 있습니다.
+                </p>
+              </div>
+              <a href="https://map.naver.com/p/entry/place/1162489675/review/visitor" target="_blank" rel="noopener" class="shrink-0 px-5 py-3 rounded-xl bg-[#03C75A] text-white font-extrabold text-xs sm:text-sm hover:bg-[#02B150] transition flex items-center gap-2 shadow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>네이버 실시간 리뷰 전체보기</span>
+              </a>
+            </div>
 
             <!-- 질환별 카테고리 필터 버튼 그룹 -->
             <div class="bg-white p-4 rounded-2xl border border-[#E2EAE5] shadow-sm space-y-3">
@@ -50,14 +74,16 @@ sections:
                 <span class="text-[11px] text-[#8B9891]">원하시는 질환을 클릭하시면 해당 후기만 정렬됩니다</span>
               </div>
               <div class="flex flex-wrap gap-2">
-                <button onclick="filterReviews('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체 (30편)</button>
-                <button onclick="filterReviews('autonomic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">자율신경·갱년기·교감항진 (13)</button>
-                <button onclick="filterReviews('panic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">공황·호흡곤란·불안·운전·대중교통 (12)</button>
-                <button onclick="filterReviews('child')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="child">소아 틱·ADHD·집중력 (6)</button>
-                <button onclick="filterReviews('insomnia')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="insomnia">불면증·스트레스·수면 (5)</button>
-                <button onclick="filterReviews('adhd')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="adhd">성인ADHD·기억력 (2)</button>
-                <button onclick="filterReviews('facial')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="facial">안면마비·경추·턱관절 (2)</button>
+                <button onclick="filterReviews('all')" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체보기</button>
+                <button onclick="filterReviews('autonomic')" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">자율신경·갱년기·교감항진</button>
+                <button onclick="filterReviews('panic')" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">공황·호흡곤란·불안·운전</button>
+                <button onclick="filterReviews('child')" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="child">소아 틱·ADHD·집중력</button>
+                <button onclick="filterReviews('insomnia')" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="insomnia">불면증·스트레스·수면</button>
+                <button onclick="filterReviews('adhd')" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="adhd">성인ADHD·기억력</button>
+                <button onclick="filterReviews('facial')" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="facial">안면마비·경추·턱관절</button>
               </div>
+            </div>
+
 
 
 
@@ -1070,11 +1096,12 @@ sections:
 
             buttons.forEach(btn => {
               if (btn.getAttribute('data-cat') === category) {
-                btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white";
+                btn.className = "filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white";
               } else {
-                btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]";
+                btn.className = "filter-btn px-3.5 py-2 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]";
               }
             });
+
 
             items.forEach(item => {
               if (category === 'all' || item.getAttribute('data-category') === category) {
