@@ -40,7 +40,7 @@ draft: false
 * **이개 및 턱관절 경혈 침구 치료**: 이문혈, 청궁혈, 청회혈, 예풍혈을 자극하여 내이로 들어가는 미세 혈류 순환을 획기적으로 개선합니다.
 * **두개골 미세 교정 추나요법**: 측두골과 상부 경추의 비틀림을 교정하여 청신경 통로의 압박을 해소합니다.
 
-### 5. 진료실 자주 묻는 질문 (Q&A)
+### 5. 진료실 자주 묻는 질문 (FAQ)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

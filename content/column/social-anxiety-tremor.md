@@ -43,7 +43,7 @@ draft: false
 * **뇌 신경계 이완 침구 치료**: 백회혈, 내관혈, 합곡혈을 자극하여 성대와 안면 근육의 긴장을 완화합니다.
 * **인지 행동 교정 가이드**: "완벽하게 말해야 한다"는 왜곡된 신념을 교정하고 편안한 시선 처리를 훈련합니다.
 
-### 5. 진료실 자주 묻는 질문 (Q&A)
+### 5. 진료실 자주 묻는 질문 (FAQ)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

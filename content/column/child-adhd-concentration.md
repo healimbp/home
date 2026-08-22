@@ -35,7 +35,7 @@ draft: false
 * **두뇌 균형 침구 및 약침 치료**: 백회혈, 신회혈, 사신총을 자극하여 뇌 전두엽의 고위 인지 기능을 활성화합니다.
 * **학습 및 주의집중 코칭**: 시각·청각 주의집중 훈련과 긍정적 보상 체계를 결합하여 학습 효능감을 높입니다.
 
-### 5. 진료실 자주 묻는 질문 (Q&A)
+### 5. 진료실 자주 묻는 질문 (FAQ)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

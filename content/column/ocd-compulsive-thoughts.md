@@ -40,7 +40,7 @@ draft: false
 * **두뇌 균형 침구 및 약침 치료**: 백회혈, 사신총, 신문혈을 자극하여 안와전두엽의 과도한 전기적 긴장을 이완합니다.
 * **노출 및 반응 방지(ERP) 인지 상담**: 불안을 직면하고 강박행동을 지연시키는 단계별 훈련을 원장과 1:1로 진행합니다.
 
-### 5. 진료실 자주 묻는 질문 (Q&A)
+### 5. 진료실 자주 묻는 질문 (FAQ)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

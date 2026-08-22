@@ -36,7 +36,7 @@ draft: false
 * **무통 소아 침구 치료 & 경혈 패치**: 아프지 않은 자석 침과 피내침을 활용하여 아이들이 거부감 없이 편안하게 치료받습니다.
 * **부모 양육 스트레스 코칭**: 틱을 지적하지 않고 아이의 불안을 낮춰주는 가정 내 환경 조성 가이드를 1:1로 지도합니다.
 
-### 5. 진료실 자주 묻는 질문 (Q&A)
+### 5. 진료실 자주 묻는 질문 (FAQ)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
