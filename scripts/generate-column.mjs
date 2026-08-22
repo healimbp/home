@@ -124,7 +124,7 @@ async function generateColumnContent() {
   2. 신경/생리학적 기전: 자율신경계(교감-부교감), 뇌 변연계/기저핵, 한스 셀리에 3단계 스트레스 모델
   3. 객관적 검사: 뇌파 검사, 적외선 체열 검사, 간이정신진단검사, 한의학적 정밀 변증 및 복진
   4. 1:1 맞춤 한방 치료: 체질 맞춤 탕약, 침구/약침, 두개천골 추나요법
-  5. 진료실 자주 묻는 질문 (FAQ & Q&A 5개): 해당 질환 환자들이 가장 많이 묻는 실전 질문(양약 병행 여부, 치료 기간 및 재발 방지, 검사 과정, 한약 안전성/간 부담 여부, 야간/주말 진료 등)을 Q1~Q5 형식으로 깊이 있고 명쾌하게 답변
+  5. 진료실 자주 묻는 질문 (Q&A 5개): 해당 질환 환자들이 가장 많이 묻는 실전 질문(양약 병행 여부, 치료 기간 및 재발 방지, 검사 과정, 한약 안전성/간 부담 여부, 야간/주말 진료 등)을 Q1~Q5 형식으로 깊이 있고 명쾌하게 답변
   6. 일상 관리 및 회복 격려 메시지 (부평역 7번 출구 위치 안내 자연스럽게 포함)
 - 포맷: HTML 태그(h3, p, ul, li, strong, blockquote)를 활용한 1,800~2,200자 분량.
 
@@ -275,7 +275,7 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
   <li><strong>두개천골 추나요법</strong>: 경추와 척추 정렬을 바로잡아 뇌척수액 순환과 미주신경 소통을 원활화.</li>
 </ul>
 
-<h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">5. 진료실 자주 묻는 질문 (FAQ & Q&A)</h3>
+<h3 class="text-lg font-extrabold text-[#2F5D50] mt-6 mb-3 border-b border-[#DDE6E1] pb-2">5. 진료실 자주 묻는 질문 (Q&A)</h3>
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
     <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">

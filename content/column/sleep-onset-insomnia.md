@@ -40,7 +40,7 @@ draft: false
 * **경혈 침구 및 약침 치료**: 백회혈, 안면혈(安眠穴), 신문혈을 자극하여 뇌파를 알파파와 델타파로 유도합니다.
 * **수면 위생 코칭**: 침대에서 스마트폰 보지 않기, 20분 이상 잠이 안 올 때 침대 밖으로 나가기 등 뇌의 수면 조건화를 교정합니다.
 
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
+### 5. 진료실 자주 묻는 질문 (Q&A)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

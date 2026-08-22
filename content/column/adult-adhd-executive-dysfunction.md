@@ -34,7 +34,7 @@ draft: false
 * **두뇌 훈련 및 뇌파 조절 침구**: 뇌의 인지 피로를 덜어주고 세타파(졸림 뇌파) 억제 및 SMR파(집중 뇌파) 강화를 돕습니다.
 * **성인 실행 기능 코칭**: 시간 관리 기법(뽀모도로, 시각적 플래너)과 우선순위 정리 습관을 1:1로 지도합니다.
 
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
+### 5. 진료실 자주 묻는 질문 (Q&A)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

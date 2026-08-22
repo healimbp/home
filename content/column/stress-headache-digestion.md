@@ -33,7 +33,7 @@ draft: false
 * **복부 온열 및 침구 치료**: 중완혈, 족삼리, 합곡혈을 자극하여 멈춰있던 위장 연동운동을 촉진합니다.
 * **경추 및 턱관절 추나요법**: 후두하근과 측두근 긴장을 이완하여 두통의 근본 원인을 제거합니다.
 
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
+### 5. 진료실 자주 묻는 질문 (Q&A)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

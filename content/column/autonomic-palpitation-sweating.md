@@ -52,7 +52,7 @@ draft: false
 * **경혈 침구 및 약침 치료**: 내관혈, 신문혈, 노궁혈을 자극하여 교감신경의 과도한 전기적 긴장을 즉각적으로 완화합니다.
 * **두개천골 추나요법**: 상부 흉추와 경추를 교정하여 교감신경절 압박을 해소하고 전신 기혈 순환을 정상화합니다.
 
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
+### 5. 진료실 자주 묻는 질문 (Q&A)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

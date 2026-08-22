@@ -31,7 +31,7 @@ tags: ["구월동불안장애", "인천공황장애한의원", "예기불안치�
 3. **두개천골 추나요법**:  
    경추와 척추의 미세 긴장을 해소하여 뇌척수액 순환을 촉진하고 뇌 신경계의 피로를 씻어냅니다.
 
-### 3. 진료실 자주 묻는 질문 (FAQ & Q&A)
+### 3. 진료실 자주 묻는 질문 (Q&A)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">

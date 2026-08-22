@@ -32,7 +32,7 @@ draft: false
 * **천연 뇌파 안정 탕약**: GABA 수용체와 세로토닌 신경계를 자연스럽게 활성화하여 반동 불안을 완충합니다 (청열보혈안신탕 가감방).
 * **금단 증상 완화 침구 치료**: 수면제 감약 시 나타나는 두통, 가슴 두근거림, 메스꺼움을 즉각적으로 진정시킵니다.
 
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
+### 5. 진료실 자주 묻는 질문 (Q&A)
 
 <div class="space-y-3.5 my-6 not-prose">
   <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
