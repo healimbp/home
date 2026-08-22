@@ -225,6 +225,81 @@ sections:
             </div>
           </div>
 
+          <!-- 5. 첨단 뇌기능 정밀 진단 & NeuronFlex 뉴로피드백 훈련 센터 -->
+          <div class="space-y-8">
+            <div class="text-center space-y-2 max-w-2xl mx-auto">
+              <span class="heal-hero-badge">Advanced Brain Training & Diagnostic System</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">
+                첨단 NeuronFlex 뉴로피드백 & 두뇌 훈련 시스템
+              </h2>
+              <p class="text-xs sm:text-sm text-[#68736E] leading-relaxed">
+                해아림한의원 인천부평점은 객관적인 뇌파 분석을 바탕으로 뇌신경계의 자율 조절력을 강화하는 전문 두뇌 훈련 장비 <strong>NeuronFlex(뉴런플렉스)</strong>를 운용합니다.
+              </p>
+            </div>
+
+            <!-- NeuronFlex 장비 상세 소개 카드 -->
+            <div class="bg-gradient-to-br from-[#F4F8F6] to-[#EAF3EF] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#DDE6E1] shadow-sm space-y-8">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4 text-left">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2F5D50] text-white text-xs font-bold">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>비약물적 두뇌 기능 활성화 솔루션</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E] leading-snug">
+                    스스로 뇌파를 조절하여 두뇌의 자생력을 깨우는<br class="hidden sm:inline" />
+                    <span class="text-[#2F5D50]">NeuronFlex(뉴런플렉스) 뉴로피드백</span>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+                    뉴로피드백(Neurofeedback)은 환자의 실시간 뇌파(EEG)와 자율신경 생체신호를 컴퓨터 화면으로 피드백하여, <strong>불안정하고 과각성된 뇌파(세타파·하이베타파)는 억제하고 주의집중 및 심신 안정에 필요한 유익한 뇌파(SMR파·알파파)를 스스로 강화하도록 훈련</strong>하는 최첨단 두뇌 훈련 요법입니다.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>약물 부작용 없는 안전한 훈련</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">아동부터 성인까지 거부감 없이 게임과 멀티미디어를 통해 재미있게 훈련합니다.</p>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>지속적인 두뇌 회로 강화</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">일시적 억제가 아닌 뇌 신경망의 가소성(Neuroplasticity)을 유도하여 효과가 오래 지속됩니다.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5 space-y-3">
+                  <div class="bg-white p-5 rounded-2xl border border-[#DDE6E1] shadow-sm space-y-3">
+                    <div class="text-xs font-extrabold text-[#2F5D50] border-b border-[#F2F7F4] pb-2 flex items-center justify-between">
+                      <span>NeuronFlex 주요 임상 적용 분야</span>
+                      <span class="text-[10px] text-[#68736E]">1:1 맞춤 프로토콜</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-[#3D4D47]">
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">ADHD</span>
+                        <span><strong>주의력 결핍 & 충동성 조절:</strong> 전두엽 활성화를 통한 집중력 및 실행기능 향상</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">틱·뚜렛</span>
+                        <span><strong>기저핵 불수의적 운동 억제:</strong> 감각 전조 충동 조절 및 뇌 브레이크 강화</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">불면증</span>
+                        <span><strong>수면 뇌파 유도:</strong> 뇌 디폴트모드네트워크(DMN) 과각성 차단 및 숙면 유도</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">공황·불안</span>
+                        <span><strong>자율신경 이완 바이오피드백:</strong> 편도체 흥분 완화 및 심박 안정화</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Bottom CTA -->
           <div class="text-center pt-2 flex flex-wrap justify-center gap-4">
             <a href="https://booking.naver.com/booking/13/bizes/934695" target="_blank" rel="noopener" class="heal-btn heal-btn-naver">

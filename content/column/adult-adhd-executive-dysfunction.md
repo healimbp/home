@@ -156,20 +156,20 @@ tags: ["성인ADHD","만성미루기","실행기능장애","브레인포그","�
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">성인 치료 01</span>
-        <span class="text-xs font-extrabold">두개경추 추나요법 & 상부경추 교정</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & 전두엽 활성화 훈련</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        거북목과 일자목으로 인해 뇌로 올라가는 추골동맥의 혈류가 억압된 것을 바로잡아 전두엽으로 신선한 산소와 포도당이 원활히 공급되도록 만듭니다.
+        첨단 NeuronFlex 장비를 통해 전두엽의 느린 세타파를 억제하고 주의집중 베타파를 스스로 생성하도록 훈련하여 만성 미루기와 실행기능 장애를 개선합니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">성인 치료 02</span>
-        <span class="text-xs font-extrabold">전두엽 뇌파 안정 침구 치료</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">구조·신경 02</span>
+        <span class="text-xs font-extrabold">두개경추 추나요법 & 상부경추 교정</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        백회혈, 상성혈, 사신총 등 두부 핵심 혈자리를 자극하여 뇌 신경망의 시냅스 연결성을 촉진하고 인지적 피로를 빠르게 씻어냅니다.
+        거북목과 일자목으로 인해 뇌로 올라가는 추골동맥의 혈류가 억압된 것을 바로잡아 전두엽으로 신선한 산소와 포도당이 원활히 공급되도록 만듭니다.
       </div>
     </div>
 </div>

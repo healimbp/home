@@ -156,20 +156,20 @@ tags: ["입면장애","불면증치료","누우면잡생각","뇌과각성","DMN
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">수면 뇌파 안정</span>
-        <span class="text-xs font-extrabold">두부 안면혈(安眠穴) 및 백회혈 침구 치료</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
+        <span class="text-xs font-extrabold">NeuronFlex 수면 뇌파 바이오피드백 훈련</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        머리의 백회혈과 귀 뒤 안면혈을 자극하여 뇌간 망상체의 각성 신호를 차단하고 자연스러운 수면 뇌파(알파·세타파)로 유도합니다.
+        첨단 NeuronFlex 장비로 취침 시 과열된 뇌 디폴트모드네트워크(DMN)의 각성 뇌파를 억제하고 깊은 델타파 숙면으로 자연스럽게 진입하도록 훈련합니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">체질 안신 한약</span>
-        <span class="text-xs font-extrabold">청뇌안신(淸腦安神) 맞춤 탕약</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">신경 침구 02</span>
+        <span class="text-xs font-extrabold">두부 안면혈(安眠穴) 및 백회혈 침구 치료</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        뇌 신경전달물질(GABA, 세로토닌)의 자생적 분비를 촉진하여 누우면 20분 이내에 부드럽게 졸음이 쏟아지는 수면 체질을 회복합니다.
+        머리의 백회혈과 귀 뒤 안면혈을 자극하여 뇌간 망상체의 각성 신호를 차단하고 자연스러운 수면 뇌파(알파·세타파)로 유도합니다.
       </div>
     </div>
 </div>

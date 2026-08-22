@@ -611,6 +611,36 @@ sections:
                 </p>
               </div>
             </div>
+
+            <!-- NeuronFlex 뉴로피드백 두뇌 훈련 시스템 배너 -->
+            <div class="bg-gradient-to-br from-[#F4F8F6] to-[#EAF3EF] p-6 sm:p-8 rounded-3xl border border-[#DDE6E1] shadow-sm">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                <div class="lg:col-span-8 space-y-3 text-left">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2F5D50] text-white text-xs font-bold">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>첨단 비약물적 두뇌 훈련 솔루션</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E]">
+                    NeuronFlex 첨단 뉴로피드백 & 바이오피드백 두뇌 훈련
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+                    뇌파(EEG)와 자율신경 생체신호를 실시간으로 모니터링하여, 불안정한 뇌파를 억제하고 집중력과 심신 안정에 필요한 유익한 뇌파를 스스로 강화하도록 훈련하는 비약물 두뇌 훈련 시스템입니다.
+                  </p>
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">소아/성인 ADHD 집중력</span>
+                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">틱·뚜렛 뇌 억제 훈련</span>
+                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">불면증 뇌 과각성 진정</span>
+                    <span class="bg-white text-[#2F5D50] font-bold px-3 py-1 rounded-lg text-xs border border-[#DDE6E1]">공황·불안 자율신경 이완</span>
+                  </div>
+                </div>
+                <div class="lg:col-span-4 text-center lg:text-right">
+                  <a href="/about/" class="inline-flex items-center gap-2 bg-[#2F5D50] text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm hover:bg-[#202947] transition shadow-sm">
+                    <span>NeuronFlex 시스템 자세히 보기</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- 5. Finder Style 야간/주말 진료 안내 배너 -->

@@ -157,16 +157,16 @@ ADHD 아이를 둔 부모님들은 매일 집과 학교에서 전쟁을 치릅�
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
-        <span class="text-xs font-extrabold">시청지각 통합 훈련 & 뉴로피드백</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & 시청지각 통합 훈련</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        시각과 청각 정보 처리 속도를 맞추고 산만한 세타파를 억제하며 집중력을 높이는 SMR/베타 뇌파를 스스로 생성하도록 훈련합니다.
+        첨단 NeuronFlex 장비로 실시간 뇌파를 모니터링하여, 산만한 세타파를 억제하고 주의집중을 높이는 SMR/베타파를 스스로 생성하도록 훈련합니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 02</span>
-        <span class="text-xs font-extrabold">소뇌 밸런스 훈련 & 두개천골요법</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">구조 훈련 02</span>
+        <span class="text-xs font-extrabold">소뇌 밸런스 훈련 & 두개천골요법(CST)</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
         신체 균형 감각과 전두엽의 상호 피드백 회로를 자극하여 과잉행동을 줄이고 차분한 신체 제어 능력을 형성합니다.

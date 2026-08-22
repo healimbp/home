@@ -156,17 +156,17 @@ tags: ["소아틱장애","눈깜빡임틱","기저핵","소아신경정신과","
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">구조 치료 01</span>
-        <span class="text-xs font-extrabold">FCST (기능적 뇌척주요법) & 경추 교정</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & 감각 통합 훈련</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        턱관절의 미세한 편차와 상부 경추(C1, C2)의 비틀림을 바로잡아 뇌간과 뇌신경으로 이어지는 신경 통로의 물리적 압박과 과긴장을 해소합니다.
+        실시간 뇌파 피드백을 통해 뇌 기저핵과 전두엽의 자율 억제 회로를 강화하여, 틱의 전조 충동을 스스로 조절할 수 있도록 돕는 첨단 비약물 두뇌 훈련입니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">구조 치료 02</span>
-        <span class="text-xs font-extrabold">CST (두개천골요법) & 무통 소아 침구</span>
+        <span class="text-xs font-extrabold">CST 두개천골요법 & 무통 소아 침구</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
         머리뼈(두개골) 봉합부와 천골의 경막 긴장을 부드럽게 이완하여 뇌척수액 순환을 원활하게 돕고 과열된 중추신경계를 자연스럽게 안정시킵니다.
