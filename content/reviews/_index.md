@@ -50,14 +50,15 @@ sections:
                 <span class="text-[11px] text-[#8B9891]">원하시는 질환을 클릭하시면 해당 후기만 정렬됩니다</span>
               </div>
               <div class="flex flex-wrap gap-2">
-                <button onclick="filterReviews('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체 (26편)</button>
-                <button onclick="filterReviews('autonomic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">자율신경·갱년기·교감항진 (11)</button>
-                <button onclick="filterReviews('panic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">공황·호흡곤란·불안·운전공포 (10)</button>
-                <button onclick="filterReviews('child')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="child">소아 틱·ADHD·집중력 (5)</button>
+                <button onclick="filterReviews('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체 (30편)</button>
+                <button onclick="filterReviews('autonomic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">자율신경·갱년기·교감항진 (13)</button>
+                <button onclick="filterReviews('panic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">공황·호흡곤란·불안·운전·대중교통 (12)</button>
+                <button onclick="filterReviews('child')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="child">소아 틱·ADHD·집중력 (6)</button>
                 <button onclick="filterReviews('insomnia')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="insomnia">불면증·스트레스·수면 (5)</button>
                 <button onclick="filterReviews('adhd')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="adhd">성인ADHD·기억력 (2)</button>
                 <button onclick="filterReviews('facial')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="facial">안면마비·경추·턱관절 (2)</button>
               </div>
+
 
 
 
@@ -856,7 +857,132 @@ sections:
                 </div>
               </div>
 
+              <!-- [실제 네이버 인증 리뷰 27] tkd**** 님 (15년 만성 자율신경실조증 몇 달 만에 소실) -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="autonomic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#15년만성자율신경 #몇달만에소실 #한약침추나 #원장님실장님친절</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;거의 15년 이상 갖고 살던 자율신경 증상이 한약과 침·추나 치료 몇 달 만에 사라졌습니다!&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">tkd**** 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 53 · 사진 42</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    25년초에 처음 방문해서 진료받고 자율신경계에 문제가 있다는걸 알았어요<br><br>
+                    거의 15년 이상 갖고살던 증상이었는데 한약 처방받고 침치료랑 추나받으면서 몇달만에 증상이 사라져서 진짜 신기했어요👍<br>
+                    원장님이랑 실장님 선생님들 다 너무너무 친절하시고 좋으세요!!🎁
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 만성 자율신경 조율 한약 + 침구·추나요법</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 28] eklee98088 님 (손떨림/두근거림/호흡곤란 1년 치료종료) -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic autonomic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#손떨림두근거림 #호흡곤란 #뇌파검사추적 #1년치료종료일상회복</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;손떨림, 가슴 두근거림, 호흡곤란을 극복하고 아프기 전 일상을 되찾아 치료를 종료했습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">eklee98088 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 9 · 사진 7 (치료 종료 일상 회복)</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    가정과 직장에서 받은 각종 스트레스로 1년 넘게 치료 받았습니다.<br><br>
+                    스트레스 상황에서의 손떨림 증상으로 시작해서 점점 증상이 발전하여 가슴이 두근거리고 숨이 잘 안 쉬어졌었어요. 그러다보니 사람 만나는 게 자신이 없어져서 스스로를 고립시키고 나도 내가 이해가 안되고 어찌할 바를 모르는 상태로 6개월을 지내다 해아림한의원을 방문하게 되었습니다.<br><br>
+                    뇌파검사 등을 통해 내 스트레스 정도와 호전정도를 체크하며 한약을 1년 복용했고, 매주 침치료와 추나치료를 병행하였습니다. 한약이라 약에 대한 내성이나 부작용에 대한 걱정 없이 꾸준히 복용하였고, 뇌파상으로도 체감상으로도 마음이 서서히 진정되어가는걸 느꼈습니다.<br><br>
+                    이제 아프기 전의 일상을 되찾게 되어 치료가 종료되는 시점에 원장님과 직원분들께 감사의 인사를 전합니다.
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 뇌파 기반 1:1 맞춤 탕약 + 침구·추나</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 29] yun**** 님 (극심한 소아 틱 99% 완치) -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="child">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#극심했던소아틱 #침치료뇌파한약 #99프로완치 #꼼꼼하고편안한진료</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;아이가 틱이 너무너무 심했는데, 치료 후 지금은 99% 다 나았습니다!&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">yun**** 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 35 · 사진 34</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    아이가 틱이 너무너무심했는데<br>
+                    여기서 침치료 뇌파치료 한약치료 하고나서 지금은 너무너무 좋아져서 99프로는 다 나은거 같아요<br><br>
+                    진짜 의사쌤과 간호사쌤들께 너무 감사드려요. 갈때마다 너무친절하시고 꼼꼼히 진료봐주시고 맘두 편하게 해주셔서 더더욱 치료가 잘되는거 같아요 해아림한의원 강력추천 합니다^^
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 소아 틱 탕약 + 뇌파 훈련 + 무통 침구</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 30] tp**** 님 (공황장애 복직 및 비행기 탑승 성공) -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#공황장애극복 #대중교통운전불가 #휴직후복직성공 #비행기탑승제주여행</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;지하철·운전도 못 해 휴직했던 공황장애를 무사히 치료하고 복직 &amp; 비행기 탑승까지 성공했습니다!&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">tp**** 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 4 · 사진 1 (치료 종결 복직)</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    갑자기 불현듯 발생한 공황장애로 지하철, 버스 이용 자체도 힘들고 운전도 불가능했고 직장에서도 너무나 힘든 상황들이 많아 휴직할 수밖에 없던 상황에 고민 끝에 선택한 해아림 한의원 치료를 드디어 무사히 끝내고 복직했습니다.<br><br>
+                    좋은 치료 결과로 복직을 결정하고 용기 내서 다녀온 제주 여행에 비행기도 무리 없이 이용했고 잠도 잘 자고 있습니다. 그동안 정성을 다해 치료해 주신 직원분들과 원장님께 진심으로 감사드리고 말씀처럼 생활관리도 건강하게 잘 하도록 하겠습니다.
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 공황장애 안신진경 탕약 + 자율신경 이완 훈련</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
             </div>
+
 
 
 
