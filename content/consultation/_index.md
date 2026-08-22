@@ -65,7 +65,94 @@ sections:
             </div>
           </div>
 
-          <!-- 3. 온라인 1:1 비밀상담 신청 폼 -->
+          <!-- 3. 내원에서 검사·진단까지 6단계 (DIAGNOSIS & TESTS) -->
+          <div class="space-y-8">
+            <div class="text-center space-y-2 max-w-2xl mx-auto">
+              <span class="heal-hero-badge">DIAGNOSIS & TESTS</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">
+                내원에서 검사·진단까지 6단계
+              </h2>
+              <p class="text-xs sm:text-sm text-[#68736E] leading-relaxed">
+                대기 시간을 최소화하기 위해 예약제로 운영되며, 환자의 증상에 꼭 필요한 정밀 검사만을 선별 시행합니다.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+              <!-- STEP 01 -->
+              <div class="heal-card bg-white p-4 sm:p-5 text-center space-y-3 border border-[#E2EAE5] shadow-xs hover:shadow-md hover:border-[#2F5D50]/40 transition rounded-2xl flex flex-col items-center justify-between">
+                <div class="text-[11px] font-extrabold text-[#2F5D50] tracking-wider uppercase">STEP 01</div>
+                <div class="w-12 h-12 rounded-2xl bg-[#EAF3EF] flex items-center justify-center text-[#2F5D50] text-lg shadow-inner">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="space-y-0.5">
+                  <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">전화 예약</h3>
+                  <p class="text-[11px] text-[#68736E]">사전 예약제</p>
+                </div>
+              </div>
+
+              <!-- STEP 02 -->
+              <div class="heal-card bg-white p-4 sm:p-5 text-center space-y-3 border border-[#E2EAE5] shadow-xs hover:shadow-md hover:border-[#2F5D50]/40 transition rounded-2xl flex flex-col items-center justify-between">
+                <div class="text-[11px] font-extrabold text-[#2F5D50] tracking-wider uppercase">STEP 02</div>
+                <div class="w-12 h-12 rounded-2xl bg-[#EAF3EF] flex items-center justify-center text-[#2F5D50] text-lg shadow-inner">
+                  <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <div class="space-y-0.5">
+                  <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">내원</h3>
+                  <p class="text-[11px] text-[#68736E]">안내 데스크 접수</p>
+                </div>
+              </div>
+
+              <!-- STEP 03 -->
+              <div class="heal-card bg-white p-4 sm:p-5 text-center space-y-3 border border-[#E2EAE5] shadow-xs hover:shadow-md hover:border-[#2F5D50]/40 transition rounded-2xl flex flex-col items-center justify-between">
+                <div class="text-[11px] font-extrabold text-[#2F5D50] tracking-wider uppercase">STEP 03</div>
+                <div class="w-12 h-12 rounded-2xl bg-[#EAF3EF] flex items-center justify-center text-[#2F5D50] text-lg shadow-inner">
+                  <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+                <div class="space-y-0.5">
+                  <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">기초문항지</h3>
+                  <p class="text-[11px] text-[#68736E]">약 10분 소요</p>
+                </div>
+              </div>
+
+              <!-- STEP 04 -->
+              <div class="heal-card bg-white p-4 sm:p-5 text-center space-y-3 border border-[#E2EAE5] shadow-xs hover:shadow-md hover:border-[#2F5D50]/40 transition rounded-2xl flex flex-col items-center justify-between">
+                <div class="text-[11px] font-extrabold text-[#2F5D50] tracking-wider uppercase">STEP 04</div>
+                <div class="w-12 h-12 rounded-2xl bg-[#EAF3EF] flex items-center justify-center text-[#2F5D50] text-lg shadow-inner">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="space-y-0.5">
+                  <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">기능검사</h3>
+                  <p class="text-[11px] text-[#68736E]">약 30~70분</p>
+                </div>
+              </div>
+
+              <!-- STEP 05 -->
+              <div class="heal-card bg-white p-4 sm:p-5 text-center space-y-3 border border-[#E2EAE5] shadow-xs hover:shadow-md hover:border-[#2F5D50]/40 transition rounded-2xl flex flex-col items-center justify-between">
+                <div class="text-[11px] font-extrabold text-[#2F5D50] tracking-wider uppercase">STEP 05</div>
+                <div class="w-12 h-12 rounded-2xl bg-[#EAF3EF] flex items-center justify-center text-[#2F5D50] text-lg shadow-inner">
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <div class="space-y-0.5">
+                  <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">설문지 작성</h3>
+                  <p class="text-[11px] text-[#68736E]">약 10분 소요</p>
+                </div>
+              </div>
+
+              <!-- STEP 06 -->
+              <div class="heal-card bg-white p-4 sm:p-5 text-center space-y-3 border border-[#E2EAE5] shadow-xs hover:shadow-md hover:border-[#2F5D50]/40 transition rounded-2xl flex flex-col items-center justify-between">
+                <div class="text-[11px] font-extrabold text-[#2F5D50] tracking-wider uppercase">STEP 06</div>
+                <div class="w-12 h-12 rounded-2xl bg-[#EAF3EF] flex items-center justify-center text-[#2F5D50] text-lg shadow-inner">
+                  <i class="fa-solid fa-comments"></i>
+                </div>
+                <div class="space-y-0.5">
+                  <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">심층 상담진료</h3>
+                  <p class="text-[11px] text-[#68736E]">약 30분 집중</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. 온라인 1:1 비밀상담 신청 폼 -->
           <div class="heal-card space-y-6 bg-white shadow-sm">
             <div class="border-b border-[#DDE6E1] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
