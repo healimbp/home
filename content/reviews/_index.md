@@ -46,7 +46,7 @@ sections:
           </div>
 
           <!-- 4-A. [탭 1] 네이버 정성 리뷰 목록 (naver-section) -->
-          <div id="naver-section" class="space-y-6">
+          <div id="naver-section" class="space-y-6" style="display: block;">
 
             <!-- 네이버 플레이스 실시간 영수증 리뷰 공식 바로가기 배너 -->
             <div class="p-5 sm:p-6 rounded-2xl bg-[#F0F8F4] border border-[#CDE5D8] text-[#1E4638] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
@@ -1021,7 +1021,7 @@ sections:
           </div>
 
           <!-- 4-B. [탭 2] 자필 수기 후기 영역 (handwritten-section: 초기 숨김) -->
-          <div id="handwritten-section" class="hidden space-y-8">
+          <div id="handwritten-section" class="space-y-8" style="display: none;">
             <div class="border-b border-[#E2EAE5] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
                 <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E] flex items-center gap-2">
@@ -1328,13 +1328,13 @@ sections:
             const tabHand = document.getElementById('tab-handwritten');
 
             if (tabName === 'naver') {
-              naverSec.classList.remove('hidden');
-              handSec.classList.add('hidden');
+              if (naverSec) naverSec.style.display = 'block';
+              if (handSec) handSec.style.display = 'none';
               tabNaver.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2 cursor-pointer";
               tabHand.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1] cursor-pointer";
             } else {
-              naverSec.classList.add('hidden');
-              handSec.classList.remove('hidden');
+              if (naverSec) naverSec.style.display = 'none';
+              if (handSec) handSec.style.display = 'block';
               tabHand.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#2F5D50] text-white shadow-md flex items-center gap-2 cursor-pointer";
               tabNaver.className = "px-5 py-3 rounded-xl font-extrabold text-sm sm:text-base transition-all duration-200 bg-[#F4F7F5] text-[#556B62] hover:bg-[#E8EFEA] flex items-center gap-2 border border-[#DDE6E1] cursor-pointer";
             }
