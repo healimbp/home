@@ -1259,6 +1259,308 @@ sections:
                 </div>
               </div>
 
+              <!-- [자필 수기 4] 김우* 님 (우울증 / 무기력·우울감 극복 및 취업 성공) -->
+              <div class="heal-card bg-white p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-5 flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- 카드 상단 태그 & 정보 -->
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#우울증 #무기력극복 #식사수면정상화 #취업성공 #16개월완치</span>
+                    <span class="text-xs text-[#03C75A] font-bold flex items-center gap-1">
+                      <i class="fa-solid fa-file-signature"></i> 원내 자필 원본
+                    </span>
+                  </div>
+
+                  <!-- 제목 및 기본 인적 정보 (개인정보 보호 익명화) -->
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;극심했던 무기력감과 우울감이 현저하게 낮아지고, 취업에도 성공하여 사회생활을 하고 있습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-2 text-xs text-[#68736E] bg-[#F4F7F5] p-2.5 rounded-lg">
+                      <span class="font-bold text-[#26332E]">김우* 님</span>
+                      <span>·</span>
+                      <span>병명: <strong>우울증</strong></span>
+                      <span>·</span>
+                      <span>치료기간: 2024. 6. 30. ~ 2025. 10. 3. (16개월)</span>
+                    </div>
+                  </div>
+
+                  <!-- 자필 스캔본 썸네일 (클릭 시 확대 모달) -->
+                  <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-[#DDE6E1] bg-[#FAFCFB]" onclick="openModal('/images/reviews/handwritten_4.jpg', '김우* 님 자필 수기 원본 (우울증 16개월 치료 완치)')">
+                    <img src="/images/reviews/handwritten_4.jpg" alt="김우* 님 자필 체험 수기 원본" class="w-full h-56 object-cover object-top transition duration-300 group-hover:scale-105 group-hover:opacity-90">
+                    <div class="absolute inset-0 bg-[#1E4638]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
+                      <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+                      <span>클릭하여 자필 원본 크게보기</span>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                      🔍 확대보기
+                    </div>
+                  </div>
+
+                  <!-- 상세 문진 전사 내용 -->
+                  <div class="space-y-3 text-xs sm:text-sm text-[#374151] leading-relaxed">
+                    <div class="p-3.5 bg-[#FFF9F5] rounded-xl border border-[#FFE8DC]">
+                      <div class="font-extrabold text-[#A63C1E] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 치료 받기 전 힘드셨던 증상
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#5A433A]">
+                        <li>지속되는 무기력감으로 항상 쳐져있고 피로감이 극심했음</li>
+                        <li>사소한 일에도 눈물을 흘리고, 감정이 주체가 안 되었음</li>
+                        <li>흥미로운 일도 없고 하고 싶은 것도 없었음</li>
+                        <li>간혹 안 좋은 생각이 떠오름</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-3.5 bg-[#F0F8F4] rounded-xl border border-[#CDE5D8]">
+                      <div class="font-extrabold text-[#1E4638] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#03C75A]"></i> 치료 후 나아진 몸 상태
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#2D5346]">
+                        <li><strong>후반부엔 감정이 가라앉긴 하지만 무기력감도 우울감도 현저하게 낮아짐</strong></li>
+                        <li><strong>밥도 잘 먹고 잘 자고 건강해진 느낌</strong></li>
+                        <li><strong>취업에도 성공해서 사회생활도 하는 중</strong></li>
+                      </ul>
+                    </div>
+
+                    <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] italic text-[#4B5563]">
+                      <strong class="not-italic text-[#1E4638] block mb-1">💬 환자분의 진심 어린 한마디:</strong>
+                      &ldquo;정말 우울증이 심할 때는 탈출구가 없다는 생각에 죽고 싶기만 했어요. 저와 같은 분들이 있다면 믿고 치료해 보세요. 시간은 걸리겠지만 좋아질 수 있습니다.&rdquo;
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 1:1 맞춤 우울·신경계 조율 한약 + 안신 침구 치료</span>
+                  <span class="text-[#03C75A] font-bold">인천부평점 원내 보관 수기</span>
+                </div>
+              </div>
+
+              <!-- [자필 수기 5] 김나* 님 (공황장애 / 지하철·대중교통 공황 극복) -->
+              <div class="heal-card bg-white p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-5 flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- 카드 상단 태그 & 정보 -->
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#공황장애 #지하철공황 #호흡곤란극복 #대중교통이용 #6개월호전</span>
+                    <span class="text-xs text-[#03C75A] font-bold flex items-center gap-1">
+                      <i class="fa-solid fa-file-signature"></i> 원내 자필 원본
+                    </span>
+                  </div>
+
+                  <!-- 제목 및 기본 인적 정보 (개인정보 보호 익명화) -->
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;지하로 내려가면 숨이 막히고 지하철에서 기절할 것 같았는데, 6개월 치료 후 대중교통을 편안하게 이용하게 되었습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-2 text-xs text-[#68736E] bg-[#F4F7F5] p-2.5 rounded-lg">
+                      <span class="font-bold text-[#26332E]">김나* 님</span>
+                      <span>·</span>
+                      <span>병명: <strong>공황장애</strong></span>
+                      <span>·</span>
+                      <span>치료기간: 2025. 12. 13. ~ 2026. 6. 1. (6개월)</span>
+                    </div>
+                  </div>
+
+                  <!-- 자필 스캔본 썸네일 (클릭 시 확대 모달) -->
+                  <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-[#DDE6E1] bg-[#FAFCFB]" onclick="openModal('/images/reviews/handwritten_5.jpg', '김나* 님 자필 수기 원본 (공황장애 6개월 치료 호전)')">
+                    <img src="/images/reviews/handwritten_5.jpg" alt="김나* 님 자필 체험 수기 원본" class="w-full h-56 object-cover object-top transition duration-300 group-hover:scale-105 group-hover:opacity-90">
+                    <div class="absolute inset-0 bg-[#1E4638]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
+                      <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+                      <span>클릭하여 자필 원본 크게보기</span>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                      🔍 확대보기
+                    </div>
+                  </div>
+
+                  <!-- 상세 문진 전사 내용 -->
+                  <div class="space-y-3 text-xs sm:text-sm text-[#374151] leading-relaxed">
+                    <div class="p-3.5 bg-[#FFF9F5] rounded-xl border border-[#FFE8DC]">
+                      <div class="font-extrabold text-[#A63C1E] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 치료 받기 전 힘드셨던 증상
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#5A433A]">
+                        <li>지하로 내려가면 숨이 막히는 느낌</li>
+                        <li>심장이 너무 빠르게 요동치는 느낌</li>
+                        <li>설사를 하면 기운이 빠지는 느낌</li>
+                        <li>지하철을 타면 기절할 것 같은 느낌</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-3.5 bg-[#F0F8F4] rounded-xl border border-[#CDE5D8]">
+                      <div class="font-extrabold text-[#1E4638] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#03C75A]"></i> 치료 후 나아진 몸 상태
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#2D5346]">
+                        <li><strong>좁은 공간에 있어도 살 것 같은 느낌</strong></li>
+                        <li><strong>대중교통 이용이 너무 힘들었지만 지금은 많이 나아져서 대중교통 이용</strong></li>
+                        <li><strong>어지럼증이 많이 나아져 일상이 편안해짐</strong></li>
+                        <li><strong>최근까지도 심장이 빠르게 뛰었으나 지금은 많이 호전되어 편해짐</strong></li>
+                      </ul>
+                    </div>
+
+                    <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] italic text-[#4B5563]">
+                      <strong class="not-italic text-[#1E4638] block mb-1">💬 환자분의 진심 어린 한마디:</strong>
+                      &ldquo;많은 분들이 겪는 질환이라고 생각이 들어요. 해아림을 알고 치료를 시작하기 전까진 많은 고민을 했었던 기억이 납니다. 짧은 치료가 아니기 때문에 나와의 싸움이라고 생각합니다. 지금도 고민하시면 저의 글이 조금이나마 결정에 도움이 되었으면 좋겠습니다. 참을 수 있는 질환이 아니기 때문에 하루라도 빨리 치료를 하셨으면 좋겠습니다.&rdquo;
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 공황 안신 맞춤 한약 + 자율신경 조율 침구 치료</span>
+                  <span class="text-[#03C75A] font-bold">인천부평점 원내 보관 수기</span>
+                </div>
+              </div>
+
+              <!-- [자필 수기 6] 김지* 님 (발표불안 / 사회공포증 / 시선공포 완치) -->
+              <div class="heal-card bg-white p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-5 flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- 카드 상단 태그 & 정보 -->
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#발표불안 #사회공포증 #시선공포 #불안장애 #식은땀울렁거림호전 #1년완치</span>
+                    <span class="text-xs text-[#03C75A] font-bold flex items-center gap-1">
+                      <i class="fa-solid fa-file-signature"></i> 원내 자필 원본
+                    </span>
+                  </div>
+
+                  <!-- 제목 및 기본 인적 정보 (개인정보 보호 익명화) -->
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;발표 시간에 주목받는 게 무섭고 시선도 피했는데, 불안감과 식은땀이 사라지고 하고 싶은 일이 생겼습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-2 text-xs text-[#68736E] bg-[#F4F7F5] p-2.5 rounded-lg">
+                      <span class="font-bold text-[#26332E]">김지* 님</span>
+                      <span>·</span>
+                      <span>병명: <strong>발표불안 · 사회공포증 (불안장애)</strong></span>
+                      <span>·</span>
+                      <span>치료기간: 2024. 1. 16. ~ 2025. 1. 5. (약 1년)</span>
+                    </div>
+                  </div>
+
+                  <!-- 자필 스캔본 썸네일 (클릭 시 확대 모달) -->
+                  <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-[#DDE6E1] bg-[#FAFCFB]" onclick="openModal('/images/reviews/handwritten_6.jpg', '김지* 님 자필 수기 원본 (발표불안·사회공포증 1년 치료 완치)')">
+                    <img src="/images/reviews/handwritten_6.jpg" alt="김지* 님 자필 체험 수기 원본" class="w-full h-56 object-cover object-top transition duration-300 group-hover:scale-105 group-hover:opacity-90">
+                    <div class="absolute inset-0 bg-[#1E4638]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
+                      <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+                      <span>클릭하여 자필 원본 크게보기</span>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                      🔍 확대보기
+                    </div>
+                  </div>
+
+                  <!-- 상세 문진 전사 내용 -->
+                  <div class="space-y-3 text-xs sm:text-sm text-[#374151] leading-relaxed">
+                    <div class="p-3.5 bg-[#FFF9F5] rounded-xl border border-[#FFE8DC]">
+                      <div class="font-extrabold text-[#A63C1E] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 치료 받기 전 힘드셨던 증상
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#5A433A]">
+                        <li>항상 긴장을 잘했음, 학교에서 발표 시간이 두려워짐</li>
+                        <li>발표 시간에 모두가 나를 주목하는 상황이 너무 무섭고 피하고 싶었음</li>
+                        <li>사람 많은 곳이 힘들어 외출을 점점 피하게 됨 &amp; 친구들과의 만남도 부담</li>
+                        <li>무기력·우울감 &amp; 눈을 마주치며 대화하기 힘들어 시선 회피, 손발 식은땀·얼굴 열감 심함</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-3.5 bg-[#F0F8F4] rounded-xl border border-[#CDE5D8]">
+                      <div class="font-extrabold text-[#1E4638] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#03C75A]"></i> 치료 후 나아진 몸 상태
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#2D5346]">
+                        <li><strong>수개월 지나며 어느 순간 손발 식은땀이 줄어들고 얼굴 홍조가 줄어듦</strong></li>
+                        <li><strong>긴장하면 생기던 속 울렁거림이 매우 좋아짐</strong></li>
+                        <li><strong>잠을 편안하게 자기 시작했고 불안감이 사라지며 하고 싶은 일이 생김</strong></li>
+                      </ul>
+                    </div>
+
+                    <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] italic text-[#4B5563]">
+                      <strong class="not-italic text-[#1E4638] block mb-1">💬 환자분의 진심 어린 한마디:</strong>
+                      &ldquo;치료를 한다는 게 뭔가 거부감이 들었는데 왜 조기 치료가 중요한지 알 것 같고, 저처럼 불안장애나 공황발작 같은 증상들로 힘든 분들께 꼭 치료받으라고 말해주고 싶고 힘내라고 응원해주고 싶어요. 원장님과 선생님들 감사합니다 ^^&rdquo;
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 항불안 심신안정 한약 + 뇌신경 이완 침구 치료</span>
+                  <span class="text-[#03C75A] font-bold">인천부평점 원내 보관 수기</span>
+                </div>
+              </div>
+
+              <!-- [자필 수기 7] 하도* 님 (자율신경실조증 / 상열감·이명·어지럼증 호전) -->
+              <div class="heal-card bg-white p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-5 flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- 카드 상단 태그 & 정보 -->
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#자율신경실조증 #상열감호전 #이명어지럼증 #긴장성근육뭉침 #20대자율신경 #6개월치료</span>
+                    <span class="text-xs text-[#03C75A] font-bold flex items-center gap-1">
+                      <i class="fa-solid fa-file-signature"></i> 원내 자필 원본
+                    </span>
+                  </div>
+
+                  <!-- 제목 및 기본 인적 정보 (개인정보 보호 익명화) -->
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;20대 상열감, 이명, 어지럼증, 긴장성 근육 뭉침… 6개월 집중 치료로 몸이 편안해지고 부드러워졌습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-2 text-xs text-[#68736E] bg-[#F4F7F5] p-2.5 rounded-lg">
+                      <span class="font-bold text-[#26332E]">하도* 님 (20대 남성)</span>
+                      <span>·</span>
+                      <span>병명: <strong>자율신경실조증</strong></span>
+                      <span>·</span>
+                      <span>치료기간: 2026. 1. 15. ~ 2026. 7. 31. (6개월)</span>
+                    </div>
+                  </div>
+
+                  <!-- 자필 스캔본 썸네일 (클릭 시 확대 모달) -->
+                  <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-[#DDE6E1] bg-[#FAFCFB]" onclick="openModal('/images/reviews/handwritten_7.jpg', '하도* 님 자필 수기 원본 (자율신경실조증 6개월 치료 호전)')">
+                    <img src="/images/reviews/handwritten_7.jpg" alt="하도* 님 자필 체험 수기 원본" class="w-full h-56 object-cover object-top transition duration-300 group-hover:scale-105 group-hover:opacity-90">
+                    <div class="absolute inset-0 bg-[#1E4638]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
+                      <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+                      <span>클릭하여 자필 원본 크게보기</span>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                      🔍 확대보기
+                    </div>
+                  </div>
+
+                  <!-- 상세 문진 전사 내용 -->
+                  <div class="space-y-3 text-xs sm:text-sm text-[#374151] leading-relaxed">
+                    <div class="p-3.5 bg-[#FFF9F5] rounded-xl border border-[#FFE8DC]">
+                      <div class="font-extrabold text-[#A63C1E] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 치료 받기 전 힘드셨던 증상
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#5A433A]">
+                        <li>긴장을 많이 함 &amp; 긴장으로 인한 근육 뭉침</li>
+                        <li>얼굴 열감 (상열감) 및 여드름</li>
+                        <li>순간순간 어지럼증 및 긴장 시 두통</li>
+                        <li>이명 (귀통증 동반) &amp; 입맛이 없음 (식욕부진)</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-3.5 bg-[#F0F8F4] rounded-xl border border-[#CDE5D8]">
+                      <div class="font-extrabold text-[#1E4638] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#03C75A]"></i> 치료 후 나아진 몸 상태
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#2D5346]">
+                        <li><strong>근육 뭉침이 풀리고 몸이 많이 편해지고 부드러워짐</strong></li>
+                        <li><strong>얼굴로 오르는 상열감이 줄고 덕분에 피부/여드름도 호전</strong></li>
+                        <li><strong>어지럼증과 두통 빈도수 현저히 감소</strong></li>
+                        <li><strong>신경 쓸 때 심했던 이명 빈도수 대폭 감소 &amp; 걱정·불안·두근거림 완화</strong></li>
+                      </ul>
+                    </div>
+
+                    <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] italic text-[#4B5563]">
+                      <strong class="not-italic text-[#1E4638] block mb-1">💬 환자분의 진심 어린 한마디:</strong>
+                      &ldquo;20대라는 젊은 나이에 그냥 좋아지겠지 하고 막연히 몇 년을 보내다 증상이 더 심해졌다. 정신과 약을 복용하다 이대로는 안 되겠다 싶어 부모님과 진료 후 치료 결정을 했다. 젊다는 이유로 치료를 미루는 실수를 하지 말기를… 해아림한의원이 나에겐 좋은 선택이었다.&rdquo;
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 1:1 맞춤 청열안신 한약 + 자율신경 균형 침구 치료</span>
+                  <span class="text-[#03C75A] font-bold">인천부평점 원내 보관 수기</span>
+                </div>
+              </div>
+
             </div>
 
 
