@@ -1193,7 +1193,81 @@ sections:
                 </div>
               </div>
 
+              <!-- [자필 수기 3] 최옥* 님 (불안장애 / 어지럼증·불면증 완치) -->
+              <div class="heal-card bg-white p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-5 flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- 카드 상단 태그 & 정보 -->
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#불안장애 #극심한어지럼증 #불면증극복 #8개월치료완치</span>
+                    <span class="text-xs text-[#03C75A] font-bold flex items-center gap-1">
+                      <i class="fa-solid fa-file-signature"></i> 원내 자필 원본
+                    </span>
+                  </div>
+
+                  <!-- 제목 및 기본 인적 정보 (개인정보 보호 익명화) -->
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;매우 어지럽고 잠도 못 자며 항상 불안했는데, 지금은 매우 좋아졌습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-2 text-xs text-[#68736E] bg-[#F4F7F5] p-2.5 rounded-lg">
+                      <span class="font-bold text-[#26332E]">최옥* 님</span>
+                      <span>·</span>
+                      <span>병명: <strong>불안장애</strong></span>
+                      <span>·</span>
+                      <span>치료기간: 8개월</span>
+                    </div>
+                  </div>
+
+                  <!-- 자필 스캔본 썸네일 (클릭 시 확대 모달) -->
+                  <div class="relative group cursor-pointer overflow-hidden rounded-xl border border-[#DDE6E1] bg-[#FAFCFB]" onclick="openModal('/images/reviews/handwritten_3.jpg', '최옥* 님 자필 수기 원본 (불안장애 8개월 치료 완치)')">
+                    <img src="/images/reviews/handwritten_3.jpg" alt="최옥* 님 자필 체험 수기 원본" class="w-full h-56 object-cover object-top transition duration-300 group-hover:scale-105 group-hover:opacity-90">
+                    <div class="absolute inset-0 bg-[#1E4638]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
+                      <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+                      <span>클릭하여 자필 원본 크게보기</span>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                      🔍 확대보기
+                    </div>
+                  </div>
+
+                  <!-- 상세 문진 전사 내용 -->
+                  <div class="space-y-3 text-xs sm:text-sm text-[#374151] leading-relaxed">
+                    <div class="p-3.5 bg-[#FFF9F5] rounded-xl border border-[#FFE8DC]">
+                      <div class="font-extrabold text-[#A63C1E] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 치료 받기 전 힘드셨던 증상
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#5A433A]">
+                        <li>매우 어지러웠다 (극심한 어지럼증)</li>
+                        <li>잠도 못 자고 매우 힘들었음 (수면 장애 및 불면)</li>
+                        <li>항상 불안했음 (지속적인 불안감)</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-3.5 bg-[#F0F8F4] rounded-xl border border-[#CDE5D8]">
+                      <div class="font-extrabold text-[#1E4638] mb-1.5 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#03C75A]"></i> 치료 후 나아진 상태
+                      </div>
+                      <ul class="list-disc list-inside space-y-1 text-[#2D5346]">
+                        <li><strong>지금은 매우 좋아졌습니다.</strong></li>
+                        <li>어지럼증과 불면증이 해소되어 일상생활을 편안하게 회복함</li>
+                      </ul>
+                    </div>
+
+                    <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] italic text-[#4B5563]">
+                      <strong class="not-italic text-[#1E4638] block mb-1">💬 환자분의 진심 어린 한마디:</strong>
+                      &ldquo;믿고 열심히 치료 받으세요.&rdquo;
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 불안·어지럼 안신 탕약 + 신경조절 침구</span>
+                  <span class="text-[#03C75A] font-bold">인천부평점 원내 보관 수기</span>
+                </div>
+              </div>
+
             </div>
+
 
           </div>
 
