@@ -67,14 +67,20 @@ sections:
 
           <!-- 3. 온라인 1:1 비밀상담 신청 폼 -->
           <div class="heal-card space-y-6 bg-white shadow-sm">
-            <div class="border-b border-[#DDE6E1] pb-4">
-              <h2 class="text-xl font-extrabold text-[#26332E] flex items-center gap-2">
-                <i class="fa-solid fa-lock text-[#2F5D50]"></i>
-                <span>1:1 온라인 비밀 상담 신청</span>
-              </h2>
-              <p class="text-xs sm:text-sm text-[#68736E] mt-1">
-                작성하신 모든 내용은 의료법 및 개인정보보호법에 따라 비밀이 엄격히 보장됩니다.
-              </p>
+            <div class="border-b border-[#DDE6E1] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <h2 class="text-xl font-extrabold text-[#26332E] flex items-center gap-2">
+                  <i class="fa-solid fa-lock text-[#2F5D50]"></i>
+                  <span>1:1 온라인 비밀 상담 신청</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-[#68736E] mt-1">
+                  작성하신 모든 내용은 의료법 및 개인정보보호법에 따라 비밀이 엄격히 보장됩니다.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#EAF3EF] text-[#2F5D50] text-xs font-bold self-start sm:self-auto">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>진료시간 내 1시간 이내 신속 회신</span>
+              </div>
             </div>
 
             <form id="consultation-form" onsubmit="handleConsultationSubmit(event)" class="space-y-4 text-sm">

@@ -205,7 +205,7 @@ files.forEach(f => {
     
     // 기존 Q&A 섹션 치환
     if (body.includes('### 5. 진료실 자주 묻는 질문') || body.includes('### 5. 자주 묻는 질문')) {
-      body = body.replace(/### 5\.\s*(?:진료실\s*)?자주 묻는 질문[\s\S]*?(?=### 6\.|\n>\s*\*\*권형근|$)/, `### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)\n\n${newCardsHtml}\n\n`);
+      body = body.replace(/### 5\.\s*(?:진료실\s*)?자주 묻는 질문[\s\S]*?(?=### 6\.|\n>\s*\*\*권형근|$)/, `### 5. 진료실 자주 묻는 질문 (FAQ)\n\n${newCardsHtml}\n\n`);
     }
   }
 

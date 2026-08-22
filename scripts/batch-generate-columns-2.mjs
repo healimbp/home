@@ -394,7 +394,7 @@ ${quoteBlock}
 
 ${col.bodyMarkdown.trim()}
 
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
+### 5. 진료실 자주 묻는 질문 (FAQ)
 
 <div class="space-y-3.5 my-6 not-prose">
 ${cardsHtml}
