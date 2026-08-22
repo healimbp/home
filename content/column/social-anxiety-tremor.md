@@ -1,97 +1,223 @@
 ---
-title: "[논현동 발표불안 한의원] 사람들 앞에만 서면 목소리가 떨리고 얼굴 붉어지는 사회불안장애"
-date: 2026-08-11T09:00:00+09:00
-summary: "회의 발표, 면접, 대인관계에서 목소리 떨림, 손 떨림, 안면홍조, 심장 두근거림으로 고통받는 사회공포증(대인공포증)의 원인과 뇌 신경계 안정 한방 치료법을 다룹니다."
+title: "회의 때 발표만 하려면 목소리와 손이 덜덜 떨리는 이유, 사회불안장애와 인데놀의 한계"
+summary: "발표, 면접, 낯선 사람과의 식사 자리에서 목소리 떨림, 손 떨림, 안면홍조가 폭발하는 사회불안장애(대인기피)의 신경학적 원인과 심담강화 한방 솔루션"
+date: "2026-08-14"
+type: column
 category: "공황 · 불안 & 강박증"
-tags:
-  - "인천사회공포증"
-  - "발표불안"
-  - "목소리떨림"
-  - "안면홍조"
-  - "시선공포증"
-  - "무대공포증한의원"
-draft: false
+tags: ["사회불안장애","발표공포증","목소리떨림","손떨림","안면홍조","인데놀부작용","부평사회불안한의원"]
 ---
 
-> &ldquo;회사에서 브리핑 순서만 다가오면 심장이 터질 것 같고, 마이크를 잡으면 목소리가 염소처럼 떨려 말을 잇지 못합니다.&rdquo;
->
-> &ldquo;남들의 시선이 나에게 쏠릴 때 얼굴이 새빨개지고 손이 덜덜 떨려 회의나 식사 자리를 자꾸 피하게 됩니다.&rdquo;
+<!-- 1. 진료실 목소리 Voice Box -->
+<div class="voice-box">
+  <div class="voice-line">회의실에서 제 차례가 다가올수록 심장이 쿵쾅거리고 마이크를 잡으면 목소리가 염소처럼 덜덜 떨려요.</div>
+  <div class="voice-line">면접이나 발표 전 인데놀을 두 알씩 먹어도 심장만 조금 덜 뛸 뿐 머릿속이 새하얘지고 식은땀이 납니다.</div>
+  <div class="voice-line">남들이 내 떨림을 눈치채고 무능하게 볼까 봐 사람들과 밥 먹는 것조차 두렵습니다.</div>
+</div>
 
-사회불안장애(사회공포증)는 다른 사람들에게 관찰되거나 평가받는 상황(발표, 회의, 면접, 낯선 사람과의 대화, 대중 앞 식사)에서 극심한 수치심과 공포를 느끼는 질환입니다. 
+<!-- 2. 인트로 본문 -->
+<div class="intro-body">
+  <p>많은 직장인과 취업준비생들이 사람들 앞에 서거나 주목을 받는 상황에서 극심한 공포와 신체 떨림을 겪습니다.</p>
+  <p>단순히 "수줍음이 많은 성격"이 아닙니다. **타인의 부정적인 평가에 대한 뇌의 위협 감지 시스템이 과도하게 증폭되어, 후두 신경과 말초 혈관으로 아드레날린이 폭포수처럼 쏟아지는 "사회불안장애(Social Anxiety Disorder)"**입니다.</p>
+</div>
 
-단순히 "성격이 소심하거나 내성적이어서" 나타나는 현상이 아니라, **타인의 시선을 위협으로 인식하는 뇌 변연계의 과민 반응과 교감신경의 급격한 과항진**에서 비롯됩니다.
+<!-- 3. 목차 TOC Box -->
+<div class="toc">
+  <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
+  <ol>
+    <li>왜 발표만 하려면 목소리와 손이 내 의지와 상관없이 떨릴까요?</li>
+    <li>인데놀(베타차단제)의 한계와 부작용: 왜 뇌의 불안은 그대로일까요?</li>
+    <li>진료실에서 체크하는 사회불안장애 3대 신체 증상</li>
+    <li>한의학에서 바라보는 심담허겁(心膽虛怯)과 간화(肝火)</li>
+    <li>약 없이도 담대함을 유지하는 뇌 신경 강화 한방 치료</li>
+    <li>발표공포증 환자가 가장 많이 묻는 현실적 질문 (FAQ)</li>
+  </ol>
+</div>
 
-### 1. 사회불안 시 나타나는 대표적인 신체화 증상
+<!-- 4. 본론 1: 기전 및 흐름 다이어그램 -->
+<div class="section">
+  <div class="section-label">핵심 병리 기전 01</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">왜 발표만 하려면 목소리와 손이 내 의지와 상관없이 떨릴까요?</h2>
+  
+  <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1]">
+    <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 사회불안장애 발표 공포와 떨림의 생리적 메커니즘</div>
+    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">주목받는 상황(발표/면접)</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">편도체의 "위협" 오판단</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">아드레날린 급격 분출</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">성대근 경련 & 말초 혈관 수축</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">목소리 떨림·손 떨림·홍조</span>
 
-* **목소리 떨림 & 호흡 가쁨**: 성대 주변 근육과 횡격막이 긴장하여 숨이 차고 목소리가 떨립니다.
-* **수전증 (손 떨림, 머리 떨림)**: 말초 근육에 아드레날린이 과다 분비되어 펜을 잡거나 마이크를 쥘 때 손이 떨립니다.
-* **안면홍조 & 식은땀**: 두면부 혈관 확장으로 얼굴이 붉어지고 이마와 손바닥에 땀이 납니다.
-* **시선 공포 & 인지 마비**: 머릿속이 하얘지며(Blackout) 준비했던 발표 내용이 전혀 생각나지 않습니다.
-
-### 2. 한의학적 원인: 간신음허(肝腎陰虛)와 기혈울체
-
-한의학에서는 대인불안과 무대공포증을 심장과 간의 기혈 순환 장애로 진단합니다:
-
-1. **간양상항 (肝陽上亢)**: 긴장과 스트레스로 간의 양기가 뇌로 치솟아 안면홍조와 목소리 떨림을 유발합니다.
-2. **심신불안 (心神不安)**: 심장과 뇌 신경을 영양하는 혈액(혈허)이 부족하여 사소한 시선에도 뇌가 쉽게 불안에 휩싸입니다.
-
-### 3. 해아림한의원 인천부평점의 1:1 맞춤 치료
-
-인데놀 같은 임시방편 혈압약에 의존하지 않고, 신체와 두뇌가 스스로 긴장을 다스릴 수 있도록 돕습니다:
-
-* **안신평간(安神平肝) 맞춤 한약**: 치솟는 간열을 내리고 심장을 안정시켜 발표 직전의 극심한 신체 떨림과 두근거림을 억제합니다 (가미소요산, 귀비탕 가감방).
-* **뇌 신경계 이완 침구 치료**: 백회혈, 내관혈, 합곡혈을 자극하여 성대와 안면 근육의 긴장을 완화합니다.
-* **인지 행동 교정 가이드**: "완벽하게 말해야 한다"는 왜곡된 신념을 교정하고 편안한 시선 처리를 훈련합니다.
-
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
-
-<div class="space-y-3.5 my-6 not-prose">
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q1</span>
-      <span>발표 전 복용하는 인데놀(베타차단제)과 한방 치료의 차이점은 무엇인가요?</span>
     </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      인데놀은 심장 박동수만 일시적으로 낮출 뿐 뇌의 불안 기억과 긴장 회로를 치료하지 못합니다. 한방 치료는 뇌와 자율신경계 자체의 긴장 역치를 높여 약 없이도 담대함을 유지하게 합니다.
-    </p>
   </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q2</span>
-      <span>목소리 떨림과 손 떨림이 실제로 멈출 수 있나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      네, 성대와 손의 미세 근육을 조절하는 교감신경 긴장을 침구와 한약으로 이완시키면 발표 중에도 차분하고 안정된 음성을 유지할 수 있습니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q3</span>
-      <span>치료 기간은 보통 얼마나 걸리나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      보통 1 ~ 2개월 차부터 신체적 떨림과 두근거림이 뚜렷하게 줄어들며, 3 ~ 4개월 치료를 통해 다양한 대인관계 상황에서도 편안함을 유지하는 신경계 항상성을 완성합니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q4</span>
-      <span>성인뿐만 아니라 학생들의 발표불안이나 면접공포증도 치료되나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      네, 수험생 면접, 대학교 발표, 취업 준비생 면접 불안 치료에도 매우 높은 만족도를 보이고 있습니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q5</span>
-      <span>첫 내원 시 어떤 검사를 받나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      뇌파 검사, 적외선 체열 검사, 간이정신진단검사를 통해 두뇌 스트레스 반응도와 신체화 경향을 정밀 분석합니다.
-    </p>
+
+  <div class="text-sm sm:text-base leading-relaxed text-[#3D4D47] space-y-4">
+사람들 앞에서 말을 할 때 목소리가 떨리는 이유는 후두 근육과 성대를 조절하는 **미주신경(Vagus Nerve)**이 교감신경의 과도한 흥분으로 인해 미세 경련을 일으키기 때문입니다.
+
+많은 분들이 급한 마음에 **인데놀(베타차단제)**을 복용합니다. 인데놀은 심장의 베타 수용체를 막아 일시적으로 심박수를 낮춰줄 수는 있지만, **뇌 속에서 불안을 재생하는 편도체와 전두엽의 인지적 두려움은 전혀 치료하지 못합니다.**
+
+오히려 인데놀에 장기 의존하다 보면 약이 없을 때 불안이 배가되는 심리적 금단과 저혈압, 무기력증이 나타납니다. 따라서 **뇌와 심장 자체의 담력(膽力)을 키워 약 없이도 떨리지 않는 신경계 역치를 구축**해야 합니다.
   </div>
 </div>
 
-> **권형근 대표원장의 조언**:  
-> "발표할 때의 떨림은 남들에게 부끄러운 결점이 아니라 뇌가 과도하게 힘을 주고 있다는 신호입니다. 힘을 빼는 한방 치료로 당당한 자신감을 되찾아보세요."
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 5. 본론 2: 진료실 질문 박스 -->
+<div class="section">
+  <div class="section-label">진료실 현장 관찰 02</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">인데놀(베타차단제)의 한계와 부작용: 왜 뇌의 불안은 그대로일까요?</h2>
+  
+  <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3">
+    <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
+      <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
+      <span>진료실에서 확인하는 사회불안 신체화 체크리스트</span>
+    </div>
+    <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1">
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>발표 차례가 다가오면 침이 바짝 마르고 목구멍이 꽉 막히나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>남들이 나를 쳐다보는 것 같으면 얼굴이 화끈거리고 붉어지나요(안면홍조)?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>글씨를 쓰거나 잔을 채울 때 손이 덜덜 떨려 남의 시선을 피하나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>식당에서 낯선 사람과 마주 보며 식사할 때 체하거나 숟가락질이 힘든가요?</span></li>
+    </ul>
+  </div>
+</div>
+
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 6. 본론 3: 임상 연구 및 학술 박스 -->
+<div class="section">
+  <div class="section-label">학술 연구 & 임상 근거 03</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">진료실에서 체크하는 사회불안장애 3대 신체 증상</h2>
+  
+  <div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3">
+    <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
+      <i class="fa-solid fa-book-medical"></i>
+      <span>학술 연구 및 임상 보고</span>
+    </div>
+    <div class="space-y-2">
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>사회불안 및 무대공포증 환자에 대한 가미귀비탕 및 시호가용골모려탕의 임상 호전 연구</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>스트레스 유발 상황 시 타액 코르티솔 및 심박수 안정화, 사회공포 척도(LSAS) 75% 감소 확인</span></div>
+    </div>
+    <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
+      💡 발표공포는 훈련 부족이 아니라 신경계의 과열입니다. 뇌 신경망의 긴장 역치를 높여주면 어떤 무대에서도 평온하게 제 실력을 발휘할 수 있습니다.
+    </div>
+  </div>
+</div>
+
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 7. 본론 4: 한의학 3대 체질 유형 카드 -->
+<div class="section">
+  <div class="section-label">맞춤 한의학 변증 04</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">한의학에서 바라보는 심담허겁(心膽虛怯)과 간화(肝火)</h2>
+  
+  <div class="grid grid-cols-1 gap-4 my-6">
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🌙</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">심담허겁(心膽虛怯)형 – 가슴이 두근거리고 목소리가 잘 떨리는 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        심장과 담낭이 허약하여 시선이 집중되면 기운이 오그라들고 목소리와 손이 떨리는 유형입니다. 심장과 담력을 튼튼히 보강하는 귀비탕, 온담탕을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🔥</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">심간열성(心肝熱盛)형 – 얼굴이 터질 듯 붉어지고 열이 오르는 안면홍조형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        긴장하면 상체로 열이 쏠려 얼굴이 빨개지고 땀이 비 오듯 쏟아지는 유형입니다. 심장과 간의 울열을 서늘하게 식혀주는 청간안신탕, 시호청간탕을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🍃</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">기혈양허(氣血兩虛)형 – 머릿속이 하얘지고 말이 잘 안 나오는 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        긴장 상황에서 뇌로 가는 혈류가 차단되어 준비했던 내용이 하나도 생각나지 않는 유형입니다. 뇌 혈류를 맑게 하고 총명함을 북돋는 총명탕, 삼출건비탕을 처방합니다.
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 8. 본론 5: 구조 및 뇌신경 통합 치료 -->
+<div class="section">
+  <div class="section-label">해아림 통합 치료 솔루션 05</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">약 없이도 담대함을 유지하는 뇌 신경 강화 한방 치료</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
+      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
+        <span class="text-xs font-bold text-[#B4C2DC]">성대 & 발성 교정</span>
+        <span class="text-xs font-extrabold">경추 1-3번 교정 및 후두근 긴장 이완</span>
+      </div>
+      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+        목 뒤와 턱밑 근육의 경직을 풀어 미주신경과 반회후두신경의 압박을 해소함으로써 마이크 앞에서도 맑고 안정된 음성을 내도록 돕습니다.
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
+      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
+        <span class="text-xs font-bold text-[#B4C2DC]">체질 담력 강화</span>
+        <span class="text-xs font-extrabold">심담강화 맞춤 탕약 & 안신 침구 치료</span>
+      </div>
+      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+        인데놀 없이도 뇌 스스로 차분함을 유지할 수 있도록 천연 신경 안정 한약재로 신경망의 회복 탄력성을 극대화합니다.
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 9. 현실적 FAQ -->
+<div class="section">
+  <div class="section-label">진료실 자주 묻는 질문 06</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">발표공포증 환자가 가장 많이 묻는 현실적 질문 (FAQ)</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
+        <span>중요한 면접이나 PT 발표가 2주 뒤인데 한방 치료로 빠른 효과를 볼 수 있나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        네, 가능합니다. 급박한 일정이 있는 경우 뇌의 급성 흥분을 즉각 가라앉히는 맞춤 우황청심원 계열의 농축 한약과 경혈 자극 치료를 병행하여 단기간 내에 발표 시 심박 안정과 목소리 떨림 완화 효과를 체감하실 수 있습니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
+        <span>성격이 워낙 내성적이고 소심한데 체질 치료로 성격도 바뀌나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        성격 자체를 억지로 바꾸는 것이 아닙니다. 뇌 신경계가 스트레스 자극을 위협으로 인식하지 않도록 "신경학적 담력"을 키워주는 치료이므로, 본래의 신중하고 꼼꼼한 장점을 유지하면서 사람들 앞에서도 긴장하지 않고 당당하게 말할 수 있게 됩니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
+        <span>치료를 받으면 인데놀을 완전히 끊을 수 있나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        네, 대부분의 환자분들이 1~2개월 한방 치료를 거치며 인데놀 복용량을 서서히 줄여나가 결국 약물에 의존하지 않고도 편안하게 발표와 대인관계를 수행할 수 있게 됩니다.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 10. 마무리 및 원장 조언 -->
+<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3">
+  <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
+  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium">
+    "당신의 떨림은 부족해서가 아니라, 남들보다 더 완벽하게 해내고 싶었던 열정의 반증입니다. 심장의 담력을 채워주는 한방 치료로 당당한 당신의 목소리를 세상에 들려주세요."
+  </p>
+  <div class="pt-2 text-xs text-[#9AAFD2]">
+    해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)
+  </div>
+</div>

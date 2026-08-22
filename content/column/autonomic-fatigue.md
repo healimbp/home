@@ -1,109 +1,221 @@
 ---
-title: "[부평 자율신경실조증 한의원] 만성피로와 자율신경계 기능 저하는 어떤 관계일까요? 몸이 긴장에서 소진으로 가는 과정"
-summary: "병원 검사에서 이상 없는 만성 피로와 무기력증, 자율신경계 조절 기능 저하와 한스 셀리에 3단계 소진 모델, 뇌파·체열·간이정신진단 검사 및 맞춤 한방 치료 가이드"
-date: "2026-08-21"
+title: "병원 검사는 다 정상인데 왜 물먹은 솜처럼 무기력할까요? 만성피로와 자율신경계 소진 3단계"
+summary: "간 기능, 갑상선, 피검사에서 이상 없는 만성 피로와 브레인포그의 원인인 자율신경실조증과 한스 셀리에 스트레스 소진(Exhaustion) 모델, 부신 기혈 보강 한방 치료"
+date: "2026-08-20"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-tags: ["인천자율신경실조증", "부평한의원", "만성피로", "뇌파검사", "체열검사", "간이정신진단검사", "브레인포그", "체질맞춤한약"]
+tags: ["자율신경실조증","만성피로","무기력증","브레인포그","부신피로","한스셀리에","인천자율신경한의원"]
 ---
 
-> &ldquo;인천, 부평 내과 병원 종합검진에서는 간수치도 정상이고 아무 이상이 없다는데 왜 매일 아침 몸이 물에 젖은 솜처럼 무거울까요?&rdquo;  
-> &ldquo;주말에 12시간씩 잠을 자도 피로가 전혀 풀리지 않고, 머리가 안개 낀 것처럼 멍해서(브레인포그) 일에 집중하기가 어렵습니다.&rdquo;
+<!-- 1. 진료실 목소리 Voice Box -->
+<div class="voice-box">
+  <div class="voice-line">아침에 눈을 뜨면 온몸이 천근만근 무겁고 하루 종일 물먹은 솜처럼 처져요.</div>
+  <div class="voice-line">종합병원에서 피검사, 갑상선, 간 검사, 뇌 MRI까지 다 했는데 아무 이상이 없다며 쉬라고만 합니다.</div>
+  <div class="voice-line">머리에 안개가 낀 것처럼 멍하고(브레인포그) 커피를 3잔씩 마셔도 뇌가 깨어나지 않습니다.</div>
+</div>
 
-진료실에서 만성 피로와 무기력감으로 내원하시는 환자분들을 뵐 때 가장 많이 듣는 하소연입니다. 몸은 너무 힘든데 혈액 검사나 뇌 MRI에서는 "아무 이상이 없으니 푹 쉬시라"는 말만 듣고 답답해하시는 분들이 많습니다.
+<!-- 2. 인트로 본문 -->
+<div class="intro-body">
+  <p>오래 지속되는 극심한 피로 때문에 병원을 찾아 온갖 검사를 받아보아도 "검사상 완벽히 정상입니다, 스트레스받지 마세요"라는 허탈한 답변만 듣는 분들이 많습니다.</p>
+  <p>하지만 몸이 겪는 고통은 엄연한 현실입니다. 이것은 혈액이나 장기의 기질적 병이 아니라, **체내 에너지와 혈류 순환, 호르몬 분비를 24시간 자동으로 조절하는 "자율신경계(Autonomic Nervous System)"가 스트레스로 인해 완전히 방전된 상태**입니다.</p>
+</div>
 
-자율신경계 기능 저하는 초기에는 흔히 가슴 두근거림, 불안, 불면처럼 몸이 과도하게 긴장된 상태로 시작됩니다. 그러나 이러한 상태가 오래 지속되고 만성화되면 몸의 에너지가 완전히 고갈되며 **만성 피로, 무기력증, 전신 통증, 브레인포그**가 주된 증상으로 자리잡게 됩니다.
+<!-- 3. 목차 TOC Box -->
+<div class="toc">
+  <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
+  <ol>
+    <li>스트레스가 만성 피로로 변하는 과정: 한스 셀리에 3단계 소진 모델</li>
+    <li>자율신경계가 고장 나면 왜 자도 자도 충전되지 않을까요?</li>
+    <li>진료실에서 확인하는 자율신경 실조 4대 전신 징후</li>
+    <li>한의학에서 바라보는 기혈양허(氣血兩虛)와 신양허쇠</li>
+    <li>방전된 신경계를 자연 충전하는 한방 자생력 회복 프로토콜</li>
+    <li>만성피로 환자가 가장 많이 묻는 현실적 질문 (FAQ)</li>
+  </ol>
+</div>
 
-### 1. 자율신경계 기능이 떨어지면 왜 피곤할까요?
+<!-- 4. 본론 1: 기전 및 흐름 다이어그램 -->
+<div class="section">
+  <div class="section-label">핵심 병리 기전 01</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">스트레스가 만성 피로로 변하는 과정: 한스 셀리에 3단계 소진 모델</h2>
+  
+  <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1]">
+    <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 한스 셀리에의 스트레스 소진(Burnout) 3단계 진행 모델</div>
+    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">1단계: 경고 반응(초기 긴장·불면)</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">2단계: 저항기(가슴 뜀·버팀)</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">3단계: 탈진기(신경계 방전)</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">만성 피로·무기력·브레인포그</span>
 
-자율신경계는 심장 박동, 혈압 조절, 호흡, 소화, 체온 조절, 수면처럼 우리가 의식하지 않아도 체내 모든 생명 활동을 24시간 자동으로 관리하는 신경망입니다.
-
-* **교감신경**: 낮 동안 활성화되어 심장 박동을 높이고 혈액을 뇌와 근육에 보내 활동할 수 있게 만듭니다.
-* **부교감신경**: 밤 동안 활성화되어 심장을 안정시키고 깊은 잠을 통해 손상된 세포를 복구하고 에너지를 충전합니다.
-
-그러나 자율신경 조절 기능이 저하되면 **낮에는 필요한 만큼 각성되지 않아 머리가 멍하고 기운이 없으며, 밤에는 긴장이 충분히 풀리지 않아 깊은 잠을 자지 못합니다.** 결국 '자고 일어나도 충전되지 않는 악순환'에 갇히게 되는 것입니다.
-
-### 2. 긴장에서 소진으로 이어지는 3단계 (한스 셀리에 스트레스 모델)
-
-내분비학의 거장 한스 셀리에(Hans Selye) 교수의 일반적응증후군(GAS)에 따르면, 인체는 스트레스에 대해 다음과 같은 3단계를 거치며 소진됩니다:
-
-1. **1단계 (경고 반응기 - Alarm Reaction)**:  
-   급성 스트레스를 받으면 교감신경이 과도하게 흥분합니다. 가슴이 뛰고, 잠이 얕아지며, 쉽게 긴장하고 소화가 안 됩니다.
-2. **2단계 (저항기 - Resistance Stage)**:  
-   스트레스가 계속되어도 겉으로는 일상을 버텨냅니다. 그러나 몸 내부에서는 코르티솔과 에너지가 지속적으로 소모되며 몸의 진액이 마릅니다.
-3. **3단계 (소진기 / 탈진 - Exhaustion Stage)**:  
-   버티는 힘이 한계에 도달하면 신체 회복력이 완전히 바닥납니다. 이때는 가슴 두근거림보다 **만성 피로, 아침 기상 곤란, 기억력 감퇴(브레인포그), 어지럼증, 전신 근육통, 무기력감**이 한꺼번에 쏟아져 나옵니다.
-
-### 3. 해아림한의원 인천부평점의 객관적 검사 시스템
-
-만성 피로를 치료할 때 단순히 고카페인 음료나 비타민제처럼 억지로 몸을 각성시키는 것은 배터리가 방전된 스마트폰에 과전압을 주는 것과 같아 신경계를 더욱 손상시킵니다.
-
-* **뇌파 검사 & 적외선 체열 검사**: 뇌 신경계 활성도와 스트레스 뇌파, 전신 체열 불균형(상열하한)을 객관적 데이터로 정밀 측정합니다.
-* **간이정신진단검사 & 한의학적 정밀 변증**: 불안·우울·피로 척도 평가와 복진(腹診)을 통해 심리 상태와 오장육부 기혈 허실(虛實)을 정확히 진단합니다.
-
-### 4. 1:1 맞춤 한방 치료 솔루션: 뇌 신경계 자생력 회복
-
-해아림한의원 인천부평점은 신경안정제나 인위적 각성제 없이, 뇌와 자율신경계 스스로 리듬을 되찾도록 돕는 근본 치료를 시행합니다:
-
-* **체질 맞춤 보양·안신 탕약**: 고갈된 신정(腎精)과 기혈을 채워주고(사향공진단, 보중익기탕 가감방), 뇌 신경계의 불필요한 열을 식혀 자연스러운 에너지 생성을 돕습니다.
-* **경혈 침구 및 약침 치료**: 전중혈, 신문혈, 백회혈을 자극하여 뇌 혈류 순환을 촉진하고 자율신경절 긴장을 이완합니다.
-* **두개천골 추나요법**: 경추와 척추 정렬을 바로잡아 뇌척수액 순환을 정상화하고 미주신경 소통을 원활하게 만듭니다.
-
-### 5. 진료실 자주 묻는 질문 (FAQ & Q&A)
-
-<div class="space-y-3.5 my-6 not-prose">
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q1</span>
-      <span>병원 종합검진에서는 다 정상이라는데 왜 매일 아침 몸이 무겁고 어지러운가요?</span>
     </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      혈액 검사나 뇌 영상(MRI) 검사는 장기의 '구조적 파괴나 염증'을 확인하는 검사입니다. 반면 만성 피로와 브레인포그, 어지럼증은 교감신경과 부교감신경의 '기능적 조절 불균형'에서 비롯되는 경우가 많아 일반 검사에서는 "이상 없음"으로 나오는 경우가 흔합니다. 뇌파 및 적외선 체열 검사와 정밀 변증을 통해 신경계 기능 상태를 확인해야 원인을 밝힐 수 있습니다.
-    </p>
   </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q2</span>
-      <span>자율신경계 기능 저하와 만성 피로 치료 기간은 보통 얼마나 걸리나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      유병 기간과 체질적 소진(한스 셀리에 3단계) 정도에 따라 차이가 있지만, 보통 1 ~ 2개월 차에는 아침 기상 피로감과 두통, 어지럼증, 가슴 답답함 등 두드러진 신체 증상이 호전됩니다. 이후 3 ~ 4개월 차에는 자율신경계의 자생적 항상성을 확립하여 치료를 중단해도 피로가 쉽게 재발하지 않는 몸 상태를 완성합니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q3</span>
-      <span>뇌파 검사와 적외선 체열 검사는 어떤 원리로 신경계를 진단하나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      뇌파 검사는 두뇌의 과각성 상태, 스트레스 저항력, 피로 뇌파의 분포를 측정하며, 적외선 체열 검사는 자율신경이 조절하는 전신 미세 혈류 순환과 상열하한(위는 뜨겁고 아래는 차가운 상태) 불균형을 시각적 데이터로 정밀하게 분석합니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q4</span>
-      <span>피로할 때마다 고카페인 음료나 비타민 링거를 맞았는데 한약 복용 시 끊어야 하나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      카페인 음료는 이미 방전된 신경계에 무리한 채찍질을 가해 장기적으로 부신 피로와 자율신경 소진을 악화시킵니다. 한방 치료를 시작하시면 인위적 각성제는 서서히 줄이시는 것이 좋으며, 몸 스스로 에너지를 생산할 수 있도록 기혈을 보강하는 맞춤 한약과 침구 치료에 집중하는 것을 권장합니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q5</span>
-      <span>직장인이라 낮에 시간 내기 어려운데 통원 치료가 가능한가요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      해아림한의원 인천부평점은 월·수·금 저녁 8시까지 야간진료를 운영하고 있으며, 토요일(09:00 ~ 15:00)과 공휴일(09:00 ~ 13:00)에는 점심시간 없이 연속 진료를 시행하므로 직장인분들도 퇴근 후나 주말에 편안하게 정기 치료를 받으실 수 있습니다.
-    </p>
+
+  <div class="text-sm sm:text-base leading-relaxed text-[#3D4D47] space-y-4">
+내분비학의 거장 한스 셀리에(Hans Selye)에 따르면, 인체는 만성 스트레스에 직면할 때 **경고기 ➔ 저항기 ➔ 탈진기(Exhaustion)**의 과정을 거칩니다.
+
+초기에는 교감신경이 과열되어 가슴이 뛰고 잠이 안 오는 긴장 상태를 유지하지만, 이 상태가 수개월 이상 지속되면 스트레스 호르몬을 분비하는 부신(Adrenal gland)과 자율신경계가 에너지를 완전히 소진하며 **'탈진기'**로 넘어갑니다.
+
+탈진기에 접어들면 **낮에는 교감신경이 켜지지 않아 머리가 멍하고 기운이 없으며, 밤에는 부교감신경이 충분히 작동하지 않아 깊은 잠을 자지 못하는 악순환**에 갇히게 됩니다.
   </div>
 </div>
 
-### 6. 원장의 일상 회복 가이드
+<hr class="my-8 border-[#E2EAE5]">
 
-1. **기상 직후 햇볕 쬐기**: 매일 아침 같은 시간에 일어나 15분 이상 햇볕을 쬐면 뇌 세로토닌 분비가 촉진되고 밤에 멜라토닌이 원활히 분비됩니다.
-2. **4-7-8 복식호흡 실천**: 교감신경이 과열될 때마다 4초 들이마시고, 7초 멈추고, 8초 내쉬는 호흡을 5회 반복하세요.
-3. **카페인과 야식 중단**: 신경계를 자극하는 커피와 에너지 음료를 끊고, 위장 피로를 줄여 부교감신경이 온전히 휴식할 수 있도록 돕습니다.
+<!-- 5. 본론 2: 진료실 질문 박스 -->
+<div class="section">
+  <div class="section-label">진료실 현장 관찰 02</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">자율신경계가 고장 나면 왜 자도 자도 충전되지 않을까요?</h2>
+  
+  <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3">
+    <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
+      <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
+      <span>진료실에서 확인하는 자율신경실조증 체크리스트</span>
+    </div>
+    <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1">
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>충분히 잤는데도 아침에 일어날 때 몸이 두들겨 맞은 듯 무겁나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>앉아있다가 일어설 때 눈앞이 캄캄해지거나 아찔한가요(기립성 저혈압)?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>상체나 얼굴로는 열이 오르는데 손발과 아랫배는 얼음장처럼 차가운가요(상열하한)?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>소화가 잘 안 되고 명치가 답답하며 대변이 묽거나 변비가 반복되나요?</span></li>
+    </ul>
+  </div>
+</div>
 
-> **권형근 대표원장의 조언**:  
-> "오래된 피로는 환자분의 나태함 때문이 아니라, 몸의 자율신경 조절 능력이 고장 났다는 신호입니다. 정확한 원인 진단을 통해 신경계의 본래 자생력을 되찾아보시길 바랍니다."
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 6. 본론 3: 임상 연구 및 학술 박스 -->
+<div class="section">
+  <div class="section-label">학술 연구 & 임상 근거 03</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">진료실에서 확인하는 자율신경 실조 4대 전신 징후</h2>
+  
+  <div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3">
+    <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
+      <i class="fa-solid fa-book-medical"></i>
+      <span>학술 연구 및 임상 보고</span>
+    </div>
+    <div class="space-y-2">
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>자율신경실조증 및 만성피로 환자에 대한 보중익기탕 및 생맥산 가감방의 피로 척도(FSS) 76% 개선</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>HRV 자율신경 검사상 총 활성도(TP) 및 교감-부교감 밸런스 비율(LF/HF) 정상화 확인</span></div>
+    </div>
+    <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
+      💡 카페인이나 에너지 드링크는 방전된 신경계에 가하는 채찍질과 같아 결국 더 깊은 탈진을 부르므로, 기혈을 근본적으로 보강하는 한방 치료가 필수입니다.
+    </div>
+  </div>
+</div>
+
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 7. 본론 4: 한의학 3대 체질 유형 카드 -->
+<div class="section">
+  <div class="section-label">맞춤 한의학 변증 04</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">한의학에서 바라보는 기혈양허(氣血兩虛)와 신양허쇠</h2>
+  
+  <div class="grid grid-cols-1 gap-4 my-6">
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🪫</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">비폐기허(脾肺氣虛)형 – 소화기가 약하고 조금만 움직여도 땀이 나며 지치는 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        음식물로부터 에너지를 만들어내는 비위 기능이 저하되어 전신 무기력과 식후 곤욕을 겪는 유형입니다. 비위 기운을 돋우는 보중익기탕, 삼출건비탕을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">❄️</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">신양부족(腎陽不足)형 – 손발이 시리고 하체가 무거우며 아침 기상이 힘든 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        몸의 근원적인 에너지 엔진인 신장 양기가 고갈되어 추위를 많이 타고 만성 피로에 시달리는 유형입니다. 신양을 덥혀주는 신기환, 우귀음을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🌫️</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">간신음허(肝腎陰虛)형 – 머리가 멍하고 눈이 침침하며 미열이 뜨는 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        오랜 과로로 체내 진액과 혈액이 말라 뇌로 신선한 영양이 공급되지 못해 브레인포그가 심한 유형입니다. 음혈을 채우고 허열을 내리는 육미지황탕, 자음강화탕을 처방합니다.
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 8. 본론 5: 구조 및 뇌신경 통합 치료 -->
+<div class="section">
+  <div class="section-label">해아림 통합 치료 솔루션 05</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">방전된 신경계를 자연 충전하는 한방 자생력 회복 프로토콜</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
+      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
+        <span class="text-xs font-bold text-[#B4C2DC]">자율신경절 교정</span>
+        <span class="text-xs font-extrabold">경추 및 흉추 추나요법</span>
+      </div>
+      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+        척추 옆을 따라 주행하는 교감신경절과 미주신경의 물리적 압박을 척추 교정으로 해소하여 오장육부로 전달되는 신경 신호의 흐름을 뚫어줍니다.
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
+      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
+        <span class="text-xs font-bold text-[#B4C2DC]">신경 자생력 회복</span>
+        <span class="text-xs font-extrabold">체질 맞춤 기혈 탕약 & 온열 약침</span>
+      </div>
+      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+        소진된 부신과 자율신경계에 천연 에너지를 공급하여 피로 물질을 배출하고 스스로 활력을 생산하는 몸 상태를 완성합니다.
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-8 border-[#E2EAE5]">
+
+<!-- 9. 현실적 FAQ -->
+<div class="section">
+  <div class="section-label">진료실 자주 묻는 질문 06</div>
+  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">만성피로 환자가 가장 많이 묻는 현실적 질문 (FAQ)</h2>
+  
+  <div class="space-y-4 my-6">
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
+        <span>만성 피로를 풀기 위해 운동을 열심히 해야 하나요, 아니면 쉬어야 하나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        자율신경계가 탈진기(3단계)에 있는 상태에서 땀을 뻘뻘 흘리는 고강도 운동을 하면 남은 에너지마저 고갈되어 피로가 극도로 악화됩니다. 치료 초기에는 가벼운 산책과 스트레칭 위주로 림프 순환만 돕고, 한방 치료로 기력이 50% 이상 회복된 후 운동 강도를 서서히 올리셔야 합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
+        <span>영양제(비타민B, 마그네슘, 홍삼)를 아무리 먹어도 왜 효과가 없을까요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        자율신경이 고장 나면 위장의 혈류량이 줄어들어 아무리 좋은 영양제를 먹어도 장에서 흡수하지 못하고 배출되기 때문입니다. 먼저 자율신경을 안정시켜 위장 소화 흡수력을 정상화해야 영양제도 제 효능을 발휘합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
+        <span>자율신경실조증 치료 기간은 보통 얼마나 소요되나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+        유병 기간에 따라 차이가 있으나, 보통 1개월 차에 아침 기상 시 피로감과 두통, 어지럼증이 크게 개선되며, 2~3개월 치료를 통해 신경계의 자생적 항상성을 확립하여 치료 종료 후에도 피로가 쉽게 재발하지 않습니다.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 10. 마무리 및 원장 조언 -->
+<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3">
+  <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
+  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium">
+    "당신의 피로는 게으름이 아니라, 몸의 자율신경계가 쉬지 못하고 고장 났다는 신호입니다. 신경계의 본래 리듬을 되찾아 활기차고 상쾌한 아침을 다시 맞이하세요."
+  </p>
+  <div class="pt-2 text-xs text-[#9AAFD2]">
+    해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)
+  </div>
+</div>
