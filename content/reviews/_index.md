@@ -50,14 +50,15 @@ sections:
                 <span class="text-[11px] text-[#8B9891]">원하시는 질환을 클릭하시면 해당 후기만 정렬됩니다</span>
               </div>
               <div class="flex flex-wrap gap-2">
-                <button onclick="filterReviews('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체 (16편)</button>
-                <button onclick="filterReviews('autonomic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">자율신경·갱년기·교감항진 (7)</button>
-                <button onclick="filterReviews('panic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">공황·불안·긴장완화 (6)</button>
+                <button onclick="filterReviews('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#2F5D50] text-white" data-cat="all">전체 (21편)</button>
+                <button onclick="filterReviews('autonomic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="autonomic">자율신경·갱년기·교감항진 (9)</button>
+                <button onclick="filterReviews('panic')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="panic">공황·호흡곤란·불안·긴장 (8)</button>
                 <button onclick="filterReviews('child')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="child">소아 틱·ADHD·집중력 (4)</button>
                 <button onclick="filterReviews('insomnia')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="insomnia">불면증·수면장애 (4)</button>
-                <button onclick="filterReviews('adhd')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="adhd">성인ADHD·기억력 (1)</button>
-                <button onclick="filterReviews('facial')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="facial">안면마비·경추통증 (2)</button>
+                <button onclick="filterReviews('adhd')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="adhd">성인ADHD·기억력 (2)</button>
+                <button onclick="filterReviews('facial')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-extrabold transition bg-[#F4F7F5] text-[#556B62] hover:bg-[#EAEFEA]" data-cat="facial">안면마비·경추·턱관절 (2)</button>
               </div>
+
 
 
             </div>
@@ -552,7 +553,157 @@ sections:
                 </div>
               </div>
 
+              <!-- [실제 네이버 인증 리뷰 17] 파파야7 님 (치료 종결 임박 후기) -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic insomnia">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#치료종결예정 #몸과마음편안 #원장님감사 #불안불면극복</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;몸도 마음도 많이 편해졌고 이제 치료 끝도 얼마 안 남았다는 말씀에 너무 감사했습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">파파야7 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 21 · 사진 12 (원내 사진 인증)</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    2주만에 치료왔어요 몸도 마음도 많이 편해졌고 이제 치료끝도 얼마 안남았다는 원장님 말씀이 너무 감사했어요.
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 불안·불면 안신 탕약 + 원내 집중 치료</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 18] bon**** 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="autonomic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#자율신경실조증 #상세한설명 #긍정적인마음 #한의학치료효과</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;치료 효과가 좋아 몸이 많이 좋아졌어요. 한의학 치료 효과를 확실히 느끼고 있습니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">bon**** 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 19 (예약 후 바로 입장)</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    자율신경실조증으로 해아림한의원부평점에서 치료 받고 있어요 원장선생님 이 질병에 대한 설명도 자세히 해 주시고 나올 수 있다는 긍정적 마음도 심어 주세요<br><br>
+                    친절하게 정신, 몸의 변화에 대한 상담 아주 친절하고 자세히 정성껏 잘해 주세요~~ 치료 효과가 좋아 몸이 많이 좋아졌어요 한의학 치료 효과를 확실히 느끼고 있습니다
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 자율신경 조절 탕약 + 심층 침구 치료</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 19] wkm**** 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic autonomic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#공황장애 #자율신경장애 #친절한원장님 #깨끗한시설</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;공황장애와 자율신경장애로 방문했는데 원장님과 상담 선생님 모두 너무 친절하십니다.&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">wkm**** 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 27 · 사진 90</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    상담 선생님, 너무 친절하시고 원장선생님 너무 친절하십니다. 시설도 너무 깨끗하고 좋아요.<br><br>
+                    공황 장애와 자율신경장애로 방문하였는데 열심히 치료해서 꼭 건강한 삶을 찾고 싶습니다.
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 공황·자율신경 안신 탕약 + 이완 침구</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 20] suzzzzzzz 님 -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="panic autonomic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#호흡곤란불안 #공황증상 #목등교정치료 #즉각적시원함</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;숨이 안 쉬어지는 불안 증상이었는데, 치료받고 나오며 윗목과 등이 시원해지며 바로 나아졌어요!&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">suzzzzzzz 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 682 · 사진 462</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    숨이 안쉬어지는것 같은 불안한 증상때문에 방문했는데 원장님이며 앞에 계신 간호쌤들이며 진짜 친절하심....<br><br>
+                    치료받고 나오면서 윗목이랑 등쪽이 시원해지면서 증상이 바로 나아지는 느낌이 들었어여 ㅠㅠㅠ 아직 완전 사라지지는 않았는데 토욜 예약일인데 한번 더 가보고 효과 진짜 봤으면 좋겠습니다ㅠ
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 경추·흉추 추나요법 + 신경이완 침구</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
+              <!-- [실제 네이버 인증 리뷰 21] als**** 님 (성인 ADHD 치료 종결 후기) -->
+              <div class="review-item heal-card bg-white flex flex-col justify-between p-6 rounded-2xl border-2 border-[#CDE5D8] shadow-sm hover:shadow-md transition space-y-4" data-category="adhd">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag text-xs font-bold text-[#2F5D50] bg-[#EAF2ED] px-2.5 py-1 rounded-md">#성인ADHD치료종결 #심리적안정 #성인ADHD호전 #완치감사</span>
+                    <div class="flex items-center text-[#FFB800] text-xs gap-0.5">★★★★★ <span class="text-[#888888] ml-1 font-medium text-[11px]">5.0</span></div>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-[#1E4638] leading-snug">
+                      &ldquo;심리적으로도 많이 편해졌고 성인 ADHD였는데 치료 종결할 정도로 많이 좋아졌습니다!&rdquo;
+                    </h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-[#8B9891]">
+                      <span class="font-bold text-[#333333]">als**** 님</span>
+                      <span>·</span>
+                      <span>네이버 리뷰 12 · 사진 3 (치료 종결 완치)</span>
+                    </div>
+                  </div>
+                  <div class="p-4 bg-[#F9FAF8] rounded-xl border border-[#EDF2EE] text-xs sm:text-sm text-[#374151] leading-relaxed font-normal">
+                    작년 11월말일?12월 초쯤?부터 다녔는데 벌써 오늘이 마지막이라서 아쉽네요ㅠㅠ<br><br>
+                    한의원 다니면서 너무너무 친절하셔서 즐거웠습니다! 심리적으로도 많이 편해졌고 성인 ADHD였는데 많이 좋아졌습니닷 그동안 너무 감사했고 앞으로도 번창하길 바랍니다!
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-[#EAEFEA] flex items-center justify-between text-xs text-[#68736E]">
+                  <span>치료: 성인 ADHD 맞춤 탕약 + 뇌신경 밸런스 치료</span>
+                  <span class="text-[#03C75A] font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> 네이버 영수증·예약 실제 인증
+                  </span>
+                </div>
+              </div>
+
             </div>
+
 
 
 
