@@ -225,10 +225,10 @@ sections:
             </div>
           </div>
 
-          <!-- 5. 첨단 뇌기능 정밀 진단 & NeuronFlex 뉴로피드백 훈련 센터 -->
+          <!-- 5. 첨단 NeuronFlex 뉴로피드백 & 뇌파 조절 시스템 -->
           <div class="space-y-8">
             <div class="text-center space-y-2 max-w-2xl mx-auto">
-              <span class="heal-hero-badge">Advanced Brain Training & Diagnostic System</span>
+              <span class="heal-hero-badge">Neurofeedback System</span>
               <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">
                 첨단 NeuronFlex 뉴로피드백 & 두뇌 훈련 시스템
               </h2>
@@ -298,21 +298,34 @@ sections:
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- IM (Interactive Metronome) 감각통합 훈련 장비 소개 카드 -->
+          <!-- 6. 첨단 IM (Interactive Metronome) 감각통합 훈련 시스템 -->
+          <div class="space-y-8">
+            <div class="text-center space-y-2 max-w-2xl mx-auto">
+              <span class="heal-hero-badge">Sensory Integration System</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">
+                첨단 IM (Interactive Metronome) 감각통합 훈련 시스템
+              </h2>
+              <p class="text-xs sm:text-sm text-[#68736E] leading-relaxed">
+                1/1,000초 정밀 시청각 피드백으로 뇌신경망의 정보 처리 속도와 타이밍/리듬 조절력을 동기화하는 전문 감각통합 장비 <strong>IM(인터랙티브 메트로놈)</strong>을 운용합니다.
+              </p>
+            </div>
+
+            <!-- IM 장비 상세 소개 카드 -->
             <div class="bg-gradient-to-br from-[#FAFBF9] to-[#F2F7F4] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#DDE6E1] shadow-sm space-y-8">
               <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7 space-y-4 text-left">
                   <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#202947] text-white text-xs font-bold">
                     <i class="fa-solid fa-stopwatch"></i>
-                    <span>1/1,000초 정밀 감각통합 뇌신경 훈련</span>
+                    <span>1/1,000초 신경 타이밍 동기화 솔루션</span>
                   </div>
                   <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E] leading-snug">
                     뇌의 타이밍과 리듬 감각을 바로잡는<br class="hidden sm:inline" />
-                    <span class="text-[#2F5D50]">IM (Interactive Metronome) 감각통합 훈련</span>
+                    <span class="text-[#2F5D50]">IM (인터랙티브 메트로놈) 감각통합 훈련</span>
                   </h3>
                   <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-                    <strong>IM (인터랙티브 메트로놈)</strong>은 1/1,000초(밀리초, ms) 단위의 정밀한 소리 비트와 시각 피드백을 통해 손과 발의 움직임을 동기화시키는 <strong>신경학적 감각통합 및 타이밍 조절 훈련 시스템</strong>입니다. 뇌 신경망의 정보 처리 속도와 타이밍 오차를 실시간으로 교정하여 두뇌의 집중 지속력과 충동 억제력을 비약적으로 끌어올립니다.
+                    <strong>IM (Interactive Metronome)</strong>은 1/1,000초(밀리초, ms) 단위의 정밀한 소리 비트와 시각 피드백을 통해 손과 발의 움직임을 동기화시키는 <strong>신경학적 감각통합 및 타이밍 조절 훈련 시스템</strong>입니다. 뇌 신경망의 정보 처리 속도와 타이밍 오차를 실시간으로 교정하여 두뇌의 집중 지속력과 충동 억제력을 비약적으로 끌어올립니다.
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                     <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
@@ -325,7 +338,7 @@ sections:
                     <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
                       <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
                         <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
-                        <span>틱장애 운동 억제 신경망 동기화</span>
+                        <span>틱장애 운동 억제 회로 동기화</span>
                       </div>
                       <p class="text-[11px] text-[#68736E]">기저핵-소뇌-전두엽을 연결하는 운동 제어 회로의 타이밍을 정밀 조절합니다.</p>
                     </div>
@@ -335,21 +348,25 @@ sections:
                 <div class="lg:col-span-5 space-y-3">
                   <div class="bg-white p-5 rounded-2xl border border-[#DDE6E1] shadow-sm space-y-3">
                     <div class="text-xs font-extrabold text-[#2F5D50] border-b border-[#F2F7F4] pb-2 flex items-center justify-between">
-                      <span>IM 감각통합 훈련의 치료 메커니즘</span>
-                      <span class="text-[10px] text-[#68736E]">신경 타이밍 재학습</span>
+                      <span>IM 감각통합 주요 임상 적용 분야</span>
+                      <span class="text-[10px] text-[#68736E]">1:1 맞춤 프로토콜</span>
                     </div>
                     <ul class="space-y-2 text-xs text-[#3D4D47]">
                       <li class="flex items-start gap-2">
-                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">1단계</span>
-                        <span><strong>정밀 타이밍 측정:</strong> 1/1,000초 단위로 두뇌의 시청각 반응 속도 및 편차 평가</span>
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">ADHD</span>
+                        <span><strong>집중 지속력 & 작업기억력:</strong> 시청각 자극에 대한 반응 오차 교정 및 주의력 향상</span>
                       </li>
                       <li class="flex items-start gap-2">
-                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">2단계</span>
-                        <span><strong>시청각-운동 동기화:</strong> 리듬 비트에 맞추어 손·발 터치 훈련으로 뇌신경망 연결 촉진</span>
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">틱·뚜렛</span>
+                        <span><strong>운동 신경 동기화:</strong> 불수의적 신체 충동을 억제하고 정밀 타이밍 제어 능력 형성</span>
                       </li>
                       <li class="flex items-start gap-2">
-                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">3단계</span>
-                        <span><strong>전두엽 실행기능 강화:</strong> 잡념을 배제하고 목표 자극에만 반응하는 억제 통제력 완성</span>
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">학습장애</span>
+                        <span><strong>정보 처리 속도 개선:</strong> 난독증, 언어 지연, 인지 처리 지연 개선 및 읽기 속도 향상</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">협응 장애</span>
+                        <span><strong>신체 균형 & 감각통합:</strong> 소뇌 기능 활성화를 통한 신체 조절력 및 정밀 협응성 회복</span>
                       </li>
                     </ul>
                   </div>
