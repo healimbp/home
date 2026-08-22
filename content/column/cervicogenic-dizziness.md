@@ -1,26 +1,26 @@
 ---
-title: "이석증도 아니라는데 왜 세상이 붕 뜨고 멍할까요? 일자목과 경추성 어지럼증의 신경 압박"
-summary: "이비인후과 귀 검사나 뇌 MRI에서 정상인 만성 어지럼증, 머리가 맑지 않은 브레인포그의 원인인 상부 경추 변위와 성상신경절 자극, 경추 추나 및 뇌혈류 한방 치료"
+title: "[인천 청라 어지럼증] 이비인후과·신경과 검사에도 이상 없는 어지럼증과 멍함, 상부 경추(C1-C2)와 추골동맥의 관계"
+summary: "인천 청라, 루원시티, 검단, 부평 지역에서 이석증 치료 후에도 남아있는 만성 어지럼증, 브레인포그, 경추성 두통의 상부 경추 정렬 및 추나·FCST 한방 솔루션"
 date: "2026-08-14"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어지럼증","성상신경절","추골동맥","부평어지럼증한의원"]
+tags: ["청라어지럼증","인천경추성어지럼증","부평이석증후유증","브레인포그","추골동맥","경추추나요법","인천신경과한의원"]
 ---
 
 <div class="voice-box">
-  <div class="voice-line">이비인후과에서 이석증 약을 먹고 전정신경염 치료를 다 끝냈는데도 여전히 구름 위를 걷는 것처럼 어질어질해요.</div>
-  <div class="voice-line">컴퓨터나 스마트폰을 오래 보고 나면 목 뒤가 뻣뻣해지면서 머리가 멍하고 핑 도는 느낌이 듭니다.</div>
-  <div class="voice-line">신경과 뇌 MRI를 찍어봐도 깨끗하다는데 왜 제 머릿속은 항상 안개가 낀 것처럼 맑지 않을까요?</div>
+  <div class="voice-line">머리가 맑지 않고 붕 뜬 느낌(스펀지 위를 걷는 듯한 어지럼)이 수개월째 이어져요.</div>
+  <div class="voice-line">이비인후과에서 이석증 치료를 받고 귀는 다 나았다는데 머리의 어지럼증과 멍함은 그대로입니다.</div>
+  <div class="voice-line">목과 어깨를 돌릴 때마다 눈이 침침해지고 머리가 띵하면서 속이 울렁거립니다.</div>
 </div>
 
-어지럼증이 생기면 대개 이비인후과를 찾아 귀 검사를 받거나 신경과에서 뇌 MRI를 촬영합니다. 하지만 "귀도 뇌도 완벽히 정상"이라는 진단을 받고도 만성적인 어지럼증과 멍함에 시달리는 환자들이 매우 많습니다.
+세상이 뱅글뱅글 도는 회전성 어지럼증이 아니라, 머리가 멍하고 땅이 꺼지는 듯한 비회전성 어지럼증으로 고통받는 분들이 많습니다.
 
-이러한 어지럼증의 숨겨진 주범은 바로 **"목(경추)"**입니다. 일자목, 거북목, 목 디스크로 인해 **상부 경추가 틀어지면서 뇌로 가는 혈관(추골동맥)과 자율신경절(성상신경절)을 압박하는 "경추성 어지럼증(Cervicogenic Dizziness)"**입니다.
+이비인후과와 뇌 MRI 검사에서 아무런 이상을 찾지 못했다면, 원인은 귀나 뇌가 아닌 **목뼈 1·2번(상부 경추)의 틀어짐으로 인한 "경추성 어지럼증(Cervicogenic Dizziness)"**입니다.
 
 <div class="toc">
   <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
   <ol>
-    <li>귀도 뇌도 아닌 "목" 때문에 어지러운 해부학적 이유</li>
+    <li>목뼈가 틀어지면 왜 머리가 어지러울까요? 고유수용감각과 추골동맥</li>
     <li>진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호</li>
     <li>국내외 임상 연구와 한의학적 치료 보고</li>
     <li>한의학에서 바라보는 환자별 3대 맞춤 체질 유형</li>
@@ -31,28 +31,28 @@ tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어
 
 <div class="section-label">핵심 병리 기전 01</div>
 
-## 귀도 뇌도 아닌 "목" 때문에 어지러운 해부학적 이유
+## 목뼈가 틀어지면 왜 머리가 어지러울까요? 고유수용감각과 추골동맥
 
 <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
-  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 경추 변위로 인한 뇌 혈류 저하 및 어지럼증 발생 경로</div>
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 경추 비틀림과 만성 어지럼증 발생 메커니즘</div>
   <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">거북목/상부경추(C1-C2) 비틀림</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">스마트폰/거북목 자세 누적</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">추골동맥 압박(뇌 혈류 30% 저하)</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">상부 경추(C1-C2) 아탈구</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">전정신경핵 감각 신호 왜곡</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">추골동맥 뇌혈류 억압</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">붕 뜨는 어지럼 & 브레인포그</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">전정신경핵 고유감각 왜곡</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">목 어깨 통증 및 만성 피로</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">만성 어지럼·브레인포그</span>
   </div>
 </div>
 
-우리의 목뼈(경추) 안쪽에는 뇌의 뒤쪽(소뇌, 뇌간)으로 혈액을 공급하는 **추골동맥(Vertebral Artery)**이 지나가며, 목 주변 근육과 인대에는 몸의 균형을 뇌에 알려주는 **고유수용성 감각 수용기**가 빽빽하게 밀집되어 있습니다.
+상부 경추(경추 1번 환추, 2번 축추)는 인체에서 가장 많은 **고유수용감각 수용체(Proprioceptors)**가 밀집된 부위입니다.
 
-고개를 앞으로 내미는 스마트폰 자세나 교통사고, 스트레스로 인해 상부 경추(목뼈 1·2번)가 틀어지면, **뇌로 들어가는 혈류량이 급격히 떨어지고 목 근육의 위치 감각 신호와 눈·귀의 평형 신호가 불일치**하게 됩니다.
+목 근육의 위치 감각 신호는 뇌간의 **전정신경핵(Vestibular Nucleus)**으로 들어가 눈(시각) 및 귀(전정기관)의 신호와 결합하여 신체 균형을 잡습니다.
 
-이로 인해 빙글빙글 도는 회전성 어지럼보다는 **"스폰지 위를 걷는 듯 붕 뜨는 느낌", "머리가 무겁고 멍한 브레인포그", "눈이 침침하고 초점이 안 맞는 느낌"**이 만성적으로 지속됩니다.
+일자목이나 턱관절 불균형으로 상부 경추가 틀어지면 목에서 뇌로 왜곡된 균형 신호를 보내며, 목뼈 속을 통과하는 **추골동맥(Vertebral Artery)을 압박하여 소뇌와 뇌간으로 가는 혈류량이 급감**해 만성적인 어지럼증과 브레인포그를 유발합니다.
 
 ---
 
@@ -67,13 +67,13 @@ tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어
 <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
   <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
     <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
-    <span>진료실에서 확인하는 경추성 어지럼증 자가진단</span>
+    <span>진료실에서 체크하는 경추성 어지럼증 자가진단</span>
   </div>
   <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>고개를 특정 방향으로 돌리거나 젖힐 때 어지럼증과 띵함이 심해지나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>어지럼증과 함께 뒷목 뻐근함, 어깨 결림, 후두부 두통이 항상 동반되나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>이석증 치료 후에도 잔여 어지럼증과 울렁거림이 수개월째 사라지지 않나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>오랜 시간 모니터를 보고 나면 눈이 피로하고 집중력이 급격히 떨어지나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>고개를 특정 방향으로 돌리거나 젖힐 때 어지럼증과 두통이 심해지나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>뒷목 아래 움푹 파인 곳(풍지혈)을 누르면 극심한 통증과 어지럼이 있나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>모니터나 스마트폰을 오래 본 뒤 머리가 멍해지고 집중력이 뚝 떨어지나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>평소 턱을 벌릴 때 소리가 나거나 편두통, 안구 통증이 동반되나요?</span></li>
   </ul>
 </div>
 
@@ -93,11 +93,11 @@ tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어
     <span>학술 연구 및 임상 보고</span>
   </div>
   <div class="space-y-2">
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>경추성 현훈 환자에 대한 경추 교정 추나요법 및 반하백출천마탕 투여 후 DHI(어지럼 척도) 81% 개선</span></div>
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>뇌혈류 초음파(TCD) 검사상 기저동맥 및 척추동맥 혈류 속도 유의미 정상화 확인</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>상부 경추 추나요법 및 침치료를 시행한 경추성 어지럼증 환자의 어지럼 척도(DHI) 82% 호전</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>경동맥 초음파상 뇌저동맥 및 추골동맥 혈류 속도 정상화 입증</span></div>
   </div>
   <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
-    💡 어지럼증 약(보나링, 신경안정제)은 전정기능을 억제하여 일시적으로 둔감하게 만들 뿐, 좁아진 목 혈관과 신경 압박을 해결하지 못합니다.
+    💡 어지럼증 약(보ナ링에이 등)은 뇌 감각을 일시적으로 마비시킬 뿐 경추의 구조적 압박을 해결하지 못하므로, 정밀 경추 교정 치료가 필수적입니다.
   </div>
 </div>
 
@@ -116,29 +116,29 @@ tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어
 <div class="grid grid-cols-1 gap-4 my-6 not-prose">
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
-        <span class="text-xl">🌪️</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">풍담상요(風痰上擾)형 – 머리가 무겁고 깨질 듯 아프며 속이 메스꺼운 유형</h3>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        체내 담음이 경추 주변의 기혈 순환을 막아 뇌로 맑은 기운이 올라가지 못하는 유형입니다. 담음을 삭이고 풍을 가라앉히는 반하백출천마탕, 온담탕을 처방합니다.
-      </p>
-    </div>
-    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
-      <div class="flex items-center gap-2.5">
         <span class="text-xl">🦴</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">어혈조락(瘀血阻絡)형 – 목 디스크나 교통사고 후유증으로 뒷목이 쑤시는 유형</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">경항어혈(頸項瘀血)형 – 목어깨가 돌처럼 굳고 찌르는 듯한 두통이 동반되는 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        목 주변 미세 혈관에 어혈이 뭉쳐 혈류를 차단하고 찌르는 듯한 두통과 어지럼을 일으키는 유형입니다. 어혈을 풀고 혈관을 소통시키는 통규활혈탕, 당귀수산을 처방합니다.
+        경추 주변 미세 근육에 어혈이 뭉쳐 혈관과 신경을 물리적으로 압박하는 유형입니다. 어혈을 풀고 혈행을 촉진하는 당귀수산, 계지복령환을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
-        <span class="text-xl">🍂</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">기혈휴허(氣血虧虛)형 – 과로하거나 피곤하면 눈앞이 아찔하고 기운이 빠지는 유형</h3>
+        <span class="text-xl">🌪️</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">담탁상몽(痰濁上蒙)형 – 머리가 무겁고 안개가 낀 듯 멍하며 메스꺼운 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        신체 전반의 기혈이 부족하여 뇌로 혈액을 충분히 공급하지 못하는 유형입니다. 기혈을 크게 보강하고 뇌수를 채워주는 자음건비탕, 보중익기탕을 처방합니다.
+        소화기 담음이 뇌 혈류를 가로막아 머리가 무겁고 어지러운 유형입니다. 담음을 제거하고 머리를 맑게 하는 반하백출천마탕을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🪫</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">기혈양허(氣血兩虛)형 – 일어설 때 핑 돌고 조금만 피곤해도 어지러운 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        뇌로 올라가는 기혈이 부족하여 앉았다 일어설 때 아찔한 유형입니다. 기혈을 보강하여 뇌 혈류를 끌어올리는 보중익기탕, 자음건비탕을 처방합니다.
       </p>
     </div>
 </div>
@@ -156,20 +156,20 @@ tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">경추 교정 치료</span>
-        <span class="text-xs font-extrabold">상부경추 특화 추나요법 (FCST 교정)</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">구조 정밀 교정</span>
+        <span class="text-xs font-extrabold">상부경추 정렬 추나 & FCST 턱관절 교정</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        경추 1-2번의 부정렬을 손으로 정밀 교정하여 척추동맥의 압박을 즉각 해소하고 뇌간과 소뇌로 들어가는 맑은 혈류를 확보합니다.
+        비틀린 환축관절(C1-C2)을 안전하고 부드럽게 바로잡아 추골동맥의 혈류 통로를 개통하고 전정신경핵의 신경 왜곡을 바로잡습니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">신경 혈류 순환</span>
-        <span class="text-xs font-extrabold">경추 약침 요법 & 두개골 림프 순환</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">뇌 혈류 개통</span>
+        <span class="text-xs font-extrabold">청뇌식풍 맞춤 한약 & 경혈 약침</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        풍지혈, 완골혈, 견정혈 등 뒷목 핵심 혈자리에 순수 한약 약침을 시술하여 굳어진 후두하근을 이완하고 뇌척수액 순환을 정상화합니다.
+        풍지혈, 견정혈의 근육 경결을 침구 치료로 이완하고 뇌 혈류를 맑게 하는 한약으로 만성 어지럼증과 멍함을 근본 치료합니다.
       </div>
     </div>
 </div>
@@ -186,28 +186,28 @@ tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>이석증이 완치되었다는데 왜 어지럼증과 멍함이 계속 남아있을까요?</span>
+        <span>이석증이 다 나았다고 하는데 왜 아직도 머리가 붕 뜨고 어지러울까요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        이석증 발병 당시 뇌와 목 근육이 극도로 긴장하면서 상부 경추의 틀어짐과 자율신경계 과민이 잔류하기 때문입니다. 빠져나간 이석을 맞추었더라도 굳어진 목 근육과 뇌 혈류 장애를 치료하지 않으면 잔여 어지럼증이 수개월간 지속될 수 있습니다.
+        이석증 자체는 정복술로 교정되었더라도, 발병 당시 극심한 공포로 인해 목 주변 근육이 강하게 굳어 상부 경추의 틀어짐과 자율신경 과민이 후유증으로 남았기 때문입니다. 경추 교정과 자율신경 치료를 통해 잔여 어지럼증을 완전히 해소할 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>도수치료나 마사지를 받아도 그때뿐이고 다시 어지러운데 왜 그런가요?</span>
+        <span>목 디스크 수술을 해야만 어지럼증이 낫나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        단순 근육 이완만으로는 깊은 곳에 위치한 상부 경추의 뼈 정렬과 뇌 혈류 저하 체질을 근본적으로 바꾸지 못하기 때문입니다. 한의학적 정밀 추나요법과 뇌 혈류 개선 맞춤 한약이 병행되어야 구조와 기능이 동시에 정상화됩니다.
+        경추성 어지럼증은 큰 디스크 파열보다는 상부 경추(C1-C2)의 미세한 관절 회전 변위와 근육 긴장에 의해 발생하는 경우가 대부분입니다. 비수술 추나요법과 한방 침구 치료로 충분히 완치될 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>경추성 어지럼증 치료는 보통 기간이 얼마나 걸리나요?</span>
+        <span>도수치료를 여러 번 받았는데도 어지럼증이 반복되는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        보통 2~3회의 추나 및 침구 치료만으로도 목의 가동 범위가 넓어지며 띵한 어지럼증이 50% 이상 완화되며, 1~2개월 집중 치료를 통해 재발 없는 맑은 두뇌 상태를 완성합니다.
+        단순 근육 마사지만으로는 깊숙한 후두하근과 상부 경추 관절의 정렬을 바로잡기 어렵습니다. 턱관절(FCST) 균형과 경추 교정, 그리고 뇌 혈류를 돕는 한약 치료가 결합되어야 치료 효과가 오래 유지됩니다.
       </p>
     </div>
 </div>
@@ -215,7 +215,7 @@ tags: ["경추성어지럼증","이석증재발","브레인포그","일자목어
 <div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
   <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
-    "세상이 어지러운 것이 아니라 목이 뇌로 가는 길을 막고 있었을 뿐입니다. 굳어있던 목을 바로잡고 맑은 뇌 혈류를 되찾아 안개 없는 상쾌한 하루를 누리세요."
+    "어지럼증의 진짜 원인을 찾으면 안개 낀 듯 멍하던 머리는 반드시 맑아집니다. 목과 뇌의 바른 정렬을 되찾아 가볍고 상쾌한 일상을 누리세요."
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">
     해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)

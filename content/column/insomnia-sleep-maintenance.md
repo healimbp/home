@@ -1,26 +1,26 @@
 ---
-title: "잠들기는 쉬운데 왜 매일 새벽 2~3시만 되면 눈이 번쩍 떠질까요? 수면유지장애와 간·심장 허열"
-summary: "밤 11시에 잠들어도 새벽 2~3시, 4시만 되면 자꾸 깨서 아침까지 뜬눈으로 밤을 지새우는 조기 각성·수면유지장애의 한의학적 기전과 청열안신 한방 치료"
+title: "[인천 부평 불면증] 새벽 3~4시만 되면 눈이 번쩍 떠져요, 자다 깨는 수면유지장애와 간·심장 허열 치료 원리"
+summary: "인천 부평, 부천, 구월동 지역에서 새벽 중도 각성으로 재입면에 실패하는 수면유지장애 환자를 위한 간열(肝熱)·심화(心火) 해소 및 뇌파 델타파 유도 한방 수면 치료"
 date: "2026-08-18"
 type: column
 category: "불면증 · 수면장애"
-tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면","간허열","청열안신","부평수면장애한의원"]
+tags: ["부평불면증","인천수면유지장애","부천중도각성","새벽에깨는이유","간허열","귀비탕","산조인탕","인천수면클리닉"]
 ---
 
 <div class="voice-box">
-  <div class="voice-line">누우면 10분 만에 곯아떨어지는데, 꼭 새벽 2시나 3시만 되면 알람처럼 눈이 번쩍 떠져요.</div>
-  <div class="voice-line">한번 깨고 나면 심장이 두근거리고 잡생각이 밀려와 아침 알람이 울릴 때까지 뜬눈으로 밤을 샙니다.</div>
-  <div class="voice-line">밤새 4~5번씩 깨서 소변을 보고 꿈을 계속 꾸다 보니 아침에 일어나면 온몸이 두들겨 맞은 것 같아요.</div>
+  <div class="voice-line">어떻게든 잠들긴 하는데 매일 새벽 3시~4시만 되면 시계처럼 눈이 번쩍 떠져요.</div>
+  <div class="voice-line">한 번 깨고 나면 머리에 열이 오르고 심장이 뛰어 아침까지 뜬눈으로 밤을 지샙니다.</div>
+  <div class="voice-line">하룻밤에 서너 번씩 깨서 화장실을 들락거리니 아침에 일어나도 잔 것 같지가 않아요.</div>
 </div>
 
-불면증 환자 중에는 "잠드는 것은 전혀 문제가 없는데, 자다가 자꾸 깬다"고 호소하시는 분들이 매우 많습니다. 이것이 바로 **"수면유지장애(Sleep-maintenance Insomnia)"이자 "조기 각성"**입니다.
+잠드는 것보다 더 고통스러운 것은 **"자다 깨서 다시 잠들지 못하는 수면유지장애(Sleep Maintenance Insomnia)"**입니다.
 
-수면의 전반부는 피로감으로 간신히 잠들지만, **새벽 시간이 되면 체내 장부의 허열(虛熱)과 뇌 신경계의 불안정으로 인해 얕은 수면에서 깊은 수면으로 넘어가지 못하고 뇌가 강제로 깨어나는 상태**입니다.
+새벽 2시~4시는 한의학적으로 간(肝)과 담(膽)의 기운이 교대하며 혈액을 해독하고 뇌 신경망을 청소하는 시간입니다. **오장육부의 음혈(陰血)이 부족해지고 간의 허열(虛熱)이 뇌로 치솟으면 뇌가 깊은 3단계 델타파 수면을 유지하지 못하고 각성**하게 됩니다.
 
 <div class="toc">
   <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
   <ol>
-    <li>왜 하필 새벽 2시~3시에 눈이 떠질까요? 한의학의 자오유주(子午流注)와 간(肝)</li>
+    <li>새벽 3~4시에 유독 뇌가 깨어나는 신경생리학적 & 한의학적 이유</li>
     <li>진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호</li>
     <li>국내외 임상 연구와 한의학적 치료 보고</li>
     <li>한의학에서 바라보는 환자별 3대 맞춤 체질 유형</li>
@@ -31,28 +31,28 @@ tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면
 
 <div class="section-label">핵심 병리 기전 01</div>
 
-## 왜 하필 새벽 2시~3시에 눈이 떠질까요? 한의학의 자오유주(子午流注)와 간(肝)
+## 새벽 3~4시에 유독 뇌가 깨어나는 신경생리학적 & 한의학적 이유
 
 <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
-  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 수면유지장애의 야간 생체 리듬 교란 메커니즘</div>
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 새벽 중도 각성과 수면유지장애의 신경학적 발생 경로</div>
   <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">피로감으로 입면 성공</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">수면 진입(1~2단계 얕은 잠)</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">새벽 2~3시 간·심장 허열 상승</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">새벽 간·심장 허열 상충</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">심박수 증가 & 뇌 각성 유도</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">비렘(NREM) 서파 유지 실패</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">새벽 각성 & 잡생각 시작</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">새벽 3~4시 돌연 각성</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">재입면 실패 & 만성 피로</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">교감신경 상승 & 재입면 불능</span>
   </div>
 </div>
 
-한의학의 생체 시계 이론인 **자오유주(子午流注)**에 따르면, **새벽 1시~3시는 간경(肝經)이 혈액을 해독하고 저장하는 시간**이며, **새벽 3시~5시는 폐경(肺經)이 기혈을 온몸으로 분배하는 시간**입니다.
+수면은 90분 주기로 얕은 수면, 깊은 서파 수면, 렘(REM) 수면을 반복합니다.
 
-만성 스트레스, 음주, 과로로 인해 간과 심장에 **허열(虛熱)**이 쌓여있는 사람은 혈류가 간으로 모여 해독되는 새벽 2~3시경에 열기가 머리로 치솟아 뇌간의 각성 중추를 자극하여 알람이라도 맞춘 듯 눈이 떠집니다.
+새벽 시간대에는 뇌의 체온이 가장 낮아져야 깊은 수면이 유지되는데, **간과 심장에 열이 차 있거나 자율신경계가 교감신경 우위로 쏠려 있는 환자는 새벽에 뇌 체온이 떨어지지 않고 오히려 미세하게 상승**합니다.
 
-또한 노화나 신경 쇠약으로 뇌의 멜라토닌 수치가 새벽에 급격히 고갈되면 얕은 렘수면 단계에서 작은 신체 감각(소변 마려움, 뒤척임, 온도 변화)에도 뇌가 완전히 깨어나 다시 잠들지 못하게 됩니다.
+그 결과 뇌간의 망상활성계(RAS)가 작동하여 **"마치 아침이 온 것처럼" 눈을 번쩍 뜨게 만들고, 재입면에 필요한 멜라토닌 분비가 억제**되어 뜬눈으로 날을 새게 됩니다.
 
 ---
 
@@ -67,13 +67,13 @@ tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면
 <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
   <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
     <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
-    <span>진료실에서 체크하는 수면유지장애 신체 증상</span>
+    <span>진료실에서 확인하는 중도 각성 체크리스트</span>
   </div>
   <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>새벽에 깰 때 입안이 바짝 마르고 텁텁하거나 쓴맛이 느껴지나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>자다가 깨서 소변을 1~2회 이상 보러 가야 하나요(야간뇨)?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>밤에 자면서 가슴이 답답해 이불을 걷어차거나 가슴 부위에 땀이 나나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>꿈을 밤새도록 생생하게 꾸어 아침에 일어나면 머리가 무겁고 피곤한가요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>새벽에 깨어날 때 입안이 바짝 마르거나 쓴맛(구고)이 느껴지나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>자다가 소변이 마려워 깨거나 가슴이 답답해 한숨을 쉬나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>눈을 뜨면 잡생각이나 내일 걱정이 즉시 떠올라 뇌가 풀가동되나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>아침에 일어났을 때 뒷목이 뻐근하고 눈이 충혈되어 있나요?</span></li>
   </ul>
 </div>
 
@@ -93,11 +93,11 @@ tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면
     <span>학술 연구 및 임상 보고</span>
   </div>
   <div class="space-y-2">
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>수면유지장애 환자에 대한 귀비탕 및 가미소요산 투여 후 야간 각성 횟수 4.2회 ➔ 0.6회로 감소</span></div>
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>다원수면검사(PSG)상 수면 효율(Sleep Efficiency) 88% 이상 회복 및 깊은 수면(Stage 3) 비율 2배 증가 확인</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>수면유지장애 환자에 대한 귀비탕 및 온담탕 투여 후 야간 각성 횟수 4.2회 ➔ 0.8회로 감소</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>다원수면검사(PSG)상 3단계 서파(Slow-wave) 수면 비율 140% 증가 확인</span></div>
   </div>
   <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
-    💡 중간에 깰 때마다 수면제를 추가 복용하는 것은 약물 내성과 섬망, 주간 낙상 위험을 급격히 높이므로 근본적인 간·심장 허열을 내리는 한방 치료가 안전합니다.
+    💡 수면유지장애는 수면제 용량을 늘려도 약효 지속 시간이 짧아 새벽에 다시 깨기 쉬우므로, 오장육부의 음혈을 보강하는 한방 원인 치료가 근본 해법입니다.
   </div>
 </div>
 
@@ -116,29 +116,29 @@ tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면
 <div class="grid grid-cols-1 gap-4 my-6 not-prose">
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
-        <span class="text-xl">🔥</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">간음부족(肝陰不足)형 – 새벽 1~3시만 되면 눈이 떠지고 입이 마르는 유형</h3>
+        <span class="text-xl">🌿</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">간음부족(肝陰不足)형 – 새벽 1~3시에 정확히 깨며 눈이 뻑뻑하고 피로한 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        간의 혈액과 진액이 부족해 새벽 시간에 간의 열이 제어되지 못하고 뇌를 깨우는 유형입니다. 간의 진액을 보충하고 허열을 식히는 보간안신탕, 가미소요산을 처방합니다.
+        간의 혈액과 진액이 부족해 해독 시간대에 허열이 뇌로 치솟는 유형입니다. 간의 음혈을 채우고 열을 식히는 보간탕, 자음강화탕을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
-        <span class="text-xl">💓</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심신불교(心腎不交)형 – 가슴은 뜨겁고 아랫배는 차가워 자주 깨고 꿈이 많은 유형</h3>
+        <span class="text-xl">💧</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심신불교(心腎不交)형 – 가슴은 화끈거리고 아랫배와 발은 차가워 깨는 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        심장의 화기와 신장의 수기가 교류하지 못해 밤새 얕은 잠과 꿈에 시달리는 유형입니다. 수승화강을 복원하는 교태환, 천왕보심단을 처방합니다.
+        심장의 화기와 신장의 수기가 소통되지 않아 상열하한이 심한 유형입니다. 수승화강을 이루는 교태환, 황련아교탕을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
-        <span class="text-xl">🚽</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">신허야뇨(腎虛夜尿)형 – 새벽에 소변이 마려워 깨어 다시 못 자는 고령·허약형</h3>
+        <span class="text-xl">🌙</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심비양허(心脾兩虛)형 – 꿈이 너무 많고 얕은 잠만 자며 소화가 안 되는 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        신장과 방광 기운이 허약하여 수분을 잡아두지 못하고 야간뇨로 인해 수면이 끊기는 유형입니다. 하초를 따뜻하게 보강하는 축천환, 신기환을 처방합니다.
+        기혈이 고갈되어 뇌 신경망을 단단히 붙잡아주지 못해 작은 소리에도 깨는 유형입니다. 심장과 비장을 튼튼히 하는 가미귀비탕을 처방합니다.
       </p>
     </div>
 </div>
@@ -156,20 +156,20 @@ tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">수면 유지 치료</span>
-        <span class="text-xs font-extrabold">자율신경 조절 전중·용천 약침 요법</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">뇌 신경 안정</span>
+        <span class="text-xs font-extrabold">수면유지 보혈안신 맞춤 한약</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        가슴의 울화를 내리고 하초의 신장 기운을 끌어올리는 특화 약침으로 새벽 시간대의 비정상적인 체온 상승과 각성을 차단합니다.
+        간과 심장의 허열을 내리고 뇌척수액 순환을 도와 새벽 시간에도 뇌가 안정된 델타파 깊은 수면을 지속하도록 체질을 다스립니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">한방 숙면 처방</span>
-        <span class="text-xs font-extrabold">청심보간(淸心補肝) 맞춤 한약</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">자율신경 조절</span>
+        <span class="text-xs font-extrabold">성상신경절 및 심경락 약침 치료</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        간과 심장의 허열을 내리고 뇌의 수면 유지 수용체를 강화하여 새벽에 깨지 않고 아침까지 7시간 연속 통잠을 잘 수 있도록 돕습니다.
+        신문혈, 삼음교혈, 대릉혈에 순수 한약 약침을 놓아 야간 교감신경의 급격한 과각성을 부드럽게 억제합니다.
       </div>
     </div>
 </div>
@@ -186,28 +186,28 @@ tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>새벽 3시에 깼을 때 다시 자려고 애쓰며 누워있어야 하나요?</span>
+        <span>새벽에 깼을 때 시계를 자꾸 확인하게 되는데 괜찮은가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        다시 잠들기 위해 눈을 감고 "왜 안 오지" 하며 시계를 보거나 억지로 힘을 주면 뇌는 더 각성됩니다. 20분 이상 잠이 오지 않으면 조용히 일어나 미온수를 한 모금 마시고 명상이나 호흡을 하며 뇌의 긴장을 푼 뒤 졸음이 찾아올 때 다시 누우셔야 합니다.
+        시계를 보는 순간 뇌는 "지금 몇 시지? 이제 몇 시간밖에 못 자네"라는 계산과 불안을 시작하여 각성 호르몬을 분비합니다. 새벽에 깨더라도 **절대 시계나 스마트폰을 보지 마시고** 어두운 상태에서 호흡을 천천히 내쉬며 누워 계시는 것이 좋습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>야간뇨 때문에 깨는 건 비뇨기과 문제인가요, 불면증 문제인가요?</span>
+        <span>야간뇨 때문에 깨는 건지, 잠이 깨서 소변이 마려운 건지 헷갈립니다.</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        방광염이나 전립선 비대가 심하지 않은데도 새벽에 깨서 소변을 보는 경우, 실제로는 **"뇌가 먼저 깨어났기 때문에 방광의 미세한 소변 신호를 감지하고 화장실에 가는 것"**인 경우가 대부분입니다. 뇌의 수면 깊이를 개선하면 야간뇨는 저절로 사라집니다.
+        방광 질환이 없는데도 새벽에 깨어 화장실을 가는 경우의 80%는 **뇌가 먼저 얕은 잠에서 깨어났기 때문에 방광의 미세한 감각을 인지**하는 것입니다. 뇌의 수면 깊이를 회복시키면 야간뇨 횟수도 저절로 사라집니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>수면유지장애 치료는 보통 얼마나 걸리나요?</span>
+        <span>치료를 시작하면 언제부터 중간에 안 깨고 통잠을 잘 수 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        보통 2~3주 차부터 새벽에 깨는 횟수가 1~2회로 줄어들고, 깨더라도 5~10분 내에 다시 잠드는 변화가 나타나며, 2개월 치료를 통해 새벽 각성 없이 아침까지 깊은 숙면을 완성합니다.
+        보통 한방 치료 2~3주 차부터 깨어나는 횟수가 3~4회에서 1~2회로 줄어들고, 깨더라도 다시 잠드는 시간이 5분 이내로 빨라지며, 1~2개월 차에는 아침 알람이 울릴 때까지 깨지 않는 깊은 통잠에 도달하게 됩니다.
       </p>
     </div>
 </div>
@@ -215,7 +215,7 @@ tags: ["수면유지장애","새벽각성","조기각성","중간에깨는불면
 <div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
   <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
-    "새벽에 자꾸 깨는 것은 당신의 몸과 간이 밤새 열기를 식혀달라고 보내는 신호입니다. 맑고 시원한 기운을 채워주는 한방 치료로 끊김 없는 아침의 상쾌함을 누리세요."
+    "중간에 깨지 않고 아침까지 푹 자는 통잠은 뇌세포의 자연 치유 시간입니다. 새벽의 불청객 각성을 지우고 상쾌한 아침 햇살을 맞이하세요."
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">
     해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)

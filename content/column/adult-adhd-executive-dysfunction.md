@@ -1,10 +1,10 @@
 ---
-title: "왜 나는 알면서도 매번 미루고 자책할까요? 게으름이 아닌 성인 ADHD의 '뇌 실행기능 장애'"
-summary: "만성 미루기, 마감 직전 벼락치기, 브레인포그, 잦은 이직과 번아웃으로 고통받는 성인 ADHD의 전두엽 도파민 결핍 원인과 한방 뇌 기능 개선 솔루션"
+title: "[인천 구월동 성인ADHD] 왜 나는 알면서도 매번 미루고 자책할까요? 게으름이 아닌 '뇌 실행기능 장애'"
+summary: "인천 구월동, 간석동, 부평, 송도 지역 직장인·취준생의 만성 미루기, 마감 벼락치기, 브레인포그, 번아웃 극복을 위한 전두엽 도파민 결핍 원인과 한방 뇌 기능 개선 솔루션"
 date: "2026-08-12"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-tags: ["성인ADHD","만성미루기","실행기능장애","브레인포그","도파민부족","성인ADHD한의원","부평정신과한의원"]
+tags: ["구월동성인ADHD","인천성인ADHD","부평성인ADHD","만성미루기","실행기능장애","브레인포그","도파민부족","인천정신과한의원"]
 ---
 
 <div class="voice-box">
@@ -157,10 +157,10 @@ tags: ["성인ADHD","만성미루기","실행기능장애","브레인포그","�
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
-        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & 전두엽 활성화 훈련</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & IM 타이밍 훈련</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        첨단 NeuronFlex 장비를 통해 전두엽의 느린 세타파를 억제하고 주의집중 베타파를 스스로 생성하도록 훈련하여 만성 미루기와 실행기능 장애를 개선합니다.
+        전두엽의 느린 세타파를 억제하고 주의집중 베타파를 스스로 생성하도록 훈련하여 만성 미루기와 실행기능 장애를 개선합니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">

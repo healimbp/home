@@ -1,10 +1,10 @@
 ---
-title: "우리 아이는 왜 알면서도 가만히 있지 못할까요? ADHD의 본질은 집중력이 아닌 '뇌 브레이크' 미성숙입니다"
-summary: "주의산만, 충동성, 과잉행동의 뇌과학적 원인인 전두엽 실행기능 결핍과 도파민 조절 장애, 콘서타 부작용 걱정 없는 뇌 자생력 강화 한방 치료법"
+title: "[인천 송도 ADHD] 우리 아이는 왜 알면서도 가만히 있지 못할까요? 집중력이 아닌 '뇌 브레이크' 미성숙입니다"
+summary: "인천 송도, 연수구, 부평, 청라 지역에서 소아 ADHD 주의산만, 충동성으로 고민하는 가정을 위한 전두엽 실행기능 결핍 원인과 NeuronFlex 뇌 자생력 강화 한방 치료법"
 date: "2026-08-16"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-tags: ["소아ADHD","주의산만","과잉행동","전두엽발달","콘서타부작용","주의집중력검사","부평소아ADHD"]
+tags: ["송도ADHD","인천소아ADHD","부평ADHD한의원","주의산만","과잉행동","전두엽발달","NeuronFlex","부평소아한의원"]
 ---
 
 <div class="voice-box">
@@ -157,10 +157,10 @@ ADHD 아이를 둔 부모님들은 매일 집과 학교에서 전쟁을 치릅�
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
-        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & 시청지각 통합 훈련</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & IM 감각통합 훈련</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        첨단 NeuronFlex 장비로 실시간 뇌파를 모니터링하여, 산만한 세타파를 억제하고 주의집중을 높이는 SMR/베타파를 스스로 생성하도록 훈련합니다.
+        산만한 세타파를 억제하고 주의집중 베타파를 생성하며, 밀리초(ms) 단위 타이밍 감각통합으로 충동 억제력을 비약적으로 강화합니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">

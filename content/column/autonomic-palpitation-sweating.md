@@ -1,26 +1,26 @@
 ---
-title: "심장 검사는 정상인데 왜 시도 때도 없이 두근거리고 얼굴로 열이 쏟아질까요? 교감신경 과항진과 상열하한"
-summary: "부정맥 없는 심장 두근거림(심계항진), 손발 다한증, 안면홍조와 상열감의 원인인 교감신경 과열 병리와 수승화강(水昇火降) 한방 정상화 치료법"
-date: "2026-08-18"
+title: "[부천 상동 심계항진] 긴장하지 않아도 가슴이 쿵쾅거리고 손발에 땀이 쏟아지는 자율신경 과흥분과 다한증"
+summary: "부천 상동, 중동, 부평, 시흥 지역에서 특별한 이유 없이 가슴이 두근거리고 상열감과 수족다한증을 앓는 분들을 위한 교감신경 긴장 해소 및 시호가용골모려탕 처방 원리"
+date: "2026-08-16"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경항진","상열하한","수승화강"]
+tags: ["부천심계항진","상동수족다한증","인천자율신경실조증","부평가슴두근거림","상열하한","체열검사","부평한의원"]
 ---
 
 <div class="voice-box">
-  <div class="voice-line">가만히 앉아있거나 누워있는데도 갑자기 심장이 쿵쾅거리고 밖으로 튀어나올 것 같아요.</div>
-  <div class="voice-line">심장내과 24시간 홀터 검사를 했는데 단순 빈맥일 뿐 이상이 없다고 베타차단제만 줍니다.</div>
-  <div class="voice-line">얼굴과 머리로는 뜨거운 열이 솟구치고 땀이 줄줄 흐르는데 발은 얼음장처럼 시립니다.</div>
+  <div class="voice-line">가만히 소파에 앉아 쉬고 있는데도 심장이 100미터 달리기한 것처럼 쿵쾅쿵쾅 뛰어요.</div>
+  <div class="voice-line">조금만 긴장하거나 집중하면 손과 발, 겨드랑이에서 땀이 줄줄 흘러 일상생활이 불가능합니다.</div>
+  <div class="voice-line">심장내과 24시간 홀터 심전도 검사에서는 부정맥이 아니라는데 증상은 계속됩니다.</div>
 </div>
 
-심장이 쿵쾅거리고 손발에 땀이 흥건하며 얼굴이 화끈거려 심장내과를 찾지만, 심전도나 초음파 검사에서는 "심장은 매우 건강합니다"라는 진단을 받습니다.
+심장에 특별한 기질적 이상이 없는데도 시도 때도 없이 가슴이 두근거리는 **심계항진(Palpitation)**과 손발이 흠뻑 젖는 **수족다한증(Hyperhidrosis)**은 환자를 극도로 지치게 만듭니다.
 
-심장 자체의 기질적 이상이 아니라, 심장의 박동수와 혈관의 수축을 조절하는 **"자율신경계의 가속 페달(교감신경)"이 브레이크 없이 24시간 밟혀있는 상태**입니다.
+이것은 심장이나 땀샘의 병이 아니라, **체온 조절과 심박수를 담당하는 "흉부 교감신경절"이 만성 스트레스로 인해 항상 흥분 모드(Fight or Flight)로 고정되어 있는 자율신경계 불균형 상태**입니다.
 
 <div class="toc">
   <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
   <ol>
-    <li>교감신경 과항진의 생리: 왜 심장은 가만히 있어도 질주할까요?</li>
+    <li>심장은 왜 혼자 빨리 뛸까요? 교감신경 과항진과 심장 신경망</li>
     <li>진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호</li>
     <li>국내외 임상 연구와 한의학적 치료 보고</li>
     <li>한의학에서 바라보는 환자별 3대 맞춤 체질 유형</li>
@@ -31,28 +31,28 @@ tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경
 
 <div class="section-label">핵심 병리 기전 01</div>
 
-## 교감신경 과항진의 생리: 왜 심장은 가만히 있어도 질주할까요?
+## 심장은 왜 혼자 빨리 뛸까요? 교감신경 과항진과 심장 신경망
 
 <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
-  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 교감신경 과열과 상열하한 체열 불균형 발생 과정</div>
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 자율신경 과흥분과 심계항진·다한증의 악순환</div>
   <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">만성 긴장/스트레스 누적</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">만성 스트레스/과로 누적</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">교감신경 상시 과열</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">흉부 교감신경절 과열</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">심박수 상승 & 혈관 수축</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">아드레날린 분비 & 빈맥</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">상체 열감 & 손발 차가움</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">말초 혈관 수축 & 식은땀</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">다한증·두근거림 만성화</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">불안감 증폭 & 상열하한</span>
   </div>
 </div>
 
-자율신경계는 액셀러레이터 역할을 하는 **교감신경**과 브레이크 역할을 하는 **부교감신경**이 시소처럼 완벽한 균형을 이루어야 합니다.
+우리 몸의 교감신경은 척추 옆 교감신경간(Sympathetic Trunk)을 통해 심장과 한선(땀샘)을 직접 지배합니다.
 
-그러나 스트레스와 과로, 불규칙한 생활로 교감신경이 과항진되면 몸의 열기와 혈류가 심장과 뇌, 얼굴 등 상체로만 쏠리는 **'상열(上熱)'** 상태가 발생하고, 반대로 손끝과 발끝, 하초는 혈류가 차단되어 차가워지는 **'하한(下寒)'** 상태가 고착화됩니다.
+자율신경의 시소 밸런스가 무너지면 위험 상황이 아닌데도 교감신경이 지속적으로 신호를 보내어 **심박수가 분당 90~110회 이상으로 치솟고, 상체와 손발로 비정상적인 땀이 분출**됩니다.
 
-이로 인해 **이유 없는 심장 두근거림, 긴장성 다한증, 안면홍조, 어지럼증**이 한꺼번에 쏟아져 나옵니다. 따라서 치료는 심장 박동만 인위적으로 억제하는 것이 아니라 **상체의 열을 아래로 내리고 하체의 찬 기운을 덥히는 '수승화강(水昇火降)'** 치료가 이루어져야 합니다.
+이때 땀이 증발하면서 체온을 빼앗겨 **손발은 얼음장처럼 차가워지고(수족냉증), 머리와 가슴으로는 허열이 치솟는 상열하한(上熱下寒)**의 전형적인 자율신경실조증 양상이 고착화됩니다.
 
 ---
 
@@ -67,13 +67,13 @@ tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경
 <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
   <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
     <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
-    <span>진료실에서 체크하는 자율신경 체열 체크리스트</span>
+    <span>진료실에서 체크하는 자율신경 과흥분 신호</span>
   </div>
   <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>조금만 긴장하거나 집중해도 손바닥이나 겨드랑이, 얼굴에 땀이 쏟아지나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>잠자리에 들 때 심장 소리가 귀나 베개에서 쿵쿵 크게 들리나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>찬물을 마시면 속이 쓰리거나 배탈이 나는데도 몸 안에서는 열감을 느끼나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>목과 어깨가 항상 뜨겁고 뭉쳐있으며 편두통이 자주 발생하나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>밤에 자려고 누우면 귓가나 베개에서 심장 박동 소리가 쿵쾅거리며 들리나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>손발에 땀이 많이 나면서도 손끝과 발끝이 시리고 차가운가요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>긴장하거나 시험을 볼 때 펜을 잡기 힘들 정도로 땀이 쏟아지나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>가슴 정중앙(전중혈)이나 양 젖가슴 사이를 누르면 찌릿한 압통이 있나요?</span></li>
   </ul>
 </div>
 
@@ -93,11 +93,11 @@ tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경
     <span>학술 연구 및 임상 보고</span>
   </div>
   <div class="space-y-2">
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>교감신경 과항진 환자에 대한 시호청간탕 및 황련아교탕 투여 후 심박수 안정 및 다한증 82% 호전</span></div>
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>적외선 체열 검사(DITI)상 상체-하체 체온 편차 유의미 감소 및 말초 혈류량 증가 확인</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>자율신경성 심계항진 및 다한증 환자에 대한 시호가용골모려탕 및 황련아교탕의 유효성 연구</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>적외선 체열 검사(DITI)상 상체 열감 완화 및 손발 말초 체온 2.1℃ 상승 확인</span></div>
   </div>
   <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
-    💡 베타차단제(인데놀 등)는 심장 박동수만 낮출 뿐 상열하한의 체열 불균형과 신경계 과열을 해결하지 못합니다.
+    💡 땀을 막는 보톡스나 교감신경 절제술은 보상성 다한증(다른 부위로 땀이 쏟아짐)의 위험이 있으므로, 자율신경의 흥분 역치를 내리는 전신 한방 치료가 안전합니다.
   </div>
 </div>
 
@@ -117,28 +117,28 @@ tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">🔥</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심화항성(心火亢盛)형 – 가슴이 뛰고 입이 마르며 잠을 못 이루는 유형</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심화항성(心火亢盛)형 – 가슴이 답답하고 열이 오르며 심장이 터질 듯 뛰는 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        심장에 화기가 가득 차서 가슴이 답답하고 혀끝이 붉으며 밤마다 열감으로 뒤척이는 유형입니다. 심장의 화를 식히고 정신을 안정시키는 청심연자음, 황련해독탕을 처방합니다.
+        심장의 화기가 치솟아 얼굴이 붉어지고 가슴이 두근거리며 땀이 비 오듯 쏟아지는 유형입니다. 심장 열을 내리는 황련해독탕, 청심연자음을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🌪️</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심담허겁(心膽虛怯)형 – 조그만 소리에도 깜짝 놀라고 손발이 떨리며 땀나는 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        신경계가 극도로 쇠약해져 작은 자극에도 교감신경이 과민 반응하는 유형입니다. 심담을 보강하고 신경을 안정시키는 온담탕, 안신정지환을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">❄️</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">음허화왕(陰虛火旺)형 – 오후나 밤만 되면 얼굴로 열이 오르고 식은땀이 나는 유형</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">음허도한(陰虛盜汗)형 – 밤에 잘 때 식은땀을 흘리고 손발이 화끈거리는 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        몸의 진액이 고갈되어 허열이 위로 치솟으며 손발 다한증과 상열감이 지속되는 유형입니다. 신장 음액을 보충하고 허열을 가라앉히는 지백지황환, 천왕보심단을 처방합니다.
-      </p>
-    </div>
-    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
-      <div class="flex items-center gap-2.5">
-        <span class="text-xl">⚡</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">간양상항(肝陽上亢)형 – 감정 조절이 어렵고 욱하면 머리가 깨질 듯 아픈 유형</h3>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        스트레스로 간의 양기가 머리로 치솟아 혈압이 오르고 눈이 충혈되며 심장이 뛰는 유형입니다. 간열을 내리고 혈관을 이완하는 천마구등음, 영각구등탕을 처방합니다.
+        체내 음혈이 부족하여 밤 동안 허열이 떠서 식은땀을 흘리고 가슴이 두근거리는 유형입니다. 음혈을 보충하고 땀을 수렴하는 당귀육황탕, 지백지황탕을 처방합니다.
       </p>
     </div>
 </div>
@@ -156,20 +156,20 @@ tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">체열 정상화</span>
-        <span class="text-xs font-extrabold">수승화강 약침 치료 & 족부 온열 요법</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">교감신경 안정</span>
+        <span class="text-xs font-extrabold">성상신경절(SGB) 및 전중혈 약침</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        상체의 화기를 내리는 청열 약침과 하체의 신장 경혈(용천혈, 태계혈) 자극 치료를 병행하여 체내 기혈 순환의 상하 대류를 복원합니다.
+        목의 성상신경절 및 가슴 중앙 경혈에 순수 한약 추출 약침을 놓아 과열된 교감신경 흥분을 즉각적으로 진정시키고 심박수를 낮춥니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">신경 안정</span>
-        <span class="text-xs font-extrabold">두개천골 CST 추나요법</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">체열 밸런스</span>
+        <span class="text-xs font-extrabold">수승화강(水昇火降) 맞춤 한약 탕전</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        두개골과 척추를 정렬하여 자율신경계의 최고 사령탑인 시상하부(Hypothalamus)의 체온 및 혈관 조절 중추 기능을 정상화합니다.
+        상체로 쏠린 열을 하체로 내리고 손발 말초 혈류를 개통하여 땀 분비를 정상화하고 수족냉증을 함께 해소합니다.
       </div>
     </div>
 </div>
@@ -186,28 +186,28 @@ tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>갱년기 증상과 자율신경실조증으로 인한 상열감은 어떻게 다른가요?</span>
+        <span>손발 땀 때문에 교감신경 절제술(ETS 수술)을 고민 중인데 괜찮을까요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        갱년기 상열감은 에스트로겐 여성호르몬 감소로 불규칙하게 얼굴 위주로 붉어지는 반면, 자율신경실조증은 나이와 성별에 관계없이 스트레스나 긴장 상황과 밀접하게 연동되어 심장 두근거림, 다한증, 어지럼증, 소화장애가 전신적으로 복합 동반됩니다.
+        교감신경 절제술은 손의 땀을 즉시 멈추게 하지만, 환자의 50~70% 이상에서 등, 엉덩이, 허벅지 등으로 땀이 더 심하게 쏟아지는 **보상성 다한증** 부작용을 겪을 수 있습니다. 수술을 결정하시기 전에 신경계의 열을 내리는 비수술 한방 치료를 먼저 받아보시길 권합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>다한증 수술(교감신경 절제술)을 고민 중인데 한방 치료로 조절이 가능한가요?</span>
+        <span>부정맥 약(베타차단제)을 먹어도 두근거림이 완전히 사라지지 않아요.</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        교감신경 절제술은 손이나 겨드랑이 땀은 막을 수 있지만, 다른 부위(등, 엉덩이, 허벅지)로 땀이 쏟아지는 보상성 다한증 부작용이 흔합니다. 한방 치료는 신경을 인위적으로 자르는 것이 아니라 신경계의 과열을 근본적으로 식혀주므로 보상성 부작용 없이 전신 땀 분비가 정상화됩니다.
+        양약은 심장의 베타 수용체만 차단할 뿐 자율신경계가 과열된 원인(스트레스, 간열, 심음부족)을 치료하지 못합니다. 한방 치료를 병행하여 신경계 스스로 안정을 찾으면 양약 없이도 편안한 심장 박동을 유지할 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>치료 기간 동안 식습관에서 특별히 주의할 점이 있나요?</span>
+        <span>음식이나 생활 습관에서 주의할 점은 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        매운 음식, 캡사이신, 카페인, 알코올은 교감신경을 즉각적으로 자극하여 상열감을 폭발시킵니다. 치료 중에는 자극적인 음식을 피하고 미온수를 자주 섭취하며 취침 전 족욕으로 하체를 따뜻하게 유지해 주시는 것이 좋습니다.
+        카페인(커피, 녹차), 알코올, 맵고 자극적인 음식은 교감신경을 즉각 자극하므로 치료 중에는 철저히 피하셔야 합니다. 잠들기 전 미온수로 15분간 족욕을 하시면 상체의 열을 아래로 내려 두근거림을 완화하는 데 큰 도움이 됩니다.
       </p>
     </div>
 </div>
@@ -215,7 +215,7 @@ tags: ["심장두근거림","다한증","상열감","안면홍조","교감신경
 <div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
   <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
-    "시도 때도 없이 뛰는 심장과 열감은 당신의 몸이 쉼 없이 과열되어 있다는 구조 신호입니다. 시원하게 열을 내리고 신경을 안정시키는 한방 치료로 평온한 일상을 되찾으세요."
+    "요동치는 심장과 땀은 지친 자율신경계의 과열 경고등입니다. 과열된 엔진을 식혀주는 한방 치료로 가슴 편안하고 뽀송뽀송한 일상을 되찾으세요."
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">
     해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)

@@ -1,10 +1,10 @@
 ---
-title: "가슴 한가운데 큰 돌을 얹은 듯… 목에 걸린 매화 씨앗(매핵기)과 울화병의 한의학 치료"
-summary: "이비인후과 내시경에서 이상 없는 목 이물감(매핵기), 가슴 답답함과 한숨, 억울함과 분노로 울체된 기운을 소통시키는 분심기음 및 반하후박탕 한방 솔루션"
+title: "[인천 부평 화병클리닉] 가슴이 답답하고 목에 무언가 걸린 듯 뱉어지지 않아요, 화병과 매핵기(梅核氣)의 한의학적 해법"
+summary: "인천 부평, 부천, 구월동 지역에서 이비인후과 내시경상 이상 없으나 목 이물감, 가슴 답답함, 치밀어 오르는 열감으로 고통받는 화병·매핵기 환자를 위한 소간해울 한방 치료"
 date: "2026-08-18"
 type: column
 category: "우울증 · 화병 & 번아웃"
-tags: ["화병치료","울화병","매핵기","목이물감","가슴답답함","분심기음","반하후박탕","부평화병한의원"]
+tags: ["부평화병한의원","인천매핵기","부천목이물감","가슴답답함","반하후박탕","시호소간산","울화병치료","인천신경정신과"]
 ---
 
 <div class="voice-box">
@@ -215,7 +215,7 @@ tags: ["화병치료","울화병","매핵기","목이물감","가슴답답함","
 <div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
   <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
-    "가슴에 품은 울화는 참는다고 사라지지 않고 몸의 통증으로 메아리칩니다. 뭉친 기운을 맑게 소통시키는 한방 치료로 답답했던 가슴을 시원하게 비워내세요."
+    "가슴에 맺힌 한과 응어리를 푸는 것은 생존의 문제입니다. 가슴을 짓누르던 무거운 바위를 내려놓고 시원하고 평온한 숨을 다시 쉬어보세요."
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">
     해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)

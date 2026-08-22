@@ -1,10 +1,10 @@
 ---
-title: "왜 틱은 눈에서 시작해 코, 입, 목으로 내려갈까요? 소아 틱장애 진행 원리와 대처법"
-summary: "처음엔 단순 눈 깜빡임으로 시작했던 틱이 코 찡긋, 입 씰룩, 목 꺾기로 내려가는 신경학적 이유와 기저핵 발달, FCST 턱관절·경추 균형 치료 및 부모 양육법"
+title: "[인천 부평 소아틱] 왜 틱은 눈에서 시작해 코, 입, 목으로 내려갈까요? 소아 틱장애 진행 원리와 대처법"
+summary: "인천 부평, 부천, 구월동, 청라 등 인근 지역에서 소아 틱장애로 고심하는 부모님을 위한 권형근 원장의 기저핵 발달, FCST 턱관절·경추 균형 치료 및 양육 가이드"
 date: "2026-08-20"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-tags: ["소아틱장애","눈깜빡임틱","기저핵","소아신경정신과","FCST","억간산","부모양육가이드"]
+tags: ["부평틱장애","인천소아틱장애","부천틱장애","기저핵","소아신경정신과","FCST","억간산","부모양육가이드"]
 ---
 
 <div class="voice-box">
@@ -157,10 +157,10 @@ tags: ["소아틱장애","눈깜빡임틱","기저핵","소아신경정신과","
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
-        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & 감각 통합 훈련</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & IM 감각통합 훈련</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        실시간 뇌파 피드백을 통해 뇌 기저핵과 전두엽의 자율 억제 회로를 강화하여, 틱의 전조 충동을 스스로 조절할 수 있도록 돕는 첨단 비약물 두뇌 훈련입니다.
+        실시간 뇌파 피드백과 밀리초(ms) 단위 타이밍 감각통합 훈련을 통해 뇌 기저핵과 전두엽의 자율 억제 회로를 강화하여, 틱의 전조 충동을 스스로 조절할 수 있도록 돕습니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">

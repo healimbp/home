@@ -1,10 +1,10 @@
 ---
-title: "단순 비염인 줄 알았는데… 아이의 킁킁·음음 소리가 잠잘 때는 멈추는 이유 (음성 틱 & 뚜렛)"
-summary: "감기·비염 약을 먹어도 낫지 않는 헛기침, 킁킁거림, 음음 소리의 음성 틱 기전과 뚜렛증후군 진행 차단, 호흡기·발성근 신경 과민 해소 한방 솔루션"
+title: "[부천 상동 음성틱] 단순 비염인 줄 알았는데… 아이의 킁킁·음음 소리가 잠잘 때는 멈추는 이유 (음성 틱 & 뚜렛)"
+summary: "부천 상동, 중동, 부평, 시흥 지역에서 비염 약으로 낫지 않는 헛기침, 킁킁거림, 음음 소리 음성 틱 기전과 뚜렛증후군 진행 차단 한방 치료 솔루션"
 date: "2026-08-18"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음음소리","소아신경정신과","인천틱장애한의원"]
+tags: ["부천음성틱","부천틱장애한의원","인천뚜렛증후군","소아비염감별","킁킁소리틱","음음소리","부평소아신경과"]
 ---
 
 <div class="voice-box">
@@ -158,20 +158,20 @@ tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">구조 치료 01</span>
-        <span class="text-xs font-extrabold">경추 1-2번 정렬 및 설골근 이완</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & IM 감각통합</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        목 앞쪽의 발성 근육과 연결된 설골(Hyoid bone) 및 상부 경추의 틀어짐을 교정하여 성대 주변 신경의 과민성을 물리적으로 해소합니다.
+        뇌간과 후두 신경망의 과민성을 진정시키고, 대뇌 피질의 자율 조절력을 높여 음성 틱 전조 충동을 다스립니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">구조 치료 02</span>
-        <span class="text-xs font-extrabold">인후 경혈 무통 약침 & 뜸 치료</span>
+        <span class="text-xs font-extrabold">경추 1-2번 정렬 및 인후 경혈 약침</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        천돌혈, 염천혈, 대추혈 등 인후부 핵심 혈자리에 순수 한약 추출 약침을 놓아 기관지 평활근의 경련을 즉각적으로 진정시킵니다.
+        목 앞쪽 설골 및 상부 경추의 틀어짐을 교정하고 천돌혈·염천혈 무통 약침으로 성대 주변 근육의 긴장을 즉각 완화합니다.
       </div>
     </div>
 </div>

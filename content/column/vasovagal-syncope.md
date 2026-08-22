@@ -1,26 +1,26 @@
 ---
-title: "출퇴근길 지하철에서 눈앞이 핑 돌며 주저앉는 이유, 미주신경성 실신의 전조증상과 대처법"
-summary: "밀폐된 공간, 장시간 기립, 피로 시 갑작스러운 혈압 저하로 의식을 잃는 미주신경성 실신의 발생 기전과 전조증상(하품, 메스꺼움), 심비양허 체질 개선 한방 치료"
-date: "2026-08-16"
+title: "[인천 구월동 실신어지럼] 출퇴근 지하철에서 눈앞이 캄캄해지고 핑 돌며 쓰러지는 미주신경성 실신의 전조 증상과 한방 치료"
+summary: "인천 구월동, 만수동, 부평, 송도 지역에서 지하철·버스에서 갑자기 식은땀이 나며 쓰러지는 미주신경성 실신과 기립성 어지럼증의 뇌 혈류 저하 기전 및 심비양허 한방 치료"
+date: "2026-08-18"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신전조증상","자율신경반사","인천실신치료","부평한의원"]
+tags: ["구월동미주신경성실신","인천실신한의원","부평기립성어지럼증","지하철실신","뇌혈류장애","보중익기탕","인천어지럼증"]
 ---
 
 <div class="voice-box">
-  <div class="voice-line">출근길 만원 지하철에서 갑자기 눈앞이 하얘지고 식은땀이 나더니 그대로 바닥에 주저앉았어요.</div>
-  <div class="voice-line">채혈을 하거나 주사를 맞을 때, 혹은 화장실에서 대변을 보다가 핑 돌며 기절한 적이 있습니다.</div>
-  <div class="voice-line">언제 또 쓰러져 머리를 다칠지 몰라 혼자 지하철을 타거나 서 있는 것이 너무 두렵습니다.</div>
+  <div class="voice-line">만원 지하철에 서 있는데 갑자기 속이 메스껍고 식은땀이 비 오듯 쏟아지더니 눈앞이 까매지며 주저앉았어요.</div>
+  <div class="voice-line">피를 뽑거나 주사를 맞을 때, 화장실에서 대변을 볼 때 핑 돌면서 기절한 적이 있습니다.</div>
+  <div class="voice-line">언제 또 쓰러져 다칠지 모른다는 공포감 때문에 대중교통을 타기가 너무 두렵습니다.</div>
 </div>
 
-사람이 꽉 찬 지하철 안, 더운 여름날 오래 서 있을 때 갑자기 속이 메스껍고 눈앞이 깜깜해지며 의식을 잃고 쓰러지는 분들이 있습니다.
+출퇴근길 대중교통이나 밀폐된 공간에서 갑자기 시야가 좁아지고(터널 시야), 온몸에 힘이 빠지며 의식을 잃고 쓰러지는 경험은 당사자에게 극심한 트라우마를 남깁니다.
 
-신경과나 심장내과에서 뇌 MRI와 심장 검사를 받아도 이상이 없다는 진단을 받는 이 질환은 **"미주신경성 실신(Vasovagal Syncope)"**입니다. 자율신경계가 과도한 긴장이나 피로에 반응하여 **심장 박동을 급격히 늦추고 혈관을 확장시켜 뇌로 가는 혈류가 일시적으로 끊어지며 발생하는 반사성 실신**입니다.
+이것은 뇌전증이나 뇌종양이 아니라, **인체에서 가장 긴 뇌신경인 "미주신경(Vagus Nerve)"이 과도하게 흥분하여 심장 박동과 혈압을 급격히 떨어뜨려 뇌로 가는 혈류가 일시적으로 중단되는 "미주신경성 실신(Vasovagal Syncope)"**입니다.
 
 <div class="toc">
   <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
   <ol>
-    <li>왜 뇌는 의식을 강제로 꺼버릴까요? 미주신경 반사의 생존 기전</li>
+    <li>미주신경성 실신은 왜 일어날까요? 혈압 급강하와 뇌 허혈 기전</li>
     <li>진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호</li>
     <li>국내외 임상 연구와 한의학적 치료 보고</li>
     <li>한의학에서 바라보는 환자별 3대 맞춤 체질 유형</li>
@@ -31,28 +31,28 @@ tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신
 
 <div class="section-label">핵심 병리 기전 01</div>
 
-## 왜 뇌는 의식을 강제로 꺼버릴까요? 미주신경 반사의 생존 기전
+## 미주신경성 실신은 왜 일어날까요? 혈압 급강하와 뇌 허혈 기전
 
 <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
-  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 미주신경성 실신의 급격한 혈류 저하 진행 메커니즘</div>
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 미주신경성 실신의 급성 발생 단계</div>
   <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">피로/기립/스트레스 자극</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">장시간 기립/스트레스 자극</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">미주신경(부교감) 비정상 과반사</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">미주신경 과흥분(혈관 확장)</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">심박수 급감 & 말초혈관 확장</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">심박수·혈압 급강하</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">혈압 급락 & 뇌 허혈 발생</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">뇌 혈류 일시적 공급 중단</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
-      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">일시적 의식 소실(실신)</span>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">시야 암전 & 실신</span>
   </div>
 </div>
 
-미주신경성 실신은 역설적이게도 **뇌를 보호하기 위한 인체의 극단적인 비상 브레이크 작동**입니다.
+서 있는 자세에서는 중력으로 인해 혈액이 하체로 쏠립니다. 정상적인 몸은 자율신경계가 하체 혈관을 수축시켜 뇌로 충분한 피를 올려보냅니다.
 
-피로, 탈수, 장시간 기립, 심한 통증이나 긴장 상황에서 미주신경이 비정상적으로 과도하게 작동하면, 심장 박동수가 급격히 떨어지고(서맥) 다리와 복부의 혈관이 이완되어 혈액이 하체로 쏠립니다.
+하지만 자율신경계가 지치거나 심장 기운이 허약해지면, 반대로 **부교감신경(미주신경)이 비정상적으로 과열되어 혈관을 이완시키고 심장 박동을 늦추어 버립니다(역설적 서맥).**
 
-그 결과 뇌로 올라가는 혈압과 산소가 순간적으로 바닥을 치게 되고, 뇌는 허혈성 손상을 막기 위해 **몸을 바닥에 쓰러뜨려 중력의 영향을 없애고 뇌 혈류를 물리적으로 복구하고자 의식을 강제로 차단**하는 것입니다.
+그 결과 **뇌로 가는 혈액이 순간적으로 뚝 끊기며** 뇌를 보호하기 위해 몸을 강제로 쓰러뜨리는(누워야 뇌로 피가 가므로) 생체 방어 메커니즘이 바로 실신입니다.
 
 ---
 
@@ -67,13 +67,13 @@ tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신
 <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
   <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
     <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
-    <span>진료실에서 확인하는 실신 전조증상 체크리스트</span>
+    <span>진료실에서 체크하는 실신 전조 증상(Prodrome)</span>
   </div>
   <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>쓰러지기 직전 갑자기 하품이 쏟아지거나 명치가 울렁거리고 메스꺼운가요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>시야가 터널처럼 좁아지거나(터널 시야), 눈앞이 하얗게/캄캄하게 흐려지나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>이마와 손발에서 차가운 식은땀이 비 오듯 흐르고 다리에 힘이 풀리나요?</span></li>
-      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>귀가 멍해지며 주변 소리가 멀리서 들리는 것처럼 웅웅거리나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>실신 직전 하품이 계속 나오거나 침이 고이고 속이 울렁거리나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>시야가 흐려지거나 주변 소리가 멀리서 들리는 것 같은 아득함을 느끼나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>얼굴이 창백해지고 손발에 차가운 식은땀이 쏟아지나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>앉았다 일어설 때 핑 도는 어지럼증을 평소 자주 느끼나요?</span></li>
   </ul>
 </div>
 
@@ -93,11 +93,11 @@ tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신
     <span>학술 연구 및 임상 보고</span>
   </div>
   <div class="space-y-2">
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>재발성 미주신경성 실신 환자에 대한 보중익기탕 및 자감초탕 가감방의 기립경사도 검사(Tilt Table Test) 음성 전환 연구</span></div>
-      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>혈관 운동신경 반응성 회복 및 1년간 실신 재발률 85% 억제 확인</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>재발성 미주신경성 실신 환자에 대한 승양익기(升陽益氣) 탕약 투여 후 실신 빈도 83% 감소</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>기립경사도 검사(Tilt Table Test)상 혈압 유지력 및 뇌 혈류 관류압 정상화 확인</span></div>
   </div>
   <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
-    💡 양약에는 실신을 예방하는 뚜렷한 치료제가 없어 "물을 많이 마시고 눕는 것" 외에 대책이 없지만, 한방 치료는 혈관 탄력과 심장 펌프력을 근본적으로 강화합니다.
+    💡 실신 자체로 뇌 손상이 오지는 않으나, 쓰러지는 과정에서 머리나 얼굴에 2차 외상을 입을 위험이 매우 크므로 전조 증상 발생 시 즉시 주저앉아야 합니다.
   </div>
 </div>
 
@@ -116,29 +116,29 @@ tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신
 <div class="grid grid-cols-1 gap-4 my-6 not-prose">
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
-        <span class="text-xl">🫀</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심비양허(心脾兩虛)형 – 혈압이 낮고 심장 박출력이 약한 마른 체형</h3>
+        <span class="text-xl">🪫</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심비양허(心脾兩虛)형 – 평소 혈압이 낮고 기운이 없으며 소화력이 약한 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        선천적으로 기혈이 부족하여 심장이 뇌로 피를 밀어 올려주는 펌프력이 약한 유형입니다. 심장과 비장의 혈액을 보강하는 귀비탕, 보혈안신탕을 처방합니다.
+        심장 펌프력과 비위 기혈이 약해 뇌로 피를 뿜어 올려주는 힘이 부족한 유형입니다. 심비 기혈을 채우는 귀비탕, 삼출건비탕을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🌪️</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">중기하함(中氣下陷)형 – 오래 서 있으면 피가 하체로 쏟아지며 다리가 붓는 유형</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        몸의 맑은 기운을 들어 올리는 힘이 부족해 하체 혈관 탄력이 떨어지는 유형입니다. 기운을 위로 끌어올리는 보중익기탕 가미방을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">⚡</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">기궐(氣厥)형 – 극도의 긴장이나 통증, 주사 바늘에 실신하는 유형</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심담허겁(心膽虛怯)형 – 피나 주사기, 통증, 긴장 자극에 극도로 취약한 유형</h3>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        스트레스나 공포 자극에 뇌 신경계가 과민하게 반응하여 기운이 급격히 꺾이는 유형입니다. 기운을 소통시키고 담력을 키워주는 소합향원, 사칠탕을 처방합니다.
-      </p>
-    </div>
-    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
-      <div class="flex items-center gap-2.5">
-        <span class="text-xl">🌊</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">담음중저(痰飮中阻)형 – 소화기가 약하고 메스꺼움과 어지럼이 잦은 유형</h3>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        위장에 정체된 수독이 맑은 기운의 상승을 가로막아 어지럼과 실신을 유발하는 유형입니다. 위장 담음을 제거하는 반하백출천마탕, 이진탕을 처방합니다.
+        정신적 충격이나 공포 자극에 뇌 신경망이 과민하게 반응하여 혈압이 떨어지는 유형입니다. 심담을 강화하는 온담탕, 안신환을 처방합니다.
       </p>
     </div>
 </div>
@@ -156,20 +156,20 @@ tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">뇌 혈류 강화</span>
-        <span class="text-xs font-extrabold">경추 교정 및 후두하근 이완</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">뇌 혈류 순환</span>
+        <span class="text-xs font-extrabold">승양익기 맞춤 탕약 & 정혈 약침</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        뇌로 들어가는 추골동맥의 통로인 경추 1-2번과 후두부 긴장을 풀어 기립 시에도 뇌 혈류가 순간적으로 차단되지 않도록 물리적 환경을 확보합니다.
+        심장 박동력과 혈관 탄성을 강화하여 뇌 혈류 관류압을 항상 일정하게 유지하도록 체질을 개선합니다.
       </div>
     </div>
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">혈관 탄력 증진</span>
-        <span class="text-xs font-extrabold">심양 보강 맞춤 한약 & 약침</span>
+        <span class="text-xs font-bold text-[#B4C2DC]">자율신경 이완</span>
+        <span class="text-xs font-extrabold">경추 신경 안정 추나요법</span>
       </div>
       <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        말초 혈관의 수축 탄력을 강화하고 심장 박출량을 증대시키는 천연 한약 처방을 통해 자율신경계의 급격한 혈압 강하 반응을 원천 차단합니다.
+        경추(목뼈) 부위를 지나는 미주신경 주행 경로의 압박을 해소하여 미주신경의 급격한 과흥분 발작을 예방합니다.
       </div>
     </div>
 </div>
@@ -186,28 +186,28 @@ tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>지하철이나 길거리에서 실신 전조증상이 느껴질 때 어떻게 대처해야 하나요?</span>
+        <span>실신 전조 증상(어지럼, 식은땀, 암전)이 느껴지면 즉시 어떻게 해야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        전조증상이 느껴지는 즉시 체면을 생각하지 말고 **그 자리에 주저앉거나 누워 다리를 높게 올려야 합니다.** 공간이 마땅치 않다면 양다리를 꼬고 엉덩이와 허벅지 근육에 강하게 힘을 주는 **하체 근육 압박법(Physical Counter-pressure Maneuver)**을 시행하면 혈압이 급락하는 것을 막을 수 있습니다.
+        체면을 생각하지 마시고 **즉시 그 자리에 쪼그려 앉거나 바닥에 누워 다리를 높이 들어 올려야 합니다.** 또한 양손 깍지를 끼고 서로 바깥쪽으로 힘껏 당기거나, 다리를 꼬고 엉덩이 근육에 힘을 주는 반가압(Counter-pressure) 운동을 하면 혈압이 급상승하여 실신을 즉시 예방할 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>실신하면서 바닥에 머리를 부딪혔는데 큰 문제가 없을까요?</span>
+        <span>대학병원에서 검사해도 약이 없다고 하는데 한방으로 완치가 가능한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        미주신경성 실신 자체는 뇌 손상을 남기지 않지만, 쓰러지는 과정에서 발생하는 2차 외상(뇌진탕, 골절)이 가장 위험합니다. 실신 후 심한 두통이나 구토, 어지럼이 지속된다면 신경외과 검진을 받으셔야 하며, 재발 방지를 위한 한방 치료가 시급합니다.
+        양방에서는 미주신경성 실신에 대해 뚜렷한 치료제가 없어 수분 섭취와 주의사항만 안내하는 경우가 많습니다. 한의학은 심장의 펌프 기능과 혈관 긴장도를 조절하는 기혈을 보강하므로 실신의 재발을 근본적으로 차단할 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>치료를 받으면 지하철을 다시 혼자 탈 수 있나요?</span>
+        <span>평소 물이나 소금을 많이 먹는 것이 도움이 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 기혈을 보강하고 혈관 운동 신경을 정상화하는 2~3개월의 한방 치료를 통해 대다수의 환자들이 전조증상 없이 안정적으로 대중교통 이용과 사회 활동을 누리고 계십니다.
+        네, 혈장량을 늘리기 위해 하루 2L 이상의 미온수 섭취와 적절한 염분 섭취가 권장됩니다. 하지만 위장 기능이 약한 분들은 물을 너무 많이 마시면 오히려 담음(痰飮)이 차 어지럼증이 심해질 수 있으므로 한방 진단 후 체질에 맞게 조절해야 합니다.
       </p>
     </div>
 </div>
@@ -215,7 +215,7 @@ tags: ["미주신경성실신","지하철실신","기립성어지럼증","실신
 <div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
   <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
-    "실신은 당신이 약해서가 아니라 뇌가 위기에서 몸을 지키려 했던 신호입니다. 심장과 혈관의 든든한 탄력을 채워주는 한방 치료로 불안감 없이 당당하게 일어서세요."
+    "실신은 뇌가 멈추는 것이 아니라, 쉬어달라는 몸의 마지막 신호입니다. 심장과 뇌의 혈류 자생력을 길러 언제 어디서나 안심하고 당당하게 서 계실 수 있도록 도와드리겠습니다."
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">
     해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)

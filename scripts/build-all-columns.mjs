@@ -11,8 +11,8 @@ import { DEPRESSION_SOMATIC_COLUMNS } from './columns-data-5-depression-somatic.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const columnDir = path.resolve(__dirname, '..', 'content', 'column');
 
-// 전체 25개 칼럼 취합
-const ALL_COLUMNS = [
+// 25개 필러 칼럼 데이터
+export const PILLAR_COLUMNS = [
   ...TIC_ADHD_COLUMNS,
   ...PANIC_ANXIETY_COLUMNS,
   ...AUTONOMIC_COLUMNS,
@@ -20,10 +20,8 @@ const ALL_COLUMNS = [
   ...DEPRESSION_SOMATIC_COLUMNS
 ];
 
-console.log(`총 ${ALL_COLUMNS.length}개의 전문 심층 칼럼 데이터가 로드되었습니다.`);
-
-// 질환군별 맞춤 통합 치료 솔루션 (섹션 5 차별화 설정)
-function getSection5Config(category, slug) {
+// 질환군별 맞춤 통합 치료 솔루션 (섹션 5 설정)
+export function getSection5Config(category, slug) {
   if (category.includes('소아') || category.includes('ADHD') || category.includes('틱')) {
     return {
       title: '두뇌 발달과 감각 통합을 돕는 NeuronFlex & IM 두뇌 훈련 솔루션',
@@ -62,7 +60,6 @@ function getSection5Config(category, slug) {
       outro: '뇌 신경전달물질의 활성을 돕는 맞춤 한약과 신체 활력 회복 치료가 결합되어 무기력감의 늪에서 벗어날 수 있는 힘을 길러드립니다.'
     };
   } else {
-    // 신체화, 담적, 두통, 턱관절
     if (slug === 'tmj-bruxism-stress') {
       return {
         title: '턱관절 디스크와 경추 정렬을 바로잡는 FCST 뇌척주요법 & 침구 치료',
@@ -79,21 +76,18 @@ function getSection5Config(category, slug) {
 }
 
 // 개별 마크다운 파일 렌더링 함수
-function renderColumnFile(c) {
+export function renderColumnFile(c) {
   const cleanTitle = c.title.replace(/"/g, "'");
   const cleanSummary = c.summary.replace(/"/g, "'");
   const sec5 = getSection5Config(c.category, c.slug);
   
-  // 1. Voice Box Quotes
   const voiceLinesHtml = c.voiceQuotes.map(q => {
     const cleanQuote = q.replace(/^["'“\s]+|["'”\s]+$/g, '');
     return `  <div class="voice-line">${cleanQuote}</div>`;
   }).join('\n');
 
-  // 2. 인트로 본문
   const introParagraphs = c.introText.join('\n\n');
 
-  // 3. 목차(TOC) 6대 표준 통일 매핑
   const standardToc = [
     c.toc[0] || `${cleanTitle.split('?')[0].trim()}의 신경학적 핵심 원인과 진행 메커니즘`,
     `진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호`,
@@ -105,23 +99,19 @@ function renderColumnFile(c) {
 
   const tocListHtml = standardToc.map(item => `    <li>${item}</li>`).join('\n');
 
-  // 4. 흐름도 다이어그램 HTML
   const flowStepsHtml = c.flow.steps.map((step, idx) => 
     `      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">${step}</span>` +
     (idx < c.flow.steps.length - 1 ? `\n      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>` : '')
   ).join('\n');
 
-  // 5. 진료실 질문 체크리스트 HTML
   const clinicItemsHtml = c.clinicBox.items.map(it => 
     `      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>${it}</span></li>`
   ).join('\n');
 
-  // 6. 학술 연구 박스 HTML
   const researchItemsHtml = c.researchBox.items.map(it => 
     `      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>${it}</span></div>`
   ).join('\n');
 
-  // 7. 한의학 3대 체질 유형 카드 HTML
   const typeCardsHtml = c.typeCards.map(tc => 
     `    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
@@ -134,7 +124,6 @@ function renderColumnFile(c) {
     </div>`
   ).join('\n');
 
-  // 8. 구조/신경 치료 솔루션 카드 HTML
   const structCardsHtml = c.structCards.map(sc => 
     `    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
@@ -147,7 +136,6 @@ function renderColumnFile(c) {
     </div>`
   ).join('\n');
 
-  // 9. FAQ 항목 HTML
   const faqItemsHtml = c.faq.map((fq, idx) => 
     `    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
@@ -292,18 +280,9 @@ ${faqItemsHtml}
 `;
 }
 
-// 1. 25개 마크다운 파일 쓰기
-let writtenCount = 0;
-for (const col of ALL_COLUMNS) {
-  const filePath = path.join(columnDir, `${col.slug}.md`);
-  const content = renderColumnFile(col);
-  fs.writeFileSync(filePath, content, 'utf8');
-  writtenCount++;
-  console.log(`[작성 완료 ${writtenCount}/25] ${col.slug}.md`);
-}
-
-// 2. content/column/_index.md 업데이트
-function getCategoryClass(cat) {
+// 카테고리 CSS 클래스 판별 함수
+export function getCategoryClass(cat) {
+  if (!cat) return 'all';
   if (cat.includes('공황') || cat.includes('불안') || cat.includes('강박')) return 'panic';
   if (cat.includes('자율신경') || cat.includes('실신') || cat.includes('어지럼') || cat.includes('이명')) return 'autonomic';
   if (cat.includes('불면증') || cat.includes('수면')) return 'insomnia';
@@ -313,11 +292,83 @@ function getCategoryClass(cat) {
   return 'all';
 }
 
-const columnCardsHtml = ALL_COLUMNS.map(col => {
-  const catClass = getCategoryClass(col.category);
-  return `
-              <!-- [${col.category}] ${col.title} -->
-              <article class="column-item ${catClass} heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
+// 마크다운 파일에서 Frontmatter 파싱 함수
+export function parseFrontmatter(fileContent, filename) {
+  const match = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) return null;
+  const yamlBlock = match[1];
+
+  const getField = (regex) => {
+    const m = yamlBlock.match(regex);
+    return m ? m[1].trim() : '';
+  };
+
+  const title = getField(/^title:\s*["']?(.*?)["']?$/m) || filename.replace(/\.md$/, '');
+  const summary = getField(/^summary:\s*["']?(.*?)["']?$/m) || '';
+  const date = getField(/^date:\s*["']?(.*?)["']?$/m) || '2026-08-20';
+  const category = getField(/^category:\s*["']?(.*?)["']?$/m) || '건강 칼럼';
+  
+  let tags = [];
+  const tagsMatch = yamlBlock.match(/^tags:\s*(\[.*?\])/m);
+  if (tagsMatch) {
+    try {
+      tags = JSON.parse(tagsMatch[1].replace(/'/g, '"'));
+    } catch {
+      tags = tagsMatch[1].replace(/[\[\]'"]/g, '').split(',').map(s => s.trim()).filter(Boolean);
+    }
+  }
+
+  const slug = filename.replace(/\.md$/, '');
+  return { title, summary, date, category, tags, slug };
+}
+
+// 전체 발행된 칼럼을 스캔하여 content/column/_index.md 재구축 (동적 개수 & 페이지네이션)
+export function rebuildColumnIndex() {
+  const files = fs.readdirSync(columnDir).filter(f => f.endsWith('.md') && f !== '_index.md');
+  const allArticles = [];
+
+  for (const filename of files) {
+    const fullPath = path.join(columnDir, filename);
+    const content = fs.readFileSync(fullPath, 'utf8');
+    const parsed = parseFrontmatter(content, filename);
+    if (parsed) {
+      allArticles.push(parsed);
+    }
+  }
+
+  // 날짜 내림차순(최신순) 정렬
+  allArticles.sort((a, b) => {
+    const dateDiff = new Date(b.date) - new Date(a.date);
+    if (dateDiff !== 0) return dateDiff;
+    return a.slug.localeCompare(b.slug);
+  });
+
+  // 카테고리별 동적 개수 집계
+  const counts = {
+    all: allArticles.length,
+    panic: 0,
+    autonomic: 0,
+    insomnia: 0,
+    tic: 0,
+    stress: 0,
+    somatic: 0
+  };
+
+  allArticles.forEach(a => {
+    const catClass = getCategoryClass(a.category);
+    if (counts[catClass] !== undefined) {
+      counts[catClass]++;
+    }
+  });
+
+  console.log(`[Rebuild Column Index] 총 ${allArticles.length}개 칼럼 감지 (공황: ${counts.panic}, 자율신경: ${counts.autonomic}, 불면: ${counts.insomnia}, 틱/ADHD: ${counts.tic}, 화병/번아웃: ${counts.stress}, 신체화/담적: ${counts.somatic})`);
+
+  // 칼럼 카드 HTML 생성
+  const columnCardsHtml = allArticles.map((col, idx) => {
+    const catClass = getCategoryClass(col.category);
+    return `
+              <!-- [칼럼 #${idx + 1} | ${col.category}] ${col.title} -->
+              <article class="column-item ${catClass} heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="${catClass}">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
                     <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">${col.category}</span>
@@ -333,16 +384,16 @@ const columnCardsHtml = ALL_COLUMNS.map(col => {
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]"></span>
+                  <span class="text-[11px] text-[#68736E]">• ${(col.tags || []).slice(0, 2).join(' • ')}</span>
                   <a href="/column/${col.slug}/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>
                 </div>
               </article>`;
-}).join('\n');
+  }).join('\n');
 
-const indexContent = `---
+  const indexContent = `---
 title: "건강 칼럼"
 linkTitle: "건강 칼럼"
 summary: "인천 부평, 구월동, 송도, 부천, 시흥, 청라 질환별 권형근 대표원장의 심층 건강 의학 칼럼"
@@ -364,8 +415,8 @@ sections:
             </p>
           </div>
 
-          <!-- 2. 질환별 카테고리 필터 탭 (6대 진료영역 통합) -->
-          <div class="space-y-8">
+          <!-- 2. 질환별 카테고리 필터 탭 (동적 개수 & 페이지 분할 지원) -->
+          <div class="space-y-8" id="column-list-section">
             <div class="flex items-center justify-between flex-wrap gap-3 border-b border-[#DDE6E1] pb-4">
               <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E] flex items-center gap-2">
                 <i class="fa-solid fa-newspaper text-[#2F5D50]"></i>
@@ -374,75 +425,235 @@ sections:
               <div class="text-xs text-[#68736E]">카드를 클릭하시면 해당 칼럼의 상세 전문 페이지로 이동합니다.</div>
             </div>
 
-            <!-- 탭 버튼 목록 (6대 분야) -->
+            <!-- 탭 버튼 목록 (동적 개수 반영) -->
             <div class="flex flex-wrap gap-2 pb-2" id="column-category-tabs">
               <button onclick="filterColumn('all', this)" class="column-tab-btn active-tab px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                전체보기 <span class="text-[11px] opacity-80">(25)</span>
+                전체보기 <span class="text-[11px] opacity-80" id="tab-count-all">(${counts.all})</span>
               </button>
               <button onclick="filterColumn('panic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                공황 · 불안 & 강박증 <span class="text-[11px] opacity-80">(5)</span>
+                공황 · 불안 & 강박증 <span class="text-[11px] opacity-80" id="tab-count-panic">(${counts.panic})</span>
               </button>
               <button onclick="filterColumn('autonomic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80">(5)</span>
+                자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80" id="tab-count-autonomic">(${counts.autonomic})</span>
               </button>
               <button onclick="filterColumn('insomnia', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                불면증 & 수면장애 <span class="text-[11px] opacity-80">(4)</span>
+                불면증 & 수면장애 <span class="text-[11px] opacity-80" id="tab-count-insomnia">(${counts.insomnia})</span>
               </button>
               <button onclick="filterColumn('tic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                소아청소년 & 성인 ADHD·틱 <span class="text-[11px] opacity-80">(5)</span>
+                소아청소년 & 성인 ADHD·틱 <span class="text-[11px] opacity-80" id="tab-count-tic">(${counts.tic})</span>
               </button>
               <button onclick="filterColumn('stress', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                우울증 · 화병 & 번아웃 <span class="text-[11px] opacity-80">(3)</span>
+                우울증 · 화병 & 번아웃 <span class="text-[11px] opacity-80" id="tab-count-stress">(${counts.stress})</span>
               </button>
               <button onclick="filterColumn('somatic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                신체화 & 담적·두통·턱관절 <span class="text-[11px] opacity-80">(3)</span>
+                신체화 & 담적·두통·턱관절 <span class="text-[11px] opacity-80" id="tab-count-somatic">(${counts.somatic})</span>
               </button>
             </div>
 
-            <!-- 칼럼 카드 그리드 (개별 상세 페이지 직결 링크) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="column-grid">
+            <!-- 칼럼 카드 그리드 (페이지별 8개씩 분할 노출) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[400px]" id="column-grid">
 ${columnCardsHtml}
             </div>
+
+            <!-- 3. 페이지네이션 컨트롤 바 -->
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#DDE6E1] pt-6 not-prose" id="pagination-wrapper">
+              <div class="text-xs sm:text-sm text-[#68736E] font-medium" id="pagination-info">
+                총 <strong class="text-[#2F5D50] font-bold" id="page-total-count">${counts.all}</strong>개 칼럼 중 <span id="page-range" class="font-semibold text-[#26332E]">1 - 8</span>개 표시
+              </div>
+              <div class="flex items-center gap-1.5 flex-wrap justify-center" id="pagination-controls">
+                <!-- 자바스크립트에 의해 동적으로 렌더링되는 페이지 버튼들 -->
+              </div>
+            </div>
+
           </div>
 
-          <!-- JavaScript 카테고리 필터링 스크립트 -->
+          <!-- JavaScript 카테고리 필터링 & 반응형 페이지네이션 스크립트 -->
           <script>
-            function filterColumn(category, btn) {
-              const items = document.querySelectorAll('.column-item');
-              const buttons = document.querySelectorAll('.column-tab-btn');
+            (function() {
+              const ITEMS_PER_PAGE = 8; // 페이지당 노출 칼럼 수 (2열 그리드 기준 4줄)
+              let currentCategory = 'all';
+              let currentPage = 1;
+              let filteredItems = [];
 
-              buttons.forEach(b => {
-                b.classList.remove('active-tab', 'bg-[#2F5D50]', 'text-white');
-                b.classList.add('bg-[#EAF3EF]', 'text-[#2F5D50]');
-              });
-              btn.classList.add('active-tab', 'bg-[#2F5D50]', 'text-white');
-              btn.classList.remove('bg-[#EAF3EF]', 'text-[#2F5D50]');
-
-              items.forEach(item => {
-                if (category === 'all' || item.classList.contains(category)) {
-                  item.style.display = 'flex';
-                } else {
-                  item.style.display = 'none';
+              function getFilteredItems() {
+                const allItems = Array.from(document.querySelectorAll('.column-item'));
+                if (currentCategory === 'all') {
+                  return allItems;
                 }
-              });
-            }
-
-            document.addEventListener('DOMContentLoaded', () => {
-              const activeBtn = document.querySelector('.column-tab-btn.active-tab');
-              if (activeBtn) {
-                activeBtn.classList.add('bg-[#2F5D50]', 'text-white');
+                return allItems.filter(item => item.getAttribute('data-category') === currentCategory);
               }
-              const otherBtns = document.querySelectorAll('.column-tab-btn:not(.active-tab)');
-              otherBtns.forEach(b => {
-                b.classList.add('bg-[#EAF3EF]', 'text-[#2F5D50]');
+
+              function updateDisplay(scrollToTop = false) {
+                filteredItems = getFilteredItems();
+                const totalCount = filteredItems.length;
+                const totalPages = Math.max(1, Math.ceil(totalCount / ITEMS_PER_PAGE));
+
+                if (currentPage > totalPages) {
+                  currentPage = totalPages;
+                }
+
+                // 1. 전체 카드 숨김 및 현재 페이지 카드만 flex 노출
+                const allItems = document.querySelectorAll('.column-item');
+                allItems.forEach(item => {
+                  item.style.display = 'none';
+                });
+
+                const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+                const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalCount);
+
+                for (let i = startIndex; i < endIndex; i++) {
+                  if (filteredItems[i]) {
+                    filteredItems[i].style.display = 'flex';
+                  }
+                }
+
+                // 2. 페이지네이션 정보 텍스트 갱신
+                const totalCountEl = document.getElementById('page-total-count');
+                const rangeEl = document.getElementById('page-range');
+                const infoWrapper = document.getElementById('pagination-wrapper');
+
+                if (totalCountEl) totalCountEl.textContent = totalCount;
+                if (rangeEl) {
+                  if (totalCount === 0) {
+                    rangeEl.textContent = '0';
+                  } else {
+                    rangeEl.textContent = \`\${startIndex + 1} - \${endIndex}\`;
+                  }
+                }
+
+                // 3. 페이지네이션 버튼 렌더링
+                renderPaginationControls(totalPages);
+
+                // 4. 페이지 이동 시 탭 영역 상단으로 부드럽게 스크롤
+                if (scrollToTop) {
+                  const sectionEl = document.getElementById('column-list-section');
+                  if (sectionEl) {
+                    sectionEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }
+              }
+
+              function renderPaginationControls(totalPages) {
+                const container = document.getElementById('pagination-controls');
+                if (!container) return;
+
+                if (totalPages <= 1) {
+                  container.innerHTML = '';
+                  return;
+                }
+
+                let html = '';
+
+                // 이전 페이지 버튼
+                const prevDisabled = currentPage === 1;
+                html += \`<button onclick="window.changeColumnPage(\${currentPage - 1})" \${prevDisabled ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1 \${prevDisabled ? 'opacity-40 cursor-not-allowed bg-gray-100 text-gray-400' : 'bg-[#EAF3EF] text-[#2F5D50] hover:bg-[#2F5D50] hover:text-white'}">
+                  <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                  <span>이전</span>
+                </button>\`;
+
+                // 페이지 번호 버튼들
+                let startPage = Math.max(1, currentPage - 2);
+                let endPage = Math.min(totalPages, startPage + 4);
+                if (endPage - startPage < 4) {
+                  startPage = Math.max(1, endPage - 4);
+                }
+
+                if (startPage > 1) {
+                  html += \`<button onclick="window.changeColumnPage(1)" class="w-8 h-8 rounded-lg text-xs font-bold transition bg-[#EAF3EF] text-[#2F5D50] hover:bg-[#2F5D50] hover:text-white">1</button>\`;
+                  if (startPage > 2) {
+                    html += \`<span class="text-xs text-gray-400 px-1">...</span>\`;
+                  }
+                }
+
+                for (let p = startPage; p <= endPage; p++) {
+                  const isActive = p === currentPage;
+                  html += \`<button onclick="window.changeColumnPage(\${p})" class="w-8 h-8 rounded-lg text-xs font-bold transition \${isActive ? 'bg-[#2F5D50] text-white shadow-sm' : 'bg-[#EAF3EF] text-[#2F5D50] hover:bg-[#2F5D50] hover:text-white'}">\${p}</button>\`;
+                }
+
+                if (endPage < totalPages) {
+                  if (endPage < totalPages - 1) {
+                    html += \`<span class="text-xs text-gray-400 px-1">...</span>\`;
+                  }
+                  html += \`<button onclick="window.changeColumnPage(\${totalPages})" class="w-8 h-8 rounded-lg text-xs font-bold transition bg-[#EAF3EF] text-[#2F5D50] hover:bg-[#2F5D50] hover:text-white">\${totalPages}</button>\`;
+                }
+
+                // 다음 페이지 버튼
+                const nextDisabled = currentPage === totalPages;
+                html += \`<button onclick="window.changeColumnPage(\${currentPage + 1})" \${nextDisabled ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1 \${nextDisabled ? 'opacity-40 cursor-not-allowed bg-gray-100 text-gray-400' : 'bg-[#EAF3EF] text-[#2F5D50] hover:bg-[#2F5D50] hover:text-white'}">
+                  <span>다음</span>
+                  <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </button>\`;
+
+                container.innerHTML = html;
+              }
+
+              // 전역 함수 등록
+              window.filterColumn = function(category, btn) {
+                currentCategory = category;
+                currentPage = 1; // 탭 변경 시 1페이지로 리셋
+
+                const buttons = document.querySelectorAll('.column-tab-btn');
+                buttons.forEach(b => {
+                  b.classList.remove('active-tab', 'bg-[#2F5D50]', 'text-white');
+                  b.classList.add('bg-[#EAF3EF]', 'text-[#2F5D50]');
+                });
+
+                if (btn) {
+                  btn.classList.add('active-tab', 'bg-[#2F5D50]', 'text-white');
+                  btn.classList.remove('bg-[#EAF3EF]', 'text-[#2F5D50]');
+                }
+
+                updateDisplay(false);
+              };
+
+              window.changeColumnPage = function(page) {
+                currentPage = page;
+                updateDisplay(true);
+              };
+
+              // 초기화
+              document.addEventListener('DOMContentLoaded', () => {
+                const activeBtn = document.querySelector('.column-tab-btn.active-tab');
+                if (activeBtn) {
+                  activeBtn.classList.add('bg-[#2F5D50]', 'text-white');
+                  activeBtn.classList.remove('bg-[#EAF3EF]', 'text-[#2F5D50]');
+                }
+                const otherBtns = document.querySelectorAll('.column-tab-btn:not(.active-tab)');
+                otherBtns.forEach(b => {
+                  b.classList.add('bg-[#EAF3EF]', 'text-[#2F5D50]');
+                });
+
+                updateDisplay(false);
               });
-            });
+            })();
           </script>
 
         </div>
 ---
 `;
 
-fs.writeFileSync(path.join(columnDir, '_index.md'), indexContent, 'utf8');
-console.log('content/column/_index.md 파일이 성공적으로 업데이트되었습니다.');
-console.log('총 25개 칼럼 및 _index.md 빌드가 완료되었습니다.');
+  fs.writeFileSync(path.join(columnDir, '_index.md'), indexContent, 'utf8');
+  console.log(`[Rebuild Column Index] content/column/_index.md 파일이 성공적으로 업데이트되었습니다. (총 ${allArticles.length}개 칼럼 반영 완료)`);
+}
+
+// 메인 실행: 25개 필러 칼럼 파일 작성 후 전체 인덱스 재구축
+function main() {
+  console.log(`총 ${PILLAR_COLUMNS.length}개의 전문 심층 필러 칼럼 생성을 시작합니다.`);
+  let writtenCount = 0;
+  for (const col of PILLAR_COLUMNS) {
+    const filePath = path.join(columnDir, `${col.slug}.md`);
+    const content = renderColumnFile(col);
+    fs.writeFileSync(filePath, content, 'utf8');
+    writtenCount++;
+    console.log(`[필러 칼럼 작성 ${writtenCount}/${PILLAR_COLUMNS.length}] ${col.slug}.md`);
+  }
+
+  // 전체 칼럼(필러 25개 + 자동발행된 모든 칼럼) 스캔 및 _index.md 재구축
+  rebuildColumnIndex();
+  console.log('총 25개 기본 칼럼 및 전체 칼럼 목록 빌드가 완료되었습니다.');
+}
+
+// 직접 스크립트 실행 시 main 호출
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main();
+}
