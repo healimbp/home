@@ -7,20 +7,16 @@ category: "소아청소년 & 성인 ADHD·틱장애"
 tags: ["소아ADHD","주의산만","과잉행동","전두엽발달","콘서타부작용","주의집중력검사","부평소아ADHD"]
 ---
 
-<!-- 1. 진료실 목소리 Voice Box -->
 <div class="voice-box">
   <div class="voice-line">수업 시간에 5분도 가만히 앉아있지 못하고 돌아다녀서 매일 학교에서 전화가 와요.</div>
   <div class="voice-line">머리는 좋은데 숙제 하나 끝내는 데 3시간이 걸리고 매일 지우개, 연필을 잃어버립니다.</div>
   <div class="voice-line">정신과에서 콘서타 처방을 권유받았는데 밥도 안 먹고 키가 안 클까 봐 너무 두렵습니다.</div>
 </div>
 
-<!-- 2. 인트로 본문 -->
-<div class="intro-body">
-  <p>ADHD 아이를 둔 부모님들은 매일 집과 학교에서 전쟁을 치릅니다. "가만히 좀 있어라", "집중해라" 소리치지만 아이는 조금만 지나면 똑같은 행동을 반복합니다.</p>
-  <p>하지만 ADHD의 본질은 "의지력 부족"이나 "나쁜 버릇"이 아닙니다. **뇌의 앞부분(전두엽)에서 불필요한 생각과 충동을 멈춰 세우는 "브레이크 시스템"의 발달이 또래보다 2~3년 늦어진 신경생물학적 상태**입니다.</p>
-</div>
+ADHD 아이를 둔 부모님들은 매일 집과 학교에서 전쟁을 치릅니다. "가만히 좀 있어라", "집중해라" 소리치지만 아이는 조금만 지나면 똑같은 행동을 반복합니다.
 
-<!-- 3. 목차 TOC Box -->
+하지만 ADHD의 본질은 "의지력 부족"이나 "나쁜 버릇"이 아닙니다. **뇌의 앞부분(전두엽)에서 불필요한 생각과 충동을 멈춰 세우는 "브레이크 시스템"의 발달이 또래보다 2~3년 늦어진 신경생물학적 상태**입니다.
+
 <div class="toc">
   <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
   <ol>
@@ -33,14 +29,13 @@ tags: ["소아ADHD","주의산만","과잉행동","전두엽발달","콘서타�
   </ol>
 </div>
 
-<!-- 4. 본론 1: 기전 및 흐름 다이어그램 -->
-<div class="section">
-  <div class="section-label">핵심 병리 기전 01</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">ADHD의 진짜 원인: 집중력이 아니라 "억제 조절 기능"의 미성숙</h2>
-  
-  <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1]">
-    <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 뇌 브레이크 시스템(전두엽 억제 회로)의 작동 원리</div>
-    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
+<div class="section-label">핵심 병리 기전 01</div>
+
+## ADHD의 진짜 원인: 집중력이 아니라 "억제 조절 기능"의 미성숙
+
+<div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 뇌 브레이크 시스템(전두엽 억제 회로)의 작동 원리</div>
+  <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">외부 자극 유입</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">전두엽 억제 필터 미성숙</span>
@@ -50,108 +45,97 @@ tags: ["소아ADHD","주의산만","과잉행동","전두엽발달","콘서타�
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">몸 들썩임/끼어들기</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">지적 및 자존감 저하</span>
-
-    </div>
   </div>
+</div>
 
-  <div class="text-sm sm:text-base leading-relaxed text-[#3D4D47] space-y-4">
 사람의 뇌에서 전두엽(Prefrontal Cortex)은 자동차의 **'브레이크'**이자 오케스트라의 **'지휘자'**입니다. 
 
 정상적인 뇌는 중요한 과제에 집중할 때 주변의 소음, 딴생각, 몸을 움직이고 싶은 충동을 전두엽에서 단단히 억제합니다. 하지만 ADHD 아동은 전두엽의 **도파민과 노르에피네프린 신경전달물질의 활성이 부족하여 브레이크 패드가 닳아 있는 상태**입니다.
 
 따라서 억지로 참으라고 윽박지르는 것은 고장 난 브레이크를 밟으라고 소리치는 것과 같습니다. 뇌 스스로 브레이크를 잡을 수 있도록 **전두엽의 혈류 순환을 촉진하고 신경 가소성을 높여주는 치료**가 선행되어야 합니다.
+
+---
+
+<div class="section-label">진료실 현장 관찰 02</div>
+
+## 진료실에서 살피는 두뇌 불균형 신호들
+
+<div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
+  <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
+    <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
+    <span>진료실에서 확인하는 아이의 뇌 기능 체크리스트</span>
   </div>
-</div>
-
-<hr class="my-8 border-[#E2EAE5]">
-
-<!-- 5. 본론 2: 진료실 질문 박스 -->
-<div class="section">
-  <div class="section-label">진료실 현장 관찰 02</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">진료실에서 살피는 두뇌 불균형 신호들</h2>
-  
-  <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3">
-    <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
-      <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
-      <span>진료실에서 확인하는 아이의 뇌 기능 체크리스트</span>
-    </div>
-    <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1">
+  <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>자신이 좋아하는 게임이나 유튜브에는 몇 시간씩 과몰입하나요?</span></li>
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>말을 끝까지 듣지 않고 중간에 불쑥 끼어드나요?</span></li>
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>물건을 자주 잃어버리고 정리정돈을 극도로 힘들어하나요?</span></li>
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>몸을 끊임없이 꼼지락거리거나 손가락, 발가락을 가만히 두지 못하나요?</span></li>
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 6. 본론 3: 임상 연구 및 학술 박스 -->
-<div class="section">
-  <div class="section-label">학술 연구 & 임상 근거 03</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">임상 연구 – 뇌파(Theta/Beta 비율)와 전두엽 활성도</h2>
-  
-  <div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3">
-    <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
-      <i class="fa-solid fa-book-medical"></i>
-      <span>학술 연구 및 임상 보고</span>
-    </div>
-    <div class="space-y-2">
+<div class="section-label">학술 연구 & 임상 근거 03</div>
+
+## 임상 연구 – 뇌파(Theta/Beta 비율)와 전두엽 활성도
+
+<div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3 not-prose">
+  <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
+    <i class="fa-solid fa-book-medical"></i>
+    <span>학술 연구 및 임상 보고</span>
+  </div>
+  <div class="space-y-2">
       <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>ADHD 아동의 전두엽 뇌파 세타파(멍한 뇌파)/베타파(각성 뇌파) 비율 불균형 개선 연구</span></div>
       <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>총명탕 및 가미귀비탕 처방을 통한 주의집중력(CAT) 검사 점수 및 실행기능 유의미 향상</span></div>
-    </div>
-    <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
-      💡 양약 자극제(메틸페니데이트)가 인위적으로 도파민을 쥐어짜는 방식이라면, 한방 치료는 뇌의 혈류와 대사를 정상화하여 자생적인 집중 회로를 구축합니다.
-    </div>
+  </div>
+  <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
+    💡 양약 자극제(메틸페니데이트)가 인위적으로 도파민을 쥐어짜는 방식이라면, 한방 치료는 뇌의 혈류와 대사를 정상화하여 자생적인 집중 회로를 구축합니다.
   </div>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 7. 본론 4: 한의학 3대 체질 유형 카드 -->
-<div class="section">
-  <div class="section-label">맞춤 한의학 변증 04</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">한의학에서 분류하는 소아 ADHD 3대 유형</h2>
-  
-  <div class="grid grid-cols-1 gap-4 my-6">
+<div class="section-label">맞춤 한의학 변증 04</div>
+
+## 한의학에서 분류하는 소아 ADHD 3대 유형
+
+<div class="grid grid-cols-1 gap-4 my-6 not-prose">
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">🔥</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">간양상항(肝陽上亢)형 – 충동적이고 공격적인 과잉행동형</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">간양상항(肝陽上亢)형 – 충동적이고 공격적인 과잉행동형</h3>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         화가 많고 충동 조절이 안 되며 위험한 행동을 서슴지 않는 아이입니다. 머리로 치솟은 열을 내리고 간을 편안하게 하는 천마구등음, 시호청간탕을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">☁️</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">심비양허(心脾兩虛)형 – 멍하니 공상에 잠기는 조용한 주의력결핍형</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심비양허(心脾兩虛)형 – 멍하니 공상에 잠기는 조용한 주의력결핍형</h3>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         몸을 부산하게 움직이지는 않으나 멍을 자주 때리고 지시 사항을 금방 잊어버리는 유형입니다. 심장과 비장의 기혈을 보강하는 귀비탕, 총명탕을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">🌪️</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">음허화동(陰虛火動)형 – 밤에 잠을 잘 못 자고 안절부절못하는 유형</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">음허화동(陰虛火動)형 – 밤에 잠을 잘 못 자고 안절부절못하는 유형</h3>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         몸에 진액이 부족해 허열이 뜨고 체온 조절이 잘 안 되며 쉽게 지치는 아이입니다. 음혈을 보충하고 허열을 가라앉히는 육미지황탕 가감방을 처방합니다.
       </p>
     </div>
-  </div>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 8. 본론 5: 구조 및 뇌신경 통합 치료 -->
-<div class="section">
-  <div class="section-label">해아림 통합 치료 솔루션 05</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">자극제(콘서타) 의존 없는 뇌 자생력 한방 솔루션</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+<div class="section-label">해아림 통합 치료 솔루션 05</div>
+
+## 자극제(콘서타) 의존 없는 뇌 자생력 한방 솔루션
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
@@ -170,23 +154,21 @@ tags: ["소아ADHD","주의산만","과잉행동","전두엽발달","콘서타�
         신체 균형 감각과 전두엽의 상호 피드백 회로를 자극하여 과잉행동을 줄이고 차분한 신체 제어 능력을 형성합니다.
       </div>
     </div>
-  </div>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 9. 현실적 FAQ -->
-<div class="section">
-  <div class="section-label">진료실 자주 묻는 질문 06</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">부모님들이 가장 많이 묻는 현실적 질문 (FAQ)</h2>
-  
-  <div class="space-y-4 my-6">
+<div class="section-label">진료실 자주 묻는 질문 06</div>
+
+## 부모님들이 가장 많이 묻는 현실적 질문 (FAQ)
+
+<div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
         <span>좋아하는 게임이나 레고는 몇 시간씩 집중하는데도 ADHD일 수 있나요?</span>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         네, 전형적인 ADHD의 특징입니다. ADHD는 집중력이 아예 없는 것이 아니라 **"주의력을 적절히 배분하고 조절하는 능력"**이 부족한 질환입니다. 게임처럼 강한 시각 자극과 즉각적인 도파민 보상이 주어지는 곳에는 과몰입(Hyperfocus)하지만, 재미없는 일상 과제에는 주의를 기울이지 못합니다.
       </p>
     </div>
@@ -195,7 +177,7 @@ tags: ["소아ADHD","주의산만","과잉행동","전두엽발달","콘서타�
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
         <span>콘서타 같은 정신과 약을 먹이면 식욕 저하나 성장 지연이 생긴다는데 사실인가요?</span>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         중추신경 자극제 계열의 양약은 도파민을 인위적으로 증가시키면서 식욕 감퇴, 불면증, 틱 유발, 성장 둔화 등의 부작용이 나타날 수 있습니다. 한방 치료는 식욕과 소화기 기능을 해치지 않고 뇌의 대사 환경을 자연스럽게 개선하므로 성장기 아이들에게 안전한 대안이 됩니다.
       </p>
     </div>
@@ -204,17 +186,15 @@ tags: ["소아ADHD","주의산만","과잉행동","전두엽발달","콘서타�
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
         <span>ADHD는 나이가 들면 저절로 낫는 병인가요?</span>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         과거에는 성인이 되면 완치된다고 보았으나, 연구에 따르면 방치할 경우 50~60% 이상이 성인기까지 이어져 만성적인 시간 관리 실패, 충동 조절 장애, 우울증으로 발전합니다. 전두엽 뇌 신경망이 급격히 발달하는 소아청소년기에 조기 개입하는 것이 평생의 자산이 됩니다.
       </p>
     </div>
-  </div>
 </div>
 
-<!-- 10. 마무리 및 원장 조언 -->
-<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3">
+<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
-  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium">
+  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
     "ADHD를 가진 아이들은 산만함 이면에 뛰어난 창의성과 에너지라는 보물을 품고 있습니다. 뇌의 브레이크를 건강하게 키워주면 아이의 에너지는 위대한 잠재력으로 꽃필 수 있습니다."
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">

@@ -26,7 +26,66 @@ console.log(`총 ${ALL_COLUMNS.length}개의 전문 심층 칼럼 데이터가 �
 function renderColumnFile(c) {
   const cleanTitle = c.title.replace(/"/g, "'");
   const cleanSummary = c.summary.replace(/"/g, "'");
-  const frontmatter = `---
+  
+  const voiceLinesHtml = c.voiceQuotes.map(q => {
+    const cleanQuote = q.replace(/^["'“\s]+|["'”\s]+$/g, '');
+    return `  <div class="voice-line">${cleanQuote}</div>`;
+  }).join('\n');
+
+  const introParagraphs = c.introText.join('\n\n');
+
+  const tocListHtml = c.toc.map(item => `    <li>${item}</li>`).join('\n');
+
+  const flowStepsHtml = c.flow.steps.map((step, idx) => 
+    `      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">${step}</span>` +
+    (idx < c.flow.steps.length - 1 ? `\n      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>` : '')
+  ).join('\n');
+
+  const clinicItemsHtml = c.clinicBox.items.map(it => 
+    `      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>${it}</span></li>`
+  ).join('\n');
+
+  const researchItemsHtml = c.researchBox.items.map(it => 
+    `      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>${it}</span></div>`
+  ).join('\n');
+
+  const typeCardsHtml = c.typeCards.map(tc => 
+    `    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">${tc.icon}</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">${tc.title}</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        ${tc.desc}
+      </p>
+    </div>`
+  ).join('\n');
+
+  const structCardsHtml = c.structCards.map(sc => 
+    `    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
+      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
+        <span class="text-xs font-bold text-[#B4C2DC]">${sc.badge}</span>
+        <span class="text-xs font-extrabold">${sc.title}</span>
+      </div>
+      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+        ${sc.body}
+      </div>
+    </div>`
+  ).join('\n');
+
+  const faqItemsHtml = c.faq.map((fq, idx) => 
+    `    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q${idx + 1}</span>
+        <span>${fq.q}</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        ${fq.a}
+      </p>
+    </div>`
+  ).join('\n');
+
+  return `---
 title: "${cleanTitle}"
 summary: "${cleanSummary}"
 date: "${c.date}"
@@ -35,148 +94,100 @@ category: "${c.category}"
 tags: ${JSON.stringify(c.tags)}
 ---
 
-<!-- 1. 진료실 목소리 Voice Box -->
 <div class="voice-box">
-${c.voiceQuotes.map(q => {
-  const cleanQuote = q.replace(/^["'“\s]+|["'”\s]+$/g, '');
-  return `  <div class="voice-line">${cleanQuote}</div>`;
-}).join('\n')}
+${voiceLinesHtml}
 </div>
 
-<!-- 2. 인트로 본문 -->
-<div class="intro-body">
-${c.introText.map(p => `  <p>${p}</p>`).join('\n')}
-</div>
+${introParagraphs}
 
-<!-- 3. 목차 TOC Box -->
 <div class="toc">
   <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
   <ol>
-${c.toc.map(item => `    <li>${item}</li>`).join('\n')}
+${tocListHtml}
   </ol>
 </div>
 
-<!-- 4. 본론 1: 기전 및 흐름 다이어그램 -->
-<div class="section">
-  <div class="section-label">핵심 병리 기전 01</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">${c.toc[0]}</h2>
-  
-  <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1]">
-    <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 ${c.flow.title}</div>
-    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
-${c.flow.steps.map((step, idx) => `      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">${step}</span>
-${idx < c.flow.steps.length - 1 ? '      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>' : ''}`).join('\n')}
-    </div>
-  </div>
+<div class="section-label">핵심 병리 기전 01</div>
 
-  <div class="text-sm sm:text-base leading-relaxed text-[#3D4D47] space-y-4">
+## ${c.toc[0]}
+
+<div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 ${c.flow.title}</div>
+  <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
+${flowStepsHtml}
+  </div>
+</div>
+
 ${c.section1Text.trim()}
+
+---
+
+<div class="section-label">진료실 현장 관찰 02</div>
+
+## ${c.toc[1]}
+
+<div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
+  <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
+    <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
+    <span>${c.clinicBox.title}</span>
+  </div>
+  <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
+${clinicItemsHtml}
+  </ul>
+</div>
+
+---
+
+<div class="section-label">학술 연구 & 임상 근거 03</div>
+
+## ${c.toc[2]}
+
+<div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3 not-prose">
+  <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
+    <i class="fa-solid fa-book-medical"></i>
+    <span>${c.researchBox.title}</span>
+  </div>
+  <div class="space-y-2">
+${researchItemsHtml}
+  </div>
+  <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
+    💡 ${c.researchBox.note}
   </div>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 5. 본론 2: 진료실 질문 박스 -->
-<div class="section">
-  <div class="section-label">진료실 현장 관찰 02</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">${c.toc[1]}</h2>
-  
-  <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3">
-    <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
-      <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
-      <span>${c.clinicBox.title}</span>
-    </div>
-    <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1">
-${c.clinicBox.items.map(it => `      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>${it}</span></li>`).join('\n')}
-    </ul>
-  </div>
+<div class="section-label">맞춤 한의학 변증 04</div>
+
+## ${c.toc[3]}
+
+<div class="grid grid-cols-1 gap-4 my-6 not-prose">
+${typeCardsHtml}
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 6. 본론 3: 임상 연구 및 학술 박스 -->
-<div class="section">
-  <div class="section-label">학술 연구 & 임상 근거 03</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">${c.toc[2]}</h2>
-  
-  <div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3">
-    <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
-      <i class="fa-solid fa-book-medical"></i>
-      <span>${c.researchBox.title}</span>
-    </div>
-    <div class="space-y-2">
-${c.researchBox.items.map(it => `      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>${it}</span></div>`).join('\n')}
-    </div>
-    <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
-      💡 ${c.researchBox.note}
-    </div>
-  </div>
+<div class="section-label">해아림 통합 치료 솔루션 05</div>
+
+## ${c.toc[4]}
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
+${structCardsHtml}
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 7. 본론 4: 한의학 3대 체질 유형 카드 -->
-<div class="section">
-  <div class="section-label">맞춤 한의학 변증 04</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">${c.toc[3]}</h2>
-  
-  <div class="grid grid-cols-1 gap-4 my-6">
-${c.typeCards.map(tc => `    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
-      <div class="flex items-center gap-2.5">
-        <span class="text-xl">${tc.icon}</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">${tc.title}</h3>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
-        ${tc.desc}
-      </p>
-    </div>`).join('\n')}
-  </div>
+<div class="section-label">진료실 자주 묻는 질문 06</div>
+
+## ${c.toc[5]}
+
+<div class="space-y-4 my-6 not-prose">
+${faqItemsHtml}
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
-
-<!-- 8. 본론 5: 구조 및 뇌신경 통합 치료 -->
-<div class="section">
-  <div class="section-label">해아림 통합 치료 솔루션 05</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">${c.toc[4]}</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-${c.structCards.map(sc => `    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
-      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
-        <span class="text-xs font-bold text-[#B4C2DC]">${sc.badge}</span>
-        <span class="text-xs font-extrabold">${sc.title}</span>
-      </div>
-      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
-        ${sc.body}
-      </div>
-    </div>`).join('\n')}
-  </div>
-</div>
-
-<hr class="my-8 border-[#E2EAE5]">
-
-<!-- 9. 현실적 FAQ -->
-<div class="section">
-  <div class="section-label">진료실 자주 묻는 질문 06</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">${c.toc[5]}</h2>
-  
-  <div class="space-y-4 my-6">
-${c.faq.map((fq, idx) => `    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
-      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q${idx + 1}</span>
-        <span>${fq.q}</span>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
-        ${fq.a}
-      </p>
-    </div>`).join('\n')}
-  </div>
-</div>
-
-<!-- 10. 마무리 및 원장 조언 -->
-<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3">
+<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
-  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium">
+  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
     "${c.closingText}"
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">
@@ -184,7 +195,6 @@ ${c.faq.map((fq, idx) => `    <div class="p-5 bg-white rounded-2xl border border
   </div>
 </div>
 `;
-  return frontmatter;
 }
 
 // 1. 25개 마크다운 파일 쓰기

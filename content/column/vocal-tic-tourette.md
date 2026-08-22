@@ -7,20 +7,16 @@ category: "소아청소년 & 성인 ADHD·틱장애"
 tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음음소리","소아신경정신과","인천틱장애한의원"]
 ---
 
-<!-- 1. 진료실 목소리 Voice Box -->
 <div class="voice-box">
   <div class="voice-line">이비인후과에서 비염 약과 항히스타민제를 3달째 먹였는데 소리가 점점 더 커져요.</div>
   <div class="voice-line">낮에는 1분에 수십 번씩 "음-음", "켁-켁" 소리를 내는데 신기하게 잠잘 때는 소리가 전혀 안 나요.</div>
   <div class="voice-line">혹시 욕설 틱이나 뚜렛증후군으로 영영 굳어질까 봐 가슴이 타들어 갑니다.</div>
 </div>
 
-<!-- 2. 인트로 본문 -->
-<div class="intro-body">
-  <p>환절기만 되면 아이가 헛기침을 하거나 킁킁 소리를 내어 단순 비염이나 목감기인 줄 알고 병원을 전전하는 부모님들이 많습니다.</p>
-  <p>하지만 호흡기 약을 써도 차도가 없고, 긴장하거나 TV를 볼 때 소리가 커진다면 이는 호흡기 질환이 아니라 **목과 성대 근육을 불수의적으로 움직이는 "음성 틱(Vocal Tic)"**입니다.</p>
-</div>
+환절기만 되면 아이가 헛기침을 하거나 킁킁 소리를 내어 단순 비염이나 목감기인 줄 알고 병원을 전전하는 부모님들이 많습니다.
 
-<!-- 3. 목차 TOC Box -->
+하지만 호흡기 약을 써도 차도가 없고, 긴장하거나 TV를 볼 때 소리가 커진다면 이는 호흡기 질환이 아니라 **목과 성대 근육을 불수의적으로 움직이는 "음성 틱(Vocal Tic)"**입니다.
+
 <div class="toc">
   <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
   <ol>
@@ -33,14 +29,13 @@ tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음
   </ol>
 </div>
 
-<!-- 4. 본론 1: 기전 및 흐름 다이어그램 -->
-<div class="section">
-  <div class="section-label">핵심 병리 기전 01</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">비염과 음성 틱을 100% 감별하는 3가지 결정적 차이점</h2>
-  
-  <div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1]">
-    <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 음성 틱의 발생 및 악화 메커니즘</div>
-    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
+<div class="section-label">핵심 병리 기전 01</div>
+
+## 비염과 음성 틱을 100% 감별하는 3가지 결정적 차이점
+
+<div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 음성 틱의 발생 및 악화 메커니즘</div>
+  <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">목 안의 간질거림(감각전조)</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">성대·후두근 불수의적 수축</span>
@@ -50,11 +45,9 @@ tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">지적받으면 긴장 누적</span>
       <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
       <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">더 크고 잦은 음성틱</span>
-
-    </div>
   </div>
+</div>
 
-  <div class="text-sm sm:text-base leading-relaxed text-[#3D4D47] space-y-4">
 음성 틱과 비염·천식을 구별하는 가장 확실한 기준은 **'수면 상태'**와 **'상황별 변화'**입니다.
 
 1. **잠잘 때의 양상**: 비염은 누우면 콧물이 뒤로 넘어가(후비루) 수면 중에도 기침을 하지만, **음성 틱은 잠에 빠져 대뇌 피질이 이완되면 소리가 100% 완전히 멈춥니다.**
@@ -62,98 +55,89 @@ tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음
 3. **상황적 변동**: 게임을 하거나 TV를 볼 때, 혹은 낯선 사람 앞에서 긴장할 때 소리가 급격히 잦아집니다.
 
 운동 틱과 음성 틱이 모두 나타나 1년 이상 지속되는 경우를 **'뚜렛증후군'**이라 진단하며, 음성 틱이 나타난 초기 골든타임에 신경망을 안정시켜야 뚜렛으로의 만성화를 차단할 수 있습니다.
+
+---
+
+<div class="section-label">진료실 현장 관찰 02</div>
+
+## 눈 깜빡임에서 음성 틱으로 번지는 과정과 뚜렛증후군의 기준
+
+<div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
+  <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
+    <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
+    <span>진료실에서 체크하는 인후 및 전신 상태</span>
   </div>
-</div>
-
-<hr class="my-8 border-[#E2EAE5]">
-
-<!-- 5. 본론 2: 진료실 질문 박스 -->
-<div class="section">
-  <div class="section-label">진료실 현장 관찰 02</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">눈 깜빡임에서 음성 틱으로 번지는 과정과 뚜렛증후군의 기준</h2>
-  
-  <div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3">
-    <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
-      <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
-      <span>진료실에서 체크하는 인후 및 전신 상태</span>
-    </div>
-    <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1">
+  <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>소리를 내기 전 목구멍이나 가슴이 답답하다고 호소하나요?</span></li>
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>비염이나 축농증, 아토피 등 알레르기 질환을 앓은 적이 있나요?</span></li>
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>물을 자주 찾거나 유독 땀을 많이 흘리는 편인가요?</span></li>
       <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>자세를 구부정하게 하고 목을 앞으로 빼고 앉아 있나요?</span></li>
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 6. 본론 3: 임상 연구 및 학술 박스 -->
-<div class="section">
-  <div class="section-label">학술 연구 & 임상 근거 03</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">왜 잘 때는 소리가 멈추고 낮에는 심해질까요?</h2>
-  
-  <div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3">
-    <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
-      <i class="fa-solid fa-book-medical"></i>
-      <span>학술 연구 및 임상 보고</span>
-    </div>
-    <div class="space-y-2">
+<div class="section-label">학술 연구 & 임상 근거 03</div>
+
+## 왜 잘 때는 소리가 멈추고 낮에는 심해질까요?
+
+<div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3 not-prose">
+  <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
+    <i class="fa-solid fa-book-medical"></i>
+    <span>학술 연구 및 임상 보고</span>
+  </div>
+  <div class="space-y-2">
       <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>소아 음성 틱 및 뚜렛증후군 환자에 대한 억간산가진피반하 및 청간사화 처방의 임상 유효성 연구</span></div>
       <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>미주신경 및 후두신경 감각 과민 완화와 발성근 긴장도 저하 확인</span></div>
-    </div>
-    <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
-      💡 음성 틱은 성대 자체의 이상이 아니라 뇌에서 성대 조절 근육으로 내려보내는 신경 신호의 오작동입니다.
-    </div>
+  </div>
+  <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
+    💡 음성 틱은 성대 자체의 이상이 아니라 뇌에서 성대 조절 근육으로 내려보내는 신경 신호의 오작동입니다.
   </div>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 7. 본론 4: 한의학 3대 체질 유형 카드 -->
-<div class="section">
-  <div class="section-label">맞춤 한의학 변증 04</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">음성 틱의 3대 한의학적 원인과 맞춤 탕약</h2>
-  
-  <div class="grid grid-cols-1 gap-4 my-6">
+<div class="section-label">맞춤 한의학 변증 04</div>
+
+## 음성 틱의 3대 한의학적 원인과 맞춤 탕약
+
+<div class="grid grid-cols-1 gap-4 my-6 not-prose">
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">🔥</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">심간화왕(心肝火旺)형 – 가슴에 열이 차고 성격이 급한 아이</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심간화왕(心肝火旺)형 – 가슴에 열이 차고 성격이 급한 아이</h3>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         얼굴이 쉽게 붉어지고 답답한 것을 참지 못하며 소리가 크고 날카로운 유형입니다. 심장과 간의 울열을 식혀주는 영각구등탕, 시호청간탕을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">💧</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">담음울체(痰飮鬱滯)형 – 목에 가래 낀 듯 답답해하는 아이</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">담음울체(痰飮鬱滯)형 – 목에 가래 낀 듯 답답해하는 아이</h3>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         체내 수액 대사가 원활하지 못해 인후부에 이물감이 생기고 이를 뱉어내려는 듯 켁켁거리는 유형입니다. 담음을 삭이고 기운을 뚫어주는 반하후박탕, 온담탕을 처방합니다.
       </p>
     </div>
     <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
       <div class="flex items-center gap-2.5">
         <span class="text-xl">🌱</span>
-        <h3 class="font-extrabold text-sm sm:text-base text-[#202947]">폐음부족(肺陰不足)형 – 기관지가 건조하고 마른기침을 하는 아이</h3>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">폐음부족(肺陰不足)형 – 기관지가 건조하고 마른기침을 하는 아이</h3>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         목과 기관지 점막이 건조하여 작은 자극에도 민감하게 반응하는 유형입니다. 폐의 진액을 보충하고 성대를 촉촉하게 적셔주는 맥문동탕 가감방을 처방합니다.
       </p>
     </div>
-  </div>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 8. 본론 5: 구조 및 뇌신경 통합 치료 -->
-<div class="section">
-  <div class="section-label">해아림 통합 치료 솔루션 05</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">인후부 긴장을 완화하는 구조 교정과 침구 치료</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+<div class="section-label">해아림 통합 치료 솔루션 05</div>
+
+## 인후부 긴장을 완화하는 구조 교정과 침구 치료
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
     <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
       <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
         <span class="text-xs font-bold text-[#B4C2DC]">구조 치료 01</span>
@@ -172,23 +156,21 @@ tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음
         천돌혈, 염천혈, 대추혈 등 인후부 핵심 혈자리에 순수 한약 추출 약침을 놓아 기관지 평활근의 경련을 즉각적으로 진정시킵니다.
       </div>
     </div>
-  </div>
 </div>
 
-<hr class="my-8 border-[#E2EAE5]">
+---
 
-<!-- 9. 현실적 FAQ -->
-<div class="section">
-  <div class="section-label">진료실 자주 묻는 질문 06</div>
-  <h2 class="text-xl sm:text-2xl font-bold text-[#26332E] pb-2 border-b border-[#DDE6E1]">부모님들이 가장 걱정하시는 질문 (FAQ)</h2>
-  
-  <div class="space-y-4 my-6">
+<div class="section-label">진료실 자주 묻는 질문 06</div>
+
+## 부모님들이 가장 걱정하시는 질문 (FAQ)
+
+<div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
         <span>음성 틱이 시작되면 나중에 욕설 틱(외설증)으로 번지나요?</span>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         외설증(욕설 틱)은 뚜렛증후군 환자 중에서도 10~15% 내외의 매우 드문 경우에만 나타납니다. 대부분의 음성 틱은 단순한 헛기침이나 킁킁거림, 음음 소리 수준에서 조기에 적절한 한방 치료를 시작하면 외설증으로 진행하지 않고 안정적으로 소실됩니다.
       </p>
     </div>
@@ -197,7 +179,7 @@ tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
         <span>학교 수업 시간에 소리를 내서 친구들에게 놀림받을까 봐 걱정입니다.</span>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         아이가 학교에서 억지로 소리를 참다 보면 하교 후 집에서 소리가 몇 배로 심해질 수 있습니다. 담임 선생님께 사전에 상황을 정중히 설명해 지적하지 않도록 협조를 구하시고, 아이에게는 "참지 않아도 괜찮다"는 심리적 안전지대를 만들어주셔야 합니다.
       </p>
     </div>
@@ -206,17 +188,15 @@ tags: ["음성틱","뚜렛증후군","소아비염감별","킁킁소리틱","음
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
         <span>음성 틱 치료는 보통 기간이 얼마나 걸리나요?</span>
       </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8">
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         발병한 지 6개월 이내의 초기 단계라면 보통 1~2개월 내에 소리의 크기와 빈도가 눈에 띄게 줄어들며, 만성화된 뚜렛 단계라도 3~6개월 꾸준한 뇌신경 안정 치료를 통해 재발 없는 완치에 이를 수 있습니다.
       </p>
     </div>
-  </div>
 </div>
 
-<!-- 10. 마무리 및 원장 조언 -->
-<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3">
+<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
   <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
-  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium">
+  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
     "아이가 내는 소리는 고의가 아닌 뇌의 SOS 신호입니다. 부모님의 따뜻한 포용과 정밀한 한방 치료가 함께할 때 아이는 다시 편안하고 맑은 목소리를 되찾을 수 있습니다."
   </p>
   <div class="pt-2 text-xs text-[#9AAFD2]">
