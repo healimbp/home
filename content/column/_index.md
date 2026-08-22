@@ -58,6 +58,30 @@ sections:
             <!-- 칼럼 카드 그리드 (개별 상세 페이지 직결 링크) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="column-grid">
 
+              <!-- [SEO 자동발행: 소아 틱장애 · ADHD - 2026-08-22] -->
+              <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">소아 틱장애 · ADHD</span>
+                    <span class="text-xs text-[#68736E]">2026-08-22 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/post-2026-08-22-tic-2206/" class="hover:underline">[부천 상동 소아 한의원] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료</a>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed">
+                    부천 상동 지역에서 소아 틱장애 · ADHD 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 부천 상동한의원 • 부평한의원 • 소아 • 맞춤한약 • 뇌파검사 • 체열검사</span>
+                  <a href="/column/post-2026-08-22-tic-2206/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
+
               <!-- [SEO 자동발행: 자율신경 · 실신/어지럼증 - 2026-08-22] -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition">
                 <div class="space-y-2.5">
