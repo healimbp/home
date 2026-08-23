@@ -26,6 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           submodules: recursive
           fetch-depth: 0
 
@@ -59,7 +60,7 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
         run: |
-          hugo --minify
+          hugo --minify --buildFuture
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

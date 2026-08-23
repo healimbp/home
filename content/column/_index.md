@@ -150,7 +150,7 @@ sections:
                   </p>
                 </div>
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 시흥 배곧우울증 • 시흥화병한의원</span>
+                  <span class="text-[11px] text-[#68736E]">• 시흥배곧우울증 • 시흥화병한의원</span>
                   <a href="/column/post-2026-08-22-stress-7343/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
