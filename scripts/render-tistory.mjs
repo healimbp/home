@@ -18,22 +18,41 @@ export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
 
   // 1. 권형근 대표원장의 조언 박스 분리
   let doctorAdvice = '';
-  const adviceMatch = content.match(/>\s*\*\*권형근\s*대표원장의\s*조언\*\*:\s*[\r\n]+>\s*["“]?(.*?)["”]?\s*$/s);
+  const adviceMatch = content.match(/(?:^|\n)>\s*\*\*권형근\s*대표원장의\s*조언\*\*:\s*[\r\n]+(?:>\s*)?["“]?(.*?)["”]?\s*(?:\n\s*─{3,}|\n\s*###|$)/s);
   if (adviceMatch) {
     doctorAdvice = adviceMatch[1].replace(/^>\s*/gm, '').trim();
     content = content.replace(adviceMatch[0], '').trim();
   }
 
-  // 2. 환자 호소문 인용구 분리 (상단 > &ldquo;...)
+  // 2. 환자 호소문 인용구 분리 (상단 HTML blockquote 또는 마크다운 > "..." / > “...” / > &ldquo;...)
   let quoteHtml = '';
-  const quoteMatch = content.match(/^(?:>\s*&ldquo;[\s\S]*?&rdquo;(?:\s*[\r\n]+)?)+/);
-  if (quoteMatch) {
-    const rawQuotes = quoteMatch[0].trim().split(/\r?\n/).map(l => l.replace(/^>\s*/, '').trim()).filter(Boolean);
+  const htmlQuoteMatch = content.match(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/i);
+  if (htmlQuoteMatch) {
+    const rawQuotes = htmlQuoteMatch[1]
+      .replace(/&ldquo;/g, '“')
+      .replace(/&rdquo;/g, '”')
+      .split(/<br\s*\/?>/i)
+      .map(l => l.replace(/<[^>]+>/g, '').trim())
+      .filter(Boolean);
     quoteHtml = `  <!-- 환자 호소문 인용 박스 (정자체 font-style: normal) -->
   <div style="background-color: #F8FAF9; border-left: 4px solid #2F5D50; border-radius: 0 12px 12px 0; padding: 18px 24px; margin: 24px 0 28px 0; color: #2C3E35; font-size: 15px; line-height: 1.85; font-style: normal; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
     ${rawQuotes.join('<br><br>')}
   </div>\n`;
-    content = content.replace(quoteMatch[0], '').trim();
+    content = content.replace(htmlQuoteMatch[0], '').trim();
+  } else {
+    const mdQuoteMatch = content.match(/(?:^|\n)((?:>\s*["“&][^\n]*(?:\r?\n|$))+)/);
+    if (mdQuoteMatch) {
+      const rawQuotes = mdQuoteMatch[1]
+        .trim()
+        .split(/\r?\n/)
+        .map(l => l.replace(/^>\s*/, '').replace(/&ldquo;/g, '“').replace(/&rdquo;/g, '”').trim())
+        .filter(Boolean);
+      quoteHtml = `  <!-- 환자 호소문 인용 박스 (정자체 font-style: normal) -->
+  <div style="background-color: #F8FAF9; border-left: 4px solid #2F5D50; border-radius: 0 12px 12px 0; padding: 18px 24px; margin: 24px 0 28px 0; color: #2C3E35; font-size: 15px; line-height: 1.85; font-style: normal; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
+    ${rawQuotes.join('<br><br>')}
+  </div>\n`;
+      content = content.replace(mdQuoteMatch[0], '\n\n').trim();
+    }
   }
 
   // 3. 섹션 단위 파싱 (### 기준 분할)
@@ -63,7 +82,7 @@ export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
 
         // 마크다운 Q1. 형식 폴백
         if (qCards.length === 0) {
-          const mdQRegex = /\*\*(Q\d+)\.\s*(.*?)\*\*\s*[\r\n]+(?:>\s*)?(?:\*\*A\.\*\*|A\.)?\s*([\s\S]*?)(?=\n\n\*\*Q\d+|\n\n###|$)/g;
+          const mdQRegex = /\*\*(Q\d+)\.?\s*(.*?)\*\*\s*[\r\n]+(?:>\s*)?(?:\*\*A\.\*\*|A\.)?\s*([\s\S]*?)(?=\n\s*\*\*Q\d+|\n\s*###|$)/g;
           while ((match = mdQRegex.exec(secBody)) !== null) {
             qCards.push({ qNum: match[1], q: match[2].trim(), a: match[3].replace(/^>\s*/gm, '').trim() });
           }

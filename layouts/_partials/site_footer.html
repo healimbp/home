@@ -111,3 +111,106 @@
     </div>
   </div>
 </footer>
+
+<!-- Smart Conversion Tracking & Ad Performance Logger -->
+<script>
+(function() {
+  function logLocalStat(action, label) {
+    try {
+      var stats = JSON.parse(localStorage.getItem('healim_stats') || '{}');
+      var today = new Date().toISOString().slice(0, 10);
+      if (!stats[today]) {
+        stats[today] = { naver_booking: 0, kakao_consult: 0, phone_call: 0, column_read: 0, views: 0 };
+      }
+      stats[today].views = (stats[today].views || 0) + (action === 'page_view' ? 1 : 0);
+      if (action in stats[today]) {
+        stats[today][action] = (stats[today][action] || 0) + 1;
+      }
+      localStorage.setItem('healim_stats', JSON.stringify(stats));
+    } catch(e) {}
+  }
+
+  logLocalStat('page_view', window.location.pathname);
+
+  // 이벤트 리스너 통합 (네이버 예약, 카카오톡 상담, 전화 걸기)
+  document.addEventListener('click', function(e) {
+    var target = e.target.closest('a, button');
+    if (!target) return;
+
+    var href = target.getAttribute('href') || '';
+    var text = (target.innerText || target.textContent || '').trim().slice(0, 40);
+
+    // 1. 네이버 예약 클릭 추적
+    if (href.indexOf('booking.naver.com') > -1) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'click_naver_booking', {
+          'event_category': 'conversion',
+          'event_label': text || '네이버 예약 버튼',
+          'page_location': window.location.pathname,
+          'ad_source': sessionStorage.getItem('ad_source') || 'direct'
+        });
+      }
+      logLocalStat('naver_booking', text);
+      console.log('📊 [광고효율추적] 네이버 예약 클릭 감지:', text);
+    }
+
+    // 2. 카카오톡 상담 클릭 추적
+    else if (href.indexOf('open.kakao.com') > -1 || href.indexOf('pf.kakao.com') > -1) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'click_kakao_consult', {
+          'event_category': 'conversion',
+          'event_label': text || '카카오톡 상담 버튼',
+          'page_location': window.location.pathname,
+          'ad_source': sessionStorage.getItem('ad_source') || 'direct'
+        });
+      }
+      logLocalStat('kakao_consult', text);
+      console.log('📊 [광고효율추적] 카카오톡 상담 클릭 감지:', text);
+    }
+
+    // 3. 전화 걸기 클릭 추적
+    else if (href.indexOf('tel:') > -1) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'click_phone_call', {
+          'event_category': 'conversion',
+          'event_label': href.replace('tel:', ''),
+          'page_location': window.location.pathname,
+          'ad_source': sessionStorage.getItem('ad_source') || 'direct'
+        });
+      }
+      logLocalStat('phone_call', href);
+      console.log('📊 [광고효율추적] 전화 걸기 클릭 감지:', href);
+    }
+  }, true);
+
+  // 4. 칼럼 정독 및 체류시간 추적 (30초 이상 체류 시)
+  if (window.location.pathname.indexOf('/column/') > -1) {
+    var readLogged = false;
+    setTimeout(function() {
+      if (!readLogged) {
+        readLogged = true;
+        if (typeof gtag === 'function') {
+          gtag('event', 'read_column_engaged', {
+            'event_category': 'content',
+            'event_label': document.title,
+            'page_location': window.location.pathname
+          });
+        }
+        logLocalStat('column_read', document.title);
+      }
+    }, 30000);
+  }
+
+  // 5. 원장님 확인용 콘솔 리포트 함수: window.getAdStats()
+  window.getAdStats = function() {
+    try {
+      var stats = JSON.parse(localStorage.getItem('healim_stats') || '{}');
+      console.log('%c🏥 [해아림한의원 인천부평점] 홈페이지 광고 전환 & 액션 통계 리포트', 'color: #2F5D50; font-size: 16px; font-weight: bold;');
+      console.table(stats);
+      return stats;
+    } catch(e) {
+      return '통계 데이터가 아직 없습니다.';
+    }
+  };
+})();
+</script>
