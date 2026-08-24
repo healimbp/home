@@ -57,6 +57,75 @@
   </div>
   {{ end }}
 
+  <style>
+    .voice-box {
+      background: #F7F5F0;
+      border-left: 4px solid #C87941;
+      border-radius: 0 16px 16px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .voice-line {
+      font-size: 14.5px;
+      color: #3A2E24;
+      line-height: 1.8;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .voice-line:last-child { margin-bottom: 0; }
+    .voice-line::before {
+      content: '"';
+      position: absolute;
+      left: 0;
+      font-size: 22px;
+      color: #C87941;
+      line-height: 1;
+      top: -2px;
+      font-weight: bold;
+    }
+    .intro-body {
+      font-size: 15px;
+      line-height: 1.95;
+      color: #33403A;
+      margin-bottom: 28px;
+    }
+    .intro-body p + p {
+      margin-top: 12px;
+    }
+    .toc {
+      background: #F9FAF8;
+      border: 1px solid #DDE6E1;
+      border-radius: 16px;
+      padding: 22px 26px;
+      margin-bottom: 36px;
+    }
+    .toc-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #2F5D50;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      padding-left: 20px;
+      color: #4E6159;
+      font-size: 13.5px;
+      line-height: 2.0;
+      font-weight: 600;
+      margin: 0;
+    }
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: #2F5D50;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+  </style>
+
   <!-- Main Article Content Body -->
   <article class="prose prose-lg max-w-none text-[#26332E] leading-relaxed space-y-6 pt-2">
     {{ .Content }}

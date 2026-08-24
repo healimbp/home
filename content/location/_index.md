@@ -66,128 +66,179 @@ sections:
             </div>
           </div>
 
-          <!-- 3. 상세 정보 2컬럼 레이아웃 (참조 이미지 완벽 동일 구조) -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-2">
+          <!-- 3. 상세 정보 2컬럼 레이아웃 (완벽한 1:1 대칭 프리미엄 카드) -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-2 items-stretch">
             
-            <!-- [좌측 영역] 주소 & 교통편 박스 -->
-            <div class="space-y-4">
-              <!-- 주소 헤더 -->
-              <div class="space-y-1">
-                <div class="flex items-start gap-2 text-base sm:text-lg font-bold text-[#111827]">
-                  <i class="fa-solid fa-location-dot text-[#202947] mt-1 text-base"></i>
-                  <span>인천 부평구 경원대로 1412 (부평동)</span>
+            <!-- [좌측 카드] 위치 & 교통 안내 -->
+            <div class="bg-white rounded-3xl border border-[#DDE6E1] p-6 sm:p-7 shadow-sm flex flex-col justify-between space-y-6">
+              <!-- 헤더 -->
+              <div class="flex items-center justify-between border-b border-[#F1F5F4] pb-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-10 h-10 rounded-2xl bg-[#EAF3EF] text-[#2F5D50] flex items-center justify-center text-lg shadow-inner">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h2 class="text-base sm:text-lg font-extrabold text-[#202947]">위치 & 교통 안내</h2>
+                    <p class="text-xs text-[#64748B]">부평역 7번 출구에서 350m (도보 5분)</p>
+                  </div>
                 </div>
-                <p class="text-xs sm:text-sm text-[#64748B] pl-6">
-                  부평역 7번 출구에서 350m, 도보 5분
-                </p>
+                <span class="text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-full">지상 2층</span>
               </div>
 
-              <!-- 회색 라운드 교통안내 박스 (참조 이미지와 동일) -->
-              <div class="bg-[#F1F3F6] rounded-2xl p-5 space-y-4 text-xs sm:text-sm text-[#334155]">
-                
-                <!-- 버스 안내 -->
-                <div class="space-y-2">
-                  <div class="flex items-center gap-2 font-bold text-[#1E293B]">
-                    <i class="fa-solid fa-bus text-[#202947]"></i>
-                    <span>버스</span>
-                    <div class="flex items-center gap-1 flex-wrap">
-                      <span class="px-2 py-0.5 rounded bg-[#202947] text-white text-[11px] font-semibold">부평역 7번출구</span>
-                      <span class="px-2 py-0.5 rounded bg-[#334155] text-white text-[11px] font-semibold">부평시장 입구</span>
-                    </div>
+              <!-- 주소 안내 및 복사 바 -->
+              <div class="p-3.5 rounded-2xl bg-[#F8FAF9] border border-[#E2EAE5] flex items-center justify-between gap-3">
+                <div class="space-y-0.5">
+                  <div class="text-xs sm:text-sm font-extrabold text-[#202947]">인천 부평구 경원대로 1412 (부평동 534-48)</div>
+                  <div class="text-[11px] text-[#64748B]">스타벅스 부평역점 방면 직진 도로변</div>
+                </div>
+                <button onclick="navigator.clipboard.writeText('인천 부평구 경원대로 1412'); alert('주소가 복사되었습니다.');" class="text-xs font-bold text-[#2F5D50] hover:bg-[#EAF3EF] px-3 py-1.5 rounded-xl border border-[#DDE6E1] transition shrink-0 bg-white shadow-2xs">
+                  주소복사
+                </button>
+              </div>
+
+              <!-- 교통편 3대 항목 목록 -->
+              <div class="space-y-4 text-xs sm:text-sm text-[#334155]">
+                <!-- 지하철 -->
+                <div class="space-y-1">
+                  <div class="font-extrabold text-[#202947] flex items-center gap-2">
+                    <i class="fa-solid fa-train-subway text-[#2F5D50]"></i>
+                    <span>지하철 1호선 · 인천 1호선 부평역</span>
                   </div>
-                  <div class="pl-6 space-y-1 text-xs text-[#475569]">
-                    <div><strong class="text-[#1E293B]">일반 :</strong> 11, 23, 30, 45, 88, 551</div>
-                    <div><strong class="text-[#1E293B]">직행/광역 :</strong> 564, 574, 9500, 1400</div>
+                  <p class="text-xs text-[#64748B] pl-6">
+                    지상 1층 <strong>7번 출구(북광장)</strong>로 나와서 스타벅스 방면으로 직진 350m (도보 5분)
+                  </p>
+                </div>
+
+                <!-- 버스 -->
+                <div class="space-y-1">
+                  <div class="font-extrabold text-[#202947] flex items-center gap-2">
+                    <i class="fa-solid fa-bus text-[#2F5D50]"></i>
+                    <span>시내버스 정류장</span>
+                  </div>
+                  <div class="pl-6 text-xs text-[#64748B] space-y-0.5">
+                    <div>• <strong>부평역 7번출구:</strong> 11, 23, 30, 45, 88, 551</div>
+                    <div>• <strong>부평시장 입구:</strong> 564, 574, 9500, 1400</div>
                   </div>
                 </div>
 
-                <!-- 지하철 안내 & 도보 꿀팁 -->
-                <div class="space-y-1.5 border-t border-[#E2E8F0] pt-3">
-                  <div class="flex items-center gap-2 font-bold text-[#1E293B]">
-                    <i class="fa-solid fa-train-subway text-[#202947]"></i>
-                    <span>지하철 & 도보 안내</span>
+                <!-- 주차 안내 -->
+                <div class="space-y-1">
+                  <div class="font-extrabold text-[#202947] flex items-center gap-2">
+                    <i class="fa-solid fa-square-parking text-[#2F5D50]"></i>
+                    <span>주차 지원 안내</span>
                   </div>
-                  <div class="pl-6 space-y-1 text-xs text-[#475569]">
-                    <p><strong class="text-[#1E293B]">지하철 1호선 · 인천 1호선 부평역 7번 출구</strong>에서 스타벅스 방면으로 직진 350m (도보 5분)</p>
-                    <p class="p-2.5 bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] rounded-xl leading-relaxed">
-                      💡 <strong>도보 길찾기 팁:</strong> 부평역 지하상가 출구가 복잡하므로, 지상 1층 <strong>부평역 7번 출구(북광장)</strong>로 나오셔서 대로변을 따라 직진하시면 가장 쉽고 빠르게 찾아오실 수 있습니다.
-                    </p>
+                  <div class="pl-6 text-xs text-[#64748B] space-y-0.5">
+                    <div>• <strong>본 건물:</strong> 건물 내 기계식 주차장 완비 (일반 승용차 무료 주차 지원)</div>
+                    <div>• <strong>SUV/대형차:</strong> 인근 공영주차장 이용 시 주차비 전액 지원</div>
                   </div>
                 </div>
+              </div>
 
-                <!-- 주차 안내 상세 -->
-                <div class="space-y-1.5 border-t border-[#E2E8F0] pt-3">
-                  <div class="flex items-center gap-2 font-bold text-[#1E293B]">
-                    <i class="fa-solid fa-square-parking text-[#202947]"></i>
-                    <span>주차 안내 (진료 시 무료 주차 지원)</span>
-                  </div>
-                  <div class="pl-6 space-y-1.5 text-xs text-[#475569]">
-                    <div>• <strong>본 건물 주차장:</strong> 건물 내 기계식 주차장 완비 (일반 승용차 무료 주차 지원)</div>
-                    <div>• <strong>대형차/SUV 주차:</strong> 차량 크기로 기계식 진입이 어려우신 경우, 인근 제휴 및 공영주차장 이용 시 주차비를 전액 지원해 드립니다.</div>
-                    <div>• <strong>네비게이션 검색:</strong> '해아림한의원 인천부평점' 또는 '경원대로 1412' 검색</div>
-                  </div>
-                </div>
-
+              <!-- 하단 길찾기 팁 박스 -->
+              <div class="p-3 rounded-2xl bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] text-xs leading-relaxed flex items-start gap-2">
+                <i class="fa-solid fa-lightbulb text-amber-600 mt-0.5 shrink-0"></i>
+                <div><strong>도보 길찾기 팁:</strong> 복잡한 지하상가 대신 지상 <strong>부평역 7번 출구(북광장)</strong>로 나오시면 가장 쉽고 빠르게 찾아오실 수 있습니다.</div>
               </div>
             </div>
 
-            <!-- [우측 영역] 전화번호 & 진료시간 안내 (참조 이미지와 동일) -->
-            <div class="space-y-4">
-              <!-- 전화번호 헤더 -->
-              <div class="flex items-center gap-2 text-base sm:text-lg font-bold text-[#111827]">
-                <i class="fa-solid fa-phone text-[#202947] text-base"></i>
-                <a href="tel:032-719-3472" class="hover:text-[#202947] transition">032-719-3472</a>
+            <!-- [우측 카드] 진료시간 & 예약 안내 -->
+            <div class="bg-white rounded-3xl border border-[#DDE6E1] p-6 sm:p-7 shadow-sm flex flex-col justify-between space-y-6">
+              <!-- 헤더 -->
+              <div class="flex items-center justify-between border-b border-[#F1F5F4] pb-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-10 h-10 rounded-2xl bg-[#EAF3EF] text-[#2F5D50] flex items-center justify-center text-lg shadow-inner">
+                    <i class="fa-regular fa-clock"></i>
+                  </div>
+                  <div>
+                    <h2 class="text-base sm:text-lg font-extrabold text-[#202947]">진료시간 & 예약 안내</h2>
+                    <p class="text-xs text-[#64748B]">월·수·금 저녁 8시 야간진료 | 토·공휴일 연속진료</p>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-2.5 py-1 rounded-full">사전 예약제</span>
               </div>
 
-              <!-- 진료시간 섹션 -->
+              <!-- 전화번호 바로걸기 바 -->
+              <div class="p-3.5 rounded-2xl bg-[#F8FAF9] border border-[#E2EAE5] flex items-center justify-between gap-3">
+                <div class="space-y-0.5">
+                  <div class="text-[11px] font-bold text-[#64748B]">대표 전화 및 예약 문의</div>
+                  <a href="tel:032-719-3472" class="text-lg font-extrabold text-[#202947] hover:text-[#2F5D50] transition">032-719-3472</a>
+                </div>
+                <a href="tel:032-719-3472" class="text-xs font-bold bg-[#2F5D50] text-white hover:bg-[#202947] px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-xs shrink-0">
+                  <i class="fa-solid fa-phone text-[10px]"></i>
+                  <span>전화걸기</span>
+                </a>
+              </div>
+
+              <!-- 진료시간 테이블 -->
+              <div class="space-y-1.5 text-xs sm:text-sm">
+                <!-- 월/수/금 야간진료 -->
+                <div class="flex items-center justify-between p-2 rounded-xl bg-[#EAF3EF] text-[#2F5D50] font-extrabold">
+                  <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#2F5D50]"></span>
+                    월 · 수 · 금 <span class="text-[11px] font-normal opacity-90">(야간진료)</span>
+                  </span>
+                  <span class="tracking-tight">10:00 - 20:00</span>
+                </div>
+
+                <!-- 화요일 -->
+                <div class="flex items-center justify-between p-2 rounded-xl text-[#334155] font-medium hover:bg-[#F8FAF9]">
+                  <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#CBD5E1]"></span>
+                    화요일 <span class="text-[11px] text-[#64748B]">(주간진료)</span>
+                  </span>
+                  <span class="font-bold text-[#1E293B] tracking-tight">10:00 - 19:00</span>
+                </div>
+
+                <!-- 목요일 정기휴진 -->
+                <div class="flex items-center justify-between p-2 rounded-xl text-[#94A3B8] font-medium hover:bg-[#F8FAF9]">
+                  <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#CBD5E1]"></span>
+                    목요일
+                  </span>
+                  <span class="text-xs font-bold text-[#D97706] bg-[#FEF3C7] px-2 py-0.5 rounded-md">정기휴진</span>
+                </div>
+
+                <!-- 토요일 연속진료 -->
+                <div class="flex items-center justify-between p-2 rounded-xl bg-[#F8FAF9] text-[#1E293B] font-bold">
+                  <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#202947]"></span>
+                    토요일 <span class="text-[11px] text-[#2F5D50] font-semibold">(점심시간 없음)</span>
+                  </span>
+                  <span class="tracking-tight">09:00 - 15:00</span>
+                </div>
+
+                <!-- 공휴일 연속진료 -->
+                <div class="flex items-center justify-between p-2 rounded-xl text-[#334155] font-medium hover:bg-[#F8FAF9]">
+                  <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#CBD5E1]"></span>
+                    공휴일 <span class="text-[11px] text-[#2F5D50] font-semibold">(점심시간 없음)</span>
+                  </span>
+                  <span class="font-bold text-[#1E293B] tracking-tight">09:00 - 13:00</span>
+                </div>
+
+                <!-- 일요일 정기휴진 -->
+                <div class="flex items-center justify-between p-2 rounded-xl text-[#94A3B8] font-medium hover:bg-[#F8FAF9]">
+                  <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#CBD5E1]"></span>
+                    일요일
+                  </span>
+                  <span class="text-xs font-bold text-[#DC2626] bg-[#FEE2E2] px-2 py-0.5 rounded-md">정기휴진</span>
+                </div>
+              </div>
+
+              <!-- 안내 각주 & 예약 바로가기 버튼 그룹 -->
               <div class="space-y-3">
-                <div class="flex items-center gap-2 font-bold text-sm sm:text-base text-[#111827]">
-                  <i class="fa-regular fa-clock text-[#202947]"></i>
-                  <span>진료시간 안내</span>
+                <div class="p-2.5 rounded-xl bg-[#F0F9FF] border border-[#BAE6FD] text-[11px] text-[#0369A1] flex items-center gap-1.5">
+                  <i class="fa-solid fa-circle-info shrink-0"></i>
+                  <span>평일 점심시간(13:00~14:00) / 사전 예약제로 대기시간을 최소화합니다.</span>
                 </div>
 
-                <!-- 시간 목록 (균등 정렬) -->
-                <div class="space-y-2.5 text-xs sm:text-sm text-[#334155] pl-6 font-medium">
-                  <div class="flex justify-between items-center max-w-[340px] p-2 rounded-lg bg-[#EAF3EF] font-bold text-[#2F5D50]">
-                    <span>월요일 / 수요일 / 금요일 (야간)</span>
-                    <span>10:00 - 20:00</span>
-                  </div>
-                  <div class="flex justify-between items-center max-w-[340px]">
-                    <span>화 &nbsp; 요 &nbsp; 일</span>
-                    <span class="font-bold text-[#111827]">10:00 - 19:00</span>
-                  </div>
-                  <div class="flex justify-between items-center max-w-[340px] text-[#A67C1E]">
-                    <span>목 &nbsp; 요 &nbsp; 일</span>
-                    <span class="font-bold">정기 휴진</span>
-                  </div>
-                  <div class="flex justify-between items-center max-w-[340px] p-2 rounded-lg bg-[#F8FAF9] font-bold text-[#26332E]">
-                    <span>토 &nbsp; 요 &nbsp; 일 (연속진료)</span>
-                    <span>09:00 - 15:00</span>
-                  </div>
-                  <div class="flex justify-between items-center max-w-[340px]">
-                    <span>공 &nbsp; 휴 &nbsp; 일 (연속진료)</span>
-                    <span class="font-bold text-[#111827]">09:00 - 13:00</span>
-                  </div>
-                  <div class="flex justify-between items-center max-w-[340px] text-red-600">
-                    <span>일 &nbsp; 요 &nbsp; 일</span>
-                    <span class="font-bold">정기 휴진</span>
-                  </div>
-                </div>
-
-                <!-- 안내 각주 (하늘색/청록색 포인트) -->
-                <div class="pt-3 pl-6 space-y-1 text-xs text-[#0284C7] font-semibold">
-                  <div>* 토요일 / 공휴일은 점심시간 없이 진료합니다.</div>
-                  <div class="text-[#64748B]">* 평일 점심시간: 13:00 - 14:00</div>
-                  <div>* 예약제를 통해 대기 시간을 최소화하고 있습니다.</div>
-                </div>
-
-                <!-- 예약 바로가기 버튼 그룹 -->
-                <div class="pt-4 pl-6 flex flex-wrap gap-2.5">
-                  <a href="https://booking.naver.com/booking/13/bizes/934695" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-[#03C75A] text-white text-xs font-extrabold hover:bg-[#02B150] transition shadow flex items-center gap-1.5">
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="https://booking.naver.com/booking/13/bizes/934695" target="_blank" rel="noopener" class="py-2.5 px-3 rounded-xl bg-[#03C75A] text-white text-xs font-extrabold hover:bg-[#02B150] transition shadow-xs flex items-center justify-center gap-1.5">
                     <i class="fa-solid fa-calendar-check"></i>
                     <span>네이버 간편예약</span>
                   </a>
-                  <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-[#FEE500] text-[#191919] text-xs font-extrabold hover:bg-[#FDD835] transition shadow flex items-center gap-1.5">
+                  <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="py-2.5 px-3 rounded-xl bg-[#FEE500] text-[#191919] text-xs font-extrabold hover:bg-[#FDD835] transition shadow-xs flex items-center justify-center gap-1.5">
                     <i class="fa-solid fa-comment"></i>
                     <span>카톡 1:1 상담</span>
                   </a>

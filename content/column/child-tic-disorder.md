@@ -1,95 +1,223 @@
 ---
-title: "[시흥 배곧 소아 틱장애 한의원] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 안정과 부모 양육 코칭"
-summary: "아이의 틱 증상은 나쁜 버릇이 아닙니다. 뇌 기저핵의 운동 억제 회로 미성숙 원인과 부모의 현명한 양육 대처법, 순한 천연 소아 한약 치료 원리"
-date: "2026-08-17"
+title: "[인천 부평 소아틱] 왜 틱은 눈에서 시작해 코, 입, 목으로 내려갈까요? 소아 틱장애 진행 원리와 대처법"
+summary: "인천 부평, 부천, 구월동, 청라 등 인근 지역에서 소아 틱장애로 고심하는 부모님을 위한 권형근 원장의 기저핵 발달, FCST 턱관절·경추 균형 치료 및 양육 가이드"
+date: "2026-08-20"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-tags: ["시흥틱장애한의원", "배곧소아한의원", "소아틱장애", "음성틱치료", "뚜렛증후군", "부모양육법"]
+tags: ["부평틱장애","인천소아틱장애","부천틱장애","기저핵","소아신경정신과","FCST","억간산","부모양육가이드"]
 ---
 
-> &ldquo;아이가 자꾸 눈을 세게 깜빡이고 '음음' 소리를 내서 '참아봐라, 하지 마라'고 혼을 냈더니 틱이 더 심해졌습니다.&rdquo;  
-> &ldquo;혹시 이게 평생 가는 뚜렛증후군이 될까 봐 밤마다 가슴이 무너집니다. 한의원 치료로 좋아질 수 있나요?&rdquo;
+<div class="voice-box">
+  <div class="voice-line">처음에는 눈에 뭐가 들어간 줄 알고 안과만 몇 달을 다녔어요.</div>
+  <div class="voice-line">하지 말라고 주의를 주었더니 눈 깜빡임이 코 찡긋거림과 고개 꺾기로 번졌어요.</div>
+  <div class="voice-line">혹시 제가 아이를 너무 엄하게 키워서 병이 난 건 아닐까요?</div>
+</div>
 
-진료실에서 아이 손을 잡고 눈물을 흘리시는 부모님들을 만날 때마다 제가 가장 먼저 강조해 드리는 말씀은 **"어머님, 아버님의 잘못도 아니고 아이의 나쁜 버릇도 아닙니다"**라는 것입니다.
+진료실에서 아이 손을 잡고 들어오시는 부모님들이 가장 많이 하시는 말씀입니다. 처음에는 눈을 몇 번 깜빡이다가 코를 킁킁거리고, 입을 씰룩거리다 고개를 꺾기 시작합니다.
 
-### 1. 틱장애의 신경학적 원인: 뇌 기저핵의 미성숙
+부모님은 "내가 잘못 키워서 그런가" 자책하시지만, 틱은 아이의 나쁜 버릇도 부모님의 잘못도 아닙니다. **뇌에서 만들어지는 운동 신호를 걸러내는 필터(기저핵)가 아직 성숙하지 못해 밖으로 튀어나오는 생리적 현상**입니다.
 
-우리의 뇌 속 **기저핵(Basal Ganglia)**은 몸에서 일어나는 수많은 운동 신호 중 불필요한 움직임을 걸러내고 억제하는 정밀 필터 역할을 합니다.
+<div class="toc">
+  <div class="toc-title">📋 이 칼럼에서 다루는 핵심 내용</div>
+  <ol>
+    <li>틱이 항상 눈에서 시작해 아래로 내려가는 신경학적 이유</li>
+    <li>진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호</li>
+    <li>국내외 임상 연구와 한의학적 치료 보고</li>
+    <li>한의학에서 바라보는 환자별 3대 맞춤 체질 유형</li>
+    <li>두뇌 발달과 감각 통합을 돕는 NeuronFlex & IM 두뇌 훈련 솔루션</li>
+    <li>환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)</li>
+  </ol>
+</div>
 
-틱장애는 이 기저핵의 운동 억제 회로가 아직 완전히 발달하지 않아, 억제되지 못한 신호가 눈 깜빡임, 코 찡긋거림, 고개 꺾기(운동틱), 헛기침, 음음 소리(음성틱) 형태로 밖으로 튀어나오는 **불수의적(의지와 무관한) 신경 반응**입니다.
+<div class="section-label">핵심 병리 기전 01</div>
 
-### 2. 부모님이 반드시 지켜야 할 3대 양육 수칙
+## 틱이 항상 눈에서 시작해 아래로 내려가는 신경학적 이유
 
-1. **절대 지적하거나 나무라지 마세요**:  
-   지적을 받으면 아이는 틱을 억지로 참으려 애쓰고, 이로 인해 뇌 기저핵에 극심한 긴장성 압력이 쌓여 나중에 폭발적으로 증상이 악화됩니다.
-2. **틱 증상을 모르는 척 무시해 주세요**:  
-   틱에 집중하지 말고 아이가 좋아하는 놀이나 대화로 자연스럽게 주의를 전환시켜 줍니다.
-3. **스마트폰과 자극적 미디어를 엄격히 제한하세요**:  
-   빠른 화면 전환과 게임의 시각적 자극은 뇌 도파민 회로를 과흥분시켜 틱을 악화시키는 주범입니다.
-
-### 3. 해아림의 순하고 안전한 소아 한방 치료
-
-해아림한의원 인천부평점은 성장기 아이의 두뇌 발달을 돕는 순한 천연 치료를 원칙으로 합니다:
-
-* **순한 천연 맞춤 한약**: 성장기 아이의 뇌 발달을 저해하지 않고 간화(肝火)를 내리며 기저핵 신경망을 성숙시키는 천연 한약재 처방.
-* **무통 소아 자침 & 뜸 치료**: 아프지 않은 무통 자침으로 두부 경혈을 자극하여 뇌 신경 이완을 유도합니다.
-* **시청지각 훈련 & 소뇌 훈련**: 두뇌 좌우 밸런스를 바로잡는 통합 뇌 훈련을 병행합니다.
-
-### 4. 진료실 자주 묻는 질문 (FAQ)
-
-<div class="space-y-3.5 my-6 not-prose">
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q1</span>
-      <span>아이의 틱 증상을 지적하거나 하지 말라고 주의를 주면 안 되나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      틱은 아이의 의지로 조절할 수 없는 뇌 기저핵의 운동 조절 미성숙 반응입니다. 틱 증상을 지적하거나 혼내면 아이의 뇌 스트레스와 불안이 가중되어 증상이 오히려 심해지므로 모르는 척 자연스럽게 넘겨주시는 것이 가장 중요합니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q2</span>
-      <span>눈 깜빡임에서 음성 틱(헛기침, 킁킁거림)으로 번졌는데 뚜렛증후군인가요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      단순 운동 틱이 음성 틱으로 진행되는 양상을 보일 때 조기 치료가 매우 중요합니다. 운동 틱과 음성 틱이 모두 나타나 1년 이상 지속될 때 뚜렛증후군으로 진단하므로, 음성 틱이 시작되는 초기 단계에 뇌 신경계 안정을 돕는 한방 치료를 시작하는 것이 유리합니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q3</span>
-      <span>어린 아이가 한약을 먹기에 쓰거나 부담스럽지 않나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      소아 틱장애 맞춤 한약은 쓴맛을 줄이고 아이의 연령과 복용 순응도에 맞춰 순하고 부드러운 천연 한약재로 맞춤 탕전됩니다. 소화 흡수에 부담이 없어 어린아이들도 수월하게 복용할 수 있습니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q4</span>
-      <span>스마트폰, 태블릿 영상 시청이 틱 증상을 악화시키나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      네, 전자기기의 빠른 시각 자극과 도파민 과분비는 뇌 기저핵과 전두엽을 과흥분시켜 틱 증상을 뚜렷하게 악화시킵니다. 치료 기간 동안에는 화면 시청 시간을 엄격히 제한하고 자연 속 야외 활동을 늘려주셔야 합니다.
-    </p>
-  </div>
-  <div class="p-4 sm:p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-1.5">
-    <div class="font-extrabold text-sm sm:text-base text-[#2F5D50] flex items-start gap-2">
-      <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold mt-0.5 shrink-0">Q5</span>
-      <span>소아 틱장애의 평균 치료 기간과 검사는 어떻게 되나요?</span>
-    </div>
-    <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-7">
-      증상의 발현 시기와 양상에 따라 차이가 있으나, 보통 ～개월 내에 눈 깜빡임이나 헛기침 빈도가 50% 이상 감소하며, ～개월 치료를 통해 뇌 신경망의 자생적 성숙을 완성하여 재발을 방지합니다. 뇌파 검사, 적외선 체열 검사, 간이정신진단검사를 통해 두뇌 밸런스를 정밀 진단합니다.
-    </p>
+<div class="my-6 p-4 sm:p-5 bg-[#F2F7F4] rounded-2xl border border-[#DDE6E1] not-prose">
+  <div class="text-xs font-bold text-[#2F5D50] mb-3 text-center">📊 틱 증상의 일반적인 하행성(下行性) 진행 순서</div>
+  <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">눈 깜빡임</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">코 찡긋</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">입 씰룩/벌림</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">목 꺾기/돌리기</span>
+      <i class="fa-solid fa-arrow-right text-[#2F5D50] text-xs"></i>
+      <span class="bg-[#202947] text-white px-3 py-1.5 rounded-xl font-semibold shadow-sm">어깨 들썩임</span>
   </div>
 </div>
 
-### 5. 부모님을 위한 일상 관리 수칙
+근육 틱은 대부분 얼굴, 그중에서도 **'눈'**에서 시작하여 점차 코, 입, 목, 어깨, 몸통으로 내려가는 하행성(Cephalo-caudal) 패턴을 보입니다.
 
-* **스마트폰/태블릿 스크린 타임 줄이기**: 강한 시각적 자극은 뇌 도파민을 과도하게 분비시켜 틱을 악화시킵니다.
-* **충분한 수면과 야외 활동**: 햇볕을 쬐며 땀 흘리는 가벼운 운동은 뇌 긴장 완화에 큰 도움이 됩니다.
-* **아이에 대한 무조건적 지지와 칭찬**: 틱 행동에 반응하지 마시고 아이의 사소한 성취를 자주 칭찬해 주세요.
+우연이 아닙니다. 이 부위들은 모두 **뇌간에서 나오는 뇌신경(Cranial Nerve)의 직접적인 지배**를 받는 영역입니다. 눈(동안·활차·외전신경), 얼굴 표정(안면신경), 목과 어깨(부신경)가 머리뼈와 상부 경추(목뼈 1·2번)를 통과하여 연결됩니다.
 
-> **권형근 대표원장의 조언**:  
-> "부모님의 따뜻한 지지와 조기 한방 치료가 결합되면 아이의 두뇌는 건강하게 균형을 되찾을 수 있습니다. 혼자 속태우지 마시고 편안하게 상담을 받아보세요."
+따라서 뇌 기저핵의 도파민 조절 미성숙과 더불어 **상부 경추와 턱관절 주변의 신경 압박이 지속적인 신경 흥분 신호를 전달**할 때 틱 증상이 아래로 번져나갈 위험이 높아집니다.
+
+---
+
+<div class="section-label">진료실 현장 관찰 02</div>
+
+## 진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호
+
+진료실에 찾아오시는 많은 환자분들과 보호자분들은 '내가 왜 이런 증상을 겪게 되었는지' 단순히 최근의 과도한 스트레스나 피로 때문이라고만 생각하십니다. 
+
+하지만 임상 현장에서 맥진(脈診), 설진(舌診), 자율신경 검사(HRV), 그리고 체형·구조 진단을 함께 진행해보면, 스트레스 이전부터 몸의 균형을 서서히 무너뜨리고 있던 여러 가지 생활 속 신호들을 발견하게 됩니다.
+
+<div class="my-6 p-5 bg-[#FAFBF9] rounded-2xl border border-[#E2EAE5] space-y-3 not-prose">
+  <div class="font-extrabold text-[#2F5D50] text-sm sm:text-base flex items-center gap-2">
+    <i class="fa-solid fa-stethoscope text-[#2F5D50]"></i>
+    <span>진료실에서 스트레스 외에 함께 여쭤보는 질문들</span>
+  </div>
+  <ul class="space-y-2 text-xs sm:text-sm text-[#4E6159] pl-1 list-none m-0">
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>평소 잘 때 이를 꽉 물거나 이갈이를 하나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>음식을 한쪽 턱으로만 씹는 편인가요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>스마트폰을 볼 때 목을 앞으로 쭉 빼거나 엎드려서 보나요?</span></li>
+      <li class="flex items-start gap-2"><span class="text-[#2F5D50] font-bold">✓</span><span>아침에 일어났을 때 목이나 어깨가 뻣뻣하다고 하나요?</span></li>
+  </ul>
+</div>
+
+위의 문항들은 단순한 신체 습관이 아니라, **뇌신경계와 자율신경계가 만성적인 과부하 상태에 놓여 있음을 알리는 몸의 SOS 신호**입니다. 이러한 신호들이 누적되면 신경 전달 물질의 불균형이 가속화되고 뇌의 자율 조절 능력이 저하되어 증상이 만성화되기 쉽습니다.
+
+---
+
+<div class="section-label">학술 연구 & 임상 근거 03</div>
+
+## 국내외 임상 연구와 한의학적 치료 보고
+
+한의학적 뇌신경 치료는 단순히 주관적인 느낌이나 경험에만 의존하지 않습니다. 최근 국내외 학계에서는 한약 처방의 신경 보호 효과, 침구 치료의 뇌혈류 개선, 그리고 턱관절 및 상부 경추 구조 치료가 뇌간 신경망에 미치는 영향에 대한 객관적인 임상 연구와 증례 보고들이 꾸준히 발표되고 있습니다.
+
+<div class="my-6 p-5 bg-white rounded-2xl border-2 border-[#2F5D50]/30 shadow-sm space-y-3 not-prose">
+  <div class="text-xs font-extrabold text-[#2F5D50] tracking-wider uppercase flex items-center gap-1.5">
+    <i class="fa-solid fa-book-medical"></i>
+    <span>임상 연구 및 학술 보고</span>
+  </div>
+  <div class="space-y-2">
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>기능적 뇌척주요법(FCST) 및 한방 복합 치료를 통한 운동틱·음성틱 빈도 감소 증례 보고</span></div>
+      <div class="flex items-start gap-2 text-xs sm:text-sm text-[#26332E] font-medium"><span class="text-[#2F5D50]">📄</span><span>YGTSS(예일 틱 증상 평가척도) 점수 유의미 호전 및 재발률 억제 확인</span></div>
+  </div>
+  <div class="pt-3 mt-3 border-t border-dashed border-[#DDE6E1] text-xs text-[#68736E] leading-relaxed italic">
+    💡 틱장애는 단순 심리 질환이 아니므로, 신경계 흥분을 유발하는 신체 구조적 긴장과 두뇌 발달 환경을 함께 평가하는 것이 임상적으로 매우 유효합니다.
+  </div>
+</div>
+
+이러한 임상 연구들이 시사하는 바는 명확합니다. 증상을 단순히 화학적으로 억누르는 일시적인 대증요법을 넘어, **신경계의 자생력을 키우고 구조적 신경 압박을 해소할 때 장기적인 치료 호전율이 높아지고 치료 종료 후에도 재발 위험을 현저히 낮출 수 있다는 점**입니다.
+
+---
+
+<div class="section-label">맞춤 한의학 변증 04</div>
+
+## 한의학에서 바라보는 환자별 3대 맞춤 체질 유형
+
+한의학 치료의 가장 큰 강점은 같은 진단명을 가진 환자라도 각자의 체질적 취약점과 병리적 원인을 정밀하게 분류하여 맞춤 처방을 적용한다는 점입니다. 
+
+사람마다 심장이 약해 불안을 느끼는 경우, 간열(肝熱)이 치솟아 흥분하는 경우, 비위가 허약해 기운이 바닥난 경우가 모두 다릅니다.
+
+<div class="grid grid-cols-1 gap-4 my-6 not-prose">
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">⚡</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">간풍내동(肝風內動)형 – 긴장·흥분도가 높은 아이</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        승부욕이 강하고 예민하며, 화가 나거나 긴장하면 눈 깜빡임과 목 꺾기가 폭발적으로 심해지는 유형입니다. 간의 열과 풍(風)을 가라앉히는 억간산(抑肝散) 계열로 뇌 흥분을 진정시킵니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🌙</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">심담허겁(心膽虛怯)형 – 겁이 많고 잠투정이 심한 아이</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        작은 소리에도 깜짝 놀라고 어두운 곳을 무서워하며 깊은 잠을 못 자는 유형입니다. 심장과 담력을 보강하고 뇌 신경망을 안정시키는 온담탕(溫膽湯) 가감방을 처방합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-[#F9FAF8] rounded-2xl border border-[#E2EAE5] space-y-2">
+      <div class="flex items-center gap-2.5">
+        <span class="text-xl">🍃</span>
+        <h3 class="font-extrabold text-sm sm:text-base text-[#202947] m-0">비위허약(脾胃虛弱)형 – 밥을 잘 안 먹고 피곤하면 심해지는 아이</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        체력이 약하고 식욕이 없으며 감기나 비염을 앓고 난 뒤 틱이 심해지는 유형입니다. 소화기를 튼튼히 하고 기혈을 북돋아 신경계의 자생적 조절 여력을 키워줍니다.
+      </p>
+    </div>
+</div>
+
+따라서 치료 시에는 획일적인 처방이 아닌, 환자 개개인의 맥과 혀, 신체 상태를 종합적으로 진찰하여 **뇌의 과흥분을 가라앉히고 오장육부의 균형을 맞춰주는 1:1 맞춤 한약**을 처방합니다.
+
+---
+
+<div class="section-label">해아림 통합 치료 솔루션 05</div>
+
+## 두뇌 발달과 감각 통합을 돕는 NeuronFlex & IM 두뇌 훈련 솔루션
+
+소아청소년의 뇌는 지금 이 순간에도 빠르게 성장하고 변화하는 과정에 있습니다. 따라서 단순히 신경전달물질을 억제하는 약물 치료에만 의존하기보다는, 두개천골계(CST)를 이완하여 뇌척수액 순환을 돕고 NeuronFlex 뉴로피드백 및 IM(Interactive Metronome) 감각통합 타이밍 훈련을 병행하여 아이 스스로 뇌 억제 브레이크를 튼튼하게 키울 수 있도록 돕습니다.
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
+    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
+      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
+        <span class="text-xs font-bold text-[#B4C2DC]">두뇌 훈련 01</span>
+        <span class="text-xs font-extrabold">NeuronFlex 뉴로피드백 & IM 감각통합 훈련</span>
+      </div>
+      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+        실시간 뇌파 피드백과 밀리초(ms) 단위 타이밍 감각통합 훈련을 통해 뇌 기저핵과 전두엽의 자율 억제 회로를 강화하여, 틱의 전조 충동을 스스로 조절할 수 있도록 돕습니다.
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl border border-[#DDE6E1] overflow-hidden shadow-sm flex flex-col justify-between">
+      <div class="bg-[#202947] p-3.5 px-4 flex items-center justify-between text-white">
+        <span class="text-xs font-bold text-[#B4C2DC]">구조 치료 02</span>
+        <span class="text-xs font-extrabold">CST 두개천골요법 & 무통 소아 침구</span>
+      </div>
+      <div class="p-4 sm:p-5 text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+        머리뼈(두개골) 봉합부와 천골의 경막 긴장을 부드럽게 이완하여 뇌척수액 순환을 원활하게 돕고 과열된 중추신경계를 자연스럽게 안정시킵니다.
+      </div>
+    </div>
+</div>
+
+이처럼 아이의 체질에 맞춘 순한 한약 치료와 첨단 IM 감각통합·뉴로피드백 훈련이 조화를 이룰 때, 정서적 안정은 물론 학습 집중력과 자존감까지 함께 회복됩니다.
+
+---
+
+<div class="section-label">진료실 자주 묻는 질문 06</div>
+
+## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
+
+<div class="space-y-4 my-6 not-prose">
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
+        <span>틱 증상이 보일 때 "하지 마라"고 참으라고 하면 왜 더 심해지나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        틱을 하기 직전 아이는 해당 부위에 간질거리거나 뻐근한 **"전조 충동(Premonitory Urge)"**을 느낍니다. 억지로 참으라고 강요하면 뇌 기저핵에 극심한 압력이 누적되어, 잠시 참은 뒤 나중에 2~3배 더 크고 격렬한 틱으로 폭발하게 됩니다. 지적하지 마시고 자연스럽게 주의를 돌려주시는 것이 핵심입니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
+        <span>스마트폰 영상이나 게임이 틱을 악화시키는 게 사실인가요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        네, 명확한 상관관계가 있습니다. 전자기기의 빠른 시각 프레임 전환과 화려한 자극은 뇌의 도파민 분비를 과도하게 촉발하여 기저핵을 과흥분시킵니다. 또한 고개를 푹 숙인 자세는 상부 경추에 큰 하중을 주어 뇌신경을 자극하므로 스크린 타임을 엄격히 조절해야 합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
+        <span>소아정신과 약(양약)을 먹고 있는데 한방 치료를 병행해도 되나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        네, 안전하게 병행할 수 있습니다. 양약이 당장 신경전달물질 수용체를 차단해 증상을 억누르는 역할을 한다면, 한방 치료는 아이 스스로 뇌 신경망을 성숙시키고 체질적 불균형을 바로잡는 역할을 합니다. 한방 치료를 통해 뇌 자생력이 올라가면 주치의와 상의하여 양약을 서서히 줄여갈 수 있습니다.
+      </p>
+    </div>
+</div>
+
+<div class="my-8 p-6 sm:p-8 bg-gradient-to-br from-[#1B233D] to-[#2B3A60] rounded-2xl text-white text-center space-y-3 not-prose">
+  <div class="text-xs font-bold text-[#B4C2DC] tracking-wider uppercase">Doctor's Clinical Insight</div>
+  <p class="text-sm sm:text-base text-[#E2E8F5] leading-relaxed max-w-2xl mx-auto font-medium m-0">
+    "아이의 틱은 아이가 일부러 하는 장난도, 부모님의 양육 실패도 아닙니다. 아이의 신경계가 편안하게 성숙할 수 있도록 따뜻한 기다림과 체계적인 한방 치료 환경을 함께 만들어주세요."
+  </p>
+  <div class="pt-2 text-xs text-[#9AAFD2]">
+    해아림한의원 인천부평점 대표원장 권형근 (한방침구과 전문의)
+  </div>
+</div>

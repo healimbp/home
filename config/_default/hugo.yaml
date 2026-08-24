@@ -98,6 +98,9 @@ outputs:
 
 build:
   writeStats: true
+buildFuture: true
+buildDrafts: false
+buildExpired: false
 enableGitInfo: false
 summaryLength: 30
 pagination:

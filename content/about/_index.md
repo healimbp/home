@@ -225,6 +225,143 @@ sections:
             </div>
           </div>
 
+          <!-- 5. 첨단 비약물 두뇌 훈련 & 감각통합 센터 (NeuronFlex & IM) -->
+          <div class="space-y-10">
+            <div class="text-center space-y-3 max-w-3xl mx-auto">
+              <span class="heal-hero-badge">Advanced Brain Training & Sensory Integration</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E]">
+                첨단 뉴로피드백 & IM 감각통합 두뇌 훈련 센터
+              </h2>
+              <p class="text-xs sm:text-sm text-[#68736E] leading-relaxed">
+                해아림한의원 인천부평점은 뇌파를 스스로 조절하는 <strong>NeuronFlex 뉴로피드백</strong>과 1/1,000초 신경 타이밍을 동기화하는 <strong>IM(인터랙티브 메트로놈) 감각통합 훈련</strong>을 유기적으로 결합하여, 약물 부작용 없이 두뇌의 자생력과 억제 조절력을 극대화합니다.
+              </p>
+            </div>
+
+            <!-- 1. NeuronFlex 장비 상세 소개 카드 -->
+            <div class="bg-gradient-to-br from-[#F4F8F6] to-[#EAF3EF] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#DDE6E1] shadow-sm space-y-8">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4 text-left">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2F5D50] text-white text-xs font-bold">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>장비 01 · 뇌파 조절 & 자율신경 안정</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E] leading-snug">
+                    스스로 뇌파를 조절하여 두뇌 자생력을 깨우는<br class="hidden sm:inline" />
+                    <span class="text-[#2F5D50]">NeuronFlex(뉴런플렉스) 뉴로피드백</span>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+                    뉴로피드백(Neurofeedback)은 실시간 뇌파(EEG)와 자율신경 생체신호를 컴퓨터 화면으로 피드백하여, <strong>불안정하고 과각성된 뇌파(세타파·하이베타파)는 억제하고 주의집중 및 심신 안정에 필요한 유익한 뇌파(SMR파·알파파)를 스스로 강화하도록 훈련</strong>하는 최첨단 두뇌 훈련 시스템입니다.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>약물 부작용 없는 안전한 훈련</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">아동부터 성인까지 거부감 없이 게임과 멀티미디어를 통해 재미있게 훈련합니다.</p>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>지속적인 두뇌 회로 강화</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">일시적 억제가 아닌 뇌 신경망 가소성(Neuroplasticity)을 유도하여 효과가 오래 지속됩니다.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5 space-y-3">
+                  <div class="bg-white p-5 rounded-2xl border border-[#DDE6E1] shadow-sm space-y-3">
+                    <div class="text-xs font-extrabold text-[#2F5D50] border-b border-[#F2F7F4] pb-2 flex items-center justify-between">
+                      <span>NeuronFlex 주요 임상 적용 분야</span>
+                      <span class="text-[10px] text-[#68736E]">1:1 맞춤 프로토콜</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-[#3D4D47]">
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">ADHD</span>
+                        <span><strong>주의력 결핍 & 충동성 조절:</strong> 전두엽 활성화를 통한 집중력 및 실행기능 향상</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">틱·뚜렛</span>
+                        <span><strong>기저핵 불수의적 운동 억제:</strong> 감각 전조 충동 조절 및 뇌 브레이크 강화</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">불면증</span>
+                        <span><strong>수면 뇌파 유도:</strong> 뇌 디폴트모드네트워크(DMN) 과각성 차단 및 숙면 유도</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">공황·불안</span>
+                        <span><strong>자율신경 이완 바이오피드백:</strong> 편도체 흥분 완화 및 심박 안정화</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. IM (Interactive Metronome) 장비 상세 소개 카드 -->
+            <div class="bg-gradient-to-br from-[#FAFBF9] to-[#F2F7F4] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#DDE6E1] shadow-sm space-y-8">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4 text-left">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#202947] text-white text-xs font-bold">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span>장비 02 · 1/1,000초 신경 타이밍 동기화</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-extrabold text-[#26332E] leading-snug">
+                    뇌의 타이밍과 리듬 감각을 바로잡는<br class="hidden sm:inline" />
+                    <span class="text-[#2F5D50]">IM (Interactive Metronome) 감각통합 훈련</span>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed">
+                    <strong>IM (인터랙티브 메트로놈)</strong>은 1/1,000초(밀리초, ms) 단위의 정밀한 소리 비트와 시각 피드백을 통해 손과 발의 움직임을 동기화시키는 <strong>신경학적 감각통합 및 타이밍 조절 훈련 시스템</strong>입니다. 뇌 신경망의 정보 처리 속도와 타이밍 오차를 실시간으로 교정하여 두뇌의 집중 지속력과 충동 억제력을 비약적으로 끌어올립니다.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>소아/성인 ADHD 집중력 극대화</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">산만함을 줄이고 작업기억력(Working Memory)과 과제 지속 수행력을 강화합니다.</p>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-xl border border-[#DDE6E1] space-y-1">
+                      <div class="font-bold text-xs text-[#202947] flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-[#2F5D50]"></i>
+                        <span>틱장애 운동 억제 회로 동기화</span>
+                      </div>
+                      <p class="text-[11px] text-[#68736E]">기저핵-소뇌-전두엽을 연결하는 운동 제어 회로의 타이밍을 정밀 조절합니다.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5 space-y-3">
+                  <div class="bg-white p-5 rounded-2xl border border-[#DDE6E1] shadow-sm space-y-3">
+                    <div class="text-xs font-extrabold text-[#2F5D50] border-b border-[#F2F7F4] pb-2 flex items-center justify-between">
+                      <span>IM 감각통합 주요 임상 적용 분야</span>
+                      <span class="text-[10px] text-[#68736E]">1:1 맞춤 프로토콜</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-[#3D4D47]">
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">ADHD</span>
+                        <span><strong>집중 지속력 & 작업기억력:</strong> 시청각 자극에 대한 반응 오차 교정 및 주의력 향상</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">틱·뚜렛</span>
+                        <span><strong>운동 신경 동기화:</strong> 불수의적 신체 충동을 억제하고 정밀 타이밍 제어 능력 형성</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">학습장애</span>
+                        <span><strong>정보 처리 속도 개선:</strong> 난독증, 언어 지연, 인지 처리 지연 개선 및 읽기 속도 향상</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="bg-[#EAF3EF] text-[#2F5D50] font-bold px-1.5 py-0.5 rounded text-[10px] shrink-0 mt-0.5">협응 장애</span>
+                        <span><strong>신체 균형 & 감각통합:</strong> 소뇌 기능 활성화를 통한 신체 조절력 및 정밀 협응성 회복</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Bottom CTA -->
           <div class="text-center pt-2 flex flex-wrap justify-center gap-4">
             <a href="https://booking.naver.com/booking/13/bizes/934695" target="_blank" rel="noopener" class="heal-btn heal-btn-naver">
