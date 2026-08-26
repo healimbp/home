@@ -39,26 +39,76 @@ sections:
                 공황 · 불안 & 강박증 <span class="text-[11px] opacity-80" id="tab-count-panic">(8)</span>
               </button>
               <button onclick="filterColumn('autonomic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80" id="tab-count-autonomic">(7)</span>
+                자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80" id="tab-count-autonomic">(8)</span>
               </button>
               <button onclick="filterColumn('insomnia', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                불면증 & 수면장애 <span class="text-[11px] opacity-80" id="tab-count-insomnia">(7)</span>
+                불면증 & 수면장애 <span class="text-[11px] opacity-80" id="tab-count-insomnia">(8)</span>
               </button>
               <button onclick="filterColumn('tic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                소아청소년 & 성인 ADHD·틱 <span class="text-[11px] opacity-80" id="tab-count-tic">(8)</span>
+                소아청소년 & 성인 ADHD·틱 <span class="text-[11px] opacity-80" id="tab-count-tic">(7)</span>
               </button>
               <button onclick="filterColumn('stress', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
                 우울증 · 화병 & 번아웃 <span class="text-[11px] opacity-80" id="tab-count-stress">(7)</span>
               </button>
               <button onclick="filterColumn('somatic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                신체화 & 담적·두통·턱관절 <span class="text-[11px] opacity-80" id="tab-count-somatic">(6)</span>
+                신체화 & 담적·두통·턱관절 <span class="text-[11px] opacity-80" id="tab-count-somatic">(5)</span>
               </button>
             </div>
 
             <!-- 칼럼 카드 그리드 (페이지별 8개씩 분할 노출) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[400px]" id="column-grid">
 
-              <!-- [칼럼 #1 | 공황 · 불안 & 강박증] [인천 계양구 공황] 문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법 -->
+              <!-- [칼럼 #1 | 불면증 · 수면장애] [부천 신경정신과] 불면증 치료, 수면제 내성 없이 뇌 자생력으로 깊은 잠드는 법 -->
+              <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">불면증 · 수면장애</span>
+                    <span class="text-xs text-[#68736E]">2026-08-26 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/bucheon-neuropsychiatry-insomnia/" class="hover:underline">
+                      [부천 신경정신과] 불면증 치료, 수면제 내성 없이 뇌 자생력으로 깊은 잠드는 법
+                    </a>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                    부천, 중동, 상동, 신중동 지역에서 불면증과 수면장애로 신경정신과 및 한의원 치료를 고민하는 분들을 위한 뇌신경계 원인 분석과 비약물적 1:1 맞춤 수면 치료 가이드입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 부천신경정신과 • 부천불면증</span>
+                  <a href="/column/bucheon-neuropsychiatry-insomnia/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- [칼럼 #2 | 자율신경 & 실신·어지럼증·이명] [인천 서구 어지럼증] 이비인후과·뇌 MRI 정상인데 붕 뜨고 흔들리는 어지럼증, 자율신경과 상부경추 한방 솔루션 -->
+              <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">자율신경 & 실신·어지럼증·이명</span>
+                    <span class="text-xs text-[#68736E]">2026-08-26 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/incheon-seogu-dizziness/" class="hover:underline">
+                      [인천 서구 어지럼증] 이비인후과·뇌 MRI 정상인데 붕 뜨고 흔들리는 어지럼증, 자율신경과 상부경추 한방 솔루션
+                    </a>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                    인천 서구(청라, 검단, 루원시티, 가정동) 지역에서 귀·뇌 검사상 이상 없는 비회전성 만성 어지럼증, 브레인포그, 이석증 후유증(PPPD)의 상부 경추 정렬 및 1:1 체질 맞춤 한방 치료법
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 인천서구어지럼증 • 청라어지럼증한의원</span>
+                  <a href="/column/incheon-seogu-dizziness/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- [칼럼 #3 | 공황 · 불안 & 강박증] [인천 계양구 공황] 문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -83,7 +133,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #2 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 매사 무기력하고 의욕이 사라진 만성 우울감, 장-뇌 축 개선과 해울 한방 치료 -->
+              <!-- [칼럼 #4 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 매사 무기력하고 의욕이 사라진 만성 우울감, 장-뇌 축 개선과 해울 한방 치료 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -108,7 +158,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #3 | 불면증 · 수면장애] [인천 구월동 불면증] 잠들기까지 1시간 이상 뒤척이는 입면장애와 뇌 DMN 과각성 해소법 -->
+              <!-- [칼럼 #5 | 불면증 · 수면장애] [인천 구월동 불면증] 잠들기까지 1시간 이상 뒤척이는 입면장애와 뇌 DMN 과각성 해소법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -133,7 +183,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #4 | 공황 · 불안 & 강박증] [인천 부평 공황] 발표할 때 목소리 떨림과 심장 두근거림, 사회공포증 한의학 솔루션 -->
+              <!-- [칼럼 #6 | 공황 · 불안 & 강박증] [인천 부평 공황] 발표할 때 목소리 떨림과 심장 두근거림, 사회공포증 한의학 솔루션 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -158,7 +208,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #5 | 소아청소년 & 성인 ADHD·틱장애] [시흥 배곧 소아청소년] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료 -->
+              <!-- [칼럼 #7 | 소아청소년 & 성인 ADHD·틱장애] [시흥 배곧 소아청소년] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -183,32 +233,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #6 | 소아청소년 & 성인 ADHD·틱장애] [시흥 배곧 소아청소년] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료 -->
-              <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">소아청소년 & 성인 ADHD·틱장애</span>
-                    <span class="text-xs text-[#68736E]">2026-08-25 • 권형근 원장 칼럼</span>
-                  </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
-                    <a href="/column/post-2026-08-25-tic-3494/" class="hover:underline">
-                      [시흥 배곧 소아청소년] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료
-                    </a>
-                  </h3>
-                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                    시흥 배곧 지역에서 소아청소년 & 성인 ADHD·틱장애 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 시흥 배곧한의원 • 부평한의원</span>
-                  <a href="/column/post-2026-08-25-tic-3494/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
-                    <span>칼럼 전문 읽기</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                  </a>
-                </div>
-              </article>
-
-              <!-- [칼럼 #7 | 자율신경 & 실신·어지럼증·이명] [인천 간석동 자율신경] 긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방 -->
+              <!-- [칼럼 #8 | 자율신경 & 실신·어지럼증·이명] [인천 간석동 자율신경] 긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -233,7 +258,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #8 | 신체화 & 담적·두통·턱관절] [인천 영종도 신체화] 검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법 -->
+              <!-- [칼럼 #9 | 신체화 & 담적·두통·턱관절] [인천 영종도 신체화] 검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -252,31 +277,6 @@ sections:
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
                   <span class="text-[11px] text-[#68736E]">• 인천 영종도한의원 • 부평한의원</span>
                   <a href="/column/post-2026-08-24-somatic-5391/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
-                    <span>칼럼 전문 읽기</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                  </a>
-                </div>
-              </article>
-
-              <!-- [칼럼 #9 | 신체화 & 담적·두통·턱관절] [인천 영종도 신체화] 검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법 -->
-              <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">신체화 & 담적·두통·턱관절</span>
-                    <span class="text-xs text-[#68736E]">2026-08-24 • 권형근 원장 칼럼</span>
-                  </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
-                    <a href="/column/post-2026-08-24-somatic-6439/" class="hover:underline">
-                      [인천 영종도 신체화] 검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법
-                    </a>
-                  </h3>
-                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                    인천 영종도 지역에서 신체화 & 담적·두통·턱관절 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 인천 영종도한의원 • 부평한의원</span>
-                  <a href="/column/post-2026-08-24-somatic-6439/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>

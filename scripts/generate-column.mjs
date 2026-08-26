@@ -6,9 +6,10 @@ import { rebuildColumnIndex } from './build-all-columns.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
+const columnDir = path.join(rootDir, 'content', 'column');
 
 // 1. 주요 타겟 지역 풀 (12개 핵심 권역 로테이션)
-const REGION_POOLS = [
+export const REGION_POOLS = [
   { short: '인천 부평', full: '부평구(부평동, 산곡동, 삼산동, 부개동, 십정동, 청천동, 갈산동)' },
   { short: '인천 구월동', full: '남동구(구월동, 간석동, 만수동, 서창동, 논현동)' },
   { short: '부천 상동', full: '부천시(상동, 중동, 신중동, 송내동)' },
@@ -23,18 +24,49 @@ const REGION_POOLS = [
   { short: '인천 영종도', full: '인천 중구(영종하늘도시, 운서동, 동인천)' }
 ];
 
-// 2. 6대 진료영역별 카테고리 및 심층 의학 주제 풀
-const CATEGORIES = [
+// 2. 6대 진료영역별 카테고리 및 심층 의학 주제 풀 (총 36개 고유 주제)
+export const CATEGORIES = [
   {
     id: 'panic',
     name: '공황 · 불안 & 강박증',
     categoryClass: 'panic',
     topics: [
-      { titleSuffix: '갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡 응급 대처법', focus: '공황발작 응급 호흡 및 편도체 안정 한약' },
-      { titleSuffix: '“또 발작 올까 두려운” 예기불안과 뇌 변연계 안정 한방 치료', focus: '24시간 지속되는 예기불안 차단' },
-      { titleSuffix: '지하철·엘리베이터 공포증과 광장공포증, 공간 지각 왜곡 극복법', focus: '밀폐공간 공포증 및 광장공포증' },
-      { titleSuffix: '발표할 때 목소리 떨림과 심장 두근거림, 사회공포증 한의학 솔루션', focus: '사회공포증 및 발표불안' },
-      { titleSuffix: '문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법', focus: '강박장애 및 CSTC 회로 과열' }
+      {
+        titleSuffix: '갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡 응급 대처법',
+        focus: '공황발작 응급 호흡 및 편도체 안정 한약',
+        blogTitle: '공황발작 왔을 때 바로 살려내는 3분 응급 호흡법과 뇌 안정 한방 치료',
+        hookLine: '갑자기 숨이 가빠지고 심장이 미친 듯이 뛰며 죽을 것 같은 공포를 겪으셨나요?'
+      },
+      {
+        titleSuffix: '“또 발작 올까 두려운” 예기불안과 뇌 변연계 안정 한방 치료',
+        focus: '24시간 지속되는 예기불안 차단',
+        blogTitle: '발작은 지나갔는데 왜 24시간 불안할까? 예기불안 차단하는 뇌 신경 치료',
+        hookLine: '언제 또 발작이 올지 몰라 하루 종일 긴장되고 외출하기조차 두려우신가요?'
+      },
+      {
+        titleSuffix: '지하철·엘리베이터 공포증과 광장공포증, 공간 지각 왜곡 극복법',
+        focus: '밀폐공간 공포증 및 광장공포증',
+        blogTitle: '밀폐된 곳만 가면 숨 막히는 광장공포증, 뇌 자율신경 감각 회복법',
+        hookLine: '지하철이나 만원 버스, 엘리베이터에 타면 질식할 것 같은 공포가 엄습하나요?'
+      },
+      {
+        titleSuffix: '발표할 때 목소리 떨림과 심장 두근거림, 사회공포증 한의학 솔루션',
+        focus: '사회공포증 및 발표불안',
+        blogTitle: '사람들 앞에만 서면 목소리가 떨리고 머리가 하얘지는 발표불안 한방 치료',
+        hookLine: '회의 시간이나 발표 자리만 되면 심장이 쿵쾅거리고 손과 목소리가 떨리시나요?'
+      },
+      {
+        titleSuffix: '문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법',
+        focus: '강박장애 및 CSTC 회로 과열',
+        blogTitle: '문 잠갔는지 가스 껐는지 수십 번 확인하는 강박증(OCD) 뇌 회로 끄기',
+        hookLine: '머리로는 괜찮다는 걸 알면서도 끊임없이 의심되고 불안해 확인을 멈출 수 없나요?'
+      },
+      {
+        titleSuffix: '사소한 일에도 최악을 상상하는 범불안장애와 자율신경 과흥분 조절',
+        focus: '만성 불안 및 편도체 안정',
+        blogTitle: '온종일 걱정이 꼬리를 무는 만성 불안증, 뇌 편도체 브레이크 훈련',
+        hookLine: '특별한 일이 없는데도 늘 안절부절못하고 가슴이 조마조마해 일상이 피곤하신가요?'
+      }
     ]
   },
   {
@@ -42,10 +74,42 @@ const CATEGORIES = [
     name: '불면증 · 수면장애',
     categoryClass: 'insomnia',
     topics: [
-      { titleSuffix: '새벽 3~4시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리', focus: '새벽 중도각성 및 수면유지장애' },
-      { titleSuffix: '수면제 의존 없이 깊은 잠드는 법, 뇌파 안정과 자생적 수면 리듬', focus: '수면유도제 내성 극복 및 자연 수면' },
-      { titleSuffix: '잠들기까지 1시간 이상 뒤척이는 입면장애와 뇌 DMN 과각성 해소법', focus: '입면장애 및 뇌 과각성 완화' },
-      { titleSuffix: '악몽과 가위눌림, 심비양허를 보강하여 깊은 델타파 숙면 유도', focus: '다몽증 및 렘수면 행동장애' }
+      {
+        titleSuffix: '새벽 3~4시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리',
+        focus: '새벽 중도각성 및 수면유지장애',
+        blogTitle: '새벽 3시만 되면 눈이 번쩍 떠지는 이유? 수면유지장애와 간열 다스리기',
+        hookLine: '잠은 겨우 들었는데 매일 새벽 3~4시마다 깨서 다시 잠들지 못하고 뒤척이시나요?'
+      },
+      {
+        titleSuffix: '수면제 의존 없이 깊은 잠드는 법, 뇌파 안정과 자생적 수면 리듬',
+        focus: '수면유도제 내성 극복 및 자연 수면',
+        blogTitle: '수면제 끊고 스스로 잠드는 뇌 자생력 회복법 (약물 내성·반동불안 극복)',
+        hookLine: '수면유도제 없이는 잠들기 힘들고, 점점 약 용량을 늘려야 할까 봐 두려우신가요?'
+      },
+      {
+        titleSuffix: '잠들기까지 1시간 이상 뒤척이는 입면장애와 뇌 DMN 과각성 해소법',
+        focus: '입면장애 및 뇌 과각성 완화',
+        blogTitle: '누우면 잡생각이 폭풍처럼 밀려와 잠 못 드는 입면장애 뇌 스위치 끄기',
+        hookLine: '피곤해서 누웠는데 머릿속에서 생각이 꼬리를 물어 1~2시간 넘게 뜬눈으로 밤을 지새우시나요?'
+      },
+      {
+        titleSuffix: '악몽과 가위눌림, 심비양허를 보강하여 깊은 델타파 숙면 유도',
+        focus: '다몽증 및 렘수면 행동장애',
+        blogTitle: '매일 밤 악몽과 가위눌림에 시달려 잠자리가 공포스러운 분들을 위한 한방 처방',
+        hookLine: '밤마다 쫓기는 꿈을 꾸거나 몸이 굳는 가위눌림 때문에 자고 일어나도 개운치 않으신가요?'
+      },
+      {
+        titleSuffix: '자고 일어나도 개운치 않은 수면 분절과 만성 수면부족 회복',
+        focus: '수면의 질 개선 및 델타파 유도',
+        blogTitle: '8시간을 자도 물먹은 솜처럼 피곤한 이유? 얕은 수면과 델타파 유도 치료',
+        hookLine: '분명히 오래 잤는데도 아침마다 머리가 무겁고 온몸이 두들겨 맞은 듯 쑤시나요?'
+      },
+      {
+        titleSuffix: '생체 리듬 교란과 교대근무 수면장애 극복을 위한 한방 멜라토닌 솔루션',
+        focus: '생체시계 정상화 및 수면 리듬',
+        blogTitle: '밤낮이 바뀐 불규칙한 생활, 무너진 생체시계를 되살리는 한방 수면 리듬 치료',
+        hookLine: '야간 근무와 불규칙한 취침 시간으로 뇌의 수면 리듬이 완전히 깨져버리셨나요?'
+      }
     ]
   },
   {
@@ -53,11 +117,42 @@ const CATEGORIES = [
     name: '자율신경 & 실신·어지럼증·이명',
     categoryClass: 'autonomic',
     topics: [
-      { titleSuffix: '만성피로와 자율신경계 기능 저하의 관계, 한스셀리에 3단계 소진과 한방 치료', focus: '만성피로와 자율신경실조증' },
-      { titleSuffix: '출퇴근길 갑자기 핑 돌고 쓰러지는 미주신경성 실신의 전조증상과 한방 치료', focus: '미주신경성 실신 및 기립성 어지럼증' },
-      { titleSuffix: '긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방', focus: '수족다한증 및 상열하한' },
-      { titleSuffix: '검사상 이상 없는 만성 어지럼증과 멍함, 상부 경추(C1-C2)와 추골동맥의 관계', focus: '경추성 어지럼증 및 브레인포그' },
-      { titleSuffix: '피곤하면 더 커지는 귀뚜라미·삐 소리, 신경성 이명과 뇌명증 한방 치료', focus: '신경성 이명 및 내이 혈류장애' }
+      {
+        titleSuffix: '만성피로와 자율신경계 기능 저하의 관계, 한스셀리에 3단계 소진과 한방 치료',
+        focus: '만성피로와 자율신경실조증',
+        blogTitle: '쉬어도 쉬어도 풀리지 않는 만성 피로, 자율신경실조증 3단계 소진 자가진단',
+        hookLine: '충분히 휴식을 취해도 온몸의 배터리가 방전된 것처럼 천근만근 무거우신가요?'
+      },
+      {
+        titleSuffix: '출퇴근길 갑자기 핑 돌고 쓰러지는 미주신경성 실신의 전조증상과 한방 치료',
+        focus: '미주신경성 실신 및 기립성 어지럼증',
+        blogTitle: '출퇴근 지하철에서 눈앞이 캄캄해지고 식은땀 나는 미주신경성 실신 응급 대처',
+        hookLine: '지하철이나 서 있는 자리에서 갑자기 핑 돌며 헛구역질과 함께 주저앉을 뻔하셨나요?'
+      },
+      {
+        titleSuffix: '긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방',
+        focus: '수족다한증 및 상열하한',
+        blogTitle: '긴장만 하면 손발에서 땀이 줄줄 흐르는 수족다한증, 교감신경 안정 한약',
+        hookLine: '사소한 스트레스나 긴장에도 손과 발, 겨드랑이에 땀이 쏟아져 대인관계가 신경 쓰이시나요?'
+      },
+      {
+        titleSuffix: '검사상 이상 없는 만성 어지럼증과 멍함, 상부 경추(C1-C2)와 추골동맥의 관계',
+        focus: '경추성 어지럼증 및 브레인포그',
+        blogTitle: '이비인후과·뇌 MRI 정상인데 머리가 멍하고 빙빙 도는 경추성 어지럼증 해법',
+        hookLine: '병원 검사에서는 아무 이상이 없다는데 고개를 돌릴 때마다 어지럽고 머릿속에 안개가 낀 듯 멍하신가요?'
+      },
+      {
+        titleSuffix: '피곤하면 더 커지는 귀뚜라미·삐 소리, 신경성 이명과 뇌명증 한방 치료',
+        focus: '신경성 이명 및 내이 혈류장애',
+        blogTitle: '조용한 밤마다 더 커지는 귓속 삐 소리, 신경성 이명과 뇌명증 한방 치료 원리',
+        hookLine: '귓속이나 머리 안에서 매미·귀뚜라미 우는 소리가 끊이지 않아 신경이 곤두서시나요?'
+      },
+      {
+        titleSuffix: '가슴 두근거림과 체온 조절 장애, 기립성 저혈압의 자율신경 균형 치료',
+        focus: '기립성 저혈압 및 심박 변이도 개선',
+        blogTitle: '앉았다 일어설 때 눈앞이 하얘지는 기립성 어지럼증과 자율신경 밸런스 회복',
+        hookLine: '갑자기 일어날 때 핑 돌며 주저앉거나, 손발은 얼음장인데 얼굴로만 열이 확 오르시나요?'
+      }
     ]
   },
   {
@@ -65,11 +160,42 @@ const CATEGORIES = [
     name: '소아청소년 & 성인 ADHD·틱장애',
     categoryClass: 'tic',
     topics: [
-      { titleSuffix: '아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 발달과 NeuronFlex 두뇌훈련', focus: '소아 틱장애 기저핵 발달 및 부모 대처' },
-      { titleSuffix: '산만하고 충동적인 아이 집중력 향상, 전두엽 억제 회로 강화 한방 치료', focus: '소아 ADHD 및 주의력결핍' },
-      { titleSuffix: '단순 비염으로 오인하기 쉬운 소아 음성틱·뚜렛증후군 조기 감별법', focus: '음성틱 및 뚜렛증후군' },
-      { titleSuffix: '청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료', focus: '청소년 복합틱 및 학습집중력' },
-      { titleSuffix: '만성 미루기와 브레인포그로 고통받는 성인 ADHD의 전두엽 도파민 회복', focus: '성인 ADHD 실행기능장애' }
+      {
+        titleSuffix: '아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 발달과 NeuronFlex 두뇌훈련',
+        focus: '소아 틱장애 기저핵 발달 및 부모 대처',
+        blogTitle: '아이의 잦은 눈 깜빡임과 코 찡긋, 혼내지 말고 뇌 기저핵 발달 살펴야 하는 이유',
+        hookLine: '아이가 눈을 자주 깜빡이거나 코를 찡긋거리는데 "하지 마!"라고 혼내고 계신가요?'
+      },
+      {
+        titleSuffix: '산만하고 충동적인 아이 집중력 향상, 전두엽 억제 회로 강화 한방 치료',
+        focus: '소아 ADHD 및 주의력결핍',
+        blogTitle: '수업 시간에 가만히 있지 못하고 산만한 아이, 전두엽 억제 브레이크 키우는 법',
+        hookLine: '숙제 하나 끝내는 데 몇 시간씩 걸리고 충동적인 행동 때문에 학교에서 지적을 받나요?'
+      },
+      {
+        titleSuffix: '단순 비염으로 오인하기 쉬운 소아 음성틱·뚜렛증후군 조기 감별법',
+        focus: '음성틱 및 뚜렛증후군',
+        blogTitle: '비염약 먹어도 멈추지 않는 아이의 킁킁·음음 소리, 음성틱 조기 발견과 치료법',
+        hookLine: '환절기 비염인 줄 알고 약을 먹였는데도 킁킁거리는 소리나 헛기침이 계속 반복되나요?'
+      },
+      {
+        titleSuffix: '청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료',
+        focus: '청소년 복합틱 및 학습집중력',
+        blogTitle: '사춘기 학업 스트레스로 악화된 청소년 틱장애, 자존감과 집중력 함께 살리는 치료',
+        hookLine: '어릴 때 괜찮아졌던 틱이 시험 기간이나 사춘기 스트레스와 함께 다시 심해졌나요?'
+      },
+      {
+        titleSuffix: '만성 미루기와 브레인포그로 고통받는 성인 ADHD의 전두엽 도파민 회복',
+        focus: '성인 ADHD 실행기능장애',
+        blogTitle: '할 일 미루기 대마왕? 약속 시간 늦고 정리 못 하는 성인 ADHD 전두엽 회복법',
+        hookLine: '매번 중요한 마감 직전까지 미루고 물건을 자주 잃어버려 사회생활에서 큰 스트레스를 받으시나요?'
+      },
+      {
+        titleSuffix: '스마트폰 과의존과 주의력 저하를 겪는 아이를 위한 감각통합 두뇌 솔루션',
+        focus: '도파민 보상 회로 및 감각통합',
+        blogTitle: '스마트폰 뺏으면 분노 폭발하는 아이, 도파민 보상 회로 정상화와 두뇌 훈련',
+        hookLine: '영상 매체 없이는 가만히 있지 못하고 툭하면 짜증을 내며 집중력이 급격히 떨어지나요?'
+      }
     ]
   },
   {
@@ -77,9 +203,42 @@ const CATEGORIES = [
     name: '우울증 · 화병 & 번아웃',
     categoryClass: 'stress',
     topics: [
-      { titleSuffix: '가슴 답답함과 목 이물감(매핵기), 울화병을 다스리는 한의학적 치료법', focus: '화병 가슴 답답함 및 매핵기 해소' },
-      { titleSuffix: '직장인·전문직 번아웃 증후군과 무기력증 회복, 사향공진단·건뇌단 요법', focus: '번아웃 증후군 및 뇌 에너지 충전' },
-      { titleSuffix: '매사 무기력하고 의욕이 사라진 만성 우울감, 장-뇌 축 개선과 해울 한방 치료', focus: '만성 우울증 및 세로토닌 결핍' }
+      {
+        titleSuffix: '가슴 답답함과 목 이물감(매핵기), 울화병을 다스리는 한의학적 치료법',
+        focus: '화병 가슴 답답함 및 매핵기 해소',
+        blogTitle: '목에 뭔가 걸린 듯 뱉어도 안 나오는 매핵기(梅核氣)와 가슴 답답한 화병 해법',
+        hookLine: '목구멍에 가래 같은 게 걸려 삼켜지지도 뱉어지지도 않고 가슴이 터질 듯 답답하신가요?'
+      },
+      {
+        titleSuffix: '직장인·전문직 번아웃 증후군과 무기력증 회복, 사향공진단·건뇌단 요법',
+        focus: '번아웃 증후군 및 뇌 에너지 충전',
+        blogTitle: '출근길 지하철만 타면 퇴사하고 싶은 번아웃 증후군, 지친 뇌 에너지 충전법',
+        hookLine: '모든 열정이 식어버리고 아무것도 하기 싫은 극심한 무기력증에 빠져 계신가요?'
+      },
+      {
+        titleSuffix: '매사 무기력하고 의욕이 사라진 만성 우울감, 장-뇌 축 개선과 해울 한방 치료',
+        focus: '만성 우울증 및 세로토닌 결핍',
+        blogTitle: '마음이 끝없이 가라앉는 만성 우울증, 장과 뇌를 함께 다스리는 해울(解鬱) 치료',
+        hookLine: '예전엔 즐거웠던 일도 아무 감흥이 없고 온종일 우울감의 늪에서 헤어나오기 힘드신가요?'
+      },
+      {
+        titleSuffix: '감정 기복과 분노 조절 장애, 간화(肝火)를 식히는 맞춤 한약 처방',
+        focus: '분노 조절 및 간열 해소',
+        blogTitle: '사소한 일에도 욱하고 폭발하는 분노 조절 장애, 치솟는 간열(肝熱) 내리기',
+        hookLine: '작은 자극에도 나도 모르게 버럭 소리를 지르고 돌아서면 후회하는 일이 반복되시나요?'
+      },
+      {
+        titleSuffix: '출산 후 무기력증과 산후우울증, 기혈 보강과 신경 안정 통합 치료',
+        focus: '산후우울증 및 기혈 보강',
+        blogTitle: '산후 극심한 눈물과 피로감, 산모의 기혈을 채우고 우울감을 걷어내는 한방 케어',
+        hookLine: '아이를 보면 눈물이 나고 온몸의 뼈마디가 시리며 마음이 극도로 불안하고 지치셨나요?'
+      },
+      {
+        titleSuffix: '갱년기 상열감과 불면·우울이 겹치는 갱년기 화병의 호르몬·자율신경 복원',
+        focus: '갱년기 화병 및 자율신경 불균형',
+        blogTitle: '얼굴로 열이 확 오르고 가슴이 두근거리는 갱년기 화병과 우울증 극복법',
+        hookLine: '가슴이 쿵쾅거리고 얼굴로 열이 솟구치며 사소한 말 한마디에도 서러움과 분노가 치미시나요?'
+      }
     ]
   },
   {
@@ -87,33 +246,165 @@ const CATEGORIES = [
     name: '신체화 & 담적·두통·턱관절',
     categoryClass: 'somatic',
     topics: [
-      { titleSuffix: '위내시경은 정상인데 명치가 꽉 막히는 신경성 소화불량과 담적병(痰積病)', focus: '담적병 및 신경성 위장장애' },
-      { titleSuffix: '검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법', focus: '신체화 장애 및 통증 역치 조절' },
-      { titleSuffix: '입 벌릴 때 딱 소리와 만성 편두통, FCST 턱관절 교정과 경추 정렬 치료', focus: '턱관절 장애 및 수면 중 이갈이' }
+      {
+        titleSuffix: '위내시경은 정상인데 명치가 꽉 막히는 신경성 소화불량과 담적병(痰積病)',
+        focus: '담적병 및 신경성 위장장애',
+        blogTitle: '내시경 검사는 깨끗한데 늘 체한 듯 명치가 답답한 담적병(痰積病) 치료 원리',
+        hookLine: '조금만 먹어도 배가 더부룩하고 명치가 굳어 돌덩이를 얹어놓은 듯 불편하신가요?'
+      },
+      {
+        titleSuffix: '검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법',
+        focus: '신체화 장애 및 통증 역치 조절',
+        blogTitle: '병원 종합검진은 정상인데 온몸이 쑤시고 아픈 신체화장애 뇌 통증 조절',
+        hookLine: '여기저기 돌아가며 아픈데 병원에선 "신경성"이라며 원인을 모른다고 하나요?'
+      },
+      {
+        titleSuffix: '입 벌릴 때 딱 소리와 만성 편두통, FCST 턱관절 교정과 경추 정렬 치료',
+        focus: '턱관절 장애 및 수면 중 이갈이',
+        blogTitle: '턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료',
+        hookLine: '입을 벌릴 때 턱에서 소리가 나거나 뻐근한 통증과 함께 지끈거리는 두통이 동반되나요?'
+      },
+      {
+        titleSuffix: '수면 중 이갈이·이악물기로 인한 아침 턱 뻐근함과 긴장성 두통 완화',
+        focus: '이갈이·이악물기 및 교근 긴장',
+        blogTitle: '아침마다 턱이 뻐근하고 머리가 조여오는 이유? 수면 중 이갈이·이악물기 교정',
+        hookLine: '아침에 일어났을 때 턱관절이 굳어있고 머리를 띠로 조이는 듯한 두통을 느끼시나요?'
+      },
+      {
+        titleSuffix: '목과 어깨가 돌처럼 굳으며 눈까지 침침해지는 경추성 긴장성 두통',
+        focus: '경추성 긴장성 두통 및 후두신경통',
+        blogTitle: '목덜미가 뻣뻣하고 눈이 빠질 듯 아픈 후두신경통·경추성 두통 한방 치료',
+        hookLine: '뒷목과 어깨가 돌덩이처럼 뭉치면서 뒤통수와 눈 주변까지 지끈지끈 아파오나요?'
+      },
+      {
+        titleSuffix: '신경만 쓰면 배가 부글거리고 화장실로 달려가는 과민성대장증후군(IBS)',
+        focus: '과민성대장증후군 및 뇌-장 신경망',
+        blogTitle: '시험이나 미팅 직전 배가 살살 아프고 가스 차는 과민성대장증후군 뇌-장 치료',
+        hookLine: '조금만 긴장하거나 찬 음식을 먹으면 복통과 설사, 잦은 가스로 곤란을 겪으시나요?'
+      }
     ]
   }
 ];
 
-// 3. 날짜 및 4회 슬롯 계산
-const now = new Date();
-const kstDate = new Date(now.getTime() + (9 * 60 * 60 * 1000));
-const dayOfYear = Math.floor((kstDate - new Date(kstDate.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
-const hour = kstDate.getHours();
-const slot = hour < 10 ? 0 : hour < 14 ? 1 : hour < 18 ? 2 : 3;
-const runIndex = (dayOfYear * 4) + slot;
+// 3. 기존 발행 이력 분석 및 중복 없는 스마트 타겟 선정
+export function selectSmartTarget() {
+  const now = new Date();
+  const kstDate = new Date(now.getTime() + (9 * 60 * 60 * 1000));
+  const dateStr = kstDate.toISOString().slice(0, 10);
+  const dayOfYear = Math.floor((kstDate - new Date(kstDate.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+  const hour = kstDate.getHours();
+  const slot = hour < 10 ? 0 : hour < 14 ? 1 : hour < 18 ? 2 : 3;
 
-const selectedCat = CATEGORIES[runIndex % CATEGORIES.length];
-const selectedTopic = selectedCat.topics[Math.floor(runIndex / CATEGORIES.length) % selectedCat.topics.length];
-const selectedRegion = REGION_POOLS[runIndex % REGION_POOLS.length];
-const dateStr = kstDate.toISOString().slice(0, 10);
-const articleId = `col-${Date.now().toString().slice(-6)}`;
+  // 기존 발행된 모든 칼럼 파일 스캔
+  const existingFiles = fs.readdirSync(columnDir).filter(f => f.endsWith('.md') && f !== '_index.md');
+  const publishedTitles = new Set();
+  const publishedTopicSuffixes = new Set();
+  const todayCategories = new Set();
 
-const fullTitle = `[${selectedRegion.short} ${selectedCat.name.split(' ')[0]}] ${selectedTopic.titleSuffix}`;
+  for (const f of existingFiles) {
+    const fullPath = path.join(columnDir, f);
+    const content = fs.readFileSync(fullPath, 'utf8');
+    const titleMatch = content.match(/title:\s*["']?(.*?)["']?$/m);
+    const dateMatch = content.match(/date:\s*["']?(.*?)["']?$/m);
+    const catMatch = content.match(/category:\s*["']?(.*?)["']?$/m);
 
-console.log(`[Auto-Column SEO] Date: ${dateStr}, Region: ${selectedRegion.short}, Title: "${fullTitle}"`);
+    if (titleMatch) {
+      const t = titleMatch[1].trim();
+      publishedTitles.add(t.toLowerCase());
+      publishedTopicSuffixes.add(t.replace(/^\[.*?\]\s*/, '').trim().toLowerCase());
+    }
+    if (dateMatch && dateMatch[1].trim() === dateStr && catMatch) {
+      todayCategories.add(catMatch[1].trim());
+    }
+  }
+
+  // 오늘 아직 발행되지 않은 카테고리 우선 선택
+  let baseCatIdx = ((dayOfYear * 4) + slot) % CATEGORIES.length;
+  let selectedCat = CATEGORIES[baseCatIdx];
+
+  // 만약 당일 이미 해당 카테고리가 발행되었다면 다음 미발행 카테고리로 이동
+  for (let i = 0; i < CATEGORIES.length; i++) {
+    const candidateCat = CATEGORIES[(baseCatIdx + i) % CATEGORIES.length];
+    if (!todayCategories.has(candidateCat.name)) {
+      selectedCat = candidateCat;
+      baseCatIdx = (baseCatIdx + i) % CATEGORIES.length;
+      break;
+    }
+  }
+
+  // 선택된 카테고리 내에서 가장 오랫동안(또는 한 번도) 발행되지 않은 토픽 선정
+  let selectedTopic = selectedCat.topics[0];
+  let foundUnpublished = false;
+  for (let i = 0; i < selectedCat.topics.length; i++) {
+    const tIdx = (Math.floor(((dayOfYear * 4) + slot) / CATEGORIES.length) + i) % selectedCat.topics.length;
+    const candidateTopic = selectedCat.topics[tIdx];
+    const normSuffix = candidateTopic.titleSuffix.trim().toLowerCase();
+    
+    // 기존에 정확히 일치하는 제목이 없는 주제 우선
+    if (!publishedTopicSuffixes.has(normSuffix)) {
+      selectedTopic = candidateTopic;
+      foundUnpublished = true;
+      break;
+    }
+  }
+  if (!foundUnpublished) {
+    const tIdx = Math.floor(((dayOfYear * 4) + slot) / CATEGORIES.length) % selectedCat.topics.length;
+    selectedTopic = selectedCat.topics[tIdx];
+  }
+
+  // 지역 풀 로테이션 (인덱스 오프셋 적용)
+  const regionIdx = (((dayOfYear * 4) + slot) + baseCatIdx) % REGION_POOLS.length;
+  const selectedRegion = REGION_POOLS[regionIdx];
+
+  // 3대 제목 패턴 (0: 맨앞 지역명 한의원, 1: 중간 지역명 삽입, 2: 지역명 없는 순수 질환/블로그형)
+  const patternType = ((dayOfYear * 4) + slot) % 3;
+
+  function generateColumnTitle(pattern, region, cat, topic) {
+    const catShort = cat.name.split(' ')[0];
+    if (pattern === 0) {
+      // 1. 맨앞 지역명 한의원형: [인천 부평한의원 공황장애] ...
+      return `[${region.short}한의원 ${catShort}] ${topic.titleSuffix}`;
+    } else if (pattern === 1) {
+      // 2. 중간 지역명 삽입형: 갑자기 숨이 턱 막히고 죽을 것 같은 공포, [인천 부평 공황장애] 과호흡 응급 대처법
+      if (topic.titleSuffix.includes(',')) {
+        const parts = topic.titleSuffix.split(',');
+        const leadPart = parts[0].trim();
+        const followPart = parts.slice(1).join(',').trim();
+        return `${leadPart}, [${region.short} ${catShort}] ${followPart}`;
+      } else {
+        return `${topic.focus}, [${region.short} ${catShort}] 한의학적 원인과 관리법`;
+      }
+    } else {
+      // 3. 지역명 없는 순수 질환/블로그형
+      return topic.blogTitle || topic.titleSuffix;
+    }
+  }
+
+  const titleVariants = {
+    p1: generateColumnTitle(0, selectedRegion, selectedCat, selectedTopic),
+    p2: generateColumnTitle(1, selectedRegion, selectedCat, selectedTopic),
+    p3: selectedTopic.blogTitle || generateColumnTitle(2, selectedRegion, selectedCat, selectedTopic)
+  };
+
+  const fullTitle = generateColumnTitle(patternType, selectedRegion, selectedCat, selectedTopic);
+  const patternNames = ['[패턴 1] 맨앞 지역명 한의원', '[패턴 2] 중간 지역명 삽입', '[패턴 3] 지역명 없는 순수 질환/블로그형'];
+
+  return {
+    dateStr,
+    slot,
+    selectedCat,
+    selectedTopic,
+    selectedRegion,
+    patternType,
+    patternNames,
+    patternName: patternNames[patternType],
+    fullTitle,
+    titleVariants
+  };
+}
 
 // 4. 질환군별 맞춤 통합 치료 솔루션 설정
-function getSection5Config(categoryName) {
+export function getSection5Config(categoryName) {
   if (categoryName.includes('소아') || categoryName.includes('ADHD') || categoryName.includes('틱')) {
     return {
       title: '두뇌 발달과 감각 통합을 돕는 NeuronFlex & IM 두뇌 훈련 솔루션',
@@ -154,7 +445,7 @@ function getSection5Config(categoryName) {
 }
 
 // 5. 마크다운 생성 헬퍼 함수 (표준 6대 섹션 렌더링)
-function renderColumnMarkdown(col) {
+export function renderColumnMarkdown(col) {
   const cleanTitle = col.title.replace(/"/g, "'");
   const cleanSummary = col.summary.replace(/"/g, "'");
   const sec5 = getSection5Config(col.categoryName);
@@ -359,12 +650,14 @@ ${faqItemsHtml}
 }
 
 // 6. Gemini API 호출 또는 폴백 생성
-async function generateColumnContent() {
+export async function generateColumnContent(target) {
   const apiKey = process.env.GEMINI_API_KEY;
+  const { dateStr, selectedCat, selectedTopic, selectedRegion, patternType, patternName, fullTitle, titleVariants } = target;
+  const articleId = `col-${Date.now().toString().slice(-6)}`;
 
   if (!apiKey) {
-    console.log('[Auto-Column SEO] No GEMINI_API_KEY found. Generating with new 6-section template.');
-    return generateFallbackContent(selectedCat, selectedTopic, selectedRegion, fullTitle, dateStr, articleId);
+    console.log(`[Auto-Column SEO] No GEMINI_API_KEY found. Generating with 6-section template (${patternName}).`);
+    return generateFallbackContent(selectedCat, selectedTopic, selectedRegion, fullTitle, dateStr, articleId, patternType, titleVariants);
   }
 
   const prompt = `
@@ -374,16 +667,25 @@ async function generateColumnContent() {
 ──────────────────────────────────────────────
 [공통 주제 정보]
 - 공식 칼럼 제목: ${fullTitle}
-- 주 타겟 지역: ${selectedRegion.short} (${selectedRegion.full})
+- 제목 스타일 패턴: ${patternName}
+- 주 타겟 지역: ${patternType === 2 ? '전국 / 일반 환자' : `${selectedRegion.short} (${selectedRegion.full})`}
 - 질환 카테고리: ${selectedCat.name}
 - 주제 포커스: ${selectedTopic.focus}
+- 블로그 추천 제목 후보:
+  1) 맨앞 지역명형: ${titleVariants.p1}
+  2) 중간 지역명형: ${titleVariants.p2}
+  3) 스토리/질문형: ${titleVariants.p3}
 - 원장 정보: 해아림한의원 인천부평점 권형근 대표원장 (한방침구과 전문의, 부평역 7번 출구)
 ──────────────────────────────────────────────
+
+[중요 제약 조건 ★★★]
+1. [일괄적인 문구 반복 절대 금지]: 모든 글에 '가슴이 답답하고 불안할 때' 같은 판에 박힌 획일적 문구를 기계적으로 반복하지 마십시오!
+2. 반드시 해당 질환의 고유 증상(불면은 새벽 각성/입면 장애, 틱/ADHD는 눈 깜빡임/헛기침/집중력 저하, 자율신경은 어지럼증/식은땀/피로, 공황은 숨막힘/과호흡/광장공포, 화병/번아웃은 목 이물감/울화, 담적/신체화는 명치 답답함/만성 두통/턱관절 통증)에 맞추어 생생하고 다채로운 표현으로 작성하십시오.
 
 [글 1: 홈페이지 공식 의학 칼럼 데이터]
 - 성격: 공식 웹사이트(healimbp.com) 게재용 전문적이고 신뢰감 있는 대표원장 의학 칼럼.
 - 다음 항목을 포함하는 구조화된 JSON 데이터로 작성해주세요:
-  1. voiceQuotes: ${selectedRegion.short} 환자의 진료실 실제 호소문 3개 (배열)
+  1. voiceQuotes: 환자의 진료실 실제 호소문 3개 (배열)
   2. introText: 공감과 신경학적 원인을 설명하는 도입부 문단 2개 (배열)
   3. toc: 6대 섹션 목차 제목 6개 (배열)
   4. flow: { title: "기전 흐름도 제목", steps: ["스텝1", "스텝2", "스텝3", "스텝4", "스텝5"] }
@@ -398,7 +700,7 @@ async function generateColumnContent() {
 ──────────────────────────────────────────────
 [글 2: 티스토리 블로그 전용 칼럼 원고 (tistoryTitle, tistoryTags, tistoryScript)]
 ★ 핵심 원칙:
-1. 구조: 홈페이지 칼럼과 동일하게 **6대 챕터 완결 칼럼 구조**(환자 호소문 인용구, 목차, 01.발생기전, 02.진행단계/체크포인트, 03.한의학진단/연구, 04.3대맞춤유형, 05.1:1통합솔루션, 06.진료실FAQ 3문3답, 원장조언)의 칼럼 쓰는 방식을 100% 그대로 유지하세요.
+1. 구조: 홈페이지 칼럼과 동일하게 **6대 챕터 완결 칼럼 구조**(환자 호소문 인용구, 목차, 01.발생기전, 02.진행단계/체크포인트, 03.한의학진단/연구, 04.3대맞춤유형, 05.1:1통합솔루션, 06.진료실FAQ 3문3답, 원장조언)를 100% 완결된 글로 유지하세요.
 2. 내용 차별화: 검색엔진 유사문서 페널티를 완벽히 피하기 위해 **제목, 문장 표현, 환자 스토리텔링, 설명 어조를 친근하고 새로운 블로그 문체로 100% 다르게 재작성**하세요.
 - tistoryTitle: 클릭을 부르는 매력적인 질문형/스토리형 블로그 제목
 - tistoryTags: 네이버/다음 상위노출용 추천 태그 5~7개 (배열)
@@ -407,8 +709,8 @@ async function generateColumnContent() {
 반드시 아래 JSON 형식으로만 응답하세요 (마크다운 백틱 제외):
 {
   "title": "${fullTitle}",
-  "summary": "${selectedRegion.short} 및 인근 생활권 환자분들을 위한 권형근 원장의 핵심 요약 2~3문장",
-  "tags": ["${selectedRegion.short}한의원", "부평한의원", "${selectedCat.name.split(' ')[0]}한의원", "자율신경", "체열검사"],
+  "summary": "${patternType === 2 ? `${selectedCat.name} 증상으로 고통받는 분들을 위한 권형근 원장의 핵심 요약 2~3문장` : `${selectedRegion.short} 및 인근 생활권 환자분들을 위한 권형근 원장의 핵심 요약 2~3문장`}",
+  "tags": ${patternType === 2 ? `["${selectedCat.name.split(' ')[0]}", "${selectedCat.name.split(' ')[0]}치료", "한방신경정신과", "자율신경", "맞춤한약"]` : `["${selectedRegion.short}한의원", "부평한의원", "${selectedCat.name.split(' ')[0]}한의원", "자율신경", "체열검사"]`},
   "voiceQuotes": ["...", "...", "..."],
   "introText": ["...", "..."],
   "toc": ["...", "...", "...", "...", "...", "..."],
@@ -460,12 +762,15 @@ async function generateColumnContent() {
 
     const fullColumnData = {
       id: articleId,
+      patternType: patternType,
+      patternName: patternName,
+      titleVariants: titleVariants,
       category: selectedCat.id,
       categoryName: selectedCat.name,
       categoryClass: selectedCat.categoryClass,
       title: parsed.title || fullTitle,
       summary: parsed.summary || `${selectedRegion.short} 지역 환자분들을 위한 권형근 원장의 ${selectedCat.name} 심층 원인 분석 및 맞춤 한방 치료 가이드입니다.`,
-      tags: parsed.tags || [`${selectedRegion.short}한의원`, '부평한의원', selectedCat.name.split(' ')[0], '맞춤한약', '뇌파검사'],
+      tags: parsed.tags || (patternType === 2 ? [selectedCat.name.split(' ')[0], `${selectedCat.name.split(' ')[0]}치료`, '한방신경정신과', '자율신경', '맞춤한약'] : [`${selectedRegion.short}한의원`, '부평한의원', selectedCat.name.split(' ')[0], '맞춤한약', '뇌파검사']),
       voiceQuotes: parsed.voiceQuotes || [
         `병원에서 정밀 검사를 받아도 '신경성'이라는 말뿐 원인을 찾지 못했습니다.`,
         `약물에만 의존하지 않고 근본적으로 신경계 자생력을 회복하고 싶습니다.`,
@@ -517,30 +822,35 @@ async function generateColumnContent() {
         { q: '한의원 첫 내원 시 어떤 검사를 받게 되나요?', a: '뇌파 검사, 적외선 체열 검사, 간이정신진단검사와 1:1 심층 맥진·복진을 통해 정확한 원인을 진단합니다.' }
       ],
       closingText: parsed.closingText || '몸이 보내는 신호는 쉼과 치유가 필요하다는 절박한 메시지입니다. 뇌와 자율신경의 평온을 되찾아 건강한 일상을 누리세요.',
-      tistoryTitle: parsed.tistoryTitle || `[건강칼럼] ${selectedRegion.short} ${selectedTopic.focus}에 대한 원인과 일상 회복 가이드`,
-      tistoryTags: parsed.tistoryTags || [selectedCat.name.split(' ')[0], `${selectedRegion.short}한의원`, '부평한의원', '자율신경', '건강관리'],
-      tistoryScript: parsed.tistoryScript || generateFallbackTistoryScript(selectedCat, selectedTopic, selectedRegion),
+      tistoryTitle: parsed.tistoryTitle || titleVariants.p3,
+      tistoryTags: parsed.tistoryTags || (patternType === 2 ? [selectedCat.name.split(' ')[0], '한방치료', '자율신경', '건강칼럼'] : [selectedCat.name.split(' ')[0], `${selectedRegion.short}한의원`, '부평한의원', '자율신경', '건강관리']),
+      tistoryScript: parsed.tistoryScript || generateFallbackTistoryScript(selectedCat, selectedTopic, selectedRegion, patternType, titleVariants),
       date: dateStr
     };
 
     return fullColumnData;
   } catch (err) {
     console.error('[Auto-Column SEO] Gemini API error:', err);
-    return generateFallbackContent(selectedCat, selectedTopic, selectedRegion, fullTitle, dateStr, articleId);
+    return generateFallbackContent(selectedCat, selectedTopic, selectedRegion, fullTitle, dateStr, articleId, patternType, titleVariants);
   }
 }
 
-function generateFallbackTistoryScript(cat, topic, region) {
+export function generateFallbackTistoryScript(cat, topic, region, pattern = 0, variants = null) {
   const catShort = cat.name.split(' ')[0];
   const sec5 = getSection5Config(cat.name);
+  const hookLine = topic.hookLine || '일상 속에서 원인 모를 신체 이상과 신경계 과민으로 고통받고 계신가요?';
 
-  return `> "${region.short} 인근 병원에서 각종 검사를 받아도 '신경성', '스트레스'라는 말뿐 원인을 찾지 못했습니다."
+  const quoteRegion = pattern === 2
+    ? '병원에서 각종 정밀 검사를 받아도'
+    : `"${region.short} 인근 병원에서 각종 검사를 받아도`;
+
+  return `> "${quoteRegion} '신경성', '스트레스'라는 말뿐 원인을 찾지 못했습니다."
 > "약물에만 의존하지 않고 근본적으로 신경계 자생력을 회복해주는 체계적인 치료를 받고 싶습니다."
 
 안녕하세요. **해아림한의원 인천부평점 대표원장 권형근(한방침구과 전문의)**입니다.
 
-바쁜 일상과 누적된 스트레스 속에서 원인 모를 신체 이상과 신경계 과민으로 고통받으시는 환자분들이 많습니다.
-이것은 단순한 심리적 약함이 아니라, 우리 몸의 자동 조절 장치인 자율신경계와 뇌 신경망이 과열되어 균형을 잃은 신호입니다.
+${hookLine}
+이것은 단순한 심리적 약함이나 일시적 피로가 아니라, 우리 몸의 자동 조절 장치인 자율신경계와 뇌 신경망이 과열되어 균형을 잃은 신호입니다.
 
 ### 📌 이 칼럼에서 다루는 6대 핵심 목차
 * 01. ${topic.focus}의 신경학적 발생 기전과 원인
@@ -553,11 +863,11 @@ function generateFallbackTistoryScript(cat, topic, region) {
 ### 🌿 01. ${topic.focus}의 신경학적 발생 기전과 원인
 우리의 뇌와 신체는 24시간 동안 교감신경(액셀)과 부교감신경(브레이크)의 상호 작용을 통해 심박, 호흡, 체온, 수면을 조절합니다.
 하지만 과도한 긴장과 피로가 지속되면 교감신경이 과항진되면서 뇌 변연계(편도체)가 위험 알람을 오작동시킵니다.
-이로 인해 가슴 두근거림, 호흡 답답함, 어지럼증, 수면장애 등 다양한 신체화 증상이 복합적으로 나타나게 됩니다.
+이로 인해 자율신경 실조와 뇌 신경전달물질의 불균형이 발생하여 만성적인 신체화 증상으로 이어집니다.
 
 ### 🔍 02. 자율신경 과흥분 3단계와 일상 속 신체 신호
 신경계의 피로는 다음과 같은 3단계를 거쳐 진행됩니다:
-* **1단계 (경고 반응기)**: 급성 스트레스로 심장 박동이 빨라지고 식은땀, 가슴 조임이 순간적으로 발생함.
+* **1단계 (경고 반응기)**: 급성 스트레스로 심장 박동이 빨라지고 식은땀, 긴장 반응이 순간적으로 발생함.
 * **2단계 (저항 유지기)**: 긴장 상태가 지속되며 목과 어깨가 굳고, 소화불량 및 수면 질 저하가 반복됨.
 * **3단계 (소진/탈진기)**: 자생력이 고갈되며 만성 피로, 브레인포그, 무기력증이 고착화됨.
 
@@ -566,7 +876,7 @@ function generateFallbackTistoryScript(cat, topic, region) {
 체질에 맞지 않는 억지 각성제나 단순 대증 치료 대신, 뇌와 오장육부의 기혈 균형을 바로잡을 때 자생력이 회복됩니다.
 
 ### 🩺 04. 증상별 3대 맞춤 변증 체질 유형
-* **간열상충(肝熱上衝)형**: 스트레스와 분노로 상체와 머리로 열이 치솟고 가슴이 답답한 유형 (시호청간탕, 황련해독탕 처방)
+* **간열상충(肝熱上衝)형**: 스트레스와 긴장으로 상체와 머리로 열이 치솟는 유형 (시호청간탕, 황련해독탕 처방)
 * **심담허겁(心膽虛怯)형**: 사소한 소리나 자극에도 심장이 덜컥 내려앉고 불안해하는 유형 (가미온담탕, 안신보심환 처방)
 * **기혈양허(氣血兩虛)형**: 만성 피로로 에너지가 바닥나 멍하고 기운이 없는 유형 (가미귀비탕, 보중익기탕 처방)
 
@@ -588,25 +898,52 @@ function generateFallbackTistoryScript(cat, topic, region) {
 > **권형근 대표원장의 조언**: "증상은 몸이 보내는 쉼과 치유의 절박한 신호입니다. 뇌와 자율신경의 평온을 되찾아 건강한 일상을 다시 누리시길 바랍니다."`;
 }
 
-function generateFallbackContent(cat, topic, region, title, date, id) {
+export function generateFallbackContent(cat, topic, region, title, date, id, pattern = 0, variants = null) {
   const catShort = cat.name.split(' ')[0];
+  
+  let summary = `${region.short} 지역에서 ${cat.name} 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.`;
+  let tags = [`${region.short}한의원`, '부평한의원', `${catShort}한의원`, '맞춤한약', '체열검사'];
+  let introText = [
+    `진료실에는 **${region.short}**뿐만 아니라 인근 생활권에서 ${cat.name} 증상으로 고통받는 많은 환자분들이 내원하십니다.`,
+    `이것은 환자분의 의지나 성격의 문제가 아닙니다. **지속적인 스트레스와 신경계 과열로 인해 뇌 신경망과 자율신경계의 조절 밸런스가 무너진 신경생리학적 신체화 상태**입니다.`
+  ];
+
+  if (pattern === 1) {
+    summary = `환자분들의 생생한 고통과 호소에 공감하며, ${region.short} 생활권 환자를 위한 ${cat.name}의 신경학적 원인과 한의학적 관리법을 정리했습니다.`;
+    tags = [`${region.short}한의원`, '인천한의원', `${catShort}치료`, '자율신경', '뇌파검사'];
+    introText = [
+      `진료실 현장에서 만나는 **${region.short}** 환자분들은 '왜 자꾸 증상이 반복되는지' 답답함과 불안을 호소하십니다.`,
+      `이것은 **뇌 신경망과 자율신경계가 과열되거나 방전되어 신체 조절 능력을 상실한 신경생리학적 불균형 상태**입니다.`
+    ];
+  } else if (pattern === 2) {
+    summary = `${cat.name} 증상으로 고통받는 환자분들과 보호자분들을 위한 권형근 대표원장의 신경학적 원인 분석 및 근본 한방 치료 가이드입니다.`;
+    tags = [catShort, `${catShort}치료`, '한방신경정신과', '자율신경', '맞춤한약'];
+    introText = [
+      `진료실에서 ${cat.name} 증상으로 고통받는 수많은 환자분들을 만나며 가장 안타까운 순간은, 이것이 신경계의 질환임에도 단순한 '마음의 나약함'이나 '성격 탓'으로 자책하시는 경우입니다.`,
+      `이것은 환자분의 의지 문제가 아니라, **뇌 신경망과 자율신경계의 상호 조절 밸런스가 한계에 도달하여 발생하는 신경생리학적 SOS 신호**입니다.`
+    ];
+  }
+
+  const defaultVariants = variants || {
+    p1: `[${region.short}한의원 ${catShort}] ${topic.titleSuffix}`,
+    p2: `${topic.titleSuffix.split(',')[0]}, [${region.short} ${catShort}] ${topic.titleSuffix.split(',')[1] || '맞춤 한방 치료'}`,
+    p3: topic.blogTitle || topic.titleSuffix
+  };
+
   return {
     id: id,
     category: cat.id,
     categoryName: cat.name,
     categoryClass: cat.categoryClass,
     title: title,
-    summary: `${region.short} 지역에서 ${cat.name} 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.`,
-    tags: [`${region.short}한의원`, '부평한의원', catShort, '맞춤한약', '뇌파검사', '체열검사'],
+    summary: summary,
+    tags: tags,
     voiceQuotes: [
       `"병원에서 검사를 받아도 '신경성', '스트레스성'이라는 말뿐 원인을 찾지 못했습니다."`,
       `"약물에만 의존하지 않고 근본적으로 신경계 자생력을 회복해주는 치료를 받고 싶습니다."`,
       `"일상생활과 업무에 지장을 줄 정도로 고통이 지속되어 확실한 치료법이 절실합니다."`
     ],
-    introText: [
-      `진료실에는 **${region.short}**뿐만 아니라 인근 생활권에서 ${cat.name} 증상으로 고통받는 많은 환자분들이 내원하십니다.`,
-      `이것은 환자분의 의지나 성격의 문제가 아닙니다. **지속적인 스트레스와 신경계 과열로 인해 뇌 신경망과 자율신경계의 조절 밸런스가 무너진 신경생리학적 신체화 상태**입니다.`
-    ],
+    introText: introText,
     toc: [
       `${topic.focus}의 신경학적 핵심 원인과 진행 메커니즘`,
       `진료실에서 가장 먼저 살피는 생활 속 단서와 전조 신호`,
@@ -658,63 +995,30 @@ function generateFallbackContent(cat, topic, region, title, date, id) {
       { q: '한의원 첫 내원 시 어떤 검사와 진료를 받게 되나요?', a: '사전 설문지 작성 후 뇌파 검사, 적외선 체열 검사, 간이정신진단검사를 시행하며, 1:1 정밀 맥진·복진을 거쳐 맞춤 처방이 진행됩니다.' }
     ],
     closingText: '몸이 보내는 신호는 쉼과 치유가 필요하다는 절박한 메시지입니다. 뇌와 자율신경의 평온을 되찾아 건강한 일상을 다시 누리세요.',
-    tistoryTitle: `가슴이 답답하고 불안할 때? ${catShort}의 원인과 생활 속 회복 가이드`,
-    tistoryTags: [catShort, `${region.short}한의원`, '부평한의원', '자율신경', '건강칼럼'],
-    tistoryScript: generateFallbackTistoryScript(cat, topic, region),
+    patternType: pattern,
+    patternName: ['[패턴 1] 맨앞 지역명 한의원', '[패턴 2] 중간 지역명 삽입', '[패턴 3] 지역명 없는 순수 질환/블로그형'][pattern],
+    titleVariants: defaultVariants,
+    tistoryTitle: defaultVariants.p3,
+    tistoryTags: tags,
+    tistoryScript: generateFallbackTistoryScript(cat, topic, region, pattern, defaultVariants),
     date: date
   };
 }
 
-// 7. content/column/_index.md 및 content/_index.md 에 신규 칼럼 주입
-async function updateColumnPage(col, slug) {
+// 7. content/column/_index.md 에 신규 칼럼 주입 및 인덱스 재구축
+export async function updateColumnPage(col, slug) {
   const singlePostPath = path.join(rootDir, 'content', 'column', `${slug}.md`);
   const markdownContent = renderColumnMarkdown(col);
 
+  // 중복 파일 덮어쓰기 방지 및 신규 작성
   fs.writeFileSync(singlePostPath, markdownContent, 'utf-8');
   console.log(`[Auto-Column SEO] Created 6-section Markdown post: ${singlePostPath}`);
 
-  // content/column/_index.md 전체 재스캔 및 페이지네이션 재구축
+  // content/column/_index.md 전체 재스캔 및 자동 중복방지 인덱스 재구축
   try {
     rebuildColumnIndex();
   } catch (err) {
     console.error('[Auto-Column SEO] Error rebuilding column index:', err);
-  }
-
-  // content/_index.md 메인 홈 최신 칼럼 업데이트
-  const homeIndexPath = path.join(rootDir, 'content', '_index.md');
-  if (fs.existsSync(homeIndexPath)) {
-    let homeContent = fs.readFileSync(homeIndexPath, 'utf-8');
-    const homeGridMarker = '<div class="grid grid-cols-1 md:grid-cols-3 gap-5" id="home-column-grid">';
-    const homeCardHtml = `
-              <!-- 칼럼: 최신 자동발행 (${col.categoryName}) -->
-              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:shadow-md transition">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">${col.categoryName}</span>
-                    <span class="text-[11px] text-[#68736E]">${col.date} • 최신 칼럼</span>
-                  </div>
-                  <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
-                    <a href="/column/${slug}/" class="hover:underline">
-                      ${col.title}
-                    </a>
-                  </h3>
-                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-3">
-                    ${col.summary}
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• ${(col.tags || []).slice(0, 2).join(' • ')}</span>
-                  <a href="/column/${slug}/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
-                    전문 읽기 →
-                  </a>
-                </div>
-              </div>`;
-
-    if (homeContent.includes(homeGridMarker)) {
-      homeContent = homeContent.replace(homeGridMarker, `${homeGridMarker}\n${homeCardHtml}`);
-      fs.writeFileSync(homeIndexPath, homeContent, 'utf-8');
-      console.log(`[Auto-Column SEO] Successfully updated homepage content/_index.md!`);
-    }
   }
 }
 
@@ -738,7 +1042,7 @@ async function postTelegramMessage(botToken, chatId, text) {
 }
 
 // 9. 텔레그램 알림 발송
-async function sendTelegramNotification(column, slug) {
+export async function sendTelegramNotification(column, slug, target = null) {
   const botToken = process.env.TELEGRAM_BOT_TOKEN || '8673980673:AAHRmp8S-FwQPBzPyPT-uea0OQ-zWzpM1Lc';
   const chatId = process.env.TELEGRAM_CHAT_ID || '2026055528';
 
@@ -751,9 +1055,18 @@ async function sendTelegramNotification(column, slug) {
   const bookingUrl = `https://booking.naver.com/booking/13/bizes/934695`;
   const kakaoUrl = `https://open.kakao.com/o/sgbnTRJi`;
 
+  const pName = column.patternName || '[패턴] 건강 칼럼';
+  const variants = column.titleVariants || target?.titleVariants || {
+    p1: column.title,
+    p2: column.title,
+    p3: column.tistoryTitle || column.title
+  };
+
   const homepageNotice = `📢 <b>[해아림한의원] 새 건강 칼럼이 공식 홈페이지에 자동 발행되었습니다!</b>
 
-📌 <b>홈페이지 제목:</b> ${escapeHtml(column.title)}
+📌 <b>홈페이지 제목 (${escapeHtml(pName)}):</b>
+<code>${escapeHtml(column.title)}</code>
+
 🏷️ <b>분류:</b> ${escapeHtml(column.categoryName)}
 🗓️ <b>발행일:</b> ${column.date}
 
@@ -762,15 +1075,23 @@ ${escapeHtml(column.summary)}
 
 🔗 <a href="${columnUrl}">홈페이지에서 칼럼 바로가기</a>`;
 
-  const tTitle = column.tistoryTitle || `[건강정보] ${column.categoryName} 원인과 일상 회복 가이드`;
   const tTags = (column.tistoryTags || column.tags || []).map(t => `#${t.replace(/^#|\s+/g, '')}`).join(' ');
-  const tScript = column.tistoryScript || generateFallbackTistoryScript({ name: column.categoryName }, { focus: '' }, { short: '부평' });
+  const tScript = column.tistoryScript || generateFallbackTistoryScript({ name: column.categoryName }, { focus: '', hookLine: '' }, { short: '부평' }, column.patternType || 0, variants);
 
-  const tistoryNotice = `📋 <b>[티스토리 블로그 원클릭 복사용 맞춤 대본]</b>
-<i>※ 홈페이지 칼럼과 100% 다른 문장과 친근한 블로그 스토리텔링으로 재작성된 원고입니다. (유사문서 페널티 완벽 방지)</i>
+  const tistoryNotice = `📋 <b>[블로그 원클릭 복사용 맞춤 대본]</b>
+<i>※ 홈페이지 칼럼과 100% 다른 문장과 친근한 블로그 스토리텔링으로 재작성된 6섹션 원고입니다. (유사문서 페널티 완벽 방지)</i>
 
-<b>[추천 제목]</b>
-<code>${escapeHtml(tTitle)}</code>
+🎯 <b>[블로그 포스팅용 추천 제목 3종 세트]</b>
+<i>(원하시는 스타일을 골라 복사해서 블로그 제목으로 사용하세요)</i>
+
+1️⃣ <b>맨앞 지역명형:</b>
+<code>${escapeHtml(variants.p1)}</code>
+
+2️⃣ <b>중간 지역명형 (파란색 강조 스타일 ⭐):</b>
+<code>${escapeHtml(variants.p2)}</code>
+
+3️⃣ <b>지역명 없는 스토리/질문형:</b>
+<code>${escapeHtml(variants.p3)}</code>
 
 ─────────────────
 ${escapeHtml(tScript)}
@@ -837,16 +1158,26 @@ function escapeHtml(text) {
 
 // 10. 메인 실행 함수
 async function main() {
-  console.log('[Auto-Column SEO] Starting clean-title & 6-section column generation...');
-  const column = await generateColumnContent();
+  console.log('[Auto-Column SEO] Starting smart-rotation & deduplicated column generation...');
+  const target = selectSmartTarget();
+  console.log(`[Auto-Column SEO] Selected Target: ${target.selectedCat.name} | Topic: "${target.selectedTopic.focus}" | Region: ${target.selectedRegion.short} | Pattern: ${target.patternName}`);
+  console.log(`[Auto-Column SEO] Title Options:
+  1) ${target.titleVariants.p1}
+  2) ${target.titleVariants.p2}
+  3) ${target.titleVariants.p3}`);
+
+  const column = await generateColumnContent(target);
   const slug = `post-${column.date}-${column.category}-${Date.now().toString().slice(-4)}`;
   await updateColumnPage(column, slug);
   console.log(`[Auto-Column SEO] Published column: "${column.title}"`);
-  await sendTelegramNotification(column, slug);
+  await sendTelegramNotification(column, slug, target);
   await publishToTistory(column, slug);
 }
 
-main().catch(err => {
-  console.error('[Auto-Column SEO] Fatal Error:', err);
-  process.exit(1);
-});
+// 직접 실행 시에만 main() 호출
+if (process.argv[1] && process.argv[1].endsWith('generate-column.mjs')) {
+  main().catch(err => {
+    console.error('[Auto-Column SEO] Fatal Error:', err);
+    process.exit(1);
+  });
+}

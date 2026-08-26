@@ -106,12 +106,27 @@ ${escapeHtml(summary)}
   });
   console.log('1. Summary notification sent! Status:', sumRes.status);
 
-  // 2) 티스토리 정통 6섹션 칼럼 대본 (홈페이지와 다른 표현의 완결 칼럼 원고)
-  const copyMsg = `📋 <b>[티스토리 블로그 정통 6섹션 맞춤 칼럼 원고]</b>
-<i>※ 칼럼 쓰는 방식을 100% 동일하게 유지하되, 포털 유사문서 방지를 위해 문장 표현을 새롭게 재작성한 완결 칼럼입니다.</i>
+  const titleVariants = {
+    p1: '인천 부평 한의원 공황장애, 갑자기 숨이 턱 막히고 죽을 것 같은 공포와 응급 대처법',
+    p2: '갑자기 숨이 턱 막히고 죽을 것 같은 공포, 인천 부평 공황장애의 원인과 한방 치료법',
+    p3: '공황발작은 지나갔는데 왜 숨이 차고 불안은 계속될까요?'
+  };
 
-<b>[추천 제목]</b>
-<code>${escapeHtml(tistoryTitle)}</code>
+  // 2) 블로그 원클릭 복사용 6섹션 칼럼 대본 (3가지 추천 제목 옵션 포함)
+  const copyMsg = `📋 <b>[블로그 원클릭 복사용 맞춤 대본]</b>
+<i>※ 포털 유사문서 페널티 방지를 위해 홈페이지 칼럼과 100% 다른 문장으로 재작성된 6섹션 원고입니다.</i>
+
+🎯 <b>[블로그 포스팅용 추천 제목 3종 세트]</b>
+<i>(원하시는 스타일을 골라 복사해서 블로그 제목으로 사용하세요)</i>
+
+1️⃣ <b>맨앞 지역명형:</b>
+<code>${escapeHtml(titleVariants.p1)}</code>
+
+2️⃣ <b>중간 지역명형 (파란색 강조 스타일 ⭐):</b>
+<code>${escapeHtml(titleVariants.p2)}</code>
+
+3️⃣ <b>지역명 없는 순수 질환형:</b>
+<code>${escapeHtml(titleVariants.p3)}</code>
 
 ─────────────────
 ${escapeHtml(tistoryScript)}

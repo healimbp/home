@@ -343,9 +343,22 @@ export function rebuildColumnIndex() {
     return a.slug.localeCompare(b.slug);
   });
 
+  // 중복 제목 필터링 (Self-Healing Deduplication: 동일 제목 발생 시 최신 1건만 유지)
+  const seenTitles = new Set();
+  const uniqueArticles = [];
+  for (const article of allArticles) {
+    const normTitle = article.title.trim().toLowerCase();
+    if (!seenTitles.has(normTitle)) {
+      seenTitles.add(normTitle);
+      uniqueArticles.push(article);
+    } else {
+      console.warn(`[Rebuild Column Index] ⚠️ 중복 칼럼 감지 및 제외: "${article.title}" (${article.slug})`);
+    }
+  }
+
   // 카테고리별 동적 개수 집계
   const counts = {
-    all: allArticles.length,
+    all: uniqueArticles.length,
     panic: 0,
     autonomic: 0,
     insomnia: 0,
@@ -354,17 +367,17 @@ export function rebuildColumnIndex() {
     somatic: 0
   };
 
-  allArticles.forEach(a => {
+  uniqueArticles.forEach(a => {
     const catClass = getCategoryClass(a.category);
     if (counts[catClass] !== undefined) {
       counts[catClass]++;
     }
   });
 
-  console.log(`[Rebuild Column Index] 총 ${allArticles.length}개 칼럼 감지 (공황: ${counts.panic}, 자율신경: ${counts.autonomic}, 불면: ${counts.insomnia}, 틱/ADHD: ${counts.tic}, 화병/번아웃: ${counts.stress}, 신체화/담적: ${counts.somatic})`);
+  console.log(`[Rebuild Column Index] 총 ${uniqueArticles.length}개 칼럼 감지 (공황: ${counts.panic}, 자율신경: ${counts.autonomic}, 불면: ${counts.insomnia}, 틱/ADHD: ${counts.tic}, 화병/번아웃: ${counts.stress}, 신체화/담적: ${counts.somatic})`);
 
   // 칼럼 카드 HTML 생성
-  const columnCardsHtml = allArticles.map((col, idx) => {
+  const columnCardsHtml = uniqueArticles.map((col, idx) => {
     const catClass = getCategoryClass(col.category);
     return `
               <!-- [칼럼 #${idx + 1} | ${col.category}] ${col.title} -->
@@ -633,7 +646,7 @@ ${columnCardsHtml}
 `;
 
   fs.writeFileSync(path.join(columnDir, '_index.md'), indexContent, 'utf8');
-  console.log(`[Rebuild Column Index] content/column/_index.md 파일이 성공적으로 업데이트되었습니다. (총 ${allArticles.length}개 칼럼 반영 완료)`);
+  console.log(`[Rebuild Column Index] content/column/_index.md 파일이 성공적으로 업데이트되었습니다. (총 ${uniqueArticles.length}개 칼럼 반영 완료)`);
 }
 
 // 메인 실행: 25개 필러 칼럼 파일 작성 후 전체 인덱스 재구축
