@@ -130,7 +130,7 @@ export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
   // 5. 티스토리 최종 레이아웃 감싸기
   const columnUrl = `https://healimbp.com/column/${slug}/`;
   const bookingUrl = `https://booking.naver.com/booking/13/bizes/934695`;
-  const kakaoUrl = `https://open.kakao.com/o/sgbnTRJi`;
+  const kakaoUrl = `https://pf.kakao.com/_Tcxcxoxj`;
 
   return `
 <div style="font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; line-height: 1.85; color: #333333; max-width: 780px; margin: 0 auto; padding: 10px 0; font-style: normal;">

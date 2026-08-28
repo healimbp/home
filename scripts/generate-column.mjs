@@ -1053,7 +1053,7 @@ export async function sendTelegramNotification(column, slug, target = null) {
 
   const columnUrl = `https://healimbp.com/column/${slug}/`;
   const bookingUrl = `https://booking.naver.com/booking/13/bizes/934695`;
-  const kakaoUrl = `https://open.kakao.com/o/sgbnTRJi`;
+  const kakaoUrl = `https://pf.kakao.com/_Tcxcxoxj`;
 
   const pName = column.patternName || '[패턴] 건강 칼럼';
   const variants = column.titleVariants || target?.titleVariants || {

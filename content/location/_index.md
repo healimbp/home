@@ -238,7 +238,7 @@ sections:
                     <i class="fa-solid fa-calendar-check"></i>
                     <span>네이버 간편예약</span>
                   </a>
-                  <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="py-2.5 px-3 rounded-xl bg-[#FEE500] text-[#191919] text-xs font-extrabold hover:bg-[#FDD835] transition shadow-xs flex items-center justify-center gap-1.5">
+                  <a href="https://pf.kakao.com/_Tcxcxoxj" target="_blank" rel="noopener" class="py-2.5 px-3 rounded-xl bg-[#FEE500] text-[#191919] text-xs font-extrabold hover:bg-[#FDD835] transition shadow-xs flex items-center justify-center gap-1.5">
                     <i class="fa-solid fa-comment"></i>
                     <span>카톡 1:1 상담</span>
                   </a>

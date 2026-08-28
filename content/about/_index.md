@@ -368,7 +368,7 @@ sections:
               <i class="fa-solid fa-calendar-check"></i>
               <span>네이버 간편 진료예약</span>
             </a>
-            <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao">
+            <a href="https://pf.kakao.com/_Tcxcxoxj" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao">
               <i class="fa-solid fa-comment"></i>
               <span>카카오톡 1:1 상담</span>
             </a>

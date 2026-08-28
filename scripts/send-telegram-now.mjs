@@ -26,7 +26,7 @@ async function sendNow() {
   const summary = '인천 부평, 부천, 구월동, 청라 지역에서 지하철, 운전 중 갑자기 숨이 막히고 심장이 터질 듯 뛰는 공황발작의 편도체 신경학적 원인과 4-7-8 응급 호흡 및 1:1 맞춤 한방 치료 원리';
   const columnUrl = 'https://healimbp.com/column/panic-disorder-breathing/';
   const bookingUrl = 'https://booking.naver.com/booking/13/bizes/934695';
-  const kakaoUrl = 'https://open.kakao.com/o/sgbnTRJi';
+  const kakaoUrl = 'https://pf.kakao.com/_Tcxcxoxj';
 
   // 티스토리 전용 6대 챕터 정통 칼럼 원고 (홈페이지와 100% 다른 문장으로 재작성된 완결 칼럼)
   const tistoryTitle = '지하철·터널에서 갑자기 숨이 턱 막히고 심장이 쿵쾅거릴 때? 공황발작 신경학적 원인과 1:1 맞춤 치료법';

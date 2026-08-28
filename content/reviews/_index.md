@@ -1596,9 +1596,9 @@ sections:
                 <i class="fa-solid fa-calendar-check"></i>
                 <span>네이버 간편 진료예약</span>
               </a>
-              <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao text-sm font-bold px-5 py-3 rounded-xl bg-[#FEE500] text-[#191919] hover:bg-[#FDD835] transition flex items-center gap-2">
+              <a href="https://pf.kakao.com/_Tcxcxoxj" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao text-sm font-bold px-5 py-3 rounded-xl bg-[#FEE500] text-[#191919] hover:bg-[#FDD835] transition flex items-center gap-2">
                 <i class="fa-solid fa-comment"></i>
-                <span>카카오톡 1:1 비밀상담</span>
+                <span>카카오톡 1:1 상담</span>
               </a>
               <a href="tel:032-719-3472" class="heal-btn text-sm font-bold px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white transition flex items-center gap-2 border border-white/20">
                 <i class="fa-solid fa-phone"></i>

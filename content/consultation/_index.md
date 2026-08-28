@@ -44,7 +44,7 @@ sections:
               <h2 class="text-lg font-extrabold text-[#26332E]">카카오톡 1:1 비밀상담</h2>
               <p class="text-xs text-[#68736E]">카카오톡 채널 <strong class="text-[#26332E]">@healimbp</strong>를 통해 언제든 편안하게 문의하세요.</p>
               <div class="text-sm font-extrabold text-[#2F5D50]">카카오톡: @healimbp</div>
-              <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao w-full text-sm">
+              <a href="https://pf.kakao.com/_Tcxcxoxj" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao w-full text-sm">
                 <i class="fa-solid fa-comment"></i>
                 <span>카톡 상담 시작하기</span>
               </a>

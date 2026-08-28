@@ -31,9 +31,9 @@ sections:
                 <i class="fa-solid fa-phone"></i>
                 <span>전화 상담: 032-719-3472</span>
               </a>
-              <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao shadow-md">
+              <a href="https://pf.kakao.com/_Tcxcxoxj" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao shadow-md">
                 <i class="fa-solid fa-comment"></i>
-                <span>카카오톡 비밀 상담</span>
+                <span>카카오톡 채널 상담</span>
               </a>
               <a href="https://booking.naver.com/booking/13/bizes/934695" target="_blank" rel="noopener" class="heal-btn heal-btn-naver shadow-md">
                 <i class="fa-solid fa-calendar-check"></i>
@@ -813,9 +813,9 @@ sections:
                 <i class="fa-solid fa-map-location-dot"></i>
                 <span>오시는 길 & 시간표</span>
               </a>
-              <a href="https://open.kakao.com/o/sgbnTRJi" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao text-sm">
+              <a href="https://pf.kakao.com/_Tcxcxoxj" target="_blank" rel="noopener" class="heal-btn heal-btn-kakao text-sm">
                 <i class="fa-solid fa-comment"></i>
-                <span>카톡 실시간 상담</span>
+                <span>카톡 채널 상담</span>
               </a>
             </div>
           </div>
