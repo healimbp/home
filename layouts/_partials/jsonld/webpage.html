@@ -3,6 +3,9 @@
 
 {{- $language := $page.Language.Locale | default site.Language.Locale | default "ko-KR" -}}
 {{- $description := $summary | default ($page.Params.summary | default $page.Summary) -}}
+{{- if and (not $description) $page.IsHome -}}
+  {{- $description = site.Params.hugoblox.identity.description -}}
+{{- end -}}
 {{- $description = $description | plainify -}}
 
 {{- $featured_image := partial "functions/get_featured_image" $page -}}
@@ -11,22 +14,34 @@
   {{- $image_url = $featured_image.Permalink -}}
 {{- end -}}
 
+{{- $page_name := $page.LinkTitle | default $page.Title | plainify -}}
+{{- if $page.IsHome -}}
+  {{- $page_name = printf "%s | 인천·부평·부천 공황장애·불면증·자율신경 한의원" site.Title -}}
+{{- end -}}
+
 {{- $webpage := dict
   "@context" "https://schema.org"
   "@type" "WebPage"
-  "@id" $page.Permalink
+  "@id" (printf "%s#webpage" $page.Permalink)
   "url" $page.Permalink
-  "name" ($page.LinkTitle | default $page.Title | plainify)
+  "name" $page_name
   "inLanguage" $language
   "isPartOf" (dict
     "@type" "WebSite"
-    "@id" site.BaseURL
+    "@id" "https://healimbp.com/#website"
     "url" site.BaseURL
     "name" site.Title
   )
+  "about" (dict
+    "@id" "https://healimbp.com/#clinic"
+  )
   "primaryImageOfPage" (dict
     "@type" "ImageObject"
+    "@id" "https://healimbp.com/#logo"
     "url" $image_url
+  )
+  "breadcrumb" (dict
+    "@id" (printf "%s#breadcrumb" $page.Permalink)
   )
 -}}
 
