@@ -1,0 +1,47 @@
+{{- $page := .page -}}
+{{- $summary := .summary -}}
+
+{{- $language := $page.Language.Locale | default site.Language.Locale | default "ko-KR" -}}
+{{- $description := $summary | default ($page.Params.summary | default $page.Summary) -}}
+{{- $description = $description | plainify -}}
+
+{{- $featured_image := partial "functions/get_featured_image" $page -}}
+{{- $image_url := "https://healimbp.com/images/director.jpg" -}}
+{{- if $featured_image -}}
+  {{- $image_url = $featured_image.Permalink -}}
+{{- end -}}
+
+{{- $webpage := dict
+  "@context" "https://schema.org"
+  "@type" "WebPage"
+  "@id" $page.Permalink
+  "url" $page.Permalink
+  "name" ($page.LinkTitle | default $page.Title | plainify)
+  "inLanguage" $language
+  "isPartOf" (dict
+    "@type" "WebSite"
+    "@id" site.BaseURL
+    "url" site.BaseURL
+    "name" site.Title
+  )
+  "primaryImageOfPage" (dict
+    "@type" "ImageObject"
+    "url" $image_url
+  )
+-}}
+
+{{- if $description }}
+  {{- $webpage = merge $webpage (dict "description" $description) -}}
+{{- end -}}
+
+{{- if not $page.Date.IsZero }}
+  {{- $webpage = merge $webpage (dict "datePublished" ($page.Date.Format "2006-01-02T15:04:05Z07:00")) -}}
+{{- end -}}
+
+{{- if not $page.Lastmod.IsZero }}
+  {{- $webpage = merge $webpage (dict "dateModified" ($page.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{{ $webpage | jsonify (dict "indent" "  ") | safeJS }}
+</script>
