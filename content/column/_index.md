@@ -33,10 +33,10 @@ sections:
             <!-- 탭 버튼 목록 (동적 개수 반영) -->
             <div class="flex flex-wrap gap-2 pb-2" id="column-category-tabs">
               <button onclick="filterColumn('all', this)" class="column-tab-btn active-tab px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                전체보기 <span class="text-[11px] opacity-80" id="tab-count-all">(57)</span>
+                전체보기 <span class="text-[11px] opacity-80" id="tab-count-all">(58)</span>
               </button>
               <button onclick="filterColumn('panic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                공황 · 불안 & 강박증 <span class="text-[11px] opacity-80" id="tab-count-panic">(10)</span>
+                공황 · 불안 & 강박증 <span class="text-[11px] opacity-80" id="tab-count-panic">(11)</span>
               </button>
               <button onclick="filterColumn('autonomic', this)" class="column-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
                 자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80" id="tab-count-autonomic">(10)</span>
@@ -58,7 +58,32 @@ sections:
             <!-- 칼럼 카드 그리드 (페이지별 8개씩 분할 노출) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[400px]" id="column-grid">
 
-              <!-- [칼럼 #1 | 자율신경 & 실신·어지럼증·이명] 앉았다 일어설 때 눈앞이 하얘지는 기립성 어지럼증과 자율신경 밸런스 회복 -->
+              <!-- [칼럼 #1 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡 응급 대처법 -->
+              <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">공황 · 불안 & 강박증</span>
+                    <span class="text-xs text-[#68736E]">2026-08-31 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/post-2026-08-31-panic-6701/" class="hover:underline">
+                      [인천 부평한의원 공황] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡 응급 대처법
+                    </a>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                    인천 부평 지역에서 공황 · 불안 & 강박증 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 인천 부평한의원 • 부평한의원</span>
+                  <a href="/column/post-2026-08-31-panic-6701/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- [칼럼 #2 | 자율신경 & 실신·어지럼증·이명] 앉았다 일어설 때 눈앞이 하얘지는 기립성 어지럼증과 자율신경 밸런스 회복 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -83,7 +108,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #2 | 신체화 & 담적·두통·턱관절] 시험이나 미팅 직전 배가 살살 아프고 가스 차는 과민성대장증후군 뇌-장 치료 -->
+              <!-- [칼럼 #3 | 신체화 & 담적·두통·턱관절] 시험이나 미팅 직전 배가 살살 아프고 가스 차는 과민성대장증후군 뇌-장 치료 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -108,7 +133,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #3 | 우울증 · 화병 & 번아웃] 갱년기 화병 및 자율신경 불균형, [부천 상동 우울증] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #4 | 우울증 · 화병 & 번아웃] 갱년기 화병 및 자율신경 불균형, [부천 상동 우울증] 한의학적 원인과 관리법 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -133,7 +158,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #4 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 발달과 NeuronFlex 두뇌훈련 -->
+              <!-- [칼럼 #5 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 발달과 NeuronFlex 두뇌훈련 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -158,7 +183,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #5 | 자율신경 & 실신·어지럼증·이명] 조용한 밤마다 더 커지는 귓속 삐 소리, 신경성 이명과 뇌명증 한방 치료 원리 -->
+              <!-- [칼럼 #6 | 자율신경 & 실신·어지럼증·이명] 조용한 밤마다 더 커지는 귓속 삐 소리, 신경성 이명과 뇌명증 한방 치료 원리 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -183,7 +208,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #6 | 불면증 · 수면장애] 생체시계 정상화 및 수면 리듬, [인천 간석동 불면증] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #7 | 불면증 · 수면장애] 생체시계 정상화 및 수면 리듬, [인천 간석동 불면증] 한의학적 원인과 관리법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -208,7 +233,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #7 | 불면증 · 수면장애] 수면의 질 개선 및 델타파 유도, [인천 송도 불면증] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #8 | 불면증 · 수면장애] 수면의 질 개선 및 델타파 유도, [인천 송도 불면증] 한의학적 원인과 관리법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -233,7 +258,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #8 | 공황 · 불안 & 강박증] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, [인천 청라 공황] 공황발작과 과호흡 응급 대처법 -->
+              <!-- [칼럼 #9 | 공황 · 불안 & 강박증] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, [인천 청라 공황] 공황발작과 과호흡 응급 대처법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -258,7 +283,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #9 | 신체화 & 담적·두통·턱관절] 경추성 긴장성 두통 및 후두신경통, [시흥 은계 신체화] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #10 | 신체화 & 담적·두통·턱관절] 경추성 긴장성 두통 및 후두신경통, [시흥 은계 신체화] 한의학적 원인과 관리법 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -283,7 +308,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #10 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [인천 간석동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
+              <!-- [칼럼 #11 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [인천 간석동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -308,7 +333,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #11 | 소아청소년 & 성인 ADHD·틱장애] [시흥 은계한의원 소아청소년] 스마트폰 과의존과 주의력 저하를 겪는 아이를 위한 감각통합 두뇌 솔루션 -->
+              <!-- [칼럼 #12 | 소아청소년 & 성인 ADHD·틱장애] [시흥 은계한의원 소아청소년] 스마트폰 과의존과 주의력 저하를 겪는 아이를 위한 감각통합 두뇌 솔루션 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -333,7 +358,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #12 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 사소한 일에도 최악을 상상하는 범불안장애와 자율신경 과흥분 조절 -->
+              <!-- [칼럼 #13 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 사소한 일에도 최악을 상상하는 범불안장애와 자율신경 과흥분 조절 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -358,7 +383,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #13 | 불면증 · 수면장애] [부천 신경정신과] 불면증 치료, 수면제 내성 없이 뇌 자생력으로 깊은 잠드는 법 -->
+              <!-- [칼럼 #14 | 불면증 · 수면장애] [부천 신경정신과] 불면증 치료, 수면제 내성 없이 뇌 자생력으로 깊은 잠드는 법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -383,7 +408,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #14 | 자율신경 & 실신·어지럼증·이명] [인천 서구 어지럼증] 이비인후과·뇌 MRI 정상인데 붕 뜨고 흔들리는 어지럼증, 자율신경과 상부경추 한방 솔루션 -->
+              <!-- [칼럼 #15 | 자율신경 & 실신·어지럼증·이명] [인천 서구 어지럼증] 이비인후과·뇌 MRI 정상인데 붕 뜨고 흔들리는 어지럼증, 자율신경과 상부경추 한방 솔루션 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -408,7 +433,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #15 | 공황 · 불안 & 강박증] [인천 계양구 공황] 문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법 -->
+              <!-- [칼럼 #16 | 공황 · 불안 & 강박증] [인천 계양구 공황] 문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -433,7 +458,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #16 | 신체화 & 담적·두통·턱관절] 이갈이·이악물기 및 교근 긴장, [인천 부평 신체화] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #17 | 신체화 & 담적·두통·턱관절] 이갈이·이악물기 및 교근 긴장, [인천 부평 신체화] 한의학적 원인과 관리법 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -458,7 +483,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #17 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 매사 무기력하고 의욕이 사라진 만성 우울감, 장-뇌 축 개선과 해울 한방 치료 -->
+              <!-- [칼럼 #18 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 매사 무기력하고 의욕이 사라진 만성 우울감, 장-뇌 축 개선과 해울 한방 치료 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -483,7 +508,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #18 | 소아청소년 & 성인 ADHD·틱장애] 성인 ADHD 실행기능장애, [김포 검단 소아청소년] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #19 | 소아청소년 & 성인 ADHD·틱장애] 성인 ADHD 실행기능장애, [김포 검단 소아청소년] 한의학적 원인과 관리법 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -508,7 +533,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #19 | 불면증 · 수면장애] [인천 구월동 불면증] 잠들기까지 1시간 이상 뒤척이는 입면장애와 뇌 DMN 과각성 해소법 -->
+              <!-- [칼럼 #20 | 불면증 · 수면장애] [인천 구월동 불면증] 잠들기까지 1시간 이상 뒤척이는 입면장애와 뇌 DMN 과각성 해소법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -533,7 +558,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #20 | 공황 · 불안 & 강박증] [인천 부평 공황] 발표할 때 목소리 떨림과 심장 두근거림, 사회공포증 한의학 솔루션 -->
+              <!-- [칼럼 #21 | 공황 · 불안 & 강박증] [인천 부평 공황] 발표할 때 목소리 떨림과 심장 두근거림, 사회공포증 한의학 솔루션 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -558,7 +583,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #21 | 소아청소년 & 성인 ADHD·틱장애] [시흥 배곧 소아청소년] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료 -->
+              <!-- [칼럼 #22 | 소아청소년 & 성인 ADHD·틱장애] [시흥 배곧 소아청소년] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -583,7 +608,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #22 | 자율신경 & 실신·어지럼증·이명] [인천 간석동 자율신경] 긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방 -->
+              <!-- [칼럼 #23 | 자율신경 & 실신·어지럼증·이명] [인천 간석동 자율신경] 긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -608,7 +633,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #23 | 신체화 & 담적·두통·턱관절] [인천 영종도 신체화] 검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법 -->
+              <!-- [칼럼 #24 | 신체화 & 담적·두통·턱관절] [인천 영종도 신체화] 검사상 이상 없다는데 온몸이 아픈 신체화장애와 만성 신경성 두통의 해법 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -633,7 +658,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #24 | 우울증 · 화병 & 번아웃] [김포 검단 우울증] 직장인·전문직 번아웃 증후군과 무기력증 회복, 사향공진단·건뇌단 요법 -->
+              <!-- [칼럼 #25 | 우울증 · 화병 & 번아웃] [김포 검단 우울증] 직장인·전문직 번아웃 증후군과 무기력증 회복, 사향공진단·건뇌단 요법 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -658,7 +683,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #25 | 불면증 · 수면장애] [부천 중동 불면증] 수면제 의존 없이 깊은 잠드는 법, 뇌파 안정과 자생적 수면 리듬 -->
+              <!-- [칼럼 #26 | 불면증 · 수면장애] [부천 중동 불면증] 수면제 의존 없이 깊은 잠드는 법, 뇌파 안정과 자생적 수면 리듬 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -683,7 +708,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #26 | 공황 · 불안 & 강박증] [인천 계양구 공황] 지하철·엘리베이터 공포증과 광장공포증, 공간 지각 왜곡 극복법 -->
+              <!-- [칼럼 #27 | 공황 · 불안 & 강박증] [인천 계양구 공황] 지하철·엘리베이터 공포증과 광장공포증, 공간 지각 왜곡 극복법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -708,7 +733,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #27 | 신체화 & 담적·두통·턱관절] [인천 송도 신체화] 위내시경은 정상인데 명치가 꽉 막히는 신경성 소화불량과 담적병(痰積病) -->
+              <!-- [칼럼 #28 | 신체화 & 담적·두통·턱관절] [인천 송도 신체화] 위내시경은 정상인데 명치가 꽉 막히는 신경성 소화불량과 담적병(痰積病) -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -733,7 +758,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #28 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 가슴 답답함과 목 이물감(매핵기), 울화병을 다스리는 한의학적 치료법 -->
+              <!-- [칼럼 #29 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 가슴 답답함과 목 이물감(매핵기), 울화병을 다스리는 한의학적 치료법 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -758,7 +783,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #29 | 자율신경 & 실신·어지럼증·이명] [인천 구월동 자율신경] 긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방 -->
+              <!-- [칼럼 #30 | 자율신경 & 실신·어지럼증·이명] [인천 구월동 자율신경] 긴장하면 손발에 땀 쏟아지는 수족다한증, 교감신경 긴장 완화 처방 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -783,7 +808,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #30 | 불면증 · 수면장애] [부천 상동 불면증] 새벽 3~4시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리 -->
+              <!-- [칼럼 #31 | 불면증 · 수면장애] [부천 상동 불면증] 새벽 3~4시에 자다 깨는 수면유지장애, 간·심장 허열 치료 원리 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -808,7 +833,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #31 | 우울증 · 화병 & 번아웃] [시흥 배곧 우울증] 가슴 뻐근함과 신경성 두통, 신체화장애와 화병 한방 치료 -->
+              <!-- [칼럼 #32 | 우울증 · 화병 & 번아웃] [시흥 배곧 우울증] 가슴 뻐근함과 신경성 두통, 신체화장애와 화병 한방 치료 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -833,7 +858,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #32 | 소아청소년 & 성인 ADHD·틱장애] [부천 상동 청소년틱] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료 -->
+              <!-- [칼럼 #33 | 소아청소년 & 성인 ADHD·틱장애] [부천 상동 청소년틱] 청소년기 복합 틱장애와 자존감 회복, 두뇌 신경망 1:1 맞춤 치료 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -858,7 +883,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #33 | 자율신경 & 실신·어지럼증·이명] [인천 부평 자율신경] 자고 일어나도 천근만근 무거운 몸, 만성피로와 자율신경실조증의 신경학적 기전 -->
+              <!-- [칼럼 #34 | 자율신경 & 실신·어지럼증·이명] [인천 부평 자율신경] 자고 일어나도 천근만근 무거운 몸, 만성피로와 자율신경실조증의 신경학적 기전 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -883,7 +908,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #34 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평 소아틱] 왜 틱은 눈에서 시작해 코, 입, 목으로 내려갈까요? 소아 틱장애 진행 원리와 대처법 -->
+              <!-- [칼럼 #35 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평 소아틱] 왜 틱은 눈에서 시작해 코, 입, 목으로 내려갈까요? 소아 틱장애 진행 원리와 대처법 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -908,7 +933,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #35 | 공황 · 불안 & 강박증] [인천 부평 공황장애] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡의 신경학적 기전과 응급 대처법 -->
+              <!-- [칼럼 #36 | 공황 · 불안 & 강박증] [인천 부평 공황장애] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡의 신경학적 기전과 응급 대처법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -933,7 +958,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #36 | 불면증 · 수면장애] [부천 중동 불면증] 누우면 잡생각이 꼬리를 물고 2시간씩 뒤척여요, 입면장애와 뇌 과각성 스위치 끄는 법 -->
+              <!-- [칼럼 #37 | 불면증 · 수면장애] [부천 중동 불면증] 누우면 잡생각이 꼬리를 물고 2시간씩 뒤척여요, 입면장애와 뇌 과각성 스위치 끄는 법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -958,7 +983,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #37 | 공황 · 불안 & 강박증] [부천 중동 불안장애] '또 발작 올까 봐 24시간 불안해요' 공황장애 예기불안과 뇌 편도체 안정법 -->
+              <!-- [칼럼 #38 | 공황 · 불안 & 강박증] [부천 중동 불안장애] '또 발작 올까 봐 24시간 불안해요' 공황장애 예기불안과 뇌 편도체 안정법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -983,7 +1008,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #38 | 신체화 & 담적·두통·턱관절] [시흥 배곧 담적병] 위내시경은 정상인데 명치가 꽉 막히고 체해요, 신경성 소화불량과 담적병(痰積病) -->
+              <!-- [칼럼 #39 | 신체화 & 담적·두통·턱관절] [시흥 배곧 담적병] 위내시경은 정상인데 명치가 꽉 막히고 체해요, 신경성 소화불량과 담적병(痰積病) -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1008,7 +1033,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #39 | 우울증 · 화병 & 번아웃] [인천 부평 화병클리닉] 가슴이 답답하고 목에 무언가 걸린 듯 뱉어지지 않아요, 화병과 매핵기(梅核氣)의 한의학적 해법 -->
+              <!-- [칼럼 #40 | 우울증 · 화병 & 번아웃] [인천 부평 화병클리닉] 가슴이 답답하고 목에 무언가 걸린 듯 뱉어지지 않아요, 화병과 매핵기(梅核氣)의 한의학적 해법 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1033,7 +1058,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #40 | 불면증 · 수면장애] [인천 부평 불면증] 새벽 3~4시만 되면 눈이 번쩍 떠져요, 자다 깨는 수면유지장애와 간·심장 허열 치료 원리 -->
+              <!-- [칼럼 #41 | 불면증 · 수면장애] [인천 부평 불면증] 새벽 3~4시만 되면 눈이 번쩍 떠져요, 자다 깨는 수면유지장애와 간·심장 허열 치료 원리 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1058,7 +1083,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #41 | 자율신경 & 실신·어지럼증·이명] [인천 구월동 실신어지럼] 출퇴근 지하철에서 눈앞이 캄캄해지고 핑 돌며 쓰러지는 미주신경성 실신의 전조 증상과 한방 치료 -->
+              <!-- [칼럼 #42 | 자율신경 & 실신·어지럼증·이명] [인천 구월동 실신어지럼] 출퇴근 지하철에서 눈앞이 캄캄해지고 핑 돌며 쓰러지는 미주신경성 실신의 전조 증상과 한방 치료 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1083,7 +1108,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #42 | 소아청소년 & 성인 ADHD·틱장애] [부천 상동 음성틱] 단순 비염인 줄 알았는데… 아이의 킁킁·음음 소리가 잠잘 때는 멈추는 이유 (음성 틱 & 뚜렛) -->
+              <!-- [칼럼 #43 | 소아청소년 & 성인 ADHD·틱장애] [부천 상동 음성틱] 단순 비염인 줄 알았는데… 아이의 킁킁·음음 소리가 잠잘 때는 멈추는 이유 (음성 틱 & 뚜렛) -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1108,7 +1133,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #43 | 자율신경 & 실신·어지럼증·이명] [부천 상동 심계항진] 긴장하지 않아도 가슴이 쿵쾅거리고 손발에 땀이 쏟아지는 자율신경 과흥분과 다한증 -->
+              <!-- [칼럼 #44 | 자율신경 & 실신·어지럼증·이명] [부천 상동 심계항진] 긴장하지 않아도 가슴이 쿵쾅거리고 손발에 땀이 쏟아지는 자율신경 과흥분과 다한증 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1133,7 +1158,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #44 | 우울증 · 화병 & 번아웃] [부천 상동 번아웃] 매사 의욕이 없고 출근길만 되면 가슴이 턱 막혀요, 직장인 번아웃 증후군과 뇌 신경망 방전 -->
+              <!-- [칼럼 #45 | 우울증 · 화병 & 번아웃] [부천 상동 번아웃] 매사 의욕이 없고 출근길만 되면 가슴이 턱 막혀요, 직장인 번아웃 증후군과 뇌 신경망 방전 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1158,7 +1183,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #45 | 소아청소년 & 성인 ADHD·틱장애] [인천 송도 ADHD] 우리 아이는 왜 알면서도 가만히 있지 못할까요? 집중력이 아닌 '뇌 브레이크' 미성숙입니다 -->
+              <!-- [칼럼 #46 | 소아청소년 & 성인 ADHD·틱장애] [인천 송도 ADHD] 우리 아이는 왜 알면서도 가만히 있지 못할까요? 집중력이 아닌 '뇌 브레이크' 미성숙입니다 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1183,7 +1208,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #46 | 공황 · 불안 & 강박증] [인천 구월동 광장공포] 만원 지하철, 터널, 엘리베이터에서 도망치고 싶은 공포, 광장공포증과 폐쇄공포증의 탈출구 기전 -->
+              <!-- [칼럼 #47 | 공황 · 불안 & 강박증] [인천 구월동 광장공포] 만원 지하철, 터널, 엘리베이터에서 도망치고 싶은 공포, 광장공포증과 폐쇄공포증의 탈출구 기전 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1208,7 +1233,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #47 | 불면증 · 수면장애] [인천 송도 수면장애] 매일 밤 악몽과 가위눌림에 시달려 잠자기가 두려워요, 렘수면 행동장애와 심비양허 체질 극복 -->
+              <!-- [칼럼 #48 | 불면증 · 수면장애] [인천 송도 수면장애] 매일 밤 악몽과 가위눌림에 시달려 잠자기가 두려워요, 렘수면 행동장애와 심비양허 체질 극복 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1233,7 +1258,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #48 | 신체화 & 담적·두통·턱관절] [인천 계양 신체화장애] 검사엔 이상 없다는데 온몸이 아파요, 신경성 두통·어지럼·소화장애가 동반되는 신체화장애 -->
+              <!-- [칼럼 #49 | 신체화 & 담적·두통·턱관절] [인천 계양 신체화장애] 검사엔 이상 없다는데 온몸이 아파요, 신경성 두통·어지럼·소화장애가 동반되는 신체화장애 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1258,7 +1283,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #49 | 자율신경 & 실신·어지럼증·이명] [인천 청라 어지럼증] 이비인후과·신경과 검사에도 이상 없는 어지럼증과 멍함, 상부 경추(C1-C2)와 추골동맥의 관계 -->
+              <!-- [칼럼 #50 | 자율신경 & 실신·어지럼증·이명] [인천 청라 어지럼증] 이비인후과·신경과 검사에도 이상 없는 어지럼증과 멍함, 상부 경추(C1-C2)와 추골동맥의 관계 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1283,7 +1308,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #50 | 소아청소년 & 성인 ADHD·틱장애] [인천 청라 소아수면] 밤마다 비명 지르며 울고 깨는 우리 아이, 단순 성장통일까요? 소아 야경증과 수면 각성 장애 -->
+              <!-- [칼럼 #51 | 소아청소년 & 성인 ADHD·틱장애] [인천 청라 소아수면] 밤마다 비명 지르며 울고 깨는 우리 아이, 단순 성장통일까요? 소아 야경증과 수면 각성 장애 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1308,7 +1333,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #51 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 마음의 문제만이 아닙니다, 만성 우울감과 무기력증을 일으키는 뇌 염증과 세로토닌 저하 -->
+              <!-- [칼럼 #52 | 우울증 · 화병 & 번아웃] [인천 청라 우울증] 마음의 문제만이 아닙니다, 만성 우울감과 무기력증을 일으키는 뇌 염증과 세로토닌 저하 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1333,7 +1358,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #52 | 불면증 · 수면장애] [인천 구월동 수면제단약] 수면제(스틸녹스) 없이는 잠을 못 자요, 약물 내성과 의존성 없이 스스로 잠드는 뇌 자생력 회복법 -->
+              <!-- [칼럼 #53 | 불면증 · 수면장애] [인천 구월동 수면제단약] 수면제(스틸녹스) 없이는 잠을 못 자요, 약물 내성과 의존성 없이 스스로 잠드는 뇌 자생력 회복법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1358,7 +1383,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #53 | 공황 · 불안 & 강박증] [시흥 배곧 사회공포] 사람들 앞에만 서면 목소리가 떨리고 심장이 쿵쾅거려요, 발표불안과 무대공포증 극복법 -->
+              <!-- [칼럼 #54 | 공황 · 불안 & 강박증] [시흥 배곧 사회공포] 사람들 앞에만 서면 목소리가 떨리고 심장이 쿵쾅거려요, 발표불안과 무대공포증 극복법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1383,7 +1408,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #54 | 신체화 & 담적·두통·턱관절] [김포 검단 턱관절] 입 벌릴 때 딱 소리와 통증, 수면 중 이갈이·이악물기가 만성 두통과 뇌 신경을 위협하는 이유 -->
+              <!-- [칼럼 #55 | 신체화 & 담적·두통·턱관절] [김포 검단 턱관절] 입 벌릴 때 딱 소리와 통증, 수면 중 이갈이·이악물기가 만성 두통과 뇌 신경을 위협하는 이유 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1408,7 +1433,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #55 | 소아청소년 & 성인 ADHD·틱장애] [인천 구월동 성인ADHD] 왜 나는 알면서도 매번 미루고 자책할까요? 게으름이 아닌 '뇌 실행기능 장애' -->
+              <!-- [칼럼 #56 | 소아청소년 & 성인 ADHD·틱장애] [인천 구월동 성인ADHD] 왜 나는 알면서도 매번 미루고 자책할까요? 게으름이 아닌 '뇌 실행기능 장애' -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1433,7 +1458,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #56 | 공황 · 불안 & 강박증] [인천 계양 강박증] 문은 잠갔을까? 가스 밸브는 잠갔을까? 끊임없이 맴도는 강박사고와 확인강박의 뇌 회로 -->
+              <!-- [칼럼 #57 | 공황 · 불안 & 강박증] [인천 계양 강박증] 문은 잠갔을까? 가스 밸브는 잠갔을까? 끊임없이 맴도는 강박사고와 확인강박의 뇌 회로 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1458,7 +1483,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #57 | 자율신경 & 실신·어지럼증·이명] [시흥 은계 이명어지럼] 피곤하면 더 커지는 귀뚜라미·삐 소리, 신경성 이명과 뇌명증의 자율신경 원인 -->
+              <!-- [칼럼 #58 | 자율신경 & 실신·어지럼증·이명] [시흥 은계 이명어지럼] 피곤하면 더 커지는 귀뚜라미·삐 소리, 신경성 이명과 뇌명증의 자율신경 원인 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -1487,7 +1512,7 @@ sections:
             <!-- 3. 페이지네이션 컨트롤 바 -->
             <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#DDE6E1] pt-6 not-prose" id="pagination-wrapper">
               <div class="text-xs sm:text-sm text-[#68736E] font-medium" id="pagination-info">
-                총 <strong class="text-[#2F5D50] font-bold" id="page-total-count">57</strong>개 칼럼 중 <span id="page-range" class="font-semibold text-[#26332E]">1 - 8</span>개 표시
+                총 <strong class="text-[#2F5D50] font-bold" id="page-total-count">58</strong>개 칼럼 중 <span id="page-range" class="font-semibold text-[#26332E]">1 - 8</span>개 표시
               </div>
               <div class="flex items-center gap-1.5 flex-wrap justify-center" id="pagination-controls">
                 <!-- 자바스크립트에 의해 동적으로 렌더링되는 페이지 버튼들 -->
