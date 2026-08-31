@@ -1,5 +1,63 @@
 <!-- Naver Search Advisor Site Verification -->
-<meta name="naver-site-verification" content="f165781c3b2b8934840676ce232d2b008bea08fe" />
+<meta name="naver-site-verification" content="bcc39257024e22d02eaba39ad983233d8ae2112f" />
+
+{{/* 네이버 검색 로봇(Yeti) 전용 고화질 썸네일 & 메타데이터 최적화 */}}
+{{ if .Params.image }}
+  {{ $imgUrl := .Params.image | absURL }}
+  <meta property="og:image" content="{{ $imgUrl }}" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="twitter:image" content="{{ $imgUrl }}" />
+  <link rel="image_src" href="{{ $imgUrl }}" />
+{{ end }}
+<meta name="author" content="권형근 대표원장 (해아림한의원 인천부평점)" />
+{{ if eq .Type "column" }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "headline": "{{ .Title }}",
+    "description": "{{ .Summary }}",
+    "url": "{{ .Permalink }}",
+    {{ with .Params.image }}
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ . | absURL }}",
+      "width": 1080,
+      "height": 1080
+    },
+    {{ end }}
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05+09:00" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05+09:00" }}",
+    "author": {
+      "@type": "Person",
+      "name": "권형근",
+      "jobTitle": "대표원장 · 한방침구과 전문의",
+      "worksFor": {
+        "@type": "MedicalClinic",
+        "name": "해아림한의원 인천부평점",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "경원대로 1412",
+          "addressLocality": "부평구",
+          "addressRegion": "인천광역시",
+          "addressCountry": "KR"
+        },
+        "telephone": "032-719-3472"
+      }
+    },
+    "publisher": {
+      "@type": "MedicalClinic",
+      "name": "해아림한의원 인천부평점",
+      "url": "https://healimbp.com"
+    },
+    "about": {
+      "@type": "MedicalCondition",
+      "name": "{{ .Params.category | default "한방신경정신과 질환" }}"
+    }
+  }
+  </script>
+{{ end }}
 
 <!-- Global Site Tag (gtag.js) - Google Analytics 4 & Conversion Tracker -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEALIMBP01"></script>

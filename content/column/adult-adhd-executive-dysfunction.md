@@ -4,6 +4,7 @@ summary: "인천 구월동, 간석동, 부평, 송도 지역 직장인·취준�
 date: "2026-08-12"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
+image: "/blog-images/bupyeong-adult-adhd/01_naver_main_thumbnail.jpg"
 tags: ["구월동성인ADHD","인천성인ADHD","부평성인ADHD","만성미루기","실행기능장애","브레인포그","도파민부족","인천정신과한의원"]
 ---
 

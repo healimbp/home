@@ -4,6 +4,7 @@ summary: "자율신경 & 실신·어지럼증·이명 증상으로 고통받는 
 date: "2026-08-28"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
+image: "/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png"
 tags: ["자율신경","자율신경치료","한방신경정신과","자율신경","맞춤한약"]
 ---
 

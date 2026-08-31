@@ -4,6 +4,7 @@ summary: "인천 서구(청라, 검단, 루원시티, 가정동) 지역에서 �
 date: "2026-08-26"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
+image: "/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg"
 tags: ["인천서구어지럼증","청라어지럼증한의원","검단어지럼증","루원시티어지럼증","이석증후유증","경추성어지럼증","자율신경실조증","해아림한의원"]
 ---
 

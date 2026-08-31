@@ -4,6 +4,7 @@ summary: "부천, 중동, 상동, 신중동 지역에서 불면증과 수면장�
 date: "2026-08-26"
 type: column
 category: "불면증 · 수면장애"
+image: "/blog-images/bucheon-insomnia/01_main_summary_thumbnail.png"
 tags: ["부천신경정신과","부천불면증","부천불면증치료","부천수면장애","부천한방신경정신과","수면제내성","자연수면치료","뇌파안정"]
 ---
 

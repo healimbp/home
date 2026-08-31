@@ -131,13 +131,49 @@
     {{ .Content }}
   </article>
 
-  <!-- Tags -->
-  {{ if .Params.tags }}
-  <div class="pt-6 border-t border-[#DDE6E1] flex items-center gap-2 flex-wrap">
-    <span class="text-xs font-bold text-[#68736E]">관련 키워드:</span>
-    {{ range .Params.tags }}
-    <span class="heal-tag bg-gray-100 text-[#4E6159] text-xs">#{{ . }}</span>
-    {{ end }}
+  <!-- Related Medical Columns (네이버 연관 문서 & 서브링크 클러스터링 유도) -->
+  {{ $currentCategory := .Params.category }}
+  {{ $currentRelPermalink := .RelPermalink }}
+  {{ $relatedColumns := where (where site.RegularPages "Type" "column") "RelPermalink" "ne" $currentRelPermalink }}
+  {{ $catMatched := where $relatedColumns "Params.category" $currentCategory }}
+  {{ $displayList := first 3 $catMatched }}
+  {{ if lt (len $displayList) 3 }}
+    {{ $fallbackList := first 3 $relatedColumns }}
+    {{ $displayList = $fallbackList }}
+  {{ end }}
+
+  {{ if gt (len $displayList) 0 }}
+  <div class="mt-12 pt-8 border-t border-[#DDE6E1] space-y-4">
+    <div class="flex items-center justify-between">
+      <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] flex items-center gap-2">
+        <i class="fa-solid fa-notes-medical text-[#2F5D50]"></i>
+        <span>함께 읽어보면 좋은 {{ with $currentCategory }}{{ . }} {{ end }}추천 의학 칼럼</span>
+      </h3>
+      <a href="/column/" class="text-xs text-[#2F5D50] font-bold hover:underline">전체보기 ›</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {{ range $displayList }}
+      <a href="{{ .RelPermalink }}" class="heal-card p-4 rounded-xl border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-md transition flex flex-col justify-between group bg-white">
+        <div class="space-y-2">
+          {{ if .Params.category }}
+          <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#EAF3EF] text-[#2F5D50]">
+            {{ .Params.category }}
+          </span>
+          {{ end }}
+          <h4 class="text-xs sm:text-sm font-bold text-[#26332E] group-hover:text-[#2F5D50] line-clamp-2 leading-snug">
+            {{ .Title }}
+          </h4>
+          <p class="text-[11px] text-[#68736E] line-clamp-2 leading-relaxed">
+            {{ .Summary }}
+          </p>
+        </div>
+        <div class="mt-3 pt-2 border-t border-[#F2F7F4] flex items-center justify-between text-[10px] text-[#68736E]">
+          <span><i class="fa-regular fa-calendar mr-1"></i>{{ .Date.Format "2006.01.02" }}</span>
+          <span class="text-[#2F5D50] font-semibold group-hover:translate-x-0.5 transition-transform">읽어보기 →</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
   </div>
   {{ end }}
 

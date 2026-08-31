@@ -4,6 +4,7 @@ summary: "인천 부평, 부천, 구월동 지역에서 이비인후과 내시�
 date: "2026-08-18"
 type: column
 category: "우울증 · 화병 & 번아웃"
+image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 tags: ["부평화병한의원","인천매핵기","부천목이물감","가슴답답함","반하후박탕","시호소간산","울화병치료","인천신경정신과"]
 ---
 

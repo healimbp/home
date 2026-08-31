@@ -4,6 +4,7 @@ summary: "부천 상동, 중동, 부평, 시흥 지역 직장인·전문직의 �
 date: "2026-08-16"
 type: column
 category: "우울증 · 화병 & 번아웃"
+image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 tags: ["부천번아웃","상동무기력증","인천직장인우울증","부평만성피로한의원","부신피로회복","사향공진단","건뇌단"]
 ---
 

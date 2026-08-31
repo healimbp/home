@@ -4,6 +4,7 @@ summary: "부천 상동, 중동, 부평, 시흥 지역에서 특별한 이유 �
 date: "2026-08-16"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
+image: "/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png"
 tags: ["부천심계항진","상동수족다한증","인천자율신경실조증","부평가슴두근거림","상열하한","체열검사","부평한의원"]
 ---
 

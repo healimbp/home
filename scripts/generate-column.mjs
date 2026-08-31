@@ -517,12 +517,25 @@ export function renderColumnMarkdown(col) {
     </div>`
   ).join('\n');
 
+  // 카테고리별 대표 썸네일 이미지 자동 매칭
+  let matchedImage = '/blog-images/panic-anxiety/01_naver_main_thumbnail.png';
+  if (col.categoryId === 'stress' || col.categoryId === 'somatic') {
+    matchedImage = '/blog-images/depression-somatic/01_naver_main_thumbnail.png';
+  } else if (col.categoryId === 'insomnia') {
+    matchedImage = '/blog-images/insomnia-sleep/01_naver_main_thumbnail.png';
+  } else if (col.categoryId === 'autonomic') {
+    matchedImage = '/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png';
+  } else if (col.categoryId === 'tic') {
+    matchedImage = '/blog-images/tic-adhd/01_naver_main_thumbnail.png';
+  }
+
   return `---
 title: "${cleanTitle}"
 summary: "${cleanSummary}"
 date: "${col.date}"
 type: column
 category: "${col.categoryName}"
+image: "${matchedImage}"
 tags: ${JSON.stringify(col.tags)}
 ---
 

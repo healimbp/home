@@ -4,6 +4,7 @@ summary: "인천 구월동, 간석동, 만수동, 부평 지역에서 긴장하�
 date: "2026-08-22"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
+image: "/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png"
 tags: ["구월동자율신경", "구월동수족다한증", "인천다한증한의원", "교감신경과항진", "상열하한", "성상신경절약침", "부평자율신경한의원"]
 ---
 
