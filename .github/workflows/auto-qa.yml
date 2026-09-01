@@ -1,0 +1,49 @@
+name: Daily AI Q&A Auto-Publisher
+
+on:
+  schedule:
+    # 매일 오전 10:00 KST (01:00 UTC) 자동 발행
+    - cron: '0 1 * * *'
+  # GitHub 웹에서 수동으로 'Run workflow' 버튼을 눌러 즉시 1개 발행도 가능
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-publish-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate Q&A via Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          node scripts/generate-daily-qa.mjs
+
+      - name: Commit and Push New Q&A
+        run: |
+          git add content/qa/
+          if git diff --staged --quiet; then
+            echo "No new Q&A generated."
+          else
+            git commit -m "feat(qa): auto-publish daily clinical Q&A case study"
+            git push origin main
+          fi
