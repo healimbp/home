@@ -27,3 +27,8 @@
 ### 2. 홈페이지 칼럼 작성 시
 - 3대 제목 작성 패턴(맨 앞 지역명 / 중간 지역명 삽입 / 순수 질환형) 1:1:1 균등 순환
 - 상세 규칙: [.agents/rules/column_generation_rules.md](file:///c:/Users/PC/Downloads/home/.agents/rules/column_generation_rules.md)
+
+### 3. Q&A 상담사례 작성 시 (네이버 지식iN 기반)
+- 네이버 지식iN 실제 환자 질문 페르소나 기반 생생한 고민(Q) + 권형근 대표원장의 4단 전문 답변(A)
+- FAQPage Schema 및 원클릭 예약 CTA 연동
+- 상세 규칙: [.agents/rules/qa_generation_rules.md](file:///c:/Users/PC/Downloads/home/.agents/rules/qa_generation_rules.md)
