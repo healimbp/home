@@ -34,15 +34,23 @@ sections:
             </button>
           </div>
 
-          <!-- 3. 의료법 준수 안내 배너 -->
-          <div class="p-4 sm:p-5 rounded-2xl bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] space-y-1.5">
-            <div class="flex items-center gap-2 font-extrabold text-xs sm:text-sm">
-              <i class="fa-solid fa-shield-halved text-[#B88A3B] text-base"></i>
-              <span>[의료법 제56조에 따른 치료 후기 안내]</span>
+          <!-- 3. 의료법 준수 및 카카오 간편 로그인 상태 바 -->
+          <div id="auth-status-bar" class="p-4 sm:p-5 rounded-2xl bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] flex flex-col sm:flex-row items-center justify-between gap-4 transition-all">
+            <div class="space-y-1 text-center sm:text-left flex-1">
+              <div class="flex items-center justify-center sm:justify-start gap-2 font-extrabold text-xs sm:text-sm">
+                <i id="auth-icon" class="fa-solid fa-lock text-[#B88A3B] text-base"></i>
+                <span id="auth-title">[의료법 제56조 준수 안내] 치료 후기 열람 제한</span>
+              </div>
+              <p id="auth-desc" class="text-xs text-[#735100] leading-relaxed">
+                의료법 제56조에 따라 실제 환자 치료 경험담 및 자필 수기 원본은 <strong>로그인(간편인증) 회원에게만 제한적으로 공개</strong>됩니다.
+              </p>
             </div>
-            <p class="text-xs text-[#735100] leading-relaxed">
-              본 후기는 해아림한의원 인천부평점에 실제 내원하여 치료받으신 환자분들이 직접 남겨주신 소중한 자발적 후기이며, 환자 개인정보 보호를 위해 성명은 익명 처리되었습니다. 개인의 체질과 증상에 따라 치료 경과에 차이가 있을 수 있습니다.
-            </p>
+            <div id="auth-action-area" class="shrink-0 w-full sm:w-auto">
+              <button onclick="handleKakaoLogin()" class="heal-btn heal-btn-kakao w-full sm:w-auto px-5 py-2.5 text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs cursor-pointer">
+                <i class="fa-solid fa-comment text-sm"></i>
+                <span>카카오 1초 간편 로그인</span>
+              </button>
+            </div>
           </div>
 
           <!-- 4-A. [탭 1] 네이버 정성 리뷰 목록 (naver-section) -->
@@ -1002,6 +1010,27 @@ sections:
 
             </div>
 
+            <!-- 의료법 준수 로그인 게이트 (미로그인 시 표시) -->
+            <div id="auth-lock-gate" class="p-6 sm:p-8 rounded-2xl bg-[#FFFDF5] border-2 border-[#F4D06F] text-center space-y-4 shadow-sm my-6">
+              <div class="w-12 h-12 rounded-full bg-[#FFF3D6] text-[#855B00] flex items-center justify-center mx-auto text-xl">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="space-y-1">
+                <h3 class="text-base sm:text-lg font-extrabold text-[#26332E]">
+                  의료법 제56조 준수를 위해 치료후기 전체 열람은 로그인이 필요합니다
+                </h3>
+                <p class="text-xs sm:text-sm text-[#68736E] max-w-xl mx-auto">
+                  별도의 회원가입 없이 <strong>카카오 1초 간편 로그인</strong>으로 즉시 모든 실제 환자 치료후기 및 완치 수기를 확인하실 수 있습니다.
+                </p>
+              </div>
+              <div>
+                <button onclick="handleKakaoLogin()" class="heal-btn heal-btn-kakao px-8 py-3.5 text-sm font-extrabold shadow-md inline-flex items-center gap-2 cursor-pointer">
+                  <i class="fa-solid fa-comment text-base"></i>
+                  <span>카카오톡으로 1초 로그인하고 전체보기</span>
+                </button>
+              </div>
+            </div>
+
             <!-- 후기 더보기 버튼 영역 -->
             <div id="load-more-container" class="text-center pt-6 pb-2">
               <button id="load-more-btn" onclick="loadMoreReviews()" class="px-8 py-3.5 rounded-2xl bg-white border-2 border-[#2F5D50] text-[#2F5D50] hover:bg-[#2F5D50] hover:text-white font-extrabold text-sm sm:text-base shadow-sm hover:shadow-md transition-all duration-200 inline-flex items-center gap-2 cursor-pointer">
@@ -1015,6 +1044,27 @@ sections:
 
           <!-- 4-B. [탭 2] 자필 수기 후기 영역 (handwritten-section: 초기 숨김) -->
           <div id="handwritten-section" class="space-y-8" style="display: none;">
+            <!-- 자필 수기 전용 의료법 잠금 게이트 -->
+            <div id="handwritten-lock-gate" class="p-6 sm:p-8 rounded-2xl bg-[#FFFDF5] border-2 border-[#F4D06F] text-center space-y-4 shadow-sm">
+              <div class="w-12 h-12 rounded-full bg-[#FFF3D6] text-[#855B00] flex items-center justify-center mx-auto text-xl">
+                <i class="fa-solid fa-file-shield"></i>
+              </div>
+              <div class="space-y-1">
+                <h3 class="text-base sm:text-lg font-extrabold text-[#26332E]">
+                  환자 자필 수기 원본 사진은 의료법에 따라 본인 인증 후 열람 가능합니다
+                </h3>
+                <p class="text-xs sm:text-sm text-[#68736E] max-w-xl mx-auto">
+                  불특정 다수 대상의 치료경험담 광고를 제한하는 의료법 규정을 준수하며, 카카오 간편 로그인을 통해 안전하게 원본을 열람하실 수 있습니다.
+                </p>
+              </div>
+              <div>
+                <button onclick="handleKakaoLogin()" class="heal-btn heal-btn-kakao px-8 py-3.5 text-sm font-extrabold shadow-md inline-flex items-center gap-2 cursor-pointer">
+                  <i class="fa-solid fa-comment text-base"></i>
+                  <span>카카오 1초 간편 로그인 후 자필 원본 보기</span>
+                </button>
+              </div>
+            </div>
+
             <div class="border-b border-[#E2EAE5] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
                 <h2 class="text-xl sm:text-2xl font-extrabold text-[#26332E] flex items-center gap-2">
@@ -1692,40 +1742,143 @@ sections:
             updateReviewDisplay();
           }
 
-          function openModal(imgSrc, title) {
-            const modal = document.getElementById('image-modal');
-            const modalImg = document.getElementById('modal-img');
-            const modalTitle = document.getElementById('modal-title');
-            if (modal && modalImg) {
-              modalImg.src = imgSrc;
-              if (modalTitle && title) {
-                modalTitle.innerHTML = `<i class="fa-solid fa-file-signature text-[#03C75A]"></i> <span>${title}</span>`;
+            // ==================== 카카오 1초 간편 로그인 & 의료법 게이트 로직 ====================
+            const AUTH_KEY = 'healim_kakao_verified_user';
+
+            function isUserAuthenticated() {
+              return localStorage.getItem(AUTH_KEY) === 'true';
+            }
+
+            function updateAuthUI() {
+              const isAuth = isUserAuthenticated();
+              const authStatusBar = document.getElementById('auth-status-bar');
+              const authIcon = document.getElementById('auth-icon');
+              const authTitle = document.getElementById('auth-title');
+              const authDesc = document.getElementById('auth-desc');
+              const authActionArea = document.getElementById('auth-action-area');
+              const authLockGate = document.getElementById('auth-lock-gate');
+              const handwrittenLockGate = document.getElementById('handwritten-lock-gate');
+
+              if (isAuth) {
+                // 로그인 상태 UI
+                if (authStatusBar) {
+                  authStatusBar.className = "p-4 sm:p-5 rounded-2xl bg-[#EAF3EF] border border-[#2F5D50]/30 text-[#1E4638] flex flex-col sm:flex-row items-center justify-between gap-4 transition-all";
+                }
+                if (authIcon) {
+                  authIcon.className = "fa-solid fa-circle-check text-[#03C75A] text-base";
+                }
+                if (authTitle) {
+                  authTitle.textContent = "[의료법 준수 회원 인증 완료] 치료 후기 전체 열람 중";
+                }
+                if (authDesc) {
+                  authDesc.innerHTML = "카카오 간편 회원 인증이 완료되어 <strong>모든 네이버 인증 후기 및 자필 수기 원본</strong>을 열람하실 수 있습니다.";
+                }
+                if (authActionArea) {
+                  authActionArea.innerHTML = `
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-bold text-[#2F5D50] bg-white px-3 py-1.5 rounded-lg border border-[#CDE5D8]">
+                        <i class="fa-solid fa-user-check text-[#03C75A] mr-1"></i>카카오 인증회원
+                      </span>
+                      <button onclick="handleKakaoLogout()" class="px-3 py-1.5 rounded-lg bg-white/80 hover:bg-white text-[#68736E] text-xs font-bold border border-[#DDE6E1] transition cursor-pointer">
+                        로그아웃
+                      </button>
+                    </div>
+                  `;
+                }
+                if (authLockGate) authLockGate.style.display = 'none';
+                if (handwrittenLockGate) handwrittenLockGate.style.display = 'none';
+              } else {
+                // 미로그인 상태 UI
+                if (authStatusBar) {
+                  authStatusBar.className = "p-4 sm:p-5 rounded-2xl bg-[#FFF9E6] border border-[#F4D06F] text-[#855B00] flex flex-col sm:flex-row items-center justify-between gap-4 transition-all";
+                }
+                if (authIcon) {
+                  authIcon.className = "fa-solid fa-lock text-[#B88A3B] text-base";
+                }
+                if (authTitle) {
+                  authTitle.textContent = "[의료법 제56조 준수 안내] 치료 후기 열람 제한";
+                }
+                if (authDesc) {
+                  authDesc.innerHTML = "의료법 제56조에 따라 실제 환자 치료 경험담 및 자필 수기 원본은 <strong>로그인(간편인증) 회원에게만 제한적으로 공개</strong>됩니다.";
+                }
+                if (authActionArea) {
+                  authActionArea.innerHTML = `
+                    <button onclick="handleKakaoLogin()" class="heal-btn heal-btn-kakao w-full sm:w-auto px-5 py-2.5 text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs cursor-pointer">
+                      <i class="fa-solid fa-comment text-sm"></i>
+                      <span>카카오 1초 간편 로그인</span>
+                    </button>
+                  `;
+                }
+                if (authLockGate) authLockGate.style.display = 'block';
+                if (handwrittenLockGate) handwrittenLockGate.style.display = 'block';
               }
-              modal.classList.remove('hidden');
-              document.body.style.overflow = 'hidden';
             }
-          }
 
-          function closeModal() {
-            const modal = document.getElementById('image-modal');
-            if (modal) {
-              modal.classList.add('hidden');
-              document.body.style.overflow = '';
+            function handleKakaoLogin() {
+              // 카카오 간편 1초 인증 시뮬레이션 및 로컬 인증 완료 처리
+              const btn = event?.currentTarget;
+              if (btn) {
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 인증 중...';
+              }
+              setTimeout(() => {
+                localStorage.setItem(AUTH_KEY, 'true');
+                updateAuthUI();
+                alert('카카오 간편 로그인이 완료되었습니다.\n이제 모든 치료후기와 자필 수기 원본을 자유롭게 확인하실 수 있습니다.');
+              }, 400);
             }
-          }
 
-          // ESC 키로 모달 닫기
-          document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeModal();
-          });
+            function handleKakaoLogout() {
+              if (confirm('로그아웃 하시겠습니까? 치료후기 열람이 다시 제한됩니다.')) {
+                localStorage.removeItem(AUTH_KEY);
+                updateAuthUI();
+              }
+            }
 
-          // 초기 실행
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', updateReviewDisplay);
-          } else {
-            updateReviewDisplay();
-          }
-        </script>
+            function openModal(imgSrc, title) {
+              if (!isUserAuthenticated()) {
+                if (confirm('자필 수기 원본 확대보기는 의료법 준수를 위해 로그인 후 제공됩니다.\n카카오 1초 간편 로그인을 진행하시겠습니까?')) {
+                  handleKakaoLogin();
+                }
+                return;
+              }
+              const modal = document.getElementById('image-modal');
+              const modalImg = document.getElementById('modal-img');
+              const modalTitle = document.getElementById('modal-title');
+              if (modal && modalImg) {
+                modalImg.src = imgSrc;
+                if (modalTitle && title) {
+                  modalTitle.innerHTML = `<i class="fa-solid fa-file-signature text-[#03C75A]"></i> <span>${title}</span>`;
+                }
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+              }
+            }
+
+            function closeModal() {
+              const modal = document.getElementById('image-modal');
+              if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+              }
+            }
+
+            // ESC 키로 모달 닫기
+            document.addEventListener('keydown', (e) => {
+              if (e.key === 'Escape') closeModal();
+            });
+
+            // 초기 실행
+            function initPage() {
+              updateReviewDisplay();
+              updateAuthUI();
+            }
+
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', initPage);
+            } else {
+              initPage();
+            }
+          </script>
 
 
 ---

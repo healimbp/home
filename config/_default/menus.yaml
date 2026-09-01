@@ -12,15 +12,18 @@ main:
   - name: 오시는 길 & 진료시간
     url: /location/
     weight: 40
-  - name: 온라인 상담 & 예약
+  - name: 진료 예약 & 상담
     url: /consultation/
     weight: 50
   - name: 치료 후기
     url: /reviews/
     weight: 60
+  - name: Q&A 상담사례
+    url: /qa/
+    weight: 70
   - name: 학술 & 언론보도
     url: /media/
-    weight: 70
+    weight: 80
   - name: 건강 칼럼
     url: /column/
-    weight: 80
+    weight: 90
