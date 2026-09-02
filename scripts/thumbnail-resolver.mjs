@@ -90,6 +90,9 @@ export function resolveThumbnail({ categoryId = '', categoryName = '', title = '
 
   // 3. 자율신경 & 실신 · 어지럼증 · 이명
   if (mainCat === 'autonomic') {
+    if (r.includes('부천') && (t.includes('어지럼') || t.includes('dizziness')) && verifyStaticImage('/blog-images/bucheon-dizziness/01_naver_main_thumbnail.jpg')) {
+      return '/blog-images/bucheon-dizziness/01_naver_main_thumbnail.jpg';
+    }
     if ((r.includes('서구') || r.includes('청라') || r.includes('검단') || t.includes('incheon-seogu') || t.includes('dizziness')) && verifyStaticImage('/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg')) {
       return '/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg';
     }
