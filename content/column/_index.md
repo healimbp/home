@@ -83,7 +83,32 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #2 | 우울증 · 화병 & 번아웃] 감정 기복과 분노 조절 장애, [부천 상동 우울증] 간화(肝火)를 식히는 맞춤 한약 처방 -->
+              <!-- [칼럼 #2 | 신체화 & 담적·두통·턱관절] 턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료 -->
+              <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">신체화 & 담적·두통·턱관절</span>
+                    <span class="text-xs text-[#68736E]">2026-09-02 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/post-2026-09-02-somatic-7448/" class="hover:underline">
+                      턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료
+                    </a>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                    신체화 & 담적·두통·턱관절 증상으로 고통받는 환자분들과 보호자분들을 위한 권형근 대표원장의 신경학적 원인 분석 및 근본 한방 치료 가이드입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 신체화 • 신체화치료</span>
+                  <a href="/column/post-2026-09-02-somatic-7448/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- [칼럼 #3 | 우울증 · 화병 & 번아웃] 감정 기복과 분노 조절 장애, [부천 상동 우울증] 간화(肝火)를 식히는 맞춤 한약 처방 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -108,7 +133,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #3 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 단순 비염으로 오인하기 쉬운 소아 음성틱·뚜렛증후군 조기 감별법 -->
+              <!-- [칼럼 #4 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 단순 비염으로 오인하기 쉬운 소아 음성틱·뚜렛증후군 조기 감별법 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -133,7 +158,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #4 | 불면증 · 수면장애] 악몽과 가위눌림, [인천 간석동 불면증] 심비양허를 보강하여 깊은 델타파 숙면 유도 -->
+              <!-- [칼럼 #5 | 불면증 · 수면장애] 악몽과 가위눌림, [인천 간석동 불면증] 심비양허를 보강하여 깊은 델타파 숙면 유도 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -158,7 +183,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #5 | 공황 · 불안 & 강박증] [인천 계양구한의원 공황] “또 발작 올까 두려운” 예기불안과 뇌 변연계 안정 한방 치료 -->
+              <!-- [칼럼 #6 | 공황 · 불안 & 강박증] [인천 계양구한의원 공황] “또 발작 올까 두려운” 예기불안과 뇌 변연계 안정 한방 치료 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -177,31 +202,6 @@ sections:
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
                   <span class="text-[11px] text-[#68736E]">• 인천 계양구한의원 • 부평한의원</span>
                   <a href="/column/post-2026-09-01-panic-3987/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
-                    <span>칼럼 전문 읽기</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                  </a>
-                </div>
-              </article>
-
-              <!-- [칼럼 #6 | 신체화 & 담적·두통·턱관절] 턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료 -->
-              <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">신체화 & 담적·두통·턱관절</span>
-                    <span class="text-xs text-[#68736E]">2026-09-01 • 권형근 원장 칼럼</span>
-                  </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
-                    <a href="/column/post-2026-09-01-somatic-9327/" class="hover:underline">
-                      턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료
-                    </a>
-                  </h3>
-                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                    신체화 & 담적·두통·턱관절 증상으로 고통받는 환자분들과 보호자분들을 위한 권형근 대표원장의 신경학적 원인 분석 및 근본 한방 치료 가이드입니다.
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 신체화 • 신체화치료</span>
-                  <a href="/column/post-2026-09-01-somatic-9327/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>
