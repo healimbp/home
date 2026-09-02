@@ -5,6 +5,7 @@ date: "2026-08-18"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
 tags: ["부천음성틱","부천틱장애한의원","인천뚜렛증후군","소아비염감별","킁킁소리틱","음음소리","부평소아신경과"]
+image: "/blog-images/bucheon-tic/01_bucheon_tic_thumbnail_3d.jpg"
 ---
 
 <div class="voice-box">

@@ -5,6 +5,7 @@ date: "2026-08-14"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
 tags: ["청라야경증","인천소아야경증","부평야제증","밤에우는아이","분리불안","소아수면장애","심담허겁","인천소아한의원"]
+image: "/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

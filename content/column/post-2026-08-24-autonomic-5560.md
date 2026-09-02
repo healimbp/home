@@ -4,7 +4,7 @@ summary: "인천 간석동 지역에서 자율신경 & 실신·어지럼증·이
 date: "2026-08-24"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-image: "/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png"
+image: "/blog-images/bupyeong-autonomic/01_naver_main_thumbnail.jpg"
 tags: ["인천 간석동한의원","부평한의원","자율신경","맞춤한약","뇌파검사","체열검사"]
 ---
 

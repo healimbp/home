@@ -5,6 +5,7 @@ date: "2026-08-18"
 type: column
 category: "공황 · 불안 & 강박증"
 tags: ["부천불안장애","부천예기불안","인천공황장애치료","부평불안증한의원","편도체안정","심담허겁","자율신경안정"]
+image: "/blog-images/bupyeong-anxiety/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

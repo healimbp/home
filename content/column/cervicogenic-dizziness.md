@@ -5,6 +5,7 @@ date: "2026-08-14"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
 tags: ["청라어지럼증","인천경추성어지럼증","부평이석증후유증","브레인포그","추골동맥","경추추나요법","인천신경과한의원"]
+image: "/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

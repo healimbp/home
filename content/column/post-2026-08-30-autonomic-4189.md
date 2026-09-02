@@ -5,6 +5,7 @@ date: "2026-08-30"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
 tags: ["자율신경","자율신경치료","한방신경정신과","자율신경","맞춤한약"]
+image: "/blog-images/bupyeong-autonomic/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

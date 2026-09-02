@@ -5,6 +5,7 @@ date: "2026-08-16"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
 tags: ["부천심계항진","상동수족다한증","인천자율신경실조증","부평가슴두근거림","상열하한","체열검사","부평한의원"]
+image: "/blog-images/bucheon-autonomic/01_bucheon_autonomic_main_thumbnail.png"
 ---
 
 <div class="voice-box">

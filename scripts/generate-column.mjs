@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { publishToTistory, formatTistoryContent } from './publish-tistory.mjs';
 import { rebuildColumnIndex } from './build-all-columns.mjs';
+import { resolveThumbnail } from './thumbnail-resolver.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -517,22 +518,15 @@ export function renderColumnMarkdown(col) {
     </div>`
   ).join('\n');
 
-  // 카테고리별 대표 썸네일 이미지 자동 매칭
-  const catId = col.categoryId || col.category || '';
-  const catName = col.categoryName || '';
-  let matchedImage = '/blog-images/panic-anxiety/01_naver_main_thumbnail.png';
-
-  if (catId === 'tic' || catName.includes('소아') || catName.includes('틱') || catName.includes('ADHD')) {
-    matchedImage = '/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg';
-  } else if (catId === 'insomnia' || catName.includes('불면') || catName.includes('수면')) {
-    matchedImage = '/blog-images/insomnia-sleep/01_naver_main_thumbnail.png';
-  } else if (catId === 'autonomic' || catName.includes('자율신경') || catName.includes('어지럼') || catName.includes('이명') || catName.includes('실신')) {
-    matchedImage = '/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png';
-  } else if (catId === 'stress' || catId === 'somatic' || catName.includes('우울') || catName.includes('화병') || catName.includes('신체화') || catName.includes('스트레스')) {
-    matchedImage = '/blog-images/depression-somatic/01_naver_main_thumbnail.png';
-  } else if (catId === 'panic' || catName.includes('공황') || catName.includes('불안') || catName.includes('강박')) {
-    matchedImage = '/blog-images/panic-anxiety/01_naver_main_thumbnail.png';
-  }
+  // 카테고리별 대표 썸네일 이미지 자동 매칭 (단일 소스 리졸버 연동)
+  const matchedImage = resolveThumbnail({
+    categoryId: col.categoryId || col.category || '',
+    categoryName: col.categoryName || '',
+    title: col.title || '',
+    slug: col.id || '',
+    region: col.region?.short || col.region?.full || '',
+    currentImage: col.image || ''
+  });
 
   return `---
 title: "${cleanTitle}"

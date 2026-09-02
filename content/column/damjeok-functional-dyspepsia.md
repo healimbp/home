@@ -5,6 +5,7 @@ date: "2026-08-18"
 type: column
 category: "신체화 & 담적·두통·턱관절"
 tags: ["시흥담적병","배곧신경성소화불량","인천기능성소화장애","부평담적치료","명치답답함","평위산","반하사심탕"]
+image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 ---
 
 <div class="voice-box">

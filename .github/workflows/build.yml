@@ -126,6 +126,10 @@ jobs:
       id: pages
       uses: actions/configure-pages@v5
 
+    - name: Validate Column Integrity & Thumbnails
+      run: |
+        node scripts/validate-columns.mjs
+
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production

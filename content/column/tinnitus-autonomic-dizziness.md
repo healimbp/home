@@ -5,6 +5,7 @@ date: "2026-08-12"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
 tags: ["시흥이명한의원","은계신경성이명","인천뇌명증","부평이명어지럼증","달팽이관혈류","청간식풍","자율신경이명"]
+image: "/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

@@ -5,6 +5,7 @@ date: "2026-08-20"
 type: column
 category: "불면증 · 수면장애"
 tags: ["부천입면장애","중동불면증한의원","인천뇌과각성","잠안올때","DMN과열","수면뇌파안정","부평수면한의원"]
+image: "/blog-images/bucheon-insomnia/01_main_summary_thumbnail.png"
 ---
 
 <div class="voice-box">

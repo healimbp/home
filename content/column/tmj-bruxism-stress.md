@@ -5,6 +5,7 @@ date: "2026-08-14"
 type: column
 category: "신체화 & 담적·두통·턱관절"
 tags: ["김포턱관절","검단턱관절병원","인천이갈이치료","부평턱관절두통","FCST","구강균형장치","경추추나요법","턱관절소리"]
+image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 ---
 
 <div class="voice-box">

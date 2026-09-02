@@ -5,6 +5,7 @@ date: "2026-08-16"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
 tags: ["송도ADHD","인천소아ADHD","부평ADHD한의원","주의산만","과잉행동","전두엽발달","NeuronFlex","부평소아한의원"]
+image: "/blog-images/bupyeong-adhd/01_main_summary_thumbnail.png"
 ---
 
 <div class="voice-box">

@@ -5,6 +5,7 @@ date: "2026-08-16"
 type: column
 category: "신체화 & 담적·두통·턱관절"
 tags: ["계양구신체화장애","인천신경성두통","부평신체증상장애","스트레스성위장장애","뇌감각과민","청뇌안신탕","부평한의원"]
+image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 ---
 
 <div class="voice-box">

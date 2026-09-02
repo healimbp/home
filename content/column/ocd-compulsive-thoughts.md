@@ -5,6 +5,7 @@ date: "2026-08-12"
 type: column
 category: "공황 · 불안 & 강박증"
 tags: ["계양구강박증","인천강박장애한의원","부평강박사고","확인강박","오염강박","전대상피질","뇌신경정신과"]
+image: "/blog-images/bucheon-ocd/01_main_summary_thumbnail.png"
 ---
 
 <div class="voice-box">

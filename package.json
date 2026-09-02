@@ -5,7 +5,10 @@
   "description": "해아림한의원 인천부평점 공식 홈페이지",
   "scripts": {
     "dev": "hugo server --disableFastRender",
-    "build": "hugo --minify"
+    "build": "hugo --minify",
+    "validate": "node scripts/validate-columns.mjs",
+    "audit:fix": "node scripts/audit-and-fix-columns.mjs",
+    "test": "node scripts/validate-columns.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",

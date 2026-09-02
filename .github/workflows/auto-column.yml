@@ -49,6 +49,10 @@ jobs:
         run: |
           node scripts/generate-column.mjs
 
+      - name: Validate Column Integrity & Thumbnails
+        run: |
+          node scripts/validate-columns.mjs
+
       - name: Commit and Push New Column
         run: |
           git add content/column/

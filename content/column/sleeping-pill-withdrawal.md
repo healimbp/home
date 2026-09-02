@@ -5,6 +5,7 @@ date: "2026-08-14"
 type: column
 category: "불면증 · 수면장애"
 tags: ["구월동수면제단약","인천스틸녹스부작용","부평졸피뎀테이퍼링","수면제내성","수면유도제끊기","자연수면회복","인천수면한의원"]
+image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
 ---
 
 <div class="voice-box">

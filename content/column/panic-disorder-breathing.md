@@ -5,6 +5,7 @@ date: "2026-08-20"
 type: column
 category: "공황 · 불안 & 강박증"
 tags: ["부평공황장애","인천공황발작","부천공황장애한의원","과호흡증후군","호흡곤란","편도체과열","시호가용골모려탕","인천공황한의원"]
+image: "/blog-images/bupyeong-panic/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

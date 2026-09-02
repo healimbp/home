@@ -5,6 +5,7 @@ date: "2026-08-18"
 type: column
 category: "불면증 · 수면장애"
 tags: ["부평불면증","인천수면유지장애","부천중도각성","새벽에깨는이유","간허열","귀비탕","산조인탕","인천수면클리닉"]
+image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
 ---
 
 <div class="voice-box">
