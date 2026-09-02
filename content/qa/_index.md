@@ -34,7 +34,7 @@ sections:
             <!-- 탭 버튼 목록 -->
             <div class="flex flex-wrap gap-2 pb-2" id="qa-category-tabs">
               <button onclick="filterQA('all', this)" class="qa-tab-btn active-tab px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                전체보기 <span class="text-[11px] opacity-80" id="qa-tab-count-all">(7)</span>
+                전체보기 <span class="text-[11px] opacity-80" id="qa-tab-count-all">(8)</span>
               </button>
               <button onclick="filterQA('tic', this)" class="qa-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
                 소아청소년 & 성인 ADHD·틱 <span class="text-[11px] opacity-80" id="qa-tab-count-tic">(2)</span>
@@ -46,7 +46,7 @@ sections:
                 공황 · 불안 & 강박증 <span class="text-[11px] opacity-80" id="qa-tab-count-panic">(1)</span>
               </button>
               <button onclick="filterQA('autonomic', this)" class="qa-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80" id="qa-tab-count-autonomic">(2)</span>
+                자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80" id="qa-tab-count-autonomic">(3)</span>
               </button>
               <button onclick="filterQA('stress', this)" class="qa-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
                 우울증 · 화병 & 번아웃 <span class="text-[11px] opacity-80" id="qa-tab-count-stress">(1)</span>
@@ -58,6 +58,48 @@ sections:
 
             <!-- Q&A 카드 그리드 -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[400px]" id="qa-grid">
+              <!-- [Q&A | 자율신경 & 실신·어지럼증·이명] 지하철이나 더운 곳에 서 있으면 눈앞이 하얘지며 쓰러지는 미주신경성 실신 (인천 미추홀구) -->
+              <article class="qa-item autonomic heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="autonomic">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">자율신경 & 실신·어지럼증·이명</span>
+                    <span class="text-xs text-[#68736E]">인천 미추홀구 • 2026-09-02</span>
+                  </div>
+
+                  <!-- Q. 질문 미리보기 -->
+                  <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
+                    <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
+                      <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
+                      <span class="truncate">질문자: 인천 미추홀구 거주 OO님 (20대 학생 / 여성)</span>
+                    </div>
+                    <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                      <a href="/qa/qa-2026-09-02-autonomic-4275/" class="hover:underline">
+                        지하철이나 더운 곳에 서 있으면 눈앞이 하얘지며 쓰러지는 미주신경성 실신 (인천 미추홀구)
+                      </a>
+                    </h3>
+                  </div>
+
+                  <!-- A. 답변 요약 -->
+                  <div class="space-y-1.5 pt-1">
+                    <div class="flex items-center gap-1.5 font-bold text-xs text-[#2F5D50]">
+                      <span class="w-4 h-4 rounded-full bg-[#2F5D50] text-white text-[10px] flex items-center justify-center font-extrabold">A</span>
+                      <span>권형근 대표원장 답변 요약</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                      심장과 기혈을 보강하는 승양익기(升陽益氣) 탕약과 자율신경 밸런스 약침으로 혈압 조절 능력을 튼튼하게 재건합니다.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 자율신경실조증 • 어지럼증 • 미주신경실신</span>
+                  <a href="/qa/qa-2026-09-02-autonomic-4275/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
+                    <span>답변 전체보기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
               <!-- [Q&A | 자율신경 & 실신·어지럼증·이명] 귀·뇌 검사는 다 정상인데 머리가 붕 뜨고 어지러운 이유는 무엇인가요? (인천 계양구) -->
               <article class="qa-item autonomic heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="autonomic">
                 <div class="space-y-3">
@@ -356,7 +398,7 @@ sections:
             <!-- 페이지네이션 컨트롤 바 -->
             <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#DDE6E1] pt-6 not-prose" id="qa-pagination-wrapper">
               <div class="text-xs sm:text-sm text-[#68736E] font-medium" id="qa-pagination-info">
-                총 <strong class="text-[#2F5D50] font-bold" id="qa-total-count">7</strong>개 상담사례 중 <span id="qa-page-range" class="font-semibold text-[#26332E]">1 - 7</span>개 표시
+                총 <strong class="text-[#2F5D50] font-bold" id="qa-total-count">8</strong>개 상담사례 중 <span id="qa-page-range" class="font-semibold text-[#26332E]">1 - 8</span>개 표시
               </div>
               <div class="flex items-center gap-1.5 flex-wrap justify-center" id="qa-pagination-controls">
                 <!-- 동적 페이지 번호 버튼 -->
