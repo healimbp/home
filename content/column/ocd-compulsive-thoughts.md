@@ -4,7 +4,6 @@ summary: "인천 계양구(계산동, 작전동), 부평, 부천 지역에서 �
 date: "2026-08-12"
 type: column
 category: "공황 · 불안 & 강박증"
-image: "/blog-images/bucheon-ocd/01_main_summary_thumbnail.png"
 tags: ["계양구강박증","인천강박장애한의원","부평강박사고","확인강박","오염강박","전대상피질","뇌신경정신과"]
 ---
 

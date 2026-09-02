@@ -4,7 +4,6 @@ summary: "인천 구월동, 만수동, 부평, 송도 지역에서 지하철·�
 date: "2026-08-18"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-image: "/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png"
 tags: ["구월동미주신경성실신","인천실신한의원","부평기립성어지럼증","지하철실신","뇌혈류장애","보중익기탕","인천어지럼증"]
 ---
 

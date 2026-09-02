@@ -4,7 +4,6 @@ summary: "인천 청라, 루원시티, 검단, 부평 지역에서 자다 깨서
 date: "2026-08-14"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
 tags: ["청라야경증","인천소아야경증","부평야제증","밤에우는아이","분리불안","소아수면장애","심담허겁","인천소아한의원"]
 ---
 

@@ -4,7 +4,6 @@ summary: "인천 청라, 루원시티, 검단, 부평 지역에서 항우울제 
 date: "2026-08-14"
 type: column
 category: "우울증 · 화병 & 번아웃"
-image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 tags: ["청라우울증한의원","인천만성우울증","부평무기력증","세로토닌결핍","장뇌축","분심기음","가미소요산","인천정신과"]
 ---
 

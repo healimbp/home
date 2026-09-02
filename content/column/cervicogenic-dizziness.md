@@ -4,7 +4,6 @@ summary: "인천 청라, 루원시티, 검단, 부평 지역에서 이석증 치
 date: "2026-08-14"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-image: "/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png"
 tags: ["청라어지럼증","인천경추성어지럼증","부평이석증후유증","브레인포그","추골동맥","경추추나요법","인천신경과한의원"]
 ---
 

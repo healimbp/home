@@ -518,15 +518,20 @@ export function renderColumnMarkdown(col) {
   ).join('\n');
 
   // 카테고리별 대표 썸네일 이미지 자동 매칭
+  const catId = col.categoryId || col.category || '';
+  const catName = col.categoryName || '';
   let matchedImage = '/blog-images/panic-anxiety/01_naver_main_thumbnail.png';
-  if (col.categoryId === 'stress' || col.categoryId === 'somatic') {
-    matchedImage = '/blog-images/depression-somatic/01_naver_main_thumbnail.png';
-  } else if (col.categoryId === 'insomnia') {
+
+  if (catId === 'tic' || catName.includes('소아') || catName.includes('틱') || catName.includes('ADHD')) {
+    matchedImage = '/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg';
+  } else if (catId === 'insomnia' || catName.includes('불면') || catName.includes('수면')) {
     matchedImage = '/blog-images/insomnia-sleep/01_naver_main_thumbnail.png';
-  } else if (col.categoryId === 'autonomic') {
+  } else if (catId === 'autonomic' || catName.includes('자율신경') || catName.includes('어지럼') || catName.includes('이명') || catName.includes('실신')) {
     matchedImage = '/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png';
-  } else if (col.categoryId === 'tic') {
-    matchedImage = '/blog-images/tic-adhd/01_naver_main_thumbnail.png';
+  } else if (catId === 'stress' || catId === 'somatic' || catName.includes('우울') || catName.includes('화병') || catName.includes('신체화') || catName.includes('스트레스')) {
+    matchedImage = '/blog-images/depression-somatic/01_naver_main_thumbnail.png';
+  } else if (catId === 'panic' || catName.includes('공황') || catName.includes('불안') || catName.includes('강박')) {
+    matchedImage = '/blog-images/panic-anxiety/01_naver_main_thumbnail.png';
   }
 
   return `---
@@ -945,6 +950,7 @@ export function generateFallbackContent(cat, topic, region, title, date, id, pat
 
   return {
     id: id,
+    categoryId: cat.id,
     category: cat.id,
     categoryName: cat.name,
     categoryClass: cat.categoryClass,
@@ -1122,8 +1128,43 @@ ${escapeHtml(tScript)}
 <code>${escapeHtml(tTags)}</code>`;
 
   try {
-    await postTelegramMessage(botToken, chatId, homepageNotice);
-    console.log('[Auto-Column SEO] Telegram 1/2 (홈페이지 발행 알림) 전송 완료!');
+    // 썸네일 이미지 파일이 로컬에 존재하는지 확인 후 sendPhoto 시도
+    let photoSent = false;
+    const cleanImgPath = (column.image || '').replace(/^\//, '');
+    const localImgPath = cleanImgPath ? path.join(rootDir, 'static', cleanImgPath) : null;
+
+    if (localImgPath && fs.existsSync(localImgPath)) {
+      try {
+        const photoFormData = new FormData();
+        photoFormData.append('chat_id', chatId);
+        photoFormData.append('caption', homepageNotice);
+        photoFormData.append('parse_mode', 'HTML');
+        const imgBuffer = fs.readFileSync(localImgPath);
+        const imgExt = path.extname(localImgPath).toLowerCase();
+        const mimeType = imgExt === '.png' ? 'image/png' : 'image/jpeg';
+        const imgBlob = new Blob([imgBuffer], { type: mimeType });
+        photoFormData.append('photo', imgBlob, path.basename(localImgPath));
+
+        const photoRes = await fetch(`https://api.telegram.org/bot${botToken}/sendPhoto`, {
+          method: 'POST',
+          body: photoFormData
+        });
+        const photoData = await photoRes.json();
+        if (photoData.ok) {
+          photoSent = true;
+          console.log('[Auto-Column SEO] Telegram 1/3 (홈페이지 발행 알림 + 썸네일 포토) 전송 완료!');
+        } else {
+          console.warn('[Auto-Column SEO] Telegram sendPhoto 실패, 텍스트 전송으로 대체:', photoData.description);
+        }
+      } catch (photoErr) {
+        console.warn('[Auto-Column SEO] Telegram sendPhoto 예외 발생, 텍스트 전송으로 대체:', photoErr.message);
+      }
+    }
+
+    if (!photoSent) {
+      await postTelegramMessage(botToken, chatId, homepageNotice);
+      console.log('[Auto-Column SEO] Telegram 1/3 (홈페이지 발행 알림 텍스트) 전송 완료!');
+    }
 
     const MAX_LEN = 3800;
     if (tistoryNotice.length <= MAX_LEN) {

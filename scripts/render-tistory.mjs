@@ -4,31 +4,71 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export function getTistoryThumbnailUrl(content = '', slug = '') {
+export function getTistoryThumbnailUrl(content = '', slug = '', column = null) {
   const base = 'https://healimbp.com';
-  const text = (content + ' ' + slug).toLowerCase();
-  
-  if (text.includes('panic') || text.includes('공황') || text.includes('불안') || text.includes('과호흡') || text.includes('강박')) {
-    return `${base}/blog-images/panic-anxiety/01_naver_main_thumbnail.png`;
+
+  // 1. column 객체에 이미 명시된 image 필드가 있는 경우 최우선 적용
+  if (column && column.image) {
+    const cleanImg = column.image.startsWith('/') ? column.image : `/${column.image}`;
+    return `${base}${cleanImg}`;
   }
-  if (text.includes('autonomic') || text.includes('자율신경') || text.includes('실신') || text.includes('어지럼') || text.includes('이명') || text.includes('dizziness')) {
-    return `${base}/blog-images/01_bucheon_autonomic_main_thumbnail.png`;
+
+  // 2. 카테고리명 / 슬러그 / 본문 기반 정밀 매칭 (일반 명사 '불안'으로 인한 오분류 방지)
+  const category = (column?.category || column?.categoryName || column?.categoryId || '').toLowerCase();
+  const s = slug.toLowerCase();
+  const c = content.toLowerCase();
+
+  // (1) 소아청소년 & 틱장애 / ADHD
+  if (
+    category.includes('tic') || category.includes('adhd') || category.includes('틱') || category.includes('소아') ||
+    s.includes('tic') || s.includes('adhd') || s.includes('tourette') ||
+    c.includes('음성틱') || c.includes('운동틱') || c.includes('뚜렛') || c.includes('틱장애') || c.includes('adhd')
+  ) {
+    return `${base}/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg`;
   }
-  if (text.includes('insomnia') || text.includes('불면') || text.includes('수면') || text.includes('잠')) {
+
+  // (2) 불면증 & 수면장애
+  if (
+    category.includes('insomnia') || category.includes('sleep') || category.includes('불면') || category.includes('수면') ||
+    s.includes('insomnia') || s.includes('sleep') ||
+    c.includes('수면유지장애') || c.includes('입면장애') || c.includes('중도각성') || c.includes('불면증')
+  ) {
     return `${base}/blog-images/insomnia-sleep/01_naver_main_thumbnail.png`;
   }
-  if (text.includes('tic') || text.includes('틱') || text.includes('adhd') || text.includes('소아') || text.includes('집중력')) {
-    return `${base}/blog-images/tic-adhd/01_naver_main_thumbnail.png`;
+
+  // (3) 자율신경실조증 & 어지럼증 / 이명 / 실신
+  if (
+    category.includes('autonomic') || category.includes('dizziness') || category.includes('자율신경') || category.includes('실신') || category.includes('어지럼') || category.includes('이명') ||
+    s.includes('autonomic') || s.includes('dizziness') || s.includes('syncope') || s.includes('tinnitus') ||
+    c.includes('자율신경실조증') || c.includes('미주신경성') || c.includes('경추성 어지럼') || c.includes('신경성 이명') || c.includes('기립성')
+  ) {
+    return `${base}/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png`;
   }
-  if (text.includes('depression') || text.includes('우울') || text.includes('화병') || text.includes('담적') || text.includes('스트레스') || text.includes('somatic')) {
+
+  // (4) 우울증 & 화병 / 신체화장애 / 번아웃
+  if (
+    category.includes('depression') || category.includes('somatic') || category.includes('stress') || category.includes('우울') || category.includes('화병') || category.includes('신체화') ||
+    s.includes('depression') || s.includes('somatic') || s.includes('stress') ||
+    c.includes('우울증') || c.includes('화병') || c.includes('담적') || c.includes('신체화장애')
+  ) {
     return `${base}/blog-images/depression-somatic/01_naver_main_thumbnail.png`;
   }
+
+  // (5) 공황장애 & 불안장애 / 강박증
+  if (
+    category.includes('panic') || category.includes('anxiety') || category.includes('공황') || category.includes('불안') || category.includes('강박') ||
+    s.includes('panic') || s.includes('anxiety') || s.includes('phobia') || s.includes('ocd') ||
+    c.includes('공황발작') || c.includes('공황장애') || c.includes('광장공포증') || c.includes('예기불안') || c.includes('강박사고') || c.includes('과호흡')
+  ) {
+    return `${base}/blog-images/panic-anxiety/01_naver_main_thumbnail.png`;
+  }
+
   return `${base}/blog-images/01_naver_main_thumbnail.jpg`;
 }
 
-export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
+export function convertColumnToTistoryHtml(mdContent, slug = 'column', column = null) {
   let content = mdContent.replace(/^---[\s\S]*?---\r?\n/, '').trim();
-  const thumbnailUrl = getTistoryThumbnailUrl(content, slug);
+  const thumbnailUrl = getTistoryThumbnailUrl(content, slug, column);
 
   // 물결표 주변 공백 표준화 (취소선 방지)
   content = content.replace(/(\d+)\s*~\s*(\d+)/g, '$1 ~ $2');

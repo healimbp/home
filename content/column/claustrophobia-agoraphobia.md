@@ -4,7 +4,6 @@ summary: "인천 구월동, 간석동, 부평, 송도 지역에서 지하철·�
 date: "2026-08-16"
 type: column
 category: "공황 · 불안 & 강박증"
-image: "/blog-images/panic-anxiety/01_naver_main_thumbnail.png"
 tags: ["구월동광장공포증","인천폐쇄공포증","부평지하철공포","엘리베이터공포","터널공포증","공황장애치료","인천공황한의원"]
 ---
 

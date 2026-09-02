@@ -4,7 +4,6 @@ summary: "부천 중동, 신중동, 상동, 부평 지역에서 24시간 엄습�
 date: "2026-08-18"
 type: column
 category: "공황 · 불안 & 강박증"
-image: "/blog-images/panic-anxiety/01_naver_main_thumbnail.png"
 tags: ["부천불안장애","부천예기불안","인천공황장애치료","부평불안증한의원","편도체안정","심담허겁","자율신경안정"]
 ---
 

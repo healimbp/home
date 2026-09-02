@@ -4,7 +4,6 @@ summary: "부천 상동, 중동, 부평, 시흥 지역에서 비염 약으로 �
 date: "2026-08-18"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-image: "/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg"
 tags: ["부천음성틱","부천틱장애한의원","인천뚜렛증후군","소아비염감별","킁킁소리틱","음음소리","부평소아신경과"]
 ---
 

@@ -4,7 +4,6 @@ summary: "인천 송도, 연수구, 부평 지역에서 반복되는 악몽, 가
 date: "2026-08-16"
 type: column
 category: "불면증 · 수면장애"
-image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
 tags: ["송도악몽치료","인천가위눌림","부평수면장애한의원","렘수면장애","다몽증","심비양허","가미귀비탕","인천수면한의원"]
 ---
 

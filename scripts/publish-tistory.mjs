@@ -7,7 +7,7 @@ import { convertColumnToTistoryHtml } from './render-tistory.mjs';
 
 export function formatTistoryContent(column, slug) {
   const content = column.tistoryScript || column.contentHtml || '';
-  return convertColumnToTistoryHtml(content, slug);
+  return convertColumnToTistoryHtml(content, slug, column);
 }
 
 export async function publishToTistory(column, slug) {

@@ -4,7 +4,6 @@ summary: "인천 부평, 부천, 구월동, 청라 등 인근 지역에서 소�
 date: "2026-08-20"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-image: "/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg"
 tags: ["부평틱장애","인천소아틱장애","부천틱장애","기저핵","소아신경정신과","FCST","억간산","부모양육가이드"]
 ---
 

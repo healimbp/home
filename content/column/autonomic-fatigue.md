@@ -4,7 +4,6 @@ summary: "인천 부평, 부천, 구월동 지역에서 병원 검사상 이상 
 date: "2026-08-20"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-image: "/blog-images/autonomic-dizziness/01_naver_main_thumbnail.png"
 tags: ["부평자율신경실조증","인천만성피로","부천자율신경한의원","부신피로","교감신경과항진","자율신경검사","체열검사"]
 ---
 

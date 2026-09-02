@@ -4,7 +4,6 @@ summary: "인천 송도, 연수구, 부평, 청라 지역에서 소아 ADHD 주�
 date: "2026-08-16"
 type: column
 category: "소아청소년 & 성인 ADHD·틱장애"
-image: "/blog-images/tic-adhd/01_naver_main_thumbnail.png"
 tags: ["송도ADHD","인천소아ADHD","부평ADHD한의원","주의산만","과잉행동","전두엽발달","NeuronFlex","부평소아한의원"]
 ---
 

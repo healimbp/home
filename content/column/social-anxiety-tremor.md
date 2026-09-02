@@ -4,7 +4,6 @@ summary: "시흥 배곧, 정왕동, 부평, 안산 지역 직장인·수험생�
 date: "2026-08-14"
 type: column
 category: "공황 · 불안 & 강박증"
-image: "/blog-images/panic-anxiety/01_naver_main_thumbnail.png"
 tags: ["시흥발표불안","배곧사회공포증","인천무대공포증","목소리떨림치료","인천사회불안장애","부평한의원","안심정지탕"]
 ---
 
