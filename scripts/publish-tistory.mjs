@@ -23,9 +23,16 @@ export async function publishToTistory(column, slug) {
 
   const title = column.tistoryTitle || column.title;
   const content = formatTistoryContent(column, slug);
-  const tag = (column.tistoryTags || column.tags || []).join(',');
+  
+  // 태그 포맷팅 정제 (공백, # 제거 후 쉼표 구분자 표준화)
+  const rawTags = column.tistoryTags || column.tags || [];
+  const cleanTags = (Array.isArray(rawTags) ? rawTags : [rawTags])
+    .flatMap(t => String(t).split(/[\s,]+/))
+    .map(t => t.replace(/^#+/, '').trim())
+    .filter(Boolean);
+  const tag = Array.from(new Set(cleanTags)).slice(0, 10).join(',');
 
-  console.log(`[Tistory Auto-Publish] Publishing to blog "${blogName}": "${title}"...`);
+  console.log(`[Tistory Auto-Publish] Publishing to blog "${blogName}": "${title}" (Tags: ${tag})...`);
 
   const params = new URLSearchParams({
     access_token: accessToken,

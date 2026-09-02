@@ -4,8 +4,31 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+export function getTistoryThumbnailUrl(content = '', slug = '') {
+  const base = 'https://healimbp.com';
+  const text = (content + ' ' + slug).toLowerCase();
+  
+  if (text.includes('panic') || text.includes('공황') || text.includes('불안') || text.includes('과호흡') || text.includes('강박')) {
+    return `${base}/blog-images/panic-anxiety/01_naver_main_thumbnail.png`;
+  }
+  if (text.includes('autonomic') || text.includes('자율신경') || text.includes('실신') || text.includes('어지럼') || text.includes('이명') || text.includes('dizziness')) {
+    return `${base}/blog-images/01_bucheon_autonomic_main_thumbnail.png`;
+  }
+  if (text.includes('insomnia') || text.includes('불면') || text.includes('수면') || text.includes('잠')) {
+    return `${base}/blog-images/insomnia-sleep/01_naver_main_thumbnail.png`;
+  }
+  if (text.includes('tic') || text.includes('틱') || text.includes('adhd') || text.includes('소아') || text.includes('집중력')) {
+    return `${base}/blog-images/tic-adhd/01_naver_main_thumbnail.png`;
+  }
+  if (text.includes('depression') || text.includes('우울') || text.includes('화병') || text.includes('담적') || text.includes('스트레스') || text.includes('somatic')) {
+    return `${base}/blog-images/depression-somatic/01_naver_main_thumbnail.png`;
+  }
+  return `${base}/blog-images/01_naver_main_thumbnail.jpg`;
+}
+
 export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
   let content = mdContent.replace(/^---[\s\S]*?---\r?\n/, '').trim();
+  const thumbnailUrl = getTistoryThumbnailUrl(content, slug);
 
   // 물결표 주변 공백 표준화 (취소선 방지)
   content = content.replace(/(\d+)\s*~\s*(\d+)/g, '$1 ~ $2');
@@ -18,9 +41,10 @@ export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
 
   // 1. 권형근 대표원장의 조언 박스 분리
   let doctorAdvice = '';
-  const adviceMatch = content.match(/(?:^|\n)>\s*\*\*권형근\s*대표원장의\s*조언\*\*:\s*[\r\n]+(?:>\s*)?["“]?(.*?)["”]?\s*(?:\n\s*─{3,}|\n\s*###|$)/s);
+  const adviceMatch = content.match(/(?:^|\n)>\s*\*\*권형근\s*대표원장의\s*조언\*\*:\s*[\r\n]+(?:>\s*)?["“]?(.*?)["”]?\s*(?:\n\s*─{3,}|\n\s*###|$)/s) ||
+                      content.match(/\*\*권형근\s*대표원장의\s*조언\*\*:\s*["“]?(.*?)["”]?\s*(?:\n\s*─{3,}|\n\s*###|$)/s);
   if (adviceMatch) {
-    doctorAdvice = adviceMatch[1].replace(/^>\s*/gm, '').trim();
+    doctorAdvice = adviceMatch[1].replace(/^>\s*/gm, '').replace(/[*_#`]/g, '').trim();
     content = content.replace(adviceMatch[0], '').trim();
   }
 
@@ -77,14 +101,16 @@ export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
         const cardRegex = /<span class="bg-\[#2F5D50\][^>]*>(Q\d+)<\/span>\s*<span>(.*?)<\/span>[\s\S]*?<p class="[^"]*">([\s\S]*?)<\/p>/g;
         let match;
         while ((match = cardRegex.exec(secBody)) !== null) {
-          qCards.push({ qNum: match[1], q: match[2].trim(), a: match[3].trim() });
+          const cleanA = match[3].replace(/\*\*권형근\s*대표원장의\s*조언\*\*[\s\S]*/i, '').trim();
+          qCards.push({ qNum: match[1], q: match[2].trim(), a: cleanA });
         }
 
         // 마크다운 Q1. 형식 폴백
         if (qCards.length === 0) {
           const mdQRegex = /\*\*(Q\d+)\.?\s*(.*?)\*\*\s*[\r\n]+(?:>\s*)?(?:\*\*A\.\*\*|A\.)?\s*([\s\S]*?)(?=\n\s*\*\*Q\d+|\n\s*###|$)/g;
           while ((match = mdQRegex.exec(secBody)) !== null) {
-            qCards.push({ qNum: match[1], q: match[2].trim(), a: match[3].replace(/^>\s*/gm, '').trim() });
+            const cleanA = match[3].replace(/^>\s*/gm, '').replace(/\*\*권형근\s*대표원장의\s*조언\*\*[\s\S]*/i, '').trim();
+            qCards.push({ qNum: match[1], q: match[2].trim(), a: cleanA });
           }
         }
 
@@ -135,6 +161,11 @@ export function convertColumnToTistoryHtml(mdContent, slug = 'column') {
   return `
 <div style="font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; line-height: 1.85; color: #333333; max-width: 780px; margin: 0 auto; padding: 10px 0; font-style: normal;">
   
+  <!-- 대표 썸네일 이미지 (다음/카카오/네이버 검색 썸네일 자동 연동) -->
+  <div style="text-align: center; margin: 0 0 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+    <img src="${thumbnailUrl}" alt="해아림한의원 인천부평점 건강 칼럼" style="width: 100%; max-width: 780px; height: auto; display: block; border-radius: 12px; margin: 0 auto; object-fit: cover;" />
+  </div>
+
   <!-- 상단 안내 헤더 박스 -->
   <div style="background-color: #F4F8F6; border-left: 5px solid #2F5D50; padding: 20px 24px; border-radius: 10px; margin-bottom: 32px; box-shadow: 0 1px 4px rgba(47,93,80,0.05); font-style: normal;">
     <p style="margin: 0; font-size: 16px; color: #2F5D50; font-weight: 800; letter-spacing: -0.01em; font-style: normal;">
