@@ -6,6 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { rebuildQAIndex } from './rebuild-qa-index.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -178,6 +179,8 @@ export async function generateDailyQA() {
   const checklistMd = topic.p2.map(item => `1. [ ] ${item}`).join('\n');
   const tipsMd = topic.p3.map(item => `* ${item}`).join('\n');
 
+  const tagsMd = (topic.tags || []).map(t => `  - "${t}"`).join('\n');
+
   const content = `---
 title: "${title}"
 linkTitle: "${title.slice(0, 30)}..."
@@ -188,6 +191,8 @@ patient_info: "질문자: ${region} 거주 OO님 (${topic.patientRole})"
 summary: "${topic.summary || topic.question.slice(0, 100)}..."
 question: |
   ${topic.question.replace(/\n/g, '\n  ')}
+tags:
+${tagsMd}
 type: qa
 ---
 
@@ -221,6 +226,9 @@ ${topic.p4}
 
   fs.writeFileSync(filePath, content, 'utf8');
   console.log(`✅ [Q&A 생성 완료] ${fileName} (${title})`);
+
+  // 전체 Q&A 인덱스(_index.md) 자동 재구축
+  rebuildQAIndex();
 
   // 텔레그램 알림 전송 (옵션)
   await sendTelegramNotification(title, region, topic.category);

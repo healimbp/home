@@ -793,7 +793,113 @@ sections:
             </div>
           </div>
 
-          <!-- 10. Finder Style 야간/주말 진료 안내 배너 (최종 행동 유도 CTA) -->
+          <!-- 10. 1:1 진료 Q&A 상담 사례 (최신 환자 고민 & 원장 전문 답변) -->
+          <div class="space-y-8 pt-4">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+              <div>
+                <span class="heal-hero-badge">Doctor & Patient Q&A</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#26332E] mt-2">1:1 진료 Q&A 상담 사례</h2>
+                <p class="text-xs sm:text-sm text-[#68736E] mt-1">질환별 실제 환자분들의 고민과 권형근 대표원장의 1:1 심층 의학 답변입니다.</p>
+              </div>
+              <a href="/qa/" class="text-xs sm:text-sm font-extrabold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                전체 Q&A 상담사례 보기 <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5" id="home-qa-grid">
+              <!-- Q&A 1: 자율신경/어지럼증 -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">자율신경 & 실신·어지럼증·이명</span>
+                    <span class="text-[11px] text-[#68736E]">인천 계양구 • Q&A</span>
+                  </div>
+                  <div class="p-3 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
+                    <div class="flex items-center gap-1.5 font-bold text-[11px] text-[#C87941]">
+                      <span class="w-3.5 h-3.5 rounded-full bg-[#C87941] text-white text-[9px] flex items-center justify-center font-extrabold">Q</span>
+                      <span class="truncate">인천 계양구 OO님 (30대 직장인/여성)</span>
+                    </div>
+                    <h3 class="text-sm font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                      <a href="/qa/qa-2026-09-01-autonomic-7352/" class="hover:underline">
+                        귀·뇌 검사는 다 정상인데 머리가 붕 뜨고 어지러운 이유는 무엇인가요?
+                      </a>
+                    </h3>
+                  </div>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-2">
+                    자율신경계 불균형으로 뇌 혈류량이 저하되어 나타나는 브레인포그와 만성 어지럼증의 수승화강 탕약 및 경추 추나 치료
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 어지럼증 • 브레인포그</span>
+                  <a href="/qa/qa-2026-09-01-autonomic-7352/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    원장 답변 보기 →
+                  </a>
+                </div>
+              </div>
+
+              <!-- Q&A 2: 공황장애/과호흡 -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">공황 · 불안 & 강박증</span>
+                    <span class="text-[11px] text-[#68736E]">경기 부천시 • Q&A</span>
+                  </div>
+                  <div class="p-3 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
+                    <div class="flex items-center gap-1.5 font-bold text-[11px] text-[#C87941]">
+                      <span class="w-3.5 h-3.5 rounded-full bg-[#C87941] text-white text-[9px] flex items-center justify-center font-extrabold">Q</span>
+                      <span class="truncate">부천 원미구 박OO님 (30대 직장인)</span>
+                    </div>
+                    <h3 class="text-sm font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                      <a href="/qa/bucheon-panic-hyperventilation/" class="hover:underline">
+                        지하철이나 밀폐된 곳에서 숨이 턱 막히고 죽을 것 같은데 공황장애인가요?
+                      </a>
+                    </h3>
+                  </div>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-2">
+                    뇌 편도체 오작동으로 인한 급성 공황발작의 3단계 응급 호흡법과 편도체 과열을 내리는 청간안신 맞춤 한약 치료
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 공황발작 • 과호흡응급</span>
+                  <a href="/qa/bucheon-panic-hyperventilation/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    원장 답변 보기 →
+                  </a>
+                </div>
+              </div>
+
+              <!-- Q&A 3: 소아/성인 틱장애 -->
+              <div class="heal-card flex flex-col justify-between space-y-4 bg-white border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-md transition">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">소아청소년 & 성인 ADHD·틱</span>
+                    <span class="text-[11px] text-[#68736E]">인천 부평구 • Q&A</span>
+                  </div>
+                  <div class="p-3 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
+                    <div class="flex items-center gap-1.5 font-bold text-[11px] text-[#C87941]">
+                      <span class="w-3.5 h-3.5 rounded-full bg-[#C87941] text-white text-[9px] flex items-center justify-center font-extrabold">Q</span>
+                      <span class="truncate">인천 부평구 김OO님 (초등 학부모)</span>
+                    </div>
+                    <h3 class="text-sm font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                      <a href="/qa/bupyeong-tic-stress/" class="hover:underline">
+                        틱장애는 스트레스와 어떤 관계가 있나요? (소아·성인 틱)
+                      </a>
+                    </h3>
+                  </div>
+                  <p class="text-xs text-[#53615B] leading-relaxed line-clamp-2">
+                    기저핵 운동 조절 회로의 미성숙과 스트레스 촉발 인자의 관계, NeuronFlex 두뇌훈련 및 기저핵 안정 한방 치료
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 소아틱 • 눈깜빡임</span>
+                  <a href="/qa/bupyeong-tic-stress/" class="text-xs font-bold text-[#2F5D50] hover:underline inline-flex items-center gap-1">
+                    원장 답변 보기 →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Finder Style 야간/주말 진료 안내 배너 (최종 행동 유도 CTA) -->
           <div class="heal-card-primary flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="space-y-3 text-left">
               <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-xs font-bold text-[#EAF3EF]">

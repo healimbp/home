@@ -5,7 +5,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
   workflow_run:
-    workflows: ["Daily 4x AI Health Column Auto-Publisher", "Daily 2x Instagram Card News Auto-Publisher"]
+    workflows: ["Daily 4x AI Health Column Auto-Publisher", "Daily 2x Instagram Card News Auto-Publisher", "Daily AI Q&A Auto-Publisher"]
     types:
       - completed
 
