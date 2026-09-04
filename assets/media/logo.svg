@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" width="340" height="70" fill="none">
+  <!-- 해아림 심볼 마크 -->
+  <g transform="translate(5, 5)">
+    <!-- 엠블럼 곡선 (마음과 뇌를 잇는 부드러운 유선형) -->
+    <path d="M28 10 C15 10 6 20 6 32 C6 44 16 52 28 52 C38 52 46 45 48 36 C49 31 46 25 40 22 C34 19 26 21 23 26 C20 31 22 37 27 40 C31 42 36 40 38 36" 
+          stroke="#2F5D50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="28" cy="31" r="5.5" fill="#2F5D50"/>
+    <text x="28" y="58" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="8" font-weight="800" fill="#2F5D50" letter-spacing="1">healim</text>
+  </g>
+
+  <!-- 브랜드 텍스트 -->
+  <g transform="translate(68, 12)">
+    <!-- 슬로건: 마음까지 헤아리는 -->
+    <text x="0" y="14" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="12" font-weight="700" fill="#52796F" letter-spacing="0.5">
+      마음까지 헤아리는
+    </text>
+    
+    <!-- 브랜드명: 해아림한의원 -->
+    <text x="0" y="42" font-family="'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif" font-size="25" font-weight="900" fill="#1F3F36" letter-spacing="-0.5">
+      해아림한의원
+    </text>
+
+    <!-- 지점 뱃지: 인천부평점 -->
+    <g transform="translate(152, 18)">
+      <rect x="0" y="0" width="80" height="26" rx="8" fill="#EAF3EF" stroke="#2F5D50" stroke-width="1.8"/>
+      <text x="40" y="18" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="13" font-weight="800" fill="#2F5D50" letter-spacing="-0.3">
+        인천부평점
+      </text>
+      <!-- 반짝임 장식 -->
+      <path d="M72 4 L75 1 M77 6 L81 6" stroke="#2F5D50" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
