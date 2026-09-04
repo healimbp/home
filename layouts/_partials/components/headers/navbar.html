@@ -3,37 +3,38 @@
 {{- $kakaoUrl := "https://pf.kakao.com/_Tcxcxoxj" -}}
 {{- $phoneUrl := "tel:032-719-3472" -}}
 
-<header id="site-header" class="header sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E2EAE5] shadow-sm">
-  <nav class="container mx-auto px-4 sm:px-6 flex items-center justify-between h-20 sm:h-22">
-    <!-- 1. 공식 해아림 로고 (좌측) -->
+<header id="site-header" class="header sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-[#E2EAE5] shadow-sm">
+  <nav class="container mx-auto px-4 sm:px-6 flex items-center justify-between h-20 sm:h-24">
+    <!-- 1. 공식 해아림 로고 (좌측 - 큼직하고 선명한 고화질 브랜딩) -->
     <div class="flex items-center">
-      <a class="navbar-brand flex items-center gap-2 py-1" href="{{ site.Home.RelPermalink }}" title="해아림한의원 인천부평점">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315 56" class="h-12 sm:h-14 md:h-[58px] w-auto" fill="none">
-          <!-- 해아림 심볼 마크 -->
-          <g transform="translate(2, 4)">
-            <path d="M24 6 C12 6 4 15 4 25 C4 35 13 42 24 42 C33 42 39 36 41 29 C42 24 39 19 34 17 C29 14 22 16 20 20 C17 24 19 29 23 32 C27 34 31 32 33 29" 
-                  stroke="#2F5D50" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="24" cy="24" r="4.5" fill="#2F5D50"/>
-            <text x="24" y="49" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="7.5" font-weight="800" fill="#2F5D50" letter-spacing="0.5">healim</text>
-          </g>
+      <a class="navbar-brand flex items-center gap-2.5 sm:gap-3.5 py-1.5 group select-none transition-transform hover:opacity-95" href="{{ site.Home.RelPermalink }}" title="해아림한의원 인천부평점" style="text-decoration: none !important;">
+        <!-- 해아림 정통 엠블럼 심볼 -->
+        <div class="flex flex-col items-center justify-center shrink-0">
+          <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#188A7D]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 10 C16 10 7 20 7 33 C7 45 17 53 30 53 C41 53 50 45 52 35 C53 29 49 23 42 20 C35 17 27 19 23 25 C19 31 22 38 28 41 C33 43 38 41 40 37" 
+                  stroke="#188A7D" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="30" cy="32" r="6" fill="#188A7D"/>
+          </svg>
+          <span class="text-[9px] sm:text-[10px] font-black text-[#188A7D] tracking-widest leading-none mt-0.5" style="letter-spacing: 0.1em;">healim</span>
+        </div>
 
-          <!-- 브랜드 텍스트 -->
-          <g transform="translate(56, 6)">
-            <text x="0" y="12" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="11.5" font-weight="700" fill="#3E6B5C" letter-spacing="0.2">
-              마음까지 헤아리는
-            </text>
-            <text x="0" y="38" font-family="'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif" font-size="26" font-weight="900" fill="#1F3F36" letter-spacing="-0.8">
+        <!-- 브랜드 텍스트 & 인천부평점 뱃지 -->
+        <div class="flex flex-col justify-center text-left">
+          <span class="text-[11px] sm:text-[13px] font-bold text-[#556B62] tracking-normal leading-tight">
+            마음까지 헤아리는
+          </span>
+          <div class="flex items-center gap-2 sm:gap-2.5 mt-0.5">
+            <span class="text-2xl sm:text-[28px] lg:text-[32px] font-black text-[#1F2937] tracking-tight leading-none" style="font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;">
               해아림한의원
-            </text>
-            <g transform="translate(148, 16)">
-              <rect x="0" y="0" width="76" height="24" rx="7" fill="#EAF3EF" stroke="#2F5D50" stroke-width="1.6"/>
-              <text x="38" y="16.5" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="12" font-weight="800" fill="#2F5D50" letter-spacing="-0.3">
-                인천부평점
-              </text>
-              <path d="M68 3 L71 0.5 M73 5 L76 5" stroke="#2F5D50" stroke-width="1.3" stroke-linecap="round"/>
-            </g>
-          </g>
-        </svg>
+            </span>
+            <!-- 인천부평점 둥근 알약 뱃지 -->
+            <span class="relative inline-flex items-center justify-center px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border-2 border-[#188A7D] bg-[#E8F5F3] text-[#188A7D] font-extrabold text-[12px] sm:text-[14px] leading-tight shadow-sm shrink-0">
+              인천부평점
+              <!-- 반짝임 포인트 -->
+              <span class="absolute -top-1.5 -right-2 text-[#188A7D] text-[11px] leading-none font-black animate-pulse">✨</span>
+            </span>
+          </div>
+        </div>
       </a>
     </div>
 
