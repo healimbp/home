@@ -58,7 +58,32 @@ sections:
             <!-- 칼럼 카드 그리드 (페이지별 8개씩 분할 노출) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[400px]" id="column-grid">
 
-              <!-- [칼럼 #1 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [인천 간석동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
+              <!-- [칼럼 #1 | 신체화 & 담적·두통·턱관절] 턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료 -->
+              <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">신체화 & 담적·두통·턱관절</span>
+                    <span class="text-xs text-[#68736E]">2026-09-04 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/post-2026-09-04-somatic-1187/" class="hover:underline">
+                      턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료
+                    </a>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                    신체화 & 담적·두통·턱관절 증상으로 고통받는 환자분들과 보호자분들을 위한 권형근 대표원장의 신경학적 원인 분석 및 근본 한방 치료 가이드입니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 신체화 • 신체화치료</span>
+                  <a href="/column/post-2026-09-04-somatic-1187/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- [칼럼 #2 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [인천 간석동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -83,7 +108,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #2 | 자율신경 & 실신·어지럼증·이명] 이비인후과·뇌 MRI 정상인데 머리가 멍하고 빙빙 도는 경추성 어지럼증 해법 -->
+              <!-- [칼럼 #3 | 자율신경 & 실신·어지럼증·이명] 이비인후과·뇌 MRI 정상인데 머리가 멍하고 빙빙 도는 경추성 어지럼증 해법 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -108,7 +133,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #3 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 지하철·엘리베이터 공포증과 광장공포증, 공간 지각 왜곡 극복법 -->
+              <!-- [칼럼 #4 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 지하철·엘리베이터 공포증과 광장공포증, 공간 지각 왜곡 극복법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -133,7 +158,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #4 | 우울증 · 화병 & 번아웃] [부천 중동한의원 우울증] 감정 기복과 분노 조절 장애, 간화(肝火)를 식히는 맞춤 한약 처방 -->
+              <!-- [칼럼 #5 | 우울증 · 화병 & 번아웃] [부천 중동한의원 우울증] 감정 기복과 분노 조절 장애, 간화(肝火)를 식히는 맞춤 한약 처방 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -158,7 +183,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #5 | 소아청소년 & 성인 ADHD·틱장애] 할 일 미루기 대마왕? 약속 시간 늦고 정리 못 하는 성인 ADHD 전두엽 회복법 -->
+              <!-- [칼럼 #6 | 소아청소년 & 성인 ADHD·틱장애] 할 일 미루기 대마왕? 약속 시간 늦고 정리 못 하는 성인 ADHD 전두엽 회복법 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -183,7 +208,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #6 | 자율신경 & 실신·어지럼증·이명] 출퇴근 지하철에서 눈앞이 캄캄해지고 식은땀 나는 미주신경성 실신 응급 대처 -->
+              <!-- [칼럼 #7 | 자율신경 & 실신·어지럼증·이명] 출퇴근 지하철에서 눈앞이 캄캄해지고 식은땀 나는 미주신경성 실신 응급 대처 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -202,31 +227,6 @@ sections:
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
                   <span class="text-[11px] text-[#68736E]">• 자율신경 • 자율신경치료</span>
                   <a href="/column/post-2026-09-02-autonomic-5024/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
-                    <span>칼럼 전문 읽기</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                  </a>
-                </div>
-              </article>
-
-              <!-- [칼럼 #7 | 신체화 & 담적·두통·턱관절] 턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료 -->
-              <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">신체화 & 담적·두통·턱관절</span>
-                    <span class="text-xs text-[#68736E]">2026-09-02 • 권형근 원장 칼럼</span>
-                  </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
-                    <a href="/column/post-2026-09-02-somatic-7448/" class="hover:underline">
-                      턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료
-                    </a>
-                  </h3>
-                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                    신체화 & 담적·두통·턱관절 증상으로 고통받는 환자분들과 보호자분들을 위한 권형근 대표원장의 신경학적 원인 분석 및 근본 한방 치료 가이드입니다.
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 신체화 • 신체화치료</span>
-                  <a href="/column/post-2026-09-02-somatic-7448/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>
