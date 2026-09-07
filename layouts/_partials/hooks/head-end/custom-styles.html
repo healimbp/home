@@ -163,9 +163,13 @@
     text-wrap: pretty;
   }
 
-  /* Smooth scroll */
+  /* Smooth scroll & Sticky Header Anchor Offset */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+  [id] {
+    scroll-margin-top: 5.5rem;
   }
 
   /* Header & Navigation */
@@ -389,6 +393,7 @@
     box-shadow: 0 -4px 24px rgba(38, 51, 46, 0.08);
     z-index: 999;
     padding: 0.75rem 1rem;
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
     border-top: 1px solid var(--line);
   }
 
@@ -403,7 +408,7 @@
 
   /* Page content padding bottom for floating bar */
   .page-body {
-    padding-bottom: 5.5rem;
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
   }
 
   /* Step box */
@@ -428,6 +433,7 @@
     }
     .heal-floating-bar {
       padding: 0.5rem;
+      padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
     }
   }
 </style>

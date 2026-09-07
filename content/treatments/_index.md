@@ -52,6 +52,7 @@ sections:
 
           <!-- 3. 진료 카테고리 1: 불안 · 정신건강 클리닉 -->
           <div id="panic" class="heal-card space-y-6 bg-white border-t-4 border-t-[#2F5D50]">
+            <span id="depression" class="block -mt-24 pt-24"></span>
             <div class="flex items-center gap-3">
               <div class="heal-ico">
                 <i class="fa-solid fa-heart-pulse"></i>
@@ -91,7 +92,9 @@ sections:
 
           <!-- 4. 진료 카테고리 2: 수면 · 자율신경 클리닉 -->
           <div id="insomnia" class="heal-card space-y-6 bg-white border-t-4 border-t-[#2F5D50]">
-            <div id="autonomic" class="flex items-center gap-3">
+            <span id="autonomic" class="block -mt-24 pt-24"></span>
+            <span id="dizziness" class="block -mt-24 pt-24"></span>
+            <div class="flex items-center gap-3">
               <div class="heal-ico">
                 <i class="fa-solid fa-moon"></i>
               </div>

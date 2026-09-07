@@ -108,8 +108,8 @@
     </div>
   </nav>
 
-  <!-- 모바일 펼침 메뉴 드롭다운 (style="display: none;" 초기값) -->
-  <div id="mobile-menu-drawer" class="lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-1.5 shadow-xl" style="display: none;">
+  <!-- 모바일 펼침 메뉴 드롭다운 (style="display: none;" 초기값 & 스크롤 지원) -->
+  <div id="mobile-menu-drawer" class="lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-1.5 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto" style="display: none; -webkit-overflow-scrolling: touch;">
     {{ $currentPage := . }}
     {{ range site.Menus.main }}
       {{ $menuURL := .URL | absLangURL }}
