@@ -73,19 +73,15 @@ export function rebuildQAIndex() {
     const location = locationMatch ? locationMatch[1].trim() : '인천 부평구';
     const patientInfo = patientMatch ? patientMatch[1].trim() : `질문자: ${location} 거주 환자분`;
 
-    // 본문에서 답변 추출 (Section 4 또는 Section 1 또는 요약)
+    // 본문에서 답변 추출 (새로운 에세이형 본문 또는 summary)
     let answerSummary = '';
-    const s4Match = content.match(/## 4\.[^\n]*\n+([\s\S]*?)(?=\n<div|\n---|$)/);
-    if (s4Match) {
-      answerSummary = s4Match[1].replace(/[*_#`]/g, '').trim();
-    } else {
-      const s1Match = content.match(/## 1\.[^\n]*\n+([\s\S]*?)(?=\n---|$)/);
-      if (s1Match) {
-        answerSummary = s1Match[1].replace(/[*_#`]/g, '').trim();
-      }
+    const bodyContent = content.replace(/^---[\s\S]*?---/, '').trim();
+    const bodyParagraphs = bodyContent.split(/\n\n+/).map(p => p.trim()).filter(p => p.length > 0 && !p.startsWith('안녕하세요'));
+    if (bodyParagraphs.length > 0) {
+      answerSummary = bodyParagraphs[0].replace(/[*_#`]/g, '').trim();
     }
 
-    if (!answerSummary) {
+    if (!answerSummary || answerSummary.length < 20) {
       answerSummary = summaryMatch ? summaryMatch[1].trim() : '권형근 대표원장의 1:1 맞춤 신경계 진단과 한방 치료 솔루션입니다.';
     }
 

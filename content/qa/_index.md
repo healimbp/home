@@ -154,7 +154,7 @@ sections:
                   <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
                     <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
                       <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
-                      <span class="truncate">질문자: 인천 부평구 거주 OO님 (40대 자영업자 / 직장인)</span>
+                      <span class="truncate">질문자: 인천 부평구 거주 최OO님 (40대 직장인)</span>
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/qa-2026-09-04-somatic-8136/" class="hover:underline">
@@ -170,7 +170,7 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      위장 외벽의 담적을 삭혀 배출하는 온비소적 탕약과 복부 온열 뜸 요법으로 굳어진 위장관을 따뜻하게 풀어냅니다.
+                      위내시경은 정상인데 밥만 먹으면 명치가 꽉 막히고 트림과 가스가 차는 만성 소화불량 담적병에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ sections:
                   <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
                     <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
                       <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
-                      <span class="truncate">질문자: 인천 서구 검단 거주 OO님 (50대 주부)</span>
+                      <span class="truncate">질문자: 인천 서구 검단 거주 윤OO님 (50대 주부)</span>
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/qa-2026-09-03-stress-1944/" class="hover:underline">
@@ -212,7 +212,7 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      뭉친 기운을 풀어주는 반하후박탕 및 가미소요산 처방과 가슴 혈자리 침구 치료로 목의 이물감과 가슴의 응어리를 시원하게 비워냅니다.
+                      목에 솜뭉치가 걸린 듯한 이물감과 가슴 답답함, 치밀어 오르는 상열감 화병 치료에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
@@ -238,7 +238,7 @@ sections:
                   <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
                     <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
                       <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
-                      <span class="truncate">질문자: 인천 미추홀구 거주 OO님 (20대 학생 / 여성)</span>
+                      <span class="truncate">질문자: 인천 미추홀구 거주 김OO님 (20대 대학생 / 여성)</span>
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/qa-2026-09-02-autonomic-4275/" class="hover:underline">
@@ -254,13 +254,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      심장과 기혈을 보강하는 승양익기(升陽益氣) 탕약과 자율신경 밸런스 약침으로 혈압 조절 능력을 튼튼하게 재건합니다.
+                      만원 대중교통이나 피로할 때 발생하는 식은땀, 시야 흐림, 미주신경성 실신에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 자율신경실조증 • 어지럼증 • 미주신경실신</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 미주신경성실신 • 실신전조증상 • 기립성저혈압</span>
                   <a href="/qa/qa-2026-09-02-autonomic-4275/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -280,7 +280,7 @@ sections:
                   <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
                     <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
                       <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
-                      <span class="truncate">질문자: 인천 계양구 거주 OO님 (30대 직장인 / 여성)</span>
+                      <span class="truncate">질문자: 인천 계양구 거주 박OO님 (30대 직장인 / 여성)</span>
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/qa-2026-09-01-autonomic-7352/" class="hover:underline">
@@ -296,13 +296,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      수승화강 탕약으로 상체의 열을 내리고 뇌 혈류를 복원하며, 상부경추 추나요법으로 뇌간 자율신경 중추의 압박을 해소합니다.
+                      이비인후과와 신경과에서 정밀 검사를 받았음에도 특별한 이상이 없다는 진단을 받아 답답함과 불안이 크셨을 것으로 생각됩니다. 검사 결과는 정상이지만 환자분께서 느끼시는 머리 멍함(브레인포그)과 붕 뜨는 어지럼증은 결코 기분 탓이나 착각이 아닙니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 자율신경실조증 • 어지럼증 • 미주신경실신</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 만성어지럼증 • 브레인포그 • 자율신경실조증</span>
                   <a href="/qa/qa-2026-09-01-autonomic-7352/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -338,13 +338,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      이비인후과 내시경 검사상 식도나 후두에 아무런 혹이나 물리적 이물질이 없음에도 목에 무언가 걸려 있는 듯한 느낌을 한의학에서는 '매핵기(梅核氣)'라고 부릅니다. 이는 마치 매실 씨앗(梅核)이 목에 걸려 뱉으려 해도 나오지 않고 삼키려 해도 넘어가지 않는 증상을 뜻합니다. 서양의학에서는 이를 '인두 신경증(Globus Hy...
+                      후두 내시경은 정상인데 지속되는 목 이물감(매핵기)과 가슴 답답함, 상열감 등 화병 증상에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 화병 • 매핵기 • 우울증한방치료</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 화병 • 매핵기 • 목이물감</span>
                   <a href="/qa/bupyeong-hwabyeong-maehaekgi/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -352,7 +352,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [Q&A | 소아청소년 & 성인 ADHD·틱] 성인이 되어서도 물건을 자주 잃어버리고 마감 직전까지 일을 미루는데 성인 ADHD인가요? (인천·송도 성인 ADHD) -->
+              <!-- [Q&A | 소아청소년 & 성인 ADHD·틱] 물건을 매일 잃어버리고 마감 직전까지 일을 미루는데 성인 ADHD인가요? (인천·송도 성인 ADHD) -->
               <article class="qa-item tic heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="tic">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
@@ -368,7 +368,7 @@ sections:
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/songdo-adult-adhd-focus/" class="hover:underline">
-                        성인이 되어서도 물건을 자주 잃어버리고 마감 직전까지 일을 미루는데 성인 ADHD인가요? (인천·송도 성인 ADHD)
+                        물건을 매일 잃어버리고 마감 직전까지 일을 미루는데 성인 ADHD인가요? (인천·송도 성인 ADHD)
                       </a>
                     </h3>
                   </div>
@@ -380,13 +380,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      많은 분들이 성인 ADHD를 단순한 '의지 부족'이나 '게으름'으로 오해하고 자책합니다. 하지만 성인 ADHD는 성격의 문제가 아니라 뇌 전두엽(Frontal Lobe)의 '실행기능(Executive Function)'과 도파민 조절 장애에서 비롯되는 신경발달학적 질환입니다. 단순 게으름: 쉬고 싶어서 의도적으로 일을 안...
+                      만성적인 미루기와 소지품 분실, 집중력 저하로 고민하는 20대 대학원생의 성인 ADHD 진단 및 한방 치료에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 소아틱장애 • 성인ADHD • 두뇌훈련</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 성인ADHD • 만성미루기 • 집중력저하</span>
                   <a href="/qa/songdo-adult-adhd-focus/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -422,13 +422,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      이비인후과(귀의 평형기관)와 신경과(뇌의 기질적 이상) 검사에서 이상이 없다는 것은 구조적 파괴나 뇌 질환(뇌경색, 종양 등)이 없다는 뜻입니다. 하지만 혈관의 수축과 이완, 뇌로 가는 혈류량, 심장 박동을 조절하는 '기능적 신경계'인 자율신경계(교감-부교감신경)에 불균형이 생기면 다음과 같은 비회전성 만성 어지럼증이 발...
+                      이비인후과와 뇌 MRI 검사는 정상인데 지속되는 머리 멍함(브레인포그)과 기립성 어지럼증, 자율신경실조증 한방 치료에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 자율신경실조증 • 어지럼증 • 미주신경실신</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 만성어지럼증 • 자율신경실조증 • 브레인포그</span>
                   <a href="/qa/cheongra-autonomic-dizziness/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -436,7 +436,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [Q&A | 공황 · 불안 & 강박증] 지하철이나 밀폐된 곳에서 숨이 턱 막히고 죽을 것 같은데 공황장애인가요? (부천·인천 공황장애) -->
+              <!-- [Q&A | 공황 · 불안 & 강박증] 출근길 지하철에서 숨이 턱 막히고 쓰러질 것 같은데 공황장애인가요? (부천·인천 공황장애) -->
               <article class="qa-item panic heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="panic">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
@@ -448,11 +448,11 @@ sections:
                   <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
                     <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
                       <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
-                      <span class="truncate">질문자: 부천시 원미구 중동 박OO님 (30대 남성)</span>
+                      <span class="truncate">질문자: 경기 부천시 원미구 박OO님 (30대 직장인)</span>
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/bucheon-panic-hyperventilation/" class="hover:underline">
-                        지하철이나 밀폐된 곳에서 숨이 턱 막히고 죽을 것 같은데 공황장애인가요? (부천·인천 공황장애)
+                        출근길 지하철에서 숨이 턱 막히고 쓰러질 것 같은데 공황장애인가요? (부천·인천 공황장애)
                       </a>
                     </h3>
                   </div>
@@ -464,13 +464,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      질문해주신 증상은 공황장애(Panic Disorder)의 전형적인 '공황발작' 및 '예기불안(Anticipatory Anxiety)' 양상입니다. 공황발작은 실제 생명을 위협하는 신체 질환이 있는 것이 아니라, 뇌의 편도체(Amygdala)라는 공포 중추가 오작동하여 "지금 당장 죽을 것 같다"는 잘못된 비상경보를 울리는...
+                      출근길 만원 지하철에서 겪은 호흡곤란과 심장 두근거림, 응급실 정상 판정 후의 예기불안에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 공황장애 • 예기불안 • 과호흡응급대처</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 공황장애 • 공황발작 • 과호흡</span>
                   <a href="/qa/bucheon-panic-hyperventilation/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -478,7 +478,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [Q&A | 불면증 & 수면장애] 수면제를 1년 넘게 복용 중인데 한방으로 줄이거나 끊을 수 있을까요? (인천·부평 불면증 치료) -->
+              <!-- [Q&A | 불면증 & 수면장애] 수면제를 1년 넘게 먹었는데 한방으로 줄여서 끊을 수 있나요? (인천·부평 불면증 치료) -->
               <article class="qa-item insomnia heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="insomnia">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
@@ -490,11 +490,11 @@ sections:
                   <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
                     <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
                       <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
-                      <span class="truncate">질문자: 인천 남동구 구월동 이OO님 (40대 여성)</span>
+                      <span class="truncate">질문자: 인천 남동구 구월동 이OO님 (40대 직장인)</span>
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/incheon-insomnia-tapering/" class="hover:underline">
-                        수면제를 1년 넘게 복용 중인데 한방으로 줄이거나 끊을 수 있을까요? (인천·부평 불면증 치료)
+                        수면제를 1년 넘게 먹었는데 한방으로 줄여서 끊을 수 있나요? (인천·부평 불면증 치료)
                       </a>
                     </h3>
                   </div>
@@ -506,13 +506,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      수면유도제(졸피뎀 계열)나 신경안정제(벤조디아제핀 계열)는 뇌의 억제성 신경전달물질인 GABA 수용체에 강제로 작용하여 뇌 신경을 일시적으로 마취시키듯 잠을 유도합니다. 장기간 복용 시 뇌 스스로 잠을 준비하고 멜라토닌을 분비하는 자연 수면 메커니즘이 퇴화하게 됩니다. 이때 환자분이 임의로 약을 갑자기 끊으면 뇌가 극심한...
+                      1년 이상 수면제를 복용하며 의존성과 새벽 각성으로 고민하는 환자분의 안전한 단계적 감약과 자연 수면 회복에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 수면장애 • 불면증한의원 • 수면제감약</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 불면증 • 수면제감약 • 졸피뎀</span>
                   <a href="/qa/incheon-insomnia-tapering/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -520,7 +520,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [Q&A | 소아청소년 & 성인 ADHD·틱] 틱장애는 스트레스와 어떤 관계가 있나요? (인천·부평 소아 및 성인 틱장애) -->
+              <!-- [Q&A | 소아청소년 & 성인 ADHD·틱] 틱장애는 스트레스와 어떤 관계가 있나요? (인천·부평 소아 틱장애) -->
               <article class="qa-item tic heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="tic">
                 <div class="space-y-3">
                   <div class="flex items-center justify-between">
@@ -536,7 +536,7 @@ sections:
                     </div>
                     <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
                       <a href="/qa/bupyeong-tic-stress/" class="hover:underline">
-                        틱장애는 스트레스와 어떤 관계가 있나요? (인천·부평 소아 및 성인 틱장애)
+                        틱장애는 스트레스와 어떤 관계가 있나요? (인천·부평 소아 틱장애)
                       </a>
                     </h3>
                   </div>
@@ -548,13 +548,13 @@ sections:
                       <span>권형근 대표원장 답변 요약</span>
                     </div>
                     <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                      해아림한의원에서는 틱 증상 억제에만 급급한 대증 치료가 아니라, 아이의 뇌 신경계가 스스로 운동과 음성을 자연스럽게 통제할 수 있도록 자생력을 기르는 근본 치료를 시행합니다. 3대 정밀 검사: 뇌파(EEG) 검사, 자율신경계(HRV) 스트레스 검사, 체열 진단 및 SCL-90R 심리 평가를 통해 뇌 과각성 상태를 객관적으...
+                      초등학교 입학 후 눈 깜빡임과 헛기침 틱 증상이 늘어난 아이의 원인과 대처법에 대한 권형근 대표원장의 1:1 심층 상담 답변입니다.
                     </p>
                   </div>
                 </div>
 
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
-                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 소아틱장애 • 성인ADHD • 두뇌훈련</span>
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 소아틱장애 • 눈깜빡임 • 음성틱</span>
                   <a href="/qa/bupyeong-tic-stress/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
                     <span>답변 전체보기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
