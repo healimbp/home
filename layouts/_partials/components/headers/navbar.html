@@ -81,13 +81,13 @@
       </div>
 
       <!-- 모바일 햄버거 메뉴 토글 버튼 -->
-      <button id="mobile-menu-btn" type="button" onclick="window.toggleMobileMenu && window.toggleMobileMenu(event)" class="p-2 rounded-xl text-[#2F5D50] hover:bg-[#EAF3EF] active:scale-95 lg:hidden transition flex items-center justify-center focus:outline-none cursor-pointer select-none" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu-drawer" style="touch-action: manipulation; -webkit-tap-highlight-color: transparent;">
+      <button id="mobile-menu-btn" type="button" onclick="toggleHealimMenu(event)" class="p-2 rounded-xl text-[#2F5D50] hover:bg-[#EAF3EF] active:scale-95 lg:hidden transition flex items-center justify-center focus:outline-none cursor-pointer select-none" aria-label="메뉴 열기" aria-expanded="false" style="touch-action: manipulation; -webkit-tap-highlight-color: transparent;">
         <!-- 햄버거 아이콘 -->
-        <svg id="hamburger-icon" class="w-6 h-6 fill-none stroke-current stroke-2 transition-transform duration-200 pointer-events-none" viewBox="0 0 24 24">
+        <svg id="hamburger-icon" class="w-6 h-6 fill-none stroke-current stroke-2 pointer-events-none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
         <!-- 닫기(X) 아이콘 -->
-        <svg id="close-icon" class="w-6 h-6 fill-none stroke-current stroke-2 hidden transition-transform duration-200 pointer-events-none" viewBox="0 0 24 24">
+        <svg id="close-icon" class="w-6 h-6 fill-none stroke-current stroke-2 pointer-events-none" style="display: none;" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
@@ -108,15 +108,15 @@
     </div>
   </nav>
 
-  <!-- 모바일 펼침 메뉴 드롭다운 -->
-  <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-1.5 shadow-xl transition-all duration-300 ease-in-out">
+  <!-- 모바일 펼침 메뉴 드롭다운 (style="display: none;" 초기값) -->
+  <div id="mobile-menu-drawer" class="lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-1.5 shadow-xl" style="display: none;">
     {{ $currentPage := . }}
     {{ range site.Menus.main }}
       {{ $menuURL := .URL | absLangURL }}
       {{ $pageURL:= $currentPage.Permalink | absLangURL }}
       {{ $active := eq $menuURL $pageURL }}
       <a class="flex items-center justify-between px-4 py-2.5 rounded-xl font-bold text-sm text-[#202947] hover:bg-[#EAF3EF] hover:text-[#2F5D50] transition {{ if $active }}bg-[#EAF3EF] text-[#2F5D50] font-extrabold{{ end }}"
-         href="{{ .URL | relLangURL }}">
+         href="{{ .URL | relLangURL }}" onclick="closeHealimMenu()">
         <span>{{ .Name }}</span>
         <svg class="w-4 h-4 text-[#8EAB9F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -135,102 +135,56 @@
 </header>
 
 <script>
-  (function() {
-    function getElements() {
-      return {
-        btn: document.getElementById('mobile-menu-btn'),
-        drawer: document.getElementById('mobile-menu-drawer'),
-        hamburgerIcon: document.getElementById('hamburger-icon'),
-        closeIcon: document.getElementById('close-icon')
-      };
+  function toggleHealimMenu(e) {
+    if (e) {
+      if (e.stopPropagation) e.stopPropagation();
     }
+    var drawer = document.getElementById('mobile-menu-drawer');
+    var btn = document.getElementById('mobile-menu-btn');
+    var hIcon = document.getElementById('hamburger-icon');
+    var cIcon = document.getElementById('close-icon');
 
-    function openMenu() {
-      var el = getElements();
-      if (!el.drawer || !el.btn) return;
-      el.drawer.classList.remove('hidden');
-      el.btn.setAttribute('aria-expanded', 'true');
-      el.btn.setAttribute('aria-label', '메뉴 닫기');
-      if (el.hamburgerIcon && el.closeIcon) {
-        el.hamburgerIcon.classList.add('hidden');
-        el.closeIcon.classList.remove('hidden');
-      }
-    }
+    if (!drawer) return;
 
-    function closeMenu() {
-      var el = getElements();
-      if (!el.drawer || !el.btn) return;
-      el.drawer.classList.add('hidden');
-      el.btn.setAttribute('aria-expanded', 'false');
-      el.btn.setAttribute('aria-label', '메뉴 열기');
-      if (el.hamburgerIcon && el.closeIcon) {
-        el.hamburgerIcon.classList.remove('hidden');
-        el.closeIcon.classList.add('hidden');
-      }
-    }
+    var isHidden = (drawer.style.display === 'none' || drawer.style.display === '' || getComputedStyle(drawer).display === 'none');
 
-    window.toggleMobileMenu = function(e) {
-      if (e) {
-        e.stopPropagation();
-      }
-      var el = getElements();
-      if (!el.drawer) return;
-      if (el.drawer.classList.contains('hidden')) {
-        openMenu();
-      } else {
-        closeMenu();
-      }
-    };
-
-    function initMobileMenu() {
-      var el = getElements();
-      if (!el.btn || !el.drawer) return;
-
-      if (el.btn.dataset.menuInitialized === 'true') return;
-      el.btn.dataset.menuInitialized = 'true';
-
-      el.btn.addEventListener('click', window.toggleMobileMenu);
-
-      var links = el.drawer.querySelectorAll('a');
-      links.forEach(function(link) {
-        link.addEventListener('click', function() {
-          closeMenu();
-        });
-      });
-
-      document.addEventListener('click', function(e) {
-        var header = document.getElementById('site-header');
-        if (header && !header.contains(e.target)) {
-          var drawer = document.getElementById('mobile-menu-drawer');
-          if (drawer && !drawer.classList.contains('hidden')) {
-            closeMenu();
-          }
-        }
-      });
-
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-          var drawer = document.getElementById('mobile-menu-drawer');
-          if (drawer && !drawer.classList.contains('hidden')) {
-            closeMenu();
-          }
-        }
-      });
-
-      window.addEventListener('resize', function() {
-        if (window.innerWidth >= 1024) {
-          var drawer = document.getElementById('mobile-menu-drawer');
-          if (drawer && !drawer.classList.contains('hidden')) {
-            closeMenu();
-          }
-        }
-      });
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initMobileMenu);
+    if (isHidden) {
+      drawer.style.setProperty('display', 'block', 'important');
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+      if (hIcon) hIcon.style.display = 'none';
+      if (cIcon) cIcon.style.display = 'block';
     } else {
-      initMobileMenu();
+      drawer.style.setProperty('display', 'none', 'important');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      if (hIcon) hIcon.style.display = 'block';
+      if (cIcon) cIcon.style.display = 'none';
     }
-  })();
+  }
+
+  function closeHealimMenu() {
+    var drawer = document.getElementById('mobile-menu-drawer');
+    var btn = document.getElementById('mobile-menu-btn');
+    var hIcon = document.getElementById('hamburger-icon');
+    var cIcon = document.getElementById('close-icon');
+
+    if (drawer) drawer.style.setProperty('display', 'none', 'important');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+    if (hIcon) hIcon.style.display = 'block';
+    if (cIcon) cIcon.style.display = 'none';
+  }
+
+  document.addEventListener('click', function(e) {
+    var header = document.getElementById('site-header');
+    if (header && !header.contains(e.target)) {
+      closeHealimMenu();
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeHealimMenu();
+  });
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 1024) closeHealimMenu();
+  });
 </script>
