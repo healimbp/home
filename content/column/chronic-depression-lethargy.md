@@ -187,28 +187,28 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>정신과 항우울제를 먹고 있는데 한방 치료를 병행해도 안전한가요?</span>
+        <span>주말에 하루 종일 쉬고 영양제를 챙겨 먹어도 피로가 전혀 안 풀리는데 자율신경실조증인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 매우 안전하며 권장됩니다. 한방 치료는 양약의 흡수를 돕고 흔한 부작용(소화불량, 입마름, 무기력)을 완화해주며, 뇌 자생력이 회복되면 점진적인 양약 감량을 가능하게 해줍니다.
+        네, 한스 셀리에(Hans Selye)의 스트레스 3단계 중 부신 호르몬(코르티솔)과 자율신경계가 완전히 방전된 "소진기(Exhaustion Stage)" 상태입니다. 단순 휴식으로는 충전되지 않으므로, 심장과 신장의 원기를 보강하는 보중익기탕·공진단 요법과 교감-부교감 밸런스 정상화 치료가 필요합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>우울증 한방 치료는 효과가 나타나기까지 얼마나 걸리나요?</span>
+        <span>자율신경실조증으로 인한 만성 피로는 병원 피검사에서 왜 이상이 안 나오나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        소화장애, 불면, 두통 같은 신체화 증상은 2~3주 내에 먼저 호전되며, 1~2개월 차부터 기분과 활력이 서서히 올라와 일상생활의 의욕을 되찾게 됩니다.
+        피검사는 간염, 신부전, 빈혈 등 기질적 장기 손상만 감지할 뿐, 1초에 수십 번씩 전신 장기를 조율하는 자율신경계의 기능적 조절 장애(HRV 심박변이도 저하)는 잡아내지 못하기 때문입니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>우울증 환자 곁에 있는 가족들은 어떻게 대해야 하나요?</span>
+        <span>만성 피로와 함께 소화불량, 어지럼증, 가슴 답답함이 같이 오는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        "힘내라", "마음 단단히 먹어라"라는 조언은 환자에게 죄책감과 부담을 줍니다. "네 잘못이 아니야, 뇌가 지쳐서 아픈 거니 함께 치료받자"는 공감과 지지가 가장 큰 힘이 됩니다.
+        자율신경계는 심장, 위장, 혈관, 땀샘을 동시에 관장하므로, 자율신경 조절 밸런스가 무너지면 전신 다발성 신체화 증상이 동시다발적으로 나타나는 것이 특징입니다.
       </p>
     </div>
 </div>

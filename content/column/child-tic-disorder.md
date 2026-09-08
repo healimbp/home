@@ -187,28 +187,28 @@ image: "/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>틱 증상이 보일 때 "하지 마라"고 참으라고 하면 왜 더 심해지나요?</span>
+        <span>소아 틱장애는 그냥 두면 저절로 낫는 경우도 있다는데 언제 한의원 치료를 시작해야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        틱을 하기 직전 아이는 해당 부위에 간질거리거나 뻐근한 **"전조 충동(Premonitory Urge)"**을 느낍니다. 억지로 참으라고 강요하면 뇌 기저핵에 극심한 압력이 누적되어, 잠시 참은 뒤 나중에 2~3배 더 크고 격렬한 틱으로 폭발하게 됩니다. 지적하지 마시고 자연스럽게 주의를 돌려주시는 것이 핵심입니다.
+        눈 깜빡임 같은 단순 근육틱이 4주 이상 지속되거나, 음음·킁킁 같은 음성틱이 동반되는 경우, 또는 목 꺾기, 복부 털기 등 아래 부위로 틱이 전이되는 양상을 보인다면 뇌 신경망의 자율 억제력이 무너진 신호이므로 만성화 및 뚜렛증후군 예방을 위해 즉시 치료를 시작해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>스마트폰 영상이나 게임이 틱을 악화시키는 게 사실인가요?</span>
+        <span>스마트폰 영상이나 게임이 아이의 틱을 악화시키는 구체적인 신경학적 이유가 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 명확한 상관관계가 있습니다. 전자기기의 빠른 시각 프레임 전환과 화려한 자극은 뇌의 도파민 분비를 과도하게 촉발하여 기저핵을 과흥분시킵니다. 또한 고개를 푹 숙인 자세는 상부 경추에 큰 하중을 주어 뇌신경을 자극하므로 스크린 타임을 엄격히 조절해야 합니다.
+        전자기기의 빠르고 현란한 시청각 자극은 뇌의 도파민을 과도하게 분출시켜 기저핵과 전두엽을 극도로 흥분시킵니다. 또한 고개를 숙인 자세가 상부 경추를 압박하므로 스크린 타임을 엄격히 제한하고 감각통합 훈련을 병행해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>소아정신과 약(양약)을 먹고 있는데 한방 치료를 병행해도 되나요?</span>
+        <span>아이의 눈 깜빡임이나 코 찡긋거림을 보고 "하지 마!"라고 주의를 주면 왜 2~3배 더 심해지나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 안전하게 병행할 수 있습니다. 양약이 당장 신경전달물질 수용체를 차단해 증상을 억누르는 역할을 한다면, 한방 치료는 아이 스스로 뇌 신경망을 성숙시키고 체질적 불균형을 바로잡는 역할을 합니다. 한방 치료를 통해 뇌 자생력이 올라가면 주치의와 상의하여 양약을 서서히 줄여갈 수 있습니다.
+        틱을 하기 직전 아이는 해당 부위에 간질거리거나 답답한 "전조 감각 충동"을 강하게 느낍니다. 부모가 지적하면 뇌 기저핵에 극심한 스트레스 압력이 누적되어, 억지로 참았다가 나중에 훨씬 크고 격렬한 반동성 틱으로 폭발하게 됩니다. 절대 지적하지 마시고 모른 척 자연스럽게 다른 활동으로 전환해주셔야 합니다.
       </p>
     </div>
 </div>

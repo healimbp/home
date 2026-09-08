@@ -187,28 +187,28 @@ image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>새벽에 깼을 때 시계를 자꾸 확인하게 되는데 괜찮은가요?</span>
+        <span>새벽에 깼을 때 시간을 자꾸 확인하게 되는데 괜찮은 습관인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        시계를 보는 순간 뇌는 "지금 몇 시지? 이제 몇 시간밖에 못 자네"라는 계산과 불안을 시작하여 각성 호르몬을 분비합니다. 새벽에 깨더라도 **절대 시계나 스마트폰을 보지 마시고** 어두운 상태에서 호흡을 천천히 내쉬며 누워 계시는 것이 좋습니다.
+        절대 안 됩니다. 시계를 보는 순간 뇌는 "지금 몇 시지? 이제 몇 시간밖에 못 자네"라는 계산과 스트레스를 시작하여 코르티솔 각성 호르몬을 즉각 분비합니다. 새벽에 깨더라도 시계를 절대 보지 마시고 어두운 상태로 편안히 호흡을 유지해야 델타파 숙면으로 복귀할 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>야간뇨 때문에 깨는 건지, 잠이 깨서 소변이 마려운 건지 헷갈립니다.</span>
+        <span>새벽에 깨서 화장실을 자주 가는 야간뇨가 불면증의 원인인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        방광 질환이 없는데도 새벽에 깨어 화장실을 가는 경우의 80%는 **뇌가 먼저 얕은 잠에서 깨어났기 때문에 방광의 미세한 감각을 인지**하는 것입니다. 뇌의 수면 깊이를 회복시키면 야간뇨 횟수도 저절로 사라집니다.
+        반대로 얕은 잠 때문에 뇌가 깨어나면서 방광 충만감을 민감하게 느끼는 경우가 대부분입니다. 신장(腎臟)의 양기를 덥히고 수면 깊이를 늘려주면 야간뇨 횟수도 자연스럽게 줄어듭니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>치료를 시작하면 언제부터 중간에 안 깨고 통잠을 잘 수 있나요?</span>
+        <span>잠은 잘 드는데 매일 새벽 3~4시만 되면 눈이 번쩍 떠지고 다시 잠들지 못하는 원인이 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        보통 한방 치료 2~3주 차부터 깨어나는 횟수가 3~4회에서 1~2회로 줄어들고, 깨더라도 다시 잠드는 시간이 5분 이내로 빨라지며, 1~2개월 차에는 아침 알람이 울릴 때까지 깨지 않는 깊은 통잠에 도달하게 됩니다.
+        이는 수면유지장애(중도각성)로, 한의학적으로는 간(肝)과 심장의 허열이 밤사이 해독과 휴식을 방해하거나 기혈이 부족해 뇌를 깊은 수면 상태로 붙잡아두지 못하기 때문입니다. 새벽 시간대 체온 조절과 간열(肝熱)을 다스리는 산조인탕 가감방으로 수면 지속력을 복원합니다.
       </p>
     </div>
 </div>

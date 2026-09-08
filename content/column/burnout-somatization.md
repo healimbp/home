@@ -187,28 +187,28 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>번아웃을 극복하려면 퇴사나 휴직만이 유일한 정답인가요?</span>
+        <span>출근길만 되면 눈물이 나고 아무것도 하기 싫은 극심한 무기력증, 단순한 슬럼프인가요 번아웃 증후군인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        무조건적인 퇴사가 능사는 아닙니다. 뇌 신경망이 방전된 상태에서 퇴사를 하면 오히려 고립감과 자책감으로 우울증이 깊어질 수 있습니다. 먼저 한방 치료로 뇌 에너지를 50% 이상 충전한 후, 맑은 정신으로 진로와 근무 환경 조정을 결정하시는 것이 훨씬 현명합니다.
+        단순한 의지 박약이 아니라, 지속적인 과로와 정신적 압박으로 인해 뇌 신경전달물질(도파민, 세로토닌)과 부신 호르몬이 바닥난 "신경생리학적 배터리 완전 방전" 상태입니다. 억지로 채찍질하지 마시고 지친 뇌에 에너지를 급속 충전하는 공진단·건뇌단 한방 치료를 받아야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>공진단이 번아웃 회복에 실제로 효과가 큰가요?</span>
+        <span>번아웃 환자가 휴식을 취할 때 죄책감을 느끼는 이유는 무엇이며 어떻게 극복하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        사향공진단은 식약처 인증 정품 사향이 함유되어 중추신경계의 피로 물질을 신속히 배출하고 부신 피질 호르몬 분비를 정상화하는 데 탁월한 효과가 있어 번아웃 직장인들의 회복 골든타임을 지켜줍니다.
+        완벽주의 성향과 성과 지향적 사고 회로가 뇌에 고착화되었기 때문입니다. "쉬는 것은 게으름이 아니라 뇌의 필수 유지보수 작업"임을 인지하고, 하루 30분씩 온전히 나만을 위한 멍때리기와 산책 시간을 의무적으로 확보해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>번아웃 치료 후 업무 복귀 시 재발을 막는 방법은 무엇인가요?</span>
+        <span>기력이 너무 없어 식사조차 귀찮은 번아웃 상태에서 기운을 북돋아 주는 대표 한약은 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        일과 쉼의 경계를 명확히 하는 "심리적 퇴근(Psychological Detachment)" 훈련과 함께, 완벽주의를 내려놓고 주 2~3회 규칙적인 산책으로 뇌 세로토닌을 유지하는 생활 습관을 병행해야 합니다.
+        비위의 소화 흡수력을 살려 전신 기혈을 돋우는 보중익기탕(補中益氣湯)과 뇌 림프 순환을 도와 피로 물질을 배출하는 사향공진단이 탁월한 회복 효과를 냅니다.
       </p>
     </div>
 </div>

@@ -187,28 +187,28 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>가족들이 저보고 "꾀병이다, 신경 쓰지 말라"고 하는데 정말 억울합니다.</span>
+        <span>이비인후과와 뇌 MRI 검사에서 이상이 없다는데 머리가 안개 낀 듯 멍하고(브레인포그) 어지러운 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        신체화장애는 절대로 꾀병이 아닙니다. 뇌에서 실제로 통증 신호가 폭발하고 있는 실제적인 고통입니다. 주변의 몰이해에 상처받지 마시고, 뇌 신경계의 과열을 인정하고 전문 한방 치료를 받으셔야 합니다.
+        이비인후과 검사로 잡히지 않는 비회전성 만성 어지럼증의 대다수는 일자목, 거북목으로 인해 상부 경추(C1-C2)가 비틀려 추골동맥과 뇌간 자율신경절을 압박하는 "경추성 어지럼증"입니다. 뇌로 가는 혈류가 20~30% 감소하여 멍함과 어지럼이 지속됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>아픈 곳이 너무 여러 군데인데 한의원 치료로 한 번에 좋아질 수 있나요?</span>
+        <span>경추성 어지럼증을 치료하려면 목뼈 교정(추나요법)과 한약이 둘 다 필요한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        여러 장기가 따로 병든 것이 아니라, "자율신경계와 뇌 통증 조절 중추"라는 단 하나의 뿌리가 고장 났기 때문입니다. 뿌리를 치료하면 두통, 가슴 답답함, 소화불량, 전신 통증이 동시다발적으로 함께 호전됩니다.
+        네, 상부 경추의 구조적 비틀림을 바로잡는 정밀 추나요법으로 신경 압박을 풀고, 뇌 혈류 순환을 촉진하고 미세 염증을 제거하는 거담청뇌(祛痰淸腦) 한약을 병행해야 재발 없이 맑은 머리를 되찾을 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>진통제를 끊고 한약만으로 통증 관리가 가능한가요?</span>
+        <span>어지럼증이 심할 때 어지럼증 약(보나링에이, 신경진정제)을 계속 먹어도 괜찮나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 가능합니다. 한방 치료를 통해 뇌의 엔도르핀과 천연 통증 조절 물질이 분비되기 시작하면 진통제 없이도 몸이 가볍고 편안한 상태에 이르게 됩니다.
+        급성기 며칠간은 도움될 수 있으나, 전정 억제제를 장기 복용하면 뇌의 전정 보상 작용(스스로 균형을 잡는 훈련)을 방해하여 어지럼증이 만성화됩니다. 원인 치료를 통해 약물을 서서히 중단해야 합니다.
       </p>
     </div>
 </div>

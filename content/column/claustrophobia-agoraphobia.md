@@ -187,28 +187,28 @@ image: "/blog-images/bupyeong-panic/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>광장공포증 때문에 직장을 그만두어야 할지 고민입니다. 치료하면 출퇴근 지하철을 탈 수 있나요?</span>
+        <span>가족이나 지인이 함께 타면 괜찮은데 혼자서는 못 타는 이유가 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        충분히 회복될 수 있습니다. 대다수의 환자분들이 1~2개월의 한방 치료를 거치며 뇌 신경계가 안정되고 어지럼증이 해소되면, 만원 지하철이나 버스를 타고 출퇴근하는 일상으로 성공적으로 복귀하십니다. 퇴사를 결정하시기 전에 신경계 치료를 먼저 받아보시길 권합니다.
+        동행자를 뇌의 "안전 신호(Safety Cue)"로 인식하기 때문입니다. 동행자에게 의존하는 패턴을 서서히 줄이기 위해, 처음에는 옆 칸에 타기, 다음에는 한 정거장 혼자 가기 등으로 자립 훈련을 진행해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>비행기를 타야 하는데 신경안정제를 먹어도 가슴이 터질 것 같습니다.</span>
+        <span>지하철, 터널, 엘리베이터, 미용실처럼 꽉 막힌 공간에만 가면 심장이 터질 것 같은 광장공포증은 왜 생기나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        신경안정제는 근육만 일시적으로 이완시킬 뿐 뇌의 공간 공포 기억과 전정신경계 과민을 잡지 못합니다. 뇌척수액 순환을 돕는 추나요법과 뇌의 화기를 내리는 맞춤 한약 치료를 병행하시면 비행기 탑승 시에도 편안하게 수면을 취하실 수 있습니다.
+        광장공포증은 "내가 즉각 탈출할 수 없거나 도움을 받기 어려운 장소"에 갇혔을 때 뇌가 극도의 생존 위협을 느끼는 뇌 기능적 공간 지각 이상입니다. 뇌 자율신경계의 공포 역치를 높이고 두개천골계 이완을 통해 공간 감각의 안정감을 회복해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>광장공포증은 완치된 후에도 재발이 잘 되나요?</span>
+        <span>지하철을 탈 때 중간에 공황이 오면 즉시 내려야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        단순히 증상만 누르는 약물 치료는 단약 시 재발률이 높지만, 한방 치료는 뇌의 자생적 스트레스 저항력과 자율신경계 항상성을 확립하므로 치료 종료 후에도 쉽게 재발하지 않습니다.
+        불안이 정점에 달했을 때 즉시 도망치듯 내리면 뇌는 "도망쳤기 때문에 살았다"고 착각하여 공포 회로가 강화됩니다. 다음 역까지 복식호흡을 하며 2~3분만 버텨내어 심박수가 스스로 가라앉는 과정을 경험하는 것이 공포 회로를 끊는 핵심입니다.
       </p>
     </div>
 </div>

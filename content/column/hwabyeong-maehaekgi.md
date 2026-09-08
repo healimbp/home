@@ -187,28 +187,28 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>목에 뭔가 걸린 느낌 때문에 암이나 큰 병이 아닐까 너무 두렵습니다.</span>
+        <span>가슴 한가운데 뼈(전중혈)를 누르면 비명이 나올 정도로 아픈데 화병 진단 기준인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        이비인후과나 내과 내시경 검사에서 이상이 없었다면 100% 매핵기(기능성 식도 이물감)입니다. 실제 종양은 음식을 삼킬 때 걸리지만, 매핵기는 침을 삼킬 때나 신경 쓸 때만 심해집니다. 악성 질환이 아니므로 안심하시고 한방 치료로 뭉친 기운을 풀어주시면 됩니다.
+        네, 전중혈(膻中穴) 압통은 한의학에서 화병의 신경학적 울체를 진단하는 가장 객관적인 지표입니다. 억압된 감정 스트레스가 임맥(任脈)에 열독(熱毒)으로 뭉쳐 있음을 의미합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>화병으로 인한 가슴 답답함은 갱년기 열감과 어떻게 구별하나요?</span>
+        <span>화병을 방치하면 고혈압이나 심장 질환으로 발전할 수도 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        갱년기 열감은 호르몬 변화로 시도 때도 없이 얼굴이 붉어지는 경향이 있지만, 화병은 억울한 감정, 갈등 사건과 밀접하게 연동되어 전중혈 압통, 목 이물감, 한숨, 우울·분노가 복합적으로 나타납니다.
+        화병으로 인한 만성 교감신경 과항진과 혈관 수축은 고혈압, 협심증, 뇌혈관 질환의 발병 위험을 2~3배 높입니다. 가슴의 불을 끄는 조기 한방 치료가 심혈관 건강을 지키는 지름길입니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>화병 치료 기간은 보통 얼마나 걸리나요?</span>
+        <span>목구멍에 가래나 솜뭉치가 걸린 듯 삼켜지지도 뱉어지지도 않는 매핵기(梅核氣)와 가슴 답답함의 원인은 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        가슴 답답함과 목 이물감 같은 급성 신체 증상은 2~4주 내에 시원하게 뚫리며, 2~3개월 치료를 통해 감정 기복에 흔들리지 않는 신경계 자생력을 완성합니다.
+        이비인후과 내시경 검사상 이상이 없는 목 이물감은 억울함, 분노, 스트레스가 가슴 중앙(전중혈)과 목구멍의 기혈을 꽉 막아버린 전형적인 화병(火病) 증상입니다. 뭉친 기운을 흩뿌려주는 반하후박탕, 소간해울 한약과 흉부 침구 치료로 목구멍과 가슴이 시원하게 뚫립니다.
       </p>
     </div>
 </div>

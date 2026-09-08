@@ -231,33 +231,32 @@ tags: ["부평성인ADHD","부평성인ADHD병원","부평성인ADHD검사","부
 <div class="section-label">진료실 자주 묻는 질문 08</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>이미 정신과에서 콘서타(메틸페니데이트)를 복용 중인데 한방 치료를 같이 받을 수 있나요?</span>
+        <span>성인 ADHD 환자가 잦은 이직과 인간관계 갈등, 번아웃을 함께 겪는 이유가 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        <strong>네, 병행 치료가 매우 효과적입니다.</strong> 양약을 드시면서 겪는 심장 두근거림, 불안, 불면, 식욕 부진 등의 부작용을 한약 치료가 억제해주며, 저녁 약효 소실기(Crash)의 급격한 피로를 완화해 줍니다. 뇌 기능이 안정되면 담당 주치의와 상의하여 양약 복용량을 서서히 감량(테이퍼링)하는 데 큰 도움이 됩니다.
+        전두엽의 억제력 부족으로 충동적인 감정 표출이 일어나고, 만성적인 실수와 지적으로 인한 "가면성 우울증"과 만성 피로가 복합적으로 누적되었기 때문입니다. 우울과 불안을 함께 다스리는 통합 한방 신경 치료가 필요합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>어릴 때 몰랐던 ADHD가 성인이 되어 완치될 수 있나요?</span>
+        <span>성인 ADHD 진단 후 정신과 약(콘서타)을 먹었을 때 두근거림과 불안이 심한데 한방 치료는 어떤가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        ADHD는 단순한 질병이라기보다 고유한 신경학적 두뇌 특성에 가깝습니다. 치료의 목적은 증상을 억누르는 것이 아니라, **전두엽의 실행기능을 훈련하고 뇌 자생력을 회복하여 일상 업무와 대인관계를 안정적으로 통제하는 수준으로 이끄는 것**입니다. 적절한 치료와 환경 루틴이 잡히면 ADHD 특유의 남다른 창의력과 빠른 추진력이 엄청난 강점으로 발휘될 수 있습니다.
+        각성제 계열 양약은 교감신경을 자극해 두근거림, 불면을 악화시킬 수 있습니다. 한방 치료는 심장과 간의 열을 내리면서 전두엽 혈류를 자연스럽게 촉진하므로 신체적 부작용 없이 차분하고 명료한 집중력을 회복시킵니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>치료 기간은 보통 얼마나 걸리나요?</span>
+        <span>중요한 일을 마감 직전까지 미루고, 물건을 자주 잃어버리며 정리를 못 하는 직장인인데 성인 ADHD인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        개인의 신경학적 상태와 동반 증상(불안, 우울증, 불면증 유무)에 따라 다르지만, 보통 1개월 차에는 브레인포그와 뇌 피로감이 걷히고 가슴 두근거림이 완화됩니다. 3~6개월에 걸쳐 두뇌 훈련과 맞춤 탕약을 지속하면 전두엽 실행 기능과 집중 유지력이 뇌 신경망에 자연스럽게 자리잡게 됩니다.
+        네, 성인 ADHD의 핵심 증상인 "실행기능장애(Executive Dysfunction)"입니다. 어릴 때의 과잉행동은 사라졌지만 뇌 전두엽의 도파민 보상 회로 부족으로 인해 우선순위 설정, 시간 관리, 동기 부여에 만성적인 어려움을 겪는 것입니다. 전두엽 회로를 강화하는 한방 건뇌 처방으로 극적인 업무 효율 개선이 가능합니다.
       </p>
     </div>
 </div>

@@ -178,33 +178,32 @@ tags: ["구월동자율신경", "구월동수족다한증", "인천다한증한�
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>수족다한증 수술(교감신경 절제술) 없이 한방 치료만으로 땀이 줄어들 수 있나요?</span>
+        <span>다한증 수술(교감신경 절제술)을 받으면 다른 부위에 땀이 더 난다는데 한방 치료는 어떤가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 충분히 가능합니다. 수술은 신경을 끊어버려 보상성 다한증 부작용 위험이 크지만, 한방 치료는 교감신경의 과도한 흥분 역치를 정상화하고 상열하한 체질을 개선하므로 부작용 없이 손발의 땀을 70~80% 이상 줄이고 뽀송뽀송한 일상을 유지할 수 있습니다.
+        수술적 절제는 땀이 등, 엉덩이, 다리로 이동하는 보상성 다한증 부작용 위험이 높습니다. 한방 치료는 신경을 인위적으로 자르지 않고 교감신경의 과열을 근본적으로 식혀주므로 부작용 없이 전신 땀 분비량이 자연스럽게 정상화됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>치료 기간은 보통 얼마나 걸리나요? 치료 후 재발하지 않나요?</span>
+        <span>손발은 땀으로 축축한데 왜 아랫배와 발끝은 차가운 수족냉증이 함께 오나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        보통 1개월 차에는 가슴 두근거림과 일상적인 땀 분비량이 눈에 띄게 줄어들며, 2~3개월 차에는 시험이나 긴장 상황에서도 자율신경계가 안정적으로 유지되도록 뇌 자생력을 완성합니다. 일시적 억제가 아닌 체질 개선 치료이므로 재발률이 매우 낮습니다.
+        자율신경 실조로 인해 전신의 열 순환로가 막혀 상체와 손발 표면으로는 열이 뜨고 내부와 하초는 차가워지는 전형적인 상열하한(上熱下寒) 상태이기 때문입니다. 수승화강 한약으로 열기를 아래로 내려주어야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>커피나 매운 음식이 다한증에 안 좋은가요?</span>
+        <span>조금만 긴장하거나 사람을 대할 때 손발과 겨드랑이에 땀이 줄줄 흐르는 수족다한증의 원인이 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        카페인과 캡사이신은 교감신경을 인위적으로 자극하는 대표적인 방아쇠 물질입니다. 치료 중에는 커피와 에너지 음료, 자극적인 음식을 제한하시고, 잠들기 전 족욕을 병행하시면 상체의 열을 내려 땀 완화에 큰 도움이 됩니다.
+        체온 조절 이상이 아니라, 정서적 스트레스에 반응하는 교감신경계가 과민하게 흥분하여 아세틸콜린 신경전달물질을 땀샘에 과분비하기 때문입니다. 한의학적으로는 상체와 심장에 열이 뭉친 심화항성(心火亢盛)과 기혈 울체를 주원인으로 봅니다.
       </p>
     </div>
 </div>

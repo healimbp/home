@@ -188,28 +188,28 @@ image: "/blog-images/bupyeong-tic/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>아이가 밤에 비명을 지르며 울 때 억지로 흔들어 깨워야 하나요?</span>
+        <span>가위눌림이 시작될 때 어떻게 하면 빨리 빠져나올 수 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        절대 억지로 흔들어 깨우거나 불을 환하게 켜서 소리치지 마세요. 뇌가 깊은 잠에 빠져 있는 상태에서 강제로 깨우려 하면 아이는 극심한 혼란과 공포를 느끼며 발작이 더 길어집니다. 주변의 위험한 물건만 치워주시고 다치지 않도록 조용히 지켜보며 토닥여주시는 것이 안전합니다.
+        전신을 억지로 움직이려 하면 공포심이 커집니다. 손가락 끝, 발가락 끝, 혀끝처럼 말초 부위부터 아주 미세하게 까딱거리며 숨을 천천히 길게 내쉬면 뇌간의 마비 신호가 빠르게 풀립니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>야경증 치료를 안 하고 그냥 두면 뇌 발달에 문제가 생기나요?</span>
+        <span>꿈을 너무 많이 꿔서 자고 일어나도 밤새 일한 것처럼 피곤한 다몽증(多夢症)도 치료가 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        가벼운 야경증은 성장하면서 뇌가 성숙하면 자연 소실되기도 합니다. 하지만 증상이 주 2~3회 이상 반복되면 깊은 수면 중에 분비되는 성장호르몬 분비가 저해되고, 낮 동안의 집중력 저하, 만성 피로, 정서 불안으로 이어지므로 적극적인 치료가 필요합니다.
+        네, 얕은 렘수면 비율이 지나치게 높고 깊은 서파 수면이 부족하여 발생하는 현상입니다. 뇌로 치솟는 심장과 간의 허열을 식혀주면 꿈의 빈도가 줄고 아침 기상 시 피로감이 사라집니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>한약이 어린아이에게 독하거나 쓰지 않을까요?</span>
+        <span>밤마다 쫓기는 악몽을 꾸거나 몸이 굳어 움직이지 않는 가위눌림(수면마비)에 시달리는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        소아 한약은 성인 한약과 달리 매우 순하고 부드러운 천연 본초로 조제되며, 쓴맛을 배제하고 아이들이 맛있게 복용할 수 있도록 맞춤 탕전됩니다. 소화 흡수에 부담이 전혀 없어 돌 전후의 영유아도 안전하게 복용할 수 있습니다.
+        육체적 피로와 정신적 스트레스로 뇌의 렘(REM)수면 조절 기전이 무너진 상태입니다. 몸의 근육은 마취 상태인데 뇌 의식만 불완전하게 깨어나면서 공포 환각과 가위눌림이 발생합니다. 한의학적으로 심담허겁(心膽虛怯)과 심비양허(心脾兩虛)를 보강하여 깊은 델타파 수면을 유도해야 합니다.
       </p>
     </div>
 </div>

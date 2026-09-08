@@ -187,28 +187,28 @@ image: "/blog-images/bucheon-ocd/01_main_summary_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>강박증은 완치가 안 되고 평생 안고 살아야 하는 불치병인가요?</span>
+        <span>오염 강박으로 손을 하루에 수십 번 씻어 손이 다 트는데 한방 치료가 도움이 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        절대 그렇지 않습니다. 강박증은 뇌의 오류 경보 시스템이 과열된 상태일 뿐입니다. 한방 치료를 통해 뇌 신경망의 자생력을 키우고 인지 왜곡을 교정하면 강박 사고의 빈도와 불안 강도가 획기적으로 줄어들어 완전히 편안한 일상을 되찾을 수 있습니다.
+        오염에 대한 과도한 혐오와 공포는 뇌 뇌도(Insula) 부위의 과민 반응입니다. 체내 허열을 식히고 뇌척수액 순환을 돕는 두개천골 추나와 청뇌탕약으로 불안 감각 역치를 정상화합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>강박 행동을 억지로 참으려고 하면 숨이 막힐 것 같은데 어떻게 해야 하나요?</span>
+        <span>현관문을 잠갔는지, 가스불을 껐는지 수십 번씩 확인하느라 외출이 힘든데 강박증(OCD)의 원인이 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        처음부터 강박 행동을 100% 참으려 하면 반동 불안이 커집니다. "1분만 지연하기", "확인 횟수를 5회에서 3회로 줄이기"처럼 뇌에 부담을 주지 않는 점진적 노출 반응 방지(ERP) 기법을 한방 치료와 병행하여 단계적으로 진행합니다.
+        뇌의 전두엽-기저핵-시상(CSTC) 회로가 과열되어 "안전하다"는 완결 신호를 뇌 스스로 인지하지 못하고 끊임없이 오류 경보를 울리기 때문입니다. 생각(강박사고)을 행동(확인강박)으로 해소하려 할수록 회로가 더 강화되므로 뇌 신경망의 과열을 끄는 한약 처방이 필요합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>머릿속에 떠오르는 불길한 생각이 실제로 일어날까 봐 너무 무섭습니다.</span>
+        <span>확인하고 싶은 충동이 들 때 억지로 참으려고 하면 불안해서 미칠 것 같은데 어떻게 대처하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        강박 사고는 뇌의 헛소리(Spam Mail)일 뿐, 당신의 본심이나 미래의 예언이 아닙니다. 스팸 메일을 일일이 반박하려 하지 마시고, "지친 뇌가 또 스팸을 보냈구나" 하고 흘려보내는 인지적 분리 연습이 필요합니다.
+        확인 충동이 들 때 바로 확인하지 마시고, "15분 뒤에 확인하자"며 타이머를 맞추고 다른 활동으로 주의를 돌리는 지연 훈련(ERP)을 진행해야 합니다. 15분이 지나면 뇌의 불안 파도가 절반 이하로 줄어듭니다.
       </p>
     </div>
 </div>

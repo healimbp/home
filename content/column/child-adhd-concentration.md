@@ -187,28 +187,28 @@ ADHD 아이를 둔 부모님들은 매일 집과 학교에서 전쟁을 치릅�
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>좋아하는 게임이나 레고는 몇 시간씩 집중하는데도 ADHD일 수 있나요?</span>
+        <span>ADHD 아이의 집중력을 높이기 위해 집에서 부모가 할 수 있는 가장 효과적인 대화법은 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 전형적인 ADHD의 특징입니다. ADHD는 집중력이 아예 없는 것이 아니라 **"주의력을 적절히 배분하고 조절하는 능력"**이 부족한 질환입니다. 게임처럼 강한 시각 자극과 즉각적인 도파민 보상이 주어지는 곳에는 과몰입(Hyperfocus)하지만, 재미없는 일상 과제에는 주의를 기울이지 못합니다.
+        한 번에 여러 가지 지시를 내리지 마시고 "가방에서 알림장 꺼내기"처럼 단일 행동을 눈을 마주치며 명확하게 지시해야 합니다. 작은 성공에도 즉각적이고 구체적인 칭찬 보상을 주어 전두엽 도파민 회로를 강화해주셔야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>콘서타 같은 정신과 약을 먹이면 식욕 저하나 성장 지연이 생긴다는데 사실인가요?</span>
+        <span>수업 시간에 가만히 있지 못하고 산만하며 충동적인 아이, 단순한 장난기인가요 전두엽 발달 문제인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        중추신경 자극제 계열의 양약은 도파민을 인위적으로 증가시키면서 식욕 감퇴, 불면증, 틱 유발, 성장 둔화 등의 부작용이 나타날 수 있습니다. 한방 치료는 식욕과 소화기 기능을 해치지 않고 뇌의 대사 환경을 자연스럽게 개선하므로 성장기 아이들에게 안전한 대안이 됩니다.
+        단순한 성격이나 훈육 부족이 아니라, 행동을 제어하고 집중을 유지하는 뇌 전두엽(DLPFC)의 브레이크 회로가 또래보다 2~3년 성장이 지연된 신경 발달 상태입니다. 아이를 야단치기보다 전두엽 신경망을 발달시키는 NeuronFlex 뇌훈련과 총명 처방이 필요합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>ADHD는 나이가 들면 저절로 낫는 병인가요?</span>
+        <span>소아정신과 약(콘서타, 메틸페니데이트) 복용 후 식욕 부진, 불면, 무기력감이 있는데 한방 치료로 병행이나 대체가 가능한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        과거에는 성인이 되면 완치된다고 보았으나, 연구에 따르면 방치할 경우 50~60% 이상이 성인기까지 이어져 만성적인 시간 관리 실패, 충동 조절 장애, 우울증으로 발전합니다. 전두엽 뇌 신경망이 급격히 발달하는 소아청소년기에 조기 개입하는 것이 평생의 자산이 됩니다.
+        네, 안전하게 병행할 수 있습니다. 양약이 화학적으로 도파민 수치를 올린다면, 한약은 뇌 신경세포 자체의 자생력과 기혈 순환을 돕습니다. 한방 치료를 병행하면 양약의 부작용을 줄이면서 점진적으로 양약을 감량하거나 단약할 수 있습니다.
       </p>
     </div>
 </div>

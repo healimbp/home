@@ -185,28 +185,28 @@ image: "/blog-images/bupyeong-autonomic/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>만성 피로를 풀기 위해 운동을 열심히 해야 하나요, 아니면 쉬어야 하나요?</span>
+        <span>주말에 하루 종일 쉬고 영양제를 챙겨 먹어도 피로가 전혀 안 풀리는데 자율신경실조증인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        자율신경계가 탈진기(3단계)에 있는 상태에서 땀을 뻘뻘 흘리는 고강도 운동을 하면 남은 에너지마저 고갈되어 피로가 극도로 악화됩니다. 치료 초기에는 가벼운 산책과 스트레칭 위주로 림프 순환만 돕고, 한방 치료로 기력이 50% 이상 회복된 후 운동 강도를 서서히 올리셔야 합니다.
+        네, 한스 셀리에(Hans Selye)의 스트레스 3단계 중 부신 호르몬(코르티솔)과 자율신경계가 완전히 방전된 "소진기(Exhaustion Stage)" 상태입니다. 단순 휴식으로는 충전되지 않으므로, 심장과 신장의 원기를 보강하는 보중익기탕·공진단 요법과 교감-부교감 밸런스 정상화 치료가 필요합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>영양제(비타민B, 마그네슘, 홍삼)를 아무리 먹어도 왜 효과가 없을까요?</span>
+        <span>자율신경실조증으로 인한 만성 피로는 병원 피검사에서 왜 이상이 안 나오나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        자율신경이 고장 나면 위장의 혈류량이 줄어들어 아무리 좋은 영양제를 먹어도 장에서 흡수하지 못하고 배출되기 때문입니다. 먼저 자율신경을 안정시켜 위장 소화 흡수력을 정상화해야 영양제도 제 효능을 발휘합니다.
+        피검사는 간염, 신부전, 빈혈 등 기질적 장기 손상만 감지할 뿐, 1초에 수십 번씩 전신 장기를 조율하는 자율신경계의 기능적 조절 장애(HRV 심박변이도 저하)는 잡아내지 못하기 때문입니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>자율신경실조증 치료 기간은 보통 얼마나 소요되나요?</span>
+        <span>만성 피로와 함께 소화불량, 어지럼증, 가슴 답답함이 같이 오는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        유병 기간에 따라 차이가 있으나, 보통 1개월 차에 아침 기상 시 피로감과 두통, 어지럼증이 크게 개선되며, 2~3개월 치료를 통해 신경계의 자생적 항상성을 확립하여 치료 종료 후에도 피로가 쉽게 재발하지 않습니다.
+        자율신경계는 심장, 위장, 혈관, 땀샘을 동시에 관장하므로, 자율신경 조절 밸런스가 무너지면 전신 다발성 신체화 증상이 동시다발적으로 나타나는 것이 특징입니다.
       </p>
     </div>
 </div>

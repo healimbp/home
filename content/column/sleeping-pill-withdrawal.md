@@ -185,28 +185,28 @@ image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>수면제를 3년 넘게 먹었는데도 한방 치료로 끊는 것이 정말 가능한가요?</span>
+        <span>수면제(스틸녹스, 졸피뎀)나 신경안정제를 수개월째 복용 중인데 내성이 생겨 잠이 안 옵니다. 어떻게 끊어야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 가능합니다. 복용 기간이 길수록 감량 속도를 조금 더 완만하게 조절할 뿐, 한약 치료로 뇌의 기초 체력을 채워주면 3년 이상, 심지어 10년 이상 복용하신 만성 환자분들도 안전하게 100% 완전 단약에 도달하십니다.
+        수면제를 갑자기 끊으면 극심한 반동 불면과 불안이 오므로 절대 한 번에 끊으시면 안 됩니다. 한방 수면 치료를 병행하여 뇌 스스로 멜라토닌과 GABA를 생성하는 자생력을 키운 후, 2~4주 간격으로 약 용량을 1/4씩 서서히 줄여나가는 안전한 감량(Tapering)을 진행해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>한약을 먹는 첫날부터 수면제를 바로 끊어야 하나요?</span>
+        <span>수면유도제나 수면제를 복용하면 다음 날 아침 멍하고 기억력이 떨어지는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        절대 아닙니다. 첫 1~2주는 기존에 드시던 수면제와 한약을 1~2시간 시간차를 두고 함께 복용합니다. 한약 효과로 수면의 질이 올라가면 4분의 1 알씩 주치의의 지도하에 서서히 줄여나가므로 금단 증상 없이 편안하게 끊을 수 있습니다.
+        화학적 수면제는 뇌를 강제로 마취시키는 방식이라 자연 수면의 핵심인 깊은 델타파(서파 수면)와 렘수면(기억 정리)의 리듬을 파괴하기 때문입니다. 한약 치료는 뇌의 자연스러운 수면 유도 메커니즘을 회복시켜 기상 시 머리가 상쾌합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>수면제를 끊고 나면 불면증이 다시 재발하지 않나요?</span>
+        <span>수면제 복용 중 몽유병처럼 밤에 음식을 먹거나 기억이 안 나는 증상이 있는데 위험한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        한방 치료는 단순히 수면제를 대체하는 것이 아니라, 뇌 신경계가 스스로 잠들고 깨어나는 **"자생적 생체 수면 리듬"**을 복원하는 치료이므로 단약 후에도 쉽게 재발하지 않고 자연 수면을 유지하게 됩니다.
+        졸피뎀 계열의 대표적인 부작용인 복합 수면 행동(전향성 건망증)입니다. 낙상이나 사고 위험이 있으므로 즉시 의료진과 상의하여 한방 병행 치료를 통해 약물을 안전하게 감량하셔야 합니다.
       </p>
     </div>
 </div>

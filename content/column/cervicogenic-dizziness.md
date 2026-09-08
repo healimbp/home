@@ -187,28 +187,28 @@ image: "/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>이석증이 다 나았다고 하는데 왜 아직도 머리가 붕 뜨고 어지러울까요?</span>
+        <span>어지럼증이 심할 때 어지럼증 약(보나링에이, 신경진정제)을 계속 먹어도 괜찮나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        이석증 자체는 정복술로 교정되었더라도, 발병 당시 극심한 공포로 인해 목 주변 근육이 강하게 굳어 상부 경추의 틀어짐과 자율신경 과민이 후유증으로 남았기 때문입니다. 경추 교정과 자율신경 치료를 통해 잔여 어지럼증을 완전히 해소할 수 있습니다.
+        급성기 며칠간은 도움될 수 있으나, 전정 억제제를 장기 복용하면 뇌의 전정 보상 작용(스스로 균형을 잡는 훈련)을 방해하여 어지럼증이 만성화됩니다. 원인 치료를 통해 약물을 서서히 중단해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>목 디스크 수술을 해야만 어지럼증이 낫나요?</span>
+        <span>이비인후과와 뇌 MRI 검사에서 이상이 없다는데 머리가 안개 낀 듯 멍하고(브레인포그) 어지러운 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        경추성 어지럼증은 큰 디스크 파열보다는 상부 경추(C1-C2)의 미세한 관절 회전 변위와 근육 긴장에 의해 발생하는 경우가 대부분입니다. 비수술 추나요법과 한방 침구 치료로 충분히 완치될 수 있습니다.
+        이비인후과 검사로 잡히지 않는 비회전성 만성 어지럼증의 대다수는 일자목, 거북목으로 인해 상부 경추(C1-C2)가 비틀려 추골동맥과 뇌간 자율신경절을 압박하는 "경추성 어지럼증"입니다. 뇌로 가는 혈류가 20~30% 감소하여 멍함과 어지럼이 지속됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>도수치료를 여러 번 받았는데도 어지럼증이 반복되는 이유는 무엇인가요?</span>
+        <span>경추성 어지럼증을 치료하려면 목뼈 교정(추나요법)과 한약이 둘 다 필요한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        단순 근육 마사지만으로는 깊숙한 후두하근과 상부 경추 관절의 정렬을 바로잡기 어렵습니다. 턱관절(FCST) 균형과 경추 교정, 그리고 뇌 혈류를 돕는 한약 치료가 결합되어야 치료 효과가 오래 유지됩니다.
+        네, 상부 경추의 구조적 비틀림을 바로잡는 정밀 추나요법으로 신경 압박을 풀고, 뇌 혈류 순환을 촉진하고 미세 염증을 제거하는 거담청뇌(祛痰淸腦) 한약을 병행해야 재발 없이 맑은 머리를 되찾을 수 있습니다.
       </p>
     </div>
 </div>

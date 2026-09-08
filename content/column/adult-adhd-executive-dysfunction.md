@@ -187,28 +187,28 @@ image: "/blog-images/bupyeong-adult-adhd/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>어릴 때는 ADHD가 없었는데 성인이 되어서 갑자기 생길 수도 있나요?</span>
+        <span>성인 ADHD 진단 후 정신과 약(콘서타)을 먹었을 때 두근거림과 불안이 심한데 한방 치료는 어떤가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        성인 ADHD 환자의 대부분은 학창 시절에도 주의력 결핍 소인이 있었으나, 부모님의 엄격한 통제나 뛰어난 지능으로 증상을 간신히 억누르고 있다가(고기능 ADHD), 스스로 모든 것을 계획하고 책임져야 하는 대학생·사회인이 되면서 억제 기능이 한계에 부딪혀 수면 위로 드러나는 경우가 많습니다.
+        각성제 계열 양약은 교감신경을 자극해 두근거림, 불면을 악화시킬 수 있습니다. 한방 치료는 심장과 간의 열을 내리면서 전두엽 혈류를 자연스럽게 촉진하므로 신체적 부작용 없이 차분하고 명료한 집중력을 회복시킵니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>정신과 약을 먹으면 중독되거나 성격이 변할까 봐 겁이 납니다.</span>
+        <span>중요한 일을 마감 직전까지 미루고, 물건을 자주 잃어버리며 정리를 못 하는 직장인인데 성인 ADHD인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        중추신경 자극제에 대한 거부감이나 부작용(입마름, 심장 두근거림, 약효가 빠질 때의 반동 우울)을 겪는 분들이 많습니다. 한방 치료는 도파민 수용체를 인위적으로 자극하는 것이 아니라, 뇌 신경망의 자생적 대사와 뇌 혈류를 개선하므로 약물 의존성 없이 건강한 실행력을 회복시킵니다.
+        네, 성인 ADHD의 핵심 증상인 "실행기능장애(Executive Dysfunction)"입니다. 어릴 때의 과잉행동은 사라졌지만 뇌 전두엽의 도파민 보상 회로 부족으로 인해 우선순위 설정, 시간 관리, 동기 부여에 만성적인 어려움을 겪는 것입니다. 전두엽 회로를 강화하는 한방 건뇌 처방으로 극적인 업무 효율 개선이 가능합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>치료를 받으면 일상생활에서 어떤 변화를 가장 먼저 체감하나요?</span>
+        <span>성인 ADHD 환자가 잦은 이직과 인간관계 갈등, 번아웃을 함께 겪는 이유가 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        보통 3~4주 차부터 "머릿속 안개가 걷히는 느낌(브레인포그 해소)", "할 일을 미루지 않고 바로 시작하는 시동 능력", "물건을 잃어버리는 빈도 감소"를 뚜렷하게 체감하시게 되며, 스스로에 대한 자책감에서 벗어나 자존감을 회복하게 됩니다.
+        전두엽의 억제력 부족으로 충동적인 감정 표출이 일어나고, 만성적인 실수와 지적으로 인한 "가면성 우울증"과 만성 피로가 복합적으로 누적되었기 때문입니다. 우울과 불안을 함께 다스리는 통합 한방 신경 치료가 필요합니다.
       </p>
     </div>
 </div>

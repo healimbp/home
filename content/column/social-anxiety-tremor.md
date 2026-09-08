@@ -187,28 +187,28 @@ image: "/blog-images/bupyeong-anxiety/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>중요한 면접이나 승진 시험이 한 달 남았는데 단기간에 효과를 볼 수 있나요?</span>
+        <span>발표 전에 인데놀(베타차단제)을 복용하고 있는데, 한방 치료로 약 없이 발표할 수 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 가능합니다. 급한 일정을 앞두고 계신 경우 뇌 신경계를 신속히 안정시키는 고농축 안신단(安神丹) 처방과 주 1~2회 집중 자율신경 약침 치료를 통해 발표 현장에서 떨리지 않는 실전 적응력을 빠르게 완성할 수 있습니다.
+        인데놀은 심장 박동수만 화학적으로 억제할 뿐 뇌 편도체의 근본 불안은 해결하지 못해 내성이 생길 수 있습니다. 한방 치료는 심담허겁(心膽虛怯)을 보강하여 긴장 상황에서도 뇌 스스로 침착함을 유지하도록 자생력을 길러줍니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>인데놀을 먹으면 심장은 안 뛰는데 머리는 멍해져서 말을 잘 못하겠어요.</span>
+        <span>사람들과 눈을 마주치기 힘들고 식당에서 밥 먹을 때도 시선이 의식되는데 치료가 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        인데놀은 뇌 혈압을 떨어뜨려 인지 기능을 둔화시킬 수 있습니다. 한방 치료는 뇌 혈류를 맑게 유지하면서 심장 박동만 자연스럽게 안정시키므로, 머리가 또렷하고 논리적인 언어 구사력을 유지할 수 있습니다.
+        시선공포증과 대인불안은 자의식이 과열되어 타인의 시선을 위협으로 왜곡 해석하는 신경망 문제입니다. 뇌 신경전달물질의 균형을 맞추고 상체로 쏠린 열을 내려주는 수승화강 치료를 통해 자연스럽게 타인의 시선에서 자유로워질 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>성격이 워낙 내성적인데 한방 치료로 성격 자체가 바뀔 수 있나요?</span>
+        <span>남들 앞에 서서 발표할 때 목소리가 심하게 떨리고 손이 덜덜 떨리는데 사회공포증인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        내성적인 성격 자체를 외향적으로 바꾸는 것이 아니라, "타인의 시선 앞에서 뇌 신경계가 헛경보를 울리는 생리적 과민성"을 치료하는 것입니다. 내성적인 분들도 차분하고 당당하게 자신의 생각을 표현할 수 있게 됩니다.
+        네, 전형적인 수행불안 및 사회공포증 증상입니다. 타인의 평가에 대한 과도한 불안으로 뇌간의 노르아드레날린 분비가 폭발하여 성대 근육과 손가락 말초 혈관이 급격히 수축하기 때문입니다. 심장 열을 내리고 간기를 소통시키는 시호청간탕 계열 한약과 자율신경 훈련이 주효합니다.
       </p>
     </div>
 </div>

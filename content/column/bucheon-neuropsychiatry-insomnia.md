@@ -205,33 +205,32 @@ tags: ["부천신경정신과","부천불면증","부천불면증치료","부천
 <div class="section-label">진료실 자주 묻는 질문 07</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>정신과 약(스틸녹스, 수면제, 항불안제)을 복용 중인데 한방 치료와 병행할 수 있나요?</span>
+        <span>수면유도제나 수면제를 복용하면 다음 날 아침 멍하고 기억력이 떨어지는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        <strong>네, 당연히 가능하며 권장됩니다.</strong> 복용 중인 양약을 갑자기 중단하면 극심한 반동 불면과 불안이 나타나므로 절대 자의로 중단해서는 안 됩니다. 초기에는 한약과 양약을 병행하여 뇌의 기초 체력을 채우고, 수면의 질이 안정되면 주치의의 지도하에 4분의 1알씩 서서히 줄여나가는 <strong>안전한 테이퍼링(Tapering)</strong>을 진행합니다.
+        화학적 수면제는 뇌를 강제로 마취시키는 방식이라 자연 수면의 핵심인 깊은 델타파(서파 수면)와 렘수면(기억 정리)의 리듬을 파괴하기 때문입니다. 한약 치료는 뇌의 자연스러운 수면 유도 메커니즘을 회복시켜 기상 시 머리가 상쾌합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>한약은 수면제처럼 먹자마자 바로 잠이 오나요?</span>
+        <span>수면제 복용 중 몽유병처럼 밤에 음식을 먹거나 기억이 안 나는 증상이 있는데 위험한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        한약은 뇌를 강제로 억누르는 진정제가 아닙니다. 복용 후 1~2주 차부터 자율신경계 과흥분이 진정되고 가슴 두근거림과 잡생각이 줄어들며, 점차 **스스로 졸음이 오고 깊은 잠에 도달하는 시간**이 늘어나게 됩니다. 기상 시 몽롱함 없이 머리가 맑아지는 것이 한방 치료의 큰 장점입니다.
+        졸피뎀 계열의 대표적인 부작용인 복합 수면 행동(전향성 건망증)입니다. 낙상이나 사고 위험이 있으므로 즉시 의료진과 상의하여 한방 병행 치료를 통해 약물을 안전하게 감량하셔야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>치료 기간은 보통 얼마나 소요되나요?</span>
+        <span>수면제(스틸녹스, 졸피뎀)나 신경안정제를 수개월째 복용 중인데 내성이 생겨 잠이 안 옵니다. 어떻게 끊어야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        발병 기간과 약물 복용 여부에 따라 차이가 있으나, 보통 1개월 차에 수면 잠복기와 야간 각성 횟수가 크게 줄어들며, 2~3개월 차에 뇌파와 자율신경계 조절력이 안정되어 약물 없이도 자연 수면을 유지할 수 있는 상태에 도달합니다.
+        수면제를 갑자기 끊으면 극심한 반동 불면과 불안이 오므로 절대 한 번에 끊으시면 안 됩니다. 한방 수면 치료를 병행하여 뇌 스스로 멜라토닌과 GABA를 생성하는 자생력을 키운 후, 2~4주 간격으로 약 용량을 1/4씩 서서히 줄여나가는 안전한 감량(Tapering)을 진행해야 합니다.
       </p>
     </div>
 </div>

@@ -187,28 +187,28 @@ image: "/blog-images/bupyeong-anxiety/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>예기불안 때문에 직장 생활이나 외출이 불가능한데 극복할 수 있나요?</span>
+        <span>걱정이 너무 많아 사소한 결정도 못 내리고 우유부단해지는데 성격 탓인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        충분히 극복할 수 있습니다. 한방 치료를 통해 뇌 신경계의 자생력이 회복되면, "불안감이 올라와도 나는 안전하며 가라앉힐 수 있다"는 신체적 확신이 생기면서 점진적으로 활동 반경을 넓혀 정상적인 일상 복귀가 가능해집니다.
+        성격이 아니라 뇌의 전두엽 실행 기능이 만성 불안으로 인해 과부하가 걸렸기 때문입니다. 신경망의 신경전달물질 균형을 회복하면 불안 안개가 걷히고 명확한 판단력을 되찾게 됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>신경안정제를 매일 먹고 있는데 언제쯤 줄일 수 있나요?</span>
+        <span>불안할 때 몸에 힘을 빼는 가장 효과적인 한방 지압혈이 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        한방 치료를 시작하고 약 3~4주가 지나면 몸의 긴장도와 예기불안의 강도가 완화되기 시작합니다. 이때부터 주치의와 상의하여 양약의 복용 간격을 늘리고 용량을 단계적으로 줄여나가게 됩니다.
+        손목 안쪽 주름에서 팔꿈치 쪽으로 손가락 2마디 올라간 위치의 **내관혈(內關穴)**과 가슴 정중앙의 **전중혈(膻中穴)**을 숨을 깊이 내쉬며 지그시 눌러주면 교감신경 긴장이 빠르게 완화됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>예기불안이 심할 때 즉시 할 수 있는 대처법이 있나요?</span>
+        <span>특별한 일이 없는데도 늘 최악의 상황만 상상되고 가슴이 조마조마한 범불안장애는 왜 생기나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        불안이 엄습할 때는 5-4-3-2-1 그라운딩(Grounding) 기법을 사용하세요. 주변에 보이는 5가지 사물, 만져지는 4가지 감각, 들리는 3가지 소리에 집중하며 뇌의 주의를 공포 상상에서 현실 감각으로 강제 전환하는 것이 큰 도움이 됩니다.
+        스트레스 호르몬(코르티솔)이 만성적으로 상승하여 뇌 편도체가 항상 켜져 있는 상태입니다. 뇌가 휴식 상태로 들어가지 못해 온종일 근육 긴장, 만성 두통, 피로감이 동반됩니다. 비장과 심장을 보강하는 귀비탕 계열 처방으로 신경계 긴장을 풀어주어야 합니다.
       </p>
     </div>
 </div>

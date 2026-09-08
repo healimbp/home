@@ -187,28 +187,28 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>턱에서 딱딱 소리가 나는데 아프지 않으면 그냥 둬도 되나요?</span>
+        <span>이비인후과와 뇌 MRI 검사에서 이상이 없다는데 머리가 안개 낀 듯 멍하고(브레인포그) 어지러운 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        턱 소리는 턱관절 디스크가 제자리를 벗어나 뼈끼리 부딪히고 있다는 **경고 신호**입니다. 방치하면 디스크가 완전히 닳아 뼈가 변형되는 퇴행성 골관절염으로 진행하여 입이 안 벌어지는 개구장애와 만성 두통을 유발하므로 소리가 날 때 조기 교정해야 합니다.
+        이비인후과 검사로 잡히지 않는 비회전성 만성 어지럼증의 대다수는 일자목, 거북목으로 인해 상부 경추(C1-C2)가 비틀려 추골동맥과 뇌간 자율신경절을 압박하는 "경추성 어지럼증"입니다. 뇌로 가는 혈류가 20~30% 감소하여 멍함과 어지럼이 지속됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>치과 교정과 한의원 턱관절 치료의 차이점은 무엇인가요?</span>
+        <span>경추성 어지럼증을 치료하려면 목뼈 교정(추나요법)과 한약이 둘 다 필요한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        치과가 치아 교합(이빨의 맞물림)에 집중한다면, 한의학적 FCST 치료는 **턱관절을 지렛대 삼아 상부 경추, 전신 척추, 뇌신경계의 균형을 전인적으로 치료**하여 턱 통증뿐만 아니라 두통, 이명, 자세 불균형을 동시에 해결합니다.
+        네, 상부 경추의 구조적 비틀림을 바로잡는 정밀 추나요법으로 신경 압박을 풀고, 뇌 혈류 순환을 촉진하고 미세 염증을 제거하는 거담청뇌(祛痰淸腦) 한약을 병행해야 재발 없이 맑은 머리를 되찾을 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>턱관절 치료를 받으면 안면 비대칭도 함께 개선되나요?</span>
+        <span>어지럼증이 심할 때 어지럼증 약(보나링에이, 신경진정제)을 계속 먹어도 괜찮나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 턱관절의 중심축 편차가 바로잡히면 틀어졌던 턱선의 위치가 제자리를 찾고 입꼬리 비대칭과 안면 근육의 불균형이 자연스럽게 개선됩니다.
+        급성기 며칠간은 도움될 수 있으나, 전정 억제제를 장기 복용하면 뇌의 전정 보상 작용(스스로 균형을 잡는 훈련)을 방해하여 어지럼증이 만성화됩니다. 원인 치료를 통해 약물을 서서히 중단해야 합니다.
       </p>
     </div>
 </div>

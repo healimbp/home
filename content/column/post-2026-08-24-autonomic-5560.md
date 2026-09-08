@@ -182,33 +182,32 @@ tags: ["인천 간석동한의원","부평한의원","자율신경","맞춤한�
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>정신과 약(신경안정제, 수면제)을 복용 중인데 한방 치료와 병행할 수 있나요?</span>
+        <span>조금만 긴장하거나 사람을 대할 때 손발과 겨드랑이에 땀이 줄줄 흐르는 수족다한증의 원인이 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 안전하게 병행 가능합니다. 복용 중인 양약을 갑자기 중단하면 반동 불안이 올 수 있으므로 초기에는 병행하다가, 한방 치료로 뇌 자생력이 회복되면 주치의와 상의하여 단계적으로 감량(Tapering)합니다.
+        체온 조절 이상이 아니라, 정서적 스트레스에 반응하는 교감신경계가 과민하게 흥분하여 아세틸콜린 신경전달물질을 땀샘에 과분비하기 때문입니다. 한의학적으로는 상체와 심장에 열이 뭉친 심화항성(心火亢盛)과 기혈 울체를 주원인으로 봅니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>치료 기간은 보통 얼마나 걸리나요? 치료 후 재발하지 않나요?</span>
+        <span>다한증 수술(교감신경 절제술)을 받으면 다른 부위에 땀이 더 난다는데 한방 치료는 어떤가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        보통 1~2개월 차에 주요 신체 증상이 호전되며, 2~3개월 차에는 자율신경 밸런스와 두뇌 회복력을 안정화시킵니다. 근본 조절력을 키우므로 치료 종결 후에도 재발률이 낮습니다.
+        수술적 절제는 땀이 등, 엉덩이, 다리로 이동하는 보상성 다한증 부작용 위험이 높습니다. 한방 치료는 신경을 인위적으로 자르지 않고 교감신경의 과열을 근본적으로 식혀주므로 부작용 없이 전신 땀 분비량이 자연스럽게 정상화됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>한의원 첫 내원 시 어떤 검사와 진료를 받게 되나요?</span>
+        <span>손발은 땀으로 축축한데 왜 아랫배와 발끝은 차가운 수족냉증이 함께 오나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        사전 설문지 작성 후 뇌파 검사, 적외선 체열 검사, 간이정신진단검사를 시행하며, 1:1 정밀 맥진·복진을 거쳐 맞춤 처방이 진행됩니다.
+        자율신경 실조로 인해 전신의 열 순환로가 막혀 상체와 손발 표면으로는 열이 뜨고 내부와 하초는 차가워지는 전형적인 상열하한(上熱下寒) 상태이기 때문입니다. 수승화강 한약으로 열기를 아래로 내려주어야 합니다.
       </p>
     </div>
 </div>

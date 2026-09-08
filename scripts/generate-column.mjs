@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { publishToTistory, formatTistoryContent } from './publish-tistory.mjs';
 import { rebuildColumnIndex } from './build-all-columns.mjs';
 import { resolveThumbnail } from './thumbnail-resolver.mjs';
+import { getDiverseFaq } from './column-faqs.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -404,100 +405,9 @@ export function selectSmartTarget() {
   };
 }
 
-// 3. 질환군별 다변화된 현실적 진료실 FAQ 템플릿
-export function getSpecializedFaq(categoryName, topic = {}) {
-  const cat = categoryName || '';
-  if (cat.includes('소아') || cat.includes('ADHD') || cat.includes('틱')) {
-    return [
-      {
-        q: '아이에게 눈 깜빡임이나 헛기침을 억지로 참으라고 주의를 주면 어떻게 되나요?',
-        a: '틱을 하기 직전 아이는 해당 부위에 간질거리거나 뻐근한 "전조 감각 충동"을 느낍니다. 억지로 참으라고 다그치면 뇌 기저핵에 극심한 스트레스 압력이 누적되어, 잠시 참은 뒤 나중에 2~3배 더 크고 격렬한 반응으로 튀어나오게 됩니다. 지적하지 마시고 모른 척 자연스럽게 다른 활동으로 주의를 돌려주시는 것이 핵심입니다.'
-      },
-      {
-        q: '스마트폰 영상이나 게임이 아이의 틱과 산만함을 악화시키는 구체적 이유가 무엇인가요?',
-        a: '전자기기의 빠르고 화려한 시청각 자극은 뇌의 도파민을 과도하게 방출시켜 기저핵과 전두엽을 극도로 흥분시킵니다. 또한 고개를 숙인 자세는 상부 경추에 큰 하중을 주어 뇌척수액 순환을 방해하므로 스크린 타임을 엄격히 제한하고 감각통합 훈련을 병행해야 합니다.'
-      },
-      {
-        q: '소아정신과 약(콘서타, 신경차단제) 복용 중 식욕부진이나 무기력이 있는데 한방 치료로 병행이나 전환이 가능한가요?',
-        a: '네, 안전하게 병행할 수 있습니다. 양약이 도파민 수용체를 화학적으로 조절한다면, 한방 치료는 아이 스스로 뇌 신경망의 자율 억제력을 키우도록 돕습니다. 한방 치료로 뇌 자생력이 안정되면 주치의와 상의하여 단계적으로 양약을 감량(Tapering)해 나갈 수 있습니다.'
-      }
-    ];
-  } else if (cat.includes('불면증') || cat.includes('수면')) {
-    return [
-      {
-        q: '새벽 3~4시만 되면 눈이 번쩍 떠지고 시계를 자꾸 확인하게 되는데 어떻게 해야 하나요?',
-        a: '시계를 보는 순간 뇌는 "지금 몇 시지? 이제 몇 시간밖에 못 자네"라는 계산과 불안을 시작하여 각성 호르몬(코르티솔)을 즉각 분비합니다. 새벽에 깨더라도 절대 시계나 스마트폰을 보지 마시고, 어두운 상태에서 호흡을 천천히 내쉬며 누워 계시는 것이 뇌파를 델타파(깊은 수면)로 되돌리는 비결입니다.'
-      },
-      {
-        q: '자려고 누우면 다리에 벌레가 기어가는 듯 쑤시고 가만히 못 있겠는데(하지불안) 불면증과 관련 있나요?',
-        a: '이는 수면을 방해하는 대표적 신경 질환인 하지불안증후군입니다. 뇌 중추의 도파민 전달 이상과 말초 기혈 순환 정체가 원인입니다. 뇌 신경을 안정시키고 다리 경락의 혈류를 열어주는 안신보혈(安神補血) 한약을 처방하면 다리 불편감과 수면 문제가 동시에 사라집니다.'
-      },
-      {
-        q: '수면유도제나 수면제(스틸녹스 등)를 오래 복용해서 내성이 생긴 것 같은데 한약으로 바꿀 수 있나요?',
-        a: '수면제는 뇌를 강제로 마취시키는 방식이지만, 한약은 뇌 스스로 멜라토닌 분비 리듬을 복원하도록 돕습니다. 복용 중인 양약을 갑자기 끊으면 극심한 반동 불면이 오므로, 초기에는 양약과 병행하다가 뇌 자생력이 회복되면 서서히 약을 줄여 끊을 수 있도록 돕습니다.'
-      }
-    ];
-  } else if (cat.includes('공황') || cat.includes('불안') || cat.includes('강박')) {
-    return [
-      {
-        q: '공황발작이 시작될 때 숨이 막히고 죽을 것 같은데 종이봉투 호흡법이 정말 도움이 되나요?',
-        a: '과호흡으로 체내 이산화탄소 농도가 급격히 떨어지면 뇌혈관이 수축하여 어지럼증과 질식감이 악화됩니다. 이때 종이봉투를 대고 호흡하거나 들숨 4초-날숨 6초 복식호흡을 하면 혈중 이산화탄소 농도가 정상화되면서 뇌 편도체의 헛경보를 빠르게 진정시킬 수 있습니다.'
-      },
-      {
-        q: '지하철, 터널, 엘리베이터 같은 꽉 막힌 공간에만 가면 심장이 터질 듯 뛰고 불안한데 왜 그런가요?',
-        a: '이는 공황장애와 흔히 동반되는 광장공포증(Agoraphobia)입니다. \'탈출하기 어렵거나 즉각적인 도움을 받기 힘든 상황\'을 뇌의 편도체가 생명의 위협으로 과대평가하기 때문입니다. 심담(心膽)을 강화하고 과열된 자율신경을 진정시키는 한방 치료로 공포 역치를 높여야 합니다.'
-      },
-      {
-        q: '심장내과나 응급실에서 심전도, 피검사를 다 해도 \'정상\'이라는데 왜 이렇게 가슴이 두근거릴까요?',
-        a: '심장 자체의 기질적 이상이 아니라, 뇌와 심장을 잇는 자율신경계(교감신경)가 과항진되어 심장을 강제로 전력 질주시키는 기능적 이상이기 때문입니다. 심장의 허열을 내리고 뇌 신경계를 안정시키는 청심 안신 치료가 근본 해결책입니다.'
-      }
-    ];
-  } else if (cat.includes('자율신경') || cat.includes('실신') || cat.includes('어지럼') || cat.includes('이명')) {
-    return [
-      {
-        q: '머리가 맑지 않고 안개 낀 듯 멍하며(브레인포그) 어지러운데 이비인후과 검사엔 이상이 없다면 자율신경 문제인가요?',
-        a: '네, 이비인후과나 뇌 MRI상 이상이 없는 비회전성 어지럼증과 멍함은 경추 긴장과 자율신경 실조로 인한 뇌 혈류 저하가 주원인입니다. 상부 경추를 정렬하는 추나요법과 뇌 혈류 순환을 촉진하는 거담청뇌(祛痰淸腦) 한약으로 탁한 기운을 맑게 걷어내야 합니다.'
-      },
-      {
-        q: '식사만 하면 가슴이 답답하고 명치가 체한 듯하면서 식은땀이나 어지럼증이 동반되는 이유는 무엇인가요?',
-        a: '식사 후 소화를 위해 위장으로 혈류가 집중될 때, 자율신경계가 전신 혈류 배분을 원활히 조절하지 못해 뇌와 심장으로 가는 혈류가 일시적으로 부족해지기 때문입니다. 위장 신경을 주관하는 미주신경 활성 치료와 소화기-자율신경 통합 치료가 필요합니다.'
-      },
-      {
-        q: '상체와 얼굴로는 열이 화끈 달아오르고 손발이나 아랫배는 얼음장처럼 차가운 상열하한(上熱下寒) 증상은 어떻게 치료하나요?',
-        a: '자율신경 실조로 인해 전신 수승화강(水升火降, 맑은 기운은 올리고 열기는 내리는 순환)이 차단된 전형적인 상태입니다. 상체의 열을 식히는 청열 약침과 하초(아랫배)를 따뜻하게 덥히는 온리보양 탕약으로 기혈의 상하 소통로를 열어줍니다.'
-      }
-    ];
-  } else if (cat.includes('우울증') || cat.includes('화병') || cat.includes('번아웃')) {
-    return [
-      {
-        q: '가슴 한가운데(전중혈)가 꽉 막힌 듯 답답하고 한숨을 자주 쉬게 되는데 화병의 신체 증상인가요?',
-        a: '맞습니다. 억압된 분노와 억울함이 가슴 중앙의 임맥(任脈)에 뭉쳐 기혈 순환이 차단된 \'전중혈 압통 및 매핵기(목 이물감)\' 현상입니다. 소간해울(疏肝解鬱) 한약과 가슴의 울화를 풀어주는 청화 침구 치료로 가슴의 맺힌 매듭을 즉각 풀어주어야 합니다.'
-      },
-      {
-        q: '아무것도 하기 싫고 무기력한 번아웃 상태인데, 단순한 의지 부족이 아니라 신경계 방전인가요?',
-        a: '의지의 문제가 결코 아닙니다. 만성 스트레스로 인해 부신피질 호르몬(코르티솔)과 뇌 신경전달물질(도파민, 세로토닌)이 고갈된 \'신경생리학적 배터리 방전\' 상태입니다. 심장과 비위의 기혈을 보충하는 보중익기탕·가미귀비탕으로 신경계 에너지를 먼저 채워야 의욕이 되살아납니다.'
-      },
-      {
-        q: '항우울제나 신경안정제를 복용 중인데 감정 둔마(무감각)나 졸림 부작용이 있어 한약 치료와 병행하고 싶습니다.',
-        a: '항우울제가 신경전달물질의 화학적 농도를 유지시키는 동안, 한약은 뇌 신경세포의 자생력을 키우고 간 기능 대사를 도와 양약의 부작용을 줄여줍니다. 병행 치료를 통해 신체 활력을 회복한 후 점진적인 감량이 가능합니다.'
-      }
-    ];
-  } else {
-    return [
-      {
-        q: '위내시경 검사에서는 \'가벼운 위염\'이라는데 명치가 돌처럼 딱딱하고 더부룩한 이유가 담적(痰積) 때문인가요?',
-        a: '위내시경은 위장 내부 점막만 관찰하므로, 위장 외벽 근육층에 노폐물(담적 독소)이 쌓여 딱딱하게 굳은 상태는 감지하지 못합니다. 위장 평활근을 부드럽게 이완시키는 온열 복부 치료와 담적을 삭여 배출하는 온담평위 한약으로 단단한 명치를 풀어주어야 합니다.'
-      },
-      {
-        q: '신경을 조금만 쓰거나 스트레스를 받으면 곧바로 복통, 설사, 가스 참이 나타나는 과민대장증후군은 어떻게 다스리나요?',
-        a: '뇌와 장이 미주신경으로 긴밀히 연결된 \'뇌-장 축(Gut-Brain Axis)\'의 과민 반응입니다. 뇌의 스트레스 신호가 장 신경총을 직접 자극하여 장 경련을 일으키므로, 장만 치료할 것이 아니라 뇌 신경계를 안정시키는 평간건비(平肝健脾) 처방을 병행해야 완치됩니다.'
-      },
-      {
-        q: '뒷목과 어깨가 돌덩이처럼 굳으면서 관자놀이나 정수리가 조이듯 아픈 긴장성 두통도 뇌-장 신경 축과 관련이 있나요?',
-        a: '긴장성 두통은 경추 후두 신경 압박과 위장의 담적 상열(上熱)이 결합되어 발생하는 경우가 많습니다. 상부 경추 추나요법으로 신경 압박을 풀고 위장 담음을 제거하면 만성 두통과 소화불량이 동시에 해결됩니다.'
-      }
-    ];
-  }
+// 3. 질환군별 다변화된 현실적 진료실 FAQ 템플릿 (36개 세부 질환 140여 개 고유 FAQ 풀 연동)
+export function getSpecializedFaq(categoryName, topic = {}, options = {}) {
+  return getDiverseFaq(categoryName, topic, options);
 }
 
 // 4. 질환군별 맞춤 통합 치료 솔루션 설정
@@ -760,8 +670,12 @@ ${faqItemsHtml}
 // 6. Gemini API 호출 또는 폴백 생성
 export async function generateColumnContent(target) {
   const apiKey = process.env.GEMINI_API_KEY;
-  const { dateStr, selectedCat, selectedTopic, selectedRegion, patternType, patternName, fullTitle, titleVariants } = target;
+  const { dateStr, slot, selectedCat, selectedTopic, selectedRegion, patternType, patternName, fullTitle, titleVariants } = target;
   const articleId = `col-${Date.now().toString().slice(-6)}`;
+
+  // 질환 맞춤형 고유 FAQ 후보군 3문 3답 추출
+  const seedFaq = getDiverseFaq(selectedCat.name, selectedTopic, { title: fullTitle, seed: (patternType || 0) + (slot || 0) });
+  const suggestedFaqPrompt = seedFaq.map((f, i) => `   * 추천 질문 ${i+1}: "${f.q}" -> 답변 핵심: "${f.a.slice(0, 80)}..."`).join('\n');
 
   if (!apiKey) {
     console.log(`[Auto-Column SEO] No GEMINI_API_KEY found. Generating with 6-section template (${patternName}).`);
@@ -789,7 +703,9 @@ export async function generateColumnContent(target) {
 [중요 제약 조건 ★★★]
 1. [일괄적인 문구 반복 절대 금지]: 모든 글에 '가슴이 답답하고 불안할 때' 같은 판에 박힌 획일적 문구를 기계적으로 반복하지 마십시오!
 2. 반드시 해당 질환의 고유 증상(불면은 새벽 각성/입면 장애, 틱/ADHD는 눈 깜빡임/헛기침/집중력 저하, 자율신경은 어지럼증/식은땀/피로, 공황은 숨막힘/과호흡/광장공포, 화병/번아웃은 목 이물감/울화, 담적/신체화는 명치 답답함/만성 두통/턱관절 통증)에 맞추어 생생하고 다채로운 표현으로 작성하십시오.
-3. [FAQ 다변화 필수 - 획일적 3대 질문 반복 엄금]: '양약 병행 가능한가요?', '치료 기간은 얼마나 걸리나요?', '첫 내원 시 어떤 검사를 받나요?' 같은 뻔한 3개 질문을 복붙하지 마십시오. 반드시 해당 질환 환자가 진료실에서 눈물 흘리며 묻는 구체적 현실 질문(예: 불면은 새벽 각성 시 시계 확인 습관·하지불안·스틸녹스 내성, 공황은 호흡곤란 봉투호흡·터널 지하철 공포·심장검사 정상, 틱/ADHD는 지적 시 악화·스마트폰 영향·콘서타 부작용, 자율신경은 검사상 정상인 어지럼·식후 답답함·상열하한 등)을 2개 이상 필수로 포함하여 명쾌하게 작성하십시오.
+3. [FAQ 다변화 필수 - 획일적 3대 질문 반복 엄금]: '양약 병행 가능한가요?', '치료 기간은 얼마나 걸리나요?', '첫 내원 시 어떤 검사를 받나요?' 같은 뻔한 3개 질문을 복붙하지 마십시오.
+   아래에 제시된 주제 맞춤형 진료실 실제 고민을 반영하여 생생하고 명쾌한 FAQ 3문 3답을 완성하십시오:
+${suggestedFaqPrompt}
 
 [글 1: 홈페이지 공식 의학 칼럼 데이터]
 - 성격: 공식 웹사이트(healimbp.com) 게재용 전문적이고 신뢰감 있는 대표원장 의학 칼럼.
@@ -803,7 +719,7 @@ export async function generateColumnContent(target) {
   7. researchBox: { title: "학술 연구 및 임상 보고", items: [논문/임상보고 2개], note: "원장 임상 조언 1문장" }
   8. typeCards: 3대 체질 유형 3개 [ { icon: "이모지", title: "변증명 - 특징", desc: "상세설명 및 처방" } ]
   9. structCards: 치료 솔루션 2개 [ { badge: "분류", title: "치료법명", body: "상세설명" } ] (소아/ADHD/틱은 NeuronFlex&IM 포함)
-  10. faq: 환자들이 가장 많이 묻는 현실적 질문 3개 [ { q: "질문", a: "명쾌한 답변" } ]
+  10. faq: 주제 맞춤형 현실적 질문 3개 [ { q: "질문", a: "명쾌한 답변" } ]
   11. closingText: 대표원장의 따뜻한 격려 메시지 1문장
 
 ──────────────────────────────────────────────
@@ -869,6 +785,12 @@ export async function generateColumnContent(target) {
     const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
     const parsed = JSON.parse(rawText);
 
+    // FAQ 검증: 만약 획일적 질문이거나 누락되었을 경우 질환 특화 FAQ로 자동 보정
+    let validatedFaq = parsed.faq;
+    if (!Array.isArray(validatedFaq) || validatedFaq.length === 0 || validatedFaq.some(f => f.q && (f.q.includes('정신과 약') || f.q.includes('치료 기간은 보통') || f.q.includes('첫 내원 시 어떤 검사')))) {
+      validatedFaq = seedFaq;
+    }
+
     const fullColumnData = {
       id: articleId,
       patternType: patternType,
@@ -925,15 +847,11 @@ export async function generateColumnContent(target) {
         { badge: '뇌 신경 안정', title: '체질 맞춤 탕약 & 정혈 약침', body: '과열된 뇌 신경계를 진정시키고 기혈 순환을 촉진하여 자생력을 회복시킵니다.' },
         { badge: '구조 정밀 치료', title: '상부경추 교정 & CST 두개천골요법', body: '뇌척수액 순환을 원활히 하고 척추 주변 자율신경의 긴장을 물리적으로 해소합니다.' }
       ],
-      faq: parsed.faq || [
-        { q: '양약(신경안정제, 수면제)을 복용 중인데 한방 치료와 병행할 수 있나요?', a: '네, 안전하게 병행 가능합니다. 한방 치료로 뇌 자생력이 회복되면 점진적인 감량(Tapering)을 진행합니다.' },
-        { q: '치료 기간은 보통 얼마나 걸리나요?', a: '보통 1~2개월 차에 신체 증상이 크게 완화되며, 2~3개월 치료를 통해 재발 없는 안정 상태를 완성합니다.' },
-        { q: '한의원 첫 내원 시 어떤 검사를 받게 되나요?', a: '뇌파 검사, 적외선 체열 검사, 간이정신진단검사와 1:1 심층 맥진·복진을 통해 정확한 원인을 진단합니다.' }
-      ],
+      faq: validatedFaq,
       closingText: parsed.closingText || '몸이 보내는 신호는 쉼과 치유가 필요하다는 절박한 메시지입니다. 뇌와 자율신경의 평온을 되찾아 건강한 일상을 누리세요.',
       tistoryTitle: parsed.tistoryTitle || titleVariants.p3,
       tistoryTags: parsed.tistoryTags || (patternType === 2 ? [selectedCat.name.split(' ')[0], '한방치료', '자율신경', '건강칼럼'] : [selectedCat.name.split(' ')[0], `${selectedRegion.short}한의원`, '부평한의원', '자율신경', '건강관리']),
-      tistoryScript: parsed.tistoryScript || generateFallbackTistoryScript(selectedCat, selectedTopic, selectedRegion, patternType, titleVariants),
+      tistoryScript: injectFaqIntoTistoryScript(parsed.tistoryScript || generateFallbackTistoryScript(selectedCat, selectedTopic, selectedRegion, patternType, titleVariants, validatedFaq), validatedFaq),
       date: dateStr
     };
 
@@ -944,7 +862,28 @@ export async function generateColumnContent(target) {
   }
 }
 
-export function generateFallbackTistoryScript(cat, topic, region, pattern = 0, variants = null) {
+export function injectFaqIntoTistoryScript(tistoryScript, faqs) {
+  if (!tistoryScript || !Array.isArray(faqs) || faqs.length === 0) return tistoryScript;
+  
+  const faqFormatted = faqs.map((f, i) => `**Q${i + 1}. ${f.q}**\n> A. ${f.a}`).join('\n\n');
+  const newFaqSection = `### ❓ 06. 진료실 자주 묻는 질문 (FAQ)\n${faqFormatted}`;
+
+  // Find existing FAQ section in tistoryScript
+  const faqHeaderRegex = /(?:###\s*(?:❓\s*)?(?:\d+\.\s*)?(?:진료실\s*자주\s*묻는\s*질문|자주\s*묻는\s*질문|FAQ)[^\n]*\n)([\s\S]*?)(?=(?:\n\s*>\s*\*\*권형근|\n\s*\*\*권형근|\n\s*###|\n\s*---\s*\n\s*\*\*권형근|$))/i;
+
+  if (faqHeaderRegex.test(tistoryScript)) {
+    return tistoryScript.replace(faqHeaderRegex, `${newFaqSection}\n\n`);
+  } else {
+    const adviceMatch = tistoryScript.match(/(?=\n\s*>\s*\*\*권형근|\n\s*\*\*권형근|$)/);
+    if (adviceMatch) {
+      const idx = adviceMatch.index;
+      return tistoryScript.slice(0, idx) + '\n\n' + newFaqSection + '\n\n' + tistoryScript.slice(idx);
+    }
+    return tistoryScript + '\n\n' + newFaqSection;
+  }
+}
+
+export function generateFallbackTistoryScript(cat, topic, region, pattern = 0, variants = null, customFaq = null) {
   const catShort = cat.name.split(' ')[0];
   const sec5 = getSection5Config(cat.name);
   const hookLine = topic.hookLine || '일상 속에서 원인 모를 신체 이상과 신경계 과민으로 고통받고 계신가요?';
@@ -952,6 +891,9 @@ export function generateFallbackTistoryScript(cat, topic, region, pattern = 0, v
   const quoteRegion = pattern === 2
     ? '병원에서 각종 정밀 검사를 받아도'
     : `"${region.short} 인근 병원에서 각종 검사를 받아도`;
+
+  const fqList = customFaq || getDiverseFaq(cat.name, topic, { title: topic.blogTitle || topic.titleSuffix || '', seed: pattern });
+  const faqFormatted = fqList.map((fq, i) => `**Q${i + 1}. ${fq.q}**\n> A. ${fq.a}`).join('\n\n');
 
   return `> "${quoteRegion} '신경성', '스트레스'라는 말뿐 원인을 찾지 못했습니다."
 > "약물에만 의존하지 않고 근본적으로 신경계 자생력을 회복해주는 체계적인 치료를 받고 싶습니다."
@@ -962,14 +904,14 @@ ${hookLine}
 이것은 단순한 심리적 약함이나 일시적 피로가 아니라, 우리 몸의 자동 조절 장치인 자율신경계와 뇌 신경망이 과열되어 균형을 잃은 신호입니다.
 
 ### 📌 이 칼럼에서 다루는 6대 핵심 목차
-* 01. ${topic.focus}의 신경학적 발생 기전과 원인
+* 01. ${topic.focus || '증상'}의 신경학적 발생 기전과 원인
 * 02. 자율신경 과흥분 3단계와 일상 속 신체 신호
 * 03. 한의학적 진단: 기혈 순환과 오장육부 불균형
 * 04. 증상별 3대 맞춤 변증 체질 유형
 * 05. ${sec5.title}
 * 06. 진료실 자주 묻는 질문 (FAQ 3문 3답)
 
-### 🌿 01. ${topic.focus}의 신경학적 발생 기전과 원인
+### 🌿 01. ${topic.focus || '증상'}의 신경학적 발생 기전과 원인
 우리의 뇌와 신체는 24시간 동안 교감신경(액셀)과 부교감신경(브레이크)의 상호 작용을 통해 심박, 호흡, 체온, 수면을 조절합니다.
 하지만 과도한 긴장과 피로가 지속되면 교감신경이 과항진되면서 뇌 변연계(편도체)가 위험 알람을 오작동시킵니다.
 이로 인해 자율신경 실조와 뇌 신경전달물질의 불균형이 발생하여 만성적인 신체화 증상으로 이어집니다.
@@ -995,20 +937,14 @@ ${hookLine}
 * **두개천골 추나요법 & FCST**: 상부 경추와 턱관절을 교정하여 뇌척수액 순환과 척추 주변 자율신경절의 긴장을 해소합니다.
 
 ### ❓ 06. 진료실 자주 묻는 질문 (FAQ)
-**Q1. 정신과 약(신경안정제, 수면제)을 복용 중인데 한방 치료와 병행할 수 있나요?**
-> A. 네, 안전하게 병행 가능합니다. 복용 중인 양약을 갑자기 중단하면 반동 불안이 올 수 있으므로 초기에는 시차를 두고 병행하다가, 뇌 자생력이 회복되면 점진적으로 감량(Tapering)을 진행합니다.
-
-**Q2. 치료 기간은 보통 얼마나 걸리나요? 치료 후 재발하지 않나요?**
-> A. 보통 1~2개월 차에 주요 신체 증상이 호전되며, 2~3개월 치료를 통해 자율신경 밸런스와 두뇌 회복력을 안정화시킵니다. 일시적 증상 억제가 아닌 근본 자생력을 키우므로 치료 종결 후에도 재발률이 낮습니다.
-
-**Q3. 한의원 첫 내원 시 어떤 검사와 진료를 받게 되나요?**
-> A. 뇌파 검사(EEG), 적외선 체열 검사(DITI), 간이정신진단검사와 1:1 심층 맥진·복진을 통해 정확한 원인을 진단합니다.
+${faqFormatted}
 
 > **권형근 대표원장의 조언**: "증상은 몸이 보내는 쉼과 치유의 절박한 신호입니다. 뇌와 자율신경의 평온을 되찾아 건강한 일상을 다시 누리시길 바랍니다."`;
 }
 
 export function generateFallbackContent(cat, topic, region, title, date, id, pattern = 0, variants = null) {
   const catShort = cat.name.split(' ')[0];
+  const dynamicFaq = getDiverseFaq(cat.name, topic, { title: title, seed: (pattern || 0) });
   
   let summary = `${region.short} 지역에서 ${cat.name} 증상으로 한의원 및 병원 치료를 찾는 분들을 위한 권형근 대표원장의 심층 원인 분석과 1:1 맞춤 한방 치료 가이드입니다.`;
   let tags = [`${region.short}한의원`, '부평한의원', `${catShort}한의원`, '맞춤한약', '체열검사'];
@@ -1099,18 +1035,14 @@ export function generateFallbackContent(cat, topic, region, title, date, id, pat
       { badge: '신경 자생력 회복', title: '체질 맞춤 탕약 & 청열 약침', body: '과열된 뇌 신경계를 진정시키고 기혈 순환을 촉진하여 인체 스스로 균형을 유지하도록 돕습니다.' },
       { badge: '구조 정밀 교정', title: '두개천골 CST & 상부경추 추나', body: '경추와 척추 정렬을 바로잡아 뇌척수액 순환과 척추 주변 자율신경절의 소통을 원활하게 만듭니다.' }
     ],
-    faq: [
-      { q: '정신과 약(신경안정제, 수면제)을 복용 중인데 한방 치료와 병행할 수 있나요?', a: '네, 안전하게 병행 가능합니다. 복용 중인 양약을 갑자기 중단하면 반동 불안이 올 수 있으므로 초기에는 병행하다가, 한방 치료로 뇌 자생력이 회복되면 주치의와 상의하여 단계적으로 감량(Tapering)합니다.' },
-      { q: '치료 기간은 보통 얼마나 걸리나요? 치료 후 재발하지 않나요?', a: '보통 1~2개월 차에 주요 신체 증상이 호전되며, 2~3개월 차에는 자율신경 밸런스와 두뇌 회복력을 안정화시킵니다. 근본 조절력을 키우므로 치료 종결 후에도 재발률이 낮습니다.' },
-      { q: '한의원 첫 내원 시 어떤 검사와 진료를 받게 되나요?', a: '사전 설문지 작성 후 뇌파 검사, 적외선 체열 검사, 간이정신진단검사를 시행하며, 1:1 정밀 맥진·복진을 거쳐 맞춤 처방이 진행됩니다.' }
-    ],
+    faq: dynamicFaq,
     closingText: '몸이 보내는 신호는 쉼과 치유가 필요하다는 절박한 메시지입니다. 뇌와 자율신경의 평온을 되찾아 건강한 일상을 다시 누리세요.',
     patternType: pattern,
     patternName: ['[패턴 1] 맨앞 지역명 한의원', '[패턴 2] 중간 지역명 삽입', '[패턴 3] 지역명 없는 순수 질환/블로그형'][pattern],
     titleVariants: defaultVariants,
     tistoryTitle: defaultVariants.p3,
     tistoryTags: tags,
-    tistoryScript: generateFallbackTistoryScript(cat, topic, region, pattern, defaultVariants),
+    tistoryScript: generateFallbackTistoryScript(cat, topic, region, pattern, defaultVariants, dynamicFaq),
     date: date
   };
 }
@@ -1186,7 +1118,9 @@ ${escapeHtml(column.summary)}
 🔗 <a href="${columnUrl}">홈페이지에서 칼럼 바로가기</a>`;
 
   const tTags = (column.tistoryTags || column.tags || []).map(t => `#${t.replace(/^#|\s+/g, '')}`).join(' ');
-  const tScript = column.tistoryScript || generateFallbackTistoryScript({ name: column.categoryName }, { focus: '', hookLine: '' }, { short: '부평' }, column.patternType || 0, variants);
+  const dynamicFaq = column.faq || getDiverseFaq(column.categoryName, { focus: column.title }, { title: column.title });
+  const rawScript = column.tistoryScript || generateFallbackTistoryScript({ name: column.categoryName }, { focus: '', hookLine: '' }, { short: '부평' }, column.patternType || 0, variants, dynamicFaq);
+  const tScript = injectFaqIntoTistoryScript(rawScript, dynamicFaq);
 
   const tistoryNotice = `📋 <b>[블로그 원클릭 복사용 맞춤 대본]</b>
 <i>※ 홈페이지 칼럼과 100% 다른 문장과 친근한 블로그 스토리텔링으로 재작성된 6섹션 원고입니다. (유사문서 페널티 완벽 방지)</i>

@@ -187,28 +187,28 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>담적병 치료를 받으면 정말 딱딱했던 명치가 부드럽게 풀리나요?</span>
+        <span>담적병 환자가 피해야 할 가장 해로운 식습관 3가지는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 복진을 해보면 담적 치료 3~4주 차부터 돌덩이처럼 딱딱하던 명치 부위가 말랑말랑하게 풀리고, 누를 때의 통증이 현저히 줄어들면서 트림과 복부 팽만감이 깨끗하게 사라지는 것을 직접 확인할 수 있습니다.
+        1) 식사 후 바로 눕는 습관, 2) 찬물이나 차가운 음료 자주 마시기, 3) 밤늦은 야식과 밀가루·기름진 음식 섭취입니다. 따뜻한 음식을 천천히 꼭꼭 씹어 드셔야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>위장약(위산분비억제제, 제산제)을 오래 먹었는데 계속 먹어야 하나요?</span>
+        <span>위내시경 검사는 깨끗하다는데 늘 체한 듯 명치가 돌처럼 딱딱하고 더부룩한 이유가 담적병(痰積病) 때문인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        위산억제제를 장기 복용하면 위산 분비가 저하되어 소화력이 더 떨어지고 소장 내 세균 과증식(SIBO)을 유발합니다. 한방 치료를 통해 위장 자생력이 회복되면 양약을 안전하게 중단할 수 있습니다.
+        위내시경은 위장 내부 점막만 관찰하므로, 위장 외벽 평활근 층에 소화되지 않은 음식물 찌꺼기와 노폐물이 쌓여 굳어진 "담적 독소"는 감지하지 못합니다. 단단해진 위장 외벽을 온열 침구로 부드럽게 이완시키고 담적을 삭여 배출하는 평위온담 한약으로 풀어주어야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>담적 치료 중 피해야 할 음식은 무엇인가요?</span>
+        <span>담적병이 있으면 왜 소화불량뿐만 아니라 두통, 어지럼증, 눈 침침함이 함께 오나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        밀가루, 기름진 음식, 찬 음식(아이스 아메리카노), 야식은 담적을 만들어내는 주범입니다. 따뜻한 한식 위주의 식사와 꼭꼭 씹어 먹는 20분 식사 습관이 매우 중요합니다.
+        위장에서 발생한 탁한 담음(痰飮) 가스가 뇌-장 신경망과 혈관을 타고 상체로 치솟아 머리의 기혈 순환을 차단하기 때문입니다. 위장의 담적을 치료하면 만성 두통과 어지럼증이 동시에 씻은 듯 사라집니다.
       </p>
     </div>
 </div>

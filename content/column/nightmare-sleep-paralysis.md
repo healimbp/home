@@ -187,28 +187,28 @@ image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>가위에 눌렸을 때 빨리 깨어나는 요령이 있나요?</span>
+        <span>밤마다 쫓기는 악몽을 꾸거나 몸이 굳어 움직이지 않는 가위눌림(수면마비)에 시달리는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        가위에 눌리면 온몸을 억지로 움직이려 하지 마시고, **숨을 천천히 길게 내쉬면서 눈동자를 굴리거나 발가락, 손가락 끝만 아주 미세하게 까딱까딱 움직이세요.** 말초 신경의 작은 움직임이 뇌간으로 전달되면 근육 마비 스위치가 훨씬 빠르게 해제됩니다.
+        육체적 피로와 정신적 스트레스로 뇌의 렘(REM)수면 조절 기전이 무너진 상태입니다. 몸의 근육은 마취 상태인데 뇌 의식만 불완전하게 깨어나면서 공포 환각과 가위눌림이 발생합니다. 한의학적으로 심담허겁(心膽虛怯)과 심비양허(心脾兩虛)를 보강하여 깊은 델타파 수면을 유도해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>악몽을 자주 꾸면 치매나 뇌 질환의 전조 증상일 수 있나요?</span>
+        <span>가위눌림이 시작될 때 어떻게 하면 빨리 빠져나올 수 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        단순 악몽은 스트레스 반응이지만, 꿈속 행동대로 실제로 주먹을 휘두르거나 발길질을 심하게 하는 **렘수면 행동장애(RBD)**가 지속된다면 뇌 신경계의 퇴행성 변화를 의심할 수 있으므로 조기에 정밀 진단과 한방 뇌신경 치료를 받으셔야 합니다.
+        전신을 억지로 움직이려 하면 공포심이 커집니다. 손가락 끝, 발가락 끝, 혀끝처럼 말초 부위부터 아주 미세하게 까딱거리며 숨을 천천히 길게 내쉬면 뇌간의 마비 신호가 빠르게 풀립니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>가위눌림을 예방하는 수면 자세가 있나요?</span>
+        <span>꿈을 너무 많이 꿔서 자고 일어나도 밤새 일한 것처럼 피곤한 다몽증(多夢症)도 치료가 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        천장을 보고 똑바로 눕는 자세는 혀가 뒤로 말려 기도를 좁히고 가위눌림을 유발하기 쉽습니다. 베개를 적절히 괴고 **몸을 옆으로 돌려 웅크린 자세(측와위)**로 주무시면 가위눌림 빈도를 크게 줄일 수 있습니다.
+        네, 얕은 렘수면 비율이 지나치게 높고 깊은 서파 수면이 부족하여 발생하는 현상입니다. 뇌로 치솟는 심장과 간의 허열을 식혀주면 꿈의 빈도가 줄고 아침 기상 시 피로감이 사라집니다.
       </p>
     </div>
 </div>

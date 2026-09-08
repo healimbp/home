@@ -189,28 +189,28 @@ image: "/blog-images/bucheon-tic/01_bucheon_tic_thumbnail_3d.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>음성 틱이 시작되면 나중에 욕설 틱(외설증)으로 번지나요?</span>
+        <span>비염약과 기침약을 몇 달째 먹여도 아이의 "킁킁", "음음", "헛기침" 소리가 멈추지 않는데 음성틱인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        외설증(욕설 틱)은 뚜렛증후군 환자 중에서도 10~15% 내외의 매우 드문 경우에만 나타납니다. 대부분의 음성 틱은 단순한 헛기침이나 킁킁거림, 음음 소리 수준에서 조기에 적절한 한방 치료를 시작하면 외설증으로 진행하지 않고 안정적으로 소실됩니다.
+        이비인후과 치료에도 4주 이상 지속되는 헛기침, 킁킁거림, 목 가다듬는 소리는 호흡기 질환이 아니라 성대 근육의 불수의적 수축으로 인한 "음성틱(Vocal Tic)"입니다. 호흡기 치료에 시간을 낭비하지 마시고 뇌 기저핵 신경계를 안정시키는 한방 틱 치료를 시작해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>학교 수업 시간에 소리를 내서 친구들에게 놀림받을까 봐 걱정입니다.</span>
+        <span>음성틱이 발전하면 욕설이나 해괴한 소리를 내는 뚜렛증후군으로 악화되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        아이가 학교에서 억지로 소리를 참다 보면 하교 후 집에서 소리가 몇 배로 심해질 수 있습니다. 담임 선생님께 사전에 상황을 정중히 설명해 지적하지 않도록 협조를 구하시고, 아이에게는 "참지 않아도 괜찮다"는 심리적 안전지대를 만들어주셔야 합니다.
+        운동틱과 음성틱이 1년 이상 지속되는 상태를 뚜렛증후군이라 부릅니다. 조기에 기저핵의 과열된 흥분을 가라앉히는 한약과 IM(감각통합 타이밍) 훈련을 적용하면 뚜렛증후군으로의 악화를 조기에 차단할 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>음성 틱 치료는 보통 기간이 얼마나 걸리나요?</span>
+        <span>아이가 긴장하거나 학원 갈 때 음성틱 소리가 유독 커지는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        발병한 지 6개월 이내의 초기 단계라면 보통 1~2개월 내에 소리의 크기와 빈도가 눈에 띄게 줄어들며, 만성화된 뚜렛 단계라도 3~6개월 꾸준한 뇌신경 안정 치료를 통해 재발 없는 완치에 이를 수 있습니다.
+        스트레스와 긴장 상황에서 교감신경이 흥분하고 뇌 편도체가 자극되어 기저핵의 억제 기능이 일시적으로 급격히 떨어지기 때문입니다. 학업 부담을 조절하고 이완 호흡을 지도해주셔야 합니다.
       </p>
     </div>
 </div>

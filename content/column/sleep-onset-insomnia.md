@@ -190,25 +190,25 @@ image: "/blog-images/bucheon-insomnia/01_main_summary_thumbnail.png"
         <span>침대에 누워 30분 이상 잠이 안 올 때는 어떻게 해야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        잠이 안 오는데도 침대에서 계속 뒤척이면 뇌는 "침대 = 뒤척이며 괴로워하는 곳"으로 조건화됩니다. 20~30분 동안 잠이 안 오면 **즉시 침대 밖으로 나와 어두운 조명 아래에서 편안한 책을 읽거나 명상을 하다가 졸음이 올 때 다시 침대로 들어가는 자극 조절 요법**을 쓰셔야 합니다.
+        잠이 안 오는데도 침대에서 계속 뒤척이면 뇌는 "침대 = 괴롭게 뒤척이는 곳"으로 조건화됩니다. 20~30분 이상 잠이 안 오면 즉시 침대 밖으로 나와 어두운 조명 아래서 편안한 독서나 명상을 하다가 졸릴 때 다시 침대로 들어가는 자극 조절 요법을 실천해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>술을 한 잔 마시고 자면 잠이 잘 오는데 수면제보다 낫지 않나요?</span>
+        <span>잠이 안 올 때 술(알코올)을 한두 잔 마시고 자는 것이 도움이 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        절대 안 됩니다. 알코올은 진정 효과로 일시적으로 잠들게 만들지만, 깊은 델타파 수면과 렘수면을 완전히 파괴하고 새벽 각성과 갈증을 유발하여 입면장애를 만성 악화시키는 최악의 습관입니다.
+        술은 일시적으로 잠들게 만들지만, 알코올 분해 과정에서 교감신경을 흥분시키고 탈수와 체온 상승을 유발해 새벽 각성과 얕은 잠을 초래하는 최악의 수면 방해 요인입니다. 절대 수면 목적으로 음주를 하시면 안 됩니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>수면유도제를 먹으면 다음 날 몽롱한데 한약은 어떤가요?</span>
+        <span>누우면 머릿속에서 온갖 잡생각이 꼬리를 물고 1~2시간 넘게 뒤척이는 입면장애는 왜 생기나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        양약 수면제는 뇌를 강제로 억제하기 때문에 아침에 숙취처럼 멍함(브레인포그)이 남지만, 맞춤 한약은 뇌 스스로 수면 스위치를 내리는 힘을 길러주므로 아침 기상 시 머리가 맑고 몸이 가볍습니다.
+        휴식 시 꺼져야 하는 뇌의 **디폴트 모드 네트워크(DMN)** 스위치가 만성 과각성으로 인해 꺼지지 않기 때문입니다. 불을 끄고 자극이 사라지면 뇌가 낮 동안 억눌린 걱정과 기억을 폭발적으로 재생합니다. 뇌의 상열감을 내리고 DMN을 진정시키는 청뇌안신 한약과 수면 뇌파 훈련이 필수적입니다.
       </p>
     </div>
 </div>

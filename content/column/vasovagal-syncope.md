@@ -187,28 +187,28 @@ image: "/blog-images/bupyeong-autonomic/01_naver_main_thumbnail.jpg"
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>실신 전조 증상(어지럼, 식은땀, 암전)이 느껴지면 즉시 어떻게 해야 하나요?</span>
+        <span>지하철, 터널, 엘리베이터, 미용실처럼 꽉 막힌 공간에만 가면 심장이 터질 것 같은 광장공포증은 왜 생기나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        체면을 생각하지 마시고 **즉시 그 자리에 쪼그려 앉거나 바닥에 누워 다리를 높이 들어 올려야 합니다.** 또한 양손 깍지를 끼고 서로 바깥쪽으로 힘껏 당기거나, 다리를 꼬고 엉덩이 근육에 힘을 주는 반가압(Counter-pressure) 운동을 하면 혈압이 급상승하여 실신을 즉시 예방할 수 있습니다.
+        광장공포증은 "내가 즉각 탈출할 수 없거나 도움을 받기 어려운 장소"에 갇혔을 때 뇌가 극도의 생존 위협을 느끼는 뇌 기능적 공간 지각 이상입니다. 뇌 자율신경계의 공포 역치를 높이고 두개천골계 이완을 통해 공간 감각의 안정감을 회복해야 합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>대학병원에서 검사해도 약이 없다고 하는데 한방으로 완치가 가능한가요?</span>
+        <span>지하철을 탈 때 중간에 공황이 오면 즉시 내려야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        양방에서는 미주신경성 실신에 대해 뚜렷한 치료제가 없어 수분 섭취와 주의사항만 안내하는 경우가 많습니다. 한의학은 심장의 펌프 기능과 혈관 긴장도를 조절하는 기혈을 보강하므로 실신의 재발을 근본적으로 차단할 수 있습니다.
+        불안이 정점에 달했을 때 즉시 도망치듯 내리면 뇌는 "도망쳤기 때문에 살았다"고 착각하여 공포 회로가 강화됩니다. 다음 역까지 복식호흡을 하며 2~3분만 버텨내어 심박수가 스스로 가라앉는 과정을 경험하는 것이 공포 회로를 끊는 핵심입니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>평소 물이나 소금을 많이 먹는 것이 도움이 되나요?</span>
+        <span>가족이나 지인이 함께 타면 괜찮은데 혼자서는 못 타는 이유가 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 혈장량을 늘리기 위해 하루 2L 이상의 미온수 섭취와 적절한 염분 섭취가 권장됩니다. 하지만 위장 기능이 약한 분들은 물을 너무 많이 마시면 오히려 담음(痰飮)이 차 어지럼증이 심해질 수 있으므로 한방 진단 후 체질에 맞게 조절해야 합니다.
+        동행자를 뇌의 "안전 신호(Safety Cue)"로 인식하기 때문입니다. 동행자에게 의존하는 패턴을 서서히 줄이기 위해, 처음에는 옆 칸에 타기, 다음에는 한 정거장 혼자 가기 등으로 자립 훈련을 진행해야 합니다.
       </p>
     </div>
 </div>
