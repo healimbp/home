@@ -1,14 +1,13 @@
 import fs from 'fs';
 import path from 'path';
-import { findTopicKey, getDiverseFaq } from './column-faqs.mjs';
+import { findTopicKey, getDiverseFaq, TOPIC_FAQ_DATABASE } from './column-faqs.mjs';
 
 const columnDir = 'content/column';
 const files = fs.readdirSync(columnDir).filter(f => f.endsWith('.md') && f !== '_index.md');
 
-console.log(`=== Processing all ${files.length} columns with robust section locator ===\n`);
+console.log(`=== Processing all ${files.length} columns for 100% Comprehensive FAQ Overhaul ===\n`);
 
 let updatedCount = 0;
-let unchangedCount = 0;
 
 for (let i = 0; i < files.length; i++) {
   const file = files[i];
@@ -20,7 +19,7 @@ for (let i = 0; i < files.length; i++) {
   const catMatch = content.match(/categories:\s*\[(.*?)\]/) || content.match(/category:\s*['"]?([^'\r\n"]+)/);
   const category = catMatch ? catMatch[1].replace(/['"]/g, '').trim() : '';
 
-  // Deterministic seed
+  // Seed based on file hash
   let hash = 0;
   for (let j = 0; j < file.length; j++) {
     hash = (hash * 31 + file.charCodeAt(j)) >>> 0;
@@ -60,34 +59,43 @@ for (let i = 0; i < files.length; i++) {
     </div>
 </div>`;
 
-  // Find FAQ section in content
-  // Look for header: ## ... (FAQ) or ## 자주 묻는 질문
-  const headerMatch = content.match(/(##\s*(?:환자분들이\s*진료실에서\s*가장\s*많이\s*묻는\s*현실적\s*질문|자주\s*묻는\s*질문)[^\n]*\n+)/i);
-  
+  // Find header: ## 자주 묻는 질문 or ## 진료실 자주 묻는 질문 or ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문
+  const headerRegex = /(##\s*(?:환자분들이\s*진료실에서\s*가장\s*많이\s*묻는\s*현실적\s*질문|진료실\s*자주\s*묻는\s*질문|자주\s*묻는\s*질문)[^\n]*\n+)/i;
+  const headerMatch = content.match(headerRegex);
+
   if (headerMatch) {
     const headerStart = headerMatch.index;
     const headerEnd = headerStart + headerMatch[0].length;
-    
-    // Find the end of FAQ container - usually marked by Doctor's Clinical Insight box or next section or EOF
     const afterHeader = content.slice(headerEnd);
-    
-    // Check where the next block starts
-    let nextBlockMatch = afterHeader.match(/\n*(<div class="my-8 p-6|<div class="my-8\s+p-6|---\s*\n+<div class="my-8|\n##\s+|\n---\s*\n\s*##|$)/);
+
+    // End of FAQ block: next section (div.my-8, ---, ##, or EOF)
+    const nextBlockMatch = afterHeader.match(/\n*(<div class="my-8|<div class="my-8\s+p-6|---\s*\n+<div class="my-8|\n##\s+|\n---\s*\n\s*##|$)/);
     
     if (nextBlockMatch) {
       const faqBlockLength = nextBlockMatch.index;
       const beforeHeader = content.slice(0, headerEnd);
       const afterBlock = afterHeader.slice(faqBlockLength);
-      
+
       content = beforeHeader + newFaqHtml + '\n\n' + afterBlock.replace(/^\n+/, '');
       fs.writeFileSync(filePath, content, 'utf8');
       updatedCount++;
-      console.log(`[UPDATED] ${file} (Topic: ${topicKey})`);
+      console.log(`[UPDATED] ${file} -> Topic: ${topicKey}`);
     } else {
       console.log(`[CANNOT FIND END] ${file}`);
     }
   } else {
-    console.log(`[NO HEADER] ${file}`);
+    // If no header found, append section before Doctor's insight or at end
+    const doctorMatch = content.match(/(?=<div class="my-8|<div class="my-8\s+p-6|---\s*\n+<div class="my-8|$)/);
+    const standardHeader = `## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)\n\n`;
+    if (doctorMatch) {
+      const idx = doctorMatch.index;
+      content = content.slice(0, idx) + standardHeader + newFaqHtml + '\n\n' + content.slice(idx);
+    } else {
+      content = content + '\n\n' + standardHeader + newFaqHtml + '\n\n';
+    }
+    fs.writeFileSync(filePath, content, 'utf8');
+    updatedCount++;
+    console.log(`[APPENDED FAQ] ${file} -> Topic: ${topicKey}`);
   }
 }
 

@@ -182,11 +182,19 @@ image: "/blog-images/bucheon-insomnia/01_main_summary_thumbnail.png"
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
+        <span>누우면 머릿속에서 온갖 잡생각이 꼬리를 물고 1~2시간 넘게 뒤척이는 입면장애는 왜 생기나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        휴식 시 꺼져야 하는 뇌의 **디폴트 모드 네트워크(DMN)** 스위치가 만성 과각성으로 인해 꺼지지 않기 때문입니다. 불을 끄고 자극이 사라지면 뇌가 낮 동안 억눌린 걱정과 기억을 폭발적으로 재생합니다. 뇌의 상열감을 내리고 DMN을 진정시키는 청뇌안신 한약과 수면 뇌파 훈련이 필수적입니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
         <span>침대에 누워 30분 이상 잠이 안 올 때는 어떻게 해야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
@@ -195,20 +203,11 @@ image: "/blog-images/bucheon-insomnia/01_main_summary_thumbnail.png"
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
         <span>잠이 안 올 때 술(알코올)을 한두 잔 마시고 자는 것이 도움이 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         술은 일시적으로 잠들게 만들지만, 알코올 분해 과정에서 교감신경을 흥분시키고 탈수와 체온 상승을 유발해 새벽 각성과 얕은 잠을 초래하는 최악의 수면 방해 요인입니다. 절대 수면 목적으로 음주를 하시면 안 됩니다.
-      </p>
-    </div>
-    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
-      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>누우면 머릿속에서 온갖 잡생각이 꼬리를 물고 1~2시간 넘게 뒤척이는 입면장애는 왜 생기나요?</span>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        휴식 시 꺼져야 하는 뇌의 **디폴트 모드 네트워크(DMN)** 스위치가 만성 과각성으로 인해 꺼지지 않기 때문입니다. 불을 끄고 자극이 사라지면 뇌가 낮 동안 억눌린 걱정과 기억을 폭발적으로 재생합니다. 뇌의 상열감을 내리고 DMN을 진정시키는 청뇌안신 한약과 수면 뇌파 훈련이 필수적입니다.
       </p>
     </div>
 </div>

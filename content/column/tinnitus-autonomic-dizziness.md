@@ -182,20 +182,10 @@ image: "/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg"
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>이명이 심해지면 난청으로 이어질까 봐 너무 불안한데 어떻게 해야 하나요?</span>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        이명에 대한 과도한 공포와 불안은 뇌 편도체를 자극하여 이명 신호를 2~3배 더 크게 증폭시킵니다. "이명 소리는 뇌의 과열 경보음일 뿐 청력을 앗아가지 않는다"는 안심과 함께 뇌 자생력 치료를 시작하셔야 합니다.
-      </p>
-    </div>
-    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
-      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
         <span>피곤하거나 조용한 밤마다 귀에서 매미 소리, 삐 소리가 커지는 신경성 이명과 머리 안에서 소리가 나는 뇌명증의 원인은 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
@@ -204,11 +194,20 @@ image: "/blog-images/incheon-seogu-dizziness/01_naver_main_thumbnail.jpg"
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
         <span>이비인후과에서 "이명은 평생 고칠 수 없으니 적응하고 살라"고 하는데 정말 치료가 안 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         그렇지 않습니다. 청각 신경 세포 자체의 완전 사멸이 아닌 기능적 과민 상태의 신경성 이명은 턱관절(FCST) 교정, 경추 정렬, 두부 경혈 침구 치료 및 뇌신경 청열 처방을 통해 소리 크기를 70~80% 이상 줄이고 일상에서 거의 의식하지 못하는 수준으로 치료할 수 있습니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
+        <span>이명이 심해지면 난청으로 이어질까 봐 너무 불안한데 어떻게 해야 하나요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        이명에 대한 과도한 공포와 불안은 뇌 편도체를 자극하여 이명 신호를 2~3배 더 크게 증폭시킵니다. "이명 소리는 뇌의 과열 경보음일 뿐 청력을 앗아가지 않는다"는 안심과 함께 뇌 자생력 치료를 시작하셔야 합니다.
       </p>
     </div>
 </div>

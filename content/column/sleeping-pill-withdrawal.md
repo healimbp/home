@@ -180,11 +180,19 @@ image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
+        <span>수면제 복용 중 몽유병처럼 밤에 음식을 먹거나 기억이 안 나는 증상이 있는데 위험한가요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        졸피뎀 계열의 대표적인 부작용인 복합 수면 행동(전향성 건망증)입니다. 낙상이나 사고 위험이 있으므로 즉시 의료진과 상의하여 한방 병행 치료를 통해 약물을 안전하게 감량하셔야 합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
         <span>수면제(스틸녹스, 졸피뎀)나 신경안정제를 수개월째 복용 중인데 내성이 생겨 잠이 안 옵니다. 어떻게 끊어야 하나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
@@ -193,20 +201,11 @@ image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
         <span>수면유도제나 수면제를 복용하면 다음 날 아침 멍하고 기억력이 떨어지는 이유는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         화학적 수면제는 뇌를 강제로 마취시키는 방식이라 자연 수면의 핵심인 깊은 델타파(서파 수면)와 렘수면(기억 정리)의 리듬을 파괴하기 때문입니다. 한약 치료는 뇌의 자연스러운 수면 유도 메커니즘을 회복시켜 기상 시 머리가 상쾌합니다.
-      </p>
-    </div>
-    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
-      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>수면제 복용 중 몽유병처럼 밤에 음식을 먹거나 기억이 안 나는 증상이 있는데 위험한가요?</span>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        졸피뎀 계열의 대표적인 부작용인 복합 수면 행동(전향성 건망증)입니다. 낙상이나 사고 위험이 있으므로 즉시 의료진과 상의하여 한방 병행 치료를 통해 약물을 안전하게 감량하셔야 합니다.
       </p>
     </div>
 </div>

@@ -186,28 +186,28 @@ tags: ["자율신경","자율신경치료","한방신경정신과","자율신경
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>가족이나 지인이 함께 타면 괜찮은데 혼자서는 못 타는 이유가 무엇인가요?</span>
+        <span>미주신경성 실신은 평생 재발을 안고 살아야 하나요, 한방 치료로 완치가 가능한가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        동행자를 뇌의 "안전 신호(Safety Cue)"로 인식하기 때문입니다. 동행자에게 의존하는 패턴을 서서히 줄이기 위해, 처음에는 옆 칸에 타기, 다음에는 한 정거장 혼자 가기 등으로 자립 훈련을 진행해야 합니다.
+        기립 시 하체로 쏠린 혈액을 심장과 뇌로 힘차게 올려주는 혈관 수축 반사력과 심장 펌프력을 보강하는 승양익기(升陽益氣) 맞춤 한약 치료를 통해 실신 빈도를 제로(0)로 만들고 완치할 수 있습니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>지하철, 터널, 엘리베이터, 미용실처럼 꽉 막힌 공간에만 가면 심장이 터질 것 같은 광장공포증은 왜 생기나요?</span>
+        <span>만원 지하철이나 출퇴근길에 서 있다가 갑자기 눈앞이 캄캄해지고 핑 돌며 쓰러지는 미주신경성 실신의 전조 증상은 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        광장공포증은 "내가 즉각 탈출할 수 없거나 도움을 받기 어려운 장소"에 갇혔을 때 뇌가 극도의 생존 위협을 느끼는 뇌 기능적 공간 지각 이상입니다. 뇌 자율신경계의 공포 역치를 높이고 두개천골계 이완을 통해 공간 감각의 안정감을 회복해야 합니다.
+        실신 직전 1~2분 전 하품, 식은땀, 메스꺼움(구역감), 시야가 좁아지는 터널 시야, 귀 먹먹함 등의 전조 증상이 나타납니다. 부교감신경(미주신경)이 과도하게 흥분하여 심박수를 급격히 떨어뜨리고 뇌 혈류를 차단하기 때문입니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>지하철을 탈 때 중간에 공황이 오면 즉시 내려야 하나요?</span>
+        <span>실신 전조 증상이 올 때 바로 주저앉거나 취해야 하는 응급 대처 자세는 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        불안이 정점에 달했을 때 즉시 도망치듯 내리면 뇌는 "도망쳤기 때문에 살았다"고 착각하여 공포 회로가 강화됩니다. 다음 역까지 복식호흡을 하며 2~3분만 버텨내어 심박수가 스스로 가라앉는 과정을 경험하는 것이 공포 회로를 끊는 핵심입니다.
+        전조 증상이 느껴지면 즉시 그 자리에 쪼그려 앉거나 바닥에 누워 다리를 심장보다 높게 올려야 합니다. 서 있는 상태에서는 다리를 X자로 교차하고 엉덩이와 허벅지 근육에 강하게 힘을 주는 카운터 프레셔(Counter-pressure) 기법으로 뇌 혈류를 유지할 수 있습니다.
       </p>
     </div>
 </div>

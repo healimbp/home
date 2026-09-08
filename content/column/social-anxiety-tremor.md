@@ -182,11 +182,19 @@ image: "/blog-images/bupyeong-anxiety/01_naver_main_thumbnail.jpg"
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
+        <span>남들 앞에 서서 발표할 때 목소리가 심하게 떨리고 손이 덜덜 떨리는데 사회공포증인가요?</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
+        네, 전형적인 수행불안 및 사회공포증 증상입니다. 타인의 평가에 대한 과도한 불안으로 뇌간의 노르아드레날린 분비가 폭발하여 성대 근육과 손가락 말초 혈관이 급격히 수축하기 때문입니다. 심장 열을 내리고 간기를 소통시키는 시호청간탕 계열 한약과 자율신경 훈련이 주효합니다.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
+      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
         <span>발표 전에 인데놀(베타차단제)을 복용하고 있는데, 한방 치료로 약 없이 발표할 수 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
@@ -195,20 +203,11 @@ image: "/blog-images/bupyeong-anxiety/01_naver_main_thumbnail.jpg"
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
+        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
         <span>사람들과 눈을 마주치기 힘들고 식당에서 밥 먹을 때도 시선이 의식되는데 치료가 되나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
         시선공포증과 대인불안은 자의식이 과열되어 타인의 시선을 위협으로 왜곡 해석하는 신경망 문제입니다. 뇌 신경전달물질의 균형을 맞추고 상체로 쏠린 열을 내려주는 수승화강 치료를 통해 자연스럽게 타인의 시선에서 자유로워질 수 있습니다.
-      </p>
-    </div>
-    <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
-      <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
-        <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>남들 앞에 서서 발표할 때 목소리가 심하게 떨리고 손이 덜덜 떨리는데 사회공포증인가요?</span>
-      </div>
-      <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 전형적인 수행불안 및 사회공포증 증상입니다. 타인의 평가에 대한 과도한 불안으로 뇌간의 노르아드레날린 분비가 폭발하여 성대 근육과 손가락 말초 혈관이 급격히 수축하기 때문입니다. 심장 열을 내리고 간기를 소통시키는 시호청간탕 계열 한약과 자율신경 훈련이 주효합니다.
       </p>
     </div>
 </div>

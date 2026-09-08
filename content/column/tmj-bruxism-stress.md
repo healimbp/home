@@ -182,33 +182,32 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>이비인후과와 뇌 MRI 검사에서 이상이 없다는데 머리가 안개 낀 듯 멍하고(브레인포그) 어지러운 이유는 무엇인가요?</span>
+        <span>보톡스 주사를 맞지 않고도 이갈이와 턱 근육 뭉침을 한방으로 풀 수 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        이비인후과 검사로 잡히지 않는 비회전성 만성 어지럼증의 대다수는 일자목, 거북목으로 인해 상부 경추(C1-C2)가 비틀려 추골동맥과 뇌간 자율신경절을 압박하는 "경추성 어지럼증"입니다. 뇌로 가는 혈류가 20~30% 감소하여 멍함과 어지럼이 지속됩니다.
+        근육을 일시 마비시키는 보톡스와 달리, 한방 치료는 턱 주위 경혈(협거혈, 하관혈)의 심부 근막을 이완시키고 뇌의 수면 과각성을 낮추어 수면 중 무의식적인 악물기 충동 자체를 소실시킵니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>경추성 어지럼증을 치료하려면 목뼈 교정(추나요법)과 한약이 둘 다 필요한가요?</span>
+        <span>자고 일어났을 때 턱관절이 뻐근하고 치아가 시리며 머리가 띠로 조이듯 아픈 이갈이·이악물기의 원인은 무엇인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 상부 경추의 구조적 비틀림을 바로잡는 정밀 추나요법으로 신경 압박을 풀고, 뇌 혈류 순환을 촉진하고 미세 염증을 제거하는 거담청뇌(祛痰淸腦) 한약을 병행해야 재발 없이 맑은 머리를 되찾을 수 있습니다.
+        수면 중 뇌가 스트레스를 분출하는 과정에서 저작근(교근, 측두근)에 무의식적으로 70~100kg에 달하는 엄청난 압력을 가하기 때문입니다. 수면 중 뇌파 과각성을 낮추는 안신 한약과 턱 근육 긴장을 푸는 침구 치료가 필요합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>어지럼증이 심할 때 어지럼증 약(보나링에이, 신경진정제)을 계속 먹어도 괜찮나요?</span>
+        <span>수면 중 이갈이가 심하면 얼굴형이 사각턱으로 변하거나 턱관절염이 생길 수도 있나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        급성기 며칠간은 도움될 수 있으나, 전정 억제제를 장기 복용하면 뇌의 전정 보상 작용(스스로 균형을 잡는 훈련)을 방해하여 어지럼증이 만성화됩니다. 원인 치료를 통해 약물을 서서히 중단해야 합니다.
+        네, 교근(씹는 근육)이 비정상적으로 비대해져 사각턱으로 변형될 수 있으며, 턱관절 연골이 마모되어 만성 관절염과 안면 비대칭으로 진행될 수 있으므로 조기 치료가 중요합니다.
       </p>
     </div>
 </div>

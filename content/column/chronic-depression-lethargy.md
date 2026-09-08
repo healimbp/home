@@ -182,33 +182,32 @@ image: "/blog-images/depression-somatic/01_naver_main_thumbnail.png"
 <div class="section-label">진료실 자주 묻는 질문 06</div>
 
 ## 환자분들이 진료실에서 가장 많이 묻는 현실적 질문 (FAQ)
-
 <div class="space-y-4 my-6 not-prose">
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q1</span>
-        <span>주말에 하루 종일 쉬고 영양제를 챙겨 먹어도 피로가 전혀 안 풀리는데 자율신경실조증인가요?</span>
+        <span>마음이 끝없이 가라앉고 세상 모든 일에 흥미와 의욕이 사라진 만성 우울증을 장-뇌 축(Gut-Brain Axis)으로 치료한다는 게 무슨 뜻인가요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        네, 한스 셀리에(Hans Selye)의 스트레스 3단계 중 부신 호르몬(코르티솔)과 자율신경계가 완전히 방전된 "소진기(Exhaustion Stage)" 상태입니다. 단순 휴식으로는 충전되지 않으므로, 심장과 신장의 원기를 보강하는 보중익기탕·공진단 요법과 교감-부교감 밸런스 정상화 치료가 필요합니다.
+        행복 호르몬이라 불리는 세로토닌의 90% 이상은 뇌가 아니라 "장(腸)"의 미생물 생태계에서 합성되어 미주신경을 통해 뇌로 전달됩니다. 만성 우울증 환자는 장내 유익균 파괴와 복부 담적(痰積)이 동반되므로, 장내 환경을 정화하고 뇌 신경망을 깨우는 해울건비 한방 치료가 근본 치유를 이끌어냅니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q2</span>
-        <span>자율신경실조증으로 인한 만성 피로는 병원 피검사에서 왜 이상이 안 나오나요?</span>
+        <span>항우울제를 복용 중인데 감정이 무뎌지고 멍한 부작용이 있어 한방 치료와 병행하고 싶습니다.</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        피검사는 간염, 신부전, 빈혈 등 기질적 장기 손상만 감지할 뿐, 1초에 수십 번씩 전신 장기를 조율하는 자율신경계의 기능적 조절 장애(HRV 심박변이도 저하)는 잡아내지 못하기 때문입니다.
+        항우울제가 세로토닌 농도를 인위적으로 유지하는 동안, 한약은 뇌 신경세포의 자연 자생력을 기르고 간 해독을 도와 양약 부작용을 경감시킵니다. 병행 치료로 신체 활력을 되찾은 후 안전한 감량이 가능합니다.
       </p>
     </div>
     <div class="p-5 bg-white rounded-2xl border border-[#DDE6E1] shadow-sm space-y-2">
       <div class="font-extrabold text-sm sm:text-base text-[#202947] flex items-start gap-2.5">
         <span class="bg-[#2F5D50] text-white text-xs px-2 py-0.5 rounded-md font-bold shrink-0 mt-0.5">Q3</span>
-        <span>만성 피로와 함께 소화불량, 어지럼증, 가슴 답답함이 같이 오는 이유는 무엇인가요?</span>
+        <span>우울할 때 햇빛을 쬐며 걷는 것이 실제로 뇌에 어떤 변화를 주나요?</span>
       </div>
       <p class="text-xs sm:text-sm text-[#4E6159] leading-relaxed pl-8 m-0">
-        자율신경계는 심장, 위장, 혈관, 땀샘을 동시에 관장하므로, 자율신경 조절 밸런스가 무너지면 전신 다발성 신체화 증상이 동시다발적으로 나타나는 것이 특징입니다.
+        망막을 통해 들어온 자연광은 뇌 세로토닌 합성을 즉각 촉진하며, 규칙적인 보행 운동은 뇌 유래 신경영양인자(BDNF)를 분비시켜 위축된 뇌 해마 부위를 재생시킵니다.
       </p>
     </div>
 </div>
