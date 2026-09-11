@@ -83,7 +83,32 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #2 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 산만하고 충동적인 아이 집중력 향상, 전두엽 억제 회로 강화 한방 치료 -->
+              <!-- [칼럼 #2 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [부천 상동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
+              <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">우울증 · 화병 & 번아웃</span>
+                    <span class="text-xs text-[#68736E]">2026-09-11 • 권형근 원장 칼럼</span>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
+                    <a href="/column/post-2026-09-11-stress-5593/" class="hover:underline">
+                      출산 후 무기력증과 산후우울증, [부천 상동 우울증] 기혈 보강과 신경 안정 통합 치료
+                    </a>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                    환자분들의 생생한 고통과 호소에 공감하며, 부천 상동 생활권 환자를 위한 우울증 · 화병 & 번아웃의 신경학적 원인과 한의학적 관리법을 정리했습니다.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
+                  <span class="text-[11px] text-[#68736E]">• 부천 상동한의원 • 인천한의원</span>
+                  <a href="/column/post-2026-09-11-stress-5593/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
+                    <span>칼럼 전문 읽기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- [칼럼 #3 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 산만하고 충동적인 아이 집중력 향상, 전두엽 억제 회로 강화 한방 치료 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -108,7 +133,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #3 | 불면증 · 수면장애] 악몽과 가위눌림, [인천 간석동 불면증] 심비양허를 보강하여 깊은 델타파 숙면 유도 -->
+              <!-- [칼럼 #4 | 불면증 · 수면장애] 악몽과 가위눌림, [인천 간석동 불면증] 심비양허를 보강하여 깊은 델타파 숙면 유도 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -133,7 +158,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #4 | 공황 · 불안 & 강박증] [인천 계양구한의원 공황] “또 발작 올까 두려운” 예기불안과 뇌 변연계 안정 한방 치료 -->
+              <!-- [칼럼 #5 | 공황 · 불안 & 강박증] [인천 계양구한의원 공황] “또 발작 올까 두려운” 예기불안과 뇌 변연계 안정 한방 치료 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -158,7 +183,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #5 | 신체화 & 담적·두통·턱관절] 턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료 -->
+              <!-- [칼럼 #6 | 신체화 & 담적·두통·턱관절] 턱에서 딱딱 소리 나고 관자놀이가 지끈거리는 턱관절 장애와 편두통 치료 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -183,7 +208,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #6 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [인천 간석동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
+              <!-- [칼럼 #7 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [인천 간석동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -208,7 +233,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #7 | 자율신경 & 실신·어지럼증·이명] 쉬어도 쉬어도 풀리지 않는 만성 피로, 자율신경실조증 3단계 소진 자가진단 -->
+              <!-- [칼럼 #8 | 자율신경 & 실신·어지럼증·이명] 쉬어도 쉬어도 풀리지 않는 만성 피로, 자율신경실조증 3단계 소진 자가진단 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -233,7 +258,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #8 | 불면증 · 수면장애] 악몽과 가위눌림, [부천 상동 불면증] 심비양허를 보강하여 깊은 델타파 숙면 유도 -->
+              <!-- [칼럼 #9 | 불면증 · 수면장애] 악몽과 가위눌림, [부천 상동 불면증] 심비양허를 보강하여 깊은 델타파 숙면 유도 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -258,7 +283,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #9 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡 응급 대처법 -->
+              <!-- [칼럼 #10 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 갑자기 숨이 턱 막히고 죽을 것 같은 공포, 공황발작과 과호흡 응급 대처법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -283,7 +308,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #10 | 소아청소년 & 성인 ADHD·틱장애] [인천 계양구한의원 소아청소년] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 발달과 NeuronFlex 두뇌훈련 -->
+              <!-- [칼럼 #11 | 소아청소년 & 성인 ADHD·틱장애] [인천 계양구한의원 소아청소년] 아이 눈 깜빡임과 헛기침 틱, 뇌 기저핵 발달과 NeuronFlex 두뇌훈련 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -308,7 +333,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #11 | 자율신경 & 실신·어지럼증·이명] 앉았다 일어설 때 눈앞이 하얘지는 기립성 어지럼증과 자율신경 밸런스 회복 -->
+              <!-- [칼럼 #12 | 자율신경 & 실신·어지럼증·이명] 앉았다 일어설 때 눈앞이 하얘지는 기립성 어지럼증과 자율신경 밸런스 회복 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -333,7 +358,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #12 | 신체화 & 담적·두통·턱관절] 시험이나 미팅 직전 배가 살살 아프고 가스 차는 과민성대장증후군 뇌-장 치료 -->
+              <!-- [칼럼 #13 | 신체화 & 담적·두통·턱관절] 시험이나 미팅 직전 배가 살살 아프고 가스 차는 과민성대장증후군 뇌-장 치료 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -358,7 +383,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #13 | 우울증 · 화병 & 번아웃] 갱년기 화병 및 자율신경 불균형, [부천 상동 우울증] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #14 | 우울증 · 화병 & 번아웃] 갱년기 화병 및 자율신경 불균형, [부천 상동 우울증] 한의학적 원인과 관리법 -->
               <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -383,7 +408,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #14 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 스마트폰 과의존과 주의력 저하를 겪는 아이를 위한 감각통합 두뇌 솔루션 -->
+              <!-- [칼럼 #15 | 소아청소년 & 성인 ADHD·틱장애] [인천 부평한의원 소아청소년] 스마트폰 과의존과 주의력 저하를 겪는 아이를 위한 감각통합 두뇌 솔루션 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -408,7 +433,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #15 | 불면증 · 수면장애] 생체시계 정상화 및 수면 리듬, [인천 간석동 불면증] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #16 | 불면증 · 수면장애] 생체시계 정상화 및 수면 리듬, [인천 간석동 불면증] 한의학적 원인과 관리법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -433,7 +458,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #16 | 공황 · 불안 & 강박증] [인천 계양구한의원 공황] 사소한 일에도 최악을 상상하는 범불안장애와 자율신경 과흥분 조절 -->
+              <!-- [칼럼 #17 | 공황 · 불안 & 강박증] [인천 계양구한의원 공황] 사소한 일에도 최악을 상상하는 범불안장애와 자율신경 과흥분 조절 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -458,7 +483,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #17 | 신체화 & 담적·두통·턱관절] 목덜미가 뻣뻣하고 눈이 빠질 듯 아픈 후두신경통·경추성 두통 한방 치료 -->
+              <!-- [칼럼 #18 | 신체화 & 담적·두통·턱관절] 목덜미가 뻣뻣하고 눈이 빠질 듯 아픈 후두신경통·경추성 두통 한방 치료 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -483,7 +508,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #18 | 자율신경 & 실신·어지럼증·이명] 조용한 밤마다 더 커지는 귓속 삐 소리, 신경성 이명과 뇌명증 한방 치료 원리 -->
+              <!-- [칼럼 #19 | 자율신경 & 실신·어지럼증·이명] 조용한 밤마다 더 커지는 귓속 삐 소리, 신경성 이명과 뇌명증 한방 치료 원리 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -508,7 +533,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #19 | 불면증 · 수면장애] 수면의 질 개선 및 델타파 유도, [부천 상동 불면증] 한의학적 원인과 관리법 -->
+              <!-- [칼럼 #20 | 불면증 · 수면장애] 수면의 질 개선 및 델타파 유도, [부천 상동 불면증] 한의학적 원인과 관리법 -->
               <article class="column-item insomnia heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="insomnia">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -533,7 +558,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #20 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법 -->
+              <!-- [칼럼 #21 | 공황 · 불안 & 강박증] [인천 부평한의원 공황] 문 잠갔을까 끊임없이 의심되는 확인 강박사고의 뇌 회로 안정법 -->
               <article class="column-item panic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="panic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -558,7 +583,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #21 | 소아청소년 & 성인 ADHD·틱장애] [인천 계양구한의원 소아청소년] 만성 미루기와 브레인포그로 고통받는 성인 ADHD의 전두엽 도파민 회복 -->
+              <!-- [칼럼 #22 | 소아청소년 & 성인 ADHD·틱장애] [인천 계양구한의원 소아청소년] 만성 미루기와 브레인포그로 고통받는 성인 ADHD의 전두엽 도파민 회복 -->
               <article class="column-item tic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="tic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -583,7 +608,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #22 | 자율신경 & 실신·어지럼증·이명] 이비인후과·뇌 MRI 정상인데 머리가 멍하고 빙빙 도는 경추성 어지럼증 해법 -->
+              <!-- [칼럼 #23 | 자율신경 & 실신·어지럼증·이명] 이비인후과·뇌 MRI 정상인데 머리가 멍하고 빙빙 도는 경추성 어지럼증 해법 -->
               <article class="column-item autonomic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="autonomic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -608,7 +633,7 @@ sections:
                 </div>
               </article>
 
-              <!-- [칼럼 #23 | 신체화 & 담적·두통·턱관절] 아침마다 턱이 뻐근하고 머리가 조여오는 이유? 수면 중 이갈이·이악물기 교정 -->
+              <!-- [칼럼 #24 | 신체화 & 담적·두통·턱관절] 아침마다 턱이 뻐근하고 머리가 조여오는 이유? 수면 중 이갈이·이악물기 교정 -->
               <article class="column-item somatic heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="somatic">
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
@@ -627,31 +652,6 @@ sections:
                 <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
                   <span class="text-[11px] text-[#68736E]">• 신체화 • 신체화치료</span>
                   <a href="/column/post-2026-09-05-somatic-3481/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
-                    <span>칼럼 전문 읽기</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                  </a>
-                </div>
-              </article>
-
-              <!-- [칼럼 #24 | 우울증 · 화병 & 번아웃] 출산 후 무기력증과 산후우울증, [부천 상동 우울증] 기혈 보강과 신경 안정 통합 치료 -->
-              <article class="column-item stress heal-card space-y-4 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:shadow-md transition" data-category="stress">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold">우울증 · 화병 & 번아웃</span>
-                    <span class="text-xs text-[#68736E]">2026-09-05 • 권형근 원장 칼럼</span>
-                  </div>
-                  <h3 class="text-base sm:text-lg font-extrabold text-[#26332E] leading-snug cursor-pointer hover:text-[#2F5D50] transition">
-                    <a href="/column/post-2026-09-05-stress-9276/" class="hover:underline">
-                      출산 후 무기력증과 산후우울증, [부천 상동 우울증] 기혈 보강과 신경 안정 통합 치료
-                    </a>
-                  </h3>
-                  <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
-                    환자분들의 생생한 고통과 호소에 공감하며, 부천 상동 생활권 환자를 위한 우울증 · 화병 & 번아웃의 신경학적 원인과 한의학적 관리법을 정리했습니다.
-                  </p>
-                </div>
-                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between">
-                  <span class="text-[11px] text-[#68736E]">• 부천 상동한의원 • 인천한의원</span>
-                  <a href="/column/post-2026-09-05-stress-9276/" class="inline-flex items-center gap-1 text-xs font-bold text-[#2F5D50] bg-[#EAF3EF] px-3 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0 ml-2">
                     <span>칼럼 전문 읽기</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>
