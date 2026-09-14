@@ -34,7 +34,7 @@ sections:
             <!-- 탭 버튼 목록 -->
             <div class="flex flex-wrap gap-2 pb-2" id="qa-category-tabs">
               <button onclick="filterQA('all', this)" class="qa-tab-btn active-tab px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                전체보기 <span class="text-[11px] opacity-80" id="qa-tab-count-all">(19)</span>
+                전체보기 <span class="text-[11px] opacity-80" id="qa-tab-count-all">(20)</span>
               </button>
               <button onclick="filterQA('tic', this)" class="qa-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
                 소아청소년 & 성인 ADHD·틱 <span class="text-[11px] opacity-80" id="qa-tab-count-tic">(6)</span>
@@ -49,7 +49,7 @@ sections:
                 자율신경 & 실신·어지럼증·이명 <span class="text-[11px] opacity-80" id="qa-tab-count-autonomic">(4)</span>
               </button>
               <button onclick="filterQA('stress', this)" class="qa-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
-                우울증 · 화병 & 번아웃 <span class="text-[11px] opacity-80" id="qa-tab-count-stress">(3)</span>
+                우울증 · 화병 & 번아웃 <span class="text-[11px] opacity-80" id="qa-tab-count-stress">(4)</span>
               </button>
               <button onclick="filterQA('somatic', this)" class="qa-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition">
                 신체화 & 담적·두통·턱관절 <span class="text-[11px] opacity-80" id="qa-tab-count-somatic">(2)</span>
@@ -58,6 +58,48 @@ sections:
 
             <!-- Q&A 카드 그리드 -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[400px]" id="qa-grid">
+              <!-- [Q&A | 우울증 · 화병 & 번아웃] 가슴이 터질 듯 답답하고 목에 뭔가 걸려 안 넘어가는 화병과 매핵기 (경기 부천시) -->
+              <article class="qa-item stress heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="stress">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="heal-tag bg-[#EAF3EF] text-[#2F5D50] font-bold text-xs">우울증 · 화병 & 번아웃</span>
+                    <span class="text-xs text-[#68736E]">경기 부천시 • 2026-09-14</span>
+                  </div>
+
+                  <!-- Q. 질문 미리보기 -->
+                  <div class="p-3.5 bg-[#FAF8F3] rounded-xl border border-[#EADFCB] space-y-1">
+                    <div class="flex items-center gap-2 font-bold text-xs text-[#C87941]">
+                      <span class="w-4 h-4 rounded-full bg-[#C87941] text-white text-[10px] flex items-center justify-center font-extrabold">Q</span>
+                      <span class="truncate">질문자: 경기 부천시 거주 OO님 (50대 주부)</span>
+                    </div>
+                    <h3 class="text-base font-extrabold text-[#26332E] leading-snug hover:text-[#2F5D50] transition">
+                      <a href="/qa/qa-2026-09-14-stress-5071/" class="hover:underline">
+                        가슴이 터질 듯 답답하고 목에 뭔가 걸려 안 넘어가는 화병과 매핵기 (경기 부천시)
+                      </a>
+                    </h3>
+                  </div>
+
+                  <!-- A. 답변 요약 -->
+                  <div class="space-y-1.5 pt-1">
+                    <div class="flex items-center gap-1.5 font-bold text-xs text-[#2F5D50]">
+                      <span class="w-4 h-4 rounded-full bg-[#2F5D50] text-white text-[10px] flex items-center justify-center font-extrabold">A</span>
+                      <span>권형근 대표원장 답변 요약</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#53615B] leading-relaxed line-clamp-3">
+                      목구멍에 무언가 걸려 있는 듯한 이물감과 가슴 답답함, 그리고 불쑥 치밀어 오르는 열감으로 일상생활에서 큰 불편을 겪고 계시는군요. 병원 검사에서는 이상이 없다고 하지만 환자분께서 겪으시는 신체적 답답함은 오랜 기간 누적된 스트레스와 정서적 울화가 몸으로 표출된 전형적인 신체화 반응입니다.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-[#F2F7F4] flex items-center justify-between text-xs">
+                  <span class="text-[#68736E] truncate max-w-[200px] sm:max-w-none">• 화병 • 매핵기 • 목이물감</span>
+                  <a href="/qa/qa-2026-09-14-stress-5071/" class="inline-flex items-center gap-1 font-bold text-[#2F5D50] bg-[#EAF3EF] px-3.5 py-1.5 rounded-lg hover:bg-[#2F5D50] hover:text-white transition shrink-0">
+                    <span>답변 전체보기</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </article>
+
               <!-- [Q&A | 자율신경 & 실신·어지럼증·이명] 귀·뇌 검사는 다 정상인데 머리가 붕 뜨고 어지러운 이유는 무엇인가요? (인천 부평구) -->
               <article class="qa-item autonomic heal-card p-6 bg-white flex flex-col justify-between border border-[#DDE6E1] hover:border-[#2F5D50] hover:shadow-lg transition space-y-4 rounded-2xl" data-category="autonomic">
                 <div class="space-y-3">
@@ -860,7 +902,7 @@ sections:
             <!-- 페이지네이션 컨트롤 바 -->
             <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#DDE6E1] pt-6 not-prose" id="qa-pagination-wrapper">
               <div class="text-xs sm:text-sm text-[#68736E] font-medium" id="qa-pagination-info">
-                총 <strong class="text-[#2F5D50] font-bold" id="qa-total-count">19</strong>개 상담사례 중 <span id="qa-page-range" class="font-semibold text-[#26332E]">1 - 8</span>개 표시
+                총 <strong class="text-[#2F5D50] font-bold" id="qa-total-count">20</strong>개 상담사례 중 <span id="qa-page-range" class="font-semibold text-[#26332E]">1 - 8</span>개 표시
               </div>
               <div class="flex items-center gap-1.5 flex-wrap justify-center" id="qa-pagination-controls">
                 <!-- 동적 페이지 번호 버튼 -->
