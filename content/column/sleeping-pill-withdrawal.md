@@ -3,9 +3,9 @@ title: "[인천 구월동 수면제단약] 수면제(스틸녹스) 없이는 잠
 summary: "인천 구월동, 간석동, 부평, 송도 지역에서 졸피뎀·신경안정제 장기 복용으로 인한 내성과 반동성 불면을 극복하고 안전하게 감량(테이퍼링)하는 한방 수면 단약 프로토콜"
 date: "2026-08-14"
 type: column
-category: "불면증 · 수면장애"
+category: "불면증 & 수면장애"
 tags: ["구월동수면제단약","인천스틸녹스부작용","부평졸피뎀테이퍼링","수면제내성","수면유도제끊기","자연수면회복","인천수면한의원"]
-image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
+image: "/blog-images/incheon-insomnia/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

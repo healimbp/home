@@ -1,10 +1,10 @@
 ---
-title: "앉았다 일어설 때 눈앞이 하얘지는 기립성 어지럼증과 자율신경 밸런스 회복"
+title: "앉았다 일어설 때 눈앞이 하얘지는 기립성 어지럼증과 자율신경 밸런스 회복 (부천 옥길동 치료 가이드)"
 summary: "자율신경 & 실신·어지럼증·이명 증상으로 고통받는 환자분들과 보호자분들을 위한 권형근 대표원장의 신경학적 원인 분석 및 근본 한방 치료 가이드입니다."
 date: "2026-09-08"
 type: column
 category: "자율신경 & 실신·어지럼증·이명"
-image: "/blog-images/bupyeong-autonomic/01_naver_main_thumbnail.jpg"
+image: "/blog-images/bucheon-dizziness/01_naver_main_thumbnail.jpg"
 tags: ["자율신경","자율신경치료","한방신경정신과","자율신경","맞춤한약"]
 ---
 

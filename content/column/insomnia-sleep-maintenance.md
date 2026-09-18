@@ -3,9 +3,9 @@ title: "[인천 부평 불면증] 새벽 3~4시만 되면 눈이 번쩍 떠져�
 summary: "인천 부평, 부천, 구월동 지역에서 새벽 중도 각성으로 재입면에 실패하는 수면유지장애 환자를 위한 간열(肝熱)·심화(心火) 해소 및 뇌파 델타파 유도 한방 수면 치료"
 date: "2026-08-18"
 type: column
-category: "불면증 · 수면장애"
+category: "불면증 & 수면장애"
 tags: ["부평불면증","인천수면유지장애","부천중도각성","새벽에깨는이유","간허열","귀비탕","산조인탕","인천수면클리닉"]
-image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
+image: "/blog-images/bupyeong-insomnia/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">

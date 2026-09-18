@@ -3,7 +3,7 @@ title: "[부천 중동 불면증] 누우면 잡생각이 꼬리를 물고 2시�
 summary: "부천 중동, 신중동, 상동, 부평 지역에서 잠들기 전 뇌의 디폴트모드네트워크(DMN) 과열로 잠들지 못하는 입면장애 환자를 위한 뇌 상열감 해소 및 청뇌안신 한방 처방"
 date: "2026-08-20"
 type: column
-category: "불면증 · 수면장애"
+category: "불면증 & 수면장애"
 tags: ["부천입면장애","중동불면증한의원","인천뇌과각성","잠안올때","DMN과열","수면뇌파안정","부평수면한의원"]
 image: "/blog-images/bucheon-insomnia/01_main_summary_thumbnail.png"
 ---

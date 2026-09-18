@@ -212,7 +212,7 @@ function parseSectionBody(text) {
   if (!text) return '';
   let html = '';
 
-  // 볼드체 치환
+  // 볼드체 치환 (마크다운 **text**)
   text = text.replace(/\*\*(.*?)\*\*/g, '<strong style="color: #1E4638; font-weight: 700;">$1</strong>');
 
   // 문단 분할
@@ -222,8 +222,43 @@ function parseSectionBody(text) {
     p = p.trim();
     if (!p) continue;
 
-    // 번호 목록 (1. 2. 3.)
-    if (/^\d+\.\s+/.test(p)) {
+    // 1. 이미 완성된 HTML 블록 (<table, <div, <blockquote 등)
+    if (p.startsWith('<table') || p.startsWith('<div') || p.startsWith('<blockquote') || p.startsWith('<ul') || p.startsWith('<ol')) {
+      html += `  ${p}\n`;
+    }
+    // 2. 마크다운 테이블 (| ... |)
+    else if (p.startsWith('|') && p.includes('\n|')) {
+      const rows = p.split(/\r?\n/).map(r => r.trim()).filter(Boolean);
+      let tableHtml = `  <div style="margin: 22px 0; overflow-x: auto;">\n    <table style="width: 100%; border-collapse: collapse; border: 1px solid #E2EAE5; border-radius: 10px; overflow: hidden; font-size: 14.5px; line-height: 1.6; text-align: left; background-color: #ffffff;">\n`;
+      
+      let isHeader = true;
+      for (const row of rows) {
+        if (/^\|[\s\-:]+\|$/.test(row.replace(/\s+/g, ''))) {
+          // 구분선 건너뜀
+          isHeader = false;
+          continue;
+        }
+        const cells = row.split('|').slice(1, -1).map(c => c.trim());
+        if (isHeader) {
+          tableHtml += `      <tr style="background-color: #F2F7F4; color: #1E4638; font-weight: 800; border-bottom: 2px solid #DDE6E1;">\n`;
+          cells.forEach(c => {
+            tableHtml += `        <th style="padding: 12px 14px; border: 1px solid #E2EAE5;">${c}</th>\n`;
+          });
+          tableHtml += `      </tr>\n`;
+        } else {
+          tableHtml += `      <tr style="border-bottom: 1px solid #F0F4F2;">\n`;
+          cells.forEach((c, idx) => {
+            const isFirst = idx === 0;
+            tableHtml += `        <td style="padding: 12px 14px; border: 1px solid #E2EAE5; ${isFirst ? 'font-weight: 700; color: #1E4638; background-color: #FAFCFA;' : 'color: #4B5563;'}">${c}</td>\n`;
+          });
+          tableHtml += `      </tr>\n`;
+        }
+      }
+      tableHtml += `    </table>\n  </div>\n`;
+      html += tableHtml;
+    }
+    // 3. 번호 목록 (1. 2. 3.)
+    else if (/^\d+\.\s+/.test(p)) {
       const items = p.split(/\r?\n/).filter(Boolean);
       html += `  <div style="margin: 18px 0;">\n`;
       items.forEach(li => {
@@ -234,7 +269,7 @@ function parseSectionBody(text) {
       });
       html += `  </div>\n`;
     }
-    // 불릿 목록 (* ...)
+    // 4. 불릿 목록 (* ...)
     else if (/^\*\s+/.test(p)) {
       const items = p.split(/\r?\n/).filter(Boolean);
       html += `  <ul style="list-style-type: none; padding-left: 0; margin: 18px 0; font-style: normal;">\n`;
@@ -247,7 +282,7 @@ function parseSectionBody(text) {
       });
       html += `  </ul>\n`;
     }
-    // 일반 문단
+    // 5. 일반 문단
     else {
       html += `  <p style="font-size: 16px; line-height: 1.85; color: #374151; margin-bottom: 18px; word-break: keep-all; font-style: normal;">${p.replace(/\r?\n/g, '<br>')}</p>\n`;
     }
@@ -255,3 +290,4 @@ function parseSectionBody(text) {
 
   return html;
 }
+

@@ -3,9 +3,9 @@ title: "[인천 송도 수면장애] 매일 밤 악몽과 가위눌림에 시달
 summary: "인천 송도, 연수구, 부평 지역에서 반복되는 악몽, 가위눌림, 수면 중 소리 지름의 렘수면 신경망 과민 원인과 심장·비장 기혈을 채우는 가미귀비탕 한방 안신 치료"
 date: "2026-08-16"
 type: column
-category: "불면증 · 수면장애"
+category: "불면증 & 수면장애"
 tags: ["송도악몽치료","인천가위눌림","부평수면장애한의원","렘수면장애","다몽증","심비양허","가미귀비탕","인천수면한의원"]
-image: "/blog-images/insomnia-sleep/01_naver_main_thumbnail.png"
+image: "/blog-images/incheon-insomnia/01_naver_main_thumbnail.jpg"
 ---
 
 <div class="voice-box">
