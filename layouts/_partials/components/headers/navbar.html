@@ -4,57 +4,59 @@
 {{- $phoneUrl := "tel:032-719-3472" | safeURL -}}
 
 <header id="site-header" class="header sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-[#E2EAE5] shadow-sm">
-  <nav class="container mx-auto px-4 sm:px-6 flex items-center justify-between h-20 sm:h-24">
+  <nav class="container mx-auto px-3 sm:px-5 lg:px-6 flex items-center justify-between h-20 sm:h-22">
     <!-- 1. 공식 해아림 로고 & 실시간 진료 상태 뱃지 (좌측) -->
-    <div class="flex items-center gap-3 sm:gap-4">
-      <a class="navbar-brand flex items-center gap-2.5 sm:gap-3.5 py-1.5 group select-none transition-transform hover:opacity-95" href="{{ site.Home.RelPermalink }}" title="해아림한의원 인천부평점" style="text-decoration: none !important;">
+    <div class="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
+      <a class="navbar-brand flex items-center gap-2 sm:gap-3 py-1 group select-none transition-transform hover:opacity-95" href="{{ site.Home.RelPermalink }}" title="해아림한의원 인천부평점" style="text-decoration: none !important;">
         <!-- 해아림 정통 엠블럼 심볼 -->
         <div class="flex flex-col items-center justify-center shrink-0">
-          <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#188A7D]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M30 10 C16 10 7 20 7 33 C7 45 17 53 30 53 C41 53 50 45 52 35 C53 29 49 23 42 20 C35 17 27 19 23 25 C19 31 22 38 28 41 C33 43 38 41 40 37" 
+          <svg class="w-9 h-9 sm:w-11 sm:h-11 text-[#188A7D]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 10C16 10 7 20 7 33 7 45 17 53 30 53c11 0 20-8 22-18 1-6-3-12-10-15s-15-1-19 5-1 13 5 16c5 2 10 0 12-4" 
                   stroke="#188A7D" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="30" cy="32" r="6" fill="#188A7D"/>
           </svg>
-          <span class="text-[9px] sm:text-[10px] font-black text-[#188A7D] tracking-widest leading-none mt-0.5" style="letter-spacing: 0.1em;">healim</span>
+          <span class="text-[9px] font-black text-[#188A7D] tracking-widest leading-none mt-0.5" style="letter-spacing: 0.08em;">healim</span>
         </div>
 
         <!-- 브랜드 텍스트 & 인천부평점 뱃지 -->
         <div class="flex flex-col justify-center text-left">
-          <div class="flex items-center gap-2">
-            <span class="text-[11px] sm:text-[12px] font-bold text-[#556B62] tracking-normal leading-tight">
-              마음까지 헤아리는
-            </span>
-          </div>
-          <div class="flex items-center gap-2 sm:gap-2.5 mt-0.5">
-            <span class="text-2xl sm:text-[28px] lg:text-[32px] font-black text-[#1F2937] tracking-tight leading-none" style="font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;">
+          <span class="text-[11px] sm:text-[12px] font-bold text-[#556B62] tracking-normal leading-tight">
+            마음까지 헤아리는
+          </span>
+          <div class="flex items-center gap-1.5 sm:gap-2 mt-0.5">
+            <span class="text-xl sm:text-2xl lg:text-[26px] font-black text-[#1F2937] tracking-tight leading-none" style="font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
               해아림한의원
             </span>
-            <!-- 인천부평점 둥근 알약 뱃지 -->
-            <span class="relative inline-flex items-center justify-center px-2 sm:px-2.5 py-0.5 rounded-full border-2 border-[#188A7D] bg-[#E8F5F3] text-[#188A7D] font-extrabold text-[11px] sm:text-[13px] leading-tight shadow-sm shrink-0">
+            <!-- 인천부평점 알약 뱃지 -->
+            <span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full border border-[#188A7D]/40 bg-[#E8F5F3] text-[#188A7D] font-extrabold text-[11px] sm:text-[12px] leading-tight shadow-sm shrink-0">
               인천부평점
-              <span class="absolute -top-1.5 -right-2 text-[#188A7D] text-[11px] leading-none font-black animate-pulse">✨</span>
             </span>
           </div>
         </div>
       </a>
 
-      <!-- 🟢 실시간 진료 상태 뱃지 (정원한의원 정통 미니멀 캡슐 스타일) -->
-      <a href="/location/" id="clinicStatus" class="clinic-status" aria-live="polite" title="실시간 진료시간 안내 (클릭 시 상세 시간표 확인)">
-        <span class="clinic-status__dot"></span>
-        <span class="clinic-status__text">진료시간 확인 중</span>
-        <span class="clinic-status__next"></span>
+      <!-- 🟢 실시간 진료 상태 뱃지 (healim-bp.com 일치 규격) -->
+      <a href="/location/" id="clinicStatus" class="clinic-status-badge inline-flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full border border-[#C6DFD7] bg-[#F4F9F7] text-[#2F5D50] hover:border-[#188A7D] hover:bg-[#EAF5F3] hover:shadow-sm transition-all text-[11px] sm:text-xs select-none group shrink-0" title="상세 진료시간 및 오시는 길 안내" aria-live="polite" style="text-decoration: none !important;">
+        <span class="clinic-status-dot-wrap relative flex h-2 sm:h-2.5 w-2 sm:w-2.5 items-center justify-center shrink-0">
+          <span class="clinic-status-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
+          <span class="clinic-status-dot relative inline-flex rounded-full h-1.5 sm:h-2 w-1.5 sm:w-2 bg-emerald-500"></span>
+        </span>
+        <span class="clinic-status-main font-black text-[#188A7D]">진료시간 확인 중</span>
+        <span class="clinic-status-divider opacity-40">·</span>
+        <span class="clinic-status-next font-bold text-[#2F5D50]"></span>
+        <i class="fa-solid fa-chevron-right text-[8px] opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition hidden xl:inline-block"></i>
       </a>
     </div>
 
     <!-- 2. 데스크톱 내비게이션 메뉴 (중앙) -->
-    <ul id="nav-menu" class="navbar-nav hidden lg:flex items-center space-x-1 xl:space-x-4">
+    <ul id="nav-menu" class="navbar-nav hidden lg:flex items-center gap-0.5 xl:gap-1.5 mx-2">
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
         {{ $menuURL := .URL | absLangURL }}
         {{ $pageURL:= $currentPage.Permalink | absLangURL }}
         {{ $active := eq $menuURL $pageURL }}
         <li class="nav-item">
-          <a class="nav-link text-sm font-bold text-[#374151] hover:text-[#2F5D50] px-3 py-2 rounded-lg transition-colors {{ if $active }}text-[#2F5D50] font-extrabold bg-[#EAF3EF]{{ end }}"
+          <a class="nav-link text-[13px] xl:text-[14px] font-bold text-[#4B5563] hover:text-[#188A7D] px-2 xl:px-3 py-1.5 rounded-lg whitespace-nowrap transition-all {{ if $active }}text-[#188A7D] font-extrabold bg-[#EAF3EF]{{ end }}"
              href="{{ .URL | relLangURL }}">
             {{ .Name }}
           </a>
@@ -63,7 +65,7 @@
     </ul>
 
     <!-- 3. 우측 액션 버튼 영역 (모바일 4대 아이콘 & 데스크톱 CTA) -->
-    <div class="flex items-center gap-1.5 sm:gap-3">
+    <div class="flex items-center gap-1.5 sm:gap-2">
       <!-- 모바일 전용 3대 퀵버튼: 전화, 카톡, 네이버예약 -->
       <div class="flex items-center gap-1.5 sm:gap-2 lg:hidden">
         <!-- 📞 전화상담 -->
@@ -101,44 +103,63 @@
       </button>
 
       <!-- 데스크톱 전용 네이버 예약 & 빠른상담 CTA -->
-      <div class="hidden lg:flex items-center gap-2">
+      <div class="hidden lg:flex items-center gap-1.5">
+        <a href="https://healim-bp.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl border border-[#ADC4BA] bg-[#F2F7F4] text-[#1F3F36] text-[11px] font-extrabold hover:bg-[#EAF3EF] transition whitespace-nowrap shadow-2xs" title="해아림한의원 부평점 통합진료센터 (척추·통증·교통사고·호흡기) 바로가기">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#188A7D]"></span>
+          <span>[통합진료] 척추·통증·호흡기</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-[#556B62]"></i>
+        </a>
         <a href="{{ $bookingUrl }}" target="_blank" rel="noopener noreferrer" 
-           class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#03C75A] text-white text-xs font-extrabold hover:bg-[#02b350] shadow-sm transition" style="color: #ffffff !important;">
-          <span>N</span>
+           class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#03C75A] text-white text-xs font-extrabold hover:bg-[#02b350] shadow-sm transition whitespace-nowrap" style="color: #ffffff !important;">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.5 3h-15C3.1 3 2 4.1 2 5.5v13C2 19.9 3.1 21 4.5 21h15c1.4.0 2.5-1.1 2.5-2.5v-13C22 4.1 20.9 3 19.5 3zm-9.3 12.9H7.4V8.1h2.8v7.8zm6.6.0H14L10.7 11v4.9H8.2V8.1H11l3.3 4.9V8.1h2.5v7.8z"/></svg>
           <span>네이버 예약</span>
         </a>
-        <a href="/consultation/" 
-           class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#2F5D50] text-white text-xs font-extrabold hover:bg-[#1F3F36] shadow-sm transition" style="color: #ffffff !important;">
-          <i class="fa-solid fa-calendar-check"></i>
-          <span>빠른 상담 예약</span>
+        <a href="{{ $phoneUrl }}" 
+           class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#2F5D50] text-white text-xs font-extrabold hover:bg-[#1F3F36] shadow-sm transition whitespace-nowrap" style="color: #ffffff !important;">
+          <i class="fa-solid fa-phone text-[10px]"></i>
+          <span>전화 상담</span>
         </a>
       </div>
     </div>
   </nav>
 
   <!-- 모바일 펼침 메뉴 드롭다운 (style="display: none;" 초기값 & 스크롤 지원) -->
-  <div id="mobile-menu-drawer" class="lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-2 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto" style="display: none; -webkit-overflow-scrolling: touch;">
+  <div id="mobile-menu-drawer" class="lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-1 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto" style="display: none; -webkit-overflow-scrolling: touch;">
     <!-- 모바일 드로어 내부 실시간 진료 상태 바 -->
-    <div class="p-3 rounded-xl bg-[#F8FAF9] border border-[#E2EAE5] flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <a href="/location/" id="mClinicStatus" class="clinic-status is-drawer" onclick="closeHealimMenu()" title="실시간 진료시간 안내 (클릭 시 상세 시간표 확인)">
-          <span class="clinic-status__dot"></span>
-          <span class="clinic-status__text">진료시간 확인 중</span>
-          <span class="clinic-status__next"></span>
-        </a>
+    <a href="/location/" id="clinicStatusMobile" class="flex items-center justify-between p-3 mb-2.5 rounded-2xl bg-[#F4F9F7] border border-[#C6DFD7] text-[#1F3F36] transition hover:bg-[#EAF5F3] shadow-xs" style="text-decoration: none !important;">
+      <div class="flex items-center gap-2.5">
+        <span class="clinic-status-dot-wrap relative flex h-3 w-3 items-center justify-center shrink-0">
+          <span class="clinic-status-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
+          <span class="clinic-status-dot relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <div class="text-left">
+          <div class="flex items-center gap-1.5">
+            <span class="clinic-status-main text-xs font-black text-[#188A7D]">진료시간 확인 중</span>
+            <span class="clinic-status-next text-xs font-bold text-[#2F5D50]"></span>
+          </div>
+          <div class="text-[10px] text-[#556B62] mt-0.5 font-medium">월·수·금 야간진료 20시까지 · 부평역 7번출구</div>
+        </div>
       </div>
-      <a href="/location/" class="text-[11px] font-bold text-[#2F5D50] hover:underline flex items-center gap-1" onclick="closeHealimMenu()">
-        <span>시간표 보기</span>
-        <i class="fa-solid fa-chevron-right text-[8px]"></i>
-      </a>
-    </div>
+      <span class="text-[11px] font-extrabold text-[#188A7D] bg-white px-2 py-1 rounded-lg border border-[#C6DFD7] shadow-2xs whitespace-nowrap">진료시간표 →</span>
+    </a>
+
+    <a href="https://healim-bp.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 mb-2 rounded-xl bg-[#F2F7F4] border border-[#ADC4BA] text-[#1F3F36] transition hover:bg-[#EAF3EF]" title="해아림한의원 부평점 통합진료센터 바로가기">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#188A7D]"></span>
+        <div class="text-left">
+          <div class="text-xs font-black text-[#1F3F36]">[통합진료] 척추·통증·호흡기 바로가기</div>
+          <div class="text-[10px] text-[#556B62]">목·허리디스크·추나·교통사고·보폐고</div>
+        </div>
+      </div>
+      <i class="fa-solid fa-arrow-right text-xs text-[#188A7D]"></i>
+    </a>
 
     {{ $currentPage := . }}
     {{ range site.Menus.main }}
       {{ $menuURL := .URL | absLangURL }}
       {{ $pageURL:= $currentPage.Permalink | absLangURL }}
       {{ $active := eq $menuURL $pageURL }}
-      <a class="flex items-center justify-between px-4 py-2.5 rounded-xl font-bold text-sm text-[#202947] hover:bg-[#EAF3EF] hover:text-[#2F5D50] transition {{ if $active }}bg-[#EAF3EF] text-[#2F5D50] font-extrabold{{ end }}"
+      <a class="flex items-center justify-between px-3.5 py-2 rounded-xl font-bold text-sm text-[#202947] hover:bg-[#EAF3EF] hover:text-[#188A7D] transition {{ if $active }}bg-[#EAF3EF] text-[#188A7D] font-extrabold{{ end }}"
          href="{{ .URL | relLangURL }}" onclick="closeHealimMenu()">
         <span>{{ .Name }}</span>
         <svg class="w-4 h-4 text-[#8EAB9F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,259 +171,350 @@
       <a href="{{ $bookingUrl }}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 text-center rounded-xl bg-[#03C75A] text-white text-xs font-extrabold shadow-sm active:opacity-90" style="color: #ffffff !important;">
         네이버 예약
       </a>
-      <a href="/consultation/" class="flex-1 py-2.5 text-center rounded-xl bg-[#2F5D50] text-white text-xs font-extrabold shadow-sm active:opacity-90" style="color: #ffffff !important;">
-        빠른 상담 예약
+      <a href="{{ $phoneUrl }}" class="flex-1 py-2.5 text-center rounded-xl bg-[#2F5D50] text-white text-xs font-extrabold shadow-sm active:opacity-90" style="color: #ffffff !important;">
+        전화 상담 032-719-3472
       </a>
     </div>
   </div>
 </header>
 
 <style>
-  /* 🕒 실시간 진료중/진료종료 상태 배지 (정원한의원 오리지널 정통 캡슐 스타일) */
-  .clinic-status {
+  /* 🕒 실시간 진료 상태 배지 (healim-bp.com 기준 완벽한 정렬 및 규격 일치) */
+  .clinic-status-badge {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(22, 32, 26, 0.14);
-    background: rgba(22, 32, 26, 0.04);
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    gap: 0.45rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
     line-height: 1;
-    white-space: nowrap;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
     text-decoration: none !important;
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     cursor: pointer;
+    white-space: nowrap;
     user-select: none;
-    flex-shrink: 0;
   }
-  .clinic-status:hover {
-    filter: brightness(0.96);
+  .clinic-status-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(24, 138, 125, 0.15);
   }
-  .clinic-status__dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    flex: 0 0 auto;
-    background: #8a938d;
-    transition: background 0.3s ease;
+
+  /* 🟢 진료중 (is-open) */
+  .clinic-status-badge.is-open {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #166534;
   }
-  .clinic-status__text {
-    font-size: 13px;
+  .clinic-status-badge.is-open .clinic-status-dot {
+    background-color: #10b981;
+  }
+  .clinic-status-badge.is-open .clinic-status-ping {
+    background-color: #34d399;
+    display: inline-flex;
+  }
+  .clinic-status-badge.is-open .clinic-status-main {
+    color: #059669;
     font-weight: 800;
-    color: #1F2937;
-    letter-spacing: 0.01em;
   }
-  .clinic-status__next {
-    font-size: 11.5px;
+  .clinic-status-badge.is-open .clinic-status-divider {
+    color: #86efac;
+  }
+  .clinic-status-badge.is-open .clinic-status-next {
+    color: #15803d;
     font-weight: 600;
-    color: #556B62;
-  }
-  .clinic-status__next::before {
-    content: '';
   }
 
-  /* 🟢 진료중 */
-  .clinic-status.is-open {
-    border-color: rgba(24, 138, 125, 0.35);
-    background: rgba(24, 138, 125, 0.10);
+  /* 🟡 점심시간 (is-lunch) */
+  .clinic-status-badge.is-lunch {
+    background-color: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
   }
-  .clinic-status.is-open .clinic-status__dot {
-    background: #188A7D;
-    box-shadow: 0 0 0 0 rgba(24, 138, 125, 0.55);
-    animation: clinicPulse 2s infinite;
+  .clinic-status-badge.is-lunch .clinic-status-dot {
+    background-color: #f59e0b;
   }
-  .clinic-status.is-open .clinic-status__text {
-    color: #11695F;
+  .clinic-status-badge.is-lunch .clinic-status-ping {
+    background-color: #fbbf24;
+    display: inline-flex;
   }
-
-  /* 🔴 진료종료 / 휴진 */
-  .clinic-status.is-closed {
-    border-color: rgba(180, 74, 60, 0.28);
-    background: rgba(180, 74, 60, 0.06);
+  .clinic-status-badge.is-lunch .clinic-status-main {
+    color: #d97706;
+    font-weight: 800;
   }
-  .clinic-status.is-closed .clinic-status__dot {
-    background: #B44A3C;
-    animation: none;
-    box-shadow: none;
+  .clinic-status-badge.is-lunch .clinic-status-divider {
+    color: #fcd34d;
   }
-  .clinic-status.is-closed .clinic-status__text {
-    color: #a03e30;
-  }
-  .clinic-status.is-closed .clinic-status__next {
-    color: #78716c;
+  .clinic-status-badge.is-lunch .clinic-status-next {
+    color: #b45309;
+    font-weight: 600;
   }
 
-  /* 🟡 점심시간 */
-  .clinic-status.is-lunch {
-    border-color: rgba(217, 119, 6, 0.3);
-    background: rgba(217, 119, 6, 0.08);
+  /* 🔵 준비중 (is-prep) */
+  .clinic-status-badge.is-prep {
+    background-color: #f0fdfa;
+    border: 1px solid #99f6e4;
+    color: #115e59;
   }
-  .clinic-status.is-lunch .clinic-status__dot {
-    background: #D97706;
-    animation: none;
-    box-shadow: none;
+  .clinic-status-badge.is-prep .clinic-status-dot {
+    background-color: #188a7d;
   }
-  .clinic-status.is-lunch .clinic-status__text {
-    color: #B45309;
+  .clinic-status-badge.is-prep .clinic-status-ping {
+    display: none;
   }
-  .clinic-status.is-lunch .clinic-status__next {
-    color: #92400E;
+  .clinic-status-badge.is-prep .clinic-status-main {
+    color: #0d9488;
+    font-weight: 800;
   }
-
-  @keyframes clinicPulse {
-    0%   { box-shadow: 0 0 0 0 rgba(24, 138, 125, 0.5); }
-    70%  { box-shadow: 0 0 0 7px rgba(24, 138, 125, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(24, 138, 125, 0); }
+  .clinic-status-badge.is-prep .clinic-status-divider {
+    color: #5eead4;
   }
-
-  /* 모바일/반응형 */
-  @media (max-width: 1023px) {
-    #clinicStatus {
-      margin-left: 2px;
-      padding: 4px 10px;
-      gap: 6px;
-    }
-    #clinicStatus .clinic-status__text {
-      font-size: 12px;
-    }
-    #clinicStatus .clinic-status__next {
-      font-size: 11px;
-    }
+  .clinic-status-badge.is-prep .clinic-status-next {
+    color: #134e4a;
+    font-weight: 600;
   }
 
-  @media (max-width: 639px) {
-    #clinicStatus {
-      gap: 5px;
-      padding: 3.5px 8px;
-    }
-    #clinicStatus .clinic-status__next {
-      display: none;
-    }
+  /* ⚪ 진료종료 (is-closed) */
+  .clinic-status-badge.is-closed {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+  }
+  .clinic-status-badge.is-closed .clinic-status-dot {
+    background-color: #94a3b8;
+  }
+  .clinic-status-badge.is-closed .clinic-status-ping {
+    display: none;
+  }
+  .clinic-status-badge.is-closed .clinic-status-main {
+    color: #64748b;
+    font-weight: 800;
+  }
+  .clinic-status-badge.is-closed .clinic-status-divider {
+    color: #cbd5e1;
+  }
+  .clinic-status-badge.is-closed .clinic-status-next {
+    color: #475569;
+    font-weight: 600;
   }
 
-  @media (max-width: 380px) {
-    #clinicStatus {
-      display: none !important;
-    }
+  /* 🔴 정기휴진 (is-off) */
+  .clinic-status-badge.is-off {
+    background-color: #fff1f2;
+    border: 1px solid #fecdd3;
   }
-
-  .clinic-status.is-drawer .clinic-status__next {
-    display: inline !important;
+  .clinic-status-badge.is-off .clinic-status-dot {
+    background-color: #f43f5e;
+  }
+  .clinic-status-badge.is-off .clinic-status-ping {
+    display: none;
+  }
+  .clinic-status-badge.is-off .clinic-status-main {
+    color: #e11d48;
+    font-weight: 800;
+  }
+  .clinic-status-badge.is-off .clinic-status-divider {
+    color: #fda4af;
+  }
+  .clinic-status-badge.is-off .clinic-status-next {
+    color: #be123c;
+    font-weight: 600;
   }
 </style>
 
 <script>
-  // 🕒 실시간 진료 상태 계산 및 뱃지 갱신 함수 (정원한의원 정통 방식)
-  function updateClinicStatus() {
-    var now = new Date();
-    // UTC + 9h = KST (정확한 한국 시간 계산)
-    var kst = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) + (9 * 3600000));
+  // 🕒 실시간 진료 상태 계산 및 뱃지 갱신 함수 (healim-bp.com 기준 정밀 스크립트)
+  (function() {
+    var holidays = {
+      "2024-01-01": "신정", "2024-02-09": "설날 연휴", "2024-02-10": "설날", "2024-02-11": "설날 연휴", "2024-02-12": "대체공휴일",
+      "2024-03-01": "삼일절", "2024-04-10": "국회의원선거", "2024-05-05": "어린이날", "2024-05-06": "대체공휴일", "2024-05-15": "부처님오신날",
+      "2024-06-06": "현충일", "2024-08-15": "광복절", "2024-09-16": "추석 연휴", "2024-09-17": "추석", "2024-09-18": "추석 연휴",
+      "2024-10-01": "국군의 날", "2024-10-03": "개천절", "2024-10-09": "한글날", "2024-12-25": "성탄절",
+      "2025-01-01": "신정", "2025-01-28": "설날 연휴", "2025-01-29": "설날", "2025-01-30": "설날 연휴", "2025-03-01": "삼일절",
+      "2025-03-03": "대체공휴일", "2025-05-05": "어린이날", "2025-05-06": "대체공휴일", "2025-06-06": "현충일", "2025-08-15": "광복절",
+      "2025-10-03": "개천절", "2025-10-05": "추석 연휴", "2025-10-06": "추석", "2025-10-07": "추석 연휴", "2025-10-08": "대체공휴일",
+      "2025-10-09": "한글날", "2025-12-25": "성탄절",
+      "2026-01-01": "신정", "2026-02-16": "설날 연휴", "2026-02-17": "설날", "2026-02-18": "설날 연휴", "2026-03-01": "삼일절",
+      "2026-03-02": "대체공휴일", "2026-05-05": "어린이날", "2026-05-24": "부처님오신날", "2026-05-25": "대체공휴일", "2026-06-06": "현충일",
+      "2026-08-15": "광복절", "2026-08-17": "대체공휴일", "2026-09-24": "추석 연휴", "2026-09-25": "추석", "2026-09-26": "추석 연휴",
+      "2026-10-03": "개천절", "2026-10-05": "대체공휴일", "2026-10-09": "한글날", "2026-12-25": "성탄절",
+      "2027-01-01": "신정", "2027-02-06": "설날 연휴", "2027-02-07": "설날", "2027-02-08": "설날 연휴", "2027-02-09": "대체공휴일",
+      "2027-03-01": "삼일절", "2027-05-05": "어린이날", "2027-05-13": "부처님오신날", "2027-06-06": "현충일", "2027-08-15": "광복절",
+      "2027-08-16": "대체공휴일", "2027-09-14": "추석 연휴", "2027-09-15": "추석", "2027-09-16": "추석 연휴", "2027-10-03": "개천절",
+      "2027-10-04": "대체공휴일", "2027-10-09": "한글날", "2027-10-11": "대체공휴일", "2027-12-25": "성탄절"
+    };
+    var dayNames = ["일", "월", "화", "수", "목", "금", "토"];
 
-    var year = kst.getFullYear();
-    var month = kst.getMonth() + 1;
-    var date = kst.getDate();
-    var day = kst.getDay(); // 0:일, 1:월, 2:화, 3:수, 4:목, 5:금, 6:토
-    var cur = kst.getHours() * 60 + kst.getMinutes();
+    function getKstDate(offsetDays) {
+      var now = new Date();
+      var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      var kst = new Date(utc + (9 * 3600000));
+      if (offsetDays) {
+        kst.setDate(kst.getDate() + offsetDays);
+      }
+      return kst;
+    }
 
-    // 한국 공휴일 목록 (MM-DD 및 YYYY-MM-DD)
-    var holidays = [
-      '1-1', '3-1', '5-5', '6-6', '8-15', '10-3', '10-9', '12-25',
-      '2025-1-28', '2025-1-29', '2025-1-30', '2025-5-6', '2025-10-5', '2025-10-6', '2025-10-7',
-      '2026-2-16', '2026-2-17', '2026-2-18', '2026-5-24', '2026-9-24', '2026-9-25', '2026-9-26',
-      '2027-2-6', '2027-2-7', '2027-2-8', '2027-5-13', '2027-9-14', '2027-9-15', '2027-9-16'
-    ];
-    var dateMMDD = month + '-' + date;
-    var dateFull = year + '-' + month + '-' + date;
-    var isHoliday = (holidays.indexOf(dateMMDD) !== -1 || holidays.indexOf(dateFull) !== -1);
+    function formatDateYMD(d) {
+      var y = d.getFullYear();
+      var m = String(d.getMonth() + 1).padStart(2, '0');
+      var day = String(d.getDate()).padStart(2, '0');
+      return y + '-' + m + '-' + day;
+    }
 
-    var state = 'closed'; // 'open', 'closed', 'lunch'
-    var txt = '진료종료';
-    var nxt = '';
+    function formatTime(mins) {
+      var h = Math.floor(mins / 60);
+      var m = mins % 60;
+      return (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m;
+    }
 
-    // 1. 공휴일 (09:00 ~ 13:00 연속진료, 점심시간 없음)
-    if (isHoliday) {
-      if (cur < 540) { // 09:00 전
-        state = 'closed'; txt = '진료종료'; nxt = '오늘 09:00 오픈';
-      } else if (cur < 780) { // 09:00 ~ 13:00
-        state = 'open'; txt = '진료중'; nxt = '13:00 진료 종료';
-      } else { // 13:00 이후
-        state = 'closed'; txt = '진료종료'; nxt = '내일 10:00 오픈';
+    function getDaySchedule(dateObj) {
+      var ymd = formatDateYMD(dateObj);
+      var day = dateObj.getDay();
+      var isHoliday = !!holidays[ymd];
+
+      if (isHoliday) {
+        return {
+          isOpenDay: true,
+          openMin: 9 * 60,
+          closeMin: 13 * 60,
+          hasLunch: false,
+          type: 'holiday',
+          label: holidays[ymd]
+        };
+      }
+      if (day === 0 || day === 4) { // 일, 목 (정기 휴진)
+        return {
+          isOpenDay: false,
+          openMin: 0,
+          closeMin: 0,
+          hasLunch: false,
+          type: 'off',
+          label: '정기 휴진'
+        };
+      }
+      if (day === 6) { // 토요일 (09:00 ~ 15:00)
+        return {
+          isOpenDay: true,
+          openMin: 9 * 60,
+          closeMin: 15 * 60,
+          hasLunch: false,
+          type: 'saturday',
+          label: '토요진료'
+        };
+      }
+      if (day === 2) { // 화요일 (10:00 ~ 19:00, 점심 13~14)
+        return {
+          isOpenDay: true,
+          openMin: 10 * 60,
+          closeMin: 19 * 60,
+          hasLunch: true,
+          lunchStart: 13 * 60,
+          lunchEnd: 14 * 60,
+          type: 'tuesday',
+          label: '일반진료'
+        };
+      }
+      // 월, 수, 금 (10:00 ~ 20:00 야간진료, 점심 13~14)
+      return {
+        isOpenDay: true,
+        openMin: 10 * 60,
+        closeMin: 20 * 60,
+        hasLunch: true,
+        lunchStart: 13 * 60,
+        lunchEnd: 14 * 60,
+        type: 'night',
+        label: '야간진료'
+      };
+    }
+
+    function getNextOpenText() {
+      for (var i = 1; i <= 7; i++) {
+        var nextDate = getKstDate(i);
+        var sched = getDaySchedule(nextDate);
+        if (sched.isOpenDay) {
+          var dayName = dayNames[nextDate.getDay()];
+          var dayLabel = (i === 1) ? '내일(' + dayName + ')' : dayName + '요일';
+          return dayLabel + ' ' + formatTime(sched.openMin) + ' 오픈';
+        }
+      }
+      return '진료시간표 확인';
+    }
+
+    function applyStatus(el, statusInfo) {
+      if (!el) return;
+      el.classList.remove('is-open', 'is-lunch', 'is-prep', 'is-closed', 'is-off');
+      el.classList.add(statusInfo.stateClass);
+      if (statusInfo.isOff) {
+        el.classList.add('is-off');
+      }
+
+      var mainEl = el.querySelector('.clinic-status-main');
+      var nextEl = el.querySelector('.clinic-status-next');
+      var pingEl = el.querySelector('.clinic-status-ping');
+
+      if (mainEl) mainEl.textContent = statusInfo.mainText;
+      if (nextEl) nextEl.textContent = statusInfo.nextText;
+      if (pingEl) {
+        pingEl.style.display = (statusInfo.stateClass === 'is-open' || statusInfo.stateClass === 'is-lunch') ? 'inline-flex' : 'none';
       }
     }
-    // 2. 목요일 / 일요일 (정기휴진)
-    else if (day === 4 || day === 0) {
-      state = 'closed'; txt = '진료종료';
-      nxt = '내일 10:00 오픈';
-    }
-    // 3. 토요일 (09:00 ~ 15:00 점심시간 없는 연속진료)
-    else if (day === 6) {
-      if (cur < 540) { // 09:00 전
-        state = 'closed'; txt = '진료종료'; nxt = '오늘 09:00 오픈';
-      } else if (cur < 900) { // 09:00 ~ 15:00
-        state = 'open'; txt = '진료중'; nxt = '15:00 진료 종료';
-      } else { // 15:00 이후
-        state = 'closed'; txt = '진료종료'; nxt = '월요일 10:00 오픈';
-      }
-    }
-    // 4. 월 / 수 / 금 (10:00 ~ 20:00 야간진료, 점심 13:00 ~ 14:00)
-    else if (day === 1 || day === 3 || day === 5) {
-      if (cur < 600) { // 10:00 전
-        state = 'closed'; txt = '진료종료'; nxt = '오늘 10:00 오픈';
-      } else if (cur >= 600 && cur < 780) { // 10:00 ~ 13:00
-        state = 'open'; txt = '진료중'; nxt = '20:00 진료 종료';
-      } else if (cur >= 780 && cur < 840) { // 13:00 ~ 14:00 점심시간
-        state = 'lunch'; txt = '점심시간'; nxt = '14:00 오픈';
-      } else if (cur >= 840 && cur < 1200) { // 14:00 ~ 20:00 야간진료
-        state = 'open'; txt = '진료중'; nxt = '20:00 진료 종료';
-      } else { // 20:00 이후
-        state = 'closed'; txt = '진료종료';
-        if (day === 1) nxt = '내일 10:00 오픈';
-        else if (day === 3) nxt = '금요일 10:00 오픈';
-        else if (day === 5) nxt = '내일 09:00 오픈';
-      }
-    }
-    // 5. 화요일 (10:00 ~ 19:00 주간진료, 점심 13:00 ~ 14:00)
-    else if (day === 2) {
-      if (cur < 600) { // 10:00 전
-        state = 'closed'; txt = '진료종료'; nxt = '오늘 10:00 오픈';
-      } else if (cur >= 600 && cur < 780) { // 10:00 ~ 13:00
-        state = 'open'; txt = '진료중'; nxt = '19:00 진료 종료';
-      } else if (cur >= 780 && cur < 840) { // 13:00 ~ 14:00 점심시간
-        state = 'lunch'; txt = '점심시간'; nxt = '14:00 오픈';
-      } else if (cur >= 840 && cur < 1140) { // 14:00 ~ 19:00
-        state = 'open'; txt = '진료중'; nxt = '19:00 진료 종료';
-      } else { // 19:00 이후
-        state = 'closed'; txt = '진료종료'; nxt = '내일 10:00 오픈';
-      }
-    }
 
-    var badges = document.querySelectorAll('.clinic-status');
-    for (var i = 0; i < badges.length; i++) {
-      var badge = badges[i];
-      badge.classList.remove('is-open', 'is-closed', 'is-lunch');
-      if (state === 'open') {
-        badge.classList.add('is-open');
-      } else if (state === 'lunch') {
-        badge.classList.add('is-lunch');
+    function updateAllStatus() {
+      var now = getKstDate(0);
+      var curMins = now.getHours() * 60 + now.getMinutes();
+      var sched = getDaySchedule(now);
+
+      var statusInfo = {
+        stateClass: 'is-closed',
+        isOff: false,
+        mainText: '진료종료',
+        nextText: ''
+      };
+
+      if (!sched.isOpenDay) {
+        statusInfo.stateClass = 'is-closed';
+        statusInfo.isOff = true;
+        statusInfo.mainText = '오늘 휴진';
+        statusInfo.nextText = getNextOpenText();
       } else {
-        badge.classList.add('is-closed');
+        if (curMins < sched.openMin) {
+          statusInfo.stateClass = 'is-prep';
+          statusInfo.mainText = '진료 준비중';
+          statusInfo.nextText = '오늘 ' + formatTime(sched.openMin) + ' 오픈';
+        } else if (sched.hasLunch && curMins >= sched.lunchStart && curMins < sched.lunchEnd) {
+          statusInfo.stateClass = 'is-lunch';
+          statusInfo.mainText = '점심시간';
+          statusInfo.nextText = formatTime(sched.lunchEnd) + ' 진료 재개';
+        } else if (curMins >= sched.openMin && curMins < sched.closeMin) {
+          statusInfo.stateClass = 'is-open';
+          statusInfo.mainText = '진료중';
+          var remain = sched.closeMin - curMins;
+          if (remain <= 30) {
+            statusInfo.nextText = '마감 30분 전 (' + formatTime(sched.closeMin) + ' 종료)';
+          } else {
+            statusInfo.nextText = formatTime(sched.closeMin) + ' 진료 종료';
+          }
+        } else {
+          statusInfo.stateClass = 'is-closed';
+          statusInfo.mainText = '진료종료';
+          statusInfo.nextText = getNextOpenText();
+        }
       }
 
-      var textEl = badge.querySelector('.clinic-status__text');
-      var nextEl = badge.querySelector('.clinic-status__next');
-      if (textEl) textEl.textContent = txt;
-      if (nextEl) nextEl.textContent = nxt;
+      var headerEl = document.getElementById('clinicStatus');
+      var mobileEl = document.getElementById('clinicStatusMobile');
+      applyStatus(headerEl, statusInfo);
+      applyStatus(mobileEl, statusInfo);
     }
-  }
 
-  // 즉시 실행 및 30초 주기 실시간 자동 갱신
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', updateClinicStatus);
-  } else {
-    updateClinicStatus();
-  }
-  setInterval(updateClinicStatus, 30000);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateAllStatus);
+    } else {
+      updateAllStatus();
+    }
+    setInterval(updateAllStatus, 30000);
+  })();
 
   // 메뉴 토글 제어
   function toggleHealimMenu(e) {
