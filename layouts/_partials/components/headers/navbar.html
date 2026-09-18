@@ -5,8 +5,8 @@
 
 <header id="site-header" class="header sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-[#E2EAE5] shadow-sm">
   <nav class="container mx-auto px-4 sm:px-6 flex items-center justify-between h-20 sm:h-24">
-    <!-- 1. 공식 해아림 로고 (좌측 - 큼직하고 선명한 고화질 브랜딩) -->
-    <div class="flex items-center">
+    <!-- 1. 공식 해아림 로고 & 실시간 진료 상태 뱃지 (좌측) -->
+    <div class="flex items-center gap-3 sm:gap-4">
       <a class="navbar-brand flex items-center gap-2.5 sm:gap-3.5 py-1.5 group select-none transition-transform hover:opacity-95" href="{{ site.Home.RelPermalink }}" title="해아림한의원 인천부평점" style="text-decoration: none !important;">
         <!-- 해아림 정통 엠블럼 심볼 -->
         <div class="flex flex-col items-center justify-center shrink-0">
@@ -20,21 +20,33 @@
 
         <!-- 브랜드 텍스트 & 인천부평점 뱃지 -->
         <div class="flex flex-col justify-center text-left">
-          <span class="text-[11px] sm:text-[13px] font-bold text-[#556B62] tracking-normal leading-tight">
-            마음까지 헤아리는
-          </span>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] sm:text-[12px] font-bold text-[#556B62] tracking-normal leading-tight">
+              마음까지 헤아리는
+            </span>
+          </div>
           <div class="flex items-center gap-2 sm:gap-2.5 mt-0.5">
             <span class="text-2xl sm:text-[28px] lg:text-[32px] font-black text-[#1F2937] tracking-tight leading-none" style="font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;">
               해아림한의원
             </span>
             <!-- 인천부평점 둥근 알약 뱃지 -->
-            <span class="relative inline-flex items-center justify-center px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border-2 border-[#188A7D] bg-[#E8F5F3] text-[#188A7D] font-extrabold text-[12px] sm:text-[14px] leading-tight shadow-sm shrink-0">
+            <span class="relative inline-flex items-center justify-center px-2 sm:px-2.5 py-0.5 rounded-full border-2 border-[#188A7D] bg-[#E8F5F3] text-[#188A7D] font-extrabold text-[11px] sm:text-[13px] leading-tight shadow-sm shrink-0">
               인천부평점
-              <!-- 반짝임 포인트 -->
               <span class="absolute -top-1.5 -right-2 text-[#188A7D] text-[11px] leading-none font-black animate-pulse">✨</span>
             </span>
           </div>
         </div>
+      </a>
+
+      <!-- 🟢 실시간 진료 상태 뱃지 (정원한의원 스타일 - 클릭 시 오시는 길 & 진료시간 페이지로 이동) -->
+      <a href="/location/" id="clinic-status-badge" class="clinic-status-badge hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] border border-[#A7F3D0] text-[#065F46] hover:bg-[#D1FAE5] shadow-xs transition group cursor-pointer" title="실시간 진료시간 안내 (클릭 시 상세 시간표 확인)" style="text-decoration: none !important;">
+        <span class="relative flex h-2 w-2">
+          <span id="clinic-status-ping" class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#34D399] opacity-75"></span>
+          <span id="clinic-status-dot" class="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]"></span>
+        </span>
+        <span id="clinic-status-text" class="font-black">진료중</span>
+        <span id="clinic-status-sub" class="hidden xl:inline font-semibold opacity-90">· 20:00 진료 종료</span>
+        <i class="fa-solid fa-chevron-right text-[9px] opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition"></i>
       </a>
     </div>
 
@@ -61,7 +73,7 @@
         <!-- 📞 전화상담 -->
         <a href="{{ $phoneUrl }}" class="w-9 h-9 rounded-xl flex items-center justify-center text-[#5C4033] hover:bg-[#F2F4F3] active:scale-95 transition" title="전화 상담 바로연결">
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55.0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
           </svg>
         </a>
 
@@ -109,7 +121,24 @@
   </nav>
 
   <!-- 모바일 펼침 메뉴 드롭다운 (style="display: none;" 초기값 & 스크롤 지원) -->
-  <div id="mobile-menu-drawer" class="lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-1.5 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto" style="display: none; -webkit-overflow-scrolling: touch;">
+  <div id="mobile-menu-drawer" class="lg:hidden border-t border-[#E2EAE5] bg-white px-4 py-4 space-y-2 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto" style="display: none; -webkit-overflow-scrolling: touch;">
+    <!-- 모바일 드로어 내부 실시간 진료 상태 바 -->
+    <div class="p-3 rounded-xl bg-[#F8FAF9] border border-[#E2EAE5] flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="relative flex h-2.5 w-2.5">
+          <span id="m-clinic-status-ping" class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#34D399] opacity-75"></span>
+          <span id="m-clinic-status-dot" class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]"></span>
+        </span>
+        <div class="text-xs font-extrabold text-[#26332E]">
+          <span id="m-clinic-status-text">진료시간 확인 중</span>
+        </div>
+      </div>
+      <a href="/location/" class="text-[11px] font-bold text-[#2F5D50] hover:underline flex items-center gap-1" onclick="closeHealimMenu()">
+        <span>시간표 보기</span>
+        <i class="fa-solid fa-chevron-right text-[8px]"></i>
+      </a>
+    </div>
+
     {{ $currentPage := . }}
     {{ range site.Menus.main }}
       {{ $menuURL := .URL | absLangURL }}
@@ -135,10 +164,215 @@
 </header>
 
 <script>
-  function toggleHealimMenu(e) {
-    if (e) {
-      if (e.stopPropagation) e.stopPropagation();
+  // 🕒 실시간 진료 상태 자동 계산 및 뱃지 갱신 함수 (해아림한의원 인천부평점 진료표 기준)
+  function updateClinicStatus() {
+    var now = new Date();
+    // UTC 기준 한국 시간(KST, UTC+9) 정확한 시간 계산
+    var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+    var kst = new Date(utc + (9 * 3600000));
+
+    var year = kst.getFullYear();
+    var month = kst.getMonth() + 1;
+    var date = kst.getDate();
+    var day = kst.getDay(); // 0:일, 1:월, 2:화, 3:수, 4:목, 5:금, 6:토
+    var hours = kst.getHours();
+    var mins = kst.getMinutes();
+    var currentMins = hours * 60 + mins;
+
+    // 한국 공휴일 목록 (MM-DD 및 YYYY-MM-DD)
+    var holidays = [
+      '1-1', '3-1', '5-5', '6-6', '8-15', '10-3', '10-9', '12-25',
+      '2025-1-28', '2025-1-29', '2025-1-30', '2025-5-6', '2025-10-5', '2025-10-6', '2025-10-7',
+      '2026-2-16', '2026-2-17', '2026-2-18', '2026-5-24', '2026-9-24', '2026-9-25', '2026-9-26',
+      '2027-2-6', '2027-2-7', '2027-2-8', '2027-5-13', '2027-9-14', '2027-9-15', '2027-9-16'
+    ];
+
+    var dateMMDD = month + '-' + date;
+    var dateFull = year + '-' + month + '-' + date;
+    var isHoliday = (holidays.indexOf(dateMMDD) !== -1 || holidays.indexOf(dateFull) !== -1);
+
+    var badgeEl = document.getElementById('clinic-status-badge');
+    var dotEl = document.getElementById('clinic-status-dot');
+    var pingEl = document.getElementById('clinic-status-ping');
+    var textEl = document.getElementById('clinic-status-text');
+    var subEl = document.getElementById('clinic-status-sub');
+
+    var mDotEl = document.getElementById('m-clinic-status-dot');
+    var mPingEl = document.getElementById('m-clinic-status-ping');
+    var mTextEl = document.getElementById('m-clinic-status-text');
+
+    var state = 'closed'; // 'open', 'lunch', 'ready', 'closed'
+    var mainText = '진료 마감';
+    var subText = '';
+    var mobileDesc = '';
+
+    // 1. 공휴일 (09:00 ~ 13:00 연속진료, 점심시간 없음)
+    if (isHoliday) {
+      if (currentMins < 540) { // 09:00 전
+        state = 'ready';
+        mainText = '진료 준비중';
+        subText = '09:00 공휴일 진료 시작';
+        mobileDesc = '진료 준비중 (09:00~13:00 공휴일)';
+      } else if (currentMins < 780) { // 09:00 ~ 13:00
+        state = 'open';
+        mainText = '진료중';
+        subText = '13:00 공휴일 진료 종료';
+        mobileDesc = '공휴일 진료중 (13:00 종료)';
+      } else { // 13:00 이후
+        state = 'closed';
+        mainText = '진료 마감';
+        subText = '내일 10:00 진료 시작';
+        mobileDesc = '오늘 진료 마감 (공휴일)';
+      }
     }
+    // 2. 목요일 / 일요일 (정기휴진)
+    else if (day === 4 || day === 0) {
+      state = 'closed';
+      mainText = '오늘 정기휴진';
+      if (day === 4) {
+        subText = '내일(금) 10:00 야간진료 시작';
+        mobileDesc = '오늘 목요 휴진 (내일 20시 야간진료)';
+      } else {
+        subText = '내일(월) 10:00 야간진료 시작';
+        mobileDesc = '오늘 일요 휴진 (내일 20시 야간진료)';
+      }
+    }
+    // 3. 토요일 (09:00 ~ 15:00 점심시간 없는 연속진료)
+    else if (day === 6) {
+      if (currentMins < 540) { // 09:00 전
+        state = 'ready';
+        mainText = '진료 준비중';
+        subText = '09:00 토요 연속진료 시작';
+        mobileDesc = '진료 준비중 (09:00~15:00 토요진료)';
+      } else if (currentMins < 900) { // 09:00 ~ 15:00
+        state = 'open';
+        mainText = '진료중';
+        subText = '15:00 토요진료 종료 (점심시간 없음)';
+        mobileDesc = '토요 연속진료중 (15:00 종료)';
+      } else { // 15:00 이후
+        state = 'closed';
+        mainText = '진료 마감';
+        subText = '월요일 10:00 야간진료 시작 (일요휴진)';
+        mobileDesc = '오늘 진료 마감 (월요일 10시 시작)';
+      }
+    }
+    // 4. 월 / 수 / 금 (10:00 ~ 20:00 야간진료, 점심 13:00 ~ 14:00)
+    else if (day === 1 || day === 3 || day === 5) {
+      if (currentMins < 600) { // 10:00 전
+        state = 'ready';
+        mainText = '진료 준비중';
+        subText = '10:00 야간진료 시작';
+        mobileDesc = '진료 준비중 (10:00~20:00 야간진료)';
+      } else if (currentMins >= 600 && currentMins < 780) { // 10:00 ~ 13:00
+        state = 'open';
+        mainText = '진료중';
+        subText = '20:00 야간진료 종료 (점심 13~14시)';
+        mobileDesc = '진료중 (20:00 야간진료 종료)';
+      } else if (currentMins >= 780 && currentMins < 840) { // 13:00 ~ 14:00 점심시간
+        state = 'lunch';
+        mainText = '점심시간';
+        subText = '14:00 오후진료 시작';
+        mobileDesc = '점심시간 (14:00 오후진료 시작)';
+      } else if (currentMins >= 840 && currentMins < 1200) { // 14:00 ~ 20:00
+        state = 'open';
+        mainText = '야간진료중';
+        subText = '20:00 진료 종료';
+        mobileDesc = '야간진료중 (20:00 진료 종료)';
+      } else { // 20:00 이후
+        state = 'closed';
+        mainText = '진료 마감';
+        if (day === 1) {
+          subText = '내일(화) 10:00 진료 시작';
+          mobileDesc = '오늘 진료 마감 (내일 10시 시작)';
+        } else if (day === 3) {
+          subText = '금요일 10:00 야간진료 시작 (목요휴진)';
+          mobileDesc = '오늘 진료 마감 (목요휴진 · 금 10시 시작)';
+        } else if (day === 5) {
+          subText = '내일(토) 09:00 연속진료 시작';
+          mobileDesc = '오늘 진료 마감 (토요일 09시 시작)';
+        }
+      }
+    }
+    // 5. 화요일 (10:00 ~ 19:00 주간진료, 점심 13:00 ~ 14:00)
+    else if (day === 2) {
+      if (currentMins < 600) { // 10:00 전
+        state = 'ready';
+        mainText = '진료 준비중';
+        subText = '10:00 진료 시작';
+        mobileDesc = '진료 준비중 (10:00~19:00 진료)';
+      } else if (currentMins >= 600 && currentMins < 780) { // 10:00 ~ 13:00
+        state = 'open';
+        mainText = '진료중';
+        subText = '19:00 진료 종료 (점심 13~14시)';
+        mobileDesc = '진료중 (19:00 진료 종료)';
+      } else if (currentMins >= 780 && currentMins < 840) { // 13:00 ~ 14:00 점심시간
+        state = 'lunch';
+        mainText = '점심시간';
+        subText = '14:00 오후진료 시작';
+        mobileDesc = '점심시간 (14:00 오후진료 시작)';
+      } else if (currentMins >= 840 && currentMins < 1140) { // 14:00 ~ 19:00
+        state = 'open';
+        mainText = '진료중';
+        subText = '19:00 진료 종료';
+        mobileDesc = '진료중 (19:00 진료 종료)';
+      } else { // 19:00 이후
+        state = 'closed';
+        mainText = '진료 마감';
+        subText = '내일(수) 10:00 야간진료 시작';
+        mobileDesc = '오늘 진료 마감 (내일 20시 야간진료)';
+      }
+    }
+
+    // 데스크톱 뱃지 갱신
+    if (badgeEl && textEl) {
+      if (state === 'open') {
+        badgeEl.className = 'clinic-status-badge hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] border border-[#A7F3D0] text-[#065F46] hover:bg-[#D1FAE5] shadow-xs transition group cursor-pointer';
+        if (dotEl) dotEl.className = 'relative inline-flex rounded-full h-2 w-2 bg-[#10B981]';
+        if (pingEl) {
+          pingEl.className = 'animate-ping absolute inline-flex h-full w-full rounded-full bg-[#34D399] opacity-75';
+          pingEl.style.display = 'inline-flex';
+        }
+      } else if (state === 'lunch' || state === 'ready') {
+        badgeEl.className = 'clinic-status-badge hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-[#FFFBEB] border border-[#FDE68A] text-[#92400E] hover:bg-[#FEF3C7] shadow-xs transition group cursor-pointer';
+        if (dotEl) dotEl.className = 'relative inline-flex rounded-full h-2 w-2 bg-[#F59E0B]';
+        if (pingEl) pingEl.style.display = 'none';
+      } else { // closed
+        badgeEl.className = 'clinic-status-badge hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-[#F8FAFC] border border-[#E2E8F0] text-[#475569] hover:bg-[#F1F5F9] shadow-xs transition group cursor-pointer';
+        if (dotEl) dotEl.className = 'relative inline-flex rounded-full h-2 w-2 bg-[#94A3B8]';
+        if (pingEl) pingEl.style.display = 'none';
+      }
+      textEl.textContent = mainText;
+      if (subEl) subEl.textContent = subText ? '· ' + subText : '';
+    }
+
+    // 모바일 드로어 뱃지 갱신
+    if (mTextEl) {
+      mTextEl.textContent = mobileDesc;
+      if (state === 'open') {
+        if (mDotEl) mDotEl.className = 'relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]';
+        if (mPingEl) {
+          mPingEl.className = 'animate-ping absolute inline-flex h-full w-full rounded-full bg-[#34D399] opacity-75';
+          mPingEl.style.display = 'inline-flex';
+        }
+      } else if (state === 'lunch' || state === 'ready') {
+        if (mDotEl) mDotEl.className = 'relative inline-flex rounded-full h-2.5 w-2.5 bg-[#F59E0B]';
+        if (mPingEl) mPingEl.style.display = 'none';
+      } else {
+        if (mDotEl) mDotEl.className = 'relative inline-flex rounded-full h-2.5 w-2.5 bg-[#94A3B8]';
+        if (mPingEl) mPingEl.style.display = 'none';
+      }
+    }
+  }
+
+  // 즉시 실행 및 30초 주기 실시간 자동 갱신
+  document.addEventListener('DOMContentLoaded', function() {
+    updateClinicStatus();
+    setInterval(updateClinicStatus, 30000);
+  });
+
+  // 메뉴 토글 제어
+  function toggleHealimMenu(e) {
+    if (e && e.stopPropagation) e.stopPropagation();
     var drawer = document.getElementById('mobile-menu-drawer');
     var btn = document.getElementById('mobile-menu-btn');
     var hIcon = document.getElementById('hamburger-icon');
